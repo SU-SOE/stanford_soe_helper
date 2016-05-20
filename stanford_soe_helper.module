@@ -1,0 +1,12 @@
+<?php
+
+/**
+ * @file
+ * Code for the Stanford SOE Helper module.
+ */
+
+function stanford_soe_helper_field_display_alter(&$display, $context) {
+  if ($context['entity_type'] == 'node' && $context['field']['field_name'] == 'field_s_person_profile_picture' && $context['view_mode'] == 'stanford_cap') {
+    $display['settings']['image_style'] = 'large-profile-scaled';
+  }
+}
