@@ -4,9 +4,28 @@
  * @file
  * Code for the Stanford SOE Helper module.
  */
+function stanford_soe_helper_image_default_styles() {
+  $styles = array();
+  $styles['original'] = array(
+    'effects' => array(
+      'name' => 'image_scale',
+      'data' => array(
+        'width' => 100, 
+        'height' => 100, 
+        'upscale' => 1,
+      ),
+      'weight' => 0,
+    ),
+    'name' => 'original', // You need this and the next line to avoid PHP notices
+    'storage' => IMAGE_STORAGE_NORMAL,
+  );
+
+  return $styles;
+}
 
 function stanford_soe_helper_field_display_alter(&$display, $context) {
+  // This modifies the image cache preset on person nodes.
   if ($context['entity_type'] == 'node' && $context['field']['field_name'] == 'field_s_person_profile_picture' && $context['view_mode'] == 'stanford_cap') {
-    $display['settings']['image_style'] = 'large-profile-scaled';
+    $display['settings']['image_style'] = 'original';
   }
 }
