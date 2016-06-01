@@ -1,0 +1,284 @@
+/* MAIN PAGE, MASTHEAD*/
+
+.main {
+    padding-top: 60px;
+    background: #f8f8f8;
+}
+
+.main .border-simple-nowidth img, .main .border-simple img {
+    padding: 0;
+}
+.header {
+    background:#fff;
+    padding: 32px 0 0 0;
+    border-top: 3px solid #8c1515;
+}
+
+.site-name a, .site-name a:hover {
+    text-transform: uppercase;
+    font-weight:600;
+}
+
+/*REVISED LOGO SIZE FOR NEW MASTHEAD, REMOVE ME IF WE DONT GO WITH THIS FORMAT*/
+
+#header #logo img {
+    max-width: 160px;
+}
+
+#site-title-first-line.site-title-uppercase {
+    font-size: 34px;
+}
+
+.site-name a, .site-name a:hover {
+    letter-spacing: -0.02em;
+}
+
+/*FOOTER*/
+
+.site-footer {
+    background: #fff;
+}
+
+#footer .block {
+    font-size: 16px;
+    line-height: 1.4em;
+}
+
+.site-footer h2 {
+    line-height: 1.3em;
+}
+
+/* SUBNAV */
+
+.sidebar .block-menu, .sidebar .block-menu-block {
+    background: #fff;
+}
+
+.main .menu li {
+    line-height: 1.3em;
+}
+
+.sidebar .block-menu h2, .sidebar .block-menu-block h2 {
+    font-family: "Roboto Slab";
+    font-weight: 400;
+    letter-spacing: 0em;
+}
+
+.sidebar .block-menu .content > .menu > li.active-trail, .sidebar .block-menu-block .menu-block-wrapper > .menu > li.active-trail, .sidebar .block-menu .content > .menu > li > a.active, .sidebar .block-menu-block .menu-block-wrapper > .menu > li > a.active, .sidebar .block-menu .content > .menu > li > a:hover, .sidebar .block-menu-block .menu-block-wrapper > .menu > li > a:hover, .sidebar .block-menu .content > .menu > li > a:focus, .sidebar .block-menu-block .menu-block-wrapper > .menu > li > a:focus, .sidebar .block-menu .content > .menu > li.expanded, .sidebar .block-menu-block .content > .menu > li.expanded {
+    background: #efefef;
+}
+.sidebar .block-menu, .sidebar .block-menu-block {
+    box-shadow: rgba(0,0,0,0.1) 0 1px 0px,rgba(0,0,0,0.1) 0 2px 2px 0px;
+    margin: 1px;
+}
+
+.sidebar .block-menu .content > .menu > li li a, .sidebar .block-menu-block .menu-block-wrapper > .menu > li li a {
+    padding: 0.25em 0.25em;
+}
+
+/* CONTAINERS */
+
+.well {
+    background: #fff;
+    box-shadow: rgba(0,0,0,0.1) 0 1px 0px,rgba(0,0,0,0.1) 0 2px 2px 0px;
+}
+
+/* INTERIOR OF PAGE THANGS */
+
+.summary {
+    font-family: Roboto Slab;
+    font-size: 1.3;
+    line-height: 1.5em;
+}
+
+h1 {
+    font-weight: 400;
+    margin: -9px 0 10px;
+    font-size: 1.9em;
+    font-family: "Roboto Slab";
+    letter-spacing: 0em;
+}
+h2 {
+    font-family: "Roboto Slab";
+    font-size: 1.4em;
+    letter-spacing: 0.02em;
+}
+
+h3 {
+    font-size: 1.3em;
+}
+
+h2 a:hover, h3 a:hover, h4 a:hover {
+    text-decoration: underline;
+}
+
+.normal-link h2, .normal-link h3, h2.normal-link, h3.normal-link {
+    font-size: 1.1em;
+}
+
+.summary {
+    margin-bottom: 30px;
+}
+
+li {
+    line-height: 1.4em;
+    margin-bottom:10px;
+}
+
+.node .group_s_postcard_image .field-collection-container > .field > .field-items > .field-item, .node .group-s-postcard-image .field-collection-container > .field > .field-items > .field-item {
+    margin-left: 2em;
+}
+
+.main .border-shadow img {
+    box-shadow:none;
+}
+
+.node-type-stanford-landing-page .view-mode-stanford_medium_square {
+    border-top: 1px solid #d6d6d6;
+}
+
+/*HOMEPAGE*/
+
+/*CALENDAR DAY + DATE SQUARE */
+
+.date-day {
+    font-size: 22px;
+    font-family: "Roboto Slab";
+    font-weight: 400;
+}
+
+.date-stacked {
+    margin-top:7px;
+}
+
+/*NEWS WIDGET*/
+
+.descriptor {
+    text-transform: none;
+    letter-spacing: 0.02em;
+    font-size: 0.9em;
+    margin-bottom: 4px;
+    line-height: 1.2em;
+}
+
+.postcard-left {
+    margin-top: 6px;
+}
+
+.postcard-left-wrap > div:first-child img, .postcard-left > div:first-child img {
+    margin-top: 7px;
+}
+
+/* TABLES */
+
+th, td {
+    padding:.8em;
+    line-height:1.3em;
+    font-size: .9em;
+}
+
+th {
+    background: #efefef;
+    border: 1px solid #d6d6d6;
+}
+
+td {
+    border: 1px solid #d6d6d6;
+}
+
+th, td {
+    border-right: none;
+    border-left: none;
+}
+
+/*PEOPLE*/
+
+/*GRID*/
+.view-stanford-person-grid .views-row h3 {
+    font-size: 1em;
+    margin: .6em 0 0;
+}
+
+/* LIST VIEW */
+
+label, input, button, select, textarea {
+    font-size: 16px;
+}
+
+.views-exposed-form label {
+    font-weight: normal;
+}
+
+/* FORMS*/
+
+input.form-submit {
+    padding: 0px 13px;
+    background-image: none;
+    background: #fff;
+    color: #8c1515;
+}
+
+.sidebar .views-exposed-form .views-exposed-widget .form-submit {
+    margin-top: 1em;
+}
+
+.views-exposed-form .views-exposed-widget {
+    padding: .8em .7em 0 0;
+}
+
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+    height: 30px;
+    padding: 4px 13px;
+}
+
+input, textarea, .uneditable-input {
+    width: 178px;
+}
+
+select, input[type="file"] {
+    height: 40px;
+}
+
+input.form-submit:hover, input.form-submit:focus {
+    background: #8c1515;
+    color: #fff;
+}
+
+.form-item label {
+    font-weight: 400;
+}
+
+/* LISTS */
+
+.views-row-lines .views-row {
+    border-color: #d6d6d6;
+}
+
+ul.pager li a {
+    border: 1px solid #d5d5d5;
+    background: #fff;
+    margin-bottom: 12px;
+    margin-right: 4px;
+    font-size: .9em;
+}
+
+ul.pager li a:hover, ul.pager li a:focus, ul.pager li.pager-current {
+    margin-right: 4px;
+    font-weight: 300;
+}
+
+/* WYSIWYG */
+
+a.btn, .btn a {
+    margin: 0 0 26px;
+    padding: .7em 1em;
+    letter-spacing: 0.03em;
+}
+
+
+/*MAIN BODY*/
+
+body {
+    font-size: 20px;
+    line-height: 1.5em;
+}
