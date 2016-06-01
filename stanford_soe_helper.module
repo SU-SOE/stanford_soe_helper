@@ -5,3 +5,49 @@
  * Code for the Stanford SOE Helper module.
  */
 
+/**
+ * Implements hook_init().
+ */
+function stanford_soe_helper_init() {
+
+  // Add css files
+  $file_path = drupal_get_path('module', 'stanford_soe_helper') . "/css/joe_styles.css";
+  $conditions = "admin
+admin*
+node/*/edit
+block/*/edit*
+block/add*
+node/add*
+user/*/edit
+node/*/delete";
+
+  $css_rules = array();
+  $css_rules['rule_conditions'] = $conditions;
+  $css_rules['rule_type'] = CSS_INJECTOR_PAGES_NOTLISTED;
+
+  $pass = _css_injector_evaluate_rule($css_rules);
+  if ($pass) {
+    drupal_add_css($file_path, array('type' => 'file', 'group' => CSS_THEME, 'media' => "all", 'preprocess' => TRUE, 'weight' => 350));
+  }
+
+  $file_path = drupal_get_path('module', 'stanford_soe_helper') . "/css/quickstrick_css_tweeks.css";
+  $conditions = "admin
+admin*
+node/*/edit
+block/*/edit*
+block/add*
+node/add*
+user/*/edit
+node/*/delete";
+
+  $css_rules = array();
+  $css_rules['rule_conditions'] = $conditions;
+  $css_rules['rule_type'] = CSS_INJECTOR_PAGES_NOTLISTED;
+
+  $pass = _css_injector_evaluate_rule($css_rules);
+  if ($pass) {
+    drupal_add_css($file_path, array('type' => 'file', 'group' => CSS_THEME, 'media' => "all", 'preprocess' => TRUE, 'weight' => 300));
+  }
+
+}
+
