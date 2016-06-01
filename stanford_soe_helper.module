@@ -10,7 +10,7 @@
  */
 function stanford_soe_helper_init() {
 
-  
+  // Add css files
   $file_path = drupal_get_path('module', 'stanford_soe_helper') . "/css/joe_styles.css";
   $conditions = "admin
 admin*
@@ -29,7 +29,6 @@ node/*/delete";
   if ($pass) {
     drupal_add_css($file_path, array('type' => 'file', 'group' => CSS_THEME, 'media' => "all", 'preprocess' => TRUE, 'weight' => 350));
   }
-
 
   $file_path = drupal_get_path('module', 'stanford_soe_helper') . "/css/quickstrick_css_tweeks.css";
   $conditions = "admin
