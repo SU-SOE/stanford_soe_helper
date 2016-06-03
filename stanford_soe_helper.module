@@ -16,7 +16,7 @@ function stanford_soe_helper_init() {
     drupal_get_path('module', 'stanford_soe_helper') . "/css/stanford_news_layouts.css"
   );
 
-  $weight = 400;
+  $weight = 999999;
   $conditions = "admin
 admin*
 admin/*
