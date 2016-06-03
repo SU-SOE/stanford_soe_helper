@@ -32,12 +32,6 @@ function stanford_soe_helper_sitewide_context_default_contexts() {
           'region' => 'navigation',
           'weight' => '-10',
         ),
-        'search-form' => array(
-          'module' => 'search',
-          'delta' => 'form',
-          'region' => 'search_box',
-          'weight' => '-10',
-        ),
         'bean-jse-linked-logo-block' => array(
           'module' => 'bean',
           'delta' => 'jse-linked-logo-block',
