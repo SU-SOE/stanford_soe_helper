@@ -8,19 +8,19 @@
  * Implements hook_install().
  */
 
-function stanford_soe_helper_news_install() {
+function stanford_soe_helper_sitewide_install() {
 
   // Create a bean link block
   // See https://www.drupal.org/node/1436186
   // and http://api.drupalecommerce.org/api/misc/bean%21bean.test/function/BeanTests%3A%3AtestBeanAPI/7.x
-  
-  $text =  l(t('See more news'), '/news/recent-news',
-    array('attributes' => array('class' => array('more-link'))));
+
+  $text = l(t('Intranet'), 'https://sites.stanford.edu/jse-soe-intranet/',
+    array('attributes' => array('class' => array('private-link btn'))));
 
   $bean = bean_create(array('type' => 'stanford_large_block'));
-  $bean->label = 'SoE News Page Link';
+  $bean->label = 'SoE Intranet Link';
   $bean->title = '';
-  $bean->delta = 'soe_news_link';
+  $bean->delta = 'soe_intranet_link';
   $bean->field_s_large_block_body = array(LANGUAGE_NONE => array(0 => array('value' => $text)));
   $bean->save();
 }
@@ -28,13 +28,12 @@ function stanford_soe_helper_news_install() {
 /**
  * Implements hook_uninstall().
  */
-function stanford_soe_helper_news_uninstall() {
+function stanford_soe_helper_sitewide_uninstall() {
 
   // Remove the bean we installed
-  $bean = bean_load_delta('soe_news_link', TRUE);
+  $bean = bean_load_delta('soe_intranet_link', TRUE);
 
   if ($bean) {
     bean_delete($bean);
   }
-
 }

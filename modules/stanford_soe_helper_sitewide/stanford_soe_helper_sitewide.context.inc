@@ -56,6 +56,12 @@ function stanford_soe_helper_sitewide_context_default_contexts() {
           'region' => 'footer',
           'weight' => '-7',
         ),
+        'bean-soe_intranet_link' => array(
+          'module' => 'bean',
+          'delta' => 'soe_intranet_link',
+          'region' => 'footer',
+          'weight' => '-6',
+        ),
       ),
     ),
   );

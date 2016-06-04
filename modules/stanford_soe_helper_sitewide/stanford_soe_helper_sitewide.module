@@ -5,3 +5,16 @@
  */
 
 include_once 'stanford_soe_helper_sitewide.features.inc';
+
+/**
+ * Implementation of hook_init().
+ */
+
+
+function stanford_soe_helper_sitewide_init() {
+
+  $cbc_layouts = array();
+  $cbc_layouts['sitewide_jse-soe']['bean-soe_intranet_link'][] = 'span2';
+  variable_set('contextual_block_class', $cbc_layouts);
+
+}
