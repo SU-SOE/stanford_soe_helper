@@ -20,12 +20,13 @@ function stanford_soe_helper_init() {
   $conditions = "admin
 admin*
 admin/*
-node/*/edit
 block/*/edit*
 block/add*
+block/*/delete
+node/*/edit
 node/add*
-user/*/edit
-node/*/delete";
+node/*/delete
+user/*/edit";
 
   $css_rules = array();
   $css_rules['rule_conditions'] = $conditions;

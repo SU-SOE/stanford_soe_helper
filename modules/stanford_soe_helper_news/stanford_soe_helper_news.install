@@ -1,0 +1,40 @@
+<?php
+/**
+ * @file
+ */
+
+
+/**
+ * Implements hook_install().
+ */
+
+function stanford_soe_helper_news_install() {
+
+  // Create a bean link block
+  // See https://www.drupal.org/node/1436186
+  // and http://api.drupalecommerce.org/api/misc/bean%21bean.test/function/BeanTests%3A%3AtestBeanAPI/7.x
+  
+  $text =  l(t('See more news'), '/news/recent-news',
+    array('attributes' => array('class' => array('more-link'))));
+
+  $bean = bean_create(array('type' => 'stanford_large_block'));
+  $bean->label = 'SoE News Page Link';
+  $bean->title = '';
+  $bean->delta = 'soe_news_link';
+  $bean->field_s_large_block_body = array(LANGUAGE_NONE => array(0 => array('value' => $text)));
+  $bean->save();
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function stanford_soe_helper_news_uninstall() {
+
+  // Remove the bean we installed
+  $bean = bean_load_delta('soe_news_link', TRUE);
+
+  if (isset($bean)) {
+    bean_delete($bean);
+  }
+
+}

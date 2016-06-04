@@ -14,8 +14,8 @@ function stanford_soe_helper_news_context_default_contexts() {
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
   $context->name = 'soe_news_pages';
-  $context->description = 'All news pages';
-  $context->tag = 'News content type';
+  $context->description = 'SoE specific items for news pages';
+  $context->tag = 'News';
   $context->conditions = array(
     'node' => array(
       'values' => array(
@@ -26,13 +26,24 @@ function stanford_soe_helper_news_context_default_contexts() {
       ),
     ),
   );
-  $context->reactions = array();
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'bean-soe_news_link' => array(
+          'module' => 'bean',
+          'delta' => 'soe_news_link',
+          'region' => 'content_bottom',
+          'weight' => '-10',
+        ),
+      ),
+    ),
+  );
   $context->condition_mode = 0;
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('All news pages');
-  t('News content type');
+  t('News');
+  t('SoE specific items for news pages');
   $export['soe_news_pages'] = $context;
 
   return $export;
