@@ -47,3 +47,33 @@ node/*/delete";
   }
 }
 
+
+/**
+ * Implements hook_search_api_alter_callback_info().
+ */
+
+function stanford_soe_helper_search_api_alter_callback_info() {
+  // This will appear as an option in the UI of Search API, in the Data alterations section.
+  $callbacks['exclude_some_nodes'] = array(
+    'name' => t('Exclude some nodes'), 
+    'description' => t('Exclude some nodes from being indexed based on one field value: ApacheSolr Index'),
+    'class' => 'SearchApiExcludeSomeNodes',
+  );
+  return $callbacks;
+}
+
+class SearchApiExcludeSomeNodes extends SearchApiAbstractAlterCallback {
+
+  public function supportsIndex(SearchApiIndex $index) {
+    return $index->getEntityType() === 'node';
+  }
+
+  public function alterItems(array &$items) {
+    foreach ($items as $k => $item) {
+      if(isset($item->field_s_apachesolr_index['und'][0]['value']) && $item->field_s_apachesolr_index['und'][0]['value'] == '1') {
+        unset($items[$k]);
+      }
+    }
+  }
+
+}
