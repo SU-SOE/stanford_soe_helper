@@ -9,8 +9,6 @@ include_once 'stanford_soe_helper_sitewide.features.inc';
 /**
  * Implementation of hook_init().
  */
-
-
 function stanford_soe_helper_sitewide_init() {
 
   $context_status = variable_get('context_status', array());
