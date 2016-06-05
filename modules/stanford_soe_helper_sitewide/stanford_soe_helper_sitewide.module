@@ -15,6 +15,7 @@ function stanford_soe_helper_sitewide_init() {
 
   $cbc_layouts = array();
   $cbc_layouts['sitewide_jse-soe']['bean-soe_intranet_link'][] = 'span2';
+  $cbc_layouts['sitewide_jse-soe']['bean-jse-linked-logo-block'][] = 'span4';
   variable_set('contextual_block_class', $cbc_layouts);
 
 }
