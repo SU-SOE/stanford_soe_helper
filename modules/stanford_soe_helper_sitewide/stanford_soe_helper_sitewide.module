@@ -13,6 +13,10 @@ include_once 'stanford_soe_helper_sitewide.features.inc';
 
 function stanford_soe_helper_sitewide_init() {
 
+  $context_status = variable_get('context_status', array());
+  $context_status['sitewide_jse-soe'] = FALSE;
+  variable_set('context_status', $context_status);
+
   $cbc_layouts = array();
   $cbc_layouts['sitewide_jse-soe']['bean-soe_intranet_link'][] = 'span2';
   $cbc_layouts['sitewide_jse-soe']['bean-jse-linked-logo-block'][] = 'span4';
