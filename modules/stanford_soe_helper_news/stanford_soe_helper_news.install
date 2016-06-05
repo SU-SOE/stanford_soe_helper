@@ -21,7 +21,9 @@ function stanford_soe_helper_news_install() {
   $bean->label = 'SoE News Page Link';
   $bean->title = '';
   $bean->delta = 'soe_news_link';
-  $bean->field_s_large_block_body = array(LANGUAGE_NONE => array(0 => array('value' => $text)));
+  $bean->field_s_large_block_body = array(
+    LANGUAGE_NONE => array(
+      0 => array('value' => $text, 'format' => 'content_editor_text_format')));
   $bean->save();
 }
 

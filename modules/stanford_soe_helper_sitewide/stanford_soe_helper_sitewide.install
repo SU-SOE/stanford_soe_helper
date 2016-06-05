@@ -21,10 +21,11 @@ function stanford_soe_helper_sitewide_install() {
   $bean->label = 'SoE Intranet Link';
   $bean->title = '';
   $bean->delta = 'soe_intranet_link';
-  $bean->field_s_large_block_body = array(LANGUAGE_NONE => array(0 => array('value' => $text)));
+  $bean->field_s_large_block_body = array(
+    LANGUAGE_NONE => array(
+      0 => array('value' => $text, 'format' => 'content_editor_text_format')));
   $bean->save();
 }
-
 
 /**
  * Implements hook_requirements().
