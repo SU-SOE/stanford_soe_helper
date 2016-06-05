@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * drush commands for Dash Services.
+ * drush commands for SoE Helper.
  */
 
 /**
