@@ -25,16 +25,26 @@ function stanford_soe_helper_news_install() {
   $bean->save();
 }
 
-/**
- * Implements hook_uninstall().
- */
-function stanford_soe_helper_news_uninstall() {
 
-  // Remove the bean we installed
+/**
+ * Implements hook_requirements().
+ */
+function stanford_soe_helper_news_requirements($phase) {
+  $requirements = array();
+  // Ensure translations don't break at install time
+  $t = get_t();
+
   $bean = bean_load_delta('soe_news_link', TRUE);
 
-  if ($bean) {
-    bean_delete($bean);
+  if ($phase == 'install') {
+    if ($bean) {
+      $requirements['stanford_soe_helper_news'] = array(
+        'title' => $t('Stanford SoE Helper News'),
+        'value' => $t('SoE News Link block. '
+          . 'Please remove this block before installing this module. Use "drush soe-dnl"'),
+        'severity' => REQUIREMENT_ERROR,
+      );
+    }
   }
-
+  return $requirements;
 }

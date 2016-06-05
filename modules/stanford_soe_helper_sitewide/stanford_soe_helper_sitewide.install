@@ -25,15 +25,26 @@ function stanford_soe_helper_sitewide_install() {
   $bean->save();
 }
 
-/**
- * Implements hook_uninstall().
- */
-function stanford_soe_helper_sitewide_uninstall() {
 
-  // Remove the bean we installed
+/**
+ * Implements hook_requirements().
+ */
+function stanford_soe_helper_sitewide_requirements($phase) {
+  $requirements = array();
+  // Ensure translations don't break at install time
+  $t = get_t();
+
   $bean = bean_load_delta('soe_intranet_link', TRUE);
 
-  if ($bean) {
-    bean_delete($bean);
+  if ($phase == 'install') {
+    if ($bean) {
+      $requirements['stanford_soe_helper_sitewide'] = array(
+        'title' => $t('Stanford SoE Helper Sitewide'),
+        'value' => $t('SoE Intranet Link block. '
+          . 'Please remove this block before installing this module. Use "drush soe-dil"'),
+        'severity' => REQUIREMENT_ERROR,
+      );
+    }
   }
+  return $requirements;
 }
