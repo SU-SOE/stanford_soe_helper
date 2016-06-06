@@ -9,7 +9,7 @@
 
 .node-type-stanford-news-item .fullwidth .field-name-field-s-news-banner img {
   width: 100%;
-  height: 350px;
+  height: 300px;
 }
 
 .node-type-stanford-news-item .field-name-field-s-news-banner .field-item {
@@ -87,18 +87,18 @@
 /* POSITION AND STYLE NEWS TITLES AND TEASERS OVER BANNER IMAGE - LOGGED IN */
 
 .logged-in #block-ds-extras-banner-overlay {
-  top: 240px;
+  top: 285px;
 }
 
 @media (max-width: 1200px) {
   .logged-in #block-ds-extras-banner-overlay {
-    top: 285px;
+    top: 325px;
   }
 }
 
 @media (max-width: 767px) {
   .logged-in #block-ds-extras-banner-overlay {
-    top: -360px;
+    top: -305px;
   }
 }
 
@@ -112,6 +112,20 @@
   .logged-in #block-ds-extras-banner-overlay .field-name-field-s-news-teaser .field-item {
     font-size: 15px;
   }
+}
+
+@media (max-width: 380px) {
+  .logged-in #block-ds-extras-banner-overlay {
+    top: -325px;
+    width: 250px;
+  }
+  .logged-in #block-ds-extras-banner-overlay .field-name-title h1 {
+    font-size: 1em;
+  }
+  .logged-in #block-ds-extras-banner-overlay .field-name-field-s-news-teaser .field-item {
+    font-size: 14px;
+  }
+  #logo
 }
 
 
