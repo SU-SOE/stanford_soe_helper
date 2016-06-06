@@ -12,10 +12,4 @@ include_once 'stanford_soe_helper_news.features.inc';
 
 function stanford_soe_helper_news_init() {
 
-  $context_status = variable_get('context_status', array());
-  $context_status['soe_news_pages'] = FALSE;
-  $context_status['stanford_news_extras'] = FALSE;
-  $context_status['news_pages'] = TRUE;
-  variable_set('context_status', $context_status);
-
 }

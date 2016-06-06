@@ -25,6 +25,14 @@ function stanford_soe_helper_news_install() {
     LANGUAGE_NONE => array(
       0 => array('value' => $text, 'format' => 'content_editor_text_format')));
   $bean->save();
+
+  // Select the contexts for SoE news
+  $context_status = variable_get('context_status', array());
+  $context_status['soe_news_pages'] = FALSE;
+  $context_status['stanford_news_extras'] = FALSE;
+  $context_status['news_pages'] = TRUE;
+  variable_set('context_status', $context_status);
+
 }
 
 
