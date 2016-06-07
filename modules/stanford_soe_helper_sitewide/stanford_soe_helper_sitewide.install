@@ -12,12 +12,10 @@ function stanford_soe_helper_sitewide_install() {
 }
 
 /**
- * Implements hook_uninstall().
+ * Implements hook_update_N().
  */
-function stanford_soe_helper_sitewide_uninstall() {
-  soe_helper_intranet_link_block_delete();
-  watchdog('stanford_soe_helper_sitewide', 'Removed the Stanford SoE intranet Link block.');
-
+function stanford_soe_helper_sitewide_update_7100() {
+  stanford_soe_helper_sitewide_context_config();
 }
 
 /**
@@ -31,16 +29,10 @@ function stanford_soe_helper_sitewide_context_config() {
   variable_set('context_status', $context_status);
 
   $cbc_layouts = variable_get('contextual_block_class', array());
-  $cbc_layouts['sitewide_jse-soe']['bean-soe_intranet_link'][] = 'span2';
+  $cbc_layouts['sitewide_jse-soe']['stanford_soe_helper_sitewide-stanford_soe_intranet_link'][] = 'span2';
   $cbc_layouts['sitewide_jse-soe']['bean-jse-linked-logo-block'][] = 'span4';
   variable_set('contextual_block_class', $cbc_layouts);
 
 }
 
 
-/**
- * Implements hook_install().
- */
-function stanford_soe_helper_sitewide_update_7100() {
-  stanford_soe_helper_sitewide_context_config();
-}
