@@ -5,6 +5,20 @@
  * Code for the Stanford SOE Helper module.
  */
 
+
+/**
+ * Implements hook_help().
+ */
+function stanford_soe_helper_help($path, $arg) {
+
+  if ($path == 'admin/help#stanford_soe_helper') {
+    $output = '<h3>' . t('About the Stanford SoE Helper') . '</h3>';
+    $output .= '<p>' . t('The Stanford SoE Helper module provides settings specific for the SoE site.') . '</p>';
+    $output .= l(t("See README.md"), drupal_get_path('module', 'stanford_soe_helper') . '/README.md');
+    return $output;
+  }
+}
+
 /**
  * Implements hook_init().
  */

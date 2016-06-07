@@ -6,6 +6,8 @@
 
 include_once 'stanford_soe_helper_news.features.inc';
 
+
+
 /**
  * Implements hook_block_info().
  */
@@ -59,3 +61,5 @@ function stanford_soe_news_link_block_view()
   );
   return $block;
 }
+
+
