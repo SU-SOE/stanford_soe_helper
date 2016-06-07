@@ -26,12 +26,6 @@ function stanford_soe_helper_sitewide_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'menu_block-stanford_jsa_layouts-2' => array(
-          'module' => 'menu_block',
-          'delta' => 'stanford_jsa_layouts-2',
-          'region' => 'navigation',
-          'weight' => '-10',
-        ),
         'bean-jse-linked-logo-block' => array(
           'module' => 'bean',
           'delta' => 'jse-linked-logo-block',
@@ -56,9 +50,9 @@ function stanford_soe_helper_sitewide_context_default_contexts() {
           'region' => 'footer',
           'weight' => '-7',
         ),
-        'bean-soe_intranet_link' => array(
-          'module' => 'bean',
-          'delta' => 'soe_intranet_link',
+        'stanford_soe_helper_sitewide-stanford_soe_intranet_link' => array(
+          'module' => 'stanford_soe_helper_sitewide',
+          'delta' => 'stanford_soe_intranet_link',
           'region' => 'footer',
           'weight' => '-6',
         ),

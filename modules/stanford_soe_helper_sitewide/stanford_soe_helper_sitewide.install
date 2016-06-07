@@ -8,6 +8,22 @@
  * Implements hook_install().
  */
 function stanford_soe_helper_sitewide_install() {
+  stanford_soe_helper_sitewide_context_config();
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function stanford_soe_helper_sitewide_uninstall() {
+  soe_helper_intranet_link_block_delete();
+  watchdog('stanford_soe_helper_sitewide', 'Removed the Stanford SoE intranet Link block.');
+
+}
+
+/**
+ * Configure the context.
+ */
+function stanford_soe_helper_sitewide_context_config() {
 
   // Select the contexts for SoE sitewide and set the block sizes
   $context_status = variable_get('context_status', array());
@@ -21,11 +37,10 @@ function stanford_soe_helper_sitewide_install() {
 
 }
 
-/**
- * Implements hook_uninstall().
- */
-function stanford_soe_helper_sitewide_uninstall() {
-  soe_helper_intranet_link_block_delete();
-  watchdog('stanford_soe_helper_sitewide', 'Removed the Stanford SoE intranet Link block.');
 
+/**
+ * Implements hook_install().
+ */
+function stanford_soe_helper_sitewide_update_7100() {
+  stanford_soe_helper_sitewide_context_config();
 }
