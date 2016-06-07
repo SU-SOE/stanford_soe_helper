@@ -7,7 +7,7 @@
 /**
  * Implements hook_install().
  */
-function stanford_soe_helper_news_install() {
+function stanford_soe_helper_homepage_install() {
 
   $context_status = variable_get('context_status', array());
   $context_status['stanford_jumpstart_soe_home'] = FALSE;
@@ -27,7 +27,7 @@ function stanford_soe_helper_news_install() {
 /**
  * Implements hook_uninstall().
  */
-function stanford_soe_helper_news_uninstall() {
+function stanford_soe_helper_homepage_uninstall() {
 
 }
 
