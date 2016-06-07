@@ -1,11 +1,24 @@
 #[Stanford SOE Helper](https://github.com/SU-SOE/stanford_soe_helper)
 ##### Version: 7.x-1.x
 
-Maintainers: [boznik](https://github.com/boznik)
+Maintainers: [boznik](https://github.com/boznik),  [cjwest](https://github.com/cjwest)
 
 [Changelog.txt](CHANGELOG.txt)
 
 The Stanford SOE Helper module is used to make modifications to JSE SOE sites.
+
+
+Sub Modules
+---
+
+**[Stanford SoE Helper Homepage]()**
+This module provides specific functionality for SoE site homepage.
+
+**[Stanford SoE Helper News]()**
+This module provides specific functionality for SoE site news pages.
+
+**[Stanford SoE Helper Sitewide]()**
+This module provides sitewide functionality specific for SoE site.
 
 Installation
 ---
