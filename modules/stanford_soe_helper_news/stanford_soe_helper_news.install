@@ -19,12 +19,3 @@ function stanford_soe_helper_news_install() {
 
 }
 
-/**
- * Implements hook_uninstall().
- */
-function stanford_soe_helper_news_uninstall() {
-
-  stanford_soe_news_link_block_delete();
-  watchdog('stanford_soe_helper_news', 'Removed the Stanford SoE News Link block.');
-
-}
