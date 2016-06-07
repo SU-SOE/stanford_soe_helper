@@ -6,10 +6,6 @@
 
 include_once 'stanford_soe_helper_news.features.inc';
 
-
-//todo: add a link to delete block per comment "Also, it would be nice to provide a link to the bean page so the user can delete it through the ui as well."
-
-
 /**
  * Implements hook_block_info().
  */
@@ -21,6 +17,7 @@ function stanford_soe_helper_news_block_info() {
 
   return $blocks;
 }
+
 /**
  * Default settings wrapper for variable_get
  * @return [type] [description]
@@ -28,7 +25,7 @@ function stanford_soe_helper_news_block_info() {
 function stanford_soe_helper_news_get_settings() {
   $default_settings = array(
     'news_link_title' => t('See more news'),
-    'news_link_url' => '/news/recent-news',
+    'news_link_url' => 'news/recent-news',
   );
   $settings = variable_get('stanford_soe_helper_news_settings', $default_settings );
 
@@ -38,11 +35,11 @@ function stanford_soe_helper_news_get_settings() {
 /**
  * Implements hook_block_view().
  */
-function stanford_soe_helper_news_block_view($delta='') {
+function stanford_soe_helper_news_block_view($delta = '') {
   $block = array();
 
   switch($delta) {
-    case 'stanford_soe_news_link' :
+    case 'stanford_soe_news_link':
       $block['content'] = stanford_soe_news_link_block_view();
       break;
   }
@@ -50,6 +47,9 @@ function stanford_soe_helper_news_block_view($delta='') {
   return $block;
 }
 
+/**
+ * Callback for news link block
+ */
 function stanford_soe_news_link_block_view() {
   $settings = stanford_soe_helper_news_get_settings();
   $block = array(
@@ -57,20 +57,11 @@ function stanford_soe_news_link_block_view() {
       '#type' => 'markup',
       '#markup' => l($settings['news_link_title'],
         $settings['news_link_url'],
-        array('attributes' => array('class' => 'more-link'))),
+        array('attributes' => array('class' => 'more-link'))
+      ),
     ),
   );
   return $block;
 }
 
-
-function stanford_soe_news_link_block_delete() {
-
-  // Remove the bean we installed
-  db_delete('block')
-    ->condition('module', 'stanford_soe_helper_news')
-    ->condition('delta', 'stanford_soe_news_link')
-    ->execute();
-
-}
 

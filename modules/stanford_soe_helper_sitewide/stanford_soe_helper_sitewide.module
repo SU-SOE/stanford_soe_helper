@@ -17,6 +17,7 @@ function stanford_soe_helper_sitewide_block_info() {
 
   return $blocks;
 }
+
 /**
  * Default settings wrapper for variable_get
  * @return [type] [description]
@@ -34,7 +35,7 @@ function stanford_soe_helper_sitewide_get_settings() {
 /**
  * Implements hook_block_view().
  */
-function stanford_soe_helper_sitewide_block_view($delta='') {
+function stanford_soe_helper_sitewide_block_view($delta = '') {
   $block = array();
 
   switch($delta) {
@@ -46,8 +47,10 @@ function stanford_soe_helper_sitewide_block_view($delta='') {
   return $block;
 }
 
-function soe_helper_sitewide_link_block_view()
-{
+/**
+ * Callback for displaying the intranet link block.
+ */
+function soe_helper_sitewide_link_block_view() {
   $settings = stanford_soe_helper_sitewide_get_settings();
   $block = array(
     'intranet_link' => array(
@@ -58,15 +61,5 @@ function soe_helper_sitewide_link_block_view()
     ),
   );
   return $block;
-}
-
-function soe_helper_intranet_link_block_delete() {
-
-  // Remove the bean we installed
-  db_delete('block')
-    ->condition('module', 'stanford_soe_helper_sitewide')
-    ->condition('delta', 'stanford_soe_intranet_link')
-    ->execute();
-
 }
 
