@@ -60,3 +60,21 @@ function stanford_soe_helper_sitewide_requirements($phase) {
   }
   return $requirements;
 }
+
+
+/**
+ * Implements hook_uninstall().
+ */
+
+
+function stanford_soe_helper_sitewide_uninstall() {
+  // Remove the bean we installed
+/*
+  db_delete('block')
+    ->condition('module', 'stanford_soe_helper_sitewide')
+    ->condition('delta', 'stanford_soe_sitewide_link')
+    ->execute();
+
+  watchdog('stanford_soe_helper_sitewide', 'Removed the Stanford SoE sitewide Link block.');
+*/
+}

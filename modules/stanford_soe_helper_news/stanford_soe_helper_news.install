@@ -19,3 +19,18 @@ function stanford_soe_helper_news_install() {
 
 }
 
+
+/**
+ * Implements hook_uninstall().
+ */
+
+function stanford_soe_helper_news_uninstall() {
+  // Remove the bean we installed
+
+  db_delete('block')
+    ->condition('module', 'stanford_soe_helper_news')
+    ->condition('delta', 'stanford_soe_news_link')
+    ->execute();
+
+  watchdog('stanford_soe_helper_news', 'Removed the Stanford SoE News Link block.');
+}
