@@ -23,11 +23,7 @@ function stanford_soe_helper_news_install() {
  */
 function stanford_soe_helper_news_uninstall() {
 
-  // Remove the bean we installed
-  db_delete('block')
-    ->condition('module', 'stanford_soe_helper_news')
-    ->condition('delta', 'stanford_soe_news_link')
-    ->execute();
-
+  stanford_soe_news_link_block_delete();
   watchdog('stanford_soe_helper_news', 'Removed the Stanford SoE News Link block.');
+
 }

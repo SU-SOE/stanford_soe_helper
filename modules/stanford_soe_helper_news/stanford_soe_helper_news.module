@@ -50,8 +50,7 @@ function stanford_soe_helper_news_block_view($delta='') {
   return $block;
 }
 
-function stanford_soe_news_link_block_view()
-{
+function stanford_soe_news_link_block_view() {
   $settings = stanford_soe_helper_news_get_settings();
   $block = array(
     'news_link' => array(
@@ -64,4 +63,14 @@ function stanford_soe_news_link_block_view()
   return $block;
 }
 
+
+function stanford_soe_news_link_block_delete() {
+
+  // Remove the bean we installed
+  db_delete('block')
+    ->condition('module', 'stanford_soe_helper_news')
+    ->condition('delta', 'stanford_soe_news_link')
+    ->execute();
+
+}
 

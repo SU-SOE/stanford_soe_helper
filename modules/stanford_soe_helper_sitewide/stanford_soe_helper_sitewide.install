@@ -25,13 +25,7 @@ function stanford_soe_helper_sitewide_install() {
  * Implements hook_uninstall().
  */
 function stanford_soe_helper_sitewide_uninstall() {
-
-  // Remove the bean we installed
-  db_delete('block')
-    ->condition('module', 'stanford_soe_helper_sitewide')
-    ->condition('delta', 'stanford_soe_intranet_link')
-    ->execute();
-
+  soe_helper_intranet_link_block_delete();
   watchdog('stanford_soe_helper_sitewide', 'Removed the Stanford SoE intranet Link block.');
 
 }

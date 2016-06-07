@@ -30,12 +30,8 @@ function stanford_soe_helper_drush_command() {
  */
 function drush_stanford_soe_helper_delete_intranet_link() {
 
-  // Remove the bean we installed
-  $bean = bean_load_delta('soe_intranet_link', TRUE);
-
-  if ($bean) {
-    bean_delete($bean);
-  }
+  // Remove the block we installed
+  soe_helper_intranet_link_block_delete();
   drush_log(dt("Deleted the SoE intranet link block."), "ok");
 }
 
@@ -45,10 +41,7 @@ function drush_stanford_soe_helper_delete_intranet_link() {
  */
 function drush_stanford_soe_helper_delete_news_link() {
 
-  // Remove the bean we installed
-  $bean = bean_load_delta('soe_news_link', TRUE);
-
-  if ($bean) {
-    bean_delete($bean);
-  }
+  // Remove the block we installed
+  stanford_soe_news_link_block_delete();
+  drush_log(dt("Deleted the SoE news link block."), "ok");
 }

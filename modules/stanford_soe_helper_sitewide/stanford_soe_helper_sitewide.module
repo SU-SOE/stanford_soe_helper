@@ -60,4 +60,13 @@ function soe_helper_sitewide_link_block_view()
   return $block;
 }
 
+function soe_helper_intranet_link_block_delete() {
+
+  // Remove the bean we installed
+  db_delete('block')
+    ->condition('module', 'stanford_soe_helper_sitewide')
+    ->condition('delta', 'stanford_soe_intranet_link')
+    ->execute();
+
+}
 
