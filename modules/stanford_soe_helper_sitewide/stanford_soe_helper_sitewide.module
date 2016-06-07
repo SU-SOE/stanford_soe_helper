@@ -6,9 +6,60 @@
 
 include_once 'stanford_soe_helper_sitewide.features.inc';
 
-/**
- * Implementation of hook_init().
- */
-function stanford_soe_helper_sitewide_init() {
+//todo: add a link to delete block per comment "Also, it would be nice to provide a link to the bean page so the user can delete it through the ui as well."
 
+/**
+ * Implements hook_block_info().
+ */
+function stanford_soe_helper_sitewide_block_info() {
+  $blocks = array();
+  $blocks['stanford_soe_intranet_link'] = array(
+    'info' => t('Stanford SoE Intranet Link'),
+  );
+
+  return $blocks;
 }
+/**
+ * Default settings wrapper for variable_get
+ * @return [type] [description]
+ */
+function stanford_soe_helper_sitewide_get_settings() {
+  $default_settings = array(
+    'news_link_title' => t('Intranet'),
+    'news_link_url' => 'https://sites.stanford.edu/jse-soe-intranet/',
+  );
+  $settings = variable_get('stanford_soe_helper_sitewide_settings', $default_settings );
+
+  return $settings;
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function stanford_soe_helper_sitewide_block_view($delta='') {
+  $block = array();
+
+  switch($delta) {
+    case 'stanford_soe_intranet_link' :
+      $block['content'] = soe_helper_sitewide_link_block_view();
+      break;
+  }
+
+  return $block;
+}
+
+function soe_helper_sitewide_link_block_view()
+{
+  $settings = stanford_soe_helper_sitewide_get_settings();
+  $block = array(
+    'intranet_link' => array(
+      '#type' => 'markup',
+      '#markup' => l($settings['intranet_link_title'],
+        $settings['intranet_link_url'],
+        array('attributes' => array('class' => 'private-link btn'))),
+    ),
+  );
+  return $block;
+}
+
+

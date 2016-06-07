@@ -13,7 +13,7 @@ function stanford_soe_helper_sitewide_install() {
   // Create a bean link block
   // See https://www.drupal.org/node/1436186
   // and http://api.drupalecommerce.org/api/misc/bean%21bean.test/function/BeanTests%3A%3AtestBeanAPI/7.x
-
+/*
   $text = l(t('Intranet'), 'https://sites.stanford.edu/jse-soe-intranet/',
     array('attributes' => array('class' => array('private-link btn'))));
 
@@ -25,7 +25,7 @@ function stanford_soe_helper_sitewide_install() {
     LANGUAGE_NONE => array(
       0 => array('value' => $text, 'format' => 'content_editor_text_format')));
   $bean->save();
-
+*/
   // Select the contexts for SoE sitewide and set the block sizes
   $context_status = variable_get('context_status', array());
   $context_status['sitewide_jse-soe'] = FALSE;
