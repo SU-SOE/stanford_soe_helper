@@ -29,11 +29,11 @@ function stanford_soe_helper_news_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'bean-soe_news_link' => array(
-          'module' => 'bean',
-          'delta' => 'soe_news_link',
+        'stanford_soe_helper_news-stanford_soe_news_link' => array(
+          'module' => 'stanford_soe_helper_news',
+          'delta' => 'stanford_soe_news_link',
           'region' => 'content_bottom',
-          'weight' => '-10',
+          'weight' => '-9',
         ),
       ),
     ),
