@@ -26,17 +26,17 @@ function stanford_soe_helper_news_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'bean-jumpstart-twitter-block' => array(
-          'module' => 'bean',
-          'delta' => 'jumpstart-twitter-block',
-          'region' => 'sidebar_first',
-          'weight' => '-4',
-        ),
         'menu_block-stanford_jsa_layouts-1' => array(
           'module' => 'menu_block',
           'delta' => 'stanford_jsa_layouts-1',
           'region' => 'sidebar_first',
-          'weight' => '-3',
+          'weight' => '-77',
+        ),
+        'bean-jumpstart-twitter-block' => array(
+          'module' => 'bean',
+          'delta' => 'jumpstart-twitter-block',
+          'region' => 'sidebar_first',
+          'weight' => '-76',
         ),
       ),
     ),
