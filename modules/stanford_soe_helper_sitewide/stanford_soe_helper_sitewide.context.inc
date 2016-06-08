@@ -60,6 +60,12 @@ function stanford_soe_helper_sitewide_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
+        'menu_block-stanford_jsa_layouts-2' => array(
+          'module' => 'menu_block',
+          'delta' => 'stanford_jsa_layouts-2',
+          'region' => 'navigation',
+          'weight' => '-10',
+        ),
         'bean-jse-linked-logo-block' => array(
           'module' => 'bean',
           'delta' => 'jse-linked-logo-block',
