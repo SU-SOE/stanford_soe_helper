@@ -549,8 +549,11 @@ input::-moz-placeholder {
 }
 
 @media (max-width: 767px) {
-  .not-logged-in#block-stanford-search-api-search-api-search-block input.search-query {
+  .not-logged-in #block-stanford-search-api-search-api-search-block input.search-query {
     background: #fbfbf9 url("../img/soe-magnifying-glass.png") no-repeat 12px center;
+  }
+  .not-logged-in #block-stanford-search-api-search-api-search-block input.search-query:focus {
+    margin-left: 0;
   }
 }
 
