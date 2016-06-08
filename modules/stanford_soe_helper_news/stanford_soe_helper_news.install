@@ -15,7 +15,10 @@ function stanford_soe_helper_news_install() {
   $context_status['soe_news_pages'] = FALSE;
   $context_status['stanford_news_extras'] = FALSE;
   $context_status['news_pages'] = TRUE;
+
+  // Get the context for SoE
+  $context_status['all_pages_but_homepage_soe'] = FALSE;
+  $context_status['all_pages_but_homepage_jsa'] = TRUE;
   variable_set('context_status', $context_status);
 
 }
-
