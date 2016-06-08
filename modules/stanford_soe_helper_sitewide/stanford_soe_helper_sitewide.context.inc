@@ -19,7 +19,6 @@ function stanford_soe_helper_sitewide_context_default_contexts() {
   $context->conditions = array(
     'path' => array(
       'values' => array(
-        'news/recent-news' => 'news/recent-news',
         '~<front>' => '~<front>',
         '~news/*' => '~news/*',
       ),
