@@ -1,0 +1,67 @@
+<?php
+/**
+ * @file
+ * Code for the Stanford SoE Helper News feature.
+ */
+
+include_once 'stanford_soe_helper_news.features.inc';
+
+/**
+ * Implements hook_block_info().
+ */
+function stanford_soe_helper_news_block_info() {
+  $blocks = array();
+  $blocks['stanford_soe_news_link'] = array(
+    'info' => t('Stanford SoE News Link'),
+  );
+
+  return $blocks;
+}
+
+/**
+ * Default settings wrapper for variable_get
+ * @return [type] [description]
+ */
+function stanford_soe_helper_news_get_settings() {
+  $default_settings = array(
+    'news_link_title' => t('See more news'),
+    'news_link_url' => 'news/recent-news',
+  );
+  $settings = variable_get('stanford_soe_helper_news_settings', $default_settings );
+
+  return $settings;
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function stanford_soe_helper_news_block_view($delta = '') {
+  $block = array();
+
+  switch($delta) {
+    case 'stanford_soe_news_link':
+      $block['content'] = stanford_soe_news_link_block_view();
+      break;
+  }
+
+  return $block;
+}
+
+/**
+ * Callback for news link block
+ */
+function stanford_soe_news_link_block_view() {
+  $settings = stanford_soe_helper_news_get_settings();
+  $block = array(
+    'news_link' => array(
+      '#type' => 'markup',
+      '#markup' => l($settings['news_link_title'],
+        $settings['news_link_url'],
+        array('attributes' => array('class' => 'more-link'))
+      ),
+    ),
+  );
+  return $block;
+}
+
+
