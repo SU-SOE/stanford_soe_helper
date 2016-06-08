@@ -13,6 +13,41 @@ function stanford_soe_helper_sitewide_context_default_contexts() {
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
+  $context->name = 'all_pages_but_homepage_soe';
+  $context->description = 'All pages but the home page for School of Engineering site';
+  $context->tag = 'Sub-pages';
+  $context->conditions = array(
+    'path' => array(
+      'values' => array(
+        'news/recent-news' => 'news/recent-news',
+        '~<front>' => '~<front>',
+        '~news/*' => '~news/*',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'menu_block-stanford_jsa_layouts-1' => array(
+          'module' => 'menu_block',
+          'delta' => 'stanford_jsa_layouts-1',
+          'region' => 'sidebar_first',
+          'weight' => '-10',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('All pages but the home page for School of Engineering site');
+  t('Sub-pages');
+  $export['all_pages_but_homepage_soe'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
   $context->name = 'sitewide_jse-soe';
   $context->description = 'Sitewide - All pages for SoE on JSE';
   $context->tag = 'Sitewide';
