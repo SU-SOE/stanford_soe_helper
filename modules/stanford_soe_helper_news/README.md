@@ -1,10 +1,10 @@
-#[Stanford SoE Helper for news](https://github.com/SU-SOE/stanford_soe_helper)
+# [Stanford SoE Helper for News](https://github.com/SU-SOE/stanford_soe_helper)
 ##### Version: 7.x-1.x
 
 Maintainers: [boznik](https://github.com/boznik),  [cjwest](https://github.com/cjwest)
 [Changelog.txt](CHANGELOG.txt)
 
-The Stanford Module feature provides School of Engineering (SoE) site specific functionality for news pages.
+The Stanford SoE Helper for News Module feature provides School of Engineering (SoE) site specific functionality for news pages.
 
 Installation
 ---

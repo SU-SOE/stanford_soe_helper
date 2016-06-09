@@ -1,10 +1,10 @@
-#[Stanford SoE sitewide helper](https://github.com/SU-SOE/stanford_soe_helper)
+# [Stanford SoE Sitewide Helper](https://github.com/SU-SOE/stanford_soe_helper)
 ##### Version: 7.x-1.x
 
 Maintainers: [boznik](https://github.com/boznik),  [cjwest](https://github.com/cjwest)
 [Changelog.txt](CHANGELOG.txt)
 
-The Stanford Module feature provides School of Engineering (SoE) site specific functionality that affects the entire site.
+The Stanford SoE Sitewide Helper Module feature provides School of Engineering (SoE) site specific functionality that affects the entire site.
 
 Installation
 ---

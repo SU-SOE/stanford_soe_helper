@@ -1,10 +1,10 @@
-#[Stanford SoE Helper for the homepage](https://github.com/SU-SOE/stanford_soe_helper)
+# [Stanford SoE Helper for the Homepage](https://github.com/SU-SOE/stanford_soe_helper)
 ##### Version: 7.x-1.x
 
 Maintainers: [boznik](https://github.com/boznik),  [cjwest](https://github.com/cjwest)
 [Changelog.txt](CHANGELOG.txt)
 
-The Stanford Module feature provides School of Engineering (SoE) site homepage.
+The Stanford SoE Helper for the Homepage Module feature provides School of Engineering (SoE) site homepage functionality.
 
 Installation
 ---
