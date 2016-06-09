@@ -59,6 +59,21 @@
 }
 
 
+/* INTRANET FOOTER BUTTON */
+
+@media (max-width: 979px) {
+  #footer #block-stanford-soe-helper-sitewide-stanford-soe-intranet-link {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  #footer #block-stanford-soe-helper-sitewide-stanford-soe-intranet-link {
+    margin-top: 0;
+  }
+}
+
+
 /* SUBNAV */
 
 .sidebar .block-menu,
@@ -158,8 +173,7 @@ li {
   margin-bottom: 10px;
 }
 
-.node .group_s_postcard_image .field-collection-container > .field > .field-items > .field-item,
-.node .group-s-postcard-image .field-collection-container > .field > .field-items > .field-item {
+.node .group_s_postcard_image .field-collection-container > .field > .field-items > .field-item {
   margin-left: 2em;
 }
 
@@ -171,8 +185,36 @@ li {
   border-top: 1px solid #d6d6d6;
 }
 
+@media (max-width: 400px) {
+  .node .group_s_postcard_image {
+    max-width: 100%;
+    float: none;
+  }
+  .node .group_s_postcard_image .field-collection-container > .field > .field-items > .field-item {
+    margin-left: 0;
+  }
+}
 
-/*HOMEPAGE*/
+@media (max-width: 1200px) {
+  .node-stanford-landing-page.stanford-4-col-header .field-name-field-landing-page-item > .field-items > .field-item {
+    width: 46.333%;
+  }
+}
+
+@media (max-width: 979px) {
+  .node-stanford-landing-page.stanford-4-col-header .field-name-field-landing-page-item > .field-items > .field-item {
+    width: 48%;
+    margin-right: 1.5%;
+  }
+}
+
+@media (max-width: 525px) {
+  .node-stanford-landing-page.stanford-4-col-header .field-name-field-landing-page-item > .field-items > .field-item {
+    width: 100%;
+    max-width: 100%;
+    margin-right: 0;
+  }
+}
 
 
 /*CALENDAR DAY + DATE SQUARE */
