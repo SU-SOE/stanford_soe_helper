@@ -2,6 +2,7 @@
 ##### Version: 7.x-1.x
 
 Maintainers: [boznik](https://github.com/boznik),  [cjwest](https://github.com/cjwest)
+
 [Changelog.txt](CHANGELOG.txt)
 
 The Stanford SoE Helper for News Module feature provides School of Engineering (SoE) site specific functionality for news pages.
