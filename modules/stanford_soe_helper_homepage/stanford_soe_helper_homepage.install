@@ -32,3 +32,16 @@ function stanford_soe_helper_homepage_uninstall() {
 
 }
 
+/**
+ * Implements hook_update_N().
+ */
+function stanford_soe_helper_homepage_update_7100() {
+
+  // switching blocks around per https://stanfordits.atlassian.net/browse/SOE-1023
+  $cbc_layouts = variable_get('contextual_block_class', array());
+  unset($cbc_layouts['stanford_jumpstart_soe_home']['bean-jumpstart-large-custom-block']);
+  $cbc_layouts['stanford_jumpstart_soe_home']['bean-jumpstart-large-custom-block'][] = 'span12 well';
+  variable_set('contextual_block_class', $cbc_layouts);
+
+}
+

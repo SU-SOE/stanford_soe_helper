@@ -25,7 +25,7 @@ function stanford_soe_helper_sitewide_block_info() {
 function stanford_soe_helper_sitewide_get_settings() {
   $default_settings = array(
     'intranet_link_title' => t('Intranet'),
-    'intranet_link_url' => 'https://sites.stanford.edu/jse-soe-intranet/',
+    'intranet_link_url' => 'https://insidesoe.stanford.edu/',
   );
   $settings = variable_get('stanford_soe_helper_sitewide_settings', $default_settings );
 
