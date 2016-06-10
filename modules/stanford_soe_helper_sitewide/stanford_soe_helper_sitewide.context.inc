@@ -66,6 +66,12 @@ function stanford_soe_helper_sitewide_context_default_contexts() {
           'region' => 'navigation',
           'weight' => '-10',
         ),
+        'stanford_search_api-search_api_search_block' => array(
+          'module' => 'stanford_search_api',
+          'delta' => 'search_api_search_block',
+          'region' => 'navigation',
+          'weight' => '-9',
+        ),
         'bean-jse-linked-logo-block' => array(
           'module' => 'bean',
           'delta' => 'jse-linked-logo-block',
