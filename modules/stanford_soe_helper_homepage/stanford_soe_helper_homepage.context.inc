@@ -38,29 +38,23 @@ function stanford_soe_helper_homepage_context_default_contexts() {
           'region' => 'content_row3',
           'weight' => '-10',
         ),
-        'views-stanford_events_views-block' => array(
-          'module' => 'views',
-          'delta' => 'stanford_events_views-block',
-          'region' => 'content_row3',
-          'weight' => '-7',
-        ),
         'views-9bf4ec9695a5b13242ba5a4898a6b635' => array(
           'module' => 'views',
           'delta' => '9bf4ec9695a5b13242ba5a4898a6b635',
           'region' => 'content_row3',
-          'weight' => '-6',
+          'weight' => '-9',
+        ),
+        'bean-jumpstart-small-custom-block' => array(
+          'module' => 'bean',
+          'delta' => 'jumpstart-small-custom-block',
+          'region' => 'content_row3',
+          'weight' => '-8',
         ),
         'bean-jumpstart-large-custom-block' => array(
           'module' => 'bean',
           'delta' => 'jumpstart-large-custom-block',
           'region' => 'content_lower',
           'weight' => '-10',
-        ),
-        'bean-jumpstart-small-custom-block' => array(
-          'module' => 'bean',
-          'delta' => 'jumpstart-small-custom-block',
-          'region' => 'content_lower',
-          'weight' => '-9',
         ),
         'views-3f5a4c4c101b2e6f6d77f52a746a2433' => array(
           'module' => 'views',
