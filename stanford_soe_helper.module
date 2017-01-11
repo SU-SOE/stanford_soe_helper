@@ -30,6 +30,8 @@ function stanford_soe_helper_init() {
     drupal_get_path('module', 'stanford_soe_helper') . "/css/stanford_news_layouts.css"
   );
 
+  // CSS Injector file weights start at 200.
+  // See http://www.rit.edu/drupal/api/drupal/sites!all!modules!css_injector!css_injector.module/7.43.
   $weight = 190;
   $conditions = "admin
 admin*
