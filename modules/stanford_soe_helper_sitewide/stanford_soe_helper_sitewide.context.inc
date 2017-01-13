@@ -96,11 +96,11 @@ function stanford_soe_helper_sitewide_context_default_contexts() {
           'region' => 'footer',
           'weight' => '-7',
         ),
-        'stanford_soe_helper_sitewide-stanford_soe_intranet_link' => array(
-          'module' => 'stanford_soe_helper_sitewide',
-          'delta' => 'stanford_soe_intranet_link',
+        'bean-stanford-soe-mailchimp-footer-bl' => array(
+          'module' => 'bean',
+          'delta' => 'stanford-soe-mailchimp-footer-bl',
           'region' => 'footer',
-          'weight' => '-6',
+          'weight' => '-5',
         ),
       ),
     ),
