@@ -64,3 +64,39 @@ user/*/edit";
   }
 }
 
+/**
+ * Implements hook_menu().
+ */
+function stanford_soe_helper_menu() {
+  $items['pingdom/webhook'] = array(
+    'page callback' => 'stanford_soe_helper_cc',
+    'access callback' => 'verify_pingdom',
+    'type' => MENU_CALLBACK,
+  );
+  return $items;
+}
+
+function verify_pingdom() {
+  if (isset($_GET['token']) && $_GET['token'] == 'e566c1b24ed4fb184010f47e22542118') {
+    return TRUE;
+  } else {
+    return FALSE;
+  }
+}
+
+/**
+ * Custom page callback.
+ */
+function stanford_soe_helper_cc() {
+  $flush_caches = &drupal_static(__FUNCTION__);
+  $fifteen_minutes_ago = strtotime('15 minutes ago');
+  $stanford_soe_helper_last_cc = variable_get('stanford_soe_helper_last_cc', 0);
+  if (!isset($flush_caches) && ($fifteen_minutes_ago > $stanford_soe_helper_last_cc)) {
+    if (isset($_GET['token']) && $_GET['token'] == 'e566c1b24ed4fb184010f47e22542118') {
+      drupal_flush_all_caches();
+      watchdog('pingdom', 'drupal cache was cleared after pingdom alert');
+      variable_set('stanford_soe_helper_last_cc', REQUEST_TIME);
+    }
+  }
+  return '';
+}
