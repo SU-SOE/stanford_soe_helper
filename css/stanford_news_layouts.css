@@ -173,7 +173,7 @@
 
 .node-type-stanford-news-item .group-s-caption-style.field-group-div.caption,
 .node-type-stanford-news-item .group-s-credits-style.field-group-div.credits {
-  display: inline-block;
+  display: inline;
 }
 
 @media (max-width: 550px) {
@@ -182,14 +182,23 @@
     display: block;
   }
 }
+@media (min-width: 790px) {
+  .node-type-stanford-news-item .postcard-image {
+    width: 700px;
+}
 
-.node-type-stanford-news-item .postcard-image {
-  width: 850px;
+@media (min-width: 980px) {
+  .node-type-stanford-news-item .postcard-image {
+    width: 850px;
 }
 
 .node-type-stanford-news-item .field-name-field-s-image-info .content .group-s-caption-style.field-group-div.caption, 
 .node-type-stanford-news-item .field-name-field-s-image-info .content .group-s-caption-style.field-group-div.caption .field-name-field-s-image-caption,
 .node-type-stanford-news-item .field-name-field-s-image-info .content .group-s-credits-style.field-group-div.credits,
+.node-type-stanford-news-item .field-name-field-s-image-info .content .group-s-credits-style.field-group-div.credits .field-items,
+.node-type-stanford-news-item .field-name-field-s-image-info .content .group-s-credits-style.field-group-div.credits .field-item,
+.node-type-stanford-news-item .field-name-field-s-image-info .content .group-s-credits-style.field-group-div.credits .field-items .field-item.even,
+.node-type-stanford-news-item .field-name-field-s-image-info .content .group-s-credits-style.field-group-div.credits .field-items .field-item.odd,
 .node-type-stanford-news-item .field-name-field-s-image-info .content .group-s-credits-style.field-group-div.credits .field-name-field-s-image-credits,
 .node-type-stanford-news-item .field-name-field-s-image-info .content .field-items,
 .node-type-stanford-news-item .field-name-field-s-image-info .content .field-item,
