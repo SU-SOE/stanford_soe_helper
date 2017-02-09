@@ -100,3 +100,16 @@ function stanford_soe_helper_cc() {
   }
   return '';
 }
+
+/**
+ * Implements hook_form_FORM_ID_alter() for stanford_news_item_node_form.
+ */
+function stanford_soe_helper_form_stanford_news_item_node_form_alter(
+  &$form,
+  &$form_state,
+  $form_id) {
+
+  // Handle deprecation of image credits.
+  stanford_news_extras_deprecate_image_credits($form, $form_id);
+}
+
