@@ -28,7 +28,10 @@ Install this module like any other module. [See Drupal Documentation](https://dr
 Configuration
 ---
 
-Nothing special needed.
+If using the Pingdom cache clear functionality in `stanford_soe_helper_cc()`, you need to set a variable with the same value as the token you are setting in Pingdom:
+```
+drush vset stanford_soe_helper_pingdom_token <token_value>
+```
 
 Troubleshooting
 ---
