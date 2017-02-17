@@ -77,7 +77,8 @@ function stanford_soe_helper_menu() {
 }
 
 function verify_pingdom() {
-  if (isset($_GET['token']) && $_GET['token'] == 'e566c1b24ed4fb184010f47e22542118') {
+  $stanford_soe_helper_pingdom_token = variable_get('stanford_soe_helper_pingdom_token');
+  if (isset($_GET['token']) && $_GET['token'] == $stanford_soe_helper_pingdom_token) {
     return TRUE;
   } else {
     return FALSE;
@@ -92,7 +93,8 @@ function stanford_soe_helper_cc() {
   $fifteen_minutes_ago = strtotime('15 minutes ago');
   $stanford_soe_helper_last_cc = variable_get('stanford_soe_helper_last_cc', 0);
   if (!isset($flush_caches) && ($fifteen_minutes_ago > $stanford_soe_helper_last_cc)) {
-    if (isset($_GET['token']) && $_GET['token'] == 'e566c1b24ed4fb184010f47e22542118') {
+    $stanford_soe_helper_pingdom_token = variable_get('stanford_soe_helper_pingdom_token');
+    if (isset($_GET['token']) && $_GET['token'] == $stanford_soe_helper_pingdom_token) {
       drupal_flush_all_caches();
       watchdog('pingdom', 'drupal cache was cleared after pingdom alert');
       variable_set('stanford_soe_helper_last_cc', REQUEST_TIME);
