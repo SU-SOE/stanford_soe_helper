@@ -112,6 +112,8 @@ function stanford_soe_helper_form_stanford_news_item_node_form_alter(
   $form_id) {
 
   // Handle deprecation of image credits.
-  stanford_news_extras_deprecate_image_credits($form, $form_id);
+  if (function_exists('stanford_news_extras_deprecate_image_credits')) {
+    stanford_news_extras_deprecate_image_credits($form, $form_id);
+  }
 }
 
