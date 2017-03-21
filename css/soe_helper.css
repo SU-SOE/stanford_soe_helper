@@ -5,11 +5,11 @@
 /* MAIN PAGE, MASTHEAD*/
 
 #global-header {
-    background-color: #b1040e;
+  background-color: #b1040e;
 }
 
 #global-header .container {
-    padding: 15px 0;
+  padding: 15px 0;
 }
 
 .main {
@@ -33,6 +33,7 @@
   font-weight: 600;
 }
 
+
 /*REVISED LOGO SIZE FOR NEW MASTHEAD, REMOVE ME IF WE DONT GO WITH THIS FORMAT*/
 
 #header #logo img {
@@ -47,6 +48,7 @@
 .site-name a:hover {
   letter-spacing: -0.02em;
 }
+
 
 /*FOOTER*/
 
@@ -63,6 +65,7 @@
   line-height: 1.3em;
 }
 
+
 /* INTRANET FOOTER BUTTON */
 
 @media (max-width: 979px) {
@@ -76,6 +79,7 @@
     margin-top: 0;
   }
 }
+
 
 /* SUBNAV */
 
@@ -136,12 +140,14 @@
   margin-left: -13.5px;
 }
 
+
 /* CONTAINERS */
 
 .well {
   background: #fff;
   box-shadow: rgba(0, 0, 0, 0.1) 0 1px 0px, rgba(0, 0, 0, 0.1) 0 2px 2px 0px;
 }
+
 
 /* INTERIOR OF PAGE THANGS */
 
@@ -234,6 +240,7 @@ li {
   }
 }
 
+
 /* CALENDAR */
 
 .view-stanford-events-calendar .view-header .date-nav-wrapper {
@@ -256,6 +263,7 @@ li {
   background: #d7d7d7;
 }
 
+
 /*CALENDAR DAY + DATE SQUARE */
 
 .date-day {
@@ -267,6 +275,7 @@ li {
 .date-stacked {
   margin-top: 7px;
 }
+
 
 /*NEWS WIDGET*/
 
@@ -286,6 +295,7 @@ li {
 .postcard-left>div:first-child img {
   margin-top: 7px;
 }
+
 
 /* TABLES */
 
@@ -311,7 +321,9 @@ td {
   border-left: none;
 }
 
+
 /*PEOPLE*/
+
 
 /*GRID*/
 
@@ -319,6 +331,7 @@ td {
   font-size: 1em;
   margin: .6em 0 0;
 }
+
 
 /* LIST VIEW */
 
@@ -333,6 +346,7 @@ textarea {
 .views-exposed-form label {
   font-weight: normal;
 }
+
 
 /* FORMS*/
 
@@ -393,6 +407,7 @@ input.form-submit:focus {
   font-weight: 400;
 }
 
+
 /* LISTS */
 
 .views-row-lines .views-row {
@@ -413,6 +428,7 @@ ul.pager li.pager-current {
   margin-right: 4px;
   font-weight: 300;
 }
+
 
 /* WYSIWYG */
 
@@ -474,12 +490,14 @@ a.external-link:after {
   padding: 0 5px 1px 20px;
 }
 
+
 /*MAIN BODY*/
 
 body {
   font-size: 20px;
   line-height: 1.5em;
 }
+
 
 /* ***************************************************** */
 
@@ -512,6 +530,7 @@ body {
   }
 }
 
+
 /* SIDEBAR FIRST AND MAIN CONTENT GUTTER */
 
 @media (min-width: 1200px) {
@@ -522,6 +541,7 @@ body {
     margin-left: 80px;
   }
 }
+
 
 /* MAIN NAVIGATION STYLES */
 
@@ -602,6 +622,7 @@ body {
   }
 }
 
+
 /* SUB-NAVIGATION STYLES */
 
 .sidebar .block-menu-block .menu-block-wrapper>.menu>li.last {
@@ -612,32 +633,39 @@ body {
   font-weight: 400;
 }
 
+
 /* SEARCH */
 
 #block-stanford-search-api-search-api-search-block {
-    margin-top: -22px;
+  margin-top: -22px;
 }
 
 #block-stanford-search-api-search-api-search-block input#edit-search {
-    display: none;
+  display: none;
 }
 
 #block-stanford-search-api-search-api-search-block input[type="text"] {
-    color: white;
-    background-color: transparent;
-    border: none;
-    box-shadow: none;
+  color: white;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
 }
 
 #block-stanford-search-api-search-api-search-block .form-item {
-    background: url("../img/soe-magnifying-glass.png") no-repeat 500px center;
+  background: url("../img/soe-magnifying-glass.png") no-repeat 83% center;
 }
+
+#block-stanford-search-api-search-api-search-block .input-medium {
+  width: 110px;
+}
+
 
 /* SEARCH PAGE ADVANCED SEARCH SPACING */
 
 .page-search div#edit-basic {
   margin-bottom: 5px;
 }
+
 
 /* BUTTON LINK STYLES */
 
@@ -654,6 +682,7 @@ body {
   }
 }
 
+
 /* AFTER CONTENT FOR HEADING LINKS */
 
 #content .content-body .field-name-body h2 a:after,
@@ -668,6 +697,7 @@ body {
 .node-type-webform textarea {
   height: 100px;
 }
+
 
 /* MAILCHIMP SIGN-UP */
 
