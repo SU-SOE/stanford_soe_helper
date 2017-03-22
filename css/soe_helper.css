@@ -560,6 +560,7 @@ body {
 }
 
 .navbar .nav>li>a {
+  color: #b1040e;
   font-size: 1.1em;
   font-weight: 400;
   border-bottom: 2px solid transparent;
@@ -654,7 +655,7 @@ body {
 }
 
 #block-stanford-search-api-search-api-search-block input[type="text"] {
-  font-size: 1.1em;
+  font-size: 18px;
   color: white;
   background-color: transparent;
   border: none;
@@ -662,11 +663,11 @@ body {
 }
 
 #block-stanford-search-api-search-api-search-block .form-item {
-  background: url("../img/soe_mag_glass_white.svg") no-repeat 80% center;
+  background: url("../img/soe_mag_glass_white.svg") no-repeat 89% center;
 }
 
 #block-stanford-search-api-search-api-search-block .input-medium {
-  width: 130px;
+  width: 60px;
 }
 
 #block-stanford-search-api-search-api-search-block input::-webkit-input-placeholder {
@@ -679,6 +680,48 @@ body {
 
 #block-stanford-search-api-search-api-search-block input:-ms-input-placeholder {
   color: #ffffff;
+}
+
+@media (max-width: 1199px) {
+  #block-stanford-search-api-search-api-search-block .form-item {
+    background-position: 86.5%;
+  }
+}
+
+@media (max-width: 979px) {
+  #block-stanford-search-api-search-api-search-block .form-item {
+    background-position: 82%;
+  }
+}
+
+@media (max-width: 767px) {
+  #block-stanford-search-api-search-api-search-block .form-item {
+    background-position: 76.5%;
+  }
+}
+
+@media (max-width: 695px) {
+  #block-stanford-search-api-search-api-search-block .form-item {
+    background-position: 72%;
+  }
+}
+
+@media (max-width: 580px) {
+  #block-stanford-search-api-search-api-search-block .form-item {
+    background-position: 65%;
+  }
+}
+
+@media (max-width: 480px) {
+  #block-stanford-search-api-search-api-search-block .form-item {
+    background-position: 58%;
+  }
+}
+
+@media (max-width: 400px) {
+  #block-stanford-search-api-search-api-search-block .form-item {
+    background-position: 45%;
+  }
 }
 
 
