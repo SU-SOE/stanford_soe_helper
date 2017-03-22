@@ -571,7 +571,6 @@ body {
 .navbar .nav>li>a:hover,
 .navbar .nav>.active-trail>a {
   border-bottom: 2px solid #333333;
-  padding-bottom: 30px;
 }
 
 .navbar {
@@ -579,7 +578,6 @@ body {
 }
 
 .region-navigation .block.contextual-links-region {
-  float: left;
   padding-right: 7px;
   margin-right: 7px;
 }
@@ -609,11 +607,15 @@ body {
     float: right;
   }
   .navbar .btn-navbar {
+    background: #b1040e;
     margin-top: -50px;
   }
   .nav-collapse,
   .nav-collapse.collapse {
     width: 100%;
+  }
+  .navbar .nav>li>a {
+    padding-bottom: .25em;
   }
 }
 
