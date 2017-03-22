@@ -573,6 +573,10 @@ body {
   border-bottom: 2px solid #333333;
 }
 
+.navbar .nav>.active>a:hover {
+  border-bottom: none;
+}
+
 .navbar {
   margin-bottom: 0;
 }
@@ -616,6 +620,7 @@ body {
   }
   .navbar .nav>li>a {
     padding-bottom: .25em;
+    border-bottom: none;
   }
   .navbar .nav>li>a:focus,
   .navbar .nav>li>a:hover,
