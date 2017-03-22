@@ -617,6 +617,11 @@ body {
   .navbar .nav>li>a {
     padding-bottom: .25em;
   }
+  .navbar .nav>li>a:focus,
+  .navbar .nav>li>a:hover,
+  .navbar .nav>.active-trail>a {
+    border-bottom: none;
+  }
 }
 
 @media (max-width: 480px) {
