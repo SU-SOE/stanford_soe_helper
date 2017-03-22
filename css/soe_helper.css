@@ -652,11 +652,23 @@ body {
 }
 
 #block-stanford-search-api-search-api-search-block .form-item {
-  background: url("../img/soe-magnifying-glass.png") no-repeat 83% center;
+  background: url("../img/soe_mag_glass_white.svg") no-repeat 83% center;
 }
 
 #block-stanford-search-api-search-api-search-block .input-medium {
   width: 110px;
+}
+
+#block-stanford-search-api-search-api-search-block input::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+#block-stanford-search-api-search-api-search-block input::-moz-placeholder {
+  color: #ffffff;
+}
+
+#block-stanford-search-api-search-api-search-block input:-ms-input-placeholder {
+  color: #ffffff;
 }
 
 
