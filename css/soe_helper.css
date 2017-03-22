@@ -470,6 +470,14 @@ p.columns {
   column-gap: 100px;
 }
 
+@media (max-width: 767px) {
+  p.columns {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+  }
+}
+
 p.related-link {
   background: #ffffff;
   padding: 26px 36px;
