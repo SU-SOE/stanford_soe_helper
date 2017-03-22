@@ -117,3 +117,11 @@ function stanford_soe_helper_form_stanford_news_item_node_form_alter(
   }
 }
 
+function stanford_soe_helper_form_alter(
+  &$form,
+  &$form_state,
+  $form_id) {
+
+var_dump ($form_id);
+
+  }
