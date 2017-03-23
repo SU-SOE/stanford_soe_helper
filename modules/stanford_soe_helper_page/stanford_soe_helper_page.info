@@ -1,0 +1,13 @@
+name = Stanford SoE Helper Page
+description = Engineering updates for the Stanford Page
+core = 7.x
+package = Stanford
+version = 7.x-1.0-alpha1
+dependencies[] = ctools
+dependencies[] = ds
+features[ctools][] = ds:ds:1
+features[ds_field_settings][] = node|stanford_page|stanford_engineering
+features[ds_layout_settings][] = node|stanford_page|stanford_engineering
+features[ds_view_modes][] = stanford_engineering
+features[features_api][] = api:2
+project path = sites/all/modules/stanford/stanford_soe_helper/modules/
