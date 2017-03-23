@@ -70,8 +70,17 @@
 
 /*FOOTER*/
 
+#global-footer {
+  background-color: #b1040e;
+}
+
 .site-footer {
+  border-top: none;
   background: #fff;
+}
+
+.site-footer h2 {
+  line-height: 1.3em;
 }
 
 #footer .block {
@@ -79,8 +88,24 @@
   line-height: 1.4em;
 }
 
-.site-footer h2 {
-  line-height: 1.3em;
+
+/* SOCIAL MEDIA ICONS */
+
+#block-bean-jumpstart-footer-social-media-0 {
+  float: right;
+  width: 23%;
+  margin-bottom: 50px;
+}
+
+.bean-stanford-social-media-connect a {
+  height: 32px;
+  width: 32px;
+}
+
+.bean-stanford-social-media-connect .field-name-field-s-smc-facebook a {
+  background-image: url(https://sites.stanford.edu/jse-soe-new-preview/sites/default/files/facebook.png);
+  background-repeat: no-repeat;
+  background-size: 32px auto;
 }
 
 
