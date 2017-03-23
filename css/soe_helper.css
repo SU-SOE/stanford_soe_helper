@@ -93,8 +93,22 @@
 
 #block-bean-jumpstart-footer-social-media-0 {
   float: right;
-  width: 23%;
+  width: 19%;
   margin-bottom: 50px;
+}
+
+@media (max-width: 1199px) {
+  #block-bean-jumpstart-footer-social-media-0 {
+    width: 24%;
+  }
+}
+
+@media (max-width: 979px) {
+  #block-bean-jumpstart-footer-social-media-0 {
+    float: none;
+    width: auto;
+    margin-bottom: 30px;
+  }
 }
 
 .bean-stanford-social-media-connect a {
@@ -121,12 +135,12 @@
 
 .bean-stanford-social-media-connect .field-name-field-s-smc-youtube a {
   background-image: url("../img/soe_youtube_icon.png");
-  width: 30px;
+  width: 40px;
 }
 
 .bean-stanford-social-media-connect .field-name-field-s-smc-instagram a {
   background-image: url("../img/soe_instagram_icon.png");
-  width: 40px;
+  width: 30px;
   margin-right: 0;
 }
 
