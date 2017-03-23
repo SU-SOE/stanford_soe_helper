@@ -27,6 +27,16 @@ function stanford_soe_helper_page_context_default_contexts() {
     ),
   );
   $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'ds_extras-title' => array(
+          'module' => 'ds_extras',
+          'delta' => 'title',
+          'region' => 'main_upper',
+          'weight' => '-10',
+        ),
+      ),
+    ),
     'context_reaction_view_mode' => array(
       'entity_types' => array(
         'bean' => array(
