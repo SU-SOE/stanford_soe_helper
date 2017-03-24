@@ -8,13 +8,13 @@
 .normal-link a,
 a,
 a.more-link {
-  color: #b1040e;
+  color: $cardinal;
 }
 
 /* MAIN PAGE, MASTHEAD*/
 
 #global-header {
-  background-color: #b1040e;
+  background-color: $cardinal;
 }
 
 #global-header .container {
@@ -40,7 +40,7 @@ a.more-link {
 
 .main {
   padding-top: 60px;
-  background: #f8f8f8;
+  background: $off-white;
 }
 
 .main .border-simple img,
@@ -49,7 +49,7 @@ a.more-link {
 }
 
 .header {
-  background: #fff;
+  background: $white;
   padding: 32px 0 0;
 }
 
@@ -77,12 +77,12 @@ a.more-link {
 /*FOOTER*/
 
 #global-footer {
-  background-color: #b1040e;
+  background-color: $cardinal;
 }
 
 .site-footer {
   border-top: none;
-  background: #fff;
+  background: $white;
 }
 
 .site-footer h2 {
@@ -162,7 +162,7 @@ a.more-link {
 /* SUBNAV */
 
 .sidebar .nav li a {
-  color: #b1040e;
+  color: $cardinal;
 }
 
 .sidebar .block-menu,
@@ -177,7 +177,7 @@ a.more-link {
 
 .sidebar .block-menu h2,
 .sidebar .block-menu-block h2 {
-  font-family: "Roboto Slab";
+  font-family: $roboto-slab;
   font-weight: 400;
   letter-spacing: 0;
 }
@@ -222,14 +222,14 @@ a.more-link {
 /* CONTAINERS */
 
 .well {
-  background: #fff;
+  background: $white;
   box-shadow: rgba(0, 0, 0, 0.1) 0 1px 0px, rgba(0, 0, 0, 0.1) 0 2px 2px 0;
 }
 
 /* INTERIOR OF PAGE THANGS */
 
 .summary {
-  font-family: "Roboto Slab";
+  font-family: $roboto-slab;
   font-size: 1.3;
   line-height: 1.5em;
 }
@@ -238,12 +238,12 @@ h1 {
   font-weight: 400;
   margin: -9px 0 10px;
   font-size: 1.9em;
-  font-family: "Roboto Slab";
+  font-family: $roboto-slab;
   letter-spacing: 0;
 }
 
 h2 {
-  font-family: "Roboto Slab";
+  font-family: $roboto-slab;
   font-size: 1.4em;
   letter-spacing: 0.02em;
 }
@@ -317,30 +317,30 @@ li {
 /* CALENDAR */
 
 .view-stanford-events-calendar .view-header .date-nav-wrapper {
-  background: #fff;
+  background: $white;
 }
 
 .calendar-calendar th.days {
-  background: #efefef;
+  background: $light-gray;
 }
 
 .calendar-calendar .mini td {
-  background: #efefef;
+  background: $light-gray;
 }
 
 .calendar-calendar table.mini td.empty {
-  background: #d7d7d7;
+  background: $gray;
 }
 
 .calendar-calendar .mini td.has-events {
-  background: #d7d7d7;
+  background: $gray;
 }
 
 /*CALENDAR DAY + DATE SQUARE */
 
 .date-day {
   font-size: 22px;
-  font-family: "Roboto Slab";
+  font-family: $roboto-slab;
   font-weight: 400;
 }
 
@@ -377,7 +377,7 @@ th {
 }
 
 th {
-  background: #efefef;
+  background: $light-gray;
   border: 1px solid #d6d6d6;
 }
 
@@ -419,7 +419,7 @@ textarea {
 input.form-submit {
   padding: 0 13px;
   background-image: none;
-  background: #fff;
+  background: $white;
   color: #8c1515;
 }
 
@@ -465,8 +465,8 @@ select {
 
 input.form-submit:focus,
 input.form-submit:hover {
-  background: #b1040e;
-  color: #fff;
+  background: $cardinal;
+  color: $white;
 }
 
 .form-item label {
@@ -476,12 +476,12 @@ input.form-submit:hover {
 /* LISTS */
 
 .views-row-lines .views-row {
-  border-color: #d7d7d7;
+  border-color: $gray;
 }
 
 ul.pager li a {
-  border: 1px solid #d7d7d7;
-  background: #fff;
+  border: 1px solid $gray;
+  background: $white;
   margin-bottom: 12px;
   margin-right: 4px;
   font-size: 0.9em;
@@ -503,26 +503,26 @@ a.btn {
   margin: 0 0 26px;
   padding: 0.7em 1em;
   letter-spacing: 0.03em;
-  background: #b1040e;
+  background: $cardinal;
 }
 
 a.btn-yellow {
-  color: #000000;
-  background: #ffbd54;
+  color: $black;
+  background: $yellow;
 }
 
 a.btn-turquoise {
-  color: #000000;
-  background: #00ece9;
+  color: $black;
+  background: $turquoise;
 }
 
 a.btn-pink {
-  color: #000000;
-  background: #ff525C;
+  color: $black;
+  background: $pink;
 }
 
 p.columns {
-  font-family: "Roboto Slab";
+  font-family: $roboto-slab;
   font-size: 32px;
   line-height: 54px;
   font-weight: bold;
@@ -542,7 +542,7 @@ p.columns {
 }
 
 p.related-link {
-  background: #ffffff;
+  background: $white;
   padding: 26px 36px;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
 }
@@ -616,7 +616,7 @@ body {
 }
 
 .navbar .nav > li > a {
-  color: #b1040e;
+  color: $cardinal;
   font-size: 18px;
   font-weight: 400;
   border-bottom: 2px solid transparent;
@@ -627,7 +627,7 @@ body {
 .navbar .nav > .active-trail > a,
 .navbar .nav > li > a:focus,
 .navbar .nav > li > a:hover {
-  border-bottom: 2px solid #333333;
+  border-bottom: 2px solid $primary-color;
 }
 
 .navbar {
@@ -640,7 +640,7 @@ body {
 }
 
 .site-main-menu {
-  background: #fff;
+  background: $white;
   border-bottom: 1px solid #e1e1e1;
 }
 @media (max-width: 1200px) {
@@ -665,7 +665,7 @@ body {
   }
 
   .navbar .btn-navbar {
-    background: #b1040e;
+    background: $cardinal;
     margin-top: -50px;
   }
 
@@ -738,15 +738,15 @@ body {
 }
 
 #block-stanford-search-api-search-api-search-block input::-webkit-input-placeholder {
-  color: #ffffff;
+  color: $white;
 }
 
 #block-stanford-search-api-search-api-search-block input::-moz-placeholder {
-  color: #ffffff;
+  color: $white;
 }
 
 #block-stanford-search-api-search-api-search-block input:-ms-input-placeholder {
-  color: #ffffff;
+  color: $white;
 }
 @media (max-width: 1199px) {
   #block-stanford-search-api-search-api-search-block .form-item {
@@ -821,11 +821,11 @@ body {
 /* MAILCHIMP SIGN-UP */
 
 #mc_embed_signup_scroll .mc-field-group input::-webkit-input-placeholder {
-  color: #ccc;
+  color: $dark-gray;
 }
 
 #mc_embed_signup_scroll .mc-field-group input::-moz-placeholder {
-  color: #ccc;
+  color: $dark-gray;
 }
 
 #mc_embed_signup_scroll input.button {
@@ -856,14 +856,14 @@ body {
 #mc_embed_signup_scroll input,
 #mc_embed_signup_scroll select,
 #mc_embed_signup_scroll textarea {
-  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: $primary-font;
 }
 
 #mc_embed_signup_scroll #mc-embedded-subscribe input,
 #mc_embed_signup_scroll #mc-embedded-subscribe.button {
-  background-color: #b1040e;
+  background-color: $cardinal;
   border-style: none;
-  color: #fff;
+  color: $white;
 }
 
 #mc_embed_signup_scroll p {
