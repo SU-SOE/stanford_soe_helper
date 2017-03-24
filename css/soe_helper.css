@@ -5,7 +5,9 @@
 /* GLOBAL */
 
 a,
-.normal-link a {
+.normal-link a,
+a.more-link,
+.more-link a {
   color: #b1040e;
 }
 
@@ -169,6 +171,10 @@ a,
 
 
 /* SUBNAV */
+
+.sidebar .nav li a {
+  color: #b1040e;
+}
 
 .sidebar .block-menu,
 .sidebar .block-menu-block {
@@ -643,6 +649,7 @@ body {
 }
 
 .navbar .nav>li>a {
+  color: #b1040e;
   font-size: 18px;
   font-weight: 400;
   border-bottom: 2px solid transparent;
