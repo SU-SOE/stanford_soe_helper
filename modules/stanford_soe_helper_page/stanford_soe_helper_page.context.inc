@@ -14,7 +14,7 @@ function stanford_soe_helper_page_context_default_contexts() {
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
   $context->name = 'stanford_page_engineering';
-  $context->description = 'Engineering context for Stanford pages ';
+  $context->description = 'Engineering context for Stanford page';
   $context->tag = 'Engineering';
   $context->conditions = array(
     'node' => array(
@@ -22,21 +22,11 @@ function stanford_soe_helper_page_context_default_contexts() {
         'stanford_page' => 'stanford_page',
       ),
       'options' => array(
-        'node_form' => '0',
+        'node_form' => '1',
       ),
     ),
   );
   $context->reactions = array(
-    'block' => array(
-      'blocks' => array(
-        'ds_extras-title' => array(
-          'module' => 'ds_extras',
-          'delta' => 'title',
-          'region' => 'main_upper',
-          'weight' => '-10',
-        ),
-      ),
-    ),
     'context_reaction_view_mode' => array(
       'entity_types' => array(
         'bean' => array(
@@ -55,14 +45,12 @@ function stanford_soe_helper_page_context_default_contexts() {
           'field_s_event_speakers' => 'none',
           'field_s_gallery_image_info' => 'none',
           'field_landing_page_item' => 'none',
-          'field_p_cards_card' => 'none',
         ),
         'node' => array(
           'stanford_affiliate_organization' => 'none',
           'stanford_gallery' => 'none',
           'stanford_help_page' => 'none',
           'stanford_landing_page' => 'none',
-          'stanford_magazine_article' => 'none',
           'stanford_news_item' => 'none',
           'stanford_person' => 'none',
           'stanford_private_page' => 'none',
@@ -70,15 +58,7 @@ function stanford_soe_helper_page_context_default_contexts() {
           'stanford_event' => 'none',
           'stanford_event_importer' => 'none',
           'stanford_event_series' => 'none',
-          'stanford_page' => 'stanford_engineering',
-        ),
-        'paragraphs_item' => array(
-          'p_buttons' => 'none',
-          'p_callout' => 'none',
-          'p_cards' => 'none',
-          'p_hero' => 'none',
-          'p_menu' => 'none',
-          'p_wysiwyg' => 'none',
+          'stanford_page' => 'engineering',
         ),
         'capx_cfe' => array(
           'mapper' => 'none',
@@ -113,8 +93,6 @@ function stanford_soe_helper_page_context_default_contexts() {
           'stanford_video_categories' => 'none',
           'stanford_slide_category' => 'none',
           'fellowship_location' => 'none',
-          'stanford_magazine_topics' => 'none',
-          'stanford_magazine_series' => 'none',
         ),
         'user' => array(
           'user' => 'none',
@@ -122,7 +100,7 @@ function stanford_soe_helper_page_context_default_contexts() {
         'wysiwyg_profile' => array(
           'wysiwyg_profile' => 'none',
         ),
-        'reactions__plugins__context_reaction_view_mode__entity_types__active_tab' => 'edit-reactions-plugins-context-reaction-view-mode-entity-types-bean',
+        'reactions__plugins__context_reaction_view_mode__entity_types__active_tab' => 'edit-reactions-plugins-context-reaction-view-mode-entity-types-node',
       ),
     ),
   );
@@ -131,7 +109,7 @@ function stanford_soe_helper_page_context_default_contexts() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Engineering');
-  t('Engineering context for Stanford pages ');
+  t('Engineering context for Stanford page');
   $export['stanford_page_engineering'] = $context;
 
   return $export;

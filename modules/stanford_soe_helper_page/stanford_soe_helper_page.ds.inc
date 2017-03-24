@@ -12,23 +12,18 @@ function stanford_soe_helper_page_ds_field_settings_info() {
 
   $ds_fieldsetting = new stdClass();
   $ds_fieldsetting->api_version = 1;
-  $ds_fieldsetting->id = 'node|stanford_page|stanford_engineering';
+  $ds_fieldsetting->id = 'node|stanford_page|engineering';
   $ds_fieldsetting->entity_type = 'node';
   $ds_fieldsetting->bundle = 'stanford_page';
-  $ds_fieldsetting->view_mode = 'stanford_engineering';
+  $ds_fieldsetting->view_mode = 'engineering';
   $ds_fieldsetting->settings = array(
     'title' => array(
-      'weight' => '4',
+      'weight' => '6',
       'label' => 'hidden',
       'format' => 'default',
-      'formatter_settings' => array(
-        'link' => '0',
-        'wrapper' => 'h1',
-        'class' => '',
-      ),
     ),
   );
-  $export['node|stanford_page|stanford_engineering'] = $ds_fieldsetting;
+  $export['node|stanford_page|engineering'] = $ds_fieldsetting;
 
   return $export;
 }
@@ -41,28 +36,32 @@ function stanford_soe_helper_page_ds_layout_settings_info() {
 
   $ds_layout = new stdClass();
   $ds_layout->api_version = 1;
-  $ds_layout->id = 'node|stanford_page|stanford_engineering';
+  $ds_layout->id = 'node|stanford_page|engineering';
   $ds_layout->entity_type = 'node';
   $ds_layout->bundle = 'stanford_page';
-  $ds_layout->view_mode = 'stanford_engineering';
+  $ds_layout->view_mode = 'engineering';
   $ds_layout->layout = 'ds_1col';
   $ds_layout->settings = array(
     'regions' => array(
       'ds_content' => array(
-        0 => 'field_s_page_sections',
-        1 => 'body',
-        2 => 'field_s_page_file',
+        0 => 'group_s_postcard',
+        1 => 'group_s_postcard_image',
+        2 => 'group_s_postcard_content',
         3 => 'field_s_image_info',
+        4 => 'body',
+        5 => 'field_s_page_file',
       ),
       'title' => array(
-        4 => 'title',
+        6 => 'title',
       ),
     ),
     'fields' => array(
-      'field_s_page_sections' => 'ds_content',
+      'group_s_postcard' => 'ds_content',
+      'group_s_postcard_image' => 'ds_content',
+      'group_s_postcard_content' => 'ds_content',
+      'field_s_image_info' => 'ds_content',
       'body' => 'ds_content',
       'field_s_page_file' => 'ds_content',
-      'field_s_image_info' => 'ds_content',
       'title' => 'title',
     ),
     'classes' => array(),
@@ -76,7 +75,7 @@ function stanford_soe_helper_page_ds_layout_settings_info() {
     'layout_link_custom' => '',
     'layout_disable_css' => FALSE,
   );
-  $export['node|stanford_page|stanford_engineering'] = $ds_layout;
+  $export['node|stanford_page|engineering'] = $ds_layout;
 
   return $export;
 }
@@ -89,12 +88,12 @@ function stanford_soe_helper_page_ds_view_modes_info() {
 
   $ds_view_mode = new stdClass();
   $ds_view_mode->api_version = 1;
-  $ds_view_mode->view_mode = 'stanford_engineering';
+  $ds_view_mode->view_mode = 'engineering';
   $ds_view_mode->label = 'Engineering';
   $ds_view_mode->entities = array(
     'node' => 'node',
   );
-  $export['stanford_engineering'] = $ds_view_mode;
+  $export['engineering'] = $ds_view_mode;
 
   return $export;
 }
