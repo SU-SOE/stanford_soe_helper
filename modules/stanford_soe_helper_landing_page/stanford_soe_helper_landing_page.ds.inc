@@ -18,7 +18,7 @@ function stanford_soe_helper_landing_page_ds_field_settings_info() {
   $ds_fieldsetting->view_mode = 'full';
   $ds_fieldsetting->settings = array(
     'title' => array(
-      'weight' => '4',
+      'weight' => '5',
       'label' => 'hidden',
       'format' => 'default',
       'formatter_settings' => array(
@@ -50,16 +50,18 @@ function stanford_soe_helper_landing_page_ds_layout_settings_info() {
     'regions' => array(
       'ds_content' => array(
         0 => 'field_s_image_info',
-        1 => 'body',
-        2 => 'field_s_landing_page_lead_text',
-        3 => 'field_landing_page_item',
+        1 => 'group_lead_text_styles',
+        2 => 'body',
+        3 => 'field_s_landing_page_lead_text',
+        4 => 'field_landing_page_item',
       ),
       'stanford_landing_page_title' => array(
-        4 => 'title',
+        5 => 'title',
       ),
     ),
     'fields' => array(
       'field_s_image_info' => 'ds_content',
+      'group_lead_text_styles' => 'ds_content',
       'body' => 'ds_content',
       'field_s_landing_page_lead_text' => 'ds_content',
       'field_landing_page_item' => 'ds_content',

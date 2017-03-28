@@ -21,8 +21,10 @@ function stanford_soe_helper_landing_page_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Lead text styles',
-    'weight' => '13',
-    'children' => array(),
+    'weight' => '1',
+    'children' => array(
+      0 => 'field_s_landing_page_lead_text',
+    ),
     'format_type' => 'div',
     'format_settings' => array(
       'label' => 'Lead text styles',
