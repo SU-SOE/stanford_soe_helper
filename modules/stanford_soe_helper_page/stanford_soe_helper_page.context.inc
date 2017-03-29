@@ -35,6 +35,12 @@ function stanford_soe_helper_page_context_default_contexts() {
           'region' => 'main_upper',
           'weight' => '-10',
         ),
+        'views-70b72ff865a9d4211659cbdcdea9f13f' => array(
+          'module' => 'views',
+          'delta' => '70b72ff865a9d4211659cbdcdea9f13f',
+          'region' => 'fullwidth_bottom',
+          'weight' => '-9',
+        ),
       ),
     ),
   );
