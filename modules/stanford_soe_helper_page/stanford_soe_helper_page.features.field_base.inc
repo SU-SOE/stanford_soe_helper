@@ -10,7 +10,7 @@
 function stanford_soe_helper_page_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_s_banner_caption_color'.
+  // Exported field_base: 'field_s_banner_caption_color'
   $field_bases['field_s_banner_caption_color'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -35,7 +35,7 @@ function stanford_soe_helper_page_field_default_field_bases() {
     'type' => 'list_text',
   );
 
-  // Exported field_base: 'field_s_banner_caption_horizonta'.
+  // Exported field_base: 'field_s_banner_caption_horizonta'
   $field_bases['field_s_banner_caption_horizonta'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -60,7 +60,7 @@ function stanford_soe_helper_page_field_default_field_bases() {
     'type' => 'list_text',
   );
 
-  // Exported field_base: 'field_s_banner_caption_vertical'.
+  // Exported field_base: 'field_s_banner_caption_vertical'
   $field_bases['field_s_banner_caption_vertical'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -86,7 +86,7 @@ function stanford_soe_helper_page_field_default_field_bases() {
     'type' => 'list_text',
   );
 
-  // Exported field_base: 'field_s_banner_image'.
+  // Exported field_base: 'field_s_banner_image'
   $field_bases['field_s_banner_image'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -108,7 +108,7 @@ function stanford_soe_helper_page_field_default_field_bases() {
     'type' => 'image',
   );
 
-  // Exported field_base: 'field_s_banner_link'.
+  // Exported field_base: 'field_s_banner_link'
   $field_bases['field_s_banner_link'] = array(
     'active' => 1,
     'cardinality' => 1,
