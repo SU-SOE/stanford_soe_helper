@@ -1,6 +1,9 @@
 @charset "UTF-8";
-@import "variables/soe_colors";
-@import "variables/soe_typography";
+
+@import
+  'variables/soe_colors',
+  'variables/soe_typography',
+  'mixins/columns';
 
 /* GLOBAL */
 
@@ -526,18 +529,12 @@ p.columns {
   font-size: 32px;
   line-height: 54px;
   font-weight: bold;
-  -webkit-column-count: 2;
-  -moz-column-count: 2;
-  column-count: 2;
-  -webkit-column-gap: 100px;
-  -moz-column-gap: 100px;
-  column-gap: 100px;
+  @include column-count (2);
+  @include column-gap (100px);
 }
 @media (max-width: 767px) {
   p.columns {
-    -webkit-column-count: 1;
-    -moz-column-count: 1;
-    column-count: 1;
+    @include column-count (1);
   }
 }
 
@@ -871,26 +868,27 @@ body {
 }
 
 /* LANDING PAGE STYLES */
-
 @media (max-width: 979px) {
-    .node-stanford-landing-page.large-landscape .field-name-field-landing-page-item > .field-items > .field-item {
-        width: 48%;
-    }
-    .node-stanford-landing-page.large-landscape .field-name-field-landing-page-item > .field-items > .field-item:nth-child(3n) {
-        margin-right: 3%;
-    }
-     .node-stanford-landing-page.large-landscape .field-name-field-landing-page-item > .field-items > .field-item:nth-child(2n) {
-        margin-right: 0;
-    }
-}
+  .node-stanford-landing-page.large-landscape .field-name-field-landing-page-item > .field-items > .field-item {
+    width: 48%;
+  }
 
+  .node-stanford-landing-page.large-landscape .field-name-field-landing-page-item > .field-items > .field-item:nth-child(3n) {
+    margin-right: 3%;
+  }
+
+  .node-stanford-landing-page.large-landscape .field-name-field-landing-page-item > .field-items > .field-item:nth-child(2n) {
+    margin-right: 0;
+  }
+}
 @media (max-width: 550px) {
-    .node-stanford-landing-page.large-landscape .field-name-field-landing-page-item > .field-items > .field-item,
-    .node-stanford-landing-page.large-landscape .field-name-field-landing-page-item > .field-items > .field-item img {
-        width: 100%;
-        margin-right: 0;
-    }
-    .node-stanford-landing-page.large-landscape .field-name-field-landing-page-item > .field-items > .field-item:nth-child(3n) {
-        margin-right: 0;
-    }
+  .node-stanford-landing-page.large-landscape .field-name-field-landing-page-item > .field-items > .field-item,
+  .node-stanford-landing-page.large-landscape .field-name-field-landing-page-item > .field-items > .field-item img {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .node-stanford-landing-page.large-landscape .field-name-field-landing-page-item > .field-items > .field-item:nth-child(3n) {
+    margin-right: 0;
+  }
 }
