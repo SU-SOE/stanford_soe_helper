@@ -90,6 +90,15 @@ a.more-link {
     line-height: 1.4em;
   }
 
+  #block-stanford-soe-helper-sitewide-stanford-soe-intranet-link {
+    @media (max-width: 979px) {
+      margin-top: 50px;
+    }
+    @media (max-width: 767px) {
+      margin-top: 0;
+    }
+  }
+
   #block-bean-jumpstart-footer-social-media-0 {
     float: right;
     width: 22%;
@@ -137,18 +146,6 @@ a.more-link {
         margin-right: 0;
       }
     }
-  }
-}
-
-/* INTRANET FOOTER BUTTON */
-@media (max-width: 979px) {
-  #footer #block-stanford-soe-helper-sitewide-stanford-soe-intranet-link {
-    margin-top: 50px;
-  }
-}
-@media (max-width: 767px) {
-  #footer #block-stanford-soe-helper-sitewide-stanford-soe-intranet-link {
-    margin-top: 0;
   }
 }
 
