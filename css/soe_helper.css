@@ -986,3 +986,34 @@ body {
 #mc_embed_signup_scroll p {
   padding-right: 10px;
 }
+
+/* LANDING PAGE STYLES */
+@media (max-width: 979px) {
+  /* line 876, ../scss/soe_helper.scss */
+  .node-stanford-landing-page.large-landscape .field-name-field-landing-page-item > .field-items > .field-item {
+    width: 48%;
+  }
+
+  /* line 879, ../scss/soe_helper.scss */
+  .node-stanford-landing-page.large-landscape .field-name-field-landing-page-item > .field-items > .field-item:nth-child(3n) {
+    margin-right: 3%;
+  }
+
+  /* line 882, ../scss/soe_helper.scss */
+  .node-stanford-landing-page.large-landscape .field-name-field-landing-page-item > .field-items > .field-item:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+@media (max-width: 550px) {
+  /* line 889, ../scss/soe_helper.scss */
+  .node-stanford-landing-page.large-landscape .field-name-field-landing-page-item > .field-items > .field-item,
+  .node-stanford-landing-page.large-landscape .field-name-field-landing-page-item > .field-items > .field-item img {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  /* line 893, ../scss/soe_helper.scss */
+  .node-stanford-landing-page.large-landscape .field-name-field-landing-page-item > .field-items > .field-item:nth-child(3n) {
+    margin-right: 0;
+  }
+}
