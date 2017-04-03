@@ -1,11 +1,7 @@
 @charset "UTF-8";
+@import 'variables/soe_colors', 'variables/soe_typography', 'mixins/columns';
 
-@import
-  'variables/soe_colors',
-  'variables/soe_typography',
-  'mixins/columns';
-
-/* GLOBAL */
+/*** GLOBAL ***/
 
 .more-link a,
 .normal-link a,
@@ -14,52 +10,54 @@ a.more-link {
   color: $cardinal;
 }
 
-/* MAIN PAGE, MASTHEAD*/
+/*** BRAND BAR AND HEADER ***/
 
 #global-header {
   background-color: $cardinal;
-}
 
-#global-header .container {
-  padding: 15px 0;
-}
-
-#header #logo a {
-  display: block;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  background: url("../img/soe_logo.png") no-repeat;
-  background-size: 160px 35.5px;
-}
-@media (max-width: 480px) {
-  #header #logo.logo-mobile a {
-    background-size: 120px 26.66px;
+  .container {
+    padding: 15px 0;
   }
+
 }
 
-#header #logo img {
-  visibility: hidden;
+#header {
+  #logo {
+    a {
+      display: block;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      background: url("../img/soe_logo.png") no-repeat;
+      background-size: 160px 35.5px;
+    }
+
+    img {
+      visibility: hidden;
+    }
+
+    &.logo-mobile a {
+      @media (max-width: 480px) {
+        background-size: 120px 26.66px;
+      }
+    }
+  }
+
+  &.header {
+    background: $white;
+    padding: 32px 0 0;
+  }
+
 }
 
 .main {
   padding-top: 60px;
   background: $off-white;
-}
 
-.main .border-simple img,
-.main .border-simple-nowidth img {
-  padding: 0;
-}
+  .border-simple img,
+  .border-simple-nowidth img {
+    padding: 0;
+  }
 
-.header {
-  background: $white;
-  padding: 32px 0 0;
-}
-
-.site-name a,
-.site-name a:hover {
-  text-transform: uppercase;
-  font-weight: 600;
 }
 
 /*REVISED LOGO SIZE FOR NEW MASTHEAD, REMOVE ME IF WE DONT GO WITH THIS FORMAT*/
