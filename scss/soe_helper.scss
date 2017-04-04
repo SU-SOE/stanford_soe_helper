@@ -46,9 +46,24 @@ a.more-link {
       max-width: 160px;
     }
 
-    &.logo-mobile a {
+    &.logo-mobile {
       @media (max-width: 480px) {
-        background-size: 120px 26.66px;
+        display: table-cell;
+        padding: 0 10px 0 0;
+        border-right: 1px solid !important;
+      }
+
+      a {
+        @media (max-width: 480px) {
+          background-size: 120px 26.66px;
+        }
+      }
+    }
+
+    #name-and-slogan.with-logo {
+      @media (max-width: 480px) {
+        display: table-cell;
+        padding: 0 0 0 10px;
       }
     }
   }
@@ -59,6 +74,12 @@ a.more-link {
 
     #site-title-first-line.site-title-uppercase {
       font-size: 34px;
+      @media (max-width: 480px) {
+        font-size: 28px;
+      }
+      @media (max-width: 400px) {
+        font-size: 24px;
+      }
     }
   }
 }
@@ -651,35 +672,6 @@ a.external-link:after {
 body {
   font-size: 20px;
   line-height: 1.5em;
-}
-
-/* ***************************************************** */
-
-/* SITE TITLE STYLES */
-@media (max-width: 480px) {
-  #header #logo.logo-mobile {
-    display: table-cell;
-    padding: 0 10px 0 0;
-    border-right: 1px solid !important;
-  }
-}
-@media (max-width: 480px) {
-  #name-and-slogan {
-    display: table-cell;
-  }
-
-  #name-and-slogan.with-logo {
-    padding: 0 0 0 10px;
-  }
-
-  #site-title-first-line.site-title-uppercase {
-    font-size: 28px;
-  }
-}
-@media (max-width: 400px) {
-  #site-title-first-line.site-title-uppercase {
-    font-size: 24px;
-  }
 }
 
 /* SIDEBAR FIRST AND MAIN CONTENT GUTTER */
