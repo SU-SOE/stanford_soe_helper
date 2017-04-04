@@ -380,10 +380,10 @@ p.related-link {
       }
     }
 
-     > .active > a:hover,
+     > .active-trail > a,
      > li > a:focus,
      > li > a:hover,
-    > .active-trail > a {
+    > .active > a:hover {
       border-bottom: 2px solid $primary-color;
       @media (max-width: 767px) {
         border-bottom: none;
@@ -739,44 +739,54 @@ input.form-submit {
   margin-top: 1em;
 }
 
-/* SEARCH */
+//
+// SEARCH
+//
 
 #block-stanford-search-api-search-api-search-block {
   margin-top: -22px;
+
+  input#edit-search {
+    display: none;
+  }
+
+  input[type="text"] {
+    font-size: 18px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    padding-top: 5px;
+  }
+
+  .form-item {
+    background: url("../img/soe_mag_glass_white.svg") no-repeat 89% center;
+  }
+
+  .input-medium {
+    width: 60px;
+  }
+
+  input:-ms-input-placeholder,
+  input::-moz-placeholder,
+  input::-webkit-input-placeholder {
+    color: $white;
+  }
+
 }
 
-#block-stanford-search-api-search-api-search-block input#edit-search {
-  display: none;
-}
+// #block-stanford-search-api-search-api-search-block input::-webkit-input-placeholder {
+//   color: $white;
+// }
+//
+// #block-stanford-search-api-search-api-search-block input::-moz-placeholder {
+//   color: $white;
+// }
+//
+// #block-stanford-search-api-search-api-search-block input:-ms-input-placeholder {
+//   color: $white;
+// }
 
-#block-stanford-search-api-search-api-search-block input[type="text"] {
-  font-size: 18px;
-  color: white;
-  background-color: transparent;
-  border: none;
-  box-shadow: none;
-  padding-top: 5px;
-}
-
-#block-stanford-search-api-search-api-search-block .form-item {
-  background: url("../img/soe_mag_glass_white.svg") no-repeat 89% center;
-}
-
-#block-stanford-search-api-search-api-search-block .input-medium {
-  width: 60px;
-}
-
-#block-stanford-search-api-search-api-search-block input::-webkit-input-placeholder {
-  color: $white;
-}
-
-#block-stanford-search-api-search-api-search-block input::-moz-placeholder {
-  color: $white;
-}
-
-#block-stanford-search-api-search-api-search-block input:-ms-input-placeholder {
-  color: $white;
-}
 @media (max-width: 1199px) {
   #block-stanford-search-api-search-api-search-block .form-item {
     background-position: 86.5%;
