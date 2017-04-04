@@ -617,6 +617,25 @@ p.related-link {
   }
 }
 
+#content-body .content a.btn {
+  display: block;
+  margin: 0 auto;
+  width: 30%;
+  margin-bottom: 40px;
+  @media (max-width: 480px) {
+    width: 65%;
+  }
+}
+
+#content .content-body .field-name-body h2 a:after,
+#content .content-body .field-name-body h3 a:after,
+#content .content-body .field-name-body h4 a:after,
+#content .content-body .field-name-body h5 a:after,
+#content .content-body .field-name-body h6 a:after {
+  content: " >";
+  vertical-align: middle;
+}
+
 //
 // CALENDAR
 //
@@ -735,6 +754,10 @@ input.form-submit {
   }
 }
 
+.node-type-webform textarea {
+  height: 100px;
+}
+
 .sidebar .views-exposed-form .views-exposed-widget .form-submit {
   margin-top: 1em;
 }
@@ -805,82 +828,57 @@ input.form-submit {
   margin-bottom: 5px;
 }
 
-/* BUTTON LINK STYLES */
+//
+// MAILCHIMP SIGN-UP
+//
 
-#content-body .content a.btn {
-  display: block;
-  margin: 0 auto;
-  width: 30%;
-  margin-bottom: 40px;
-}
-@media (max-width: 480px) {
-  #content-body .content a.btn {
-    width: 65%;
+#mc_embed_signup_scroll {
+  .mc-field-group {
+    float: left;
+
+    input {
+      border-radius: 0;
+    }
+
+    input::-webkit-input-placeholder {
+      color: $dark-gray;
+    }
+
+    input::-moz-placeholder {
+      color: $dark-gray;
+    }
   }
-}
 
-/* AFTER CONTENT FOR HEADING LINKS */
-#content .content-body .field-name-body h2 a:after,
-#content .content-body .field-name-body h3 a:after,
-#content .content-body .field-name-body h4 a:after,
-#content .content-body .field-name-body h5 a:after,
-#content .content-body .field-name-body h6 a:after {
-  content: " >";
-  vertical-align: middle;
-}
+  #mc-embedded-subscribe {
+    &.button,
+    input {
+      background-color: $brand-bright;
+      border-style: none;
+      color: $white;
+    }
+  }
 
-.node-type-webform textarea {
-  height: 100px;
-}
+  p {
+    padding-right: 10px;
+  }
 
-/* MAILCHIMP SIGN-UP */
+  input.button {
+    height: 40px;
+    padding: 0 13px 2px;
+    width: 75px;
+    -webkit-border-radius: 0;
+  }
 
-#mc_embed_signup_scroll .mc-field-group input::-webkit-input-placeholder {
-  color: $dark-gray;
-}
+  .uneditable-input,
+  input,
+  textarea {
+    width: 110px;
+  }
 
-#mc_embed_signup_scroll .mc-field-group input::-moz-placeholder {
-  color: $dark-gray;
-}
-
-#mc_embed_signup_scroll input.button {
-  height: 40px;
-  padding: 0 13px 2px;
-}
-
-.mc-field-group {
-  float: left;
-}
-
-.mc-field-group input {
-  border-radius: 0;
-}
-
-#mc_embed_signup_scroll .uneditable-input,
-#mc_embed_signup_scroll input,
-#mc_embed_signup_scroll textarea {
-  width: 110px;
-}
-
-#mc_embed_signup_scroll input.button {
-  width: 75px;
-  -webkit-border-radius: 0;
-}
-
-#mc_embed_signup_scroll button,
-#mc_embed_signup_scroll input,
-#mc_embed_signup_scroll select,
-#mc_embed_signup_scroll textarea {
-  font-family: $primary-font;
-}
-
-#mc_embed_signup_scroll #mc-embedded-subscribe input,
-#mc_embed_signup_scroll #mc-embedded-subscribe.button {
-  background-color: $brand-bright;
-  border-style: none;
-  color: $white;
-}
-
-#mc_embed_signup_scroll p {
-  padding-right: 10px;
+  button,
+  input,
+  select,
+  textarea {
+    font-family: $primary-font;
+  }
 }
