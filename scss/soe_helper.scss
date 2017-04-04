@@ -5,6 +5,11 @@
 // GLOBAL
 //
 
+body {
+  font-size: 20px;
+  line-height: 1.5em;
+}
+
 h1 {
   font-weight: 400;
   margin: -9px 0 10px;
@@ -113,6 +118,13 @@ ul.pager li {
 .container {
   @media (max-width: 767px) {
     margin-bottom: 10px;
+  }
+}
+
+#content.span9 {
+  @media (min-width: 1200px) {
+    width: 740px;
+    margin-left: 80px;
   }
 }
 
@@ -725,24 +737,6 @@ input.form-submit {
 
 .sidebar .views-exposed-form .views-exposed-widget .form-submit {
   margin-top: 1em;
-}
-
-/*MAIN BODY*/
-
-body {
-  font-size: 20px;
-  line-height: 1.5em;
-}
-
-/* SIDEBAR FIRST AND MAIN CONTENT GUTTER */
-@media (min-width: 1200px) {
-  .span9 {
-    width: 740px;
-  }
-
-  #content.span9 {
-    margin-left: 80px;
-  }
 }
 
 /* SEARCH */
