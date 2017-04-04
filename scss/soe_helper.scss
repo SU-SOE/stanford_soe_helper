@@ -146,22 +146,16 @@ a {
   &.btn-pink {
     background: $pink;
   }
-}
 
-// a.btn-yellow {
-//   color: $black;
-//   background: $yellow;
-// }
-//
-// a.btn-turquoise {
-//   color: $black;
-//   background: $turquoise;
-// }
-//
-// a.btn-pink {
-//   color: $black;
-//   background: $pink;
-// }
+  &.external-link:after {
+    content: " ";
+    background-image: url("../img/soe_external_link_icon.png");
+    background-position: 6px center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    padding: 0 5px 1px 20px;
+  }
+}
 
 p.columns {
   font-family: $roboto-slab;
@@ -170,10 +164,8 @@ p.columns {
   font-weight: bold;
   @include column-count (2);
   @include column-gap (100px);
-}
-@media (max-width: 767px) {
-  p.columns {
-    @include column-count (1);
+  @media (max-width: 767px) {
+     @include column-count (1);
   }
 }
 
@@ -181,20 +173,11 @@ p.related-link {
   background: $white;
   padding: 26px 36px;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
-}
 
-p.related-link:before {
-  content: "Related:";
-  padding-right: 3px;
-}
-
-a.external-link:after {
-  content: " ";
-  background-image: url("../img/soe_external_link_icon.png");
-  background-position: 6px center;
-  background-repeat: no-repeat;
-  background-size: 50%;
-  padding: 0 5px 1px 20px;
+  &:before {
+    content: "Related:";
+    padding-right: 3px;
+  }
 }
 
 //
@@ -385,10 +368,10 @@ a.external-link:after {
       }
     }
 
-     > .active-trail > a,
+     > .active > a:hover,
      > li > a:focus,
      > li > a:hover,
-    > .active > a:hover {
+    > .active-trail > a {
       border-bottom: 2px solid $primary-color;
       @media (max-width: 767px) {
         border-bottom: none;
