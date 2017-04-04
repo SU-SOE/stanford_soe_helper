@@ -52,8 +52,8 @@ a.more-link {
   }
 }
 @media (max-width: 480px) {
-  /* line 63, ../scss/soe_helper.scss */
-  #header #logo #name-and-slogan.with-logo {
+  /* line 64, ../scss/soe_helper.scss */
+  #header #name-and-slogan.with-logo {
     display: table-cell;
     padding: 0 0 0 10px;
   }
@@ -221,18 +221,18 @@ a.more-link {
   }
 }
 /* line 222, ../scss/soe_helper.scss */
-.navbar .nav > .active-trail > a,
+.navbar .nav > .active > a:hover,
 .navbar .nav > li > a:focus,
 .navbar .nav > li > a:hover,
-.navbar .nav > .active > a:hover {
+.navbar .nav > .active-trail > a {
   border-bottom: 2px solid #333333;
 }
 @media (max-width: 767px) {
   /* line 222, ../scss/soe_helper.scss */
-  .navbar .nav > .active-trail > a,
+  .navbar .nav > .active > a:hover,
   .navbar .nav > li > a:focus,
   .navbar .nav > li > a:hover,
-  .navbar .nav > .active > a:hover {
+  .navbar .nav > .active-trail > a {
     border-bottom: none;
   }
 }

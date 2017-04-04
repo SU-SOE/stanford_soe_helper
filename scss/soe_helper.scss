@@ -59,12 +59,12 @@ a.more-link {
         }
       }
     }
+  }
 
-    #name-and-slogan.with-logo {
-      @media (max-width: 480px) {
-        display: table-cell;
-        padding: 0 0 0 10px;
-      }
+  #name-and-slogan.with-logo {
+    @media (max-width: 480px) {
+      display: table-cell;
+      padding: 0 0 0 10px;
     }
   }
 
@@ -216,10 +216,10 @@ a.more-link {
       }
     }
 
-     > .active-trail > a,
+     > .active > a:hover,
      > li > a:focus,
      > li > a:hover,
-    > .active > a:hover {
+    > .active-trail > a {
       border-bottom: 2px solid $primary-color;
       @media (max-width: 767px) {
         border-bottom: none;
