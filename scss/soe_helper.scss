@@ -12,6 +12,12 @@ a.more-link {
   color: $brand-bright;
 }
 
+.container {
+  @media (max-width: 767px) {
+    margin-bottom: 10px;
+  }
+}
+
 //
 // BRAND BAR AND HEADER
 //
@@ -68,7 +74,7 @@ a.more-link {
 }
 
 //
-//FOOTER
+// FOOTER
 //
 
 #global-footer {
@@ -149,7 +155,94 @@ a.more-link {
   }
 }
 
-/* SUBNAV */
+//
+// MAIN NAVIGATION
+//
+
+#main-menu {
+  .nav-collapse.collapse {
+    float: right;
+    margin-top: -46px;
+    @media (max-width: 1200px) {
+      float: left;
+      margin-top: 0;
+    }
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+  }
+
+  .nav-collapse {
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+  }
+}
+
+.navbar {
+  margin-bottom: 0;
+
+  .nav {
+    > li > a {
+      color: $brand-bright;
+      font-size: 18px;
+      font-weight: 400;
+      border-bottom: 2px solid transparent;
+      padding-bottom: 30px;
+      @media (max-width: 767px) {
+        padding-bottom: 0.25em;
+        border-bottom: none;
+      }
+    }
+
+     > .active-trail > a,
+     > li > a:focus,
+     > li > a:hover,
+    > .active > a:hover {
+      border-bottom: 2px solid $primary-color;
+      @media (max-width: 767px) {
+        border-bottom: none;
+      }
+    }
+  }
+
+  .btn.btn-navbar {
+    @media (max-width: 767px) {
+      background: $brand-bright;
+      margin-top: -50px;
+      float: right;
+    }
+    @media (max-width: 480px) {
+      margin-top: -57px;
+    }
+    @media (max-width: 385px) {
+      float: left;
+      margin-top: 0;
+    }
+  }
+}
+
+.site-main-menu {
+  background: $white;
+  border-bottom: 1px solid #e1e1e1;
+
+  ul li.last.leaf {
+    @media (max-width: 767px) {
+      height: auto;
+      border-right: none;
+      padding-right: 0;
+    }
+  }
+}
+
+.region-navigation .block.contextual-links-region {
+  padding-right: 7px;
+  margin-right: 7px;
+}
+
+//
+//SUBNAVIGATION
+//
 
 .sidebar .nav li a {
   color: $brand-bright;
@@ -207,6 +300,14 @@ a.more-link {
 .sidebar .block-menu-block .menu-block-wrapper > .menu > li li a:hover:before {
   content: "> ";
   margin-left: -12px;
+}
+
+.sidebar .block-menu-block .menu-block-wrapper > .menu > li.last {
+  border-bottom: none;
+}
+
+.sidebar .block-menu-block .menu-block-wrapper > .menu > li > a {
+  font-weight: 400;
 }
 
 /* CONTAINERS */
@@ -590,108 +691,6 @@ body {
   #content.span9 {
     margin-left: 80px;
   }
-}
-
-/* MAIN NAVIGATION STYLES */
-
-#main-menu .nav-collapse.collapse {
-  float: right;
-  margin-top: -46px;
-}
-
-.navbar .nav > li > a {
-  color: $brand-bright;
-  font-size: 18px;
-  font-weight: 400;
-  border-bottom: 2px solid transparent;
-  padding-bottom: 30px;
-}
-
-.navbar .nav > .active > a:hover,
-.navbar .nav > .active-trail > a,
-.navbar .nav > li > a:focus,
-.navbar .nav > li > a:hover {
-  border-bottom: 2px solid $primary-color;
-}
-
-.navbar {
-  margin-bottom: 0;
-}
-
-.region-navigation .block.contextual-links-region {
-  padding-right: 7px;
-  margin-right: 7px;
-}
-
-.site-main-menu {
-  background: $white;
-  border-bottom: 1px solid #e1e1e1;
-}
-@media (max-width: 1200px) {
-  #main-menu .nav-collapse.collapse {
-    float: left;
-    margin-top: 0;
-  }
-}
-@media (max-width: 767px) {
-  .container {
-    margin-bottom: 10px;
-  }
-
-  .site-main-menu ul li.last.leaf {
-    height: auto;
-    border-right: none;
-    padding-right: 0;
-  }
-
-  .btn.btn-navbar {
-    float: right;
-  }
-
-  .navbar .btn-navbar {
-    background: $brand-bright;
-    margin-top: -50px;
-  }
-
-  .nav-collapse,
-  .nav-collapse.collapse {
-    width: 100%;
-  }
-
-  .navbar .nav > li > a {
-    padding-bottom: 0.25em;
-    border-bottom: none;
-  }
-
-  .navbar .nav > .active-trail > a,
-  .navbar .nav > li > a:focus,
-  .navbar .nav > li > a:hover {
-    border-bottom: none;
-  }
-}
-@media (max-width: 480px) {
-  .navbar .btn-navbar {
-    margin-top: -57px;
-  }
-}
-@media (max-width: 385px) {
-  .btn.btn-navbar {
-    float: left;
-  }
-
-  .navbar .btn-navbar {
-    margin-top: 0;
-  }
-}
-
-/* SUB-NAVIGATION STYLES */
-
-.sidebar .block-menu-block .menu-block-wrapper > .menu > li.last {
-  border-bottom: none;
-}
-
-.sidebar .block-menu-block .menu-block-wrapper > .menu > li > a {
-  font-weight: 400;
 }
 
 /* SEARCH */
