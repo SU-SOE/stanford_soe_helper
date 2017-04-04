@@ -131,17 +131,20 @@ a.btn {
 }
 
 a {
-  &.btn-* {
+  &[class*="btn-"] {
     color: $black;
   }
+
   &.btn-yellow {
-      background: $yellow;
+    background: $yellow;
   }
+
   &.btn-turquoise {
-      background: $turquoise;
+    background: $turquoise;
   }
+
   &.btn-pink {
-      background: $pink;
+    background: $pink;
   }
 }
 
@@ -382,10 +385,10 @@ a.external-link:after {
       }
     }
 
-     > .active > a:hover,
+     > .active-trail > a,
      > li > a:focus,
      > li > a:hover,
-    > .active-trail > a {
+    > .active > a:hover {
       border-bottom: 2px solid $primary-color;
       @media (max-width: 767px) {
         border-bottom: none;
