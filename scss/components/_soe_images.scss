@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+//
+// IMAGES
+//
+
+.main {
+  .border-simple img,
+  .border-simple-nowidth img {
+    padding: 0;
+  }
+
+  .border-shadow img {
+    box-shadow: none;
+  }
+}
+
+.postcard-left > div:first-child img,
+.postcard-left-wrap > div:first-child img {
+  margin-top: 7px;
+}
+
+.node-stanford-landing-page.large-landscape .field-name-field-landing-page-item > .field-items > .field-item img {
+  @media (max-width: 550px) {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+.node .group_s_postcard_image {
+  @media (max-width: 400px) {
+    max-width: 100%;
+    float: none;
+  }
+}

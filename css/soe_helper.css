@@ -25,6 +25,15 @@ h3 {
 h4 a {
   text-decoration: none; }
 
+.btn a,
+a.btn {
+  border-radius: 0;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+  margin: 0 0 26px;
+  padding: 0.7em 1em;
+  letter-spacing: 0.03em;
+  background: #B1040E; }
+
 .more-link a,
 .normal-link a,
 a,
@@ -54,6 +63,18 @@ ul.pager li a {
 ul.pager li.pager-current {
   margin-right: 4px;
   font-weight: 300; }
+
+td,
+th {
+  padding: 0.8em;
+  line-height: 1.3em;
+  font-size: 0.9em;
+  border: 1px solid #D7D7D7;
+  border-right: none;
+  border-left: none; }
+
+th {
+  background: #EFEFEF; }
 
 .well {
   background: #FFFFFF;
@@ -90,15 +111,6 @@ ul.pager li.pager-current {
   #content.span9 {
     width: 740px;
     margin-left: 80px; } }
-
-.btn a,
-a.btn {
-  border-radius: 0;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
-  margin: 0 0 26px;
-  padding: 0.7em 1em;
-  letter-spacing: 0.03em;
-  background: #B1040E; }
 
 a[class*="btn-"] {
   color: #000000; }
@@ -456,18 +468,6 @@ p.related-link {
 .view-stanford-events-calendar .view-header .date-nav-wrapper {
   background: #FFFFFF; }
 
-td,
-th {
-  padding: 0.8em;
-  line-height: 1.3em;
-  font-size: 0.9em;
-  border: 1px solid #D7D7D7;
-  border-right: none;
-  border-left: none; }
-
-th {
-  background: #EFEFEF; }
-
 button,
 input,
 label,
@@ -527,6 +527,41 @@ input.form-submit {
 .sidebar .views-exposed-form .views-exposed-widget .form-submit {
   margin-top: 1em; }
 
+#mc_embed_signup_scroll .mc-field-group {
+  float: left; }
+  #mc_embed_signup_scroll .mc-field-group input {
+    border-radius: 0; }
+  #mc_embed_signup_scroll .mc-field-group input::-webkit-input-placeholder {
+    color: #CCCCCC; }
+  #mc_embed_signup_scroll .mc-field-group input::-moz-placeholder {
+    color: #CCCCCC; }
+
+#mc_embed_signup_scroll #mc-embedded-subscribe.button,
+#mc_embed_signup_scroll #mc-embedded-subscribe input {
+  background-color: #B1040E;
+  border-style: none;
+  color: #FFFFFF; }
+
+#mc_embed_signup_scroll p {
+  padding-right: 10px; }
+
+#mc_embed_signup_scroll input.button {
+  height: 40px;
+  padding: 0 13px 2px;
+  width: 75px;
+  -webkit-border-radius: 0; }
+
+#mc_embed_signup_scroll .uneditable-input,
+#mc_embed_signup_scroll input,
+#mc_embed_signup_scroll textarea {
+  width: 110px; }
+
+#mc_embed_signup_scroll button,
+#mc_embed_signup_scroll input,
+#mc_embed_signup_scroll select,
+#mc_embed_signup_scroll textarea {
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
 #block-stanford-search-api-search-api-search-block {
   margin-top: -22px; }
   #block-stanford-search-api-search-api-search-block input#edit-search {
@@ -572,38 +607,3 @@ input.form-submit {
 
 .page-search div#edit-basic {
   margin-bottom: 5px; }
-
-#mc_embed_signup_scroll .mc-field-group {
-  float: left; }
-  #mc_embed_signup_scroll .mc-field-group input {
-    border-radius: 0; }
-  #mc_embed_signup_scroll .mc-field-group input::-webkit-input-placeholder {
-    color: #CCCCCC; }
-  #mc_embed_signup_scroll .mc-field-group input::-moz-placeholder {
-    color: #CCCCCC; }
-
-#mc_embed_signup_scroll #mc-embedded-subscribe.button,
-#mc_embed_signup_scroll #mc-embedded-subscribe input {
-  background-color: #B1040E;
-  border-style: none;
-  color: #FFFFFF; }
-
-#mc_embed_signup_scroll p {
-  padding-right: 10px; }
-
-#mc_embed_signup_scroll input.button {
-  height: 40px;
-  padding: 0 13px 2px;
-  width: 75px;
-  -webkit-border-radius: 0; }
-
-#mc_embed_signup_scroll .uneditable-input,
-#mc_embed_signup_scroll input,
-#mc_embed_signup_scroll textarea {
-  width: 110px; }
-
-#mc_embed_signup_scroll button,
-#mc_embed_signup_scroll input,
-#mc_embed_signup_scroll select,
-#mc_embed_signup_scroll textarea {
-  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; }
