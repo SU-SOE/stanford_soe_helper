@@ -26,8 +26,7 @@ function stanford_soe_helper_init() {
 
   // Add css files
   $file_paths = array(
-    drupal_get_path('module', 'stanford_soe_helper') . "/css/soe_helper.css",
-    drupal_get_path('module', 'stanford_soe_helper') . "/css/stanford_news_layouts.css"
+    drupal_get_path('module', 'stanford_soe_helper') . "/css/soe_helper.css"
   );
 
   // CSS Injector file weights start at 200.
