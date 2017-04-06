@@ -2,6 +2,9 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     sass: {
+      options: {
+        lineNumbers: true
+      },
       dist: {
         files: {
           'css/soe_helper.css': 'scss/soe_helper.scss'
@@ -16,6 +19,7 @@ module.exports = function(grunt) {
     }
   });
   grunt.loadNpmTasks('grunt-sass');
+  grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.registerTask('default', ['watch']);
 }
