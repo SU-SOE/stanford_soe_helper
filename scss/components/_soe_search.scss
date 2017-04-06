@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+//
+// SEARCH
+//
+
+#block-stanford-search-api-search-api-search-block {
+  margin-top: -22px;
+
+  input#edit-search {
+    display: none;
+  }
+
+  input[type="text"] {
+    font-size: 18px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    padding-top: 5px;
+  }
+
+  .input-medium {
+    width: 60px;
+  }
+
+  input:-ms-input-placeholder {
+    color: $white;
+  }
+
+  input::-moz-placeholder {
+    color: $white;
+  }
+
+  input::-webkit-input-placeholder {
+    color: $white;
+  }
+
+  .form-item {
+    background: url("../img/soe_mag_glass_white.svg") no-repeat 89% center;
+    @media (max-width: 1199px) {
+      background-position: 86.5%;
+    }
+    @media (max-width: 979px) {
+      background-position: 82%;
+    }
+    @media (max-width: 767px) {
+      background-position: 76.5%;
+    }
+    @media (max-width: 695px) {
+      background-position: 72%;
+    }
+    @media (max-width: 580px) {
+      background-position: 65%;
+    }
+    @media (max-width: 480px) {
+      background-position: 45%;
+    }
+    @media (max-width: 400px) {
+      background-position: 45%;
+    }
+  }
+}
+
+.page-search div#edit-basic {
+  margin-bottom: 5px;
+}

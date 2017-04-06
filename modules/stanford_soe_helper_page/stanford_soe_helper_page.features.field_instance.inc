@@ -10,7 +10,7 @@
 function stanford_soe_helper_page_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-stanford_page-field_s_apachesolr_index'
+  // Exported field_instance: 'node-stanford_page-field_s_apachesolr_index'.
   $field_instances['node-stanford_page-field_s_apachesolr_index'] = array(
     'bundle' => 'stanford_page',
     'default_value' => array(
@@ -31,7 +31,7 @@ function stanford_soe_helper_page_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 16,
+        'weight' => 15,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -56,7 +56,7 @@ function stanford_soe_helper_page_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-stanford_page-field_s_banner_caption_color'
+  // Exported field_instance: 'node-stanford_page-field_s_banner_caption_color'.
   $field_instances['node-stanford_page-field_s_banner_caption_color'] = array(
     'bundle' => 'stanford_page',
     'default_value' => array(
@@ -104,7 +104,7 @@ function stanford_soe_helper_page_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'node-stanford_page-field_s_banner_caption_horizonta'
+  // 'node-stanford_page-field_s_banner_caption_horizonta'.
   $field_instances['node-stanford_page-field_s_banner_caption_horizonta'] = array(
     'bundle' => 'stanford_page',
     'default_value' => array(
@@ -152,7 +152,7 @@ function stanford_soe_helper_page_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'node-stanford_page-field_s_banner_caption_vertical'
+  // 'node-stanford_page-field_s_banner_caption_vertical'.
   $field_instances['node-stanford_page-field_s_banner_caption_vertical'] = array(
     'bundle' => 'stanford_page',
     'default_value' => array(
@@ -199,7 +199,7 @@ function stanford_soe_helper_page_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-stanford_page-field_s_banner_image'
+  // Exported field_instance: 'node-stanford_page-field_s_banner_image'.
   $field_instances['node-stanford_page-field_s_banner_image'] = array(
     'bundle' => 'stanford_page',
     'deleted' => 0,
@@ -355,7 +355,7 @@ function stanford_soe_helper_page_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-stanford_page-field_s_banner_link'
+  // Exported field_instance: 'node-stanford_page-field_s_banner_link'.
   $field_instances['node-stanford_page-field_s_banner_link'] = array(
     'bundle' => 'stanford_page',
     'default_value' => NULL,

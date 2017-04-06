@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+//
+// FOOTER
+//
+
+#global-footer {
+  background-color: $brand-bright;
+}
+
+#footer {
+  &.site-footer {
+    border-top: none;
+    background: $white;
+
+    h2 {
+      line-height: 1.3em;
+    }
+  }
+
+  .block {
+    font-size: 16px;
+    line-height: 1.4em;
+  }
+
+  #block-stanford-soe-helper-sitewide-stanford-soe-intranet-link {
+    @media (max-width: 979px) {
+      margin-top: 50px;
+    }
+    @media (max-width: 767px) {
+      margin-top: 0;
+    }
+  }
+
+  #block-bean-jumpstart-footer-social-media-0 {
+    float: right;
+    width: 22%;
+    margin-bottom: 50px;
+    @media (max-width: 1199px) {
+      width: 24%;
+    }
+    @media (max-width: 979px) {
+      float: none;
+      width: auto;
+      margin-bottom: 30px;
+    }
+
+    .bean-stanford-social-media-connect {
+      a {
+        height: 28px;
+        background-repeat: no-repeat;
+        background-size: auto 28px;
+        margin-right: 18px;
+      }
+
+      .field-name-field-s-smc-facebook a {
+        background-image: url("../img/soe_facebook_icon.png");
+        width: 15px;
+      }
+
+      .field-name-field-s-smc-twitter a {
+        background-image: url("../img/soe_twitter_icon.png");
+        width: 35px;
+      }
+
+      .field-name-field-s-smc-linkedin a {
+        background-image: url("../img/soe_linkedin_icon.png");
+        width: 30px;
+      }
+
+      .field-name-field-s-smc-youtube a {
+        background-image: url("../img/soe_youtube_icon.png");
+        width: 40px;
+      }
+
+      .field-name-field-s-smc-instagram a {
+        background-image: url("../img/soe_instagram_icon.png");
+        width: 30px;
+        margin-right: 0;
+      }
+    }
+  }
+}
