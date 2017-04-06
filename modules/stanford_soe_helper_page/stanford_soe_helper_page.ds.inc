@@ -48,32 +48,22 @@ function stanford_soe_helper_page_ds_layout_settings_info() {
   $ds_layout->layout = 'ds_1col';
   $ds_layout->settings = array(
     'regions' => array(
-      'ds_content' => array(
-        0 => 'group_s_postcard',
-        2 => 'body',
-        4 => 'field_s_page_file',
-        6 => 'field_s_image_info',
-        7 => 'group_s_postcard_image',
-        8 => 'group_s_postcard_content',
-      ),
       'stanford_page_title' => array(
-        1 => 'title',
+        0 => 'title',
       ),
-      'bottom_banner' => array(
-        3 => 'field_s_page_banner',
-        5 => 'field_s_page_caption',
+      'stanford_page_featured_image' => array(
+        1 => 'field_s_image_info',
+      ),
+      'ds_content' => array(
+        2 => 'body',
+        3 => 'field_s_page_file',
       ),
     ),
     'fields' => array(
-      'group_s_postcard' => 'ds_content',
       'title' => 'stanford_page_title',
+      'field_s_image_info' => 'stanford_page_featured_image',
       'body' => 'ds_content',
-      'field_s_page_banner' => 'bottom_banner',
       'field_s_page_file' => 'ds_content',
-      'field_s_page_caption' => 'bottom_banner',
-      'field_s_image_info' => 'ds_content',
-      'group_s_postcard_image' => 'ds_content',
-      'group_s_postcard_content' => 'ds_content',
     ),
     'classes' => array(),
     'wrappers' => array(
@@ -84,7 +74,6 @@ function stanford_soe_helper_page_ds_layout_settings_info() {
     'layout_attributes_merge' => 1,
     'layout_link_attribute' => '',
     'layout_link_custom' => '',
-    'layout_disable_css' => FALSE,
   );
   $export['node|stanford_page|full'] = $ds_layout;
 
