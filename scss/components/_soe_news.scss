@@ -132,10 +132,8 @@
       font-size: 1em;
     }
   }
-}
 
-.logged-in {
-  #block-ds-extras-banner-overlay {
+  .logged-in & {
     top: 285px;
     @media (max-width: 1200px) {
       top: 325px;
