@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100);
 /* line 7, ../scss/components/_soe_global.scss */
 body {
@@ -43,41 +44,49 @@ a.btn {
   background: #B1040E; }
 
 /* line 54, ../scss/components/_soe_global.scss */
-.more-link a,
 .normal-link a,
-a,
-a.more-link {
+a {
   color: #B1040E; }
 
-/* line 61, ../scss/components/_soe_global.scss */
+/* line 59, ../scss/components/_soe_global.scss */
+.more-link a,
+a.more-link {
+  font-size: 20px;
+  color: #B1040E; }
+  /* line 64, ../scss/components/_soe_global.scss */
+  .more-link a:after,
+  a.more-link:after {
+    content: " ›"; }
+
+/* line 69, ../scss/components/_soe_global.scss */
 .normal-link h2,
 .normal-link h3,
 h2.normal-link,
 h3.normal-link {
   font-size: 1.1em; }
 
-/* line 68, ../scss/components/_soe_global.scss */
+/* line 76, ../scss/components/_soe_global.scss */
 li {
   line-height: 1.4em;
   margin-bottom: 10px; }
 
-/* line 74, ../scss/components/_soe_global.scss */
+/* line 82, ../scss/components/_soe_global.scss */
 ul.pager li a {
   border: 1px solid #D7D7D7;
   background: #FFFFFF;
   margin-bottom: 12px;
   margin-right: 4px;
   font-size: 0.9em; }
-  /* line 81, ../scss/components/_soe_global.scss */
+  /* line 89, ../scss/components/_soe_global.scss */
   ul.pager li a:focus, ul.pager li a:hover {
     margin-right: 4px;
     font-weight: 300; }
-/* line 88, ../scss/components/_soe_global.scss */
+/* line 96, ../scss/components/_soe_global.scss */
 ul.pager li.pager-current {
   margin-right: 4px;
   font-weight: 300; }
 
-/* line 94, ../scss/components/_soe_global.scss */
+/* line 102, ../scss/components/_soe_global.scss */
 td,
 th {
   padding: 0.8em;
@@ -87,23 +96,23 @@ th {
   border-right: none;
   border-left: none; }
 
-/* line 104, ../scss/components/_soe_global.scss */
+/* line 112, ../scss/components/_soe_global.scss */
 th {
   background: #EFEFEF; }
 
-/* line 108, ../scss/components/_soe_global.scss */
+/* line 116, ../scss/components/_soe_global.scss */
 .well {
   background: #FFFFFF;
   box-shadow: rgba(0, 0, 0, 0.1) 0 1px 0px, rgba(0, 0, 0, 0.1) 0 2px 2px 0; }
 
-/* line 113, ../scss/components/_soe_global.scss */
+/* line 121, ../scss/components/_soe_global.scss */
 .summary {
   font-family: "Roboto Slab", serif;
   font-size: 1.3;
   line-height: 1.5em;
   margin-bottom: 30px; }
 
-/* line 120, ../scss/components/_soe_global.scss */
+/* line 128, ../scss/components/_soe_global.scss */
 .descriptor {
   text-transform: none;
   letter-spacing: 0.02em;
@@ -111,26 +120,26 @@ th {
   margin-bottom: 4px;
   line-height: 1.2em; }
 
-/* line 128, ../scss/components/_soe_global.scss */
+/* line 136, ../scss/components/_soe_global.scss */
 .postcard-left {
   margin-top: 6px; }
 
-/* line 132, ../scss/components/_soe_global.scss */
+/* line 140, ../scss/components/_soe_global.scss */
 .views-row-lines .views-row {
   border-color: #D7D7D7; }
 
-/* line 136, ../scss/components/_soe_global.scss */
+/* line 144, ../scss/components/_soe_global.scss */
 .main {
   padding-top: 60px;
   background: #F8F8F8; }
 
 @media (max-width: 767px) {
-  /* line 141, ../scss/components/_soe_global.scss */
+  /* line 149, ../scss/components/_soe_global.scss */
   .container {
     margin-bottom: 10px; } }
 
 @media (min-width: 1200px) {
-  /* line 147, ../scss/components/_soe_global.scss */
+  /* line 155, ../scss/components/_soe_global.scss */
   #content.span9 {
     width: 740px;
     margin-left: 80px; } }
@@ -403,44 +412,45 @@ p.related-link {
 /* line 126, ../scss/components/_soe_navigation.scss */
 .sidebar .block-menu-block {
   background: none;
-  margin: 1px; }
-  /* line 130, ../scss/components/_soe_navigation.scss */
+  margin: 1px;
+  padding: 0; }
+  /* line 131, ../scss/components/_soe_navigation.scss */
   .sidebar .block-menu-block h2 {
     font-family: "Roboto Slab", serif;
     font-weight: 400;
     letter-spacing: 0; }
-  /* line 137, ../scss/components/_soe_navigation.scss */
+  /* line 138, ../scss/components/_soe_navigation.scss */
   .sidebar .block-menu-block .menu-block-wrapper > .menu > li.active-trail {
     background: none; }
-  /* line 141, ../scss/components/_soe_navigation.scss */
+  /* line 142, ../scss/components/_soe_navigation.scss */
   .sidebar .block-menu-block .menu-block-wrapper > .menu > li.last {
     border-bottom: none; }
-  /* line 145, ../scss/components/_soe_navigation.scss */
+  /* line 146, ../scss/components/_soe_navigation.scss */
   .sidebar .block-menu-block .menu-block-wrapper > .menu > li > a {
     border-top: none;
     font-weight: 400; }
-    /* line 149, ../scss/components/_soe_navigation.scss */
+    /* line 150, ../scss/components/_soe_navigation.scss */
     .sidebar .block-menu-block .menu-block-wrapper > .menu > li > a.active, .sidebar .block-menu-block .menu-block-wrapper > .menu > li > a:focus, .sidebar .block-menu-block .menu-block-wrapper > .menu > li > a:hover {
       background: none; }
-  /* line 156, ../scss/components/_soe_navigation.scss */
+  /* line 157, ../scss/components/_soe_navigation.scss */
   .sidebar .block-menu-block .menu-block-wrapper > .menu > li li a {
     font-size: 18px;
     padding: 0.25em; }
-    /* line 160, ../scss/components/_soe_navigation.scss */
+    /* line 161, ../scss/components/_soe_navigation.scss */
     .sidebar .block-menu-block .menu-block-wrapper > .menu > li li a.active-trail, .sidebar .block-menu-block .menu-block-wrapper > .menu > li li a:focus, .sidebar .block-menu-block .menu-block-wrapper > .menu > li li a:hover {
       text-decoration: none; }
-      /* line 165, ../scss/components/_soe_navigation.scss */
+      /* line 166, ../scss/components/_soe_navigation.scss */
       .sidebar .block-menu-block .menu-block-wrapper > .menu > li li a.active-trail:before, .sidebar .block-menu-block .menu-block-wrapper > .menu > li li a:focus:before, .sidebar .block-menu-block .menu-block-wrapper > .menu > li li a:hover:before {
         content: "> ";
         margin-left: -12px; }
-  /* line 173, ../scss/components/_soe_navigation.scss */
+  /* line 174, ../scss/components/_soe_navigation.scss */
   .sidebar .block-menu-block .content > .menu > li.expanded {
     background: none; }
-/* line 178, ../scss/components/_soe_navigation.scss */
+/* line 179, ../scss/components/_soe_navigation.scss */
 .sidebar .nav li a {
   color: #B1040E; }
 
-/* line 183, ../scss/components/_soe_navigation.scss */
+/* line 184, ../scss/components/_soe_navigation.scss */
 .main .menu li {
   line-height: 1.2em; }
 
