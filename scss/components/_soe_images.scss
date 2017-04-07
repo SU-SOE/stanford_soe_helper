@@ -42,6 +42,9 @@
   .view-stanford-page-banner-caption {
     .banner-bottom {
       position: relative;
+      @media (max-width: 767px) {
+        position: inherit;
+      }
     }
 
     img {
