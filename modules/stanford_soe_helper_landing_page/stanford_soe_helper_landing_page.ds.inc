@@ -18,7 +18,7 @@ function stanford_soe_helper_landing_page_ds_field_settings_info() {
   $ds_fieldsetting->view_mode = 'full';
   $ds_fieldsetting->settings = array(
     'title' => array(
-      'weight' => '5',
+      'weight' => '4',
       'label' => 'hidden',
       'format' => 'default',
       'formatter_settings' => array(
@@ -77,6 +77,8 @@ function stanford_soe_helper_landing_page_ds_layout_settings_info() {
     'layout_link_attribute' => '',
     'layout_link_custom' => '',
     'layout_disable_css' => FALSE,
+    'hide_page_title' => '1',
+    'page_option_title' => '',
   );
   $export['node|stanford_landing_page|full'] = $ds_layout;
 
