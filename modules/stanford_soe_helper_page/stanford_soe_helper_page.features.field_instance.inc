@@ -61,7 +61,7 @@ function stanford_soe_helper_page_field_default_field_instances() {
     'bundle' => 'stanford_page',
     'default_value' => array(
       0 => array(
-        'value' => 'dark ',
+        'value' => 'yellow',
       ),
     ),
     'deleted' => 0,

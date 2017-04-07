@@ -125,10 +125,11 @@ function stanford_soe_helper_page_views_default_views() {
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['ui_name'] = 'Global: Rewrite view';
   $handler->display->display_options['fields']['nothing']['label'] = '';
-  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="banner-caption stanford-banner-text [field_s_banner_caption_color] [field_s_banner_caption_horizonta] [field_s_banner_caption_vertical]">
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div>[field_s_banner_link][field_s_banner_image][field_s_banner_link_1]
+  <div class="banner-caption stanford-banner-text [field_s_banner_caption_color] [field_s_banner_caption_horizonta][field_s_banner_caption_vertical]">
     <div class="more-link">[field_s_banner_link][field_s_banner_link_2][field_s_banner_link_1]</div>
-</div>
-<div>[field_s_banner_link][field_s_banner_image][field_s_banner_link_1]</div>';
+  </div>
+</div>';
   $handler->display->display_options['fields']['nothing']['element_type'] = '0';
   $handler->display->display_options['fields']['nothing']['element_label_type'] = '0';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
