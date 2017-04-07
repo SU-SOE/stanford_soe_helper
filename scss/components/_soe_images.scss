@@ -4,6 +4,8 @@
 // IMAGES
 //
 
+// GENERAL
+
 .main {
   .border-simple img,
   .border-simple-nowidth img {
@@ -31,5 +33,62 @@
   @media (max-width: 400px) {
     max-width: 100%;
     float: none;
+  }
+}
+
+// BOTTOM BANNER
+
+#fullwidth-bottom {
+  .view-stanford-page-banner-caption {
+    img {
+      width: 100%;
+      position: relative;
+    }
+
+    div.more-link {
+      background: $pink;
+      padding: 26px 32px 30px;
+      margin: 0;
+    }
+
+    .more-link a {
+      color: black;
+      font-family: $roboto-slab;
+      font-size: 32px;
+      font-weight: 800;
+      line-height: 43px;
+
+      &:after {
+        content: normal;
+      }
+    }
+
+    .banner-caption {
+      position: absolute;
+      width: 70%;
+      @media (max-width: 767px) {
+        position: inherit;
+        width: 100%;
+      }
+
+      &.banner-right {
+        right: 0;
+        text-align: right;
+
+        &.banner-bottom {
+          bottom: 100px;
+          @media (max-width: 979px) {
+            bottom: 55px;
+          }
+        }
+
+        &.banner-top {
+          top: 100px;
+          @media (max-width: 979px) {
+            top: 55px;
+          }
+        }
+      }
+    }
   }
 }
