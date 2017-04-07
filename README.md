@@ -1,7 +1,7 @@
 #[Stanford SOE Helper](https://github.com/SU-SOE/stanford_soe_helper)
 ##### Version: 7.x-1.x
 
-Maintainers: [boznik](https://github.com/boznik),  [cjwest](https://github.com/cjwest)
+Maintainers: [boznik](https://github.com/boznik),  [cjwest](https://github.com/cjwest), [josephgknox](https://github.com/josephgknox)
 
 [Changelog.txt](CHANGELOG.txt)
 
