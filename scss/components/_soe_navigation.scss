@@ -42,10 +42,10 @@
       }
     }
 
-     > .active-trail > a,
+     > .active > a:hover,
      > li > a:focus,
      > li > a:hover,
-    > .active > a:hover {
+    > .active-trail > a {
       border-bottom: 2px solid $primary-color;
       @media (max-width: 767px) {
         border-bottom: none;
@@ -123,7 +123,7 @@
     }
   }
 
-  .block-menu-block {
+  #sidebar-first & .block-menu-block {
     background: none;
     margin: 1px;
     padding: 0;
@@ -169,6 +169,10 @@
           }
         }
       }
+    }
+
+    ul.menu li ul {
+      padding: 0 0 0 17px;
     }
 
     .content > .menu > li.expanded {
