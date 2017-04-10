@@ -21,29 +21,29 @@ h2 {
   font-weight: 600;
   letter-spacing: 0.02em;
   margin: 1.8em 0 0.5em; }
-  /* line 28, ../scss/components/_soe_global.scss */
-  h2 a:hover {
-    text-decoration: none; }
 
-/* line 33, ../scss/components/_soe_global.scss */
+/* line 29, ../scss/components/_soe_global.scss */
 h3 {
   font-size: 1.2em;
   font-weight: 600;
   margin: 1.3em 0 0.3em; }
-  /* line 38, ../scss/components/_soe_global.scss */
-  h3 a:hover {
-    text-decoration: none; }
 
-/* line 43, ../scss/components/_soe_global.scss */
+/* line 35, ../scss/components/_soe_global.scss */
 h4 {
   font-size: 1em;
   font-weight: 600;
   margin: 1em 0 0.3em; }
-  /* line 48, ../scss/components/_soe_global.scss */
-  h4 a {
-    text-decoration: none; }
 
-/* line 53, ../scss/components/_soe_global.scss */
+/* line 47, ../scss/components/_soe_global.scss */
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  text-decoration: underline; }
+
+/* line 52, ../scss/components/_soe_global.scss */
 .btn a,
 a.btn {
   border-radius: 0;
@@ -54,59 +54,59 @@ a.btn {
   letter-spacing: 0.03em;
   background: #B1040E; }
 
-/* line 64, ../scss/components/_soe_global.scss */
+/* line 63, ../scss/components/_soe_global.scss */
 .normal-link a,
 a {
   color: #B1040E; }
 
-/* line 69, ../scss/components/_soe_global.scss */
+/* line 68, ../scss/components/_soe_global.scss */
 .more-link a,
 a.more-link {
   font-size: 20px;
   color: #B1040E; }
-  /* line 74, ../scss/components/_soe_global.scss */
+  /* line 73, ../scss/components/_soe_global.scss */
   .more-link a:after,
   a.more-link:after {
     content: " ›"; }
 
-/* line 79, ../scss/components/_soe_global.scss */
+/* line 78, ../scss/components/_soe_global.scss */
 .normal-link h2,
 .normal-link h3,
 h2.normal-link,
 h3.normal-link {
   font-size: 1.1em; }
 
-/* line 86, ../scss/components/_soe_global.scss */
+/* line 85, ../scss/components/_soe_global.scss */
 li {
   line-height: 1.4em;
   margin-bottom: 10px; }
 
-/* line 93, ../scss/components/_soe_global.scss */
+/* line 92, ../scss/components/_soe_global.scss */
 #content .content ul li {
   list-style-type: disc; }
-  /* line 96, ../scss/components/_soe_global.scss */
+  /* line 95, ../scss/components/_soe_global.scss */
   #content .content ul li:last-child {
     margin-bottom: 1.5em; }
-/* line 102, ../scss/components/_soe_global.scss */
+/* line 101, ../scss/components/_soe_global.scss */
 #content .content ol li:last-child {
   margin-bottom: 1.5em; }
-/* line 108, ../scss/components/_soe_global.scss */
+/* line 107, ../scss/components/_soe_global.scss */
 #content .content ul.pager li a {
   border: 1px solid #D7D7D7;
   background: #FFFFFF;
   margin-bottom: 12px;
   margin-right: 4px;
   font-size: 0.9em; }
-  /* line 115, ../scss/components/_soe_global.scss */
+  /* line 114, ../scss/components/_soe_global.scss */
   #content .content ul.pager li a:focus, #content .content ul.pager li a:hover {
     margin-right: 4px;
     font-weight: 300; }
-/* line 122, ../scss/components/_soe_global.scss */
+/* line 121, ../scss/components/_soe_global.scss */
 #content .content ul.pager li.pager-current {
   margin-right: 4px;
   font-weight: 300; }
 
-/* line 130, ../scss/components/_soe_global.scss */
+/* line 129, ../scss/components/_soe_global.scss */
 td,
 th {
   padding: 0.8em;
@@ -116,28 +116,28 @@ th {
   border-right: none;
   border-left: none; }
 
-/* line 140, ../scss/components/_soe_global.scss */
+/* line 139, ../scss/components/_soe_global.scss */
 th {
   background: #EFEFEF; }
 
-/* line 144, ../scss/components/_soe_global.scss */
+/* line 143, ../scss/components/_soe_global.scss */
 .well {
   background: #FFFFFF;
   box-shadow: rgba(0, 0, 0, 0.1) 0 1px 0px, rgba(0, 0, 0, 0.1) 0 2px 2px 0; }
-  /* line 148, ../scss/components/_soe_global.scss */
+  /* line 147, ../scss/components/_soe_global.scss */
   .well h2 {
     font-size: 1.3em;
     font-weight: 600; }
-  /* line 153, ../scss/components/_soe_global.scss */
+  /* line 152, ../scss/components/_soe_global.scss */
   .well p {
     font-size: 0.9em;
     font-weight: 400;
     line-height: 1.4em; }
-    /* line 158, ../scss/components/_soe_global.scss */
+    /* line 157, ../scss/components/_soe_global.scss */
     .well p a {
       text-decoration: underline; }
 
-/* line 164, ../scss/components/_soe_global.scss */
+/* line 163, ../scss/components/_soe_global.scss */
 .summary {
   font-family: "Roboto Slab", serif;
   font-size: 1.5em;
@@ -145,7 +145,7 @@ th {
   line-height: 1.4em;
   margin-bottom: 30px; }
 
-/* line 172, ../scss/components/_soe_global.scss */
+/* line 171, ../scss/components/_soe_global.scss */
 .descriptor {
   text-transform: none;
   letter-spacing: 0.02em;
@@ -153,26 +153,26 @@ th {
   margin-bottom: 4px;
   line-height: 1.2em; }
 
-/* line 180, ../scss/components/_soe_global.scss */
+/* line 179, ../scss/components/_soe_global.scss */
 .postcard-left {
   margin-top: 6px; }
 
-/* line 184, ../scss/components/_soe_global.scss */
+/* line 183, ../scss/components/_soe_global.scss */
 .views-row-lines .views-row {
   border-color: #D7D7D7; }
 
-/* line 188, ../scss/components/_soe_global.scss */
+/* line 187, ../scss/components/_soe_global.scss */
 .main {
   padding-top: 60px;
   background: #F8F8F8; }
 
 @media (max-width: 767px) {
-  /* line 193, ../scss/components/_soe_global.scss */
+  /* line 192, ../scss/components/_soe_global.scss */
   .container {
     margin-bottom: 10px; } }
 
 @media (min-width: 1200px) {
-  /* line 199, ../scss/components/_soe_global.scss */
+  /* line 198, ../scss/components/_soe_global.scss */
   #content.span9 {
     width: 740px;
     margin-left: 80px; } }
@@ -464,10 +464,10 @@ p.related-link {
       /* line 167, ../scss/components/_soe_navigation.scss */
       .sidebar#sidebar-first .block-menu-block .menu-block-wrapper > .menu > li li a.active-trail:before, .sidebar#sidebar-first .block-menu-block .menu-block-wrapper > .menu > li li a:focus:before, .sidebar#sidebar-first .block-menu-block .menu-block-wrapper > .menu > li li a:hover:before {
         content: "> ";
-        margin-left: -12px; }
+        margin-left: -12.5px; }
   /* line 175, ../scss/components/_soe_navigation.scss */
   .sidebar#sidebar-first .block-menu-block ul.menu li ul {
-    padding: 0 0 0 17px; }
+    padding: 0 0 0 20px; }
   /* line 179, ../scss/components/_soe_navigation.scss */
   .sidebar#sidebar-first .block-menu-block .content > .menu > li.expanded {
     background: none; }
