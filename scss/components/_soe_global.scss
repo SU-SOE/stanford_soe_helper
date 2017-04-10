@@ -46,6 +46,11 @@ h5,
 h6 {
   a {
     text-decoration: underline;
+
+    &:focus,
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 
