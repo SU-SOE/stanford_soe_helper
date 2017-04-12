@@ -182,10 +182,13 @@ th {
 @media (max-width: 767px) {
   /* line 197, ../scss/components/_soe_global.scss */
   .container {
-    margin-bottom: 10px; } }
+    margin-bottom: 10px; }
+    /* line 201, ../scss/components/_soe_global.scss */
+    #fullwidth-bottom .container {
+      margin-bottom: 0; } }
 
 @media (min-width: 1200px) {
-  /* line 203, ../scss/components/_soe_global.scss */
+  /* line 207, ../scss/components/_soe_global.scss */
   #content.span9 {
     width: 740px;
     margin-left: 80px; } }
