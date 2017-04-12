@@ -29,6 +29,7 @@ function stanford_soe_helper_page_field_default_field_bases() {
         'pink' => 'Pink',
         'turquoise' => 'Turquoise',
         'orange' => 'Orange',
+        'yellow' => 'Yellow',
       ),
       'allowed_values_function' => '',
     ),
