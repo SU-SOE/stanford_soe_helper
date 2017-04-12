@@ -18,26 +18,7 @@
     background-color: transparent;
     border: none;
     box-shadow: none;
-    padding-top: 5px;
-  }
-
-  .input-medium {
-    width: 60px;
-  }
-
-  input:-ms-input-placeholder {
-    color: $white;
-  }
-
-  input::-moz-placeholder {
-    color: $white;
-  }
-
-  input::-webkit-input-placeholder {
-    color: $white;
-  }
-
-  .form-item {
+    padding: 5px 0 0 30px;
     background: url("../img/soe_mag_glass_white.svg") no-repeat 89% center;
     @media (max-width: 1199px) {
       background-position: 86.5%;
@@ -61,6 +42,51 @@
       background-position: 48%;
     }
   }
+
+  .input-medium {
+    width: 60px;
+
+    &:focus {
+      width: 175px;
+    }
+  }
+
+  input:-ms-input-placeholder {
+    color: $white;
+  }
+
+  input::-moz-placeholder {
+    color: $white;
+  }
+
+  input::-webkit-input-placeholder {
+    color: $white;
+  }
+
+  // .form-item {
+  //   background: url("../img/soe_mag_glass_white.svg") no-repeat 89% center;
+  //   @media (max-width: 1199px) {
+  //     background-position: 86.5%;
+  //   }
+  //   @media (max-width: 979px) {
+  //     background-position: 82%;
+  //   }
+  //   @media (max-width: 767px) {
+  //     background-position: 76.5%;
+  //   }
+  //   @media (max-width: 695px) {
+  //     background-position: 72%;
+  //   }
+  //   @media (max-width: 580px) {
+  //     background-position: 65%;
+  //   }
+  //   @media (max-width: 480px) {
+  //     background-position: 58%;
+  //   }
+  //   @media (max-width: 400px) {
+  //     background-position: 48%;
+  //   }
+  // }
 }
 
 .page-search div#edit-basic {
