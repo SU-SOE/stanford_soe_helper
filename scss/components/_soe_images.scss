@@ -40,34 +40,54 @@
 
 #fullwidth-bottom {
   .view-stanford-page-banner-caption {
-    img {
-      width: 100%;
+    .views-row {
+      margin-bottom: 0;
+    }
+
+    .banner-bottom-container {
       position: relative;
+      @media (max-width: 767px) {
+        position: inherit;
+      }
+
+      img {
+        width: 100%;
+        @include transition;
+      }
+
+      .more-link a {
+        color: black;
+        font-family: $roboto-slab;
+        font-size: 32px;
+        font-weight: 800;
+        line-height: 43px;
+
+        &:after {
+          content: url("../img/soe_banner_arrow_right.png");
+          vertical-align: -6%;
+          padding-left: 20px;
+        }
+      }
+
+      &:hover {
+        img {
+          @include transform (scale(1.05));
+        }
+
+        .more-link a {
+          text-decoration: underline;
+        }
+      }
     }
 
     div.more-link {
-      background: $pink;
-      padding: 26px 32px 30px;
+      padding: 18px 32px 20px;
       margin: 0;
-    }
-
-    .more-link a {
-      color: black;
-      font-family: $roboto-slab;
-      font-size: 32px;
-      font-weight: 800;
-      line-height: 43px;
-
-      &:after {
-        content: url("../img/soe_banner_arrow_right.png");
-        vertical-align: -6%;
-        padding-left: 20px;
-      }
     }
 
     .banner-caption {
       position: absolute;
-      width: 70%;
+      width: 80%;
       @media (max-width: 767px) {
         position: inherit;
         width: 100%;
@@ -91,12 +111,19 @@
           }
         }
       }
+
+      &.banner-orange div.more-link {
+        background: $orange;
+      }
+
+      &.banner-turquoise div.more-link {
+        background: $turquoise;
+      }
+
+      &.banner-pink div.more-link {
+        background: $pink;
+      }
+
     }
   }
-}
-
-#fullwidth-bottom .view-stanford-page-banner-caption .more-link a:after {
-  content: url("https://sites.stanford.edu/jse-soe-new-dev/sites/default/files/soe_banner_arrow.png");
-  vertical-align: -6%;
-  padding-left: 20px;
 }
