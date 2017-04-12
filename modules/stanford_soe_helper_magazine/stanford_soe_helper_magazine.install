@@ -1,0 +1,65 @@
+<?php
+/**
+ * @file
+ * stanford_soe_helper_magazine.install
+ *
+ * Install, enable, uninstall, and disable functions
+ */
+
+/**
+ * Implements hook_install().
+ */
+function stanford_soe_helper_magazine_install() {
+  _stanford_soe_helper_magazine_add_newsletter_signup_bean();
+
+}
+
+/**
+ * Implements hook_enable().
+ */
+function stanford_soe_helper_magazine_enable() {
+
+  // Initialize settings
+  //$settings = stanford_magazine_settings();
+  //variable_set('stanford_magazine_settings', $settings);
+}
+
+/**
+ * Implements hook_disable().
+ */
+function stanford_soe_helper_magazine_disable() {
+  /*
+   *magazine_cache_rebuild();
+   */
+  /* Your code here */
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function stanford_soe_helper_magazine_uninstall() {
+  /*
+   *variable_del('upload_file_types');
+   */
+}
+
+
+function _stanford_soe_helper_magazine_add_newsletter_signup_bean() {
+  $bean_name = 'stanford-soe-mag-news-signup';
+  if(!db_field_exists('bean', $bean_name )) {
+    $bean = bean_create(array('type' => 'stanford_postcard'));
+    $bean->label = 'Stanford SoE Magazine newsletter Sign-up';
+    $bean->title = 'Get Updates from Stanford Engineering';
+    $bean->delta = $bean_name;
+
+    $bean->field_s_postcard_body = array(
+      'LANGUAGE_NONE' => array(
+        '0' => array(
+          'value' => 'this is default text',
+          'format' => 'full_html',
+        )));
+    $bean->save();
+    watchdog('stanford_soe_helper_magazine', 'Bean created');
+  }
+}
+
