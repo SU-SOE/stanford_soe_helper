@@ -15,7 +15,7 @@ function stanford_soe_helper_magazine_context_default_contexts() {
   $context->api_version = 3;
   $context->name = 'stanford_magazine_article';
   $context->description = 'Context for magazine article nodes';
-  $context->tag = 'Magazine';
+  $context->tag = 'Engineering';
   $context->conditions = array(
     'node' => array(
       'values' => array(
@@ -35,6 +35,12 @@ function stanford_soe_helper_magazine_context_default_contexts() {
           'region' => 'content_top',
           'weight' => '-10',
         ),
+        'bean-stanford-soe-mag-news-signup' => array(
+          'module' => 'bean',
+          'delta' => 'stanford-soe-mag-news-signup',
+          'region' => 'content_lower',
+          'weight' => '-10',
+        ),
       ),
     ),
   );
@@ -43,7 +49,7 @@ function stanford_soe_helper_magazine_context_default_contexts() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Context for magazine article nodes');
-  t('Magazine');
+  t('Engineering');
   $export['stanford_magazine_article'] = $context;
 
   return $export;
