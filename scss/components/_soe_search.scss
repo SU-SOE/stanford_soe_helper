@@ -37,6 +37,9 @@
 
     &:focus {
       width: 175px;
+      @media (max-width: 480px) {
+        width: 170px;
+      }
     }
   }
 
