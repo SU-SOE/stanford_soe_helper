@@ -46,6 +46,7 @@
 
     .banner-bottom-container {
       position: relative;
+      overflow: hidden;
       @media (max-width: 767px) {
         position: inherit;
       }
@@ -71,7 +72,7 @@
 
       &:hover {
         img {
-          @include transform (scale(1.05));
+          @include transform (scale(1.03));
         }
 
         .more-link a {
