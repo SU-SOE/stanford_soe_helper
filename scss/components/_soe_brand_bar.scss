@@ -20,14 +20,12 @@
     }
 
     &.logo-mobile {
-      @media (max-width: 480px) {
+      @include breakpoint(x-small) {
         display: table-cell;
         padding: 0 10px 0 0;
         border-right: 1px solid !important;
-      }
 
-      a {
-        @media (max-width: 480px) {
+        a {
           background-size: 120px 26.66px;
         }
       }
@@ -35,7 +33,7 @@
   }
 
   #name-and-slogan.with-logo {
-    @media (max-width: 480px) {
+    @include breakpoint(x-small) {
       display: table-cell;
       padding: 0 0 0 10px;
     }
@@ -47,7 +45,7 @@
 
     #site-title-first-line.site-title-uppercase {
       font-size: 34px;
-      @media (max-width: 480px) {
+      @include breakpoint(x-small) {
         font-size: 28px;
       }
       @media (max-width: 400px) {

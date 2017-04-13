@@ -47,7 +47,7 @@
     .banner-bottom-container {
       position: relative;
       overflow: hidden;
-      @media (max-width: 767px) {
+      @include breakpoint(small) {
         position: inherit;
       }
 
@@ -89,7 +89,7 @@
     .banner-caption {
       position: absolute;
       width: 80%;
-      @media (max-width: 767px) {
+      @include breakpoint(small) {
         position: inherit;
         width: 100%;
       }
@@ -100,14 +100,14 @@
 
         &.banner-bottom {
           bottom: 100px;
-          @media (max-width: 979px) {
+          @include breakpoint(medium) {
             bottom: 55px;
           }
         }
 
         &.banner-top {
           top: 100px;
-          @media (max-width: 979px) {
+          @include breakpoint(medium) {
             top: 55px;
           }
         }

@@ -21,10 +21,10 @@
   }
 
   #block-stanford-soe-helper-sitewide-stanford-soe-intranet-link {
-    @media (max-width: 979px) {
+    @include breakpoint(medium) {
       margin-top: 50px;
     }
-    @media (max-width: 767px) {
+    @include breakpoint(small) {
       margin-top: 0;
     }
   }
@@ -36,7 +36,7 @@
     @media (max-width: 1199px) {
       width: 24%;
     }
-    @media (max-width: 979px) {
+    @include breakpoint(medium) {
       float: none;
       width: auto;
       margin-bottom: 30px;

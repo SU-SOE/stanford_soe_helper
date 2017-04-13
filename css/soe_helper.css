@@ -187,7 +187,7 @@ th {
     #fullwidth-bottom .container {
       margin-bottom: 0; } }
 
-@media (min-width: 1200px) {
+@media (max-width: 1200px) {
   /* line 207, ../scss/components/_soe_global.scss */
   #content.span9 {
     width: 740px;
@@ -258,29 +258,28 @@ p.related-link {
   #header #logo.logo-mobile {
     display: table-cell;
     padding: 0 10px 0 0;
-    border-right: 1px solid !important; } }
+    border-right: 1px solid !important; }
+    /* line 28, ../scss/components/_soe_brand_bar.scss */
+    #header #logo.logo-mobile a {
+      background-size: 120px 26.66px; } }
 @media (max-width: 480px) {
-  /* line 29, ../scss/components/_soe_brand_bar.scss */
-  #header #logo.logo-mobile a {
-    background-size: 120px 26.66px; } }
-@media (max-width: 480px) {
-  /* line 37, ../scss/components/_soe_brand_bar.scss */
+  /* line 35, ../scss/components/_soe_brand_bar.scss */
   #header #name-and-slogan.with-logo {
     display: table-cell;
     padding: 0 0 0 10px; } }
-/* line 44, ../scss/components/_soe_brand_bar.scss */
+/* line 42, ../scss/components/_soe_brand_bar.scss */
 #header.header {
   background: #FFFFFF;
   padding: 32px 0 0; }
-  /* line 48, ../scss/components/_soe_brand_bar.scss */
+  /* line 46, ../scss/components/_soe_brand_bar.scss */
   #header.header #site-title-first-line.site-title-uppercase {
     font-size: 34px; }
     @media (max-width: 480px) {
-      /* line 48, ../scss/components/_soe_brand_bar.scss */
+      /* line 46, ../scss/components/_soe_brand_bar.scss */
       #header.header #site-title-first-line.site-title-uppercase {
         font-size: 28px; } }
     @media (max-width: 400px) {
-      /* line 48, ../scss/components/_soe_brand_bar.scss */
+      /* line 46, ../scss/components/_soe_brand_bar.scss */
       #header.header #site-title-first-line.site-title-uppercase {
         font-size: 24px; } }
 

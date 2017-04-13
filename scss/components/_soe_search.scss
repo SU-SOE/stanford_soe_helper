@@ -37,7 +37,7 @@
 
     &:focus {
       width: 175px;
-      @media (max-width: 480px) {
+      @include breakpoint(x-small) {
         width: 170px;
       }
     }

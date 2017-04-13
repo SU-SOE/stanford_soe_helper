@@ -6,10 +6,10 @@
 
 .node-type-stanford-landing-page {
   &.stanford-4-col-header .field-name-field-landing-page-item > .field-items > .field-item {
-    @media (max-width: 1200px) {
+    @include breakpoint(large) {
       width: 46.333%;
     }
-    @media (max-width: 979px) {
+    @include breakpoint(medium) {
       width: 48%;
       margin-right: 1.5%;
     }
@@ -21,7 +21,7 @@
   }
 
   &.large-landscape .field-name-field-landing-page-item > .field-items > .field-item {
-    @media (max-width: 979px) {
+    @include breakpoint(medium) {
       width: 48%;
 
       &:nth-child(3n) {
@@ -64,7 +64,7 @@
   margin: 0 auto;
   width: 30%;
   margin-bottom: 40px;
-  @media (max-width: 480px) {
+  @include breakpoint(x-small) {
     width: 65%;
   }
 }

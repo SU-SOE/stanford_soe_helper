@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@mixin transition ($what: all, $time: 0.5s, $how: ease) {
+@mixin transition($what: all, $time: 0.5s, $how: ease) {
   -webkit-transition: $what $time $how;
   -moz-transition: $what $time $how;
   -o-transition: $what $time $how;
