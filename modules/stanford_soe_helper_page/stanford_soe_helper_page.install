@@ -41,6 +41,13 @@ function stanford_soe_helper_page_uninstall() {
 }
 
 /**
+ * Implements hook_update_N().
+ */
+function stanford_soe_helper_page_update_7100() {
+  _stanford_soe_helper_page_add_color_field();
+}
+
+/**
  * Add the accent color field to Stanford Page
  *
  * If the soe_accent_color vocabulary exists, then add the
