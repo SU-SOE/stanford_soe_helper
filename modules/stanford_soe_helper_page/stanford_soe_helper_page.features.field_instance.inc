@@ -56,6 +56,97 @@ function stanford_soe_helper_page_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-stanford_page-field_s_banner_accent_color'.
+  $field_instances['node-stanford_page-field_s_banner_accent_color'] = array(
+    'bundle' => 'stanford_page',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'These terms identify the accent color associated with this page. Select a color.',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 0,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 6,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_s_banner_accent_color',
+    'label' => 'Accent color',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 8,
+    ),
+  );
+
+  // Exported field_instance: 'node-stanford_page-field_s_banner_caption_color'.
+  $field_instances['node-stanford_page-field_s_banner_caption_color'] = array(
+    'bundle' => 'stanford_page',
+    'default_value' => array(
+      0 => array(
+        'value' => 'orange',
+      ),
+    ),
+    'deleted' => 0,
+    'description' => 'This defines the color scheme used when displaying the caption.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 8,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 14,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_s_banner_caption_color',
+    'label' => 'Caption Color',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 44,
+    ),
+  );
+
   // Exported field_instance:
   // 'node-stanford_page-field_s_banner_caption_horizonta'.
   $field_instances['node-stanford_page-field_s_banner_caption_horizonta'] = array(
@@ -373,11 +464,15 @@ function stanford_soe_helper_page_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Accent color');
   t('Apache Solr Index');
   t('Banner image');
   t('Banner link');
+  t('Caption Color');
   t('Caption Position Horizontal');
   t('Caption Position Vertical');
+  t('These terms identify the accent color associated with this page. Select a color.');
+  t('This defines the color scheme used when displaying the caption.');
   t('This field defines vertical alignment for the caption overlay on your banner.');
   t('This field is used for the horizontal placement of the caption on your slide. ');
   t('This is a full-width banner that displays at the bottom of the page. The size of this image is 1600x500. For best image fidelity, upload a larger image (3200x1000).
