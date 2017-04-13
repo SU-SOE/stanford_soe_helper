@@ -19,13 +19,11 @@
     border: none;
     box-shadow: none;
     padding: 5px 0 0 30px;
-    margin-right: -15px;
     background: url("../img/soe_mag_glass_white.svg") no-repeat 5% center;
     @include transition (width);
 
     &:focus {
       background-position-x: 0%;
-      margin-right: 0;
     }
   }
 
