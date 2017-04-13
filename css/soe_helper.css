@@ -806,15 +806,15 @@ input.form-submit {
     box-shadow: none;
     padding: 5px 0 0 30px;
     margin-right: -15px;
-    background: url("../img/soe_mag_glass_white.svg") no-repeat 5% center; }
-    /* line 25, ../scss/components/_soe_search.scss */
+    background: url("../img/soe_mag_glass_white.svg") no-repeat 5% center;
+    -webkit-transition: width 0.5s ease;
+    -moz-transition: width 0.5s ease;
+    -o-transition: width 0.5s ease;
+    transition: width 0.5s ease; }
+    /* line 26, ../scss/components/_soe_search.scss */
     #block-stanford-search-api-search-api-search-block input[type="text"]:focus {
       background-position-x: 0%;
-      margin-right: 0;
-      -webkit-transition: width 0.5s ease;
-      -moz-transition: width 0.5s ease;
-      -o-transition: width 0.5s ease;
-      transition: width 0.5s ease; }
+      margin-right: 0; }
   /* line 32, ../scss/components/_soe_search.scss */
   #block-stanford-search-api-search-api-search-block .input-medium {
     width: 60px; }
