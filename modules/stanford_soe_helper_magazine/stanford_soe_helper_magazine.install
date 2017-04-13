@@ -51,7 +51,8 @@ function stanford_soe_helper_magazine_uninstall() {
  */
 function _stanford_soe_helper_magazine_add_newsletter_signup_bean() {
   $bean_name = 'stanford-soe-mag-news-signup';
-  if (empty(_stanford_soe_helper_magazine_get_bean($bean_name))) {
+  $bid = _stanford_soe_helper_magazine_get_bean($bean_name)
+  if (empty($bid)) {
     $bean = bean_create(array('type' => 'stanford_postcard'));
     $bean->label = 'Stanford SoE Magazine newsletter Sign-up';
     $bean->title = 'Get Updates from Stanford Engineering';
