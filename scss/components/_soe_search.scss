@@ -22,8 +22,13 @@
     background: url("../img/soe_mag_glass_white.svg") no-repeat 5% center;
     @include transition (width);
 
+    .logged-in & {
+      margin-right: -15px;
+    }
+
     &:focus {
-      background-position-x: 0%;
+      background-position-x: 0;
+      margin-right: 0;
     }
   }
 
