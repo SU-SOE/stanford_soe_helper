@@ -1,0 +1,140 @@
+<?php
+/**
+ * @file
+ * stanford_soe_helper_page.install
+ *
+ * Install, enable, uninstall, and disable functions
+ */
+
+/**
+ * Implements hook_install().
+ */
+function stanford_soe_helper_page_install() {
+  _stanford_soe_helper_page_add_newsletter_signup_bean();
+
+}
+
+/**
+ * Implements hook_enable().
+ */
+function stanford_soe_helper_page_enable() {
+
+  // Initialize settings
+  //$settings = stanford_page_settings();
+  //variable_set('stanford_page_settings', $settings);
+}
+
+/**
+ * Implements hook_disable().
+ */
+function stanford_soe_helper_page_disable() {
+  /*
+   *page_cache_rebuild();
+   */
+  /* Your code here */
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function stanford_soe_helper_page_uninstall() {
+}
+
+/**
+ * Add the accent color field to Stanford Page
+ *
+ * If the soe_accent_color vocabulary exists, then add the
+ * field to the Stanford Page. We're doing it this way because
+ * the soe_accent_color vocabulary is defined in a separate module.
+ *
+ * @param none
+ */
+function _stanford_soe_helper_page_add_color_field() {
+
+  $tax = taxonomy_vocabulary_machine_name_load("soe_accent_color");
+  if ($tax) {
+    $field_name = 'field_s_banner_accent_color';
+
+    // Make sure the field doesn't already exist.
+    if (field_info_field($field_name)) {
+      watchdog('stanford_soe_helper_page', t('!field_name already exists.', array('!field_name' => $field_name)));
+    }
+    else {
+      // Create the field.
+      $field_base = array(
+        'field_name' => $field_name,
+        'active' => 1,
+        'cardinality' => 1,
+        'deleted' => 0,
+        'entity_types' => array(),
+        'indexes' => array(
+          'tid' => array(
+            0 => 'tid',
+          ),
+        ),
+        'locked' => 0,
+        'module' => 'taxonomy',
+        'settings' => array(
+          'allowed_values' => array(
+            0 => array(
+              'vocabulary' => 'soe_accent_color',
+              'parent' => 0,
+            ),
+          ),
+        ),
+        'translatable' => 0,
+        'type' => 'taxonomy_term_reference',
+      );
+      field_create_field($field_base);
+
+      // Create the instance.
+
+      $field_instance = array(
+        'bundle' => 'stanford_page',
+        'default_value' => NULL,
+        'deleted' => 0,
+        'description' => 'These terms identify the accent color associated with this page. Select a color.',
+        'display' => array(
+          'default' => array(
+            'label' => 'hidden',
+            'module' => 'taxonomy',
+            'settings' => array(),
+            'type' => 'taxonomy_term_reference_link',
+            'weight' => 0,
+          ),
+          'full' => array(
+            'label' => 'hidden',
+            'module' => 'taxonomy',
+            'settings' => array(),
+            'type' => 'taxonomy_term_reference_link',
+            'weight' => 0,
+          ),
+          'teaser' => array(
+            'label' => 'above',
+            'settings' => array(),
+            'type' => 'hidden',
+            'weight' => 6,
+          ),
+        ),
+        'entity_type' => 'node',
+        'field_name' => 'field_s_banner_accent_color',
+        'label' => 'Department',
+        'required' => 0,
+        'settings' => array(
+          'user_register_form' => FALSE,
+        ),
+        'widget' => array(
+          'active' => 1,
+          'module' => 'options',
+          'settings' => array(),
+          'type' => 'options_buttons',
+          'weight' => 8,
+        ),
+
+      );
+      field_create_instance($field_instance);
+      watchdog('stanford_soe_helper_page', t('!field_name was added successfully.', array('!field_name' => $field_name)));
+    }
+  }
+}
+
