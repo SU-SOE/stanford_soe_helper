@@ -810,24 +810,28 @@ input.form-submit {
     /* line 25, ../scss/components/_soe_search.scss */
     #block-stanford-search-api-search-api-search-block input[type="text"]:focus {
       background-position-x: 0%;
-      margin-right: 0; }
-  /* line 31, ../scss/components/_soe_search.scss */
+      margin-right: 0;
+      -webkit-transition: width 0.5s ease;
+      -moz-transition: width 0.5s ease;
+      -o-transition: width 0.5s ease;
+      transition: width 0.5s ease; }
+  /* line 32, ../scss/components/_soe_search.scss */
   #block-stanford-search-api-search-api-search-block .input-medium {
     width: 60px; }
-    /* line 34, ../scss/components/_soe_search.scss */
+    /* line 35, ../scss/components/_soe_search.scss */
     #block-stanford-search-api-search-api-search-block .input-medium:focus {
       width: 175px; }
-  /* line 39, ../scss/components/_soe_search.scss */
+  /* line 40, ../scss/components/_soe_search.scss */
   #block-stanford-search-api-search-api-search-block input:-ms-input-placeholder {
     color: #FFFFFF; }
-  /* line 43, ../scss/components/_soe_search.scss */
+  /* line 44, ../scss/components/_soe_search.scss */
   #block-stanford-search-api-search-api-search-block input::-moz-placeholder {
     color: #FFFFFF; }
-  /* line 47, ../scss/components/_soe_search.scss */
+  /* line 48, ../scss/components/_soe_search.scss */
   #block-stanford-search-api-search-api-search-block input::-webkit-input-placeholder {
     color: #FFFFFF; }
 
-/* line 52, ../scss/components/_soe_search.scss */
+/* line 53, ../scss/components/_soe_search.scss */
 .page-search div#edit-basic {
   margin-bottom: 5px; }
 

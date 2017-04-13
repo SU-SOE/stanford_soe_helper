@@ -25,6 +25,7 @@
     &:focus {
       background-position-x: 0%;
       margin-right: 0;
+      @include transition (width);
     }
   }
 
