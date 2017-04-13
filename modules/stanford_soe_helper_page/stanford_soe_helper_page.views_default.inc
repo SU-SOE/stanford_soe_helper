@@ -72,16 +72,16 @@ function stanford_soe_helper_page_views_default_views() {
   $handler->display->display_options['fields']['field_s_banner_link_2']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_s_banner_link_2']['click_sort_column'] = 'url';
   $handler->display->display_options['fields']['field_s_banner_link_2']['type'] = 'link_title_plain';
-  /* Field: Content: Caption Color */
-  $handler->display->display_options['fields']['field_s_banner_caption_color']['id'] = 'field_s_banner_caption_color';
-  $handler->display->display_options['fields']['field_s_banner_caption_color']['table'] = 'field_data_field_s_banner_caption_color';
-  $handler->display->display_options['fields']['field_s_banner_caption_color']['field'] = 'field_s_banner_caption_color';
-  $handler->display->display_options['fields']['field_s_banner_caption_color']['label'] = '';
-  $handler->display->display_options['fields']['field_s_banner_caption_color']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_s_banner_caption_color']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_s_banner_caption_color']['alter']['text'] = 'banner-[field_s_banner_caption_color]';
-  $handler->display->display_options['fields']['field_s_banner_caption_color']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_s_banner_caption_color']['type'] = 'list_key';
+  /* Field: Content: Accent color */
+  $handler->display->display_options['fields']['field_s_banner_accent_color']['id'] = 'field_s_banner_accent_color';
+  $handler->display->display_options['fields']['field_s_banner_accent_color']['table'] = 'field_data_field_s_banner_accent_color';
+  $handler->display->display_options['fields']['field_s_banner_accent_color']['field'] = 'field_s_banner_accent_color';
+  $handler->display->display_options['fields']['field_s_banner_accent_color']['label'] = '';
+  $handler->display->display_options['fields']['field_s_banner_accent_color']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_s_banner_accent_color']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_s_banner_accent_color']['alter']['text'] = 'banner-[field_s_banner_accent_color]';
+  $handler->display->display_options['fields']['field_s_banner_accent_color']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_s_banner_accent_color']['type'] = 'taxonomy_term_reference_plain';
   /* Field: Content: Caption Position Horizontal */
   $handler->display->display_options['fields']['field_s_banner_caption_horizonta']['id'] = 'field_s_banner_caption_horizonta';
   $handler->display->display_options['fields']['field_s_banner_caption_horizonta']['table'] = 'field_data_field_s_banner_caption_horizonta';
@@ -127,7 +127,7 @@ function stanford_soe_helper_page_views_default_views() {
   $handler->display->display_options['fields']['nothing']['label'] = '';
   $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="banner-bottom-container">
   <div>[field_s_banner_link][field_s_banner_image][field_s_banner_link_1]</div>
-  <div class="banner-caption stanford-banner-text [field_s_banner_caption_color] [field_s_banner_caption_horizonta][field_s_banner_caption_vertical]">
+  <div class="banner-caption stanford-banner-text [field_s_banner_accent_color] [field_s_banner_caption_horizonta][field_s_banner_caption_vertical]">
       <div class="more-link">[field_s_banner_link][field_s_banner_link_2][field_s_banner_link_1]</div>
     </div>
 </div>';

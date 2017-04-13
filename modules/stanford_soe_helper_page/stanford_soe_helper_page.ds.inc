@@ -48,21 +48,21 @@ function stanford_soe_helper_page_ds_layout_settings_info() {
   $ds_layout->layout = 'ds_1col';
   $ds_layout->settings = array(
     'regions' => array(
-      'ds_content' => array(
-        0 => 'body',
-        1 => 'field_s_page_file',
-      ),
       'stanford_page_featured_image' => array(
-        2 => 'field_s_image_info',
+        0 => 'field_s_image_info',
+      ),
+      'ds_content' => array(
+        1 => 'body',
+        2 => 'field_s_page_file',
       ),
       'stanford_page_title' => array(
         3 => 'title',
       ),
     ),
     'fields' => array(
+      'field_s_image_info' => 'stanford_page_featured_image',
       'body' => 'ds_content',
       'field_s_page_file' => 'ds_content',
-      'field_s_image_info' => 'stanford_page_featured_image',
       'title' => 'stanford_page_title',
     ),
     'classes' => array(),

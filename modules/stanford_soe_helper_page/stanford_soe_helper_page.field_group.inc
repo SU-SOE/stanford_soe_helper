@@ -23,11 +23,12 @@ function stanford_soe_helper_page_field_group_info() {
     'label' => 'Add/Edit Bottom Banner',
     'weight' => '43',
     'children' => array(
-      0 => 'field_s_banner_image',
-      1 => 'field_s_banner_link',
-      2 => 'field_s_banner_caption_color',
-      3 => 'field_s_banner_caption_horizonta',
-      4 => 'field_s_banner_caption_vertical',
+      0 => 'field_s_banner_caption_color',
+      1 => 'field_s_banner_caption_horizonta',
+      2 => 'field_s_banner_caption_vertical',
+      3 => 'field_s_banner_image',
+      4 => 'field_s_banner_link',
+      5 => 'field_s_banner_accent_color',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
