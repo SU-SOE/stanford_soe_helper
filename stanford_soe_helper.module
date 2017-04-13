@@ -73,6 +73,11 @@ function stanford_soe_helper_menu() {
     'access callback' => 'verify_pingdom',
     'type' => MENU_CALLBACK,
   );
+  $items['pingdom/rr'] = array(
+    'page callback' => 'stanford_soe_helper_rr',
+    'access callback' => 'verify_pingdom',
+    'type' => MENU_CALLBACK,
+  );
   return $items;
 }
 
@@ -117,3 +122,21 @@ function stanford_soe_helper_form_stanford_news_item_node_form_alter(
   }
 }
 
+/**
+ * Custom page callback.
+ */
+function stanford_soe_helper_rr() {
+  $registry_rebuild = &drupal_static(__FUNCTION__);
+  $fifteen_minutes_ago = strtotime('15 minutes ago');
+  $stanford_soe_helper_last_rr = variable_get('stanford_soe_helper_last_rr', 0);
+  if (!isset($registry_rebuild) && ($fifteen_minutes_ago > $stanford_soe_helper_last_rr)) {
+    $stanford_soe_helper_pingdom_token = variable_get('stanford_soe_helper_pingdom_token');
+    if (isset($_GET['token']) && $_GET['token'] == $stanford_soe_helper_pingdom_token) {
+      registry_rebuild();
+      drupal_flush_all_caches();
+      watchdog('pingdom', 'drupal registry was rebuilt after pingdom alert');
+      variable_set('stanford_soe_helper_last_rr', REQUEST_TIME);
+    }
+  }
+  return '';
+}
