@@ -22,7 +22,7 @@
     background: url("../img/soe_mag_glass_white.svg") no-repeat 5% center;
     @include transition (width);
 
-    .logged-in & {
+    .not-logged-in & {
       margin-right: -15px;
     }
 
