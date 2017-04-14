@@ -205,7 +205,7 @@ th {
 }
 
 #content.span9 {
-   @include breakpoint(large) {
+   @media (min-width: 1200px) {
     width: 740px;
     margin-left: 80px;
   }
