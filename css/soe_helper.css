@@ -1,28 +1,32 @@
 @charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100);
 /* line 7, ../scss/components/_soe_global.scss */
+html {
+  font-size: 62.5%; }
+
+/* line 11, ../scss/components/_soe_global.scss */
 body {
   font-size: 22px;
-  font-size: 1em;
+  font-size: 2.2em;
   font-weight: 400;
   line-height: 1.45em; }
   @media (max-width: 979px) {
-    /* line 7, ../scss/components/_soe_global.scss */
+    /* line 11, ../scss/components/_soe_global.scss */
     body {
       font-size: 21px;
-      font-size: 0.95455em; } }
+      font-size: 2.1em; } }
   @media (max-width: 767px) {
-    /* line 7, ../scss/components/_soe_global.scss */
+    /* line 11, ../scss/components/_soe_global.scss */
     body {
       font-size: 20px;
-      font-size: 0.90909em; } }
+      font-size: 2em; } }
   @media (max-width: 480px) {
-    /* line 7, ../scss/components/_soe_global.scss */
+    /* line 11, ../scss/components/_soe_global.scss */
     body {
       font-size: 19px;
-      font-size: 0.86364em; } }
+      font-size: 1.9em; } }
 
-/* line 13, ../scss/components/_soe_global.scss */
+/* line 17, ../scss/components/_soe_global.scss */
 h1 {
   font-family: "Roboto Slab", serif;
   font-size: 2.4em;
@@ -30,7 +34,7 @@ h1 {
   letter-spacing: 0;
   margin: -9px 0 10px; }
 
-/* line 21, ../scss/components/_soe_global.scss */
+/* line 25, ../scss/components/_soe_global.scss */
 h2 {
   font-family: "Roboto Slab", serif;
   font-size: 1.6em;
@@ -38,19 +42,19 @@ h2 {
   letter-spacing: 0.02em;
   margin: 1.8em 0 0.5em; }
 
-/* line 29, ../scss/components/_soe_global.scss */
+/* line 33, ../scss/components/_soe_global.scss */
 h3 {
   font-size: 1.2em;
   font-weight: 600;
   margin: 1.3em 0 0.3em; }
 
-/* line 35, ../scss/components/_soe_global.scss */
+/* line 39, ../scss/components/_soe_global.scss */
 h4 {
   font-size: 1em;
   font-weight: 600;
   margin: 1em 0 0.3em; }
 
-/* line 47, ../scss/components/_soe_global.scss */
+/* line 51, ../scss/components/_soe_global.scss */
 h1 a,
 h2 a,
 h3 a,
@@ -58,7 +62,7 @@ h4 a,
 h5 a,
 h6 a {
   text-decoration: underline; }
-  /* line 50, ../scss/components/_soe_global.scss */
+  /* line 54, ../scss/components/_soe_global.scss */
   h1 a:focus, h1 a:hover,
   h2 a:focus,
   h2 a:hover,
@@ -72,7 +76,7 @@ h6 a {
   h6 a:hover {
     text-decoration: underline; }
 
-/* line 57, ../scss/components/_soe_global.scss */
+/* line 61, ../scss/components/_soe_global.scss */
 .btn a,
 a.btn {
   border-radius: 0;
@@ -83,59 +87,59 @@ a.btn {
   letter-spacing: 0.03em;
   background: #B1040E; }
 
-/* line 68, ../scss/components/_soe_global.scss */
+/* line 72, ../scss/components/_soe_global.scss */
 .normal-link a,
 a {
   color: #B1040E; }
 
-/* line 73, ../scss/components/_soe_global.scss */
+/* line 77, ../scss/components/_soe_global.scss */
 .more-link a,
 a.more-link {
   font-size: 20px;
   color: #B1040E; }
-  /* line 78, ../scss/components/_soe_global.scss */
+  /* line 82, ../scss/components/_soe_global.scss */
   .more-link a:after,
   a.more-link:after {
     content: " ›"; }
 
-/* line 83, ../scss/components/_soe_global.scss */
+/* line 87, ../scss/components/_soe_global.scss */
 .normal-link h2,
 .normal-link h3,
 h2.normal-link,
 h3.normal-link {
   font-size: 1.1em; }
 
-/* line 90, ../scss/components/_soe_global.scss */
+/* line 94, ../scss/components/_soe_global.scss */
 li {
   line-height: 1.4em;
   margin-bottom: 10px; }
 
-/* line 97, ../scss/components/_soe_global.scss */
+/* line 101, ../scss/components/_soe_global.scss */
 #content .content ul li {
   list-style-type: disc; }
-  /* line 100, ../scss/components/_soe_global.scss */
+  /* line 104, ../scss/components/_soe_global.scss */
   #content .content ul li:last-child {
     margin-bottom: 1.5em; }
-/* line 106, ../scss/components/_soe_global.scss */
+/* line 110, ../scss/components/_soe_global.scss */
 #content .content ol li:last-child {
   margin-bottom: 1.5em; }
-/* line 112, ../scss/components/_soe_global.scss */
+/* line 116, ../scss/components/_soe_global.scss */
 #content .content ul.pager li a {
   border: 1px solid #D7D7D7;
   background: #FFFFFF;
   margin-bottom: 12px;
   margin-right: 4px;
   font-size: 0.9em; }
-  /* line 119, ../scss/components/_soe_global.scss */
+  /* line 123, ../scss/components/_soe_global.scss */
   #content .content ul.pager li a:focus, #content .content ul.pager li a:hover {
     margin-right: 4px;
     font-weight: 300; }
-/* line 126, ../scss/components/_soe_global.scss */
+/* line 130, ../scss/components/_soe_global.scss */
 #content .content ul.pager li.pager-current {
   margin-right: 4px;
   font-weight: 300; }
 
-/* line 134, ../scss/components/_soe_global.scss */
+/* line 138, ../scss/components/_soe_global.scss */
 td,
 th {
   padding: 0.8em;
@@ -145,28 +149,28 @@ th {
   border-right: none;
   border-left: none; }
 
-/* line 144, ../scss/components/_soe_global.scss */
+/* line 148, ../scss/components/_soe_global.scss */
 th {
   background: #EFEFEF; }
 
-/* line 148, ../scss/components/_soe_global.scss */
+/* line 152, ../scss/components/_soe_global.scss */
 .well {
   background: #FFFFFF;
   box-shadow: rgba(0, 0, 0, 0.1) 0 1px 0px, rgba(0, 0, 0, 0.1) 0 2px 2px 0; }
-  /* line 152, ../scss/components/_soe_global.scss */
+  /* line 156, ../scss/components/_soe_global.scss */
   .well h2 {
     font-size: 1.3em;
     font-weight: 600; }
-  /* line 157, ../scss/components/_soe_global.scss */
+  /* line 161, ../scss/components/_soe_global.scss */
   .well p {
     font-size: 0.9em;
     font-weight: 400;
     line-height: 1.4em; }
-    /* line 162, ../scss/components/_soe_global.scss */
+    /* line 166, ../scss/components/_soe_global.scss */
     .well p a {
       text-decoration: underline; }
 
-/* line 168, ../scss/components/_soe_global.scss */
+/* line 172, ../scss/components/_soe_global.scss */
 .summary {
   font-family: "Roboto Slab", serif;
   font-size: 1.5em;
@@ -174,7 +178,7 @@ th {
   line-height: 1.4em;
   margin-bottom: 30px; }
 
-/* line 176, ../scss/components/_soe_global.scss */
+/* line 180, ../scss/components/_soe_global.scss */
 .descriptor {
   text-transform: none;
   letter-spacing: 0.02em;
@@ -182,29 +186,29 @@ th {
   margin-bottom: 4px;
   line-height: 1.2em; }
 
-/* line 184, ../scss/components/_soe_global.scss */
+/* line 188, ../scss/components/_soe_global.scss */
 .postcard-left {
   margin-top: 6px; }
 
-/* line 188, ../scss/components/_soe_global.scss */
+/* line 192, ../scss/components/_soe_global.scss */
 .views-row-lines .views-row {
   border-color: #D7D7D7; }
 
-/* line 192, ../scss/components/_soe_global.scss */
+/* line 196, ../scss/components/_soe_global.scss */
 .main {
   padding-top: 60px;
   background: #F8F8F8; }
 
 @media (max-width: 767px) {
-  /* line 197, ../scss/components/_soe_global.scss */
+  /* line 201, ../scss/components/_soe_global.scss */
   .container {
     margin-bottom: 10px; }
-    /* line 201, ../scss/components/_soe_global.scss */
+    /* line 205, ../scss/components/_soe_global.scss */
     #fullwidth-bottom .container {
       margin-bottom: 0; } }
 
 @media (min-width: 1200px) {
-  /* line 207, ../scss/components/_soe_global.scss */
+  /* line 211, ../scss/components/_soe_global.scss */
   #content.span9 {
     width: 740px;
     margin-left: 80px; } }
