@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+@import 'soe_breakpoints';
+
+// @mixin font-size($size-value: 2.2) {
+//   font-size: ($size-value * 10) + px;
+//   @include breakpoint(small) {
+//     font-size: ($size-value * 10 - 1) + px;
+//   }
+// }
+
+@mixin font-size($size-value: 22px) {
+  font-size: $size-value;
+  @include breakpoint(medium) {
+    font-size: ($size-value - 1);
+  }
+  @include breakpoint(small) {
+    font-size: ($size-value - 2);
+  }
+  @include breakpoint(x-small) {
+    font-size: ($size-value - 3);
+  }
+}
