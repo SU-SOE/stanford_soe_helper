@@ -13,8 +13,8 @@ function stanford_soe_helper_magazine_context_default_contexts() {
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
-  $context->name = 'stanford_magazine_article';
-  $context->description = 'Context for magazine article nodes';
+  $context->name = 'stanford_magazine_engineering';
+  $context->description = 'Engineering context for Stanford Magazine';
   $context->tag = 'Engineering';
   $context->conditions = array(
     'node' => array(
@@ -29,15 +29,9 @@ function stanford_soe_helper_magazine_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'menu-menu-magazine' => array(
-          'module' => 'menu',
-          'delta' => 'menu-magazine',
-          'region' => 'content_top',
-          'weight' => '-10',
-        ),
-        'bean-stanford-soe-mag-news-signup' => array(
-          'module' => 'bean',
-          'delta' => 'stanford-soe-mag-news-signup',
+        'views-27e34c6efd8a0fb353befbed9ada5849' => array(
+          'module' => 'views',
+          'delta' => '27e34c6efd8a0fb353befbed9ada5849',
           'region' => 'content_lower',
           'weight' => '-10',
         ),
@@ -48,9 +42,9 @@ function stanford_soe_helper_magazine_context_default_contexts() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Context for magazine article nodes');
   t('Engineering');
-  $export['stanford_magazine_article'] = $context;
+  t('Engineering context for Stanford Magazine');
+  $export['stanford_magazine_engineering'] = $context;
 
   return $export;
 }
