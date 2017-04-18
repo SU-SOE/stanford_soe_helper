@@ -11,6 +11,7 @@
  */
 function stanford_soe_helper_magazine_install() {
   _stanford_soe_helper_magazine_add_newsletter_signup_bean();
+  _stanford_soe_helper_magazine_add_color_field();
 
 }
 
@@ -43,6 +44,22 @@ function stanford_soe_helper_magazine_uninstall() {
     $bean = bean_load($bid);
     bean_delete($bean);
   }
+}
+/**
+ * Add the accent color field to Stanford Magazine Issue
+ *
+ * If the soe_accent_color vocabulary exists, then add the
+ * field to the Stanford Magazine Issue. We're doing it this way because
+ * the soe_accent_color vocabulary is defined in a separate module.
+ *
+ * @param none
+ */
+function _stanford_soe_helper_magazine_add_color_field() {
+    module_load_include('module', 'stanford_soe_helper_sitewide');
+    stanford_soe_helper_sitewide_add_tax_field(
+      'field_s_mag_issue_accent_color',
+      'soe_accent_color',
+      'stanford_magazine_issue');
 }
 
 /**
