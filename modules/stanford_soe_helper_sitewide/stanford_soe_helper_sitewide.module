@@ -144,7 +144,7 @@ function stanford_soe_helper_sitewide_add_tax_field($field_name, $tax_name, $bun
         'entity_type' => 'node',
         'field_name' => $field_name,
         'label' => 'Accent color',
-        'required' => 0,
+        'required' => 1,
         'settings' => array(
           'user_register_form' => FALSE,
         ),
