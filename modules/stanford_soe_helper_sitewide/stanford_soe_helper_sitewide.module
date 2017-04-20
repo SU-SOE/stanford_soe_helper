@@ -63,3 +63,102 @@ function soe_helper_sitewide_link_block_view() {
   return $block;
 }
 
+/**
+ * Add a taxonomy field to a content type (bundle).
+ *
+ * @param string $field_name
+ *   The new field name to be added to the content type.
+ *
+ * @param string $tax_name
+ *   Taxonomy associated with the new field.
+ *
+ * @param string $bundle
+ *   Content type getting the new field.
+ */
+function stanford_soe_helper_sitewide_add_tax_field($field_name, $tax_name, $bundle) {
+
+  $tax = taxonomy_vocabulary_machine_name_load($tax_name);
+  if ($tax) {
+
+    // Make sure the field doesn't already exist.
+    if (field_info_field($field_name)) {
+      watchdog('stanford_soe_helper_sitewide', t('!field_name already exists.', array('!field_name' => $field_name)));
+    }
+    else {
+      // Create the field.
+      $field_base = array(
+        'field_name' => $field_name,
+        'active' => 1,
+        'cardinality' => 1,
+        'deleted' => 0,
+        'entity_types' => array(),
+        'indexes' => array(
+          'tid' => array(
+            0 => 'tid',
+          ),
+        ),
+        'locked' => 0,
+        'module' => 'taxonomy',
+        'settings' => array(
+          'allowed_values' => array(
+            0 => array(
+              'vocabulary' => $tax_name,
+              'parent' => 0,
+            ),
+          ),
+        ),
+        'translatable' => 0,
+        'type' => 'taxonomy_term_reference',
+      );
+      field_create_field($field_base);
+
+      // Create the instance.
+
+      $field_instance = array(
+        'bundle' => $bundle,
+        'default_value' => NULL,
+        'deleted' => 0,
+        'description' => 'These terms identify the associated accent color. Select a color.',
+        'display' => array(
+          'default' => array(
+            'label' => 'hidden',
+            'module' => 'taxonomy',
+            'settings' => array(),
+            'type' => 'taxonomy_term_reference_link',
+            'weight' => 0,
+          ),
+          'full' => array(
+            'label' => 'hidden',
+            'module' => 'taxonomy',
+            'settings' => array(),
+            'type' => 'taxonomy_term_reference_link',
+            'weight' => 0,
+          ),
+          'teaser' => array(
+            'label' => 'above',
+            'settings' => array(),
+            'type' => 'hidden',
+            'weight' => 6,
+          ),
+        ),
+        'entity_type' => 'node',
+        'field_name' => $field_name,
+        'label' => 'Accent color',
+        'required' => 1,
+        'settings' => array(
+          'user_register_form' => FALSE,
+        ),
+        'widget' => array(
+          'active' => 1,
+          'module' => 'options',
+          'settings' => array(),
+          'type' => 'options_buttons',
+          'weight' => 8,
+        ),
+
+      );
+      field_create_instance($field_instance);
+      watchdog('stanford_soe_helper_sitewide', t('!field_name was added successfully.', array('!field_name' => $field_name)));
+    }
+  }
+}

@@ -11,6 +11,7 @@
  */
 function stanford_soe_helper_magazine_install() {
   _stanford_soe_helper_magazine_add_newsletter_signup_bean();
+  _stanford_soe_helper_magazine_add_color_field();
 
 }
 
@@ -44,6 +45,22 @@ function stanford_soe_helper_magazine_uninstall() {
     bean_delete($bean);
   }
 }
+/**
+ * Add the accent color field to Stanford Magazine Issue
+ *
+ * If the soe_accent_color vocabulary exists, then add the
+ * field to the Stanford Magazine Issue. We're doing it this way because
+ * the soe_accent_color vocabulary is defined in a separate module.
+ *
+ * @param none
+ */
+function _stanford_soe_helper_magazine_add_color_field() {
+    module_load_include('module', 'stanford_soe_helper_sitewide');
+    stanford_soe_helper_sitewide_add_tax_field(
+      'field_s_mag_issue_accent_color',
+      'soe_accent_color',
+      'stanford_magazine_issue');
+}
 
 /**
  * Create the newsletter sign-up bean.
@@ -55,27 +72,26 @@ function _stanford_soe_helper_magazine_add_newsletter_signup_bean() {
   if (empty($bid)) {
     $bean = bean_create(array('type' => 'stanford_postcard'));
     $bean->label = 'Stanford SoE Magazine newsletter Sign-up';
-    $bean->title = 'Get Updates from Stanford Engineering';
+    $bean->title = '<none>';
     $bean->delta = $bean_name;
     $bean->view_mode = 'default';
 
     $body = <<<'EOD'
 <div id="mc_embed_signup">
-  <form action="//stanford.us14.list-manage.com/subscribe/post?u=84e3c1df5a210f020250ee1d6&amp;id=74d8f03797" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    <div id="mc_embed_signup_scroll">
-      <p>Your source for engineering research and ideas</p>
-      <div class="mc-field-group">
-        <input type="email" name="EMAIL" placeholder="email address" class="required email"  id="mce-EMAIL">
-      </div>
-      <div id="mce-responses" class="clear">
-        <div class="response" id="mce-error-response" style="display:none"></div>
-        <div class="response" id="mce-success-response" style="display:none"></div>
-      </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-      <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_84e3c1df5a210f020250ee1d6_74d8f03797" tabindex="-1" value=""></div><br />
-      <div class="clear"><input type="submit" value="Sign up" name="" id="mc-embedded-subscribe" class="button"></div>
-    </div>
-  </form>
-</div>
+	<form action="//stanford.us14.list-manage.com/subscribe/post?u=84e3c1df5a210f020250ee1d6&amp;id=74d8f03797" class="validate" id="mc-embedded-subscribe-form" method="post" name="mc-embedded-subscribe-form" novalidate="" target="_blank">
+		<div id="mc_embed_signup_scroll">
+			<h2>Get Updates from Stanford Engineering</h2>
+			<div class="mc-field-group"><input class="required email" id="mce-EMAIL" name="EMAIL" placeholder="email address" type="email" /></div>
+			<div class="clear" id="mce-responses">
+				<div class="response" id="mce-error-response" style="display:none">&nbsp;</div>
+				<div class="response" id="mce-success-response" style="display:none">&nbsp;</div>
+			</div>
+			<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+			<div aria-hidden="true" style="position: absolute; left: -5000px;"><input name="b_84e3c1df5a210f020250ee1d6_74d8f03797" tabindex="-1" type="text" value="" /></div>
+			<div class="clear"><input class="button" id="mc-embedded-subscribe" name="" type="submit" value="Sign up" /></div>
+		</div>
+	</form>
+</div>    
 EOD;
 
 
