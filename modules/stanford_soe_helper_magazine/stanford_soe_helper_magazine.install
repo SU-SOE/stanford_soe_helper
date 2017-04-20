@@ -55,8 +55,16 @@ function stanford_soe_helper_magazine_uninstall() {
  * @param none
  */
 function _stanford_soe_helper_magazine_add_color_field() {
-    module_load_include('module', 'stanford_soe_helper_sitewide');
-    stanford_soe_helper_sitewide_add_tax_field(
+  module_load_include('module', 'stanford_soe_helper_sitewide');
+
+  // Add accent color terms to the article
+  stanford_soe_helper_sitewide_add_tax_field(
+    'field_s_mag_article_accent_color',
+    'soe_accent_color',
+    'stanford_magazine_article');
+
+  // Add accent color terms to the issue
+   stanford_soe_helper_sitewide_add_tax_field(
       'field_s_mag_issue_accent_color',
       'soe_accent_color',
       'stanford_magazine_issue');
