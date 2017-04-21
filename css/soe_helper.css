@@ -704,133 +704,125 @@ p.related-link {
   background: #FFFFFF; }
 
 /* line 9, ../scss/components/_soe_forms.scss */
-button,
-input,
-label,
-select,
-textarea {
+body:not(.page-admin) button,
+body:not(.page-admin) input,
+body:not(.page-admin) label,
+body:not(.page-admin) select,
+body:not(.page-admin) textarea {
   font-size: 16px; }
-
 /* line 17, ../scss/components/_soe_forms.scss */
-.uneditable-input,
-input[type="color"],
-input[type="date"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="email"],
-input[type="month"],
-input[type="number"],
-input[type="password"],
-input[type="search"],
-input[type="tel"],
-input[type="text"],
-input[type="time"],
-input[type="url"],
-input[type="week"],
-textarea {
+body:not(.page-admin) .uneditable-input,
+body:not(.page-admin) input[type="color"],
+body:not(.page-admin) input[type="date"],
+body:not(.page-admin) input[type="datetime"],
+body:not(.page-admin) input[type="datetime-local"],
+body:not(.page-admin) input[type="email"],
+body:not(.page-admin) input[type="month"],
+body:not(.page-admin) input[type="number"],
+body:not(.page-admin) input[type="password"],
+body:not(.page-admin) input[type="search"],
+body:not(.page-admin) input[type="tel"],
+body:not(.page-admin) input[type="text"],
+body:not(.page-admin) input[type="time"],
+body:not(.page-admin) input[type="url"],
+body:not(.page-admin) input[type="week"],
+body:not(.page-admin) textarea {
   height: 30px;
   padding: 4px 13px; }
-
 /* line 37, ../scss/components/_soe_forms.scss */
-input[type="file"],
-select {
+body:not(.page-admin) input[type="file"],
+body:not(.page-admin) select {
   height: 40px; }
-
 /* line 42, ../scss/components/_soe_forms.scss */
-.uneditable-input,
-input,
-textarea {
+body:not(.page-admin) .uneditable-input,
+body:not(.page-admin) input,
+body:not(.page-admin) textarea {
   width: 178px; }
-
 /* line 48, ../scss/components/_soe_forms.scss */
-.form-item label {
+body:not(.page-admin) .form-item label {
   font-weight: 400; }
-
 /* line 52, ../scss/components/_soe_forms.scss */
-input.form-submit {
+body:not(.page-admin) input.form-submit {
   padding: 0 13px;
   background-image: none;
   background: #FFFFFF;
   color: #8c1515; }
   /* line 58, ../scss/components/_soe_forms.scss */
-  input.form-submit:focus, input.form-submit:hover {
+  body:not(.page-admin) input.form-submit:focus, body:not(.page-admin) input.form-submit:hover {
     background: #B1040E;
     color: #FFFFFF; }
-
 /* line 66, ../scss/components/_soe_forms.scss */
-.views-exposed-form label {
+body:not(.page-admin) .views-exposed-form label {
   font-weight: normal; }
 /* line 70, ../scss/components/_soe_forms.scss */
-.views-exposed-form .views-exposed-widget {
+body:not(.page-admin) .views-exposed-form .views-exposed-widget {
   padding: 0.8em 0.7em 0 0; }
-
 /* line 75, ../scss/components/_soe_forms.scss */
-.node-type-webform textarea {
+body:not(.page-admin) .node-type-webform textarea {
   height: 100px; }
-
 /* line 79, ../scss/components/_soe_forms.scss */
-.sidebar .views-exposed-form .views-exposed-widget .form-submit {
+body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-submit {
   margin-top: 1em; }
 
-/* line 86, ../scss/components/_soe_forms.scss */
+/* line 87, ../scss/components/_soe_forms.scss */
 #mc_embed_signup_scroll .mc-field-group {
   float: left; }
-  /* line 89, ../scss/components/_soe_forms.scss */
+  /* line 90, ../scss/components/_soe_forms.scss */
   #mc_embed_signup_scroll .mc-field-group input {
     border-radius: 0; }
-  /* line 93, ../scss/components/_soe_forms.scss */
+  /* line 94, ../scss/components/_soe_forms.scss */
   #mc_embed_signup_scroll .mc-field-group input::-webkit-input-placeholder {
     color: #CCCCCC; }
-  /* line 97, ../scss/components/_soe_forms.scss */
+  /* line 98, ../scss/components/_soe_forms.scss */
   #mc_embed_signup_scroll .mc-field-group input::-moz-placeholder {
     color: #CCCCCC; }
-/* line 103, ../scss/components/_soe_forms.scss */
+/* line 104, ../scss/components/_soe_forms.scss */
 #mc_embed_signup_scroll #mc-embedded-subscribe.button,
 #mc_embed_signup_scroll #mc-embedded-subscribe input {
   background-color: #B1040E;
   border-style: none;
   color: #FFFFFF; }
-/* line 111, ../scss/components/_soe_forms.scss */
+/* line 112, ../scss/components/_soe_forms.scss */
 #mc_embed_signup_scroll p {
   padding-right: 10px; }
-/* line 115, ../scss/components/_soe_forms.scss */
+/* line 116, ../scss/components/_soe_forms.scss */
 #mc_embed_signup_scroll input.button {
   height: 40px;
   padding: 0 13px 2px;
   width: 75px;
   -webkit-border-radius: 0; }
-/* line 122, ../scss/components/_soe_forms.scss */
+/* line 123, ../scss/components/_soe_forms.scss */
 #mc_embed_signup_scroll .uneditable-input,
 #mc_embed_signup_scroll input,
 #mc_embed_signup_scroll textarea {
   width: 110px; }
-/* line 128, ../scss/components/_soe_forms.scss */
+/* line 129, ../scss/components/_soe_forms.scss */
 #mc_embed_signup_scroll button,
 #mc_embed_signup_scroll input,
 #mc_embed_signup_scroll select,
 #mc_embed_signup_scroll textarea {
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; }
-/* line 135, ../scss/components/_soe_forms.scss */
+/* line 136, ../scss/components/_soe_forms.scss */
 #block-bean-stanford-soe-mag-news-signup #mc_embed_signup_scroll {
   background: #ffffff;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
   padding: 35px 0;
   text-align: center; }
-  /* line 141, ../scss/components/_soe_forms.scss */
+  /* line 142, ../scss/components/_soe_forms.scss */
   #block-bean-stanford-soe-mag-news-signup #mc_embed_signup_scroll form {
     margin-bottom: 0; }
-  /* line 145, ../scss/components/_soe_forms.scss */
+  /* line 146, ../scss/components/_soe_forms.scss */
   #block-bean-stanford-soe-mag-news-signup #mc_embed_signup_scroll .mc_signup_submission_wrapper {
     display: flex;
     justify-content: center; }
-  /* line 150, ../scss/components/_soe_forms.scss */
+  /* line 151, ../scss/components/_soe_forms.scss */
   #block-bean-stanford-soe-mag-news-signup #mc_embed_signup_scroll .mc-field-group {
     float: none; }
-    /* line 153, ../scss/components/_soe_forms.scss */
+    /* line 154, ../scss/components/_soe_forms.scss */
     #block-bean-stanford-soe-mag-news-signup #mc_embed_signup_scroll .mc-field-group input {
       width: 400px; }
       @media (max-width: 767px) {
-        /* line 153, ../scss/components/_soe_forms.scss */
+        /* line 154, ../scss/components/_soe_forms.scss */
         #block-bean-stanford-soe-mag-news-signup #mc_embed_signup_scroll .mc-field-group input {
           width: 200px; } }
 
