@@ -35,12 +35,6 @@ function stanford_soe_helper_magazine_context_default_contexts() {
           'region' => 'content_top',
           'weight' => '-10',
         ),
-        'views-27e34c6efd8a0fb353befbed9ada5849' => array(
-          'module' => 'views',
-          'delta' => '27e34c6efd8a0fb353befbed9ada5849',
-          'region' => 'content_lower',
-          'weight' => '-92',
-        ),
         'bean-stanford-soe-mag-news-signup' => array(
           'module' => 'bean',
           'delta' => 'stanford-soe-mag-news-signup',
