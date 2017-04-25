@@ -25,7 +25,9 @@ This module provides custom functionality for landing pages.
 **[Stanford SoE Helper Magazine](https://github.com/SU-SWS/stanford_magazine/stanford_soe_helper_magazine/)**
 This module provides custom functionality for the Stanford Magazine. This includes:
 - The newsletter sign-up block that appears on magazine pages
-- The view that re-writes the department vocabulary term links on magazine article 
+- The Stanford Taxonomy Term view - this view overwrites Drupal's default system for handling taxonomy terms.
+- 
+- TBD - The view that re-writes the department vocabulary term links on magazine article 
 pages to redirect to magazine/\<department/>
 
 **[Stanford SoE Helper News](https://github.com/SU-SWS/stanford_magazine/stanford_soe_helper_news/)**
