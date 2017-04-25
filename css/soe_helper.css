@@ -1019,3 +1019,41 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
       /* line 154, ../scss/components/_soe_news.scss */
       .logged-in #block-ds-extras-banner-overlay .field-name-field-s-news-teaser .field-item {
         font-size: 15px; } }
+
+/* line 7, ../scss/components/_soe_dm_navigation.scss */
+#fullwidth-top {
+  background: #00ECE9; }
+  /* line 10, ../scss/components/_soe_dm_navigation.scss */
+  #fullwidth-top .block-menu-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0; }
+  /* line 17, ../scss/components/_soe_dm_navigation.scss */
+  #fullwidth-top .block-menu-block h2 {
+    margin-bottom: 0; }
+    /* line 20, ../scss/components/_soe_dm_navigation.scss */
+    #fullwidth-top .block-menu-block h2:after {
+      content: "|";
+      font-size: 40px;
+      font-weight: 300;
+      padding: 0 30px;
+      vertical-align: top; }
+  /* line 29, ../scss/components/_soe_dm_navigation.scss */
+  #fullwidth-top .block-menu-block ul {
+    margin-bottom: 0; }
+    /* line 32, ../scss/components/_soe_dm_navigation.scss */
+    #fullwidth-top .block-menu-block ul li {
+      display: inline;
+      float: left;
+      list-style: none; }
+      /* line 37, ../scss/components/_soe_dm_navigation.scss */
+      #fullwidth-top .block-menu-block ul li:first-child {
+        margin-left: 0; }
+      /* line 41, ../scss/components/_soe_dm_navigation.scss */
+      #fullwidth-top .block-menu-block ul li a {
+        color: #333333; }
+        /* line 44, ../scss/components/_soe_dm_navigation.scss */
+        #fullwidth-top .block-menu-block ul li a:hover, #fullwidth-top .block-menu-block ul li afocus {
+          text-decoration: underline;
+          background-color: transparent; }
