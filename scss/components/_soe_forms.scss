@@ -135,7 +135,7 @@ body:not(.page-admin) {
 
   #block-bean-stanford-soe-mag-news-signup & {
     background: #ffffff;
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
+    @include box-shadow;
     padding: 35px 0;
     text-align: center;
 

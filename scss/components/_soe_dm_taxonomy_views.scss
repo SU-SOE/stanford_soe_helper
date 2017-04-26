@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+//
+// DIGITAL MAGAZINE TAXONOMY VIEWS
+// FOR TOPICS, SERIES, DEPARTMENT, AND EYEBROW TAXONOMIES
+//
+
+.page-taxonomy-term {
+  #page-title {
+    text-align: center;
+  }
+
+  .view-stanford-magazine-topics.most-recent-article {
+    .most-recent-article-container {
+      display: flex;
+      @include breakpoint(medium) {
+        display: block;
+      }
+    }
+
+    .mag-topic-card-container {
+      width: 50%;
+      background: $white;
+      padding: 50px 30px 30px;
+      @include box-shadow;
+      @include breakpoint(medium) {
+        width: auto;
+      }
+    }
+
+    .mag-article-img img {
+      @include breakpoint(medium) {
+        width: 100%;
+      }
+    }
+  }
+}
