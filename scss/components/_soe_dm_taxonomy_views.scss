@@ -10,27 +10,43 @@
     text-align: center;
   }
 
-  .view-stanford-magazine-topics.most-recent-article {
-    .most-recent-article-container {
-      display: flex;
-      @include breakpoint(medium) {
-        display: block;
+  .view-stanford-magazine-topics {
+    &.most-recent-article {
+      .most-recent-article-container {
+        display: flex;
+        @include breakpoint(medium) {
+          display: block;
+        }
+
+        .mag-topic-card-container {
+          width: 50%;
+          background: $white;
+          padding: 50px 30px 30px;
+          @include box-shadow;
+          @include breakpoint(medium) {
+            width: auto;
+          }
+        }
+
+        .mag-article-img img {
+          @include breakpoint(medium) {
+            width: 100%;
+          }
+        }
       }
     }
 
-    .mag-topic-card-container {
-      width: 50%;
-      background: $white;
-      padding: 50px 30px 30px;
-      @include box-shadow;
-      @include breakpoint(medium) {
-        width: auto;
-      }
-    }
+    &.article-grouping {
+      .mag-topic-card-container {
+        background: white;
+        padding: 30px;
+        @include box-shadow;
 
-    .mag-article-img img {
-      @include breakpoint(medium) {
-        width: 100%;
+        .mag-article-date {
+          color: $gray-orange;
+          font-size: em(18px);
+          font-weight: 100;
+        }
       }
     }
   }
