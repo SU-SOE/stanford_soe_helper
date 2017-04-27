@@ -13,30 +13,30 @@ The Stanford SoE Helper module provides the custom code for the SoE school site.
 
 Sub Modules
 ---
-**[Stanford SoE Helper Event](https://github.com/SU-SWS/stanford_magazine/stanford_soe_helper_event/)**
+**[Stanford SoE Helper Event](https://github.com/SU-SWS/stanford_soe_helper/stanford_soe_helper_event/)**
 This module provides custom functionality for events.
 
-**[Stanford SoE Helper_Homepage](https://github.com/SU-SWS/stanford_magazine/stanford_soe_helper_homepage/)**
+**[Stanford SoE Helper_Homepage](https://github.com/SU-SWS/stanford_soe_helper/stanford_soe_helper_homepage/)**
 This module provides custom functionality for the SoE Homepage.
 
-**[Stanford SoE Helper Landing_Page](https://github.com/SU-SWS/stanford_magazine/stanford_soe_helper_landing_page/)**
+**[Stanford SoE Helper Landing_Page](https://github.com/SU-SWS/stanford_soe_helper/stanford_soe_helper_landing_page/)**
 This module provides custom functionality for landing pages.
 
-**[Stanford SoE Helper Magazine](https://github.com/SU-SWS/stanford_magazine/stanford_soe_helper_magazine/)**
+**[Stanford SoE Helper Magazine](https://github.com/SU-SWS/stanford_soe_helper/stanford_soe_helper_magazine/)**
 This module provides custom functionality for the Stanford Magazine. This includes:
 - The newsletter sign-up block that appears on magazine pages
 - The Stanford Taxonomy Term view - this view overwrites Drupal's default system for handling taxonomy terms.
-- 
+- Setting site owner and editor permissions
 - TBD - The view that re-writes the department vocabulary term links on magazine article 
 pages to redirect to magazine/\<department/>
 
-**[Stanford SoE Helper News](https://github.com/SU-SWS/stanford_magazine/stanford_soe_helper_news/)**
+**[Stanford SoE Helper News](https://github.com/SU-SWS/stanford_soe_helper/stanford_soe_helper_news/)**
 This module provides custom functionality for news.
 
-**[Stanford SoE Helper Page](https://github.com/SU-SWS/stanford_magazine/stanford_soe_helper_page/)**
+**[Stanford SoE Helper Page](https://github.com/SU-SWS/stanford_soe_helper/stanford_soe_helper_page/)**
 This module provides custom functionality for Stanford Pages.
 
-**[Stanford SoE Helper Sitewide](https://github.com/SU-SWS/stanford_magazine/stanford_soe_helper_sitewide/)**
+**[Stanford SoE Helper Sitewide](https://github.com/SU-SWS/stanford_soe_helper/stanford_soe_helper_sitewide/)**
 This module provides custom functionality for sitewide functionality. 
 This includes contexts and vocabulary including:
  - SoE Accent Color vocabulary

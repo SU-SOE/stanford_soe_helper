@@ -162,3 +162,39 @@ function stanford_soe_helper_sitewide_add_tax_field($field_name, $tax_name, $bun
     }
   }
 }
+
+/**
+ * Custom user_role_grant_permissions function
+ * does the same thing as user_role_grant_permissions
+ * but it can run at install time
+ *
+ * This is copied from stanford_bean_types_permissions
+ *
+ * @see user_role_grant_permissions
+ * @param int $rid
+ * @param array $permissions
+ */
+function _stanford_soe_helper_sitewide_grant_permissions($rid, array $permissions = array()) {
+  // this line doesn't work on install / enable hooks
+  // $modules = user_permission_get_modules();
+  // Grant new permissions for the role.
+  if (lock_acquire($rid . '_stanford_soe_helper_sitewide_grant_permissions', 600.0)) {
+    foreach ($permissions as $module => $permission_list) {
+      foreach ($permission_list as $name) {
+        db_merge('role_permission')
+          ->key(array(
+            'rid' => $rid,
+            'permission' => $name,
+          ))
+          ->fields(array(
+            'module' => $module,
+          ))
+          ->execute();
+      }
+    }
+    lock_release($rid . '_stanford_soe_helper_sitewide_grant_permissions');
+  }
+  // Clear the user access cache.
+  drupal_static_reset('user_access');
+  drupal_static_reset('user_role_permissions');
+}
