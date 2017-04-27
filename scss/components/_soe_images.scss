@@ -88,6 +88,9 @@
     div.more-link {
       padding: 18px 32px 20px;
       margin: 0;
+      @include breakpoint(medium) {
+        width: 100%;
+      }
     }
 
     .banner-caption {
@@ -101,6 +104,9 @@
       &.banner-right {
         right: 0;
         text-align: right;
+        @include breakpoint(medium) {
+          text-align: left;
+        }
 
         &.banner-bottom {
           bottom: 100px;
