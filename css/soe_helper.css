@@ -1,31 +1,31 @@
 @charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100);
-/* line 10, ../scss/components/_soe_global.scss */
+/* line 9, ../scss/components/_soe_global.scss */
 html {
   font-size: 62.5%; }
 
-/* line 14, ../scss/components/_soe_global.scss */
+/* line 13, ../scss/components/_soe_global.scss */
 body {
   font-size: 2.2em;
   font-weight: 400;
   line-height: 1.45em; }
   @media (max-width: 979px) {
-    /* line 14, ../scss/components/_soe_global.scss */
+    /* line 13, ../scss/components/_soe_global.scss */
     body {
       font-size: 21px;
       font-size: 2.1em; } }
   @media (max-width: 767px) {
-    /* line 14, ../scss/components/_soe_global.scss */
+    /* line 13, ../scss/components/_soe_global.scss */
     body {
       font-size: 20px;
       font-size: 2em; } }
   @media (max-width: 480px) {
-    /* line 14, ../scss/components/_soe_global.scss */
+    /* line 13, ../scss/components/_soe_global.scss */
     body {
       font-size: 19px;
       font-size: 1.9em; } }
 
-/* line 32, ../scss/components/_soe_global.scss */
+/* line 31, ../scss/components/_soe_global.scss */
 h1 {
   font-family: "Roboto Slab", serif;
   font-size: 2.54545em;
@@ -33,7 +33,7 @@ h1 {
   letter-spacing: 0;
   margin: -9px 0 10px; }
 
-/* line 40, ../scss/components/_soe_global.scss */
+/* line 39, ../scss/components/_soe_global.scss */
 h2 {
   font-family: "Roboto Slab", serif;
   font-size: 1.45455em;
@@ -41,19 +41,19 @@ h2 {
   letter-spacing: 0.02em;
   margin: 1.8em 0 0.5em; }
 
-/* line 48, ../scss/components/_soe_global.scss */
+/* line 47, ../scss/components/_soe_global.scss */
 h3 {
   font-size: 1.18182em;
   font-weight: 600;
   margin: 1.3em 0 0.3em; }
 
-/* line 54, ../scss/components/_soe_global.scss */
+/* line 53, ../scss/components/_soe_global.scss */
 h4 {
   font-size: 1em;
   font-weight: 600;
   margin: 1em 0 0.3em; }
 
-/* line 66, ../scss/components/_soe_global.scss */
+/* line 65, ../scss/components/_soe_global.scss */
 h1 a,
 h2 a,
 h3 a,
@@ -61,7 +61,7 @@ h4 a,
 h5 a,
 h6 a {
   text-decoration: underline; }
-  /* line 69, ../scss/components/_soe_global.scss */
+  /* line 68, ../scss/components/_soe_global.scss */
   h1 a:focus, h1 a:hover,
   h2 a:focus,
   h2 a:hover,
@@ -75,7 +75,7 @@ h6 a {
   h6 a:hover {
     text-decoration: underline; }
 
-/* line 76, ../scss/components/_soe_global.scss */
+/* line 75, ../scss/components/_soe_global.scss */
 .btn a,
 a.btn {
   border-radius: 0;
@@ -88,59 +88,59 @@ a.btn {
   letter-spacing: 0.03em;
   background: #B1040E; }
 
-/* line 87, ../scss/components/_soe_global.scss */
+/* line 86, ../scss/components/_soe_global.scss */
 .normal-link a,
 a {
   color: #B1040E; }
 
-/* line 92, ../scss/components/_soe_global.scss */
+/* line 91, ../scss/components/_soe_global.scss */
 .more-link a,
 a.more-link {
   font-size: 20px;
   color: #B1040E; }
-  /* line 97, ../scss/components/_soe_global.scss */
+  /* line 96, ../scss/components/_soe_global.scss */
   .more-link a:after,
   a.more-link:after {
     content: " ›"; }
 
-/* line 102, ../scss/components/_soe_global.scss */
+/* line 101, ../scss/components/_soe_global.scss */
 .normal-link h2,
 .normal-link h3,
 h2.normal-link,
 h3.normal-link {
   font-size: 1.1em; }
 
-/* line 109, ../scss/components/_soe_global.scss */
+/* line 108, ../scss/components/_soe_global.scss */
 li {
   line-height: 1.4em;
   margin-bottom: 10px; }
 
-/* line 116, ../scss/components/_soe_global.scss */
+/* line 115, ../scss/components/_soe_global.scss */
 #content .content ul li {
   list-style-type: disc; }
-  /* line 119, ../scss/components/_soe_global.scss */
+  /* line 118, ../scss/components/_soe_global.scss */
   #content .content ul li:last-child {
     margin-bottom: 1.5em; }
-/* line 125, ../scss/components/_soe_global.scss */
+/* line 124, ../scss/components/_soe_global.scss */
 #content .content ol li:last-child {
   margin-bottom: 1.5em; }
-/* line 131, ../scss/components/_soe_global.scss */
+/* line 130, ../scss/components/_soe_global.scss */
 #content .content ul.pager li a {
   border: 1px solid #D7D7D7;
   background: #FFFFFF;
   margin-bottom: 12px;
   margin-right: 4px;
   font-size: 0.9em; }
-  /* line 138, ../scss/components/_soe_global.scss */
+  /* line 137, ../scss/components/_soe_global.scss */
   #content .content ul.pager li a:focus, #content .content ul.pager li a:hover {
     margin-right: 4px;
     font-weight: 300; }
-/* line 145, ../scss/components/_soe_global.scss */
+/* line 144, ../scss/components/_soe_global.scss */
 #content .content ul.pager li.pager-current {
   margin-right: 4px;
   font-weight: 300; }
 
-/* line 153, ../scss/components/_soe_global.scss */
+/* line 152, ../scss/components/_soe_global.scss */
 td,
 th {
   padding: 0.8em;
@@ -150,30 +150,30 @@ th {
   border-right: none;
   border-left: none; }
 
-/* line 163, ../scss/components/_soe_global.scss */
+/* line 162, ../scss/components/_soe_global.scss */
 th {
   background: #EFEFEF; }
 
-/* line 167, ../scss/components/_soe_global.scss */
+/* line 166, ../scss/components/_soe_global.scss */
 .well {
   background: #FFFFFF;
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2); }
-  /* line 171, ../scss/components/_soe_global.scss */
+  /* line 170, ../scss/components/_soe_global.scss */
   .well h2 {
     font-size: 1.45455em;
     font-weight: 600; }
-  /* line 176, ../scss/components/_soe_global.scss */
+  /* line 175, ../scss/components/_soe_global.scss */
   .well p {
     font-size: 0.90909em;
     font-weight: 400;
     line-height: 1.5em; }
-    /* line 181, ../scss/components/_soe_global.scss */
+    /* line 180, ../scss/components/_soe_global.scss */
     .well p a {
       text-decoration: underline; }
 
-/* line 187, ../scss/components/_soe_global.scss */
+/* line 186, ../scss/components/_soe_global.scss */
 .summary {
   font-family: "Roboto Slab", serif;
   font-size: 1.45455em;
@@ -181,7 +181,7 @@ th {
   line-height: 1.4em;
   margin-bottom: 30px; }
 
-/* line 195, ../scss/components/_soe_global.scss */
+/* line 194, ../scss/components/_soe_global.scss */
 .descriptor {
   text-transform: none;
   letter-spacing: 0.02em;
@@ -189,29 +189,33 @@ th {
   margin-bottom: 4px;
   line-height: 1.2em; }
 
-/* line 203, ../scss/components/_soe_global.scss */
+/* line 202, ../scss/components/_soe_global.scss */
 .postcard-left {
   margin-top: 6px; }
 
-/* line 207, ../scss/components/_soe_global.scss */
+/* line 206, ../scss/components/_soe_global.scss */
 .views-row-lines .views-row {
   border-color: #D7D7D7; }
 
-/* line 211, ../scss/components/_soe_global.scss */
+/* line 210, ../scss/components/_soe_global.scss */
+#wrap {
+  background: #F8F8F8; }
+
+/* line 214, ../scss/components/_soe_global.scss */
 .main {
   padding-top: 60px;
   background: #F8F8F8; }
 
 @media (max-width: 767px) {
-  /* line 216, ../scss/components/_soe_global.scss */
+  /* line 219, ../scss/components/_soe_global.scss */
   .container {
     margin-bottom: 10px; }
-    /* line 220, ../scss/components/_soe_global.scss */
+    /* line 223, ../scss/components/_soe_global.scss */
     #fullwidth-bottom .container {
       margin-bottom: 0; } }
 
 @media (min-width: 1200px) {
-  /* line 226, ../scss/components/_soe_global.scss */
+  /* line 229, ../scss/components/_soe_global.scss */
   #content.span9 {
     width: 740px;
     margin-left: 80px; } }
@@ -1070,21 +1074,21 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
 /* line 15, ../scss/components/_soe_dm_taxonomy_views.scss */
 .page-taxonomy-term .view-stanford-magazine-topics.most-recent-article .most-recent-article-container {
   position: relative;
-  display: flex; }
+  display: flex;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2); }
   @media (max-width: 979px) {
     /* line 15, ../scss/components/_soe_dm_taxonomy_views.scss */
     .page-taxonomy-term .view-stanford-magazine-topics.most-recent-article .most-recent-article-container {
       display: block; } }
-  /* line 22, ../scss/components/_soe_dm_taxonomy_views.scss */
+  /* line 23, ../scss/components/_soe_dm_taxonomy_views.scss */
   .page-taxonomy-term .view-stanford-magazine-topics.most-recent-article .most-recent-article-container .mag-topic-card-container {
     width: 50%;
     background: #FFFFFF;
-    padding: 50px 30px 30px;
-    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2); }
+    padding: 50px 30px 30px; }
     @media (max-width: 979px) {
-      /* line 22, ../scss/components/_soe_dm_taxonomy_views.scss */
+      /* line 23, ../scss/components/_soe_dm_taxonomy_views.scss */
       .page-taxonomy-term .view-stanford-magazine-topics.most-recent-article .most-recent-article-container .mag-topic-card-container {
         width: auto; } }
     /* line 31, ../scss/components/_soe_dm_taxonomy_views.scss */
