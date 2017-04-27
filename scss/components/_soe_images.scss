@@ -89,6 +89,9 @@
       padding: 18px 32px 20px;
       margin: 0;
       @include breakpoint(small) {
+        width: 100%;
+      }
+      @include breakpoint(x-small) {
         width: 85%;
       }
     }
