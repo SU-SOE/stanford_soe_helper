@@ -29,12 +29,6 @@ function stanford_soe_helper_magazine_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'menu-menu-magazine' => array(
-          'module' => 'menu',
-          'delta' => 'menu-magazine',
-          'region' => 'content_top',
-          'weight' => '-10',
-        ),
         'bean-stanford-soe-mag-news-signup' => array(
           'module' => 'bean',
           'delta' => 'stanford-soe-mag-news-signup',
