@@ -28,6 +28,14 @@
             width: auto;
           }
 
+          .mag-topic-card-content-container {
+            position: absolute;
+            bottom: 40px;
+            @include breakpoint(medium) {
+              position: static;
+            }
+          }
+
           .mag-article-date {
             color: $gray-orange;
             font-size: em(20px);
@@ -37,7 +45,20 @@
           .mag-article-issue {
             position: absolute;
             bottom: 15px;
-            right: 30px;
+            right: 15px;
+
+            &[class*="mag-issue-color-"] {
+              padding: 0 5px;
+              font-size: em(18px);
+            }
+
+            &.mag-issue-color-orange {
+              background: $orange;
+            }
+
+            a {
+              color: $primary-color;
+            }
           }
         }
 
@@ -66,6 +87,10 @@
           position: absolute;
           bottom: 15px;
           right: 30px;
+
+          a {
+            color: $primary-color;
+          }
         }
       }
     }
