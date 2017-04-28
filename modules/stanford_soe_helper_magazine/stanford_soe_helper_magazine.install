@@ -20,14 +20,6 @@ function stanford_soe_helper_magazine_install() {
  */
 function stanford_soe_helper_magazine_enable() {
 
-  if (!module_exists('stanford_jumpstart_roles')) {
-    module_enable(array('stanford_jumpstart_roles'));
-  }
-  _stanford_soe_helper_magazine_site_owner_perms();
-  _stanford_soe_helper_magazine_editor_perms();
-  // Initialize settings
-  //$settings = stanford_magazine_settings();
-  //variable_set('stanford_magazine_settings', $settings);
 }
 
 /**
@@ -133,89 +125,5 @@ function _stanford_soe_helper_magazine_get_bean($delta) {
   $q->condition('delta', $delta, '=');
   $r = $q->execute()->fetchField();
   return $r;
-}
-
-/**
- * Set site owner permissions
- *
- * @param none
- */
-function _stanford_soe_helper_magazine_site_owner_perms() {
-  module_load_include('module', 'stanford_soe_helper_sitewide');
-
-  // Permissions for magazine articles.
-  $site_owner_permissions = array(
-    // module key
-    'stanford_magazine_article' => array(
-      'create stanford_magazine_article content',
-      'edit own stanford_magazine_article content',
-      'delete own stanford_magazine_article content',
-      'edit any stanford_magazine_article content',
-      'delete any stanford_magazine_article content',
-    ),
-  );
-
-  $site_owner = user_role_load_by_name('site owner');
-  if ($site_owner->rid) {
-    _stanford_soe_helper_sitewide_grant_permissions($site_owner->rid, $site_owner_permissions);
-  }
-
-  // Permissions for magazine issues.
-  $site_owner_permissions = array(
-    // module key
-    'stanford_magazine_issue' => array(
-      'create stanford_magazine_issue content',
-      'edit own stanford_magazine_issue content',
-      'delete own stanford_magazine_issue content',
-      'edit any stanford_magazine_issue content',
-      'delete any stanford_magazine_issue content',
-    ),
-  );
-
-  $site_owner = user_role_load_by_name('site owner');
-  if ($site_owner->rid) {
-    _stanford_soe_helper_sitewide_grant_permissions($site_owner->rid, $site_owner_permissions);
-  }
-}
-
-/**
- * Set editor permissions
- *
- * @param none
- */
-function _stanford_soe_helper_magazine_editor_perms() {
-  module_load_include('module', 'stanford_soe_helper_sitewide');
-
-  // Permissions for magazine articles.
-  $editor_permissions = array(
-    // module key
-    'stanford_magazine_article' => array(
-      'create stanford_magazine_article content',
-      'edit own stanford_magazine_article content',
-      'delete own stanford_magazine_article content',
-      'edit any stanford_magazine_article content',
-    ),
-  );
-
-  $editor = user_role_load_by_name('editor');
-  if ($editor->rid) {
-    _stanford_soe_helper_sitewide_grant_permissions($editor->rid, $editor_permissions);
-  }
-
-  // Permissions for magazine issues.
-  $editor_permissions = array(
-    // module key
-    'stanford_magazine_issue' => array(
-      'create stanford_magazine_issue content',
-      'edit own stanford_magazine_issue content',
-      'delete own stanford_magazine_issue content',
-      'edit any stanford_magazine_issue content',
-    ),
-  );
-
-  $editor = user_role_load_by_name('editor');
-  if ($editor->rid) {
-    _stanford_soe_helper_sitewide_grant_permissions($editor->rid, $editor_permissions);
-  }
 }
 
