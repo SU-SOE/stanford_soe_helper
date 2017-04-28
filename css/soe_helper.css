@@ -1175,7 +1175,7 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
 .page-taxonomy-term .view-stanford-magazine-topics.article-grouping .mag-topic-card-container {
   position: relative;
   background: white;
-  padding: 30px;
+  padding: 15px 30px 30px;
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2); }
@@ -1185,10 +1185,48 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
     font-size: 0.81818em;
     font-weight: 100; }
   /* line 131, ../scss/components/_soe_dm_taxonomy_views.scss */
+  .page-taxonomy-term .view-stanford-magazine-topics.article-grouping .mag-topic-card-container .mag-article-title {
+    font-size: 1.18182em;
+    line-height: 1.3em; }
+    /* line 135, ../scss/components/_soe_dm_taxonomy_views.scss */
+    .page-taxonomy-term .view-stanford-magazine-topics.article-grouping .mag-topic-card-container .mag-article-title[class*="mag-article-color-"] a {
+      color: #333333;
+      text-decoration: underline;
+      text-decoration-skip: ink; }
+      /* line 140, ../scss/components/_soe_dm_taxonomy_views.scss */
+      .page-taxonomy-term .view-stanford-magazine-topics.article-grouping .mag-topic-card-container .mag-article-title[class*="mag-article-color-"] a:focus, .page-taxonomy-term .view-stanford-magazine-topics.article-grouping .mag-topic-card-container .mag-article-title[class*="mag-article-color-"] a:hover {
+        text-decoration-color: #333333; }
+    /* line 146, ../scss/components/_soe_dm_taxonomy_views.scss */
+    .page-taxonomy-term .view-stanford-magazine-topics.article-grouping .mag-topic-card-container .mag-article-title.mag-article-color-orange a {
+      text-decoration-color: #FFBD54; }
+    /* line 150, ../scss/components/_soe_dm_taxonomy_views.scss */
+    .page-taxonomy-term .view-stanford-magazine-topics.article-grouping .mag-topic-card-container .mag-article-title.mag-article-color-turquoise a {
+      text-decoration-color: #00ECE9; }
+    /* line 154, ../scss/components/_soe_dm_taxonomy_views.scss */
+    .page-taxonomy-term .view-stanford-magazine-topics.article-grouping .mag-topic-card-container .mag-article-title.mag-article-color-pink a {
+      text-decoration-color: #FF525C; }
+  /* line 159, ../scss/components/_soe_dm_taxonomy_views.scss */
+  .page-taxonomy-term .view-stanford-magazine-topics.article-grouping .mag-topic-card-container .mag-article-topics {
+    font-size: 0.72727em;
+    margin-top: 20px; }
+  /* line 164, ../scss/components/_soe_dm_taxonomy_views.scss */
   .page-taxonomy-term .view-stanford-magazine-topics.article-grouping .mag-topic-card-container .mag-article-issue {
     position: absolute;
     bottom: 15px;
     right: 30px; }
-    /* line 136, ../scss/components/_soe_dm_taxonomy_views.scss */
+    /* line 169, ../scss/components/_soe_dm_taxonomy_views.scss */
+    .page-taxonomy-term .view-stanford-magazine-topics.article-grouping .mag-topic-card-container .mag-article-issue[class*="mag-issue-color-"] {
+      padding: 0 5px;
+      font-size: 0.72727em; }
+    /* line 174, ../scss/components/_soe_dm_taxonomy_views.scss */
+    .page-taxonomy-term .view-stanford-magazine-topics.article-grouping .mag-topic-card-container .mag-article-issue.mag-issue-color-orange {
+      background: #FFBD54; }
+    /* line 178, ../scss/components/_soe_dm_taxonomy_views.scss */
+    .page-taxonomy-term .view-stanford-magazine-topics.article-grouping .mag-topic-card-container .mag-article-issue.mag-issue-color-turquoise {
+      background: #00ECE9; }
+    /* line 182, ../scss/components/_soe_dm_taxonomy_views.scss */
+    .page-taxonomy-term .view-stanford-magazine-topics.article-grouping .mag-topic-card-container .mag-article-issue.mag-issue-color-pink {
+      background: #FF525C; }
+    /* line 186, ../scss/components/_soe_dm_taxonomy_views.scss */
     .page-taxonomy-term .view-stanford-magazine-topics.article-grouping .mag-topic-card-container .mag-article-issue a {
       color: #333333; }

@@ -119,7 +119,7 @@
       .mag-topic-card-container {
         position: relative;
         background: white;
-        padding: 30px;
+        padding: 15px 30px 30px;
         @include box-shadow;
 
         .mag-article-date {
@@ -128,10 +128,60 @@
           font-weight: 100;
         }
 
+        .mag-article-title {
+          font-size: em(26px);
+          line-height: 1.3em;
+
+          &[class*="mag-article-color-"] a {
+            color: $primary-color;
+            text-decoration: underline;
+            text-decoration-skip: ink;
+
+            &:focus,
+            &:hover {
+              text-decoration-color: $primary-color;
+            }
+          }
+
+          &.mag-article-color-orange a {
+            text-decoration-color: $orange;
+          }
+
+          &.mag-article-color-turquoise a {
+            text-decoration-color: $turquoise;
+          }
+
+          &.mag-article-color-pink a {
+            text-decoration-color: $pink;
+          }
+        }
+
+        .mag-article-topics {
+          font-size: em(16px);
+          margin-top: 20px;
+        }
+
         .mag-article-issue {
           position: absolute;
           bottom: 15px;
           right: 30px;
+
+          &[class*="mag-issue-color-"] {
+            padding: 0 5px;
+            font-size: em(16px);
+          }
+
+          &.mag-issue-color-orange {
+            background: $orange;
+          }
+
+          &.mag-issue-color-turquoise {
+            background: $turquoise;
+          }
+
+          &.mag-issue-color-pink {
+            background: $pink;
+          }
 
           a {
             color: $primary-color;
