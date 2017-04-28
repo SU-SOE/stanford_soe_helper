@@ -12,6 +12,8 @@
 
   .view-stanford-magazine-topics {
     &.most-recent-article {
+      margin: -30px 0 80px;
+
       .most-recent-article-container {
         position: relative;
         display: flex;
@@ -117,6 +119,10 @@
     }
 
     &.article-grouping {
+      .views-row {
+        margin-bottom: 80px;
+      }
+
       .mag-topic-card-container {
         position: relative;
         background: white;
