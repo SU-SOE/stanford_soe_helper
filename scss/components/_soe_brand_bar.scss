@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+//
+// BRAND BAR AND HEADER
+//
+
+#global-header {
+  background-color: $brand-bright;
+
+  .container {
+    padding: 15px 0;
+  }
+
+}
+
+#header {
+  #logo {
+    img {
+      max-width: 160px;
+    }
+
+    &.logo-mobile {
+      @include breakpoint(x-small) {
+        display: table-cell;
+        padding: 0 10px 0 0;
+        border-right: 1px solid !important;
+
+        a {
+          background-size: 120px 26.66px;
+        }
+      }
+    }
+  }
+
+  #name-and-slogan.with-logo {
+    @include breakpoint(x-small) {
+      display: table-cell;
+      padding: 0 0 0 10px;
+    }
+  }
+
+  &.header {
+    background: $white;
+    padding: 32px 0 0;
+
+    #site-title-first-line.site-title-uppercase {
+      font-size: 34px;
+      @include breakpoint(x-small) {
+        font-size: 28px;
+      }
+      @media (max-width: 400px) {
+        font-size: 24px;
+      }
+    }
+  }
+}
