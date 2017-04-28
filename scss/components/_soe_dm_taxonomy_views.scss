@@ -40,6 +40,40 @@
             color: $gray-orange;
             font-size: em(20px);
             font-weight: 100;
+            margin-bottom: 10px;
+          }
+
+          .mag-article-title {
+            font-size: 32px;
+            line-height: 1.2em;
+
+            &[class*="mag-article-color-"] a {
+              color: $primary-color;
+              text-decoration: underline;
+              text-decoration-skip: ink;
+
+              &:focus,
+              &:hover {
+                text-decoration-color: $primary-color;
+              }
+            }
+
+            &.mag-article-color-orange a {
+              text-decoration-color: $orange;
+            }
+
+            &.mag-article-color-turquoise a {
+              text-decoration-color: $turquoise;
+            }
+
+            &.mag-article-color-pink a {
+              text-decoration-color: $pink;
+            }
+          }
+
+          .mag-article-topics {
+            font-size: em(18px);
+            margin-top: 20px;
           }
 
           .mag-article-issue {
@@ -54,6 +88,14 @@
 
             &.mag-issue-color-orange {
               background: $orange;
+            }
+
+            &.mag-issue-color-turquoise {
+              background: $turquoise;
+            }
+
+            &.mag-issue-color-pink {
+              background: $pink;
             }
 
             a {
