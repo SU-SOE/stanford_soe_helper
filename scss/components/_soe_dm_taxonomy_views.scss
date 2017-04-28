@@ -46,6 +46,7 @@
           .mag-article-title {
             font-size: em(32px);
             line-height: 1.2em;
+            font-weight: 600;
             @media (max-width: 1199px) and (min-width: 979px) {
               font-size: em(20px);
             }
@@ -131,6 +132,7 @@
         .mag-article-title {
           font-size: em(26px);
           line-height: 1.3em;
+          font-weight: 600;
 
           &[class*="mag-article-color-"] a {
             color: $primary-color;
