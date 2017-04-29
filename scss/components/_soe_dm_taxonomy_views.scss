@@ -12,6 +12,8 @@
 
   .view-stanford-magazine-topics {
     &.most-recent-article {
+      margin: -30px 0 80px;
+
       .most-recent-article-container {
         position: relative;
         display: flex;
@@ -46,6 +48,7 @@
           .mag-article-title {
             font-size: em(32px);
             line-height: 1.2em;
+            font-weight: 600;
             @media (max-width: 1199px) and (min-width: 979px) {
               font-size: em(20px);
             }
@@ -76,7 +79,7 @@
 
           .mag-article-topics {
             font-size: em(18px);
-            margin-top: 20px;
+            margin: 20px 0 30px;
           }
 
           .mag-article-issue {
@@ -116,6 +119,10 @@
     }
 
     &.article-grouping {
+      .views-row {
+        margin-bottom: 80px;
+      }
+
       .mag-topic-card-container {
         position: relative;
         background: white;
@@ -131,6 +138,7 @@
         .mag-article-title {
           font-size: em(26px);
           line-height: 1.3em;
+          font-weight: 600;
 
           &[class*="mag-article-color-"] a {
             color: $primary-color;
@@ -158,13 +166,13 @@
 
         .mag-article-topics {
           font-size: em(16px);
-          margin-top: 20px;
+          margin: 20px 0 30px;
         }
 
         .mag-article-issue {
           position: absolute;
           bottom: 15px;
-          right: 30px;
+          right: 15px;
 
           &[class*="mag-issue-color-"] {
             padding: 0 5px;
