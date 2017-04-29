@@ -26,7 +26,8 @@ function stanford_soe_helper_init() {
 
   // Add css files
   $file_paths = array(
-    drupal_get_path('module', 'stanford_soe_helper') . "/css/soe_helper.css"
+    drupal_get_path('module', 'stanford_soe_helper') . "/css/soe_helper.css",
+    drupal_get_path('module', 'stanford_soe_helper') . "/css/stanford_news_layouts.css"
   );
 
   // CSS Injector file weights start at 200.
@@ -108,104 +109,17 @@ function stanford_soe_helper_cc() {
 }
 
 /**
- * Implements hook_form_alter().
+ * Implements hook_form_FORM_ID_alter() for stanford_news_item_node_form.
  */
-function stanford_soe_helper_form_alter(
+function stanford_soe_helper_form_stanford_news_item_node_form_alter(
   &$form,
   &$form_state,
   $form_id) {
 
   // Handle deprecation of image credits.
-  switch($form_id) {
-    case "stanford_page_node_form":
-    case "bean_form":
-    case "stanford_landing_page_node_form":
-    case "stanford_private_page_node_form":
-    case "stanford_publication_node_form":
-    case "stanford_event_node_form":
-    case "stanford_news_item_node_form":
-    case "stanford_event_series_node_form":
-      _stanford_soe_helper_deprecate_image_credits($form, $form_id);
-      break;
+  if (function_exists('stanford_news_extras_deprecate_image_credits')) {
+    stanford_news_extras_deprecate_image_credits($form, $form_id);
   }
-}
-
-/**
- * Implements hook_form_FORM_ID_alter() for stanford_search_api_search_block_form.
- */
-function stanford_soe_helper_form_stanford_search_api_search_block_form_alter(
-  &$form,
-  &$form_state,
-  $form_id) {
-
-  $form['keywords']['#attributes']['placeholder'] = t("Search");
-
-}
-
-/**
- * Handle tasks for deprecating the image credits.
- *
- * - Don't display the credits field unless there is text in that field.
- * - Update all the appropriate title and description fields to handle
- *   deprecation.
- *
- * @param array $form
- *   The form to update.
- * @param string $form_id
- *   The form ID. Make sure we're making changes to the right form!
- */
-function _stanford_soe_helper_deprecate_image_credits(&$form, $form_id) {
-
-    // Don't display the credits!
-    $form['field_s_image_info'][LANGUAGE_NONE]['0']['field_s_image_credits']['#access'] =
-      FALSE;
-
-    // Well, okay, if there *is* text in the credits field,
-    // then let's display the credits field.
-    if (isset($form['field_s_image_info'][LANGUAGE_NONE]['0']['field_s_image_credits'][LANGUAGE_NONE]['0']['value']['#default_value'])) {
-      $form['field_s_image_info'][LANGUAGE_NONE]['0']['field_s_image_credits']['#access'] =
-        TRUE;
-    }
-
-    // Update caption title.
-    // Not sure which fields to target, so target all the things!
-    $caption_title = t("Caption and Credits");
-    $form['field_s_image_info'][LANGUAGE_NONE]['0']['field_s_image_caption'][LANGUAGE_NONE]['#title'] =
-      $caption_title;
-    $form['field_s_image_info'][LANGUAGE_NONE]['0']['field_s_image_caption'][LANGUAGE_NONE]['0']['#title'] =
-      $caption_title;
-    $form['field_s_image_info'][LANGUAGE_NONE]['0']['field_s_image_caption'][LANGUAGE_NONE]['0']['value']['#title'] =
-      $caption_title;
-
-    // Caption help text.
-    $caption_text = t('Use this field to display <strong>both</strong> the image caption and credits for the photographer or organization. Enter the caption, a pipe "|", and the credits.');
-    $form['field_s_image_info'][LANGUAGE_NONE]['0']['field_s_image_caption'][LANGUAGE_NONE]['#description'] =
-      $caption_text;
-    $form['field_s_image_info'][LANGUAGE_NONE]['0']['field_s_image_caption'][LANGUAGE_NONE]['0']['#description'] =
-      $caption_text;
-    $form['field_s_image_info'][LANGUAGE_NONE]['0']['field_s_image_credits'][LANGUAGE_NONE]['0']['value']['#description'] =
-      $caption_text;
-
-    // Credits title.
-    $credits_title =
-      t("Credits ** Please use the @caption_title field ** see @caption_title field help text below.",
-        array('@caption_title' => $caption_title));
-    $form['field_s_image_info'][LANGUAGE_NONE]['0']['field_s_image_credits'][LANGUAGE_NONE]['#title'] =
-      $credits_title;
-    $form['field_s_image_info'][LANGUAGE_NONE]['0']['field_s_image_credits'][LANGUAGE_NONE]['0']['#title'] =
-      $credits_title;
-    $form['field_s_image_info'][LANGUAGE_NONE]['0']['field_s_image_credits'][LANGUAGE_NONE]['0']['value']['#title'] =
-      $credits_title;
-
-    // Credits help text.
-    $credits_text = t("This field is no longer supported. Please move the text from this field into the @caption_title field.",
-      array('@caption_title' => $caption_title));
-    $form['field_s_image_info'][LANGUAGE_NONE]['0']['field_s_image_credits'][LANGUAGE_NONE]['#description'] =
-      $credits_text;
-    $form['field_s_image_info'][LANGUAGE_NONE]['0']['field_s_image_credits'][LANGUAGE_NONE]['0']['#description'] =
-      $credits_text;
-    $form['field_s_image_info'][LANGUAGE_NONE]['0']['field_s_image_credits'][LANGUAGE_NONE]['0']['value']['#description'] =
-      $credits_text;
 }
 
 /**

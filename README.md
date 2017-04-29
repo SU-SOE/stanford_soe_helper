@@ -1,52 +1,24 @@
-# [Stanford SoE Helper](https://github.com/SU-SWS/stanford_soe_helper)
+#[Stanford SOE Helper](https://github.com/SU-SOE/stanford_soe_helper)
 ##### Version: 7.x-1.x
 
-Maintainers: [boznik](https://github.com/bosnik), [cjwest](https://github.com/cjwest), [josephgknox](https://github.com/josephgknox)  
+Maintainers: [boznik](https://github.com/boznik),  [cjwest](https://github.com/cjwest)
 
-Changelog: [Changelog.txt](CHANGELOG.txt)
+[Changelog.txt](CHANGELOG.txt)
 
-Description
----
-
-The Stanford SoE Helper module provides the custom code for the SoE school site.
+The Stanford SOE Helper module is used to make modifications to JSE SOE sites.
 
 
 Sub Modules
 ---
-**[Stanford SoE Helper Event](https://github.com/SU-SWS/stanford_soe_helper/stanford_soe_helper_event/)**
-This module provides custom functionality for events.
 
-**[Stanford SoE Helper_Homepage](https://github.com/SU-SWS/stanford_soe_helper/stanford_soe_helper_homepage/)**
-This module provides custom functionality for the SoE Homepage.
+**[Stanford SoE Helper Homepage]()**
+This module provides specific functionality for SoE site homepage.
 
-**[Stanford SoE Helper Landing_Page](https://github.com/SU-SWS/stanford_soe_helper/stanford_soe_helper_landing_page/)**
-This module provides custom functionality for landing pages.
+**[Stanford SoE Helper News]()**
+This module provides specific functionality for SoE site news pages.
 
-**[Stanford SoE Helper Magazine](https://github.com/SU-SWS/stanford_soe_helper/stanford_soe_helper_magazine/)**
-This module provides custom functionality for the Stanford Magazine. This includes:
-- The newsletter sign-up block that appears on magazine pages
-- The Stanford Taxonomy Term view - this view overwrites Drupal's default system for handling taxonomy terms.
-- Setting site owner and editor permissions
-- TBD - The view that re-writes the department vocabulary term links on magazine article 
-pages to redirect to magazine/\<department/>
-
-**[Stanford SoE Helper News](https://github.com/SU-SWS/stanford_soe_helper/stanford_soe_helper_news/)**
-This module provides custom functionality for news.
-
-**[Stanford SoE Helper Page](https://github.com/SU-SWS/stanford_soe_helper/stanford_soe_helper_page/)**
-This module provides custom functionality for Stanford Pages.
-
-**[Stanford SoE Helper Sitewide](https://github.com/SU-SWS/stanford_soe_helper/stanford_soe_helper_sitewide/)**
-This module provides custom functionality for sitewide functionality. 
-This includes contexts and vocabulary including:
- - SoE Accent Color vocabulary
- 
-
-Accessibility
----
-[![WCAG Conformance 2.0 AA Badge](https://www.w3.org/WAI/wcag2AA-blue.png)](https://www.w3.org/TR/WCAG20/)
-Evaluation Date: 201X-XX-XX  
-This module conforms to level AA WCAG 2.0 standards as required by the university's accessibility policy. For more information on the policy please visit: [https://ucomm.stanford.edu/policies/accessibility-policy.html](https://ucomm.stanford.edu/policies/accessibility-policy.html).
+**[Stanford SoE Helper Sitewide]()**
+This module provides sitewide functionality specific for SoE site.
 
 Installation
 ---
@@ -61,24 +33,10 @@ If using the Pingdom cache clear functionality in `stanford_soe_helper_cc()`, yo
 drush vset stanford_soe_helper_pingdom_token <token_value>
 ```
 
-
-
 Troubleshooting
 ---
 
 If you are experiencing issues with this module try reverting the feature first. If you are still experiencing issues try posting an issue on the GitHub issues page.
-
-Developer
----
-
-If you wish to develop on this module you will most likely need to compile some new css. Please use the sass structure provided and compile with the sass compiler packaged in this module. To install:
-
-```
-npm install
-grunt watch
- or
-grunt devmode
-```
 
 Contribution / Collaboration
 ---
