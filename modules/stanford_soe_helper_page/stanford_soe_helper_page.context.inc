@@ -29,11 +29,11 @@ function stanford_soe_helper_page_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'ds_extras-stanford_page_featured_image' => array(
-          'module' => 'ds_extras',
-          'delta' => 'stanford_page_featured_image',
+        'views-stanford_page_top_banner-block' => array(
+          'module' => 'views',
+          'delta' => 'stanford_page_top_banner-block',
           'region' => 'fullwidth_top',
-          'weight' => '-10',
+          'weight' => '-9',
         ),
         'ds_extras-stanford_page_title' => array(
           'module' => 'ds_extras',
