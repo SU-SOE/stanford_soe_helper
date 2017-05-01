@@ -4,6 +4,37 @@
 // PAGE LAYOUT
 //
 
+// STANFORD PAGE
+
+.node-type-stanford-page {
+  #block-ds-extras-stanford-page-featured-image {
+    .group-s-caption-style {
+      font-size: em(18px);
+      font-weight: 100;
+      color: $gray-orange;
+      text-align: center;
+      margin: 1em auto;
+      width: 50%;
+      @include breakpoint(medium) {
+        width: 70%;
+      }
+      @include breakpoint(x-small) {
+        width: 90%;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      a {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+// LANDING PAGE
+
 .node-type-stanford-landing-page {
   &.stanford-4-col-header .field-name-field-landing-page-item > .field-items > .field-item {
     @include breakpoint(large) {
@@ -51,6 +82,8 @@
     border-top: 1px solid $gray;
   }
 }
+
+// MISCELLANEOUS
 
 .node .group_s_postcard_image .field-collection-container > .field > .field-items > .field-item {
   margin-left: 2em;
