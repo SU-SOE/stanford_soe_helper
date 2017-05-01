@@ -36,6 +36,16 @@
   }
 }
 
+// PAGE FEATURED IMAGE
+
+#block-ds-extras-stanford-page-featured-image {
+  .field-name-field-s-image-image {
+    img {
+      width: 100%;
+    }
+  }
+}
+
 // BOTTOM BANNER
 
 #fullwidth-bottom {
@@ -101,6 +111,9 @@
       width: 80%;
       @include breakpoint(small) {
         position: inherit;
+        width: 91%;
+      }
+      @include breakpoint(x-small) {
         width: 100%;
       }
 
