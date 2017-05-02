@@ -5,7 +5,6 @@
  * Code for the Stanford SOE Helper module.
  */
 
-
 /**
  * Implements hook_help().
  */
@@ -139,7 +138,6 @@ function stanford_soe_helper_form_stanford_search_api_search_block_form_alter(
   $form_id) {
 
   $form['keywords']['#attributes']['placeholder'] = t("Search");
-
 }
 
 /**
