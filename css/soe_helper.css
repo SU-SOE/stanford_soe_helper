@@ -834,28 +834,34 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
 #mc_embed_signup_scroll #mc-embedded-subscribe input {
   background-color: #B1040E;
   border-style: none;
-  color: #FFFFFF; }
-/* line 112, ../scss/components/_soe_forms.scss */
+  color: #FFFFFF;
+  margin-left: 1em; }
+  @media (max-width: 767px) {
+    /* line 104, ../scss/components/_soe_forms.scss */
+    #mc_embed_signup_scroll #mc-embedded-subscribe.button,
+    #mc_embed_signup_scroll #mc-embedded-subscribe input {
+      margin-left: 0.4em; } }
+/* line 116, ../scss/components/_soe_forms.scss */
 #mc_embed_signup_scroll p {
   padding-right: 10px; }
-/* line 116, ../scss/components/_soe_forms.scss */
+/* line 120, ../scss/components/_soe_forms.scss */
 #mc_embed_signup_scroll input.button {
   height: 40px;
   padding: 0 13px 2px;
   width: 75px;
   -webkit-border-radius: 0; }
-/* line 123, ../scss/components/_soe_forms.scss */
+/* line 127, ../scss/components/_soe_forms.scss */
 #mc_embed_signup_scroll .uneditable-input,
 #mc_embed_signup_scroll input,
 #mc_embed_signup_scroll textarea {
   width: 110px; }
-/* line 129, ../scss/components/_soe_forms.scss */
+/* line 133, ../scss/components/_soe_forms.scss */
 #mc_embed_signup_scroll button,
 #mc_embed_signup_scroll input,
 #mc_embed_signup_scroll select,
 #mc_embed_signup_scroll textarea {
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; }
-/* line 136, ../scss/components/_soe_forms.scss */
+/* line 140, ../scss/components/_soe_forms.scss */
 #block-bean-stanford-soe-mag-news-signup #mc_embed_signup_scroll {
   background: #ffffff;
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
@@ -863,24 +869,24 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
   padding: 35px 0;
   text-align: center; }
-  /* line 142, ../scss/components/_soe_forms.scss */
+  /* line 146, ../scss/components/_soe_forms.scss */
   #block-bean-stanford-soe-mag-news-signup #mc_embed_signup_scroll form {
     margin-bottom: 0; }
-  /* line 146, ../scss/components/_soe_forms.scss */
+  /* line 150, ../scss/components/_soe_forms.scss */
   #block-bean-stanford-soe-mag-news-signup #mc_embed_signup_scroll .mc_signup_submission_wrapper {
     display: flex;
     justify-content: center; }
-  /* line 151, ../scss/components/_soe_forms.scss */
+  /* line 155, ../scss/components/_soe_forms.scss */
   #block-bean-stanford-soe-mag-news-signup #mc_embed_signup_scroll .mc-field-group {
     float: none; }
-    /* line 154, ../scss/components/_soe_forms.scss */
+    /* line 158, ../scss/components/_soe_forms.scss */
     #block-bean-stanford-soe-mag-news-signup #mc_embed_signup_scroll .mc-field-group input {
       width: 400px; }
       @media (max-width: 767px) {
-        /* line 154, ../scss/components/_soe_forms.scss */
+        /* line 158, ../scss/components/_soe_forms.scss */
         #block-bean-stanford-soe-mag-news-signup #mc_embed_signup_scroll .mc-field-group input {
           width: 200px; } }
-  /* line 162, ../scss/components/_soe_forms.scss */
+  /* line 166, ../scss/components/_soe_forms.scss */
   .page-taxonomy-term #block-bean-stanford-soe-mag-news-signup #mc_embed_signup_scroll {
     margin-bottom: 80px;
     padding: 65px 0;
