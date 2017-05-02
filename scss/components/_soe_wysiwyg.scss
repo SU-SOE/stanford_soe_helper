@@ -4,6 +4,14 @@
 // WYSIWYG
 //
 
+.summary {
+  font-family: $roboto-slab;
+  font-size: em(32px);
+  font-weight: 400;
+  line-height: 1.4em;
+  margin-bottom: 30px;
+}
+
 a {
   &[class*="btn-"] {
     color: $black;
@@ -51,5 +59,14 @@ p.related-link {
   &:before {
     content: "Related:";
     padding-right: 3px;
+  }
+}
+
+p.summary.drop-cap {
+  &:first-letter {
+    font-size: 85px;
+    font-weight: 300;
+    float: left;
+    padding: 23px 10px 0 0;
   }
 }

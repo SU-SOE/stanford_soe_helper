@@ -174,14 +174,6 @@ th {
       text-decoration: underline; }
 
 /* line 186, ../scss/components/_soe_global.scss */
-.summary {
-  font-family: "Roboto Slab", serif;
-  font-size: 1.45455em;
-  font-weight: 400;
-  line-height: 1.4em;
-  margin-bottom: 30px; }
-
-/* line 194, ../scss/components/_soe_global.scss */
 .descriptor {
   text-transform: none;
   letter-spacing: 0.02em;
@@ -189,50 +181,58 @@ th {
   margin-bottom: 4px;
   line-height: 1.2em; }
 
-/* line 202, ../scss/components/_soe_global.scss */
+/* line 194, ../scss/components/_soe_global.scss */
 .postcard-left {
   margin-top: 6px; }
 
-/* line 206, ../scss/components/_soe_global.scss */
+/* line 198, ../scss/components/_soe_global.scss */
 .views-row-lines .views-row {
   border-color: #D7D7D7; }
 
-/* line 210, ../scss/components/_soe_global.scss */
+/* line 202, ../scss/components/_soe_global.scss */
 #wrap {
   background: #F8F8F8; }
 
-/* line 214, ../scss/components/_soe_global.scss */
+/* line 206, ../scss/components/_soe_global.scss */
 .main {
   padding-top: 60px;
   background: #F8F8F8; }
 
 @media (max-width: 767px) {
-  /* line 219, ../scss/components/_soe_global.scss */
+  /* line 211, ../scss/components/_soe_global.scss */
   .container {
     margin-bottom: 10px; }
-    /* line 223, ../scss/components/_soe_global.scss */
+    /* line 215, ../scss/components/_soe_global.scss */
     #fullwidth-bottom .container {
       margin-bottom: 0; } }
 
 @media (min-width: 1200px) {
-  /* line 229, ../scss/components/_soe_global.scss */
+  /* line 221, ../scss/components/_soe_global.scss */
   #content.span9 {
     width: 740px;
     margin-left: 80px; } }
 
-/* line 8, ../scss/components/_soe_wysiwyg.scss */
+/* line 7, ../scss/components/_soe_wysiwyg.scss */
+.summary {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.45455em;
+  font-weight: 400;
+  line-height: 1.4em;
+  margin-bottom: 30px; }
+
+/* line 16, ../scss/components/_soe_wysiwyg.scss */
 a[class*="btn-"] {
   color: #000000; }
-/* line 12, ../scss/components/_soe_wysiwyg.scss */
+/* line 20, ../scss/components/_soe_wysiwyg.scss */
 a.btn-orange {
   background: #FFBD54; }
-/* line 16, ../scss/components/_soe_wysiwyg.scss */
+/* line 24, ../scss/components/_soe_wysiwyg.scss */
 a.btn-turquoise {
   background: #00ECE9; }
-/* line 20, ../scss/components/_soe_wysiwyg.scss */
+/* line 28, ../scss/components/_soe_wysiwyg.scss */
 a.btn-pink {
   background: #FF525C; }
-/* line 24, ../scss/components/_soe_wysiwyg.scss */
+/* line 32, ../scss/components/_soe_wysiwyg.scss */
 a.external-link:after {
   content: " ";
   background-image: url("../img/soe_external_link_icon.png");
@@ -241,7 +241,7 @@ a.external-link:after {
   background-size: 50%;
   padding: 0 5px 1px 20px; }
 
-/* line 34, ../scss/components/_soe_wysiwyg.scss */
+/* line 42, ../scss/components/_soe_wysiwyg.scss */
 p.columns {
   font-family: "Roboto Slab", serif;
   font-size: 1.45455em;
@@ -254,23 +254,30 @@ p.columns {
   -moz-column-gap: 100px;
   column-gap: 100px; }
   @media (max-width: 767px) {
-    /* line 34, ../scss/components/_soe_wysiwyg.scss */
+    /* line 42, ../scss/components/_soe_wysiwyg.scss */
     p.columns {
       -webkit-column-count: 1;
       -moz-column-count: 1;
       column-count: 1; } }
 
-/* line 46, ../scss/components/_soe_wysiwyg.scss */
+/* line 54, ../scss/components/_soe_wysiwyg.scss */
 p.related-link {
   background: #FFFFFF;
   padding: 26px 36px;
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2); }
-  /* line 51, ../scss/components/_soe_wysiwyg.scss */
+  /* line 59, ../scss/components/_soe_wysiwyg.scss */
   p.related-link:before {
     content: "Related:";
     padding-right: 3px; }
+
+/* line 66, ../scss/components/_soe_wysiwyg.scss */
+p.summary.drop-cap:first-letter {
+  font-size: 85px;
+  font-weight: 300;
+  float: left;
+  padding: 23px 10px 0 0; }
 
 /* line 7, ../scss/components/_soe_brand_bar.scss */
 #global-header {
