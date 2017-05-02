@@ -24,10 +24,9 @@ function stanford_soe_helper_event_field_group_info() {
     'weight' => '1',
     'children' => array(
       0 => 'field_s_event_map_link',
-      1 => 'field_s_event_speakers',
-      2 => 'field_stanford_event_admission',
-      3 => 'field_stanford_event_datetime',
-      4 => 'field_stanford_event_location',
+      1 => 'field_stanford_event_admission',
+      2 => 'field_stanford_event_datetime',
+      3 => 'field_stanford_event_location',
     ),
     'format_type' => 'div',
     'format_settings' => array(
