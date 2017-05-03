@@ -225,3 +225,34 @@ function stanford_soe_helper_rr() {
   }
   return '';
 }
+
+
+/**
+ * Test to see if a bean exists.
+ *
+ * @return bean ID
+ *   If the bean exists, return the bean ID (BID).
+ */
+function _stanford_soe_helper_get_bean($delta) {
+  $q = db_select('bean', 'b');
+  $q->addField('b', 'bid');
+  $q->condition('delta', $delta, '=');
+  $r = $q->execute()->fetchField();
+  return $r;
+}
+/**
+ * Delete the given bean
+ *
+ * If it exists, delete the bean.
+ *
+ * @return bean ID
+ *   If the bean exists, return the bean ID (BID).
+ */
+function _stanford_soe_helper_delete_bean($delta) {
+  $bid = _stanford_soe_helper_get_bean($delta);
+  if (!empty($bid)) {
+    $bean = bean_load($bid);
+    bean_delete($bean);
+  }
+}
+

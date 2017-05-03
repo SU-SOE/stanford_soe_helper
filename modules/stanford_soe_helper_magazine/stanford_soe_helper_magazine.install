@@ -11,6 +11,7 @@
  */
 function stanford_soe_helper_magazine_install() {
   _stanford_soe_helper_magazine_add_newsletter_signup_bean();
+  _stanford_soe_helper_magazine_add_explore_issues_bean();
   _stanford_soe_helper_magazine_add_color_field();
 
 }
@@ -44,12 +45,11 @@ function stanford_soe_helper_magazine_disable() {
  * Implements hook_uninstall().
  */
 function stanford_soe_helper_magazine_uninstall() {
-  $bid = _stanford_soe_helper_magazine_get_bean('stanford-soe-mag-news-signup');
-  if (!empty($bid)) {
-    $bean = bean_load($bid);
-    bean_delete($bean);
-  }
+  module_load_include('module', 'stanford_soe_helper');
+  _stanford_soe_helper_delete_bean('stanford-soe-mag-news-signup');
+  _stanford_soe_helper_delete_bean('stanford-soe-mag-explore-issues');
 }
+
 /**
  * Add the accent color field to Stanford Magazine Issue
  *
@@ -75,13 +75,45 @@ function _stanford_soe_helper_magazine_add_color_field() {
     'stanford_magazine_issue');
 }
 
+
+/**
+ * Create the Explore All Issues bean.
+ *
+ */
+function _stanford_soe_helper_magazine_add_explore_issues_bean() {
+  $bean_name = 'stanford-soe-mag-explore-issues';
+  $bid = _stanford_soe_helper_get_bean($bean_name);
+  if (empty($bid)) {
+    $bean = bean_create(array('type' => 'stanford_postcard'));
+    $bean->label = 'Stanford SoE Magazine Explore All Issues';
+    $bean->title = '<none>';
+    $bean->delta = $bean_name;
+    $bean->view_mode = 'default';
+
+    $link=url('magazine/issue');
+
+    $body = "<div class='mag-explore-issues'><a href=$link>Explore All Issues</a></div>";
+
+    $bean->field_s_postcard_body = array(
+      'und' => array(
+        '0' => array(
+          'value' => $body,
+          'format' => 'full_html',
+        )));
+
+    $bean->save();
+    watchdog('stanford_soe_helper_magazine', 'Created bean %bean_name',
+      array('%bean_name' => $bean_name));
+  }
+}
+
 /**
  * Create the newsletter sign-up bean.
  *
  */
 function _stanford_soe_helper_magazine_add_newsletter_signup_bean() {
   $bean_name = 'stanford-soe-mag-news-signup';
-  $bid = _stanford_soe_helper_magazine_get_bean($bean_name);
+  $bid = _stanford_soe_helper_get_bean($bean_name);
   if (empty($bid)) {
     $bean = bean_create(array('type' => 'stanford_postcard'));
     $bean->label = 'Stanford SoE Magazine newsletter Sign-up';
@@ -125,19 +157,6 @@ EOD;
   }
 }
 
-/**
- * Test to see if a bean exists.
- *
- * @return bean ID
- *   If the bean exists, return the bean ID (BID).
- */
-function _stanford_soe_helper_magazine_get_bean($delta) {
-  $q = db_select('bean', 'b');
-  $q->addField('b', 'bid');
-  $q->condition('delta', $delta, '=');
-  $r = $q->execute()->fetchField();
-  return $r;
-}
 
 /**
  * Set site owner permissions
@@ -222,4 +241,5 @@ function _stanford_soe_helper_magazine_editor_perms() {
     _stanford_soe_helper_sitewide_grant_permissions($editor->rid, $editor_permissions);
   }
 }
+
 
