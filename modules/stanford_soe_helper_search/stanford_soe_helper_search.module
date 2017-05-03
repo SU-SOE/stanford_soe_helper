@@ -20,30 +20,17 @@ function stanford_soe_helper_search_form_alter(&$form, &$form_state, $form_id) {
      //dpm($form_id);
      $path_alias = drupal_get_path_alias(current_path());
      $magazine_parts = explode('/', $path_alias);
-     $url = url(current_path(), array(
-       'relative' => TRUE,
-       'query' => drupal_get_query_parameters()
-     ));
-     $parts = drupal_parse_url($url);
-     //dpm($parts);
-     if (in_array('magazine', $magazine_parts) || (isset($parts['query']['dm_search']) && $parts['query']['dm_search'] == 1)) {
-       dpm('firing');
+     if (in_array('magazine', $magazine_parts)) {
        $form['is_magazine'] = array(
          '#type' => 'hidden',
          '#value' => 'TRUE',
        );
-       dpm($form);
-       dpm($form_state);
      }
-     if (isset($form['is_magazine']) || (isset($form_state['input']['is_magazine']) && $form_state['input']['is_magazine'] == 'TRUE')) {
-       dpm('yeppers');
+     if (isset($form_state['input']['is_magazine']) && $form_state['input']['is_magazine'] == 'TRUE') {
        unset($form['#submit']);
        $form['#submit'][] = 'stanford_soe_helper_search_magazine';
      }
    }
-//   elseif ($form_id = 'views_exposed_form_search_solr_nodes_page') {
-//
-//   }
 }
 
 /**
@@ -55,6 +42,5 @@ function stanford_soe_helper_search_magazine($form, &$form_state) {
     drupal_set_message("Missing search value", "error");
     return;
   }
-  $dm = (isset($form_state['input']['is_magazine']) && $form_state['input']['is_magazine'] == 'TRUE') ? 1 : 0;
-  drupal_goto("search/content", array('query' => array("search_api_views_fulltext" => check_plain($form_state['values']['keywords']), "dm_search" => $dm)));
+  drupal_goto("magazine/search/content", array('query' => array("search_api_views_fulltext" => check_plain($form_state['values']['keywords']))));
 }
