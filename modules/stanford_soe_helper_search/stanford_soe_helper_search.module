@@ -10,7 +10,6 @@
  */
 function stanford_soe_helper_search_form_alter(&$form, &$form_state, $form_id) {
    if ($form_id == 'stanford_search_api_search_block_form') {
-     //dpm($form_id);
      $path_alias = drupal_get_path_alias(current_path());
      $magazine_parts = explode('/', $path_alias);
      if (in_array('magazine', $magazine_parts)) {
