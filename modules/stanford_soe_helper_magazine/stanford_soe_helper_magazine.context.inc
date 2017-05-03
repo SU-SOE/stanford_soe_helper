@@ -35,14 +35,6 @@ function stanford_soe_helper_magazine_context_default_contexts() {
           'region' => 'content_lower',
           'weight' => '-10',
         ),
-        /* Which is the correct view?
-      'views-9d3ca2cdfc5952dee88d733052ab8edd' => array(
-          'module' => 'views',
-          'delta' => '9d3ca2cdfc5952dee88d733052ab8edd',
-          'region' => 'content_lower',
-          'weight' => '-9',
-          ),
-        */
         'views-a06b957e34c741c20a352da1b7ce0e12' => array(
           'module' => 'views',
           'delta' => 'a06b957e34c741c20a352da1b7ce0e12',
