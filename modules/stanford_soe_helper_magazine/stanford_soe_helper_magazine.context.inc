@@ -47,6 +47,12 @@ function stanford_soe_helper_magazine_context_default_contexts() {
           'region' => 'content_bottom',
           'weight' => '-9',
         ),
+        'bean-stanford-soe-mag-explore-issues' => array(
+          'module' => 'bean',
+          'delta' => 'stanford-soe-mag-explore-issues',
+          'region' => 'content_bottom',
+          'weight' => '-8',
+        ),
       ),
     ),
   );
