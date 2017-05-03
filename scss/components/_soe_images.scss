@@ -40,8 +40,22 @@
 
 #block-views-stanford-page-top-banner-block {
   .page-feat-image-container {
+    position: relative;
+
     img {
       width: 100%;
+    }
+  }
+
+  .page-feat-scroll-container {
+    color: $white;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+
+    &:after {
+      content: url("../img/soe_banner_chevron_down_white.png");
     }
   }
 }
@@ -77,7 +91,7 @@
           line-height: 43px;
 
           &:after {
-            content: url("../img/soe_banner_arrow_right.png");
+            content: url("../img/soe_banner_arrow_right_black.png");
             vertical-align: -6%;
             padding-left: 20px;
           }
