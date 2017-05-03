@@ -50,9 +50,13 @@
   .page-feat-scroll-container {
     color: $white;
     position: absolute;
-    bottom: 0;
+    bottom: 20px;
     text-align: center;
     width: 100%;
+
+    p {
+      margin-bottom: 0.2em;
+    }
 
     &:after {
       content: url("../img/soe_banner_chevron_down_white.png");
