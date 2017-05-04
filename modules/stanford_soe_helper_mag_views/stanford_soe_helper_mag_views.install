@@ -1,0 +1,56 @@
+<?php
+/**
+ * @file
+ * Code for Stanford SoE Helper Magazine Views install.
+ *
+ * Custom views for magazine. These are views that are not features.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function stanford_soe_helper_mag_views_install() {
+  // Populate the default {node_access} record.
+  /*
+   *db_insert('node_access')
+   *  ->fields(array(
+   *    'nid' => 0,
+   *    'gid' => 0,
+   *    'realm' => 'all',
+   *    'grant_view' => 1,
+   *    'grant_update' => 0,
+   *    'grant_delete' => 0,
+   *  ))
+   *  ->execute();
+   */
+  /* Your code here */
+}
+
+/**
+ * Implements hook_enable().
+ */
+function stanford_soe_helper_mag_views_enable() {
+  /*
+   *mymodule_cache_rebuild();
+   */
+  /* Your code here */
+}
+
+/**
+ * Implements hook_disable().
+ */
+function stanford_soe_helper_mag_views_disable() {
+  /*
+   *mymodule_cache_rebuild();
+   */
+  /* Your code here */
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function stanford_soe_helper_mag_views_uninstall() {
+  /*
+   *variable_del('upload_file_types');
+   */
+}

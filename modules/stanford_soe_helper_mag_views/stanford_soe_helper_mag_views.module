@@ -1,0 +1,20 @@
+<?php
+/**
+ * @file
+ * Code for Stanford SoE Helper Magazine Views module.
+ *
+ * Custom views for magazine. These are views that are not features.
+ */
+
+/**
+ * Implements hook_views_api().
+ *
+ * Enabling using templates inside module
+ */
+function stanford_soe_helper_mag_views_views_api() {
+  return array(
+    'api' => 3,
+    'path' => drupal_get_path('module', 'NAME'),
+    'template path' => drupal_get_path('module', 'stanford_soe_helper_mag_views') . '/templates',
+  );
+}
