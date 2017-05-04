@@ -1,8 +1,7 @@
 <?php
-
 /**
  * @file
- * stanford_soe_helper_search_test.features.inc
+ * stanford_soe_helper_search.features.inc
  */
 
 /**
