@@ -18,3 +18,180 @@ function stanford_soe_helper_mag_views_views_api() {
     'template path' => drupal_get_path('module', 'stanford_soe_helper_mag_views') . '/templates',
   );
 }
+
+
+/**
+ * @param $row
+ * @return array
+ */
+function _stanford_mag_issue_get_feat_art($row) {
+
+  $vars = array(
+    'image' => isset($row->field_field_s_mag_article_image[0]['rendered'])
+      ? drupal_render($row->field_field_s_mag_article_image[0]['rendered']) : '',
+    'date' => isset($row->field_field_s_mag_article_date[0]['rendered']['#markup'])
+      ? $row->field_field_s_mag_article_date_1[0]['rendered']['#markup'] : '',
+    'color' => isset($row->field_field_s_mag_article_accent_color[0]['rendered'])
+      ? drupal_render($row->field_field_s_mag_article_accent_color[0]['rendered']) : '',
+    'title' => $row->node_field_data_field_s_mag_issue_featured_title,
+    'dek' => isset($row->field_field_s_mag_article_dek[0]['rendered']['#markup'])
+      ? drupal_render($row->field_field_s_mag_article_dek[0]['rendered']['#markup']) : '',
+    'topics' => _stanford_mag_issue_get_topics($row->field_field_s_mag_article_topics),
+    'edit-link' => _stanford_mag_issue_get_edit_link($row->node_field_data_field_s_mag_issue_featured_nid),
+    'nid' => $row->node_field_data_field_s_mag_issue_featured_nid,
+  );
+
+  return $vars;
+}
+
+/**
+ * @param $row
+ * @return array
+ */
+function _stanford_mag_issue_get_art_2($row) {
+
+  $vars = array(
+    'image' => isset($row->field_field_s_mag_article_image_1[0]['rendered'])
+      ? drupal_render($row->field_field_s_mag_article_image_1[0]['rendered']) : '',
+    'date' => isset($row->field_field_s_mag_article_date_1[0]['rendered']['#markup'])
+      ? $row->field_field_s_mag_article_date_1[0]['rendered']['#markup'] : '',
+    'color' => isset($row->field_field_s_mag_article_accent_color_1[0]['rendered'])
+      ? drupal_render($row->field_field_s_mag_article_accent_color_1[0]['rendered']) : '',
+    'title' => $row->node_field_data_field_s_mag_issue_article_2_title,
+    'topics' => _stanford_mag_issue_get_topics($row->field_field_s_mag_article_topics_1),
+    'edit-link' => _stanford_mag_issue_get_edit_link($row->node_field_data_field_s_mag_issue_article_2_nid),
+    'nid' => $row->node_field_data_field_s_mag_issue_article_2_nid,
+  );
+
+  return $vars;
+}
+
+/**
+ * @param $row
+ * @return array
+ */
+function _stanford_mag_issue_get_art_3($row) {
+  $vars = array(
+    'image' => isset($row->field_field_s_mag_article_image_2[0]['rendered'])
+      ? drupal_render($row->field_field_s_mag_article_image_2[0]['rendered']) : '',
+    'date' => isset($row->field_field_s_mag_article_date_2[0]['rendered']['#markup'])
+      ? $row->field_field_s_mag_article_date_2[0]['rendered']['#markup'] : '',
+    'color' => isset($row->field_field_s_mag_article_accent_color_2[0]['rendered'])
+      ? drupal_render($row->field_field_s_mag_article_accent_color_2[0]['rendered']) : '',
+    'title' => $row->node_field_data_field_s_mag_issue_article_3_title,
+    'topics' => _stanford_mag_issue_get_topics($row->field_field_s_mag_article_topics_2),
+    'edit-link' => _stanford_mag_issue_get_edit_link($row->node_field_data_field_s_mag_issue_article_3_nid),
+    'nid' => $row->node_field_data_field_s_mag_issue_article_3_nid,
+  );
+  return $vars;
+}
+
+/**
+ * @param $row
+ * @return array
+ */
+function _stanford_mag_issue_get_art_4($row) {
+  $vars = array(
+    'image' => isset($row->field_field_s_mag_article_image_3[0]['rendered'])
+      ? drupal_render($row->field_field_s_mag_article_image_3[0]['rendered']) : '',
+    'date' => isset($row->field_field_s_mag_article_date_3[0]['rendered']['#markup'])
+      ? $row->field_field_s_mag_article_date_3[0]['rendered']['#markup'] : '',
+    'color' => isset($row->field_field_s_mag_article_accent_color_3[0]['rendered'])
+      ? drupal_render($row->field_field_s_mag_article_accent_color_3[0]['rendered']) : '',
+    'title' => $row->node_field_data_field_s_mag_issue_article_4_title,
+    'topics' => _stanford_mag_issue_get_topics($row->field_field_s_mag_article_topics_3),
+    'edit-link' => _stanford_mag_issue_get_edit_link($row->node_field_data_field_s_mag_issue_article_4_nid),
+    'nid' => $row->node_field_data_field_s_mag_issue_article_4_nid,
+  );
+  return $vars;
+}
+
+
+/**
+ * @param $row
+ * @return array
+ */
+function _stanford_mag_issue_get_art_5($row) {
+  $vars = array(
+    'image' => isset($row->field_field_s_mag_article_image_4[0]['rendered'])
+      ? drupal_render($row->field_field_s_mag_article_image_4[0]['rendered']) : '',
+    'date' => isset($row->field_field_s_mag_article_date_4[0]['rendered']['#markup'])
+      ? $row->field_field_s_mag_article_date_4[0]['rendered']['#markup'] : '',
+    'color' => isset($row->field_field_s_mag_article_accent_color_4[0]['rendered'])
+      ? drupal_render($row->field_field_s_mag_article_accent_color_4[0]['rendered']) : '',
+    'title' => $row->node_field_data_field_s_mag_issue_article_5_title,
+    'topics' => _stanford_mag_issue_get_topics($row->field_field_s_mag_article_topics_4),
+    'edit-link' => _stanford_mag_issue_get_edit_link($row->node_field_data_field_s_mag_issue_article_4_nid),
+    'nid' => $row->node_field_data_field_s_mag_issue_article_5_nid,
+  );
+  return $vars;
+}
+
+/**
+ * @param $vars
+ * @return string
+ */
+function _stanford_mag_issue_print_feat_art($vars) {
+
+  dsm($vars);
+  $output = '<div class="mag-feat-article-container">';
+  $output .= '  <div class="mag-article-img">' . $vars['image'] . '</div>';
+  $output .= '  <div class ="mag-article-content-container">';
+  $output .= '    <div class="mag-article-date">' . $vars['date'] . '</div>';
+  $output .= '    <div class="mag-article-title mag-article-color-' . $vars['color'] . '">'
+    . l(t($vars['title']), "node/" . $vars['nid'])  . '</div>';
+  $output .= '    <div class="mag-article-dek">' . $vars['dek'] . '</div>';
+  $output .= '    <div class="mag-article-topics">' . $vars['topics'] . '</div>';
+  $output .= '  </div>';
+  $output .= '</div>';
+  $output .= $vars['edit-link'];
+  return $output;
+}
+
+/**
+ * @param $vars
+ * @return string
+ */
+function _stanford_mag_issue_print_art($vars) {
+
+  dsm($vars);
+  $output  = '<div class="mag-article-container">';
+  $output .= '<div class="mag-article-img">' . $vars['image'] . '</div>';
+  $output .= '  <div class ="mag-article-content-container">';
+  $output .= '    <div class="mag-article-date">' . $vars['date'] . '</div>';
+  $output .= '    <div class="mag-article-title mag-article-color-' . $vars['color'] . '">'
+    . l(t($vars['title']), "node/" . $vars['nid']) . '</div>';
+  $output .= '    <div class="mag-article-topics">' . $vars['topics']  . '</div>';
+  $output .= '  </div>';
+  $output .= '</div>';
+  $output .= $vars['edit-link'];
+  return $output;
+}
+
+/**
+ * @param $nid
+ * @return string
+ */
+function _stanford_mag_issue_get_edit_link($nid) {
+  global $have_access, $node_path;
+  if ($have_access) {
+    return '<div class="edit-link">' . l(t("Edit"), "node/" . $nid . '/edit', array("query" => array("destination" => $node_path))) . '</div>';
+  }
+  return '';
+}
+
+/**
+ * @param $topic_list
+ * @return string
+ */
+function _stanford_mag_issue_get_topics($topic_list) {
+  $topics = '';
+  foreach ($topic_list as $t => $topic) {
+    if ($t > 0) {
+      $topics .= ', ';
+    }
+    $topics .= drupal_render($topic['rendered']);
+  }
+  return $topics;
+}
+
