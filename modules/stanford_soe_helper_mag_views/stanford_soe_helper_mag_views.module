@@ -133,7 +133,6 @@ function _stanford_mag_issue_get_art_5($row) {
  */
 function _stanford_mag_issue_print_feat_art($vars) {
 
-  dsm($vars);
   $output = '<div class="mag-feat-article-container">';
   $output .= '  <div class="mag-article-img">' . $vars['image'] . '</div>';
   $output .= '  <div class ="mag-article-content-container">';
@@ -154,7 +153,6 @@ function _stanford_mag_issue_print_feat_art($vars) {
  */
 function _stanford_mag_issue_print_art($vars) {
 
-  dsm($vars);
   $output  = '<div class="mag-article-container">';
   $output .= '<div class="mag-article-img">' . $vars['image'] . '</div>';
   $output .= '  <div class ="mag-article-content-container">';

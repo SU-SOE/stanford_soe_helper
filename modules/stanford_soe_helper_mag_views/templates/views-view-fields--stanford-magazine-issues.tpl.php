@@ -24,7 +24,6 @@
  * @ingroup views_templates
  */
 
-dsm($row);
 
 global $user;
 $node = node_load($row->nid);
@@ -67,24 +66,3 @@ switch ($layout) {
     print _stanford_mag_issue_print_art($vars);
     break;
 }
-
-/*
-$output .= '<div class ="mag-topic-card-container">';
-$output .= '  <div class="mag-article-date">[field_s_mag_article_date]</div>';
-$output .= '  <div class="mag-article-title mag-article-color-[field_s_mag_article_accent_color]">[title]</div>';
-$output .= '  <div class="mag-article-topics">[field_s_mag_article_topics]</div>';
-$output .= '<div class="edit-link">[edit_node]</div>';
-}
-<?php foreach ($fields as $id => $field): ?>
-  <?php if (!empty($field->separator)): ?>
-    <?php print $field->separator; ?>
-  <?php endif; ?>
-
-  <?php print $field->wrapper_prefix; ?>
-  <?php print $field->label_html; ?>
-  <?php print $field->content; ?>
-  <?php print $field->wrapper_suffix; ?>
-<?php endforeach; ?>
-
-*/
-

@@ -81,9 +81,9 @@ function stanford_soe_helper_magazine_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'menu_block-1' => array(
+        'menu_block-stanford_soe_helper_mag-1' => array(
           'module' => 'menu_block',
-          'delta' => '1',
+          'delta' => 'stanford_soe_helper_mag-1',
           'region' => 'fullwidth_top',
           'weight' => '-10',
         ),
