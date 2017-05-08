@@ -7,6 +7,15 @@
 #global-header {
   background-color: $brand-bright;
 
+  .dm-global-header & {
+    position: absolute;
+    clip-path: inset(0 0 55px 0);
+    width: 100%;
+    @include breakpoint(x-small) {
+      clip-path: inset(0 0 60px 0);
+    }
+  }
+
   .container {
     padding: 15px 0;
   }
