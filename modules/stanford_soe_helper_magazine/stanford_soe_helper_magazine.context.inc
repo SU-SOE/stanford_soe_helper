@@ -67,6 +67,46 @@ function stanford_soe_helper_magazine_context_default_contexts() {
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
+  $context->name = 'stanford_magazine_all_engineering';
+  $context->description = 'Context for all pages within the magazine on Engineering';
+  $context->tag = 'Engineering';
+  $context->conditions = array(
+    'path' => array(
+      'values' => array(
+        'magazine' => 'magazine',
+        'magazine/*' => 'magazine/*',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'menu_block-1' => array(
+          'module' => 'menu_block',
+          'delta' => '1',
+          'region' => 'fullwidth_top',
+          'weight' => '-10',
+        ),
+        'views-9015691b85694032e3eae301883c3f68' => array(
+          'module' => 'views',
+          'delta' => '9015691b85694032e3eae301883c3f68',
+          'region' => 'digital_magazine_megamenu',
+          'weight' => '-10',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('Context for all pages within the magazine on Engineering');
+  t('Engineering');
+  $export['stanford_magazine_all_engineering'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
   $context->name = 'stanford_magazine_tax_views';
   $context->description = 'Context for Stanford Magazine Taxonomy View';
   $context->tag = 'Magazine';
@@ -120,45 +160,6 @@ function stanford_soe_helper_magazine_context_default_contexts() {
   t('Context for Stanford Magazine Taxonomy View');
   t('Magazine');
   $export['stanford_magazine_tax_views'] = $context;
-
-  $context = new stdClass();
-  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
-  $context->api_version = 3;
-  $context->name = 'stanford_magazine_all_engineering';
-  $context->description = 'Context for all pages within the magazine on Engineering';
-  $context->tag = 'Engineering';
-  $context->conditions = array(
-    'path' => array(
-      'values' => array(
-        'magazine' => 'magazine',
-        'magazine/*' => 'magazine/*',
-      ),
-    ),
-  );
-  $context->reactions = array(
-    'block' => array(
-      'blocks' => array(
-        'menu_block-1' => array(
-          'module' => 'menu_block',
-          'delta' => '1',
-          'region' => 'fullwidth_top',
-          'weight' => '-10',
-        ),
-        'views-9015691b85694032e3eae301883c3f68' => array(
-          'module' => 'views',
-          'delta' => '9015691b85694032e3eae301883c3f68',
-          'region' => 'digital_magazine_megamenu',
-          'weight' => '-10',
-        ),
-      ),
-    ),
-  );
-  $context->condition_mode = 0;
-
-// Translatables
-// Included for use with string extractors like potx.
-  t('Context for all pages within the magazine on Engineering');
-  t('Engineering');
 
   return $export;
 }
