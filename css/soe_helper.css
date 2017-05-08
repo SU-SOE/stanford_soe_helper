@@ -272,19 +272,12 @@ p.related-link {
     content: "Related:";
     padding-right: 3px; }
 
-/* line 65, ../scss/components/_soe_wysiwyg.scss */
-p.drop-cap {
-  font-family: "Roboto Slab", serif;
-  font-size: 1.45455em;
-  font-weight: 400;
-  line-height: 1.4em;
-  margin-bottom: 30px; }
-  /* line 72, ../scss/components/_soe_wysiwyg.scss */
-  p.drop-cap:first-letter {
-    font-size: 2.65625em;
-    font-weight: 300;
-    float: left;
-    padding: 23px 10px 0 0; }
+/* line 66, ../scss/components/_soe_wysiwyg.scss */
+p.summary.drop-cap:first-letter {
+  font-size: 2.65625em;
+  font-weight: 300;
+  float: left;
+  padding: 23px 10px 0 0; }
 
 /* line 7, ../scss/components/_soe_brand_bar.scss */
 #global-header {
