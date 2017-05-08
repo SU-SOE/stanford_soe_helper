@@ -20,12 +20,5 @@ function stanford_soe_helper_magazine_ctools_plugin_api($module = NULL, $api = N
  * Implements hook_views_api().
  */
 function stanford_soe_helper_magazine_views_api($module = NULL, $api = NULL) {
-  /*
-  return array(
-    'api' => 3,
-    'path' => drupal_get_path('module', 'NAME'),
-    'template path' => drupal_get_path('module', 'stanford_soe_helper_magazine') . '/templates',
-  );
-  */
   return array("api" => "3.0");
 }
