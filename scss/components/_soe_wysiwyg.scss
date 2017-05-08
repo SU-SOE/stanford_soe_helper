@@ -62,7 +62,13 @@ p.related-link {
   }
 }
 
-p.summary.drop-cap {
+p.drop-cap {
+  font-family: $roboto-slab;
+  font-size: em(32px);
+  font-weight: 400;
+  line-height: 1.4em;
+  margin-bottom: 30px;
+
   &:first-letter {
     font-size: em(85px, 32px);
     font-weight: 300;
