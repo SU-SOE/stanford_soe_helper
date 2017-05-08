@@ -49,17 +49,24 @@
 
   .page-feat-scroll-container {
     color: $white;
+    @include gradient-vertical;
     position: absolute;
-    bottom: 20px;
+    bottom: 0;
     text-align: center;
     width: 100%;
+    height: 200px;
 
     p {
-      margin-bottom: 0.2em;
+      position: absolute;
+      bottom: 55px;
+      width: 100%;
+      margin-bottom: 0;
     }
 
     &:after {
       content: url("../img/soe_banner_chevron_down_white.png");
+      position: absolute;
+      bottom: 20px;
     }
   }
 }
