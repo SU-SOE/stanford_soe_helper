@@ -30,7 +30,7 @@ function _stanford_mag_issue_get_feat_art($row) {
     'image' => isset($row->field_field_s_mag_article_image[0]['rendered'])
       ? drupal_render($row->field_field_s_mag_article_image[0]['rendered']) : '',
     'date' => isset($row->field_field_s_mag_article_date[0]['rendered']['#markup'])
-      ? $row->field_field_s_mag_article_date_1[0]['rendered']['#markup'] : '',
+      ? $row->field_field_s_mag_article_date[0]['rendered']['#markup'] : '',
     'color' => isset($row->field_field_s_mag_article_accent_color[0]['rendered'])
       ? drupal_render($row->field_field_s_mag_article_accent_color[0]['rendered']) : '',
     'title' => $row->node_field_data_field_s_mag_issue_featured_title,
