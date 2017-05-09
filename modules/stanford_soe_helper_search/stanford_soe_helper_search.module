@@ -1,0 +1,40 @@
+<?php
+
+/**
+ * @file
+ * Code for the Stanford SOE Helper Search module.
+ */
+
+include_once 'stanford_soe_helper_search.features.inc';
+
+/**
+ * Implements hook_form_alter().
+ */
+function stanford_soe_helper_search_form_alter(&$form, &$form_state, $form_id) {
+   if ($form_id == 'stanford_search_api_search_block_form') {
+     $path_alias = drupal_get_path_alias(current_path());
+     $magazine_parts = explode('/', $path_alias);
+     if (in_array('magazine', $magazine_parts)) {
+       $form['is_magazine'] = array(
+         '#type' => 'hidden',
+         '#value' => 'TRUE',
+       );
+     }
+     if (isset($form_state['input']['is_magazine']) && $form_state['input']['is_magazine'] == 'TRUE') {
+       unset($form['#submit']);
+       $form['#submit'][] = 'stanford_soe_helper_search_magazine';
+     }
+   }
+}
+
+/**
+ * Custom digital magazine search submission callback.
+ */
+function stanford_soe_helper_search_magazine($form, &$form_state) {
+  $form_state['rebuild'] = TRUE;
+  if (!isset($form_state['values']['keywords'])) {
+    drupal_set_message("Missing search value", "error");
+    return;
+  }
+  drupal_goto("magazine/search/content", array('query' => array("search_api_views_fulltext" => check_plain($form_state['values']['keywords']))));
+}
