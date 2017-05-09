@@ -11,6 +11,26 @@
   .mag-article-issue-container {
     position: relative;
 
+    .mag-article-issue-image-container {
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 160px;
+        right: 160px;
+        height: 100%;
+        @include gradient-vertical;
+        @include breakpoint(large) {
+          left: 45px;
+          right: 45px;
+        }
+        @include breakpoint(medium) {
+          left: 0;
+          right: 0;
+        }
+      }
+    }
+
     [class*="mag-issue-color-"] {
       .mag-article-issue-content-container {
         position: absolute;
