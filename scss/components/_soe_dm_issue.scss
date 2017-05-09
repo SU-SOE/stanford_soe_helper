@@ -34,14 +34,6 @@
           right: 0;
         }
       }
-
-      .mag-article-issue-more {
-        &:after {
-          content: url("../img/soe_banner_arrow_right_black.png");
-          vertical-align: -6%;
-          padding-left: 20px;
-        }
-      }
     }
 
     [class*="mag-issue-color-"] {
@@ -63,6 +55,14 @@
           &:after {
             content: "|";
             padding: 0 15px;
+          }
+        }
+
+        .mag-article-issue-more {
+          &:after {
+            content: url("../img/soe_banner_arrow_right_black.png");
+            vertical-align: -6%;
+            padding-left: 20px;
           }
         }
       }
