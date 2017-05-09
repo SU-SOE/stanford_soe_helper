@@ -68,7 +68,7 @@ switch ($layout) {
 
     $vars = _stanford_mag_issue_get_art_5($row);
     print _stanford_mag_issue_print_art($vars);
-    
+
     $vars = _stanford_mag_issue_get_feat_art($row);
     print _stanford_mag_issue_print_feat_art($vars);
 
