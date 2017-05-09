@@ -24,6 +24,13 @@
           font-size: em(32px);
           padding: 10px;
         }
+
+        .mag-article-issue-title {
+          &:after {
+            content: "|";
+            padding: 0 15px;
+          }
+        }
       }
     }
 
