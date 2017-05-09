@@ -167,17 +167,19 @@ function stanford_soe_helper_magazine_views_default_views() {
   $handler->display->display_options['fields']['title_3']['label'] = '';
   $handler->display->display_options['fields']['title_3']['exclude'] = TRUE;
   $handler->display->display_options['fields']['title_3']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['title_3']['alter']['text'] = '  <div class="mag-issue-color-[field_s_mag_issue_accent_color]"> 
-    <a href="[path]">
-      <div class="mag-article-issue-image-container">
-        [field_s_mag_article_image]
-      </div>
-
-      <div class="mag-article-issue-content-container">
-        <div class="mag-article-issue-title">[title_3] | </div>
-        <div class="mag-article-issue-more">Read More</div>
-    </a> 
-  </div>
+  $handler->display->display_options['fields']['title_3']['alter']['text'] = '<div class="mag-issue-color-[field_s_mag_issue_accent_color]">
+  <a href="[path]">
+    <div class="mag-article-issue-image-container">
+      [field_s_mag_article_image]
+    </div>
+    
+    <div class="mag-article-issue-content-container">
+      <span class="mag-article-issue-title">[title_3]</span>
+      <span class="mag-article-issue-separater"> | </span>
+      <span class="mag-article-issue-more">Read More</span> 
+    </div>
+  </a>
+</div>
 ';
   $handler->display->display_options['fields']['title_3']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title_3']['element_default_classes'] = FALSE;
@@ -191,16 +193,19 @@ function stanford_soe_helper_magazine_views_default_views() {
   $handler->display->display_options['fields']['title_1']['label'] = '';
   $handler->display->display_options['fields']['title_1']['exclude'] = TRUE;
   $handler->display->display_options['fields']['title_1']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['title_1']['alter']['text'] = '  
-  <div class="mag-article-issue-2 mag-issue-color-[field_s_mag_issue_accent_color_1]"> 
-    <a href="[path_1]">
-      <div class="mag-article-issue-image-container"> [field_s_mag_article_image] </div>
-      <div class="mag-article-issue-content-container">
-        <div class="mag-article-issue-title">[title_1] | </div>
-        <div class="mag-article-issue-more">Read More</div>
-      </div>
-    </a> 
-  </div>
+  $handler->display->display_options['fields']['title_1']['alter']['text'] = '<div class="mag-issue-color-[field_s_mag_issue_accent_color]">
+  <a href="[path]">
+    <div class="mag-article-issue-image-container">
+      [field_s_mag_article_image]
+    </div>
+    
+    <div class="mag-article-issue-content-container">
+      <span class="mag-article-issue-title">[title_1]</span>
+      <span class="mag-article-issue-separater"> | </span>
+      <span class="mag-article-issue-more">Read More</span> 
+    </div>
+  </a>
+</div>
 ';
   $handler->display->display_options['fields']['title_1']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title_1']['element_default_classes'] = FALSE;
@@ -213,15 +218,20 @@ function stanford_soe_helper_magazine_views_default_views() {
   $handler->display->display_options['fields']['title_2']['label'] = '';
   $handler->display->display_options['fields']['title_2']['exclude'] = TRUE;
   $handler->display->display_options['fields']['title_2']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['title_2']['alter']['text'] = '  <div class="mag-article-issue-3 mag-issue-color-[field_s_mag_issue_accent_color_2]"> 
-    <a href="[path_2]">
-      <div class="mag-article-issue-image-container"> [field_s_mag_article_image] </div>
-      <div class="mag-article-issue-content-container">
-        <div class="mag-article-issue-title">[title_2] | </div>
-        <div class="mag-article-issue-more">Read More</div>
-      </div>
-    </a> 
-  </div>';
+  $handler->display->display_options['fields']['title_2']['alter']['text'] = '<div class="mag-issue-color-[field_s_mag_issue_accent_color]">
+  <a href="[path]">
+    <div class="mag-article-issue-image-container">
+      [field_s_mag_article_image]
+    </div>
+    
+    <div class="mag-article-issue-content-container">
+      <span class="mag-article-issue-title">[title_2]</span>
+      <span class="mag-article-issue-separater"> | </span>
+      <span class="mag-article-issue-more">Read More</span> 
+    </div>
+  </a>
+</div>
+';
   $handler->display->display_options['fields']['title_2']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title_2']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['title_2']['hide_empty'] = TRUE;
@@ -234,16 +244,20 @@ function stanford_soe_helper_magazine_views_default_views() {
   $handler->display->display_options['fields']['title_4']['label'] = '';
   $handler->display->display_options['fields']['title_4']['exclude'] = TRUE;
   $handler->display->display_options['fields']['title_4']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['title_4']['alter']['text'] = '  <div class="mag-article-issue-4 mag-issue-color-[field_s_mag_issue_accent_color_3]"> 
-    <a href="[path_3]">
-      <div class="mag-article-issue-image-container"> [field_s_mag_article_image] </div>
-      <div class="mag-article-issue-content-container">
-        <div class="mag-article-issue-title">[title_4] | </div>
-        <div class="mag-article-issue-more">Read More</div>
-      </div>
-    </a> 
-  </div>
-</div>';
+  $handler->display->display_options['fields']['title_4']['alter']['text'] = '<div class="mag-issue-color-[field_s_mag_issue_accent_color]">
+  <a href="[path]">
+    <div class="mag-article-issue-image-container">
+      [field_s_mag_article_image]
+    </div>
+    
+    <div class="mag-article-issue-content-container">
+      <span class="mag-article-issue-title">[title_4]</span>
+      <span class="mag-article-issue-separater"> | </span>
+      <span class="mag-article-issue-more">Read More</span> 
+    </div>
+  </a>
+</div>
+';
   $handler->display->display_options['fields']['title_4']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title_4']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['title_4']['hide_empty'] = TRUE;
@@ -256,14 +270,18 @@ function stanford_soe_helper_magazine_views_default_views() {
   $handler->display->display_options['fields']['title_5']['label'] = '';
   $handler->display->display_options['fields']['title_5']['exclude'] = TRUE;
   $handler->display->display_options['fields']['title_5']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['title_5']['alter']['text'] = '<div class="mag-article-issue-5 mag-issue-color-[field_s_mag_issue_accent_color_4]"> 
-  <a href="[path_4]">
-    <div class="mag-article-issue-image-container"> [field_s_mag_article_image] </div>
-    <div class="mag-article-issue-content-container">
-      <div class="mag-article-issue-title">[title_5] | </div>
-      <div class="mag-article-issue-more">Read More</div>
+  $handler->display->display_options['fields']['title_5']['alter']['text'] = '<div class="mag-issue-color-[field_s_mag_issue_accent_color]">
+  <a href="[path]">
+    <div class="mag-article-issue-image-container">
+      [field_s_mag_article_image]
     </div>
-  </a> 
+    
+    <div class="mag-article-issue-content-container">
+      <span class="mag-article-issue-title">[title_5]</span>
+      <span class="mag-article-issue-separater"> | </span>
+      <span class="mag-article-issue-more">Read More</span> 
+    </div>
+  </a>
 </div>
 ';
   $handler->display->display_options['fields']['title_5']['element_label_colon'] = FALSE;
