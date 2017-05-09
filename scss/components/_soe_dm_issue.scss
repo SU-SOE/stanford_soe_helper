@@ -44,10 +44,10 @@
 
         > a {
           font-family: $roboto-slab;
-          color: $primary-color;
+          color: $black;
           display: inline-flex;
           font-weight: 800;
-          font-size: em(42px);
+          font-size: em(32px);
           padding: 30px;
         }
 
@@ -61,7 +61,7 @@
         .mag-article-issue-more {
           &:after {
             content: url("../img/soe_banner_arrow_right_black.png");
-            vertical-align: -6%;
+            vertical-align: middle;
             padding-left: 20px;
           }
         }
