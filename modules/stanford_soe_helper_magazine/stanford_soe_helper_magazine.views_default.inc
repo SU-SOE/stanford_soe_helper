@@ -174,7 +174,7 @@ function stanford_soe_helper_magazine_views_default_views() {
       </div>
 
       <div class="mag-article-issue-content-container">
-        <div class="mag-article-issue-title">[title_3]</div>
+        <div class="mag-article-issue-title">[title_3] | </div>
         <div class="mag-article-issue-more">Read More</div>
     </a> 
   </div>
@@ -196,7 +196,7 @@ function stanford_soe_helper_magazine_views_default_views() {
     <a href="[path_1]">
       <div class="mag-article-issue-image-container"> [field_s_mag_article_image] </div>
       <div class="mag-article-issue-content-container">
-        <div class="mag-article-issue-title">[title_1]</div>
+        <div class="mag-article-issue-title">[title_1] | </div>
         <div class="mag-article-issue-more">Read More</div>
       </div>
     </a> 
@@ -217,7 +217,7 @@ function stanford_soe_helper_magazine_views_default_views() {
     <a href="[path_2]">
       <div class="mag-article-issue-image-container"> [field_s_mag_article_image] </div>
       <div class="mag-article-issue-content-container">
-        <div class="mag-article-issue-title">[title_2]</div>
+        <div class="mag-article-issue-title">[title_2] | </div>
         <div class="mag-article-issue-more">Read More</div>
       </div>
     </a> 
@@ -238,7 +238,7 @@ function stanford_soe_helper_magazine_views_default_views() {
     <a href="[path_3]">
       <div class="mag-article-issue-image-container"> [field_s_mag_article_image] </div>
       <div class="mag-article-issue-content-container">
-        <div class="mag-article-issue-title">[title_4]</div>
+        <div class="mag-article-issue-title">[title_4] | </div>
         <div class="mag-article-issue-more">Read More</div>
       </div>
     </a> 
@@ -260,7 +260,7 @@ function stanford_soe_helper_magazine_views_default_views() {
   <a href="[path_4]">
     <div class="mag-article-issue-image-container"> [field_s_mag_article_image] </div>
     <div class="mag-article-issue-content-container">
-      <div class="mag-article-issue-title">[title_5]</div>
+      <div class="mag-article-issue-title">[title_5] | </div>
       <div class="mag-article-issue-more">Read More</div>
     </div>
   </a> 
