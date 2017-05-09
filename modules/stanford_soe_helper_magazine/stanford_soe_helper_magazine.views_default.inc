@@ -71,7 +71,7 @@ function stanford_soe_helper_magazine_views_default_views() {
   $handler->display->display_options['fields']['field_s_mag_article_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_s_mag_article_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_s_mag_article_image']['settings'] = array(
-    'image_style' => '6-col-banner-short',
+    'image_style' => 'banner-850x400',
     'image_link' => '',
   );
   /* Field: Content: Accent color */
@@ -176,7 +176,6 @@ function stanford_soe_helper_magazine_views_default_views() {
       <div class="mag-article-issue-content-container">
         <div class="mag-article-issue-title">[title_3]</div>
         <div class="mag-article-issue-more">Read More</div>
-        <div class="mag-article-issue-text">  This article is a part of our Digital Magazine</div>
     </a> 
   </div>
 ';
@@ -199,7 +198,6 @@ function stanford_soe_helper_magazine_views_default_views() {
       <div class="mag-article-issue-content-container">
         <div class="mag-article-issue-title">[title_1]</div>
         <div class="mag-article-issue-more">Read More</div>
-        <div class="mag-article-issue-text">  This article is a part of our Digital Magazine</div>
       </div>
     </a> 
   </div>
@@ -221,7 +219,6 @@ function stanford_soe_helper_magazine_views_default_views() {
       <div class="mag-article-issue-content-container">
         <div class="mag-article-issue-title">[title_2]</div>
         <div class="mag-article-issue-more">Read More</div>
-        <div class="mag-article-issue-text">  This article is a part of our Digital Magazine</div>
       </div>
     </a> 
   </div>';
@@ -243,7 +240,6 @@ function stanford_soe_helper_magazine_views_default_views() {
       <div class="mag-article-issue-content-container">
         <div class="mag-article-issue-title">[title_4]</div>
         <div class="mag-article-issue-more">Read More</div>
-        <div class="mag-article-issue-text">  This article is a part of our Digital Magazine</div>
       </div>
     </a> 
   </div>
@@ -260,14 +256,12 @@ function stanford_soe_helper_magazine_views_default_views() {
   $handler->display->display_options['fields']['title_5']['label'] = '';
   $handler->display->display_options['fields']['title_5']['exclude'] = TRUE;
   $handler->display->display_options['fields']['title_5']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['title_5']['alter']['text'] = '
-<div class="mag-article-issue-5 mag-issue-color-[field_s_mag_issue_accent_color_4]"> 
+  $handler->display->display_options['fields']['title_5']['alter']['text'] = '<div class="mag-article-issue-5 mag-issue-color-[field_s_mag_issue_accent_color_4]"> 
   <a href="[path_4]">
     <div class="mag-article-issue-image-container"> [field_s_mag_article_image] </div>
     <div class="mag-article-issue-content-container">
       <div class="mag-article-issue-title">[title_5]</div>
       <div class="mag-article-issue-more">Read More</div>
-      <div class="mag-article-issue-text">  This article is a part of our Digital Magazine</div>
     </div>
   </a> 
 </div>
@@ -289,7 +283,8 @@ function stanford_soe_helper_magazine_views_default_views() {
   $handler->display->display_options['fields']['nothing']['table'] = 'views';
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['label'] = '';
-  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="mag-article-issue-container">
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = ' <div class="mag-article-issue-text">  This article is part of a newsletter</div>
+<div class="mag-article-issue-container">
   [title_3]
   [title_1]
   [title_2]
