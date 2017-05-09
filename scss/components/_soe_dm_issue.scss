@@ -11,33 +11,32 @@
   .mag-article-issue-container {
     position: relative;
 
-    [class*="mag-issue-color-"] a {
-      color: $primary-color;
-      font-weight: 800;
-      font-size: em(32px);
-      padding: 10px;
-    }
+    [class*="mag-issue-color-"] {
+      .mag-article-issue-content-container {
+        position: absolute;
+        bottom: 50%;
+        width: 100%;
 
-    .mag-issue-color-orange a {
-      background: $orange;
-    }
+        > a {
+          display: inline-flex;
+          color: $primary-color;
+          font-weight: 800;
+          font-size: em(32px);
+          padding: 10px;
+        }
 
-    .mag-issue-color-turquoise a {
-      background: $turquoise;
-    }
+        .mag-issue-color-orange a {
+          background: $orange;
+        }
 
-    .mag-issue-color-pink a {
-      background: $pink;
-    }
-  }
+        .mag-issue-color-turquoise a {
+          background: $turquoise;
+        }
 
-  .mag-article-issue-content-container {
-    position: absolute;
-    bottom: 50%;
-    width: 100%;
-
-    > a {
-      display: inline-flex;
+        .mag-issue-color-pink a {
+          background: $pink;
+        }
+      }
     }
   }
 }
