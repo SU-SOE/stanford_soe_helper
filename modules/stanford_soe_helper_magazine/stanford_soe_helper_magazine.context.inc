@@ -87,6 +87,12 @@ function stanford_soe_helper_magazine_context_default_contexts() {
           'region' => 'fullwidth_top',
           'weight' => '-10',
         ),
+        'stanford_search_api-search_api_search_block' => array(
+          'module' => 'stanford_search_api',
+          'delta' => 'search_api_search_block',
+          'region' => 'fullwidth_top',
+          'weight' => '-9',
+        ),
         'views-9015691b85694032e3eae301883c3f68' => array(
           'module' => 'views',
           'delta' => '9015691b85694032e3eae301883c3f68',
