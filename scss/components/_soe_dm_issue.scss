@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+//
+// DIGITAL MAGAZINE ISSUE
+// FOR VIEWS AND NODE DISPLAY
+//
+
+.view-stanford-magazine-article-issue- {
+  text-align: center;
+
+  .mag-article-issue-container {
+    position: relative;
+
+    [class*="mag-issue-color-"] {
+      .mag-article-issue-content-container {
+        position: absolute;
+        bottom: 50%;
+        width: 100%;
+
+        > a {
+          display: inline-flex;
+          color: $primary-color;
+          font-weight: 800;
+          font-size: em(32px);
+          padding: 10px;
+        }
+
+        .mag-article-issue-title {
+          &:after {
+            content: "|";
+            padding: 0 15px;
+          }
+        }
+      }
+    }
+
+    .mag-issue-color-orange a {
+      background: $orange;
+    }
+
+    .mag-issue-color-turquoise a {
+      background: $turquoise;
+    }
+
+    .mag-issue-color-pink a {
+      background: $pink;
+    }
+  }
+}

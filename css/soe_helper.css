@@ -1170,6 +1170,38 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
           text-decoration: underline;
           background-color: transparent; }
 
+/* line 8, ../scss/components/_soe_dm_issue.scss */
+.view-stanford-magazine-article-issue- {
+  text-align: center; }
+  /* line 11, ../scss/components/_soe_dm_issue.scss */
+  .view-stanford-magazine-article-issue- .mag-article-issue-container {
+    position: relative; }
+    /* line 15, ../scss/components/_soe_dm_issue.scss */
+    .view-stanford-magazine-article-issue- .mag-article-issue-container [class*="mag-issue-color-"] .mag-article-issue-content-container {
+      position: absolute;
+      bottom: 50%;
+      width: 100%; }
+      /* line 20, ../scss/components/_soe_dm_issue.scss */
+      .view-stanford-magazine-article-issue- .mag-article-issue-container [class*="mag-issue-color-"] .mag-article-issue-content-container > a {
+        display: inline-flex;
+        color: #333333;
+        font-weight: 800;
+        font-size: 1.45455em;
+        padding: 10px; }
+      /* line 29, ../scss/components/_soe_dm_issue.scss */
+      .view-stanford-magazine-article-issue- .mag-article-issue-container [class*="mag-issue-color-"] .mag-article-issue-content-container .mag-article-issue-title:after {
+        content: "|";
+        padding: 0 15px; }
+    /* line 37, ../scss/components/_soe_dm_issue.scss */
+    .view-stanford-magazine-article-issue- .mag-article-issue-container .mag-issue-color-orange a {
+      background: #FFBD54; }
+    /* line 41, ../scss/components/_soe_dm_issue.scss */
+    .view-stanford-magazine-article-issue- .mag-article-issue-container .mag-issue-color-turquoise a {
+      background: #00ECE9; }
+    /* line 45, ../scss/components/_soe_dm_issue.scss */
+    .view-stanford-magazine-article-issue- .mag-article-issue-container .mag-issue-color-pink a {
+      background: #FF525C; }
+
 /* line 8, ../scss/components/_soe_dm_taxonomy_views.scss */
 .page-taxonomy-term #page-title {
   text-align: center; }
