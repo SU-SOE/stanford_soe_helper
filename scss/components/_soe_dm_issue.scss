@@ -43,6 +43,9 @@
         position: absolute;
         bottom: 40%;
         width: 100%;
+        @include breakpoint(x-small) {
+          bottom: auto;
+        }
 
         > a {
           font-family: $roboto-slab;
@@ -51,11 +54,17 @@
           font-weight: 800;
           font-size: em(32px);
           padding: 30px;
+          @include breakpoint(x-small) {
+            display: block;
+          }
         }
 
         .mag-article-issue-title {
           &:after {
             content: "\00a0 \00a0 |\00a0 \00a0 ";
+            @include breakpoint(x-small) {
+              content: normal;
+            }
           }
         }
 
