@@ -5,6 +5,8 @@
 // FOR VIEWS AND NODE DISPLAY
 //
 
+// RELATED ISSUE VIEW
+
 .view-stanford-magazine-article-issue- {
   text-align: center;
 
@@ -53,7 +55,7 @@
 
         .mag-article-issue-title {
           &:after {
-            content: "|";
+            content: "\00a0 \00a0 |\00a0 \00a0 ";
             padding: 0 15px;
           }
         }
