@@ -34,8 +34,10 @@ if (node_access("update", $node, $user) === TRUE) {
 
 $node_path = drupal_lookup_path('alias','node/'.$row->nid);
 
-$layout = $row->field_field_s_mag_issue_layout[0]['rendered']['#markup'];
-
+$layout = '';
+if (isset ($row->field_field_s_mag_issue_layout[0]['rendered']['#markup'])) {
+  $layout = $row->field_field_s_mag_issue_layout[0]['rendered']['#markup'];
+}
 
 print '<h2>' . $row->node_title . '</h2>';
 switch ($layout) {
