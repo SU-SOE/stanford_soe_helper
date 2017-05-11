@@ -36,9 +36,15 @@
           margin-left: 0;
         }
 
-        &.first.leaf a:after {
-          content: url("../img/soe_dm_menu_down_black.png");
-          padding-left: 10px;
+        &.first.leaf a {
+          &:after {
+            content: url("../img/soe_dm_menu_down_black.png");
+            padding-left: 10px;
+          }
+
+          &:focus:after {
+            content: url("../img/soe_dm_menu_up_black.png");
+          }
         }
 
         a {

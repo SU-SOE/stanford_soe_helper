@@ -1162,14 +1162,17 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
       /* line 35, ../scss/components/_soe_dm_navigation.scss */
       #fullwidth-top .block-menu-block ul li:first-child {
         margin-left: 0; }
-      /* line 39, ../scss/components/_soe_dm_navigation.scss */
+      /* line 40, ../scss/components/_soe_dm_navigation.scss */
       #fullwidth-top .block-menu-block ul li.first.leaf a:after {
         content: url("../img/soe_dm_menu_down_black.png");
         padding-left: 10px; }
-      /* line 44, ../scss/components/_soe_dm_navigation.scss */
+      /* line 45, ../scss/components/_soe_dm_navigation.scss */
+      #fullwidth-top .block-menu-block ul li.first.leaf a:focus:after {
+        content: url("../img/soe_dm_menu_up_black.png"); }
+      /* line 50, ../scss/components/_soe_dm_navigation.scss */
       #fullwidth-top .block-menu-block ul li a {
         color: #333333; }
-        /* line 47, ../scss/components/_soe_dm_navigation.scss */
+        /* line 53, ../scss/components/_soe_dm_navigation.scss */
         #fullwidth-top .block-menu-block ul li a:focus, #fullwidth-top .block-menu-block ul li a:hover {
           text-decoration: underline;
           background-color: transparent; }
