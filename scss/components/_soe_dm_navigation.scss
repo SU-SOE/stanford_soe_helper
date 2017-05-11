@@ -36,6 +36,11 @@
           margin-left: 0;
         }
 
+        &.first.leaf a:after {
+          content: url("../img/soe_dm_menu_down_black.png");
+          padding-left: 10px;
+        }
+
         a {
           color: $primary-color;
 
@@ -43,10 +48,6 @@
           &:hover {
             text-decoration: underline;
             background-color: transparent;
-          }
-
-          &:after {
-            content: url("../img/soe_dm_menu_down_black.png");
           }
         }
       }
