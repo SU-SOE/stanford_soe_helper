@@ -39,10 +39,14 @@
         a {
           color: $primary-color;
 
-          &:hover,
-          &focus {
+          &:focus,
+          &:hover {
             text-decoration: underline;
             background-color: transparent;
+          }
+
+          &:after {
+            content: url("../img/soe_dm_menu_down_black.png");
           }
         }
       }

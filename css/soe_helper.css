@@ -1166,9 +1166,12 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
       #fullwidth-top .block-menu-block ul li a {
         color: #333333; }
         /* line 42, ../scss/components/_soe_dm_navigation.scss */
-        #fullwidth-top .block-menu-block ul li a:hover, #fullwidth-top .block-menu-block ul li afocus {
+        #fullwidth-top .block-menu-block ul li a:focus, #fullwidth-top .block-menu-block ul li a:hover {
           text-decoration: underline;
           background-color: transparent; }
+        /* line 48, ../scss/components/_soe_dm_navigation.scss */
+        #fullwidth-top .block-menu-block ul li a:after {
+          content: url("../img/soe_dm_menu_down_black.png"); }
 
 /* line 10, ../scss/components/_soe_dm_issue.scss */
 .view-stanford-magazine-article-issue- {
