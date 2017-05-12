@@ -34,14 +34,7 @@
     }
 
     .input-medium {
-      width: 60px;
-
-      &:focus {
-        width: 175px;
-        @include breakpoint(x-small) {
-          width: 170px;
-        }
-      }
+      width: 175px;
     }
 
     input:-ms-input-placeholder {
