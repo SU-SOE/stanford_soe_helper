@@ -4,6 +4,8 @@
 // DIGITAL MAGAZINE NAVIGATION
 //
 
+// PRIMARY NAVIGATION
+
 #fullwidth-top {
   .block-menu-block {
     background: $turquoise;
@@ -58,6 +60,25 @@
             background-color: transparent;
             border-bottom-color: $primary-color;
           }
+        }
+      }
+    }
+  }
+}
+
+// MEGA MENU NAVIGATION
+
+#digital-magazine-megamenu {
+  .container {
+    background-color: $dm-megamenu-bkgd;
+
+    .region-digital-magazine-megamenu {
+      .view-content {
+        display: flex;
+        flex-wrap: wrap;
+
+        .views-row {
+          width: calc(100% * (1/4) - 10px - 1px);
         }
       }
     }
