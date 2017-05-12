@@ -1189,7 +1189,12 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
     flex-wrap: wrap; }
     /* line 80, ../scss/components/_soe_dm_navigation.scss */
     #digital-magazine-megamenu .container .region-digital-magazine-megamenu .view-content .views-row {
-      width: calc(100% * (1/4) - 10px - 1px); }
+      text-align: center;
+      width: calc(100% * (1/4)); }
+      /* line 84, ../scss/components/_soe_dm_navigation.scss */
+      #digital-magazine-megamenu .container .region-digital-magazine-megamenu .view-content .views-row a {
+        color: #FFFFFF;
+        font-size: 0.90909em; }
 
 /* line 8, ../scss/components/_soe_dm_search.scss */
 #fullwidth-top .block-stanford-search-api {

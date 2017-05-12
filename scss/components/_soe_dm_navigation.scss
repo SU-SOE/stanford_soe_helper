@@ -78,7 +78,13 @@
         flex-wrap: wrap;
 
         .views-row {
-          width: calc(100% * (1/4) - 10px - 1px);
+          text-align: center;
+          width: calc(100% * (1/4));
+
+          a {
+            color: $white;
+            font-size: em(20px);
+          }
         }
       }
     }
