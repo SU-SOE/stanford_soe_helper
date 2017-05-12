@@ -10,10 +10,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px 0;
+    padding-top: 20px;
 
     h2 {
       margin-bottom: 0;
+      padding-bottom: 20px;
 
       &:after {
         content: "|";
@@ -49,11 +50,13 @@
 
         a {
           color: $primary-color;
+          padding-bottom: 20px;
+          border-bottom: 2px solid transparent;
 
           &:focus,
           &:hover {
-            text-decoration: underline;
             background-color: transparent;
+            border-bottom-color: $primary-color;
           }
         }
       }
