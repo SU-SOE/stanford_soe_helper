@@ -42,17 +42,17 @@ function _stanford_mag_issue_get_feat_art($row) {
     if (isset($row->field_field_s_mag_article_image[0]['rendered'])) {
       $vars['image'] = drupal_render($row->field_field_s_mag_article_image[0]['rendered']);
     }
-    if (isset($row->field_field_s_mag_article_date[0]['rendered']['#markup'])){
-      $vars['date'] = $row->field_field_s_mag_article_date[0]['rendered']['#markup'];
+    if (isset($row->field_field_s_mag_article_date[0]['rendered'])){
+      $vars['date'] = drupal_render($row->field_field_s_mag_article_date[0]['rendered']);
     }
     if (isset($row->field_field_s_mag_article_accent_color[0]['rendered'])) {
-      $vars['color'] =  drupal_render($row->field_field_s_mag_article_accent_color[0]['rendered']);
+      $vars['color'] = drupal_render($row->field_field_s_mag_article_accent_color[0]['rendered']);
     }
     if (isset($row->node_field_data_field_s_mag_issue_featured_title)) {
       $vars['title'] = $row->node_field_data_field_s_mag_issue_featured_title;
     }
-    if (isset($row->field_field_s_mag_article_dek[0]['rendered']['#markup'])) {
-      $vars['dek'] = drupal_render($row->field_field_s_mag_article_dek[0]['rendered']['#markup']);
+    if (isset($row->field_field_s_mag_article_dek[0]['rendered'])) {
+      $vars['dek'] = drupal_render($row->field_field_s_mag_article_dek[0]['rendered']);
     }
     $vars['topics'] = _stanford_mag_issue_get_topics($row->field_field_s_mag_article_topics);
     $vars['edit-link'] = _stanford_mag_issue_get_edit_link($row->node_field_data_field_s_mag_issue_featured_nid);
@@ -85,8 +85,8 @@ function _stanford_mag_issue_get_art_2($row) {
     if (isset($row->field_field_s_mag_article_image_1[0]['rendered'])) {
       $vars['image'] = drupal_render($row->field_field_s_mag_article_image_1[0]['rendered']);
     }
-    if (isset($row->field_field_s_mag_article_date_1[0]['rendered']['#markup'])){
-      $vars['date'] = $row->field_field_s_mag_article_date_1[0]['rendered']['#markup'];
+    if (isset($row->field_field_s_mag_article_date_1[0]['rendered'])) {
+      $vars['date'] = drupal_render($row->field_field_s_mag_article_date_1[0]['rendered']);
     }
     if (isset($row->field_field_s_mag_article_accent_color_1[0]['rendered'])) {
       $vars['color'] = drupal_render($row->field_field_s_mag_article_accent_color_1[0]['rendered']);
@@ -123,8 +123,8 @@ function _stanford_mag_issue_get_art_3($row) {
     if (isset($row->field_field_s_mag_article_image_2[0]['rendered'])) {
       $vars['image'] = drupal_render($row->field_field_s_mag_article_image_2[0]['rendered']);
     }
-    if (isset($row->field_field_s_mag_article_date_2[0]['rendered']['#markup'])) {
-      $vars['date'] = $row->field_field_s_mag_article_date_2[0]['rendered']['#markup'];
+    if (isset($row->field_field_s_mag_article_date_2[0]['rendered'])) {
+      $vars['date'] = drupal_render($row->field_field_s_mag_article_date_2[0]['rendered']);
     }
     if (isset($row->field_field_s_mag_article_accent_color_2[0]['rendered'])) {
       $vars['color'] = drupal_render($row->field_field_s_mag_article_accent_color_2[0]['rendered']);
@@ -157,8 +157,8 @@ function _stanford_mag_issue_get_art_4($row) {
     if (isset($row->field_field_s_mag_article_image_3[0]['rendered'])) {
       $vars['image'] = drupal_render($row->field_field_s_mag_article_image_3[0]['rendered']);
     }
-    if (isset($row->field_field_s_mag_article_date_3[0]['rendered']['#markup'])) {
-      $vars['date'] = $row->field_field_s_mag_article_date_3[0]['rendered']['#markup'];
+    if (isset($row->field_field_s_mag_article_date_3[0]['rendered'])) {
+      $vars['date'] = drupal_render($row->field_field_s_mag_article_date_3[0]['rendered']);
     }
     if (isset($row->field_field_s_mag_article_accent_color_3[0]['rendered'])) {
       $vars['color'] = drupal_render($row->field_field_s_mag_article_accent_color_3[0]['rendered']);
@@ -192,8 +192,8 @@ function _stanford_mag_issue_get_art_5($row) {
     if (isset($row->field_field_s_mag_article_image_4[0]['rendered'])) {
       $vars['image'] = drupal_render($row->field_field_s_mag_article_image_4[0]['rendered']);
     }
-    if (isset($row->field_field_s_mag_article_date_4[0]['rendered']['#markup'])) {
-      $vars['date'] = $row->field_field_s_mag_article_date_4[0]['rendered']['#markup'];
+    if (isset($row->field_field_s_mag_article_date_4[0]['rendered'])) {
+      $vars['date'] = drupal_render($row->field_field_s_mag_article_date_4[0]['rendered']);
     }
     if (isset($row->field_field_s_mag_article_accent_color_4[0]['rendered'])) {
       $vars['color'] = drupal_render($row->field_field_s_mag_article_accent_color_4[0]['rendered']);
@@ -253,6 +253,7 @@ function _stanford_mag_issue_get_edit_link($nid) {
   return '';
 }
 
+
 /**
  * @param $topic_list
  * @return string
@@ -267,4 +268,3 @@ function _stanford_mag_issue_get_topics($topic_list) {
   }
   return $topics;
 }
-
