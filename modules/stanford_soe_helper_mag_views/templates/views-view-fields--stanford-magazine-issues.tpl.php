@@ -25,14 +25,7 @@
  */
 
 
-global $user;
-$node = node_load($row->nid);
-$have_access = FALSE;
-if (node_access("update", $node, $user) === TRUE) {
-  $have_access = TRUE;
-}
 
-$node_path = drupal_lookup_path('alias','node/'.$row->nid);
 
 $layout = '';
 if (isset ($row->field_field_s_mag_issue_layout[0]['rendered']['#markup'])) {

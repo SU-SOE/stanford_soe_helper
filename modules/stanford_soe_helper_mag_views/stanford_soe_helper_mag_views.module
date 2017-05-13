@@ -19,8 +19,9 @@ function stanford_soe_helper_mag_views_views_api() {
   );
 }
 
-
 /**
+ * Get the featured article ready to print
+ *
  * @param $row
  * @return array
  */
@@ -62,6 +63,8 @@ function _stanford_mag_issue_get_feat_art($row) {
 }
 
 /**
+ * Get the second article ready to print
+ *
  * @param $row
  * @return array
  */
@@ -100,6 +103,8 @@ function _stanford_mag_issue_get_art_2($row) {
 }
 
 /**
+ * Get the third article ready to print
+ *
  * @param $row
  * @return array
  */
@@ -134,6 +139,8 @@ function _stanford_mag_issue_get_art_3($row) {
 }
 
 /**
+ * Get the fourth article ready to print
+ *
  * @param $row
  * @return array
  */
@@ -170,6 +177,8 @@ function _stanford_mag_issue_get_art_4($row) {
 
 
 /**
+ * Get the fifth article ready to print
+ *
  * @param $row
  * @return array
  */
@@ -203,6 +212,8 @@ function _stanford_mag_issue_get_art_5($row) {
 }
 
 /**
+ * Print the featured article
+ *
  * @param $vars
  * @return string
  */
@@ -223,6 +234,8 @@ function _stanford_mag_issue_print_feat_art($vars) {
 }
 
 /**
+ * Print an article
+ *
  * @param $vars
  * @return string
  */
@@ -242,29 +255,53 @@ function _stanford_mag_issue_print_art($vars) {
 }
 
 /**
- * @param $nid
- * @return string
- */
-function _stanford_mag_issue_get_edit_link($nid) {
-  global $have_access, $node_path;
-  if ($have_access) {
-    return '<div class="edit-link">' . l(t("Edit"), "node/" . $nid . '/edit', array("query" => array("destination" => $node_path))) . '</div>';
-  }
-  return '';
-}
-
-
-/**
+ * Get the topics ready to print
+ *
  * @param $topic_list
  * @return string
  */
 function _stanford_mag_issue_get_topics($topic_list) {
   $topics = '';
-  foreach ($topic_list as $t => $topic) {
-    if ($t > 0) {
-      $topics .= ', ';
+  if (is_array($topic_list)) {
+    foreach ($topic_list as $t => $topic) {
+      if ($t > 0) {
+        $topics .= ', ';
+      }
+      $topics .= drupal_render($topic['rendered']);
     }
-    $topics .= drupal_render($topic['rendered']);
   }
   return $topics;
+}
+
+/**
+ * Return the access privileges for the current user and this node
+ *
+ * @param $nid
+ * @return bool
+ */
+function _stanford_mag_issue_have_access($nid) {
+  global $user;
+  $have_access = &drupal_static(__FUNCTION__);
+  if (!isset($have_access)) {
+    $have_access = FALSE;
+    $node = node_load($nid);
+    if (node_access("update", $node, $user) === TRUE) {
+      $have_access = TRUE;
+    }
+  }
+  return $have_access;
+}
+
+/**
+ * Return an edit link for this node
+ *
+ * @param $nid
+ * @return string
+ */
+function _stanford_mag_issue_get_edit_link($nid) {
+  $node_path = drupal_lookup_path('alias','node/'.$nid);
+  if (_stanford_mag_issue_have_access($nid)) {
+    return '<div class="edit-link">' . l(t("Edit"), "node/" . $nid . '/edit', array("query" => array("destination" => $node_path))) . '</div>';
+  }
+  return '';
 }
