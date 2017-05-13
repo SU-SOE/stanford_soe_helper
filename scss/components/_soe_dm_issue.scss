@@ -5,30 +5,74 @@
 // FOR VIEWS AND NODE DISPLAY
 //
 
+// RELATED ISSUE VIEW
+
 .view-stanford-magazine-article-issue- {
   text-align: center;
+
+  .mag-article-issue-text {
+    font-size: em(28px);
+    margin-bottom: 30px;
+  }
 
   .mag-article-issue-container {
     position: relative;
 
+    .mag-article-issue-image-container {
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 160px;
+        right: 160px;
+        height: 100%;
+        @include gradient-vertical;
+        @include breakpoint(large) {
+          left: 45px;
+          right: 45px;
+        }
+        @include breakpoint(medium) {
+          left: 0;
+          right: 0;
+        }
+      }
+    }
+
     [class*="mag-issue-color-"] {
       .mag-article-issue-content-container {
         position: absolute;
-        bottom: 50%;
+        bottom: 40%;
         width: 100%;
+        @include breakpoint(x-small) {
+          bottom: auto;
+        }
 
         > a {
+          font-family: $roboto-slab;
+          color: $black;
           display: inline-flex;
-          color: $primary-color;
           font-weight: 800;
           font-size: em(32px);
-          padding: 10px;
+          padding: 30px;
+          @include breakpoint(x-small) {
+            display: block;
+          }
         }
 
         .mag-article-issue-title {
           &:after {
-            content: "|";
-            padding: 0 15px;
+            content: "\00a0 \00a0 |\00a0 \00a0 ";
+            @include breakpoint(x-small) {
+              content: normal;
+            }
+          }
+        }
+
+        .mag-article-issue-more {
+          &:after {
+            content: url("../img/soe_lg_arrow_right_black.png");
+            vertical-align: middle;
+            padding-left: 20px;
           }
         }
       }

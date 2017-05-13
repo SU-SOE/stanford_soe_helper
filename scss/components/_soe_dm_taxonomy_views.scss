@@ -36,6 +36,9 @@
         @include breakpoint(medium) {
           width: auto;
         }
+        @include breakpoint(x-small) {
+          padding-top: 15px;
+        }
 
         .mag-topic-card-content-container {
           position: absolute;
