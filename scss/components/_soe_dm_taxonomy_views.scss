@@ -216,9 +216,9 @@
   .pager-load-more {
     a {
       color: $white;
-      font-weight: 100;
       background-color: $brand-bright;
       border-radius: 0;
+      @include box-shadow;
       padding: 1em 4em;
 
       &:focus,
