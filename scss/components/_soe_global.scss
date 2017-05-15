@@ -81,6 +81,11 @@ a.btn {
   line-height: 1.4em;
   letter-spacing: 0.03em;
   background: $brand-bright;
+
+  &:hover,
+  &:focus {
+    color: $white;
+  }
 }
 
 .normal-link a,
