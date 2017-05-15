@@ -43,7 +43,10 @@
     position: relative;
 
     img {
+      object-fit: cover;
+      object-position: top center;
       width: 100%;
+      height: calc(100vh - 200px);
     }
   }
 
