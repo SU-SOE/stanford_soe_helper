@@ -62,6 +62,30 @@ function stanford_soe_helper_magazine_views_default_views() {
   $handler->display->display_options['relationships']['reverse_field_s_mag_issue_article_5_node']['table'] = 'node';
   $handler->display->display_options['relationships']['reverse_field_s_mag_issue_article_5_node']['field'] = 'reverse_field_s_mag_issue_article_5_node';
   $handler->display->display_options['relationships']['reverse_field_s_mag_issue_article_5_node']['label'] = 'Article 5';
+  /* Relationship: Entity Reference: Referenced Entity */
+  $handler->display->display_options['relationships']['field_s_mag_issue_featured_target_id']['id'] = 'field_s_mag_issue_featured_target_id';
+  $handler->display->display_options['relationships']['field_s_mag_issue_featured_target_id']['table'] = 'field_data_field_s_mag_issue_featured';
+  $handler->display->display_options['relationships']['field_s_mag_issue_featured_target_id']['field'] = 'field_s_mag_issue_featured_target_id';
+  $handler->display->display_options['relationships']['field_s_mag_issue_featured_target_id']['relationship'] = 'reverse_field_s_mag_issue_article_2_node';
+  $handler->display->display_options['relationships']['field_s_mag_issue_featured_target_id']['label'] = 'Article 2 Featured';
+  /* Relationship: Entity Reference: Referenced Entity */
+  $handler->display->display_options['relationships']['field_s_mag_issue_featured_target_id_1']['id'] = 'field_s_mag_issue_featured_target_id_1';
+  $handler->display->display_options['relationships']['field_s_mag_issue_featured_target_id_1']['table'] = 'field_data_field_s_mag_issue_featured';
+  $handler->display->display_options['relationships']['field_s_mag_issue_featured_target_id_1']['field'] = 'field_s_mag_issue_featured_target_id';
+  $handler->display->display_options['relationships']['field_s_mag_issue_featured_target_id_1']['relationship'] = 'reverse_field_s_mag_issue_article_3_node';
+  $handler->display->display_options['relationships']['field_s_mag_issue_featured_target_id_1']['label'] = 'Article 3 Featured';
+  /* Relationship: Entity Reference: Referenced Entity */
+  $handler->display->display_options['relationships']['field_s_mag_issue_featured_target_id_2']['id'] = 'field_s_mag_issue_featured_target_id_2';
+  $handler->display->display_options['relationships']['field_s_mag_issue_featured_target_id_2']['table'] = 'field_data_field_s_mag_issue_featured';
+  $handler->display->display_options['relationships']['field_s_mag_issue_featured_target_id_2']['field'] = 'field_s_mag_issue_featured_target_id';
+  $handler->display->display_options['relationships']['field_s_mag_issue_featured_target_id_2']['relationship'] = 'reverse_field_s_mag_issue_article_4_node';
+  $handler->display->display_options['relationships']['field_s_mag_issue_featured_target_id_2']['label'] = 'Article 4 Featured';
+  /* Relationship: Entity Reference: Referenced Entity */
+  $handler->display->display_options['relationships']['field_s_mag_issue_featured_target_id_3']['id'] = 'field_s_mag_issue_featured_target_id_3';
+  $handler->display->display_options['relationships']['field_s_mag_issue_featured_target_id_3']['table'] = 'field_data_field_s_mag_issue_featured';
+  $handler->display->display_options['relationships']['field_s_mag_issue_featured_target_id_3']['field'] = 'field_s_mag_issue_featured_target_id';
+  $handler->display->display_options['relationships']['field_s_mag_issue_featured_target_id_3']['relationship'] = 'reverse_field_s_mag_issue_article_5_node';
+  $handler->display->display_options['relationships']['field_s_mag_issue_featured_target_id_3']['label'] = 'Article 5 Featured';
   /* Field: Content: Featured Image */
   $handler->display->display_options['fields']['field_s_mag_article_image']['id'] = 'field_s_mag_article_image';
   $handler->display->display_options['fields']['field_s_mag_article_image']['table'] = 'field_data_field_s_mag_article_image';
@@ -71,6 +95,58 @@ function stanford_soe_helper_magazine_views_default_views() {
   $handler->display->display_options['fields']['field_s_mag_article_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_s_mag_article_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_s_mag_article_image']['settings'] = array(
+    'image_style' => 'banner-850x400',
+    'image_link' => '',
+  );
+  /* Field: Content: Featured Image */
+  $handler->display->display_options['fields']['field_s_mag_article_image_1']['id'] = 'field_s_mag_article_image_1';
+  $handler->display->display_options['fields']['field_s_mag_article_image_1']['table'] = 'field_data_field_s_mag_article_image';
+  $handler->display->display_options['fields']['field_s_mag_article_image_1']['field'] = 'field_s_mag_article_image';
+  $handler->display->display_options['fields']['field_s_mag_article_image_1']['relationship'] = 'field_s_mag_issue_featured_target_id';
+  $handler->display->display_options['fields']['field_s_mag_article_image_1']['label'] = '';
+  $handler->display->display_options['fields']['field_s_mag_article_image_1']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_s_mag_article_image_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_s_mag_article_image_1']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_s_mag_article_image_1']['settings'] = array(
+    'image_style' => 'banner-850x400',
+    'image_link' => '',
+  );
+  /* Field: Content: Featured Image */
+  $handler->display->display_options['fields']['field_s_mag_article_image_2']['id'] = 'field_s_mag_article_image_2';
+  $handler->display->display_options['fields']['field_s_mag_article_image_2']['table'] = 'field_data_field_s_mag_article_image';
+  $handler->display->display_options['fields']['field_s_mag_article_image_2']['field'] = 'field_s_mag_article_image';
+  $handler->display->display_options['fields']['field_s_mag_article_image_2']['relationship'] = 'field_s_mag_issue_featured_target_id_1';
+  $handler->display->display_options['fields']['field_s_mag_article_image_2']['label'] = '';
+  $handler->display->display_options['fields']['field_s_mag_article_image_2']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_s_mag_article_image_2']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_s_mag_article_image_2']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_s_mag_article_image_2']['settings'] = array(
+    'image_style' => 'banner-850x400',
+    'image_link' => '',
+  );
+  /* Field: Content: Featured Image */
+  $handler->display->display_options['fields']['field_s_mag_article_image_3']['id'] = 'field_s_mag_article_image_3';
+  $handler->display->display_options['fields']['field_s_mag_article_image_3']['table'] = 'field_data_field_s_mag_article_image';
+  $handler->display->display_options['fields']['field_s_mag_article_image_3']['field'] = 'field_s_mag_article_image';
+  $handler->display->display_options['fields']['field_s_mag_article_image_3']['relationship'] = 'field_s_mag_issue_featured_target_id_2';
+  $handler->display->display_options['fields']['field_s_mag_article_image_3']['label'] = '';
+  $handler->display->display_options['fields']['field_s_mag_article_image_3']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_s_mag_article_image_3']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_s_mag_article_image_3']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_s_mag_article_image_3']['settings'] = array(
+    'image_style' => 'banner-850x400',
+    'image_link' => '',
+  );
+  /* Field: Content: Featured Image */
+  $handler->display->display_options['fields']['field_s_mag_article_image_4']['id'] = 'field_s_mag_article_image_4';
+  $handler->display->display_options['fields']['field_s_mag_article_image_4']['table'] = 'field_data_field_s_mag_article_image';
+  $handler->display->display_options['fields']['field_s_mag_article_image_4']['field'] = 'field_s_mag_article_image';
+  $handler->display->display_options['fields']['field_s_mag_article_image_4']['relationship'] = 'field_s_mag_issue_featured_target_id_3';
+  $handler->display->display_options['fields']['field_s_mag_article_image_4']['label'] = '';
+  $handler->display->display_options['fields']['field_s_mag_article_image_4']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_s_mag_article_image_4']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_s_mag_article_image_4']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_s_mag_article_image_4']['settings'] = array(
     'image_style' => 'banner-850x400',
     'image_link' => '',
   );
@@ -167,16 +243,17 @@ function stanford_soe_helper_magazine_views_default_views() {
   $handler->display->display_options['fields']['title_3']['label'] = '';
   $handler->display->display_options['fields']['title_3']['exclude'] = TRUE;
   $handler->display->display_options['fields']['title_3']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['title_3']['alter']['text'] = '  <div class="mag-issue-color-[field_s_mag_issue_accent_color]">
+  $handler->display->display_options['fields']['title_3']['alter']['text'] = '<div class="mag-issue-color-[field_s_mag_issue_accent_color]">
+  <div class="mag-article-issue-image-container">
+    [field_s_mag_article_image]
+  </div>
+  <div class="mag-article-issue-content-container">
     <a href="[path]">
-      <div class="mag-article-issue-image-container">
-        [field_s_mag_article_image]
-      </div>
-      <div class="mag-article-issue-content-container">
-        <div class="mag-article-issue-title">[title_3]</div>
-        <div class="mag-article-issue-more">Read More</div>
+      <div class="mag-article-issue-title">[title_3]</div>
+      <div class="mag-article-issue-more">Read More</div>
     </a>
   </div>
+</div>
 ';
   $handler->display->display_options['fields']['title_3']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title_3']['element_default_classes'] = FALSE;
@@ -190,16 +267,15 @@ function stanford_soe_helper_magazine_views_default_views() {
   $handler->display->display_options['fields']['title_1']['label'] = '';
   $handler->display->display_options['fields']['title_1']['exclude'] = TRUE;
   $handler->display->display_options['fields']['title_1']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['title_1']['alter']['text'] = '
-  <div class="mag-article-issue-2 mag-issue-color-[field_s_mag_issue_accent_color_1]">
+  $handler->display->display_options['fields']['title_1']['alter']['text'] = '<div class="mag-article-issue-2 mag-issue-color-[field_s_mag_issue_accent_color_1]">
+  <div class="mag-article-issue-image-container"> [field_s_mag_article_image_1] </div>
+  <div class="mag-article-issue-content-container">
     <a href="[path_1]">
-      <div class="mag-article-issue-image-container"> [field_s_mag_article_image] </div>
-      <div class="mag-article-issue-content-container">
-        <div class="mag-article-issue-title">[title_1]</div>
-        <div class="mag-article-issue-more">Read More</div>
-      </div>
+      <div class="mag-article-issue-title">[title_1]</div>
+      <div class="mag-article-issue-more">Read More</div>
     </a>
   </div>
+</div>
 ';
   $handler->display->display_options['fields']['title_1']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title_1']['element_default_classes'] = FALSE;
@@ -212,15 +288,15 @@ function stanford_soe_helper_magazine_views_default_views() {
   $handler->display->display_options['fields']['title_2']['label'] = '';
   $handler->display->display_options['fields']['title_2']['exclude'] = TRUE;
   $handler->display->display_options['fields']['title_2']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['title_2']['alter']['text'] = '  <div class="mag-article-issue-3 mag-issue-color-[field_s_mag_issue_accent_color_2]">
+  $handler->display->display_options['fields']['title_2']['alter']['text'] = '<div class="mag-article-issue-3 mag-issue-color-[field_s_mag_issue_accent_color_2]">
+  <div class="mag-article-issue-image-container"> [field_s_mag_article_image_2] </div>
+  <div class="mag-article-issue-content-container">
     <a href="[path_2]">
-      <div class="mag-article-issue-image-container"> [field_s_mag_article_image] </div>
-      <div class="mag-article-issue-content-container">
-        <div class="mag-article-issue-title">[title_2]</div>
-        <div class="mag-article-issue-more">Read More</div>
-      </div>
+      <div class="mag-article-issue-title">[title_2]</div>
+      <div class="mag-article-issue-more">Read More</div>
     </a>
-  </div>';
+  </div>
+</div>';
   $handler->display->display_options['fields']['title_2']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title_2']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['title_2']['hide_empty'] = TRUE;
@@ -233,16 +309,16 @@ function stanford_soe_helper_magazine_views_default_views() {
   $handler->display->display_options['fields']['title_4']['label'] = '';
   $handler->display->display_options['fields']['title_4']['exclude'] = TRUE;
   $handler->display->display_options['fields']['title_4']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['title_4']['alter']['text'] = '  <div class="mag-article-issue-4 mag-issue-color-[field_s_mag_issue_accent_color_3]">
+  $handler->display->display_options['fields']['title_4']['alter']['text'] = '<div class="mag-article-issue-4 mag-issue-color-[field_s_mag_issue_accent_color_3]">
+  <div class="mag-article-issue-image-container"> [field_s_mag_article_image_3] </div>
+  <div class="mag-article-issue-content-container">
     <a href="[path_3]">
-      <div class="mag-article-issue-image-container"> [field_s_mag_article_image] </div>
-      <div class="mag-article-issue-content-container">
-        <div class="mag-article-issue-title">[title_4]</div>
-        <div class="mag-article-issue-more">Read More</div>
-      </div>
+      <div class="mag-article-issue-title">[title_4]</div>
+      <div class="mag-article-issue-more">Read More</div>
     </a>
   </div>
-</div>';
+</div>
+';
   $handler->display->display_options['fields']['title_4']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title_4']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['title_4']['hide_empty'] = TRUE;
@@ -256,46 +332,40 @@ function stanford_soe_helper_magazine_views_default_views() {
   $handler->display->display_options['fields']['title_5']['exclude'] = TRUE;
   $handler->display->display_options['fields']['title_5']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['title_5']['alter']['text'] = '<div class="mag-article-issue-5 mag-issue-color-[field_s_mag_issue_accent_color_4]">
-  <a href="[path_4]">
-    <div class="mag-article-issue-image-container"> [field_s_mag_article_image] </div>
-    <div class="mag-article-issue-content-container">
+  <div class="mag-article-issue-image-container"> [field_s_mag_article_image_4] </div>
+  <div class="mag-article-issue-content-container">
+    <a href="[path_4]">
       <div class="mag-article-issue-title">[title_5]</div>
       <div class="mag-article-issue-more">Read More</div>
-    </div>
-  </a>
+    </a>
+  </div>
 </div>
 ';
   $handler->display->display_options['fields']['title_5']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title_5']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['title_5']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['title_5']['link_to_node'] = FALSE;
-  /* Field: Content: Edit link */
-  $handler->display->display_options['fields']['edit_node']['id'] = 'edit_node';
-  $handler->display->display_options['fields']['edit_node']['table'] = 'views_entity_node';
-  $handler->display->display_options['fields']['edit_node']['field'] = 'edit_node';
-  $handler->display->display_options['fields']['edit_node']['label'] = '';
-  $handler->display->display_options['fields']['edit_node']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['edit_node']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['edit_node']['text'] = 'Edit';
   /* Field: Global: Custom text */
   $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['table'] = 'views';
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['label'] = '';
-  $handler->display->display_options['fields']['nothing']['alter']['text'] = ' <div class="mag-article-issue-text">  This article is part of a newsletter</div>
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '
 <div class="mag-article-issue-container">
   [title_3]
   [title_1]
   [title_2]
   [title_4]
   [title_5]
+   <div class="mag-article-issue-text">  This article is part of our Stanford Engineering Magazine</div>
 </div>';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   /* Contextual filter: Content: Nid */
   $handler->display->display_options['arguments']['nid']['id'] = 'nid';
   $handler->display->display_options['arguments']['nid']['table'] = 'node';
   $handler->display->display_options['arguments']['nid']['field'] = 'nid';
-  $handler->display->display_options['arguments']['nid']['default_argument_type'] = 'fixed';
+  $handler->display->display_options['arguments']['nid']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['nid']['default_argument_type'] = 'node';
   $handler->display->display_options['arguments']['nid']['summary']['number_of_records'] = '0';
   $handler->display->display_options['arguments']['nid']['summary']['format'] = 'default_summary';
   $handler->display->display_options['arguments']['nid']['summary_options']['items_per_page'] = '25';
