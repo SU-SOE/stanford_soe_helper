@@ -239,14 +239,11 @@ a.btn-pink {
   background: #FF525C; }
 /* line 32, ../scss/components/_soe_wysiwyg.scss */
 a.external-link:after {
-  content: " ";
-  background-image: url("../img/soe_external_link_icon_red.png");
-  background-position: 6px center;
-  background-repeat: no-repeat;
-  background-size: 50%;
-  padding: 0 5px 1px 20px; }
+  content: url("../img/soe_external_link_icon_red.png");
+  padding: 20px;
+  vertical-align: middle; }
 
-/* line 42, ../scss/components/_soe_wysiwyg.scss */
+/* line 39, ../scss/components/_soe_wysiwyg.scss */
 p.columns {
   font-family: "Roboto Slab", serif;
   font-size: 1.45455em;
@@ -259,25 +256,25 @@ p.columns {
   -moz-column-gap: 100px;
   column-gap: 100px; }
   @media (max-width: 767px) {
-    /* line 42, ../scss/components/_soe_wysiwyg.scss */
+    /* line 39, ../scss/components/_soe_wysiwyg.scss */
     p.columns {
       -webkit-column-count: 1;
       -moz-column-count: 1;
       column-count: 1; } }
 
-/* line 54, ../scss/components/_soe_wysiwyg.scss */
+/* line 51, ../scss/components/_soe_wysiwyg.scss */
 p.related-link {
   background: #FFFFFF;
   padding: 26px 36px;
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2); }
-  /* line 59, ../scss/components/_soe_wysiwyg.scss */
+  /* line 56, ../scss/components/_soe_wysiwyg.scss */
   p.related-link:before {
     content: "Related:";
     padding-right: 3px; }
 
-/* line 66, ../scss/components/_soe_wysiwyg.scss */
+/* line 63, ../scss/components/_soe_wysiwyg.scss */
 p.summary.drop-cap:first-letter {
   font-size: 2.65625em;
   font-weight: 300;
