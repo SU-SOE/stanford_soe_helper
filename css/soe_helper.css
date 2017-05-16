@@ -1,31 +1,31 @@
 @charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100);
-/* line 9, ../scss/components/_soe_global.scss */
+/* line 8, ../scss/components/_soe_global.scss */
 html {
   font-size: 62.5%; }
 
-/* line 13, ../scss/components/_soe_global.scss */
+/* line 12, ../scss/components/_soe_global.scss */
 body {
   font-size: 2.2em;
   font-weight: 400;
   line-height: 1.45em; }
   @media (max-width: 979px) {
-    /* line 13, ../scss/components/_soe_global.scss */
+    /* line 12, ../scss/components/_soe_global.scss */
     body {
       font-size: 21px;
       font-size: 2.1em; } }
   @media (max-width: 767px) {
-    /* line 13, ../scss/components/_soe_global.scss */
+    /* line 12, ../scss/components/_soe_global.scss */
     body {
       font-size: 20px;
       font-size: 2em; } }
   @media (max-width: 480px) {
-    /* line 13, ../scss/components/_soe_global.scss */
+    /* line 12, ../scss/components/_soe_global.scss */
     body {
       font-size: 19px;
       font-size: 1.9em; } }
 
-/* line 31, ../scss/components/_soe_global.scss */
+/* line 30, ../scss/components/_soe_global.scss */
 h1 {
   font-family: "Roboto Slab", serif;
   font-size: 2.54545em;
@@ -33,7 +33,7 @@ h1 {
   letter-spacing: 0;
   margin: -9px 0 10px; }
 
-/* line 39, ../scss/components/_soe_global.scss */
+/* line 38, ../scss/components/_soe_global.scss */
 h2 {
   font-family: "Roboto Slab", serif;
   font-size: 1.45455em;
@@ -41,19 +41,19 @@ h2 {
   letter-spacing: 0.02em;
   margin: 1.8em 0 0.5em; }
 
-/* line 47, ../scss/components/_soe_global.scss */
+/* line 46, ../scss/components/_soe_global.scss */
 h3 {
   font-size: 1.18182em;
   font-weight: 600;
   margin: 1.3em 0 0.3em; }
 
-/* line 53, ../scss/components/_soe_global.scss */
+/* line 52, ../scss/components/_soe_global.scss */
 h4 {
   font-size: 1em;
   font-weight: 600;
   margin: 1em 0 0.3em; }
 
-/* line 65, ../scss/components/_soe_global.scss */
+/* line 64, ../scss/components/_soe_global.scss */
 h1 a,
 h2 a,
 h3 a,
@@ -61,7 +61,7 @@ h4 a,
 h5 a,
 h6 a {
   text-decoration: underline; }
-  /* line 68, ../scss/components/_soe_global.scss */
+  /* line 67, ../scss/components/_soe_global.scss */
   h1 a:focus, h1 a:hover,
   h2 a:focus,
   h2 a:hover,
@@ -75,7 +75,7 @@ h6 a {
   h6 a:hover {
     text-decoration: underline; }
 
-/* line 75, ../scss/components/_soe_global.scss */
+/* line 74, ../scss/components/_soe_global.scss */
 .btn a,
 a.btn {
   border-radius: 0;
@@ -87,65 +87,65 @@ a.btn {
   line-height: 1.4em;
   letter-spacing: 0.03em;
   background: #B1040E; }
-  /* line 85, ../scss/components/_soe_global.scss */
-  .btn a:hover, .btn a:focus,
-  a.btn:hover,
-  a.btn:focus {
+  /* line 84, ../scss/components/_soe_global.scss */
+  .btn a:focus, .btn a:hover,
+  a.btn:focus,
+  a.btn:hover {
     color: #FFFFFF; }
 
-/* line 91, ../scss/components/_soe_global.scss */
+/* line 90, ../scss/components/_soe_global.scss */
 .normal-link a,
 a {
   color: #B1040E; }
 
-/* line 96, ../scss/components/_soe_global.scss */
+/* line 95, ../scss/components/_soe_global.scss */
 .more-link a,
 a.more-link {
   font-size: 20px;
   color: #B1040E; }
-  /* line 101, ../scss/components/_soe_global.scss */
+  /* line 100, ../scss/components/_soe_global.scss */
   .more-link a:after,
   a.more-link:after {
     content: " ›"; }
 
-/* line 106, ../scss/components/_soe_global.scss */
+/* line 105, ../scss/components/_soe_global.scss */
 .normal-link h2,
 .normal-link h3,
 h2.normal-link,
 h3.normal-link {
   font-size: 1.1em; }
 
-/* line 113, ../scss/components/_soe_global.scss */
+/* line 112, ../scss/components/_soe_global.scss */
 li {
   line-height: 1.4em;
   margin-bottom: 10px; }
 
-/* line 120, ../scss/components/_soe_global.scss */
+/* line 119, ../scss/components/_soe_global.scss */
 #content .content ul li {
   list-style-type: disc; }
-  /* line 123, ../scss/components/_soe_global.scss */
+  /* line 122, ../scss/components/_soe_global.scss */
   #content .content ul li:last-child {
     margin-bottom: 1.5em; }
-/* line 129, ../scss/components/_soe_global.scss */
+/* line 128, ../scss/components/_soe_global.scss */
 #content .content ol li:last-child {
   margin-bottom: 1.5em; }
-/* line 135, ../scss/components/_soe_global.scss */
+/* line 134, ../scss/components/_soe_global.scss */
 #content .content ul.pager li a {
   border: 1px solid #D7D7D7;
   background: #FFFFFF;
   margin-bottom: 12px;
   margin-right: 4px;
   font-size: 0.9em; }
-  /* line 142, ../scss/components/_soe_global.scss */
+  /* line 141, ../scss/components/_soe_global.scss */
   #content .content ul.pager li a:focus, #content .content ul.pager li a:hover {
     margin-right: 4px;
     font-weight: 300; }
-/* line 149, ../scss/components/_soe_global.scss */
+/* line 148, ../scss/components/_soe_global.scss */
 #content .content ul.pager li.pager-current {
   margin-right: 4px;
   font-weight: 300; }
 
-/* line 157, ../scss/components/_soe_global.scss */
+/* line 156, ../scss/components/_soe_global.scss */
 td,
 th {
   padding: 0.8em;
@@ -155,30 +155,27 @@ th {
   border-right: none;
   border-left: none; }
 
-/* line 167, ../scss/components/_soe_global.scss */
+/* line 166, ../scss/components/_soe_global.scss */
 th {
   background: #EFEFEF; }
 
-/* line 171, ../scss/components/_soe_global.scss */
+/* line 170, ../scss/components/_soe_global.scss */
 .well {
   background: #FFFFFF;
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2); }
-  /* line 175, ../scss/components/_soe_global.scss */
+  /* line 174, ../scss/components/_soe_global.scss */
   .well h2 {
     font-size: 1.45455em;
     font-weight: 600; }
-  /* line 180, ../scss/components/_soe_global.scss */
+  /* line 179, ../scss/components/_soe_global.scss */
   .well p {
     font-size: 0.90909em;
     font-weight: 400;
     line-height: 1.5em; }
-    /* line 185, ../scss/components/_soe_global.scss */
-    .well p a {
-      text-decoration: underline; }
 
-/* line 191, ../scss/components/_soe_global.scss */
+/* line 186, ../scss/components/_soe_global.scss */
 .descriptor {
   text-transform: none;
   letter-spacing: 0.02em;
@@ -186,33 +183,36 @@ th {
   margin-bottom: 4px;
   line-height: 1.2em; }
 
-/* line 199, ../scss/components/_soe_global.scss */
+/* line 194, ../scss/components/_soe_global.scss */
 .postcard-left {
   margin-top: 6px; }
 
-/* line 203, ../scss/components/_soe_global.scss */
+/* line 198, ../scss/components/_soe_global.scss */
 .views-row-lines .views-row {
   border-color: #D7D7D7; }
 
-/* line 207, ../scss/components/_soe_global.scss */
+/* line 202, ../scss/components/_soe_global.scss */
 #wrap {
   background: #F8F8F8; }
 
-/* line 211, ../scss/components/_soe_global.scss */
+/* line 206, ../scss/components/_soe_global.scss */
 .main {
   padding-top: 60px;
   background: #F8F8F8; }
+  /* line 211, ../scss/components/_soe_global.scss */
+  .main p a {
+    text-decoration: underline; }
 
 @media (max-width: 767px) {
-  /* line 216, ../scss/components/_soe_global.scss */
+  /* line 217, ../scss/components/_soe_global.scss */
   .container {
     margin-bottom: 10px; }
-    /* line 220, ../scss/components/_soe_global.scss */
+    /* line 221, ../scss/components/_soe_global.scss */
     #fullwidth-bottom .container {
       margin-bottom: 0; } }
 
 @media (min-width: 1200px) {
-  /* line 226, ../scss/components/_soe_global.scss */
+  /* line 227, ../scss/components/_soe_global.scss */
   #content.span9 {
     width: 740px;
     margin-left: 80px; } }
@@ -240,9 +240,10 @@ a.btn-pink {
 /* line 32, ../scss/components/_soe_wysiwyg.scss */
 a.external-link:after {
   content: url("../img/soe_external_link_icon_red.svg");
-  padding: 0 5px 0 8px; }
+  padding-left: 5px;
+  vertical-align: -2%; }
 
-/* line 38, ../scss/components/_soe_wysiwyg.scss */
+/* line 39, ../scss/components/_soe_wysiwyg.scss */
 p.columns {
   font-family: "Roboto Slab", serif;
   font-size: 1.45455em;
@@ -255,25 +256,25 @@ p.columns {
   -moz-column-gap: 100px;
   column-gap: 100px; }
   @media (max-width: 767px) {
-    /* line 38, ../scss/components/_soe_wysiwyg.scss */
+    /* line 39, ../scss/components/_soe_wysiwyg.scss */
     p.columns {
       -webkit-column-count: 1;
       -moz-column-count: 1;
       column-count: 1; } }
 
-/* line 50, ../scss/components/_soe_wysiwyg.scss */
+/* line 51, ../scss/components/_soe_wysiwyg.scss */
 p.related-link {
   background: #FFFFFF;
   padding: 26px 36px;
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2); }
-  /* line 55, ../scss/components/_soe_wysiwyg.scss */
+  /* line 56, ../scss/components/_soe_wysiwyg.scss */
   p.related-link:before {
     content: "Related:";
     padding-right: 3px; }
 
-/* line 62, ../scss/components/_soe_wysiwyg.scss */
+/* line 63, ../scss/components/_soe_wysiwyg.scss */
 p.summary.drop-cap:first-letter {
   font-size: 2.65625em;
   font-weight: 300;
@@ -780,7 +781,7 @@ p.summary.drop-cap:first-letter {
   display: block;
   margin: 0 auto;
   width: 30%;
-  margin-bottom: 40px; }
+  margin-bottom: 30px; }
   @media (max-width: 480px) {
     /* line 96, ../scss/components/_soe_page_layout.scss */
     #content-body .content a.btn {

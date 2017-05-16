@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 @import '../functions/soe_unitconversion';
 
 //
@@ -82,8 +81,8 @@ a.btn {
   letter-spacing: 0.03em;
   background: $brand-bright;
 
-  &:hover,
-  &:focus {
+  &:focus,
+  &:hover {
     color: $white;
   }
 }
@@ -181,10 +180,6 @@ th {
     font-size: em(20px);
     font-weight: 400;
     line-height: 1.5em;
-
-    a {
-      text-decoration: underline;
-    }
   }
 }
 
@@ -211,6 +206,12 @@ th {
 .main {
   padding-top: 60px;
   background: $off-white;
+
+  p {
+    a {
+      text-decoration: underline;
+    }
+  }
 }
 
 .container {
