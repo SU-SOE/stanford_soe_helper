@@ -75,77 +75,85 @@ h6 a {
   h6 a:hover {
     text-decoration: underline; }
 
-/* line 74, ../scss/components/_soe_global.scss */
-.btn a,
-a.btn {
+/* line 75, ../scss/components/_soe_global.scss */
+#content-body .content .btn a,
+#content-body .content a.btn {
+  display: block;
+  width: 30%;
   border-radius: 0;
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
-  margin: 0 0 26px;
+  margin: 0 auto 30px;
   padding: 0.7em 1em;
   line-height: 1.4em;
   letter-spacing: 0.03em;
+  text-decoration: none;
   background: #B1040E; }
-  /* line 84, ../scss/components/_soe_global.scss */
-  .btn a:focus, .btn a:hover,
-  a.btn:focus,
-  a.btn:hover {
+  @media (max-width: 480px) {
+    /* line 75, ../scss/components/_soe_global.scss */
+    #content-body .content .btn a,
+    #content-body .content a.btn {
+      width: 65%; } }
+  /* line 91, ../scss/components/_soe_global.scss */
+  #content-body .content .btn a:focus, #content-body .content .btn a:hover,
+  #content-body .content a.btn:focus,
+  #content-body .content a.btn:hover {
     color: #FFFFFF; }
 
-/* line 90, ../scss/components/_soe_global.scss */
+/* line 98, ../scss/components/_soe_global.scss */
 .normal-link a,
 a {
   color: #B1040E; }
 
-/* line 95, ../scss/components/_soe_global.scss */
+/* line 103, ../scss/components/_soe_global.scss */
 .more-link a,
 a.more-link {
   font-size: 20px;
   color: #B1040E; }
-  /* line 100, ../scss/components/_soe_global.scss */
+  /* line 108, ../scss/components/_soe_global.scss */
   .more-link a:after,
   a.more-link:after {
     content: " ›"; }
 
-/* line 105, ../scss/components/_soe_global.scss */
+/* line 113, ../scss/components/_soe_global.scss */
 .normal-link h2,
 .normal-link h3,
 h2.normal-link,
 h3.normal-link {
   font-size: 1.1em; }
 
-/* line 112, ../scss/components/_soe_global.scss */
+/* line 120, ../scss/components/_soe_global.scss */
 li {
   line-height: 1.4em;
   margin-bottom: 10px; }
 
-/* line 119, ../scss/components/_soe_global.scss */
+/* line 127, ../scss/components/_soe_global.scss */
 #content .content ul li {
   list-style-type: disc; }
-  /* line 122, ../scss/components/_soe_global.scss */
+  /* line 130, ../scss/components/_soe_global.scss */
   #content .content ul li:last-child {
     margin-bottom: 1.5em; }
-/* line 128, ../scss/components/_soe_global.scss */
+/* line 136, ../scss/components/_soe_global.scss */
 #content .content ol li:last-child {
   margin-bottom: 1.5em; }
-/* line 134, ../scss/components/_soe_global.scss */
+/* line 142, ../scss/components/_soe_global.scss */
 #content .content ul.pager li a {
   border: 1px solid #D7D7D7;
   background: #FFFFFF;
   margin-bottom: 12px;
   margin-right: 4px;
   font-size: 0.9em; }
-  /* line 141, ../scss/components/_soe_global.scss */
+  /* line 149, ../scss/components/_soe_global.scss */
   #content .content ul.pager li a:focus, #content .content ul.pager li a:hover {
     margin-right: 4px;
     font-weight: 300; }
-/* line 148, ../scss/components/_soe_global.scss */
+/* line 156, ../scss/components/_soe_global.scss */
 #content .content ul.pager li.pager-current {
   margin-right: 4px;
   font-weight: 300; }
 
-/* line 156, ../scss/components/_soe_global.scss */
+/* line 164, ../scss/components/_soe_global.scss */
 td,
 th {
   padding: 0.8em;
@@ -155,27 +163,27 @@ th {
   border-right: none;
   border-left: none; }
 
-/* line 166, ../scss/components/_soe_global.scss */
+/* line 174, ../scss/components/_soe_global.scss */
 th {
   background: #EFEFEF; }
 
-/* line 170, ../scss/components/_soe_global.scss */
+/* line 178, ../scss/components/_soe_global.scss */
 .well {
   background: #FFFFFF;
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2); }
-  /* line 174, ../scss/components/_soe_global.scss */
+  /* line 182, ../scss/components/_soe_global.scss */
   .well h2 {
     font-size: 1.45455em;
     font-weight: 600; }
-  /* line 179, ../scss/components/_soe_global.scss */
+  /* line 187, ../scss/components/_soe_global.scss */
   .well p {
     font-size: 0.90909em;
     font-weight: 400;
     line-height: 1.5em; }
 
-/* line 186, ../scss/components/_soe_global.scss */
+/* line 194, ../scss/components/_soe_global.scss */
 .descriptor {
   text-transform: none;
   letter-spacing: 0.02em;
@@ -183,36 +191,36 @@ th {
   margin-bottom: 4px;
   line-height: 1.2em; }
 
-/* line 194, ../scss/components/_soe_global.scss */
+/* line 202, ../scss/components/_soe_global.scss */
 .postcard-left {
   margin-top: 6px; }
 
-/* line 198, ../scss/components/_soe_global.scss */
+/* line 206, ../scss/components/_soe_global.scss */
 .views-row-lines .views-row {
   border-color: #D7D7D7; }
 
-/* line 202, ../scss/components/_soe_global.scss */
+/* line 210, ../scss/components/_soe_global.scss */
 #wrap {
   background: #F8F8F8; }
 
-/* line 206, ../scss/components/_soe_global.scss */
+/* line 214, ../scss/components/_soe_global.scss */
 .main {
   padding-top: 60px;
   background: #F8F8F8; }
-  /* line 211, ../scss/components/_soe_global.scss */
+  /* line 219, ../scss/components/_soe_global.scss */
   .main p a {
     text-decoration: underline; }
 
 @media (max-width: 767px) {
-  /* line 217, ../scss/components/_soe_global.scss */
+  /* line 225, ../scss/components/_soe_global.scss */
   .container {
     margin-bottom: 10px; }
-    /* line 221, ../scss/components/_soe_global.scss */
+    /* line 229, ../scss/components/_soe_global.scss */
     #fullwidth-bottom .container {
       margin-bottom: 0; } }
 
 @media (min-width: 1200px) {
-  /* line 227, ../scss/components/_soe_global.scss */
+  /* line 235, ../scss/components/_soe_global.scss */
   #content.span9 {
     width: 740px;
     margin-left: 80px; } }
@@ -775,17 +783,6 @@ p.summary.drop-cap:first-letter {
     /* line 89, ../scss/components/_soe_page_layout.scss */
     .node .group_s_postcard_image .field-collection-container > .field > .field-items > .field-item {
       margin-left: 0; } }
-
-/* line 96, ../scss/components/_soe_page_layout.scss */
-#content-body .content a.btn {
-  display: block;
-  margin: 0 auto;
-  width: 30%;
-  margin-bottom: 30px; }
-  @media (max-width: 480px) {
-    /* line 96, ../scss/components/_soe_page_layout.scss */
-    #content-body .content a.btn {
-      width: 65%; } }
 
 /* line 8, ../scss/components/_soe_calendar.scss */
 .calendar-calendar .mini td,

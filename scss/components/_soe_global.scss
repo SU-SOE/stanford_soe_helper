@@ -71,19 +71,27 @@ h6 {
   }
 }
 
-.btn a,
-a.btn {
-  border-radius: 0;
-  @include box-shadow;
-  margin: 0 0 26px;
-  padding: 0.7em 1em;
-  line-height: 1.4em;
-  letter-spacing: 0.03em;
-  background: $brand-bright;
+#content-body .content {
+  .btn a,
+  a.btn {
+    display: block;
+    width: 30%;
+    border-radius: 0;
+    @include box-shadow;
+    margin: 0 auto 30px;
+    padding: 0.7em 1em;
+    line-height: 1.4em;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    background: $brand-bright;
+    @include breakpoint(x-small) {
+      width: 65%;
+    }
 
-  &:focus,
-  &:hover {
-    color: $white;
+    &:focus,
+    &:hover {
+      color: $white;
+    }
   }
 }
 
