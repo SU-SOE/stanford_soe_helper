@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 @import '../functions/soe_unitconversion';
 
 //
@@ -81,6 +80,22 @@ a.btn {
   line-height: 1.4em;
   letter-spacing: 0.03em;
   background: $brand-bright;
+
+  &:focus,
+  &:hover {
+    color: $white;
+  }
+
+  #content-body .content & {
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+    margin-bottom: 30px;
+    text-decoration: none;
+    @include breakpoint(x-small) {
+      width: 65%;
+    }
+  }
 }
 
 .normal-link a,
@@ -176,10 +191,6 @@ th {
     font-size: em(20px);
     font-weight: 400;
     line-height: 1.5em;
-
-    a {
-      text-decoration: underline;
-    }
   }
 }
 
@@ -206,6 +217,12 @@ th {
 .main {
   padding-top: 60px;
   background: $off-white;
+
+  p {
+    a {
+      text-decoration: underline;
+    }
+  }
 }
 
 .container {

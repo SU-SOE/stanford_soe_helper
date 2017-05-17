@@ -212,4 +212,20 @@
       }
     }
   }
+
+  .pager-load-more {
+    a {
+      color: $white;
+      background-color: $brand-bright;
+      border-radius: 0;
+      @include box-shadow;
+      padding: 0.7em 4em;
+
+      &:focus,
+      &:hover {
+        color: $white;
+        background-color: $primary-color;
+      }
+    }
+  }
 }

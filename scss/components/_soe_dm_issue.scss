@@ -10,11 +10,6 @@
 .view-stanford-magazine-article-issue- {
   text-align: center;
 
-  .mag-article-issue-text {
-    font-size: em(28px);
-    margin-bottom: 30px;
-  }
-
   .mag-article-issue-container {
     position: relative;
 
@@ -41,7 +36,7 @@
     [class*="mag-issue-color-"] {
       .mag-article-issue-content-container {
         position: absolute;
-        bottom: 40%;
+        bottom: 38%;
         width: 100%;
         @include breakpoint(x-small) {
           bottom: auto;
@@ -76,6 +71,17 @@
           }
         }
       }
+    }
+
+    .mag-article-issue-text {
+      color: $white;
+      font-size: em(28px);
+      font-weight: 100;
+      font-style: italic;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      margin-bottom: 30px;
     }
 
     .mag-issue-color-orange a {

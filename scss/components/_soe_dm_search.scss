@@ -4,11 +4,8 @@
 // DIGITAL MAGAZINE SEARCH
 //
 
-#fullwidth-top {
+#digital-magazine-menu {
   .block-stanford-search-api {
-    float: right;
-    margin-top: -79px;
-
     h2,
     input.btn-search {
       display: none;
@@ -16,13 +13,14 @@
 
     input[type="text"] {
       font-family: $primary-font;
-      font-size: 16px;
+      font-size: em(22px, 22px);
       color: $primary-color;
       background-color: transparent;
       border: none;
       box-shadow: none;
       padding: 5px 0 0 40px;
-      background: url("../img/soe_mag_glass_black.svg") no-repeat 7% center;
+      background: url("../img/soe_mag_glass_black.svg") no-repeat -45% 70%;
+      background-size: 60% 60%;
 
       .not-logged-in & {
         margin-right: -15px;
