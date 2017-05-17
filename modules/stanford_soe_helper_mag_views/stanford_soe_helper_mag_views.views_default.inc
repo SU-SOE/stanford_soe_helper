@@ -22,6 +22,7 @@ function stanford_soe_helper_mag_views_views_default_views() {
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['title'] = 'All Issues';
+  $handler->display->display_options['use_ajax'] = TRUE;
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'time';
@@ -32,8 +33,8 @@ function stanford_soe_helper_mag_views_views_default_views() {
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'some';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '0';
-  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '3';
+  $handler->display->display_options['pager']['options']['offset'] = '3';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
   /* Relationship: Entity Reference: Referenced Entity */
@@ -375,6 +376,15 @@ function stanford_soe_helper_mag_views_views_default_views() {
   $handler->display->display_options['sorts']['field_s_mag_issue_number_value']['table'] = 'field_data_field_s_mag_issue_number';
   $handler->display->display_options['sorts']['field_s_mag_issue_number_value']['field'] = 'field_s_mag_issue_number_value';
   $handler->display->display_options['sorts']['field_s_mag_issue_number_value']['order'] = 'DESC';
+  /* Contextual filter: Content: Issue Number (field_s_mag_issue_number) */
+  $handler->display->display_options['arguments']['field_s_mag_issue_number_value']['id'] = 'field_s_mag_issue_number_value';
+  $handler->display->display_options['arguments']['field_s_mag_issue_number_value']['table'] = 'field_data_field_s_mag_issue_number';
+  $handler->display->display_options['arguments']['field_s_mag_issue_number_value']['field'] = 'field_s_mag_issue_number_value';
+  $handler->display->display_options['arguments']['field_s_mag_issue_number_value']['default_argument_type'] = 'raw';
+  $handler->display->display_options['arguments']['field_s_mag_issue_number_value']['default_argument_options']['index'] = '0';
+  $handler->display->display_options['arguments']['field_s_mag_issue_number_value']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['field_s_mag_issue_number_value']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['field_s_mag_issue_number_value']['summary_options']['items_per_page'] = '25';
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -392,8 +402,21 @@ function stanford_soe_helper_mag_views_views_default_views() {
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page_1');
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'load_more';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '3';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['pager']['options']['id'] = '0';
+  $handler->display->display_options['pager']['options']['quantity'] = '9';
+  $handler->display->display_options['pager']['options']['effects']['speed'] = 'slow';
   $handler->display->display_options['path'] = 'magazine/issue';
 
+  /* Display: Block */
+  $handler = $view->new_display('block', 'Block', 'block_1');
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '3';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
 
   $views[$view->name] = $view;
 
