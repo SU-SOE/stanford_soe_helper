@@ -5,6 +5,58 @@
 // FOR VIEWS AND NODE DISPLAY
 //
 
+// ALL ISSUES VIEW
+
+.view-stanford-magazine-issues {
+  .mag-article-container {
+    .mag-article-content-container {
+      background: $white;
+      @include box-shadow;
+
+      .mag-article-date {
+        color: $gray-orange;
+        font-size: em(18px);
+        font-weight: 100;
+      }
+
+      .mag-article-title {
+        font-size: em(26px);
+        line-height: 1.3em;
+        font-weight: 600;
+
+        &[class*="mag-article-color-"] a {
+          color: $primary-color;
+          text-decoration: underline;
+          text-decoration-skip: ink;
+
+          &:focus,
+          &:hover {
+            text-decoration-color: $primary-color;
+          }
+        }
+
+        &.mag-article-color-orange a {
+          text-decoration-color: $orange;
+        }
+
+        &.mag-article-color-turquoise a {
+          text-decoration-color: $turquoise;
+        }
+
+        &.mag-article-color-pink a {
+          text-decoration-color: $pink;
+        }
+      }
+
+      .mag-article-topics {
+        font-size: em(16px);
+        line-height: 1.2em;
+        margin: 30px 0;
+      }
+    }
+  }
+}
+
 // RELATED ISSUE VIEW
 
 .view-stanford-magazine-article-issue- {
