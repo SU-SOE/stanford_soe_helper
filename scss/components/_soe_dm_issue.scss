@@ -17,6 +17,10 @@
   }
 
   .mag-feat-article-container {
+    float: left;
+    width: 47.5%;
+    margin-right: 5%;
+
     .mag-article-content-container {
       background: $white;
       padding: 50px 30px 30px;
@@ -68,53 +72,63 @@
     }
   }
 
-  .mag-article-container {
-    margin-bottom: 80px;
+  .views-row {
+    .mag-article-container {
+      float: right;
+      width: 21.25%;
+      margin-right: 5%;
+      margin-bottom: 80px;
 
-    .mag-article-content-container {
-      background: $white;
-      padding: 15px 30px 30px;
-      @include box-shadow;
-
-      .mag-article-date {
-        color: $gray-orange;
-        font-size: em(18px);
-        font-weight: 100;
+      &:nth-child(2),
+      &:nth-child(5) {
+        margin-right: 0;
       }
 
-      .mag-article-title {
-        font-size: em(26px);
-        line-height: 1.3em;
-        font-weight: 600;
+      .mag-article-content-container {
+        background: $white;
+        padding: 15px 30px 30px;
+        @include box-shadow;
 
-        &[class*="mag-article-color-"] a {
-          color: $primary-color;
-          text-decoration: underline;
-          text-decoration-skip: ink;
+        .mag-article-date {
+          color: $gray-orange;
+          font-size: em(18px);
+          font-weight: 100;
+        }
 
-          &:focus,
-          &:hover {
-            text-decoration-color: $primary-color;
+        .mag-article-title {
+          font-size: em(26px);
+          line-height: 1.3em;
+          font-weight: 600;
+
+          &[class*="mag-article-color-"] a {
+            color: $primary-color;
+            text-decoration: underline;
+            text-decoration-skip: ink;
+
+            &:focus,
+            &:hover {
+              text-decoration-color: $primary-color;
+            }
+          }
+
+          &.mag-article-color-orange a {
+            text-decoration-color: $orange;
+          }
+
+          &.mag-article-color-turquoise a {
+            text-decoration-color: $turquoise;
+          }
+
+          &.mag-article-color-pink a {
+            text-decoration-color: $pink;
           }
         }
 
-        &.mag-article-color-orange a {
-          text-decoration-color: $orange;
+        .mag-article-topics {
+          font-size: em(16px);
+          line-height: 1.2em;
+          margin: 30px 0;
         }
-
-        &.mag-article-color-turquoise a {
-          text-decoration-color: $turquoise;
-        }
-
-        &.mag-article-color-pink a {
-          text-decoration-color: $pink;
-        }
-      }
-
-      .mag-article-topics {
-        font-size: em(16px);
-        line-height: 1.2em;
-        margin: 30px 0;
       }
     }
   }
