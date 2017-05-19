@@ -122,6 +122,7 @@
   #content .content & {
     .pager-load-more {
       a {
+        font-size: em(22px);
         color: $white;
         background-color: $brand-bright;
         border-radius: 0;
@@ -132,7 +133,6 @@
 
         &:focus,
         &:hover {
-          font-size: em(22px);
           color: $white;
           background-color: $primary-color;
         }
