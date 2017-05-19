@@ -8,6 +8,14 @@
 // ALL ISSUES VIEW
 
 .view-stanford-magazine-issues {
+  .views-row {
+    margin-bottom: 100px;
+
+    h2 {
+      text-align: center;
+    }
+  }
+
   .mag-feat-article-container {
     .mag-article-content-container {
       background: $white;
@@ -61,6 +69,8 @@
   }
 
   .mag-article-container {
+    margin-bottom: 80px;
+
     .mag-article-content-container {
       background: $white;
       padding: 15px 30px 30px;
@@ -105,6 +115,22 @@
         font-size: em(16px);
         line-height: 1.2em;
         margin: 30px 0;
+      }
+    }
+  }
+
+  .pager-load-more {
+    a {
+      color: $white;
+      background-color: $brand-bright;
+      border-radius: 0;
+      @include box-shadow;
+      padding: 0.7em 4em;
+
+      &:focus,
+      &:hover {
+        color: $white;
+        background-color: $primary-color;
       }
     }
   }
