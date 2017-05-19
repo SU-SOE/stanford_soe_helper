@@ -119,18 +119,23 @@
     }
   }
 
-  .pager-load-more {
-    a {
-      color: $white;
-      background-color: $brand-bright;
-      border-radius: 0;
-      @include box-shadow;
-      padding: 0.7em 4em;
-
-      &:focus,
-      &:hover {
+  #content .content & {
+    .pager-load-more {
+      a {
         color: $white;
-        background-color: $primary-color;
+        background-color: $brand-bright;
+        border-radius: 0;
+        border-style: none;
+        @include box-shadow;
+        padding: 0.7em 4em;
+        margin: 0;
+
+        &:focus,
+        &:hover {
+          font-size: em(22px);
+          color: $white;
+          background-color: $primary-color;
+        }
       }
     }
   }
