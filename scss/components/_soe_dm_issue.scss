@@ -122,8 +122,8 @@
   #content .content & {
     .pager-load-more {
       a {
-        font-size: em(22px);
         color: $white;
+        font-size: em(22px);
         background-color: $brand-bright;
         border-radius: 0;
         border-style: none;
@@ -134,7 +134,9 @@
         &:focus,
         &:hover {
           color: $white;
+          font-weight: 400;
           background-color: $primary-color;
+          margin: 0;
         }
       }
     }
