@@ -16,7 +16,7 @@
       margin-right: 5%;
     }
 
-    &:nth-child(3n+2) .mag-feat-article-container {
+    &:nth-child(3n+3) .mag-feat-article-container {
       float: right;
       margin-left: 5%;
     }
@@ -86,21 +86,26 @@
     &:nth-child(3n+1) .mag-article-container {
       float: right;
       margin-right: 5%;
-    }
-
-    &:nth-child(3n+2) .mag-article-container {
-      float: left;
-      margin-left: 5%;
-    }
-
-    .mag-article-container {
-      width: 21.25%;
-      margin-bottom: 80px;
 
       &:nth-child(2),
       &:nth-child(5) {
         margin-right: 0;
       }
+    }
+
+    &:nth-child(3n+3) .mag-article-container {
+      float: left;
+      margin-left: 5%;
+
+      &:nth-child(2),
+      &:nth-child(5) {
+        margin-left: 0;
+      }
+    }
+
+    .mag-article-container {
+      width: 21.25%;
+      margin-bottom: 80px;
 
       .mag-article-content-container {
         background: $white;
