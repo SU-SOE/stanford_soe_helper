@@ -11,15 +11,18 @@
   .views-row {
     margin-bottom: 100px;
 
+    &:nth-child(3n+1) .mag-feat-article-container {
+      float: left;
+      margin-right: 5%;
+    }
+
     h2 {
       text-align: center;
     }
   }
 
   .mag-feat-article-container {
-    float: left;
     width: 47.5%;
-    margin-right: 5%;
 
     .mag-article-content-container {
       background: $white;
@@ -73,10 +76,13 @@
   }
 
   .views-row {
-    .mag-article-container {
+    &:nth-child(3n+1) .mag-article-container {
       float: right;
-      width: 21.25%;
       margin-right: 5%;
+    }
+
+    .mag-article-container {
+      width: 21.25%;
       margin-bottom: 80px;
 
       &:nth-child(2),
