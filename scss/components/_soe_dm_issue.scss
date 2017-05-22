@@ -16,8 +16,15 @@
       margin-right: 5%;
     }
 
+    &:nth-child(3n+2) .mag-feat-article-container {
+      float: right;
+      margin-left: 5%;
+    }
+
     h2 {
+      font-size: em(56px);
       text-align: center;
+      margin-bottom: 40px;
     }
   }
 
@@ -79,6 +86,11 @@
     &:nth-child(3n+1) .mag-article-container {
       float: right;
       margin-right: 5%;
+    }
+
+    &:nth-child(3n+2) .mag-article-container {
+      float: left;
+      margin-left: 5%;
     }
 
     .mag-article-container {
