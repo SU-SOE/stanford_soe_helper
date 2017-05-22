@@ -219,17 +219,22 @@ function _stanford_mag_issue_get_art_5($row) {
  */
 function _stanford_mag_issue_print_feat_art($vars) {
 
-  $output = '<div class="mag-feat-article-container">';
-  $output .= '  <div class="mag-article-img">' . $vars['image'] . '</div>';
-  $output .= '  <div class ="mag-article-content-container">';
-  $output .= '    <div class="mag-article-date">' . $vars['date'] . '</div>';
-  $output .= '    <div class="mag-article-title mag-article-color-' . $vars['color'] . '">'
-    . l(t($vars['title']), "node/" . $vars['nid'])  . '</div>';
-  $output .= '    <div class="mag-article-dek">' . $vars['dek'] . '</div>';
-  $output .= '    <div class="mag-article-topics">' . $vars['topics'] . '</div>';
-  $output .= '  </div>';
-  $output .= '</div>';
-  $output .= $vars['edit-link'];
+  $output = '';
+
+  if ($vars['nid'] != '') {
+    $output .= '<div class="mag-feat-article-container">';
+    $output .= '  <div class="mag-article-img">' . $vars['image'] . '</div>';
+    $output .= '  <div class ="mag-article-content-container">';
+    $output .= '    <div class="mag-article-date">' . $vars['date'] . '</div>';
+    $output .= '    <div class="mag-article-title mag-article-color-' . $vars['color'] . '">'
+      . l(t($vars['title']), "node/" . $vars['nid']) . '</div>';
+    $output .= '    <div class="mag-article-dek">' . $vars['dek'] . '</div>';
+    $output .= '    <div class="mag-article-topics">' . $vars['topics'] . '</div>';
+    $output .= $vars['edit-link'];
+    $output .= '  </div>';
+    $output .= '</div>';
+  }
+
   return $output;
 }
 
@@ -241,16 +246,21 @@ function _stanford_mag_issue_print_feat_art($vars) {
  */
 function _stanford_mag_issue_print_art($vars) {
 
-  $output  = '<div class="mag-article-container">';
-  $output .= '<div class="mag-article-img">' . $vars['image'] . '</div>';
-  $output .= '  <div class ="mag-article-content-container">';
-  $output .= '    <div class="mag-article-date">' . $vars['date'] . '</div>';
-  $output .= '    <div class="mag-article-title mag-article-color-' . $vars['color'] . '">'
-    . l(t($vars['title']), "node/" . $vars['nid']) . '</div>';
-  $output .= '    <div class="mag-article-topics">' . $vars['topics']  . '</div>';
-  $output .= '  </div>';
-  $output .= '</div>';
-  $output .= $vars['edit-link'];
+  $output = '';
+
+  if ($vars['nid'] != '') {
+    $output .= '<div class="mag-article-container">';
+    $output .= '<div class="mag-article-img">' . $vars['image'] . '</div>';
+    $output .= '  <div class ="mag-article-content-container">';
+    $output .= '    <div class="mag-article-date">' . $vars['date'] . '</div>';
+    $output .= '    <div class="mag-article-title mag-article-color-' . $vars['color'] . '">'
+      . l(t($vars['title']), "node/" . $vars['nid']) . '</div>';
+    $output .= '    <div class="mag-article-topics">' . $vars['topics'] . '</div>';
+    $output .= $vars['edit-link'];
+    $output .= '  </div>';
+    $output .= '</div>';
+  }
+
   return $output;
 }
 
