@@ -46,10 +46,13 @@
       object-fit: cover;
       object-position: top center;
       width: 100%;
-      height: calc(100vh - 165px);
+      height: calc(100vh - 160px);
+      @include breakpoint(x-small) {
+        height: calc(100vh - 180px);
+      }
 
       .logged-in & {
-              height: calc(100vh - 214px);
+        height: calc(100vh - 210px);
       }
     }
   }
