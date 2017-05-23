@@ -12,24 +12,25 @@
     color: $gray-orange;
     font-size: em(26px);
     text-align: center;
+    margin-bottom: 0;
   }
 
   .views-row {
     margin-bottom: 100px;
 
-    &:nth-child(3n+1) .mag-feat-article-container {
-      float: left;
-      margin-right: 5%;
-    }
-
-    &:nth-child(3n+2) .mag-feat-article-container {
-      margin: 0 auto;
-    }
-
-    &:nth-child(3n+3) .mag-feat-article-container {
-      float: right;
-      margin-left: 5%;
-    }
+    // &:nth-child(3n+1) .mag-feat-article-container {
+    //   float: left;
+    //   margin-right: 5%;
+    // }
+    //
+    // &:nth-child(3n+2) .mag-feat-article-container {
+    //   margin: 0 auto;
+    // }
+    //
+    // &:nth-child(3n+3) .mag-feat-article-container {
+    //   float: right;
+    //   margin-left: 5%;
+    // }
 
     h2 {
       font-size: em(56px);
@@ -93,39 +94,39 @@
   }
 
   .views-row {
-    &:nth-child(3n+1) .mag-article-container {
-      float: right;
-      margin-right: 5%;
-
-      &:nth-child(2),
-      &:nth-child(5) {
-        margin-right: 0;
-        clear: right;
-      }
-    }
-
-    &:nth-child(3n+2) .mag-article-container {
-      &:nth-child(2),
-      &:nth-child(5) {
-        float: left;
-      }
-
-      &:nth-child(3),
-      &:nth-child(6) {
-        float: right;
-      }
-    }
-
-    &:nth-child(3n+3) .mag-article-container {
-      float: left;
-      margin-left: 5%;
-
-      &:nth-child(2),
-      &:nth-child(5) {
-        margin-left: 0;
-        clear: left;
-      }
-    }
+    // &:nth-child(3n+1) .mag-article-container {
+    //   float: right;
+    //   margin-right: 5%;
+    //
+    //   &:nth-child(2),
+    //   &:nth-child(5) {
+    //     margin-right: 0;
+    //     clear: right;
+    //   }
+    // }
+    //
+    // &:nth-child(3n+2) .mag-article-container {
+    //   &:nth-child(2),
+    //   &:nth-child(5) {
+    //     float: left;
+    //   }
+    //
+    //   &:nth-child(3),
+    //   &:nth-child(6) {
+    //     float: right;
+    //   }
+    // }
+    //
+    // &:nth-child(3n+3) .mag-article-container {
+    //   float: left;
+    //   margin-left: 5%;
+    //
+    //   &:nth-child(2),
+    //   &:nth-child(5) {
+    //     margin-left: 0;
+    //     clear: left;
+    //   }
+    // }
 
     .mag-article-container {
       width: 21.25%;
