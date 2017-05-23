@@ -31,42 +31,54 @@ $layout = '';
 if (isset ($row->field_field_s_mag_issue_layout[0]['rendered']['#markup'])) {
   $layout = $row->field_field_s_mag_issue_layout[0]['rendered']['#markup'];
 }
-print '<h1>All Issues</h1>';
 
 print '<h2>' . $row->node_title . '</h2>';
 switch ($layout) {
   case 'Featured Left':
+    print '<div class="mag-issue-col-1">';
     $vars = _stanford_mag_issue_get_feat_art($row);
     print _stanford_mag_issue_print_feat_art($vars);
+    print '</div>';
 
+    print '<div class="mag-issue-col-2">';
     $vars = _stanford_mag_issue_get_art_2($row);
     print _stanford_mag_issue_print_art($vars);
 
     $vars = _stanford_mag_issue_get_art_3($row);
     print _stanford_mag_issue_print_art($vars);
+    print '</div>';
 
+
+    print '<div class="mag-issue-col-3">';
     $vars = _stanford_mag_issue_get_art_4($row);
     print _stanford_mag_issue_print_art($vars);
 
     $vars = _stanford_mag_issue_get_art_5($row);
     print _stanford_mag_issue_print_art($vars);
+    print '</div>';
     break;
 
   case 'Featured Right':
+    print '<div class="mag-issue-col-1">';
     $vars = _stanford_mag_issue_get_art_2($row);
     print _stanford_mag_issue_print_art($vars);
 
     $vars = _stanford_mag_issue_get_art_3($row);
     print _stanford_mag_issue_print_art($vars);
+    print '</div>';
 
+    print '<div class="mag-issue-col-2">';
     $vars = _stanford_mag_issue_get_art_4($row);
     print _stanford_mag_issue_print_art($vars);
+    print '</div>';
 
+    print '<div class="mag-issue-col-3">';
     $vars = _stanford_mag_issue_get_art_5($row);
     print _stanford_mag_issue_print_art($vars);
 
     $vars = _stanford_mag_issue_get_feat_art($row);
     print _stanford_mag_issue_print_feat_art($vars);
+    print '</div>';
 
     break;
 
