@@ -8,6 +8,12 @@
 // ALL ISSUES VIEW
 
 .view-stanford-magazine-issues {
+  h1 {
+    color: $gray-orange;
+    font-size: em(26px);
+    text-align: center;
+  }
+
   .views-row {
     margin-bottom: 100px;
 
@@ -23,12 +29,6 @@
     &:nth-child(3n+3) .mag-feat-article-container {
       float: right;
       margin-left: 5%;
-    }
-
-    h1 {
-      color: $gray-orange;
-      font-size: em(26px);
-      text-align: center;
     }
 
     h2 {
