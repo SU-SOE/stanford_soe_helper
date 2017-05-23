@@ -22,18 +22,32 @@
       .mag-issue-col-1 {
         float: right;
         width: 22.5%;
+        @include breakpoint(medium) {
+          float: none;
+          width: 100%;
+        }
       }
 
       .mag-issue-col-2 {
         float: left;
         width: 45%;
         margin-right: 5%;
+        @include breakpoint(medium) {
+          float: none;
+          width: 100%;
+          margin-right: 0;
+        }
       }
 
       .mag-issue-col-3 {
         float: right;
         width: 22.5%;
         margin-right: 5%;
+        @include breakpoint(medium) {
+          float: none;
+          width: 100%;
+          margin-right: 0;
+        }
       }
     }
 
@@ -42,17 +56,31 @@
         float: left;
         width: 22.5%;
         margin-right: 5%;
+        @include breakpoint(medium) {
+          float: none;
+          width: 100%;
+          margin-right: 0;
+        }
       }
 
       .mag-issue-col-2 {
         float: left;
         width: 45%;
         margin-right: 5%;
+        @include breakpoint(medium) {
+          float: none;
+          width: 100%;
+          margin-right: 0;
+        }
       }
 
       .mag-issue-col-3 {
         float: left;
         width: 22.5%;
+        @include breakpoint(medium) {
+          float: none;
+          width: 100%;
+        }
       }
     }
 
@@ -60,18 +88,32 @@
       .mag-issue-col-1 {
         float: left;
         width: 22.5%;
+        @include breakpoint(medium) {
+          float: none;
+          width: 100%;
+        }
       }
 
       .mag-issue-col-2 {
         float: right;
         width: 45%;
         margin-left: 5%;
+        @include breakpoint(medium) {
+          float: none;
+          width: 100%;
+          margin-left: 0;
+        }
       }
 
       .mag-issue-col-3 {
         float: left;
         width: 22.5%;
         margin-left: 5%;
+        @include breakpoint(medium) {
+          float: none;
+          width: 100%;
+          margin-left: 0;
+        }
       }
     }
 
@@ -86,20 +128,27 @@
     .mag-article-content-container {
       background: $white;
       padding: 50px 30px 30px;
+      @include breakpoint(medium) {
+        padding: 15px 30px 30px;
+      }
 
       .mag-article-date {
         color: $gray-orange;
         font-size: em(20px);
         font-weight: 100;
         margin-bottom: 10px;
+        @include breakpoint(medium) {
+          font-size: em(18px);
+        }
       }
 
       .mag-article-title {
         font-size: em(32px);
         line-height: 1.2em;
         font-weight: 600;
-        @media (max-width: 1199px) and (min-width: 979px) {
-          font-size: em(20px);
+        @include breakpoint(medium) {
+          font-size: em(26px);
+          line-height: 1.3em;
         }
 
         &[class*="mag-article-color-"] a {
@@ -130,6 +179,10 @@
         font-size: em(18px);
         line-height: 1.3em;
         margin: 30px 0;
+        @include breakpoint(medium) {
+          font-size: em(16px);
+          line-height: 1.2em;
+        }
       }
     }
   }
