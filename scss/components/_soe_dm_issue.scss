@@ -75,20 +75,6 @@
       }
     }
 
-    // &:nth-child(3n+1) .mag-feat-article-container {
-    //   float: left;
-    //   margin-right: 5%;
-    // }
-    //
-    // &:nth-child(3n+2) .mag-feat-article-container {
-    //   margin: 0 auto;
-    // }
-    //
-    // &:nth-child(3n+3) .mag-feat-article-container {
-    //   float: right;
-    //   margin-left: 5%;
-    // }
-
     h2 {
       font-size: em(56px);
       text-align: center;
@@ -97,8 +83,6 @@
   }
 
   .mag-feat-article-container {
-    // width: 47.5%;
-
     .mag-article-content-container {
       background: $white;
       padding: 50px 30px 30px;
@@ -150,90 +134,53 @@
     }
   }
 
-  .views-row {
-    // &:nth-child(3n+1) .mag-article-container {
-    //   float: right;
-    //   margin-right: 5%;
-    //
-    //   &:nth-child(2),
-    //   &:nth-child(5) {
-    //     margin-right: 0;
-    //     clear: right;
-    //   }
-    // }
-    //
-    // &:nth-child(3n+2) .mag-article-container {
-    //   &:nth-child(2),
-    //   &:nth-child(5) {
-    //     float: left;
-    //   }
-    //
-    //   &:nth-child(3),
-    //   &:nth-child(6) {
-    //     float: right;
-    //   }
-    // }
-    //
-    // &:nth-child(3n+3) .mag-article-container {
-    //   float: left;
-    //   margin-left: 5%;
-    //
-    //   &:nth-child(2),
-    //   &:nth-child(5) {
-    //     margin-left: 0;
-    //     clear: left;
-    //   }
-    // }
+  .mag-article-container {
+    margin-bottom: 80px;
 
-    .mag-article-container {
-      // width: 21.25%;
-      margin-bottom: 80px;
+    .mag-article-content-container {
+      background: $white;
+      padding: 15px 30px 30px;
+      @include box-shadow;
 
-      .mag-article-content-container {
-        background: $white;
-        padding: 15px 30px 30px;
-        @include box-shadow;
+      .mag-article-date {
+        color: $gray-orange;
+        font-size: em(18px);
+        font-weight: 100;
+      }
 
-        .mag-article-date {
-          color: $gray-orange;
-          font-size: em(18px);
-          font-weight: 100;
-        }
+      .mag-article-title {
+        font-size: em(26px);
+        line-height: 1.3em;
+        font-weight: 600;
 
-        .mag-article-title {
-          font-size: em(26px);
-          line-height: 1.3em;
-          font-weight: 600;
+        &[class*="mag-article-color-"] a {
+          color: $primary-color;
+          text-decoration: underline;
+          text-decoration-skip: ink;
 
-          &[class*="mag-article-color-"] a {
-            color: $primary-color;
-            text-decoration: underline;
-            text-decoration-skip: ink;
-
-            &:focus,
-            &:hover {
-              text-decoration-color: $primary-color;
-            }
-          }
-
-          &.mag-article-color-orange a {
-            text-decoration-color: $orange;
-          }
-
-          &.mag-article-color-turquoise a {
-            text-decoration-color: $turquoise;
-          }
-
-          &.mag-article-color-pink a {
-            text-decoration-color: $pink;
+          &:focus,
+          &:hover {
+            text-decoration-color: $primary-color;
           }
         }
 
-        .mag-article-topics {
-          font-size: em(16px);
-          line-height: 1.2em;
-          margin: 30px 0;
+        &.mag-article-color-orange a {
+          text-decoration-color: $orange;
         }
+
+        &.mag-article-color-turquoise a {
+          text-decoration-color: $turquoise;
+        }
+
+        &.mag-article-color-pink a {
+          text-decoration-color: $pink;
+        }
+      }
+
+      .mag-article-topics {
+        font-size: em(16px);
+        line-height: 1.2em;
+        margin: 30px 0;
       }
     }
   }
