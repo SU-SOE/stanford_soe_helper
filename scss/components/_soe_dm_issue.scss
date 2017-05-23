@@ -17,6 +17,9 @@
 
   .views-row {
     margin-bottom: 100px;
+    @include breakpoint(medium) {
+      margin-bottom: 50px;
+    }
 
     &:nth-child(3n+1) {
       .mag-issue-col-1 {
