@@ -125,6 +125,11 @@
   }
 
   .mag-feat-article-container {
+    margin-bottom: 80px;
+    @include breakpoint(medium) {
+      margin-bottom: 40px;
+    }
+
     .mag-article-content-container {
       background: $white;
       padding: 50px 30px 30px;
@@ -189,6 +194,15 @@
 
   .mag-article-container {
     margin-bottom: 80px;
+    @include breakpoint(medium) {
+      margin-bottom: 40px;
+    }
+
+    .mag-article-img img {
+      @include breakpoint(medium) {
+        width: 100%;
+      }
+    }
 
     .mag-article-content-container {
       background: $white;
