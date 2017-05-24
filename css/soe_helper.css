@@ -259,15 +259,15 @@ a.external-link:after {
 /* line 39, ../scss/components/_soe_wysiwyg.scss */
 p.columns {
   font-family: "Roboto Slab", serif;
-  font-size: 1.45455em;
-  line-height: 54px;
+  font-size: 1.27273em;
+  line-height: 1.8em;
   font-weight: bold;
   -webkit-column-count: 2;
   -moz-column-count: 2;
   column-count: 2;
-  -webkit-column-gap: 100px;
-  -moz-column-gap: 100px;
-  column-gap: 100px; }
+  -webkit-column-gap: 30px;
+  -moz-column-gap: 30px;
+  column-gap: 30px; }
   @media (max-width: 767px) {
     /* line 39, ../scss/components/_soe_wysiwyg.scss */
     p.columns {
@@ -283,11 +283,14 @@ p.related-link {
   -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2); }
   /* line 56, ../scss/components/_soe_wysiwyg.scss */
+  p.related-link a {
+    text-decoration: none; }
+  /* line 60, ../scss/components/_soe_wysiwyg.scss */
   p.related-link:before {
     content: "Related:";
     padding-right: 3px; }
 
-/* line 63, ../scss/components/_soe_wysiwyg.scss */
+/* line 67, ../scss/components/_soe_wysiwyg.scss */
 p.summary.drop-cap:first-letter {
   font-size: 2.65625em;
   font-weight: 300;
