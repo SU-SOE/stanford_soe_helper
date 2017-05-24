@@ -17,20 +17,108 @@
 
   .views-row {
     margin-bottom: 100px;
+    @include breakpoint(medium) {
+      margin-bottom: 50px;
+    }
 
-    // &:nth-child(3n+1) .mag-feat-article-container {
-    //   float: left;
-    //   margin-right: 5%;
-    // }
-    //
-    // &:nth-child(3n+2) .mag-feat-article-container {
-    //   margin: 0 auto;
-    // }
-    //
-    // &:nth-child(3n+3) .mag-feat-article-container {
-    //   float: right;
-    //   margin-left: 5%;
-    // }
+    &:nth-child(3n+1) {
+      .mag-issue-col-1 {
+        float: right;
+        width: 22.5%;
+        @include breakpoint(medium) {
+          float: none;
+          width: 100%;
+        }
+      }
+
+      .mag-issue-col-2 {
+        float: left;
+        width: 45%;
+        margin-right: 5%;
+        @include breakpoint(medium) {
+          float: none;
+          width: 100%;
+          margin-right: 0;
+        }
+      }
+
+      .mag-issue-col-3 {
+        float: right;
+        width: 22.5%;
+        margin-right: 5%;
+        @include breakpoint(medium) {
+          float: none;
+          width: 100%;
+          margin-right: 0;
+        }
+      }
+    }
+
+    &:nth-child(3n+2) {
+      .mag-issue-col-1 {
+        float: left;
+        width: 22.5%;
+        margin-right: 5%;
+        @include breakpoint(medium) {
+          float: none;
+          width: 100%;
+          margin-right: 0;
+        }
+      }
+
+      .mag-issue-col-2 {
+        float: left;
+        width: 45%;
+        margin-right: 5%;
+        @include breakpoint(medium) {
+          float: none;
+          width: 100%;
+          margin-right: 0;
+        }
+      }
+
+      .mag-issue-col-3 {
+        float: left;
+        width: 22.5%;
+        @include breakpoint(medium) {
+          float: none;
+          width: 100%;
+        }
+      }
+    }
+
+    &:nth-child(3n+3) {
+      .mag-issue-col-1 {
+        float: left;
+        width: 22.5%;
+        @include breakpoint(medium) {
+          float: none;
+          width: 100%;
+        }
+      }
+
+      .mag-issue-col-2 {
+        float: right;
+        width: 45%;
+        margin-left: 5%;
+        @include breakpoint(medium) {
+          float: none;
+          width: 100%;
+          margin-left: 0;
+        }
+      }
+
+      .mag-issue-col-3 {
+        float: left;
+        width: 22.5%;
+        margin-left: 5%;
+        @include breakpoint(medium) {
+          float: none;
+          width: 100%;
+          margin-left: 0;
+        }
+      }
+    }
 
     h2 {
       font-size: em(56px);
@@ -40,25 +128,35 @@
   }
 
   .mag-feat-article-container {
-    width: 47.5%;
+    margin-bottom: 80px;
+    @include breakpoint(medium) {
+      margin-bottom: 40px;
+    }
 
     .mag-article-content-container {
       background: $white;
       padding: 50px 30px 30px;
+      @include breakpoint(medium) {
+        padding: 15px 30px 30px;
+      }
 
       .mag-article-date {
         color: $gray-orange;
         font-size: em(20px);
         font-weight: 100;
         margin-bottom: 10px;
+        @include breakpoint(medium) {
+          font-size: em(18px);
+        }
       }
 
       .mag-article-title {
         font-size: em(32px);
         line-height: 1.2em;
         font-weight: 600;
-        @media (max-width: 1199px) and (min-width: 979px) {
-          font-size: em(20px);
+        @include breakpoint(medium) {
+          font-size: em(26px);
+          line-height: 1.3em;
         }
 
         &[class*="mag-article-color-"] a {
@@ -89,94 +187,70 @@
         font-size: em(18px);
         line-height: 1.3em;
         margin: 30px 0;
+        @include breakpoint(medium) {
+          font-size: em(16px);
+          line-height: 1.2em;
+        }
       }
     }
   }
 
-  .views-row {
-    // &:nth-child(3n+1) .mag-article-container {
-    //   float: right;
-    //   margin-right: 5%;
-    //
-    //   &:nth-child(2),
-    //   &:nth-child(5) {
-    //     margin-right: 0;
-    //     clear: right;
-    //   }
-    // }
-    //
-    // &:nth-child(3n+2) .mag-article-container {
-    //   &:nth-child(2),
-    //   &:nth-child(5) {
-    //     float: left;
-    //   }
-    //
-    //   &:nth-child(3),
-    //   &:nth-child(6) {
-    //     float: right;
-    //   }
-    // }
-    //
-    // &:nth-child(3n+3) .mag-article-container {
-    //   float: left;
-    //   margin-left: 5%;
-    //
-    //   &:nth-child(2),
-    //   &:nth-child(5) {
-    //     margin-left: 0;
-    //     clear: left;
-    //   }
-    // }
+  .mag-article-container {
+    margin-bottom: 80px;
+    @include breakpoint(medium) {
+      margin-bottom: 40px;
+    }
 
-    .mag-article-container {
-      width: 21.25%;
-      margin-bottom: 80px;
+    .mag-article-img img {
+      @include breakpoint(medium) {
+        width: 100%;
+      }
+    }
 
-      .mag-article-content-container {
-        background: $white;
-        padding: 15px 30px 30px;
-        @include box-shadow;
+    .mag-article-content-container {
+      background: $white;
+      padding: 15px 30px 30px;
+      @include box-shadow;
 
-        .mag-article-date {
-          color: $gray-orange;
-          font-size: em(18px);
-          font-weight: 100;
-        }
+      .mag-article-date {
+        color: $gray-orange;
+        font-size: em(18px);
+        font-weight: 100;
+      }
 
-        .mag-article-title {
-          font-size: em(26px);
-          line-height: 1.3em;
-          font-weight: 600;
+      .mag-article-title {
+        font-size: em(26px);
+        line-height: 1.3em;
+        font-weight: 600;
 
-          &[class*="mag-article-color-"] a {
-            color: $primary-color;
-            text-decoration: underline;
-            text-decoration-skip: ink;
+        &[class*="mag-article-color-"] a {
+          color: $primary-color;
+          text-decoration: underline;
+          text-decoration-skip: ink;
 
-            &:focus,
-            &:hover {
-              text-decoration-color: $primary-color;
-            }
-          }
-
-          &.mag-article-color-orange a {
-            text-decoration-color: $orange;
-          }
-
-          &.mag-article-color-turquoise a {
-            text-decoration-color: $turquoise;
-          }
-
-          &.mag-article-color-pink a {
-            text-decoration-color: $pink;
+          &:focus,
+          &:hover {
+            text-decoration-color: $primary-color;
           }
         }
 
-        .mag-article-topics {
-          font-size: em(16px);
-          line-height: 1.2em;
-          margin: 30px 0;
+        &.mag-article-color-orange a {
+          text-decoration-color: $orange;
         }
+
+        &.mag-article-color-turquoise a {
+          text-decoration-color: $turquoise;
+        }
+
+        &.mag-article-color-pink a {
+          text-decoration-color: $pink;
+        }
+      }
+
+      .mag-article-topics {
+        font-size: em(16px);
+        line-height: 1.2em;
+        margin: 30px 0;
       }
     }
   }

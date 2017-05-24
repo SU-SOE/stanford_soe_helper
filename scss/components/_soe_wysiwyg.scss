@@ -38,11 +38,11 @@ a {
 
 p.columns {
   font-family: $roboto-slab;
-  font-size: em(32px);
-  line-height: 54px;
+  font-size: em(28px);
+  line-height: 1.8em;
   font-weight: bold;
   @include column-count (2);
-  @include column-gap (100px);
+  @include column-gap (30px);
   @include breakpoint(small) {
      @include column-count (1);
   }
@@ -53,9 +53,17 @@ p.related-link {
   padding: 26px 36px;
   @include box-shadow;
 
+  a {
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+
   &:before {
-    content: "Related:";
-    padding-right: 3px;
+    content: "Related \00a0 | \00a0";
   }
 }
 
