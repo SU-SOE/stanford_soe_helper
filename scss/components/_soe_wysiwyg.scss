@@ -55,11 +55,15 @@ p.related-link {
 
   a {
     text-decoration: none;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
   }
 
   &:before {
-    content: "Related:";
-    padding-right: 3px;
+    content: "Related \00a0 | \00a0";
   }
 }
 

@@ -285,12 +285,14 @@ p.related-link {
   /* line 56, ../scss/components/_soe_wysiwyg.scss */
   p.related-link a {
     text-decoration: none; }
-  /* line 60, ../scss/components/_soe_wysiwyg.scss */
+    /* line 59, ../scss/components/_soe_wysiwyg.scss */
+    p.related-link a:hover, p.related-link a:focus {
+      text-decoration: underline; }
+  /* line 65, ../scss/components/_soe_wysiwyg.scss */
   p.related-link:before {
-    content: "Related:";
-    padding-right: 3px; }
+    content: "Related \00a0 | \00a0"; }
 
-/* line 67, ../scss/components/_soe_wysiwyg.scss */
+/* line 71, ../scss/components/_soe_wysiwyg.scss */
 p.summary.drop-cap:first-letter {
   font-size: 2.65625em;
   font-weight: 300;
