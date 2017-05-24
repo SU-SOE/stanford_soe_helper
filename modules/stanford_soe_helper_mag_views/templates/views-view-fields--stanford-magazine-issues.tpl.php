@@ -25,10 +25,8 @@
  */
 
 
-
-
 $layout = '';
-if (isset ($row->field_field_s_mag_issue_layout[0]['rendered']['#markup'])) {
+if (isset($row->field_field_s_mag_issue_layout[0]['rendered']['#markup'])) {
   $layout = $row->field_field_s_mag_issue_layout[0]['rendered']['#markup'];
 }
 
@@ -82,8 +80,8 @@ switch ($layout) {
 
     break;
 
-  default: // Featured Center
-
+  // Featured Center.
+  default:
     print '<div class="mag-issue-col-1">';
     $vars = _stanford_mag_issue_get_art_2($row);
     print _stanford_mag_issue_print_art($vars);

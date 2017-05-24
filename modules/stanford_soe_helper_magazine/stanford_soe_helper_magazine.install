@@ -3,7 +3,7 @@
  * @file
  * stanford_soe_helper_magazine.install
  *
- * Install, enable, uninstall, and disable functions
+ * Install, enable, uninstall, and disable functions.
  */
 
 /**
@@ -26,9 +26,9 @@ function stanford_soe_helper_magazine_enable() {
   }
   _stanford_soe_helper_magazine_site_owner_perms();
   _stanford_soe_helper_magazine_editor_perms();
-  // Initialize settings
-  //$settings = stanford_magazine_settings();
-  //variable_set('stanford_magazine_settings', $settings);
+  // Initialize settings.
+  // $settings = stanford_magazine_settings();
+  // variable_set('stanford_magazine_settings', $settings);
 }
 
 /**
@@ -62,13 +62,13 @@ function stanford_soe_helper_magazine_uninstall() {
 function _stanford_soe_helper_magazine_add_color_field() {
   module_load_include('module', 'stanford_soe_helper_sitewide');
 
-  // Add accent color terms to the article
+  // Add accent color terms to the article.
   stanford_soe_helper_sitewide_add_tax_field(
     'field_s_mag_article_accent_color',
     'soe_accent_color',
     'stanford_magazine_article');
 
-  // Add accent color terms to the issue
+  // Add accent color terms to the issue.
   stanford_soe_helper_sitewide_add_tax_field(
     'field_s_mag_issue_accent_color',
     'soe_accent_color',
@@ -143,7 +143,6 @@ function _stanford_soe_helper_magazine_add_newsletter_signup_bean() {
 </div>
 EOD;
 
-
     $bean->field_s_postcard_body = array(
       'und' => array(
         '0' => array(
@@ -157,7 +156,6 @@ EOD;
   }
 }
 
-
 /**
  * Set site owner permissions
  *
@@ -168,7 +166,6 @@ function _stanford_soe_helper_magazine_site_owner_perms() {
 
   // Permissions for magazine articles.
   $site_owner_permissions = array(
-    // module key
     'stanford_magazine_article' => array(
       'create stanford_magazine_article content',
       'edit own stanford_magazine_article content',
@@ -185,7 +182,6 @@ function _stanford_soe_helper_magazine_site_owner_perms() {
 
   // Permissions for magazine issues.
   $site_owner_permissions = array(
-    // module key
     'stanford_magazine_issue' => array(
       'create stanford_magazine_issue content',
       'edit own stanford_magazine_issue content',
@@ -204,14 +200,12 @@ function _stanford_soe_helper_magazine_site_owner_perms() {
 /**
  * Set editor permissions
  *
- * @param none
  */
 function _stanford_soe_helper_magazine_editor_perms() {
   module_load_include('module', 'stanford_soe_helper_sitewide');
 
   // Permissions for magazine articles.
   $editor_permissions = array(
-    // module key
     'stanford_magazine_article' => array(
       'create stanford_magazine_article content',
       'edit own stanford_magazine_article content',
@@ -227,7 +221,6 @@ function _stanford_soe_helper_magazine_editor_perms() {
 
   // Permissions for magazine issues.
   $editor_permissions = array(
-    // module key
     'stanford_magazine_issue' => array(
       'create stanford_magazine_issue content',
       'edit own stanford_magazine_issue content',
@@ -241,5 +234,3 @@ function _stanford_soe_helper_magazine_editor_perms() {
     _stanford_soe_helper_sitewide_grant_permissions($editor->rid, $editor_permissions);
   }
 }
-
-
