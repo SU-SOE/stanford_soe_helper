@@ -100,9 +100,17 @@
       .view-content {
         display: flex;
         flex-wrap: wrap;
+        text-align: center;
 
         .views-row {
-          width: calc(100% * (1/4));
+          width: calc(100% * (1/4) - 2%);
+          margin-right: 2%;
+          @include breakpoint(small) {
+            width: calc(100% * (1/2) - 2%);
+          }
+          @include breakpoint(x-small) {
+            width: 100%;
+          }
 
           a {
             color: $white;
