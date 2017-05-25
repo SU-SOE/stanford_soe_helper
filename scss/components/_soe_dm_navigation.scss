@@ -13,10 +13,10 @@
     display: flex;
     justify-content: center;
     @include breakpoint(medium) {
-      flex-flow: wrap;
+      flex-wrap: wrap;
     }
     @include breakpoint(small) {
-      flex-flow: nowrap;
+      flex-wrap: nowrap;
     }
 
     .block-menu-block {
