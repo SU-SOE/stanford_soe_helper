@@ -1,6 +1,8 @@
 <?php
+
 /**
  * @file
+ * stanford_soe_helper_news.install
  */
 
 include_once 'stanford_soe_helper_news.module';
@@ -10,15 +12,15 @@ include_once 'stanford_soe_helper_news.module';
  */
 function stanford_soe_helper_news_install() {
 
-  // Select the contexts for SoE news
+  // Select the contexts for SoE news.
   $context_status = variable_get('context_status', array());
 
-  // Get the context for SoE
+  // Get the context for SoE.
   $context_status['all_pages_but_homepage_soe'] = FALSE;
   $context_status['stanford_news_extras'] = FALSE;
   $context_status['soe_news'] = FALSE;
 
-  // Don't get the jsa contexts
+  // Don't get the jsa contexts.
   $context_status['all_pages_but_homepage_jsa'] = TRUE;
   $context_status['news_pages'] = TRUE;
   $context_status['news'] = FALSE;

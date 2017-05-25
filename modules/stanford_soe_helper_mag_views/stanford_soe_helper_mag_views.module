@@ -87,8 +87,7 @@ function _stanford_mag_issue_get_art_2($row) {
     'nid' => '',
   );
 
-  if (isset($row->node_field_data_field_s_mag_issue_article_2_nid))
-  {
+  if (isset($row->node_field_data_field_s_mag_issue_article_2_nid)) {
     $vars['nid'] = $row->node_field_data_field_s_mag_issue_article_2_nid;
     $vars['topics'] = _stanford_mag_issue_get_topics($row->field_field_s_mag_article_topics_1);
     $vars['edit-link'] = _stanford_mag_issue_get_edit_link($row->node_field_data_field_s_mag_issue_article_2_nid);
@@ -169,7 +168,7 @@ function _stanford_mag_issue_get_art_4($row) {
     'nid' => '',
   );
   if (isset($row->node_field_data_field_s_mag_issue_article_4_nid)) {
-    $vars['nid'] =  $row->node_field_data_field_s_mag_issue_article_4_nid;
+    $vars['nid'] = $row->node_field_data_field_s_mag_issue_article_4_nid;
     $vars['nid'] = $row->node_field_data_field_s_mag_issue_article_4_nid;
     $vars['title'] = $row->node_field_data_field_s_mag_issue_article_4_title;
     $vars['topics'] = _stanford_mag_issue_get_topics($row->field_field_s_mag_article_topics_3);
@@ -187,7 +186,6 @@ function _stanford_mag_issue_get_art_4($row) {
   }
   return $vars;
 }
-
 
 /**
  * Get the fifth article ready to print.
@@ -211,7 +209,7 @@ function _stanford_mag_issue_get_art_5($row) {
   );
   if (isset($row->node_field_data_field_s_mag_issue_article_5_nid)) {
     $vars['title'] = $row->node_field_data_field_s_mag_issue_article_5_title;
-    $vars['topics'] =_stanford_mag_issue_get_topics($row->field_field_s_mag_article_topics_4);
+    $vars['topics'] = _stanford_mag_issue_get_topics($row->field_field_s_mag_article_topics_4);
     $vars['edit-link'] = _stanford_mag_issue_get_edit_link($row->node_field_data_field_s_mag_issue_article_4_nid);
     $vars['nid'] = $row->node_field_data_field_s_mag_issue_article_5_nid;
     if (isset($row->field_field_s_mag_article_image_4[0]['rendered'])) {
@@ -228,11 +226,11 @@ function _stanford_mag_issue_get_art_5($row) {
 }
 
 /**
- * Print the featured article
+ * Print the featured article.
  *
  * This adds markup for the featured article.
  *
- * @param $vars
+ * @param $vars array
  *   Array of ready-to-print items.
  *
  * @return string
@@ -248,7 +246,7 @@ function _stanford_mag_issue_print_feat_art($vars) {
     $output .= '  <div class ="mag-article-content-container">';
     $output .= '    <div class="mag-article-date">' . $vars['date'] . '</div>';
     $output .= '    <div class="mag-article-title mag-article-color-' . $vars['color'] . '">'
-      . l(t($vars['title']), "node/" . $vars['nid']) . '</div>';
+      . l($vars['title'], "node/" . $vars['nid']) . '</div>';
     $output .= '    <div class="mag-article-dek">' . $vars['dek'] . '</div>';
     $output .= '    <div class="mag-article-topics">' . $vars['topics'] . '</div>';
     $output .= $vars['edit-link'];
@@ -262,10 +260,10 @@ function _stanford_mag_issue_print_feat_art($vars) {
 /**
  * Print an article.
  *
- * This adds the markup for a non-featured article
+ * This adds the markup for a non-featured article.
  *
- * @param $vars
- *  Array of ready-to-print items.
+ * @param $vars array
+ *   Array of ready-to-print items.
  *
  * @return string
  *   String for printing the article.
@@ -280,7 +278,7 @@ function _stanford_mag_issue_print_art($vars) {
     $output .= '  <div class ="mag-article-content-container">';
     $output .= '    <div class="mag-article-date">' . $vars['date'] . '</div>';
     $output .= '    <div class="mag-article-title mag-article-color-' . $vars['color'] . '">'
-      . l(t($vars['title']), "node/" . $vars['nid']) . '</div>';
+      . l($vars['title'], "node/" . $vars['nid']) . '</div>';
     $output .= '    <div class="mag-article-topics">' . $vars['topics'] . '</div>';
     $output .= $vars['edit-link'];
     $output .= '  </div>';
@@ -293,7 +291,7 @@ function _stanford_mag_issue_print_art($vars) {
 /**
  * Get the topics ready to print.
  *
- * @param $topic_list
+ * @param $topic_list array
  *   List of topics
  *
  * @return string
@@ -315,7 +313,7 @@ function _stanford_mag_issue_get_topics($topic_list) {
 /**
  * Return the access privileges for the current user and this node.
  *
- * @param $nid
+ * @param $nid string
  *   Node ID.
  *
  * @return bool
@@ -339,14 +337,14 @@ function _stanford_mag_issue_have_access($nid) {
  *
  * If the current user has access to the node, return an edit link.
  *
- * @param $nid
+ * @param $nid string
  *   Node ID of the current node.
  *
  * @return string
  *   String with the node edit link.
  */
 function _stanford_mag_issue_get_edit_link($nid) {
-  $node_path = drupal_lookup_path('alias','node/'.$nid);
+  $node_path = drupal_lookup_path('alias', 'node/' . $nid);
   if (_stanford_mag_issue_have_access($nid)) {
     return '<div class="edit-link">' . l(t("Edit"), "node/" . $nid . '/edit', array("query" => array("destination" => $node_path))) . '</div>';
   }

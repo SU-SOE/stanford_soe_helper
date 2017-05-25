@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * stanford_soe_helper_magazine.install
@@ -26,19 +27,6 @@ function stanford_soe_helper_magazine_enable() {
   }
   _stanford_soe_helper_magazine_site_owner_perms();
   _stanford_soe_helper_magazine_editor_perms();
-  // Initialize settings.
-  // $settings = stanford_magazine_settings();
-  // variable_set('stanford_magazine_settings', $settings);
-}
-
-/**
- * Implements hook_disable().
- */
-function stanford_soe_helper_magazine_disable() {
-  /*
-   *magazine_cache_rebuild();
-   */
-  /* Your code here */
 }
 
 /**
@@ -51,13 +39,11 @@ function stanford_soe_helper_magazine_uninstall() {
 }
 
 /**
- * Add the accent color field to Stanford Magazine Issue
+ * Add the accent color field to Stanford Magazine Issue.
  *
  * If the soe_accent_color vocabulary exists, then add the
  * field to the Stanford Magazine Issue. We're doing it this way because
  * the soe_accent_color vocabulary is defined in a separate module.
- *
- * @param none
  */
 function _stanford_soe_helper_magazine_add_color_field() {
   module_load_include('module', 'stanford_soe_helper_sitewide');
@@ -75,10 +61,8 @@ function _stanford_soe_helper_magazine_add_color_field() {
     'stanford_magazine_issue');
 }
 
-
 /**
  * Create the Explore All Issues bean.
- *
  */
 function _stanford_soe_helper_magazine_add_explore_issues_bean() {
   $bean_name = 'stanford-soe-mag-explore-issues';
@@ -90,7 +74,7 @@ function _stanford_soe_helper_magazine_add_explore_issues_bean() {
     $bean->delta = $bean_name;
     $bean->view_mode = 'default';
 
-    $link=url('magazine/issue');
+    $link = url('magazine/issue');
 
     $body = "<div class='mag-explore-issues'><a href=$link>Explore All Issues</a></div>";
 
@@ -99,7 +83,9 @@ function _stanford_soe_helper_magazine_add_explore_issues_bean() {
         '0' => array(
           'value' => $body,
           'format' => 'full_html',
-        )));
+        ),
+      ),
+    );
 
     $bean->save();
     watchdog('stanford_soe_helper_magazine', 'Created bean %bean_name',
@@ -109,7 +95,6 @@ function _stanford_soe_helper_magazine_add_explore_issues_bean() {
 
 /**
  * Create the newsletter sign-up bean.
- *
  */
 function _stanford_soe_helper_magazine_add_newsletter_signup_bean() {
   $bean_name = 'stanford-soe-mag-news-signup';
@@ -148,24 +133,25 @@ EOD;
         '0' => array(
           'value' => $body,
           'format' => 'full_html',
-        )));
+        ),
+      ),
+    );
 
     $bean->save();
     watchdog('stanford_soe_helper_magazine', 'Created bean %bean_name',
-      array('%bean_name' => $bean_name));
+      array('%bean_name' => $bean_name)
+    );
   }
 }
 
 /**
- * Set site owner permissions
- *
- * @param none
+ * Set site owner permissions.
  */
 function _stanford_soe_helper_magazine_site_owner_perms() {
   module_load_include('module', 'stanford_soe_helper_sitewide');
 
   // Permissions for magazine articles.
-  $site_owner_permissions = array(
+  $site_owner_perms = array(
     'stanford_magazine_article' => array(
       'create stanford_magazine_article content',
       'edit own stanford_magazine_article content',
@@ -177,11 +163,11 @@ function _stanford_soe_helper_magazine_site_owner_perms() {
 
   $site_owner = user_role_load_by_name('site owner');
   if ($site_owner->rid) {
-    _stanford_soe_helper_sitewide_grant_permissions($site_owner->rid, $site_owner_permissions);
+    _stanford_soe_helper_sitewide_grant_permissions($site_owner->rid, $site_owner_perms);
   }
 
   // Permissions for magazine issues.
-  $site_owner_permissions = array(
+  $site_owner_perms = array(
     'stanford_magazine_issue' => array(
       'create stanford_magazine_issue content',
       'edit own stanford_magazine_issue content',
@@ -193,19 +179,18 @@ function _stanford_soe_helper_magazine_site_owner_perms() {
 
   $site_owner = user_role_load_by_name('site owner');
   if ($site_owner->rid) {
-    _stanford_soe_helper_sitewide_grant_permissions($site_owner->rid, $site_owner_permissions);
+    _stanford_soe_helper_sitewide_grant_permissions($site_owner->rid, $site_owner_perms);
   }
 }
 
 /**
- * Set editor permissions
- *
+ * Set editor permissions.
  */
 function _stanford_soe_helper_magazine_editor_perms() {
   module_load_include('module', 'stanford_soe_helper_sitewide');
 
   // Permissions for magazine articles.
-  $editor_permissions = array(
+  $editor_perms = array(
     'stanford_magazine_article' => array(
       'create stanford_magazine_article content',
       'edit own stanford_magazine_article content',
@@ -216,11 +201,11 @@ function _stanford_soe_helper_magazine_editor_perms() {
 
   $editor = user_role_load_by_name('editor');
   if ($editor->rid) {
-    _stanford_soe_helper_sitewide_grant_permissions($editor->rid, $editor_permissions);
+    _stanford_soe_helper_sitewide_grant_permissions($editor->rid, $editor_perms);
   }
 
   // Permissions for magazine issues.
-  $editor_permissions = array(
+  $editor_perms = array(
     'stanford_magazine_issue' => array(
       'create stanford_magazine_issue content',
       'edit own stanford_magazine_issue content',
@@ -231,6 +216,6 @@ function _stanford_soe_helper_magazine_editor_perms() {
 
   $editor = user_role_load_by_name('editor');
   if ($editor->rid) {
-    _stanford_soe_helper_sitewide_grant_permissions($editor->rid, $editor_permissions);
+    _stanford_soe_helper_sitewide_grant_permissions($editor->rid, $editor_perms);
   }
 }

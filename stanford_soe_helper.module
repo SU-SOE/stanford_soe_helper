@@ -47,12 +47,12 @@ user/*/edit";
   $css_rules['rule_type'] = CSS_INJECTOR_PAGES_NOTLISTED;
 
   $pass = _css_injector_evaluate_rule($css_rules);
-  if ($pass) {
+  if ($pass && (!path_is_admin(current_path()))) {
     $variables['page']['content']['#attached']['css'] = array(
       $file_path => array(
         'group' => CSS_THEME,
         'weight' => $weight,
-      )
+      ),
     );
   }
 }
@@ -75,7 +75,7 @@ function stanford_soe_helper_menu() {
 }
 
 /**
- * Verify that we have a valid Pingdom token
+ * Verify that we have a valid Pingdom token.
  *
  * @return bool
  *   Returns true if the token validates
@@ -230,7 +230,7 @@ function stanford_soe_helper_rr() {
 /**
  * Test to see if a bean exists.
  *
- * @return bean ID
+ * @return string
  *   If the bean exists, return the bean ID (BID).
  */
 function _stanford_soe_helper_get_bean($delta) {
@@ -242,10 +242,9 @@ function _stanford_soe_helper_get_bean($delta) {
 }
 
 /**
- * Delete the given bean
+ * Delete the given bean.
  *
  * If it exists, delete the bean.
- *
  */
 function _stanford_soe_helper_delete_bean($delta) {
   $bid = _stanford_soe_helper_get_bean($delta);

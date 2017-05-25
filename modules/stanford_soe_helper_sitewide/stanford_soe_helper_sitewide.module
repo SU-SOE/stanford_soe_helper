@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * Code for the Stanford SoE Helper Sitewide feature.
@@ -19,15 +20,17 @@ function stanford_soe_helper_sitewide_block_info() {
 }
 
 /**
- * Default settings wrapper for variable_get
- * @return [type] [description]
+ * Default settings wrapper for variable_get.
+ *
+ * @return array
+ *   Return the settings for this module.
  */
 function stanford_soe_helper_sitewide_get_settings() {
   $default_settings = array(
     'intranet_link_title' => t('Intranet'),
     'intranet_link_url' => 'https://insidesoe.stanford.edu/',
   );
-  $settings = variable_get('stanford_soe_helper_sitewide_settings', $default_settings );
+  $settings = variable_get('stanford_soe_helper_sitewide_settings', $default_settings);
 
   return $settings;
 }
@@ -38,8 +41,8 @@ function stanford_soe_helper_sitewide_get_settings() {
 function stanford_soe_helper_sitewide_block_view($delta = '') {
   $block = array();
 
-  switch($delta) {
-    case 'stanford_soe_intranet_link' :
+  switch ($delta) {
+    case 'stanford_soe_intranet_link':
       $block['content'] = soe_helper_sitewide_link_block_view();
       break;
   }
@@ -68,10 +71,8 @@ function soe_helper_sitewide_link_block_view() {
  *
  * @param string $field_name
  *   The new field name to be added to the content type.
- *
  * @param string $tax_name
  *   Taxonomy associated with the new field.
- *
  * @param string $bundle
  *   Content type getting the new field.
  */
@@ -82,7 +83,9 @@ function stanford_soe_helper_sitewide_add_tax_field($field_name, $tax_name, $bun
 
     // Make sure the field doesn't already exist.
     if (field_info_field($field_name)) {
-      watchdog('stanford_soe_helper_sitewide', t('!field_name already exists.', array('!field_name' => $field_name)));
+      watchdog('stanford_soe_helper_sitewide',
+        '!field_name already exists.',
+        array('!field_name' => $field_name));
     }
     else {
       // Create the field.
@@ -113,7 +116,6 @@ function stanford_soe_helper_sitewide_add_tax_field($field_name, $tax_name, $bun
       field_create_field($field_base);
 
       // Create the instance.
-
       $field_instance = array(
         'bundle' => $bundle,
         'default_value' => NULL,
@@ -158,24 +160,30 @@ function stanford_soe_helper_sitewide_add_tax_field($field_name, $tax_name, $bun
 
       );
       field_create_instance($field_instance);
-      watchdog('stanford_soe_helper_sitewide', t('!field_name was added successfully.', array('!field_name' => $field_name)));
+      watchdog('stanford_soe_helper_sitewide',
+        '!field_name was added successfully.',
+        array('!field_name' => $field_name));
     }
   }
 }
 
 /**
- * Custom user_role_grant_permissions function
- * does the same thing as user_role_grant_permissions
- * but it can run at install time
+ * Custom user_role_grant_permissions function.
  *
- * This is copied from stanford_bean_types_permissions
+ * Does the same thing as user_role_grant_permissions
+ * but it can run at install time.
+ *
+ * This is copied from stanford_bean_types_permissions.
  *
  * @see user_role_grant_permissions
+ *
  * @param int $rid
+ *   role id
  * @param array $permissions
+ *   permissions
  */
 function _stanford_soe_helper_sitewide_grant_permissions($rid, array $permissions = array()) {
-  // this line doesn't work on install / enable hooks
+  // This line doesn't work on install / enable hooks
   // $modules = user_permission_get_modules();
   // Grant new permissions for the role.
   if (lock_acquire($rid . '_stanford_soe_helper_sitewide_grant_permissions', 600.0)) {

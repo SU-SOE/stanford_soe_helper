@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * Code for the Stanford SoE Helper News feature.
@@ -19,15 +20,17 @@ function stanford_soe_helper_news_block_info() {
 }
 
 /**
- * Default settings wrapper for variable_get
- * @return [type] [description]
+ * Default settings wrapper for variable_get.
+ *
+ * @return array
+ *   Returns the SoE Helper News settings.
  */
 function stanford_soe_helper_news_get_settings() {
   $default_settings = array(
     'news_link_title' => t('See more news'),
     'news_link_url' => 'news/recent-news',
   );
-  $settings = variable_get('stanford_soe_helper_news_settings', $default_settings );
+  $settings = variable_get('stanford_soe_helper_news_settings', $default_settings);
 
   return $settings;
 }
@@ -38,7 +41,7 @@ function stanford_soe_helper_news_get_settings() {
 function stanford_soe_helper_news_block_view($delta = '') {
   $block = array();
 
-  switch($delta) {
+  switch ($delta) {
     case 'stanford_soe_news_link':
       $block['content'] = stanford_soe_news_link_block_view();
       break;
@@ -48,7 +51,10 @@ function stanford_soe_helper_news_block_view($delta = '') {
 }
 
 /**
- * Callback for news link block
+ * Callback for news link block.
+ *
+ * @return array
+ *   Returns the news link block
  */
 function stanford_soe_news_link_block_view() {
   $settings = stanford_soe_helper_news_get_settings();
@@ -63,5 +69,3 @@ function stanford_soe_news_link_block_view() {
   );
   return $block;
 }
-
-

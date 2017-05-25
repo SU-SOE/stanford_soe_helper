@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * Code for the Stanford SoE Magazine feature.
@@ -9,7 +10,6 @@ include_once 'stanford_soe_helper_magazine.features.inc';
 /**
  * Implements hook_menu_block_blocks().
  */
-
 function stanford_soe_helper_magazine_menu_block_blocks() {
   // The array key is the block delta used by menu block.
   return array(
@@ -26,5 +26,3 @@ function stanford_soe_helper_magazine_menu_block_blocks() {
     ),
   );
 }
-
-
