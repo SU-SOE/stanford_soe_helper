@@ -13,8 +13,10 @@
     display: flex;
     justify-content: center;
     @include breakpoint(medium) {
-      justify-content: normal;
       flex-flow: wrap;
+    }
+    @include breakpoint(small) {
+      flex-flow: nowrap;
     }
 
     .block-menu-block {
@@ -24,6 +26,9 @@
       padding-top: 20px;
       @include breakpoint(medium) {
         width: 100%;
+      }
+      @include breakpoint(small) {
+        width: auto;
       }
 
       h2 {

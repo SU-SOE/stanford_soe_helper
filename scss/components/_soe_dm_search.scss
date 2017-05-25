@@ -11,6 +11,10 @@
       justify-content: center;
       width: 100%;
     }
+    @include breakpoint(small) {
+      display: block;
+      width: auto;
+    }
 
     h2,
     input.btn-search {
@@ -37,6 +41,9 @@
       width: 175px;
       @include breakpoint(medium) {
         width: 115px;
+      }
+      @include breakpoint(small) {
+        width: 175px;
       }
     }
 
