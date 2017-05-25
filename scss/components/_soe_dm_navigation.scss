@@ -56,6 +56,12 @@
             margin-left: 0;
           }
 
+          &:nth-child(2) {
+            @include breakpoint(small) {
+              display: none;
+            }
+          }
+
           &.first.leaf a {
             &:after {
               content: url("../img/soe_chevron_down_black.png");
