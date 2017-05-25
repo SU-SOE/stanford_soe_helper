@@ -19,14 +19,12 @@ function stanford_soe_helper_help($path, $arg) {
 }
 
 /**
- * Implements hook_init().
+ * Implements template_preprocess_page().
  */
-function stanford_soe_helper_init() {
+function stanford_soe_helper_preprocess_page(&$variables) {
 
-  // Add css files
-  $file_paths = array(
-    drupal_get_path('module', 'stanford_soe_helper') . "/css/soe_helper.css"
-  );
+  $file_path = drupal_get_path('module', 'stanford_soe_helper')
+    . "/css/soe_helper.css";
 
   // CSS Injector file weights start at 200.
   // See http://www.rit.edu/drupal/api/drupal/sites!all!modules!css_injector!css_injector.module/7.43.
@@ -38,6 +36,7 @@ batch*
 block/*/edit*
 block/add*
 block/*/delete
+js/admin_menu/cache/*
 node/*/edit
 node/add*
 node/*/delete
@@ -49,17 +48,12 @@ user/*/edit";
 
   $pass = _css_injector_evaluate_rule($css_rules);
   if ($pass) {
-    foreach ($file_paths as $file_path) {
-
-      drupal_add_css($file_path, array(
-        'type' => 'file',
+    $variables['page']['content']['#attached']['css'] = array(
+      $file_path => array(
         'group' => CSS_THEME,
-        'media' => "all",
-        'preprocess' => TRUE,
-        'weight' => $weight
-      ));
-      $weight = $weight++;
-    }
+        'weight' => $weight,
+      )
+    );
   }
 }
 
@@ -80,11 +74,18 @@ function stanford_soe_helper_menu() {
   return $items;
 }
 
+/**
+ * Verify that we have a valid Pingdom token
+ *
+ * @return bool
+ *   Returns true if the token validates
+ */
 function verify_pingdom() {
   $stanford_soe_helper_pingdom_token = variable_get('stanford_soe_helper_pingdom_token');
   if (isset($_GET['token']) && $_GET['token'] == $stanford_soe_helper_pingdom_token) {
     return TRUE;
-  } else {
+  }
+  else {
     return FALSE;
   }
 }
@@ -116,7 +117,7 @@ function stanford_soe_helper_form_alter(
   $form_id) {
 
   // Handle deprecation of image credits.
-  switch($form_id) {
+  switch ($form_id) {
     case "stanford_page_node_form":
     case "bean_form":
     case "stanford_landing_page_node_form":
@@ -155,56 +156,56 @@ function stanford_soe_helper_form_stanford_search_api_search_block_form_alter(
  */
 function _stanford_soe_helper_deprecate_image_credits(&$form, $form_id) {
 
-    // Don't display the credits!
+  // Don't display the credits!
+  $form['field_s_image_info'][LANGUAGE_NONE]['0']['field_s_image_credits']['#access'] =
+    FALSE;
+
+  // Well, okay, if there *is* text in the credits field,
+  // then let's display the credits field.
+  if (isset($form['field_s_image_info'][LANGUAGE_NONE]['0']['field_s_image_credits'][LANGUAGE_NONE]['0']['value']['#default_value'])) {
     $form['field_s_image_info'][LANGUAGE_NONE]['0']['field_s_image_credits']['#access'] =
-      FALSE;
+      TRUE;
+  }
 
-    // Well, okay, if there *is* text in the credits field,
-    // then let's display the credits field.
-    if (isset($form['field_s_image_info'][LANGUAGE_NONE]['0']['field_s_image_credits'][LANGUAGE_NONE]['0']['value']['#default_value'])) {
-      $form['field_s_image_info'][LANGUAGE_NONE]['0']['field_s_image_credits']['#access'] =
-        TRUE;
-    }
+  // Update caption title.
+  // Not sure which fields to target, so target all the things!
+  $caption_title = t("Caption and Credits");
+  $form['field_s_image_info'][LANGUAGE_NONE]['0']['field_s_image_caption'][LANGUAGE_NONE]['#title'] =
+    $caption_title;
+  $form['field_s_image_info'][LANGUAGE_NONE]['0']['field_s_image_caption'][LANGUAGE_NONE]['0']['#title'] =
+    $caption_title;
+  $form['field_s_image_info'][LANGUAGE_NONE]['0']['field_s_image_caption'][LANGUAGE_NONE]['0']['value']['#title'] =
+    $caption_title;
 
-    // Update caption title.
-    // Not sure which fields to target, so target all the things!
-    $caption_title = t("Caption and Credits");
-    $form['field_s_image_info'][LANGUAGE_NONE]['0']['field_s_image_caption'][LANGUAGE_NONE]['#title'] =
-      $caption_title;
-    $form['field_s_image_info'][LANGUAGE_NONE]['0']['field_s_image_caption'][LANGUAGE_NONE]['0']['#title'] =
-      $caption_title;
-    $form['field_s_image_info'][LANGUAGE_NONE]['0']['field_s_image_caption'][LANGUAGE_NONE]['0']['value']['#title'] =
-      $caption_title;
+  // Caption help text.
+  $caption_text = t('Use this field to display <strong>both</strong> the image caption and credits for the photographer or organization. Enter the caption, a pipe "|", and the credits.');
+  $form['field_s_image_info'][LANGUAGE_NONE]['0']['field_s_image_caption'][LANGUAGE_NONE]['#description'] =
+    $caption_text;
+  $form['field_s_image_info'][LANGUAGE_NONE]['0']['field_s_image_caption'][LANGUAGE_NONE]['0']['#description'] =
+    $caption_text;
+  $form['field_s_image_info'][LANGUAGE_NONE]['0']['field_s_image_credits'][LANGUAGE_NONE]['0']['value']['#description'] =
+    $caption_text;
 
-    // Caption help text.
-    $caption_text = t('Use this field to display <strong>both</strong> the image caption and credits for the photographer or organization. Enter the caption, a pipe "|", and the credits.');
-    $form['field_s_image_info'][LANGUAGE_NONE]['0']['field_s_image_caption'][LANGUAGE_NONE]['#description'] =
-      $caption_text;
-    $form['field_s_image_info'][LANGUAGE_NONE]['0']['field_s_image_caption'][LANGUAGE_NONE]['0']['#description'] =
-      $caption_text;
-    $form['field_s_image_info'][LANGUAGE_NONE]['0']['field_s_image_credits'][LANGUAGE_NONE]['0']['value']['#description'] =
-      $caption_text;
-
-    // Credits title.
-    $credits_title =
-      t("Credits ** Please use the @caption_title field ** see @caption_title field help text below.",
-        array('@caption_title' => $caption_title));
-    $form['field_s_image_info'][LANGUAGE_NONE]['0']['field_s_image_credits'][LANGUAGE_NONE]['#title'] =
-      $credits_title;
-    $form['field_s_image_info'][LANGUAGE_NONE]['0']['field_s_image_credits'][LANGUAGE_NONE]['0']['#title'] =
-      $credits_title;
-    $form['field_s_image_info'][LANGUAGE_NONE]['0']['field_s_image_credits'][LANGUAGE_NONE]['0']['value']['#title'] =
-      $credits_title;
-
-    // Credits help text.
-    $credits_text = t("This field is no longer supported. Please move the text from this field into the @caption_title field.",
+  // Credits title.
+  $credits_title =
+    t("Credits ** Please use the @caption_title field ** see @caption_title field help text below.",
       array('@caption_title' => $caption_title));
-    $form['field_s_image_info'][LANGUAGE_NONE]['0']['field_s_image_credits'][LANGUAGE_NONE]['#description'] =
-      $credits_text;
-    $form['field_s_image_info'][LANGUAGE_NONE]['0']['field_s_image_credits'][LANGUAGE_NONE]['0']['#description'] =
-      $credits_text;
-    $form['field_s_image_info'][LANGUAGE_NONE]['0']['field_s_image_credits'][LANGUAGE_NONE]['0']['value']['#description'] =
-      $credits_text;
+  $form['field_s_image_info'][LANGUAGE_NONE]['0']['field_s_image_credits'][LANGUAGE_NONE]['#title'] =
+    $credits_title;
+  $form['field_s_image_info'][LANGUAGE_NONE]['0']['field_s_image_credits'][LANGUAGE_NONE]['0']['#title'] =
+    $credits_title;
+  $form['field_s_image_info'][LANGUAGE_NONE]['0']['field_s_image_credits'][LANGUAGE_NONE]['0']['value']['#title'] =
+    $credits_title;
+
+  // Credits help text.
+  $credits_text = t("This field is no longer supported. Please move the text from this field into the @caption_title field.",
+    array('@caption_title' => $caption_title));
+  $form['field_s_image_info'][LANGUAGE_NONE]['0']['field_s_image_credits'][LANGUAGE_NONE]['#description'] =
+    $credits_text;
+  $form['field_s_image_info'][LANGUAGE_NONE]['0']['field_s_image_credits'][LANGUAGE_NONE]['0']['#description'] =
+    $credits_text;
+  $form['field_s_image_info'][LANGUAGE_NONE]['0']['field_s_image_credits'][LANGUAGE_NONE]['0']['value']['#description'] =
+    $credits_text;
 }
 
 /**
@@ -226,7 +227,6 @@ function stanford_soe_helper_rr() {
   return '';
 }
 
-
 /**
  * Test to see if a bean exists.
  *
@@ -234,19 +234,18 @@ function stanford_soe_helper_rr() {
  *   If the bean exists, return the bean ID (BID).
  */
 function _stanford_soe_helper_get_bean($delta) {
-  $q = db_select('bean', 'b');
-  $q->addField('b', 'bid');
-  $q->condition('delta', $delta, '=');
-  $r = $q->execute()->fetchField();
-  return $r;
+  $query = db_select('bean', 'b');
+  $query->addField('b', 'bid');
+  $query->condition('delta', $delta, '=');
+  $result = $query->execute()->fetchField();
+  return $result;
 }
+
 /**
  * Delete the given bean
  *
  * If it exists, delete the bean.
  *
- * @return bean ID
- *   If the bean exists, return the bean ID (BID).
  */
 function _stanford_soe_helper_delete_bean($delta) {
   $bid = _stanford_soe_helper_get_bean($delta);
@@ -255,4 +254,3 @@ function _stanford_soe_helper_delete_bean($delta) {
     bean_delete($bean);
   }
 }
-
