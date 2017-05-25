@@ -286,7 +286,7 @@ p.related-link {
   p.related-link a {
     text-decoration: none; }
     /* line 59, ../scss/components/_soe_wysiwyg.scss */
-    p.related-link a:hover, p.related-link a:focus {
+    p.related-link a:focus, p.related-link a:hover {
       text-decoration: underline; }
   /* line 65, ../scss/components/_soe_wysiwyg.scss */
   p.related-link:before {
@@ -298,6 +298,10 @@ p.summary.drop-cap:first-letter {
   font-weight: 300;
   float: left;
   padding: 23px 10px 0 0; }
+
+/* line 79, ../scss/components/_soe_wysiwyg.scss */
+.main table {
+  width: 100%; }
 
 /* line 7, ../scss/components/_soe_brand_bar.scss */
 #global-header {

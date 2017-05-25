@@ -56,8 +56,8 @@ p.related-link {
   a {
     text-decoration: none;
 
-    &:hover,
-    &:focus {
+    &:focus,
+    &:hover {
       text-decoration: underline;
     }
   }
@@ -74,4 +74,8 @@ p.summary.drop-cap {
     float: left;
     padding: 23px 10px 0 0;
   }
+}
+
+.main table {
+  width: 100%;
 }
