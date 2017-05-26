@@ -174,13 +174,12 @@ function stanford_soe_helper_sitewide_add_tax_field($field_name, $tax_name, $bun
  * but it can run at install time.
  *
  * This is copied from stanford_bean_types_permissions.
- *
- * @see user_role_grant_permissions
+ * See also: user_role_grant_permissions.
  *
  * @param int $rid
- *   role id
+ *   Role id.
  * @param array $permissions
- *   permissions
+ *   Permissions to add.
  */
 function _stanford_soe_helper_sitewide_grant_permissions($rid, array $permissions = array()) {
   // This line doesn't work on install / enable hooks

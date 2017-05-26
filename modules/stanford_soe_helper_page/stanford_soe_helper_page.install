@@ -1,9 +1,8 @@
 <?php
+
 /**
  * @file
- * stanford_soe_helper_page.install
- *
- * Install, enable, uninstall, and disable functions
+ * Install, enable, uninstall, and disable functions.
  */
 
 /**
@@ -16,26 +15,6 @@ function stanford_soe_helper_page_install() {
   if ($schema_version < 7101) {
     drupal_set_installed_schema_version('stanford_soe_helper_page', 7101);
   }
-}
-
-/**
- * Implements hook_enable().
- */
-function stanford_soe_helper_page_enable() {
-
-  // Initialize settings
-  //$settings = stanford_page_settings();
-  //variable_set('stanford_page_settings', $settings);
-}
-
-/**
- * Implements hook_disable().
- */
-function stanford_soe_helper_page_disable() {
-  /*
-   *page_cache_rebuild();
-   */
-  /* Your code here */
 }
 
 /**
@@ -57,8 +36,6 @@ function stanford_soe_helper_page_update_7101() {
  * If the soe_accent_color vocabulary exists, then add the
  * field to the Stanford Page. We're doing it this way because
  * the soe_accent_color vocabulary is defined in a separate module.
- *
- * @param none
  */
 function _stanford_soe_helper_page_add_color_field() {
 
@@ -68,5 +45,3 @@ function _stanford_soe_helper_page_add_color_field() {
     'soe_accent_color',
     'stanford_page');
 }
-
-
