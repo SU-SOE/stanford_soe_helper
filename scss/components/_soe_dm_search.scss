@@ -6,6 +6,16 @@
 
 #digital-magazine-menu {
   .block-stanford-search-api {
+    @include breakpoint(medium) {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+    @include breakpoint(small) {
+      display: block;
+      width: auto;
+    }
+
     h2,
     input.btn-search {
       display: none;
@@ -29,6 +39,12 @@
 
     .input-medium {
       width: 175px;
+      @include breakpoint(medium) {
+        width: 115px;
+      }
+      @include breakpoint(small) {
+        width: 175px;
+      }
     }
 
     input:-ms-input-placeholder {

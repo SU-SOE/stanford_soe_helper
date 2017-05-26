@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+//
+// DIGITAL MAGAZINE ARTICLE
+// FOR NODE DISPLAY
+//
+
+.node-type-stanford-magazine-article {
+  .group-s-mag-article-date-byline {
+    display: inline-flex;
+    flex-wrap: wrap;
+
+    .field-name-field-s-mag-article-date {
+      .field-item {
+        &:after {
+          content: "\00a0 \00a0 |\00a0 \00a0 ";
+        }
+      }
+    }
+  }
+}

@@ -12,12 +12,24 @@
   .region-digital-magazine-menu {
     display: flex;
     justify-content: center;
+    @include breakpoint(medium) {
+      flex-wrap: wrap;
+    }
+    @include breakpoint(small) {
+      flex-wrap: nowrap;
+    }
 
     .block-menu-block {
       display: flex;
       align-items: center;
       justify-content: center;
       padding-top: 20px;
+      @include breakpoint(medium) {
+        width: 100%;
+      }
+      @include breakpoint(small) {
+        width: auto;
+      }
 
       h2 {
         margin-bottom: 0;
@@ -42,6 +54,12 @@
 
           &:first-child {
             margin-left: 0;
+          }
+
+          &:nth-child(2) {
+            @include breakpoint(small) {
+              display: none;
+            }
           }
 
           &.first.leaf a {
@@ -82,9 +100,17 @@
       .view-content {
         display: flex;
         flex-wrap: wrap;
+        text-align: center;
 
         .views-row {
-          width: calc(100% * (1/4));
+          width: calc(100% * (1/4) - 2%);
+          margin-right: 2%;
+          @include breakpoint(small) {
+            width: calc(100% * (1/2) - 2%);
+          }
+          @include breakpoint(x-small) {
+            width: 100%;
+          }
 
           a {
             color: $white;
