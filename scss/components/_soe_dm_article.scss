@@ -6,9 +6,24 @@
 //
 
 .node-type-stanford-magazine-article {
+  .field-name-field-s-mag-article-topics {
+    font-size: em(20px);
+    width: 75%;
+    margin: 0 auto 18px;
+  }
+
+  .field-name-field-s-mag-article-dek {
+    width: 75%;
+    margin: 0 auto 22px;
+  }
+
   .group-s-mag-article-date-byline {
-    display: inline-flex;
+    font-size: em(18px);
+    color: $gray-orange;
+    display: flex;
     flex-wrap: wrap;
+    width: 75%;
+    margin: 0 auto 18px;
 
     .field-name-field-s-mag-article-date {
       .field-item {
