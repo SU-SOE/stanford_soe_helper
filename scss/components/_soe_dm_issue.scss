@@ -30,6 +30,7 @@
         bottom: 0;
         text-align: center;
         width: 100%;
+        z-index: 1;
 
         h1 {
           color: $white;
@@ -37,7 +38,7 @@
           border: 3px solid;
           display: inline;
           padding: 15px 25px;
-          background: rgba(0, 0, 0, 0.5);
+          background: rgba(0, 0, 0, 0.3);
 
           &.mag-issue-color-orange {
             border-color: $orange;
@@ -52,10 +53,14 @@
           }
         }
 
+        p {
+          margin: 40px 0 80px;
+        }
+
         &:after {
           content: url("../img/soe_chevron_down_white.png");
           position: absolute;
-          bottom: 20px;
+          bottom: 50px;
         }
       }
 
@@ -65,7 +70,7 @@
         bottom: 0;
         height: 100%;
         width: 100%;
-        @include gradient-vertical($end-color: rgba(0, 0, 0, 0.4));
+        @include gradient-vertical($end-color: rgba(0, 0, 0, 0.3));
       }
     }
 
