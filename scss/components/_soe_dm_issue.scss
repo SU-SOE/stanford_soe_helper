@@ -103,6 +103,54 @@
       }
     }
   }
+
+  .mag-article-container {
+    position: relative;
+    background: $white;
+    padding: 15px 30px 30px;
+    @include box-shadow;
+
+    .mag-article-date {
+      color: $gray-orange;
+      font-size: em(18px);
+      font-weight: 100;
+    }
+
+    a h2.mag-article-title {
+      font-size: em(26px);
+      line-height: 1.3em;
+      font-weight: 600;
+
+      &[class*="mag-issue-color-"] {
+        color: $primary-color;
+        text-decoration: underline;
+        text-decoration-skip: ink;
+
+        &:focus,
+        &:hover {
+          text-decoration-color: $primary-color;
+        }
+      }
+
+      &.mag-issue-color-orange {
+        text-decoration-color: $orange;
+      }
+
+      &.mag-issue-color-turquoise {
+        text-decoration-color: $turquoise;
+      }
+
+      &.mag-issue-color-pink {
+        text-decoration-color: $pink;
+      }
+    }
+
+    .mag-article-tax {
+      font-size: em(16px);
+      line-height: 1.2em;
+      margin: 30px 0;
+    }
+  }
 }
 
 // ALL ISSUES VIEW
