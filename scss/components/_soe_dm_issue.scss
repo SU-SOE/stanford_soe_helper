@@ -78,8 +78,18 @@
     }
 
     .mag-feat-details-container {
-      width: 40%;
+      width: 1000px;
       margin: 0 auto;
+      @include breakpoint(large) {
+        width: 800px;
+      }
+      @include breakpoint(medium) {
+        width: 650px;
+      }
+      @include breakpoint(small) {
+        width: auto;
+        margin: 0 20px;
+      }
 
       .mag-feat-date {
         color: $gray-orange;
