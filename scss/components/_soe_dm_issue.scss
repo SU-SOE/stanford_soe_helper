@@ -2,8 +2,38 @@
 
 //
 // DIGITAL MAGAZINE ISSUE
-// FOR VIEWS AND NODE DISPLAY
+// FOR NODE DISPLAY AND VIEWS
 //
+
+// NODE DISPLAY
+
+.node-type-stanford-magazine-issue {
+  .view-stanford-magazine-issue-featured-article {
+    .mag-feat-image-container {
+      position: relative;
+
+      img {
+        width: 100%;
+        height: calc(100vh - 160px);
+        @include breakpoint(x-small) {
+          height: calc(100vh - 180px);
+        }
+
+        .logged-in & {
+          height: calc(100vh - 210px);
+        }
+      }
+
+      .mag-feat-content-container {
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+        width: 100%;
+        @include gradient-vertical;
+      }
+    }
+  }
+}
 
 // ALL ISSUES VIEW
 
