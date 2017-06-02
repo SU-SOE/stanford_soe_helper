@@ -25,11 +25,49 @@
       }
 
       .mag-feat-content-container {
+        color: $white;
         position: absolute;
         bottom: 0;
         text-align: center;
         width: 100%;
         @include gradient-vertical;
+
+        h1 {
+          color: $white;
+          font-size: em(32px);
+        }
+
+        &:after {
+          content: url("../img/soe_chevron_down_white.png");
+          position: absolute;
+          bottom: 20px;
+        }
+      }
+    }
+
+    .mag-feat-details-container {
+      width: 75%;
+      margin: 0 auto;
+
+      .mag-feat-date {
+        color: $gray-orange;
+        font-size: em(20px);
+        font-weight: 100;
+        margin: 40px 0 20px;
+      }
+
+      h2 {
+        font-size: em(56px);
+        letter-spacing: 0;
+        margin-bottom: 10px;
+      }
+
+      .mag-feat-dek {
+        margin-bottom: 40px;
+      }
+
+      .mag-feat-tax {
+        font-size: em(20px);
       }
     }
   }
