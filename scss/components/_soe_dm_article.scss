@@ -6,15 +6,60 @@
 //
 
 .node-type-stanford-magazine-article {
+  .field-name-field-s-mag-article-topics {
+    font-size: em(20px);
+    width: 75%;
+    margin: 0 auto 18px;
+    @include breakpoint(x-small) {
+      width: 100%;
+    }
+  }
+
+  .field-name-field-s-mag-article-dek {
+    width: 75%;
+    margin: 0 auto 22px;
+    @include breakpoint(x-small) {
+      width: 100%;
+    }
+  }
+
   .group-s-mag-article-date-byline {
-    display: inline-flex;
+    font-size: em(18px);
+    color: $gray-orange;
+    display: flex;
     flex-wrap: wrap;
+    width: 75%;
+    margin: 0 auto 18px;
+    @include breakpoint(x-small) {
+      width: 100%;
+    }
 
     .field-name-field-s-mag-article-date {
       .field-item {
         &:after {
           content: "\00a0 \00a0 |\00a0 \00a0 ";
         }
+      }
+    }
+  }
+
+  .group-s-mag-article-dept {
+    width: 75%;
+    margin: 0 auto;
+    @include breakpoint(x-small) {
+      width: 100%;
+    }
+
+    h2 {
+      font-size: em(22px);
+      font-family: $primary-font;
+      margin-bottom: 0;
+    }
+
+    .field-name-field-s-mag-article-dept {
+      width: 45%;
+      @include breakpoint(x-small) {
+        width: 100%;
       }
     }
   }

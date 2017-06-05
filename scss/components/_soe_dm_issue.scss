@@ -2,8 +2,190 @@
 
 //
 // DIGITAL MAGAZINE ISSUE
-// FOR VIEWS AND NODE DISPLAY
+// FOR NODE DISPLAY AND VIEWS
 //
+
+// NODE DISPLAY
+
+.node-type-stanford-magazine-issue {
+  .view-stanford-magazine-issue-featured-article {
+    .mag-feat-image-container {
+      position: relative;
+
+      img {
+        width: 100%;
+        height: calc(100vh - 160px);
+        @include breakpoint(x-small) {
+          height: calc(100vh - 180px);
+        }
+
+        .logged-in & {
+          height: calc(100vh - 210px);
+        }
+      }
+
+      .mag-feat-content-container {
+        color: $white;
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+        width: 100%;
+        z-index: 1;
+
+        h1 {
+          color: $white;
+          font-size: em(32px);
+          border: 3px solid;
+          display: inline;
+          padding: 15px 25px;
+          background: rgba(0, 0, 0, 0.3);
+          @include breakpoint(small) {
+            display: block;
+          }
+
+          &.mag-issue-color-orange {
+            border-color: $orange;
+          }
+
+          &.mag-issue-color-turquoise {
+            border-color: $turquoise;
+          }
+
+          &.mag-issue-color-pink {
+            border-color: $pink;
+          }
+        }
+
+        p {
+          margin: 40px 0 80px;
+        }
+
+        &:after {
+          content: url("../img/soe_chevron_down_white.png");
+          position: absolute;
+          bottom: 50px;
+        }
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        @include gradient-vertical($end-color: rgba(0, 0, 0, 0.3));
+      }
+    }
+
+    .mag-feat-details-container {
+      width: 1000px;
+      margin: 0 auto;
+      @include breakpoint(large) {
+        width: 800px;
+      }
+      @include breakpoint(medium) {
+        width: 650px;
+      }
+      @include breakpoint(small) {
+        width: auto;
+        margin: 0 20px;
+      }
+
+      .mag-feat-date {
+        color: $gray-orange;
+        font-size: em(20px);
+        font-weight: 100;
+        margin: 40px 0 20px;
+      }
+
+      a h2.mag-feat-title {
+        font-size: em(56px);
+        letter-spacing: 0;
+        margin-bottom: 10px;
+
+        &[class*="mag-article-color-"] {
+          color: $primary-color;
+          text-decoration: underline;
+          text-decoration-skip: ink;
+
+          &:focus,
+          &:hover {
+            text-decoration-color: $primary-color;
+          }
+        }
+
+        &.mag-article-color-orange {
+          text-decoration-color: $orange;
+        }
+
+        &.mag-article-color-turquoise {
+          text-decoration-color: $turquoise;
+        }
+
+        &.mag-article-color-pink {
+          text-decoration-color: $pink;
+        }
+      }
+
+      .mag-feat-dek {
+        margin-bottom: 40px;
+      }
+
+      .mag-feat-tax {
+        font-size: em(20px);
+      }
+    }
+  }
+
+  .mag-article-container {
+    position: relative;
+    background: $white;
+    padding: 15px 30px 30px;
+    @include box-shadow;
+
+    .mag-article-date {
+      color: $gray-orange;
+      font-size: em(18px);
+      font-weight: 100;
+      margin-bottom: 5px;
+    }
+
+    a h2.mag-article-title {
+      font-size: em(26px);
+      line-height: 1.3em;
+      font-weight: 600;
+
+      &[class*="mag-article-color-"] {
+        color: $primary-color;
+        text-decoration: underline;
+        text-decoration-skip: ink;
+
+        &:focus,
+        &:hover {
+          text-decoration-color: $primary-color;
+        }
+      }
+
+      &.mag-article-color-orange {
+        text-decoration-color: $orange;
+      }
+
+      &.mag-article-color-turquoise {
+        text-decoration-color: $turquoise;
+      }
+
+      &.mag-article-color-pink {
+        text-decoration-color: $pink;
+      }
+    }
+
+    .mag-article-tax {
+      font-size: em(16px);
+      line-height: 1.2em;
+      margin: 30px 0;
+    }
+  }
+}
 
 // ALL ISSUES VIEW
 
