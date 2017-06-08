@@ -29,11 +29,17 @@ function stanford_soe_helper_magazine_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
+        'ds_extras-related_departments' => array(
+          'module' => 'ds_extras',
+          'delta' => 'related_departments',
+          'region' => 'content_lower',
+          'weight' => '-10',
+        ),
         'bean-stanford-soe-mag-news-signup' => array(
           'module' => 'bean',
           'delta' => 'stanford-soe-mag-news-signup',
           'region' => 'content_lower',
-          'weight' => '-10',
+          'weight' => '-9',
         ),
         'views-a06b957e34c741c20a352da1b7ce0e12' => array(
           'module' => 'views',
