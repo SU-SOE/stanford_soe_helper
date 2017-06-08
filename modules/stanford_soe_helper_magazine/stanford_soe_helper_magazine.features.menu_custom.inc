@@ -13,12 +13,12 @@ function stanford_soe_helper_magazine_menu_default_menu_custom() {
   // Exported menu: menu-magazine.
   $menus['menu-magazine'] = array(
     'menu_name' => 'menu-magazine',
-    'title' => 'Digital Magazine',
+    'title' => 'Research & Ideas',
     'description' => '',
   );
   // Translatables
   // Included for use with string extractors like potx.
-  t('Digital Magazine');
+  t('Research & Ideas');
 
   return $menus;
 }

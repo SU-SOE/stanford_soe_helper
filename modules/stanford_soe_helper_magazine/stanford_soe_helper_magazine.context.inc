@@ -84,13 +84,13 @@ function stanford_soe_helper_magazine_context_default_contexts() {
         'menu_block-stanford_soe_helper_mag-1' => array(
           'module' => 'menu_block',
           'delta' => 'stanford_soe_helper_mag-1',
-          'region' => 'fullwidth_top',
+          'region' => 'digital_magazine_menu',
           'weight' => '-10',
         ),
         'stanford_search_api-search_api_search_block' => array(
           'module' => 'stanford_search_api',
           'delta' => 'search_api_search_block',
-          'region' => 'fullwidth_top',
+          'region' => 'digital_magazine_menu',
           'weight' => '-9',
         ),
         'views-9015691b85694032e3eae301883c3f68' => array(
