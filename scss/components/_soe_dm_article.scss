@@ -64,6 +64,7 @@
     font-weight: bold;
     @include column-count (2);
     @include column-gap (30px);
+    margin-bottom: 1em;
     @include breakpoint(small) {
        @include column-count (1);
     }
