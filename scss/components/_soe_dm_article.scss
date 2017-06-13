@@ -49,25 +49,9 @@
 // PARAGRAPH TYPES
 
 .node-type-stanford-magazine-article {
-  .paragraphs-item-p-wysiwyg-simple {
-    width: 75%;
-    margin: 0 auto;
-    @include breakpoint(x-small) {
-      width: 100%;
-    }
-  }
-
   .paragraphs-item-p-two-columns {
     font-family: $roboto-slab;
     font-size: em(28px);
-    line-height: 1.8em;
-    font-weight: bold;
-    @include column-count (2);
-    @include column-gap (30px);
-    margin-bottom: 1em;
-    @include breakpoint(small) {
-       @include column-count (1);
-    }
   }
 }
 
