@@ -32,7 +32,7 @@ function stanford_soe_helper_magazine_field_default_field_instances() {
         'weight' => 0,
       ),
       'teaser' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 6,
