@@ -73,6 +73,42 @@ function stanford_soe_helper_magazine_context_default_contexts() {
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
+  $context->name = 'stanford_mag_issue_engineering';
+  $context->description = 'Engineering context for Stanford Magazine Issues';
+  $context->tag = 'Engineering';
+  $context->conditions = array(
+    'node' => array(
+      'values' => array(
+        'stanford_magazine_issue' => 'stanford_magazine_issue',
+      ),
+      'options' => array(
+        'node_form' => '0',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'views-25491480ed5b577d280c639f8d23989b' => array(
+          'module' => 'views',
+          'delta' => '25491480ed5b577d280c639f8d23989b',
+          'region' => 'content_lower',
+          'weight' => '-10',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('Engineering');
+  t('Engineering context for Stanford Magazine Issues');
+  $export['stanford_mag_issue_engineering'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
   $context->name = 'stanford_magazine_all_engineering';
   $context->description = 'Context for all pages within the magazine on Engineering';
   $context->tag = 'Engineering';
