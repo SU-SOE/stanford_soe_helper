@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+//
+// BLOCKS
+//
+
+// CALL TO ACTION BLOCKS
+
+.bean-stanford-call-to-action {
+  .group-s-cta-title-style {
+    .block-bean:nth-child(1n) & {
+      background: $turquoise;
+    }
+
+    .block-bean:nth-child(2n) & {
+      background: $orange;
+    }
+
+    .block-bean:nth-child(3n) & {
+      background: $pink;
+    }
+  }
+
+  .group-s-cta-title-style h2 {
+    font-family: $primary-font;
+    font-weight: 400;
+  }
+}

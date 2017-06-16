@@ -29,8 +29,7 @@
       border: none;
       box-shadow: none;
       padding: 5px 0 0 40px;
-      background: url("../img/soe_mag_glass_black.svg") no-repeat -45% 70%;
-      background-size: 60% 60%;
+      background: url("../img/soe_mag_glass_black.svg") no-repeat 6% 70%;
 
       .not-logged-in & {
         margin-right: -15px;
@@ -47,12 +46,14 @@
       }
     }
 
+
     input:-ms-input-placeholder {
       color: $primary-color;
     }
 
     input::-moz-placeholder {
       color: $primary-color;
+      opacity: 1;
     }
 
     input::-webkit-input-placeholder {

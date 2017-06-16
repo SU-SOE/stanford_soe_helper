@@ -43,17 +43,19 @@ h2 {
 
 /* line 46, ../scss/components/_soe_global.scss */
 h3 {
+  font-family: "Roboto Slab", serif;
   font-size: 1.18182em;
   font-weight: 600;
   margin: 1.3em 0 0.3em; }
 
-/* line 52, ../scss/components/_soe_global.scss */
+/* line 53, ../scss/components/_soe_global.scss */
 h4 {
+  font-family: "Roboto Slab", serif;
   font-size: 1em;
   font-weight: 600;
   margin: 1em 0 0.3em; }
 
-/* line 64, ../scss/components/_soe_global.scss */
+/* line 66, ../scss/components/_soe_global.scss */
 h1 a,
 h2 a,
 h3 a,
@@ -61,7 +63,7 @@ h4 a,
 h5 a,
 h6 a {
   text-decoration: underline; }
-  /* line 67, ../scss/components/_soe_global.scss */
+  /* line 69, ../scss/components/_soe_global.scss */
   h1 a:focus, h1 a:hover,
   h2 a:focus,
   h2 a:hover,
@@ -75,7 +77,7 @@ h6 a {
   h6 a:hover {
     text-decoration: underline; }
 
-/* line 74, ../scss/components/_soe_global.scss */
+/* line 76, ../scss/components/_soe_global.scss */
 .btn a,
 a.btn {
   border-radius: 0;
@@ -87,12 +89,12 @@ a.btn {
   line-height: 1.4em;
   letter-spacing: 0.03em;
   background: #B1040E; }
-  /* line 84, ../scss/components/_soe_global.scss */
+  /* line 86, ../scss/components/_soe_global.scss */
   .btn a:focus, .btn a:hover,
   a.btn:focus,
   a.btn:hover {
     color: #FFFFFF; }
-  /* line 89, ../scss/components/_soe_global.scss */
+  /* line 91, ../scss/components/_soe_global.scss */
   #content-body .content .btn a, #content-body .content
   a.btn {
     display: block;
@@ -101,64 +103,64 @@ a.btn {
     margin-bottom: 30px;
     text-decoration: none; }
     @media (max-width: 480px) {
-      /* line 89, ../scss/components/_soe_global.scss */
+      /* line 91, ../scss/components/_soe_global.scss */
       #content-body .content .btn a, #content-body .content
       a.btn {
         width: 65%; } }
 
-/* line 101, ../scss/components/_soe_global.scss */
+/* line 103, ../scss/components/_soe_global.scss */
 .normal-link a,
 a {
   color: #B1040E; }
 
-/* line 106, ../scss/components/_soe_global.scss */
+/* line 108, ../scss/components/_soe_global.scss */
 .more-link a,
 a.more-link {
   font-size: 20px;
   color: #B1040E; }
-  /* line 111, ../scss/components/_soe_global.scss */
+  /* line 113, ../scss/components/_soe_global.scss */
   .more-link a:after,
   a.more-link:after {
     content: " ›"; }
 
-/* line 116, ../scss/components/_soe_global.scss */
+/* line 118, ../scss/components/_soe_global.scss */
 .normal-link h2,
 .normal-link h3,
 h2.normal-link,
 h3.normal-link {
   font-size: 1.1em; }
 
-/* line 123, ../scss/components/_soe_global.scss */
+/* line 125, ../scss/components/_soe_global.scss */
 li {
   line-height: 1.4em;
   margin-bottom: 10px; }
 
-/* line 130, ../scss/components/_soe_global.scss */
+/* line 132, ../scss/components/_soe_global.scss */
 #content .content ul li {
   list-style-type: disc; }
-  /* line 133, ../scss/components/_soe_global.scss */
+  /* line 135, ../scss/components/_soe_global.scss */
   #content .content ul li:last-child {
     margin-bottom: 1.5em; }
-/* line 139, ../scss/components/_soe_global.scss */
+/* line 141, ../scss/components/_soe_global.scss */
 #content .content ol li:last-child {
   margin-bottom: 1.5em; }
-/* line 145, ../scss/components/_soe_global.scss */
+/* line 147, ../scss/components/_soe_global.scss */
 #content .content ul.pager li a {
   border: 1px solid #D7D7D7;
   background: #FFFFFF;
   margin-bottom: 12px;
   margin-right: 4px;
   font-size: 0.9em; }
-  /* line 152, ../scss/components/_soe_global.scss */
+  /* line 154, ../scss/components/_soe_global.scss */
   #content .content ul.pager li a:focus, #content .content ul.pager li a:hover {
     margin-right: 4px;
     font-weight: 300; }
-/* line 159, ../scss/components/_soe_global.scss */
+/* line 161, ../scss/components/_soe_global.scss */
 #content .content ul.pager li.pager-current {
   margin-right: 4px;
   font-weight: 300; }
 
-/* line 167, ../scss/components/_soe_global.scss */
+/* line 169, ../scss/components/_soe_global.scss */
 td,
 th {
   padding: 0.8em;
@@ -168,27 +170,27 @@ th {
   border-right: none;
   border-left: none; }
 
-/* line 177, ../scss/components/_soe_global.scss */
+/* line 179, ../scss/components/_soe_global.scss */
 th {
   background: #EFEFEF; }
 
-/* line 181, ../scss/components/_soe_global.scss */
+/* line 183, ../scss/components/_soe_global.scss */
 .well {
   background: #FFFFFF;
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2); }
-  /* line 185, ../scss/components/_soe_global.scss */
+  /* line 187, ../scss/components/_soe_global.scss */
   .well h2 {
     font-size: 1.45455em;
     font-weight: 600; }
-  /* line 190, ../scss/components/_soe_global.scss */
+  /* line 192, ../scss/components/_soe_global.scss */
   .well p {
     font-size: 0.90909em;
     font-weight: 400;
     line-height: 1.5em; }
 
-/* line 197, ../scss/components/_soe_global.scss */
+/* line 199, ../scss/components/_soe_global.scss */
 .descriptor {
   text-transform: none;
   letter-spacing: 0.02em;
@@ -196,36 +198,36 @@ th {
   margin-bottom: 4px;
   line-height: 1.2em; }
 
-/* line 205, ../scss/components/_soe_global.scss */
+/* line 207, ../scss/components/_soe_global.scss */
 .postcard-left {
   margin-top: 6px; }
 
-/* line 209, ../scss/components/_soe_global.scss */
+/* line 211, ../scss/components/_soe_global.scss */
 .views-row-lines .views-row {
   border-color: #D7D7D7; }
 
-/* line 213, ../scss/components/_soe_global.scss */
+/* line 215, ../scss/components/_soe_global.scss */
 #wrap {
   background: #F8F8F8; }
 
-/* line 217, ../scss/components/_soe_global.scss */
+/* line 219, ../scss/components/_soe_global.scss */
 .main {
   padding-top: 60px;
   background: #F8F8F8; }
-  /* line 222, ../scss/components/_soe_global.scss */
+  /* line 224, ../scss/components/_soe_global.scss */
   .main p a {
     text-decoration: underline; }
 
 @media (max-width: 767px) {
-  /* line 228, ../scss/components/_soe_global.scss */
+  /* line 230, ../scss/components/_soe_global.scss */
   .container {
     margin-bottom: 10px; }
-    /* line 232, ../scss/components/_soe_global.scss */
+    /* line 234, ../scss/components/_soe_global.scss */
     #fullwidth-bottom .container {
       margin-bottom: 0; } }
 
 @media (min-width: 1200px) {
-  /* line 238, ../scss/components/_soe_global.scss */
+  /* line 240, ../scss/components/_soe_global.scss */
   #content.span9 {
     width: 740px;
     margin-left: 80px; } }
@@ -309,46 +311,47 @@ p.summary.drop-cap:first-letter {
   /* line 10, ../scss/components/_soe_brand_bar.scss */
   .dm-global-header #global-header {
     position: absolute;
+    clip: rect(0 9999px 2px 0);
     clip-path: inset(0 0 55px 0);
     width: 100%; }
     @media (max-width: 767px) {
       /* line 10, ../scss/components/_soe_brand_bar.scss */
       .dm-global-header #global-header {
         clip-path: inset(0 0 60px 0); } }
-  /* line 19, ../scss/components/_soe_brand_bar.scss */
+  /* line 20, ../scss/components/_soe_brand_bar.scss */
   #global-header .container {
     padding: 13px 0; }
 
-/* line 27, ../scss/components/_soe_brand_bar.scss */
+/* line 28, ../scss/components/_soe_brand_bar.scss */
 #header #logo img {
   max-width: 160px; }
 @media (max-width: 480px) {
-  /* line 31, ../scss/components/_soe_brand_bar.scss */
+  /* line 32, ../scss/components/_soe_brand_bar.scss */
   #header #logo.logo-mobile {
     display: table-cell;
     padding: 0 10px 0 0;
     border-right: 1px solid !important; }
-    /* line 37, ../scss/components/_soe_brand_bar.scss */
+    /* line 38, ../scss/components/_soe_brand_bar.scss */
     #header #logo.logo-mobile a {
       background-size: 120px 26.66px; } }
 @media (max-width: 480px) {
-  /* line 44, ../scss/components/_soe_brand_bar.scss */
+  /* line 45, ../scss/components/_soe_brand_bar.scss */
   #header #name-and-slogan.with-logo {
     display: table-cell;
     padding: 0 0 0 10px; } }
-/* line 51, ../scss/components/_soe_brand_bar.scss */
+/* line 52, ../scss/components/_soe_brand_bar.scss */
 #header.header {
   background: #FFFFFF;
   padding: 32px 0 0; }
-  /* line 55, ../scss/components/_soe_brand_bar.scss */
+  /* line 56, ../scss/components/_soe_brand_bar.scss */
   #header.header #site-title-first-line.site-title-uppercase {
     font-size: 34px; }
     @media (max-width: 480px) {
-      /* line 55, ../scss/components/_soe_brand_bar.scss */
+      /* line 56, ../scss/components/_soe_brand_bar.scss */
       #header.header #site-title-first-line.site-title-uppercase {
         font-size: 28px; } }
     @media (max-width: 400px) {
-      /* line 55, ../scss/components/_soe_brand_bar.scss */
+      /* line 56, ../scss/components/_soe_brand_bar.scss */
       #header.header #site-title-first-line.site-title-uppercase {
         font-size: 24px; } }
 
@@ -1158,6 +1161,20 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
       .logged-in #block-ds-extras-banner-overlay .field-name-field-s-news-teaser .field-item {
         font-size: 15px; } }
 
+/* line 11, ../scss/components/_soe_blocks.scss */
+.block-bean:nth-child(1n) .bean-stanford-call-to-action .group-s-cta-title-style {
+  background: #00ECE9; }
+/* line 15, ../scss/components/_soe_blocks.scss */
+.block-bean:nth-child(2n) .bean-stanford-call-to-action .group-s-cta-title-style {
+  background: #FFBD54; }
+/* line 19, ../scss/components/_soe_blocks.scss */
+.block-bean:nth-child(3n) .bean-stanford-call-to-action .group-s-cta-title-style {
+  background: #FF525C; }
+/* line 24, ../scss/components/_soe_blocks.scss */
+.bean-stanford-call-to-action .group-s-cta-title-style h2 {
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400; }
+
 /* line 9, ../scss/components/_soe_dm_navigation.scss */
 #digital-magazine-menu {
   background: #00ECE9; }
@@ -1279,20 +1296,19 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
   border: none;
   box-shadow: none;
   padding: 5px 0 0 40px;
-  background: url("../img/soe_mag_glass_black.svg") no-repeat -45% 70%;
-  background-size: 60% 60%; }
-  /* line 35, ../scss/components/_soe_dm_search.scss */
+  background: url("../img/soe_mag_glass_black.svg") no-repeat 6% 70%; }
+  /* line 34, ../scss/components/_soe_dm_search.scss */
   .not-logged-in #digital-magazine-menu .block-stanford-search-api input[type="text"] {
     margin-right: -15px; }
-/* line 40, ../scss/components/_soe_dm_search.scss */
+/* line 39, ../scss/components/_soe_dm_search.scss */
 #digital-magazine-menu .block-stanford-search-api .input-medium {
   width: 175px; }
   @media (max-width: 979px) {
-    /* line 40, ../scss/components/_soe_dm_search.scss */
+    /* line 39, ../scss/components/_soe_dm_search.scss */
     #digital-magazine-menu .block-stanford-search-api .input-medium {
       width: 115px; } }
   @media (max-width: 767px) {
-    /* line 40, ../scss/components/_soe_dm_search.scss */
+    /* line 39, ../scss/components/_soe_dm_search.scss */
     #digital-magazine-menu .block-stanford-search-api .input-medium {
       width: 175px; } }
 /* line 50, ../scss/components/_soe_dm_search.scss */
@@ -1300,29 +1316,30 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
   color: #333333; }
 /* line 54, ../scss/components/_soe_dm_search.scss */
 #digital-magazine-menu .block-stanford-search-api input::-moz-placeholder {
-  color: #333333; }
-/* line 58, ../scss/components/_soe_dm_search.scss */
+  color: #333333;
+  opacity: 1; }
+/* line 59, ../scss/components/_soe_dm_search.scss */
 #digital-magazine-menu .block-stanford-search-api input::-webkit-input-placeholder {
   color: #333333; }
 
-/* line 9, ../scss/components/_soe_dm_article.scss */
+/* line 11, ../scss/components/_soe_dm_article.scss */
 .node-type-stanford-magazine-article .field-name-field-s-mag-article-topics {
   font-size: 0.90909em;
   width: 75%;
   margin: 0 auto 18px; }
   @media (max-width: 480px) {
-    /* line 9, ../scss/components/_soe_dm_article.scss */
+    /* line 11, ../scss/components/_soe_dm_article.scss */
     .node-type-stanford-magazine-article .field-name-field-s-mag-article-topics {
       width: 100%; } }
-/* line 18, ../scss/components/_soe_dm_article.scss */
+/* line 20, ../scss/components/_soe_dm_article.scss */
 .node-type-stanford-magazine-article .field-name-field-s-mag-article-dek {
   width: 75%;
   margin: 0 auto 22px; }
   @media (max-width: 480px) {
-    /* line 18, ../scss/components/_soe_dm_article.scss */
+    /* line 20, ../scss/components/_soe_dm_article.scss */
     .node-type-stanford-magazine-article .field-name-field-s-mag-article-dek {
       width: 100%; } }
-/* line 26, ../scss/components/_soe_dm_article.scss */
+/* line 28, ../scss/components/_soe_dm_article.scss */
 .node-type-stanford-magazine-article .group-s-mag-article-date-byline {
   font-size: 0.81818em;
   color: #726C63;
@@ -1331,31 +1348,40 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
   width: 75%;
   margin: 0 auto 18px; }
   @media (max-width: 480px) {
-    /* line 26, ../scss/components/_soe_dm_article.scss */
+    /* line 28, ../scss/components/_soe_dm_article.scss */
     .node-type-stanford-magazine-article .group-s-mag-article-date-byline {
       width: 100%; } }
-  /* line 39, ../scss/components/_soe_dm_article.scss */
+  /* line 41, ../scss/components/_soe_dm_article.scss */
   .node-type-stanford-magazine-article .group-s-mag-article-date-byline .field-name-field-s-mag-article-date .field-item:after {
     content: "\00a0 \00a0 |\00a0 \00a0 "; }
-/* line 46, ../scss/components/_soe_dm_article.scss */
-.node-type-stanford-magazine-article .group-s-mag-article-dept {
+
+/* line 52, ../scss/components/_soe_dm_article.scss */
+.node-type-stanford-magazine-article .paragraphs-item-p-two-columns {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.27273em;
+  margin-bottom: 1em; }
+
+/* line 61, ../scss/components/_soe_dm_article.scss */
+#block-ds-extras-related-departments {
   width: 75%;
-  margin: 0 auto; }
+  border-top: 2px solid #CCCCCC;
+  margin: 0 auto 50px;
+  padding-top: 20px; }
   @media (max-width: 480px) {
-    /* line 46, ../scss/components/_soe_dm_article.scss */
-    .node-type-stanford-magazine-article .group-s-mag-article-dept {
+    /* line 61, ../scss/components/_soe_dm_article.scss */
+    #block-ds-extras-related-departments {
       width: 100%; } }
-  /* line 53, ../scss/components/_soe_dm_article.scss */
-  .node-type-stanford-magazine-article .group-s-mag-article-dept h2 {
+  /* line 70, ../scss/components/_soe_dm_article.scss */
+  #block-ds-extras-related-departments h2 {
     font-size: 1em;
     font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin-bottom: 0; }
-  /* line 59, ../scss/components/_soe_dm_article.scss */
-  .node-type-stanford-magazine-article .group-s-mag-article-dept .field-name-field-s-mag-article-dept {
+  /* line 76, ../scss/components/_soe_dm_article.scss */
+  #block-ds-extras-related-departments .field-name-field-s-mag-article-dept {
     width: 45%; }
     @media (max-width: 480px) {
-      /* line 59, ../scss/components/_soe_dm_article.scss */
-      .node-type-stanford-magazine-article .group-s-mag-article-dept .field-name-field-s-mag-article-dept {
+      /* line 76, ../scss/components/_soe_dm_article.scss */
+      #block-ds-extras-related-departments .field-name-field-s-mag-article-dept {
         width: 100%; } }
 
 /* line 12, ../scss/components/_soe_dm_issue.scss */

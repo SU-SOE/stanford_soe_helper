@@ -2,8 +2,10 @@
 
 //
 // DIGITAL MAGAZINE ARTICLE
-// FOR NODE DISPLAY
+// FOR NODE DISPLAY, PARAGRAPH TYPES, AND BLOCKS
 //
+
+// NODE DISPLAY
 
 .node-type-stanford-magazine-article {
   .field-name-field-s-mag-article-topics {
@@ -42,25 +44,39 @@
       }
     }
   }
+}
 
-  .group-s-mag-article-dept {
-    width: 75%;
-    margin: 0 auto;
+// PARAGRAPH TYPES
+
+.node-type-stanford-magazine-article {
+  .paragraphs-item-p-two-columns {
+    font-family: $roboto-slab;
+    font-size: em(28px);
+    margin-bottom: 1em;
+  }
+}
+
+// RELATED DEPARTMENTS BLOCK
+
+#block-ds-extras-related-departments {
+  width: 75%;
+  border-top: 2px solid $dark-gray;
+  margin: 0 auto 50px;
+  padding-top: 20px;
+  @include breakpoint(x-small) {
+    width: 100%;
+  }
+
+  h2 {
+    font-size: em(22px);
+    font-family: $primary-font;
+    margin-bottom: 0;
+  }
+
+  .field-name-field-s-mag-article-dept {
+    width: 45%;
     @include breakpoint(x-small) {
       width: 100%;
-    }
-
-    h2 {
-      font-size: em(22px);
-      font-family: $primary-font;
-      margin-bottom: 0;
-    }
-
-    .field-name-field-s-mag-article-dept {
-      width: 45%;
-      @include breakpoint(x-small) {
-        width: 100%;
-      }
     }
   }
 }
