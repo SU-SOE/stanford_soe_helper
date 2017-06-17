@@ -95,6 +95,12 @@ function stanford_soe_helper_magazine_context_default_contexts() {
           'region' => 'content_lower',
           'weight' => '-10',
         ),
+        'stanford_soe_helper_magazine-soe_all_issues_link' => array(
+          'module' => 'stanford_soe_helper_magazine',
+          'delta' => 'soe_all_issues_link',
+          'region' => 'content_bottom',
+          'weight' => '-10',
+        ),
       ),
     ),
   );
