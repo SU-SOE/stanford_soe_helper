@@ -26,3 +26,52 @@ function stanford_soe_helper_magazine_menu_block_blocks() {
     ),
   );
 }
+
+/**
+ * Implements hook_views_pre_view().
+ *
+ * This adds the SoE accent color field to the Recent Issues view.
+ */
+function stanford_soe_helper_magazine_views_pre_view(&$view, &$display_id, &$args) {
+
+  // Insert the accent color field after the title field.
+  if ($view->name == 'stanford_magazine_issue_recent') {
+    if ($view->current_display == "block_6") {
+
+      $options['id'] = 'field_s_mag_issue_accent_color';
+      $options['table'] = 'field_data_field_s_mag_issue_accent_color';
+      $options['field'] = 'field_s_mag_issue_accent_color';
+      $options['type'] = 'taxonomy_term_reference_plain';
+      $options['delta_offset'] = '0';
+      $options['multi_type'] = 'separator';
+      $options['exclude'] = 1;
+      $options['label'] = '';
+      $options['element_label_colon'] = 'FALSE';
+      $options['type'] = 'taxonomy_term_reference_plain';
+
+
+      stanford_related_content_insert_item($view, $display_id, 'field', 'field_data_field_s_mag_issue_accent_color', 'field_s_mag_issue_accent_color', $options);
+    }
+  }
+}
+
+/**
+ * Implements hook_views_pre_build().
+ *
+ * This rewrites the color pattern in the Recent Issues view adding the token
+ * for the accent color.
+ */
+function stanford_soe_helper_magazine_views_pre_build(&$view) {
+  if ($view->name == "stanford_magazine_issue_recent") {
+    if ($view->current_display == "block_6") {
+
+      // Add the accent color token to the view rewrite.
+      $text = $view->display['block_6']->handler->handlers['field']['nothing']->options['alter']['text'];
+      $color = "[field_s_mag_issue_accent_color]";
+      $pattern = "prev-mag-issue-color";
+      $replacement = $pattern . "-" . $color . " " . $color;
+      $text = preg_replace("/" . $pattern . "/", $replacement, $text);
+      $view->display['block_6']->handler->handlers['field']['nothing']->options['alter']['text'] = $text;
+    }
+  }
+}
