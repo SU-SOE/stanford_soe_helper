@@ -568,6 +568,14 @@
     margin: 0 0 40px;
   }
 
+  .view-content {
+    width: 75%;
+    margin: 0 auto;
+    @include breakpoint(medium) {
+      width: 100%;
+    }
+  }
+
   .prev-mag-issue-wrapper {
     position: relative;
 
@@ -581,7 +589,7 @@
       color: $black;
       font-weight: 600;
       position: absolute;
-      top: 40%;
+      top: 32%;
       padding: 10px 30px;
       @include breakpoint(medium) {
         top: 30%;
