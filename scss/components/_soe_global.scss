@@ -216,6 +216,14 @@ th {
   .views-row {
     @include breakpoint(small) {
       width: 46%;
+
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+
+      &:nth-child(3n) {
+        margin-right: 3%;
+      }
     }
     @include breakpoint(x-small) {
       width: 100%;
