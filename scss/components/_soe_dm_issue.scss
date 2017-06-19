@@ -555,3 +555,36 @@
 }
 
 // RECENT ISSUES VIEW
+
+.view-stanford-magazine-issue-recent {
+  h2 {
+    text-align: center;
+  }
+
+  h3 {
+    font-family: $primary-font;
+    color: $gray-orange;
+    text-align: center;
+    margin: 0 0 40px;
+  }
+
+  .prev-mag-issue-wrapper {
+    position: relative;
+  }
+
+  .prev-mag-issue-title-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .prev-mag-issue-title {
+    color: $black;
+    position: absolute;
+    top: 40%;
+    padding: 10px 30px;
+  }
+}
+
+#block-stanford-soe-helper-magazine-soe-all-issues-link {
+  text-align: center;
+}
