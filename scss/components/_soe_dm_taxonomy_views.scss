@@ -137,18 +137,6 @@
       }
     }
 
-    &.views-grid-three {
-      .views-row {
-        @include breakpoint(small) {
-          width: 46%;
-        }
-        @include breakpoint(x-small) {
-          width: 100%;
-          margin-right: 0;
-        }
-      }
-    }
-
     .mag-topic-card-container {
       position: relative;
       background: $white;

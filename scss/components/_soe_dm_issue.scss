@@ -461,7 +461,7 @@
   }
 }
 
-// RELATED ISSUE VIEW
+// RELATED ISSUES VIEW
 
 .view-stanford-magazine-article-issue- {
   text-align: center;
@@ -552,4 +552,67 @@
       background: $pink;
     }
   }
+}
+
+// RECENT ISSUES VIEW
+
+.view-stanford-magazine-issue-recent {
+  h2 {
+    text-align: center;
+  }
+
+  h3 {
+    font-family: $primary-font;
+    color: $gray-orange;
+    text-align: center;
+    margin: 0 0 40px;
+  }
+
+  .view-content {
+    width: 75%;
+    margin: 0 auto;
+    @include breakpoint(medium) {
+      width: 100%;
+    }
+  }
+
+  .prev-mag-issue-wrapper {
+    position: relative;
+
+    .prev-mag-issue-title-wrapper {
+      display: flex;
+      justify-content: center;
+    }
+
+    .prev-mag-issue-title {
+      font-family: $roboto-slab;
+      color: $black;
+      font-weight: 600;
+      position: absolute;
+      top: 32%;
+      padding: 10px 30px;
+      @include breakpoint(medium) {
+        top: 30%;
+      }
+      @include breakpoint(x-small) {
+        top: 40%;
+      }
+    }
+
+    &.prev-mag-issue-color-orange .prev-mag-issue-title {
+      background: $orange;
+    }
+
+    &.prev-mag-issue-color-turquoise .prev-mag-issue-title {
+      background: $turquoise;
+    }
+
+    &.prev-mag-issue-color-pink .prev-mag-issue-title {
+      background: $pink;
+    }
+  }
+}
+
+#block-stanford-soe-helper-magazine-soe-all-issues-link {
+  text-align: center;
 }
