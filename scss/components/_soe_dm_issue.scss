@@ -570,18 +570,33 @@
 
   .prev-mag-issue-wrapper {
     position: relative;
-  }
 
-  .prev-mag-issue-title-wrapper {
-    display: flex;
-    justify-content: center;
-  }
+    .prev-mag-issue-title-wrapper {
+      display: flex;
+      justify-content: center;
+    }
 
-  .prev-mag-issue-title {
-    color: $black;
-    position: absolute;
-    top: 40%;
-    padding: 10px 30px;
+    .prev-mag-issue-title {
+      color: $black;
+      position: absolute;
+      top: 40%;
+      padding: 10px 30px;
+      @include breakpoint(medium) {
+        top: 30%;
+      }
+    }
+
+    &.prev-mag-issue-color-orange .prev-mag-issue-title {
+      background: $orange;
+    }
+
+    &.prev-mag-issue-color-turquoise .prev-mag-issue-title {
+      background: $turquoise;
+    }
+
+    &.prev-mag-issue-color-pink .prev-mag-issue-title {
+      background: $pink;
+    }
   }
 }
 
