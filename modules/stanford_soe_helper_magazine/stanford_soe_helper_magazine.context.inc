@@ -115,6 +115,52 @@ function stanford_soe_helper_magazine_context_default_contexts() {
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
+  $context->name = 'stanford_magazine_all_articles_engineering';
+  $context->description = 'Engineering context for Stanford Magazine Articles page';
+  $context->tag = 'Engineering';
+  $context->conditions = array(
+    'path' => array(
+      'values' => array(
+        'magazine/all' => 'magazine/all',
+        'magazine/all/*' => 'magazine/all/*',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'views-b9de46c8c4d32a7507b33baab292a061' => array(
+          'module' => 'views',
+          'delta' => 'b9de46c8c4d32a7507b33baab292a061',
+          'region' => 'content_upper',
+          'weight' => '-10',
+        ),
+        'views-866f0c6a4d06665ce5fb808a46c5c048' => array(
+          'module' => 'views',
+          'delta' => '866f0c6a4d06665ce5fb808a46c5c048',
+          'region' => 'content',
+          'weight' => '-10',
+        ),
+        'bean-stanford-soe-mag-news-signup' => array(
+          'module' => 'bean',
+          'delta' => 'stanford-soe-mag-news-signup',
+          'region' => 'content',
+          'weight' => '-9',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('Engineering');
+  t('Engineering context for Stanford Magazine Articles page');
+  $export['stanford_magazine_all_articles_engineering'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
   $context->name = 'stanford_magazine_all_engineering';
   $context->description = 'Context for all pages within the magazine on Engineering';
   $context->tag = 'Engineering';
