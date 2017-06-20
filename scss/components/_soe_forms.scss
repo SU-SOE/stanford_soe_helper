@@ -174,10 +174,11 @@ body:not(.page-admin) {
 
     .node-type-stanford-magazine-issue & {
       box-shadow: none;
-
-      form {
-        margin-bottom: 0;
-      }
+      padding: 65px 0;
     }
   }
+}
+
+.node-type-stanford-magazine-issue .mailchimp-magazine-block form {
+  margin-bottom: 0;
 }
