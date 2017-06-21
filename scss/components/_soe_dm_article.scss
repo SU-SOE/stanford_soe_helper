@@ -289,7 +289,8 @@
       margin-bottom: 50px;
     }
 
-    &:nth-child(1) {
+    &:nth-child(1),
+    &:nth-child(3) {
       float: right;
       width: 22.5%;
       @include breakpoint(medium) {
@@ -301,18 +302,7 @@
     &:nth-child(2) {
       float: left;
       width: 45%;
-      margin-right: 5%;
-      @include breakpoint(medium) {
-        float: none;
-        width: 100%;
-        margin-right: 0;
-      }
-    }
-
-    &:nth-child(3) {
-      float: right;
-      width: 22.5%;
-      margin-right: 5%;
+      margin-right: 3%;
       @include breakpoint(medium) {
         float: none;
         width: 100%;
@@ -334,6 +324,7 @@
     }
 
     .mag-article-content-container {
+      position: relative;
       background: $white;
       padding: 15px 30px 30px;
       @include box-shadow;
