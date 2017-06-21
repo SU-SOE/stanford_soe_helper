@@ -129,17 +129,19 @@ function stanford_soe_helper_magazine_context_default_contexts() {
       'values' => array(
         'magazine/all' => 'magazine/all',
         'magazine/all/*' => 'magazine/all/*',
+        'magazine/latest-news' => 'magazine/latest-news',
+        'magazine/latest-news/*' => 'magazine/latest-news/*',
       ),
     ),
   );
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'views-b9de46c8c4d32a7507b33baab292a061' => array(
+        'views-02b3298cd48cb01faa35a462486ce0d3' => array(
           'module' => 'views',
-          'delta' => 'b9de46c8c4d32a7507b33baab292a061',
+          'delta' => '02b3298cd48cb01faa35a462486ce0d3',
           'region' => 'content_upper',
-          'weight' => '-10',
+          'weight' => '-9',
         ),
         'bean-stanford-soe-mag-news-signup' => array(
           'module' => 'bean',
