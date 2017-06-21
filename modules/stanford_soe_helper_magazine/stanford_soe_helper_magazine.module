@@ -27,6 +27,12 @@ function stanford_soe_helper_magazine_menu_block_blocks() {
   );
 }
 
+/**
+ * Handle the variables for this module.
+ *
+ * @return array
+ *   array of variables for this module.
+ */
 function stanford_soe_helper_magazine_get_settings() {
   $default_settings = array(
     'soe_all_issues_link_title' => t('All Digital Magazine Issues'),
@@ -57,14 +63,14 @@ function stanford_soe_helper_magazine_block_info() {
 /**
  * Implements hook_block_configure().
  */
-function stanford_soe_helper_magazine_block_configure($delta='') {
+function stanford_soe_helper_magazine_block_configure($delta = '') {
   $form = array();
 
-  switch($delta) {
+  switch ($delta) {
     case 'soe_all_issues_link':
       $settings = stanford_soe_helper_magazine_get_settings();
 
-      // Title
+      // Link Title.
       $form['soe_all_issues_link_title'] = array(
         '#type' => 'textfield',
         '#title' => t('All Issues Button Title'),
@@ -72,7 +78,7 @@ function stanford_soe_helper_magazine_block_configure($delta='') {
         '#required' => TRUE,
       );
 
-      // URL
+      // Link URL.
       $form['soe_all_issues_link_url'] = array(
         '#type' => 'textfield',
         '#title' => t('All Issues Button URL'),
@@ -85,7 +91,7 @@ function stanford_soe_helper_magazine_block_configure($delta='') {
     case 'soe_all_articles_link':
       $settings = stanford_soe_helper_magazine_get_settings();
 
-      // Title
+      // Link Title.
       $form['soe_all_articles_link_title'] = array(
         '#type' => 'textfield',
         '#title' => t('All Articles Button Title'),
@@ -93,7 +99,7 @@ function stanford_soe_helper_magazine_block_configure($delta='') {
         '#required' => TRUE,
       );
 
-      // URL
+      // Link URL.
       $form['soe_all_articles_link_url'] = array(
         '#type' => 'textfield',
         '#title' => t('All Articles Button URL'),
@@ -138,14 +144,15 @@ function stanford_soe_helper_magazine_block_save($delta = '', $edit = array()) {
 /**
  * Implements hook_block_view().
  */
-function stanford_soe_helper_magazine_block_view($delta='') {
+function stanford_soe_helper_magazine_block_view($delta = '') {
   $block = array();
 
-  switch($delta) {
+  switch ($delta) {
     case 'soe_all_issues_link':
       $block['subject'] = '<none>';
       $block['content'] = soe_all_issues_link_block_view();
       break;
+
     case 'soe_all_articles_link':
       $block['subject'] = '<none>';
       $block['content'] = soe_all_articles_link_block_view();
@@ -161,8 +168,7 @@ function stanford_soe_helper_magazine_block_view($delta='') {
  * @return array
  *   Array of blocks.
  */
-function soe_all_issues_link_block_view()
-{
+function soe_all_issues_link_block_view() {
   $settings = stanford_soe_helper_magazine_get_settings();
   $block = array(
     'soe_all_issues_link' => array(
@@ -181,8 +187,7 @@ function soe_all_issues_link_block_view()
  * @return array
  *   Array of blocks.
  */
-function soe_all_articles_link_block_view()
-{
+function soe_all_articles_link_block_view() {
   $settings = stanford_soe_helper_magazine_get_settings();
   $block = array(
     'soe_all_articles_link' => array(
@@ -204,7 +209,7 @@ function stanford_soe_helper_magazine_views_pre_view(&$view, &$display_id, &$arg
 
   // Insert the accent color field after the title field.
   if ($view->name == 'stanford_magazine_issue_recent') {
-    if ($view->current_display == "block_6") {
+    if (($view->current_display == "block_6") || ($view->current_display == "block_6_all")) {
 
       $options['id'] = 'field_s_mag_issue_accent_color';
       $options['table'] = 'field_data_field_s_mag_issue_accent_color';
@@ -216,7 +221,6 @@ function stanford_soe_helper_magazine_views_pre_view(&$view, &$display_id, &$arg
       $options['label'] = '';
       $options['element_label_colon'] = 'FALSE';
       $options['type'] = 'taxonomy_term_reference_plain';
-
 
       stanford_related_content_insert_item($view, $display_id, 'field', 'field_data_field_s_mag_issue_accent_color', 'field_s_mag_issue_accent_color', $options);
     }
@@ -240,6 +244,16 @@ function stanford_soe_helper_magazine_views_pre_build(&$view) {
       $replacement = $pattern . "-" . $color . " " . $color;
       $text = preg_replace("/" . $pattern . "/", $replacement, $text);
       $view->display['block_6']->handler->handlers['field']['nothing']->options['alter']['text'] = $text;
+    }
+    elseif ($view->current_display == "block_6_all") {
+
+      // Add the accent color token to the view rewrite.
+      $text = $view->display['block_6_all']->handler->handlers['field']['nothing']->options['alter']['text'];
+      $color = "[field_s_mag_issue_accent_color]";
+      $pattern = "prev-mag-issue-color";
+      $replacement = $pattern . "-" . $color . " " . $color;
+      $text = preg_replace("/" . $pattern . "/", $replacement, $text);
+      $view->display['block_6_all']->handler->handlers['field']['nothing']->options['alter']['text'] = $text;
     }
   }
 }
