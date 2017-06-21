@@ -283,18 +283,42 @@
 // LATEST NEWS DM HOMEPAGE VIEW
 
 .view-stanford-magazine-article-mag-landing-page {
-    &:nth-child(1) .views-row {
+  &.view-display-id-block_10_12,
+  &.view-display-id-page_1_3 {
+    .views-row {
       margin-bottom: 100px;
       @include breakpoint(medium) {
         margin-bottom: 50px;
+        width: 100%;
       }
 
       &:nth-child(1),
       &:nth-child(3) {
         width: 22.5%;
+      }
+
+      &:nth-child(2) {
+        width: 45%;
+        margin-right: 3%;
         @include breakpoint(medium) {
-          width: 100%;
+          margin-right: 0;
         }
+      }
+    }
+  }
+
+  &.view-display-id-block_13_15,
+  &.view-display-id-block_4_6 {
+    .views-row {
+      margin-bottom: 100px;
+      @include breakpoint(medium) {
+        margin-bottom: 50px;
+        width: 100%;
+      }
+
+      &:nth-child(1),
+      &:nth-child(3) {
+        width: 22.5%;
       }
 
       &:nth-child(2) {
@@ -303,11 +327,36 @@
         margin-right: 3%;
         @include breakpoint(medium) {
           float: none;
-          width: 100%;
           margin-right: 0;
         }
       }
     }
+  }
+
+  &.view-display-id-block_7_9 {
+    .views-row {
+      margin-bottom: 100px;
+      @include breakpoint(medium) {
+        margin-bottom: 50px;
+        width: 100%;
+      }
+
+      &:nth-child(1),
+      &:nth-child(3) {
+        width: 22.5%;
+      }
+
+      &:nth-child(2) {
+        float: right;
+        width: 45%;
+        margin-right: 0;
+        @include breakpoint(medium) {
+          float: none;
+          margin-right: 0;
+        }
+      }
+    }
+  }
 
   .mag-article-container {
     margin-bottom: 80px;
