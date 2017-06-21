@@ -250,11 +250,17 @@ function stanford_soe_helper_magazine_context_default_contexts() {
           'region' => 'content_bottom',
           'weight' => '-9',
         ),
+        'stanford_soe_helper_magazine-soe_all_articles_link' => array(
+          'module' => 'stanford_soe_helper_magazine',
+          'delta' => 'soe_all_articles_link',
+          'region' => 'content_bottom',
+          'weight' => '-8',
+        ),
         'views-25491480ed5b577d280c639f8d23989b' => array(
           'module' => 'views',
           'delta' => '25491480ed5b577d280c639f8d23989b',
           'region' => 'content_bottom',
-          'weight' => '-8',
+          'weight' => '-7',
         ),
         'bean-stanford-soe-mag-news-signup' => array(
           'module' => 'bean',
