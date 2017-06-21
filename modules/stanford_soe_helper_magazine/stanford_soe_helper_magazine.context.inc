@@ -258,15 +258,15 @@ function stanford_soe_helper_magazine_context_default_contexts() {
           'region' => 'content_body_bottom',
           'weight' => '-9',
         ),
-        'stanford_soe_helper_magazine-soe_all_articles_link' => array(
-          'module' => 'stanford_soe_helper_magazine',
-          'delta' => 'soe_all_articles_link',
+        'views-81afc3faf7bc69c8ec1db8fd87d14e52' => array(
+          'module' => 'views',
+          'delta' => '81afc3faf7bc69c8ec1db8fd87d14e52',
           'region' => 'content_body_bottom',
           'weight' => '-8',
         ),
-        'views-25491480ed5b577d280c639f8d23989b' => array(
-          'module' => 'views',
-          'delta' => '25491480ed5b577d280c639f8d23989b',
+        'stanford_soe_helper_magazine-soe_all_articles_link' => array(
+          'module' => 'stanford_soe_helper_magazine',
+          'delta' => 'soe_all_articles_link',
           'region' => 'content_body_bottom',
           'weight' => '-7',
         ),
