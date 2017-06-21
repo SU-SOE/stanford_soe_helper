@@ -283,30 +283,30 @@
 // LATEST NEWS DM HOMEPAGE VIEW
 
 .view-stanford-magazine-article-mag-landing-page {
-  .views-row {
-    margin-bottom: 100px;
-    @include breakpoint(medium) {
-      margin-bottom: 50px;
-    }
-
-    &:nth-child(1),
-    &:nth-child(3) {
-      float: right;
-      width: 22.5%;
+  .view-content:nth-child(1) {
+    .views-row {
+      margin-bottom: 100px;
       @include breakpoint(medium) {
-        float: none;
-        width: 100%;
+        margin-bottom: 50px;
       }
-    }
 
-    &:nth-child(2) {
-      float: left;
-      width: 45%;
-      margin-right: 3%;
-      @include breakpoint(medium) {
-        float: none;
-        width: 100%;
-        margin-right: 0;
+      &:nth-child(1),
+      &:nth-child(3) {
+        width: 22.5%;
+        @include breakpoint(medium) {
+          width: 100%;
+        }
+      }
+
+      &:nth-child(2) {
+        float: left;
+        width: 45%;
+        margin-right: 3%;
+        @include breakpoint(medium) {
+          float: none;
+          width: 100%;
+          margin-right: 0;
+        }
       }
     }
   }
