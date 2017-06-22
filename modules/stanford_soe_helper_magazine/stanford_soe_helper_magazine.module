@@ -262,7 +262,7 @@ function soe_all_articles_link_block_view() {
       '#prefix' => '<div class="soe_block_align">',
       '#markup' => l($settings['soe_all_articles_link_title'],
         $settings['soe_all_articles_link_url'],
-        array('attributes' => array('class' => 'soe_all_articles_link soe_block_align btn'))),
+        array('attributes' => array('class' => 'soe_all_articles_link soe_block_style btn'))),
       '#suffix' => '</div>',
     ),
   );
