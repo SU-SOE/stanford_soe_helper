@@ -618,8 +618,19 @@
       @include breakpoint(medium) {
         top: 30%;
       }
+      @include breakpoint(small) {
+        top: 45%;
+      }
       @include breakpoint(x-small) {
         top: 40%;
+      }
+    }
+
+    .prev-mag-issue-image {
+      img {
+        @include breakpoint(small) {
+          width: 100%;
+        }
       }
     }
 

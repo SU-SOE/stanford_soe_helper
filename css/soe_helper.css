@@ -2428,26 +2428,34 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
       /* line 611, ../scss/components/_soe_dm_issue.scss */
       .view-stanford-magazine-issue-recent .prev-mag-issue-wrapper .prev-mag-issue-title {
         top: 30%; } }
+    @media (max-width: 767px) {
+      /* line 611, ../scss/components/_soe_dm_issue.scss */
+      .view-stanford-magazine-issue-recent .prev-mag-issue-wrapper .prev-mag-issue-title {
+        top: 45%; } }
     @media (max-width: 480px) {
       /* line 611, ../scss/components/_soe_dm_issue.scss */
       .view-stanford-magazine-issue-recent .prev-mag-issue-wrapper .prev-mag-issue-title {
         top: 40%; } }
-  /* line 626, ../scss/components/_soe_dm_issue.scss */
+  @media (max-width: 767px) {
+    /* line 630, ../scss/components/_soe_dm_issue.scss */
+    .view-stanford-magazine-issue-recent .prev-mag-issue-wrapper .prev-mag-issue-image img {
+      width: 100%; } }
+  /* line 637, ../scss/components/_soe_dm_issue.scss */
   .view-stanford-magazine-issue-recent .prev-mag-issue-wrapper.prev-mag-issue-color-orange .prev-mag-issue-title {
     background: #FFBD54; }
-  /* line 630, ../scss/components/_soe_dm_issue.scss */
+  /* line 641, ../scss/components/_soe_dm_issue.scss */
   .view-stanford-magazine-issue-recent .prev-mag-issue-wrapper.prev-mag-issue-color-turquoise .prev-mag-issue-title {
     background: #00ECE9; }
-  /* line 634, ../scss/components/_soe_dm_issue.scss */
+  /* line 645, ../scss/components/_soe_dm_issue.scss */
   .view-stanford-magazine-issue-recent .prev-mag-issue-wrapper.prev-mag-issue-color-pink .prev-mag-issue-title {
     background: #FF525C; }
 
-/* line 640, ../scss/components/_soe_dm_issue.scss */
+/* line 651, ../scss/components/_soe_dm_issue.scss */
 #block-stanford-soe-helper-magazine-soe-all-issues-link {
   text-align: center; }
-  /* line 643, ../scss/components/_soe_dm_issue.scss */
+  /* line 654, ../scss/components/_soe_dm_issue.scss */
   #block-stanford-soe-helper-magazine-soe-all-issues-link h2 {
     display: none; }
-  /* line 647, ../scss/components/_soe_dm_issue.scss */
+  /* line 658, ../scss/components/_soe_dm_issue.scss */
   #block-stanford-soe-helper-magazine-soe-all-issues-link a.btn {
     margin: 40px 0 80px; }
