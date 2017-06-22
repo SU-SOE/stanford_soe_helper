@@ -283,29 +283,100 @@
 // LATEST NEWS DM HOMEPAGE VIEW
 
 .view-stanford-magazine-article-mag-landing-page {
-  .view-content:nth-child(1) {
-    .views-row {
-      margin-bottom: 100px;
-      @include breakpoint(medium) {
-        margin-bottom: 50px;
-      }
+  .views-row {
+    margin-bottom: 100px;
+    @include breakpoint(medium) {
+      margin-bottom: 50px;
+    }
+  }
 
-      &:nth-child(1),
-      &:nth-child(3) {
+  &.view-display-id-block_10_12,
+  &.view-display-id-page_1_3 {
+    .views-row {
+      &:nth-child(1) {
         width: 22.5%;
+        margin-right: 4.5%;
         @include breakpoint(medium) {
           width: 100%;
+          margin-right: 0;
         }
       }
 
       &:nth-child(2) {
-        float: left;
         width: 45%;
-        margin-right: 3%;
+        margin-right: 4.5%;
         @include breakpoint(medium) {
-          float: none;
           width: 100%;
           margin-right: 0;
+        }
+      }
+
+      &:nth-child(3) {
+        width: 22.5%;
+        margin-right: 0;
+        @include breakpoint(medium) {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &.view-display-id-block_13_15,
+  &.view-display-id-block_4_6 {
+    .views-row {
+      &:nth-child(1) {
+        width: 45%;
+        margin-right: 4.5%;
+        @include breakpoint(medium) {
+          width: 100%;
+          margin-right: 0;
+        }
+      }
+
+      &:nth-child(2) {
+        width: 22.5%;
+        margin-right: 4.5%;
+        @include breakpoint(medium) {
+          width: 100%;
+          margin-right: 0;
+        }
+      }
+
+      &:nth-child(3) {
+        width: 22.5%;
+        margin-right: 0;
+        @include breakpoint(medium) {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &.view-display-id-block_7_9 {
+    .views-row {
+      &:nth-child(1) {
+        width: 22.5%;
+        margin-right: 4.5%;
+        @include breakpoint(medium) {
+          width: 100%;
+          margin-right: 0;
+        }
+      }
+
+      &:nth-child(2) {
+        width: 22.5%;
+        margin-right: 4.5%;
+        @include breakpoint(medium) {
+          width: 100%;
+          margin-right: 0;
+        }
+      }
+
+      &:nth-child(3) {
+        width: 45%;
+        margin-right: 0;
+        @include breakpoint(medium) {
+          width: 100%;
         }
       }
     }

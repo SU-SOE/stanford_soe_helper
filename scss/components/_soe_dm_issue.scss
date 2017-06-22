@@ -318,6 +318,7 @@
     .mag-article-content-container {
       background: $white;
       padding: 50px 30px 30px;
+      @include box-shadow;
       @include breakpoint(medium) {
         padding: 15px 30px 30px;
       }
