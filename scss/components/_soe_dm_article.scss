@@ -283,6 +283,10 @@
 // LATEST NEWS DM HOMEPAGE VIEW
 
 .view-stanford-magazine-article-mag-landing-page {
+  &.views-grid-three .views-row {
+    margin-bottom: 0;
+  }
+
   h2 {
     color: $gray-orange;
     font-weight: 400;
@@ -475,16 +479,30 @@
   }
 }
 
-.page-magazine #page-title {
-  text-align: center;
-}
+.page-magazine {
+  .main {
+    padding-bottom: 0;
 
-.page-magazine .main {
-  padding-bottom: 0;
+    .container {
+      @include breakpoint(small) {
+        margin-bottom: 0;
+      }
+    }
+  }
 
-  .container {
-    @include breakpoint(small) {
-      margin-bottom: 0;
+  #page-title {
+    text-align: center;
+  }
+
+  #block-stanford-soe-helper-magazine-soe-all-articles-link {
+    text-align: center;
+
+    h2 {
+      display: none;
+    }
+
+    a.btn {
+      margin-bottom: 80px;
     }
   }
 }
