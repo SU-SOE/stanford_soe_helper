@@ -345,29 +345,6 @@
                 font-size: em(26px);
                 line-height: 1.3em;
               }
-
-              &[class*="mag-article-color-"] a {
-                color: $primary-color;
-                text-decoration: underline;
-                text-decoration-skip: ink;
-
-                &:focus,
-                &:hover {
-                  text-decoration-color: $primary-color;
-                }
-              }
-
-              &.mag-article-color-orange a {
-                text-decoration-color: $orange;
-              }
-
-              &.mag-article-color-turquoise a {
-                text-decoration-color: $turquoise;
-              }
-
-              &.mag-article-color-pink a {
-                text-decoration-color: $pink;
-              }
             }
 
             .mag-article-topics {
@@ -402,6 +379,47 @@
         @include breakpoint(medium) {
           width: 100%;
           margin-right: 0;
+        }
+
+        .mag-article-container {
+          .mag-article-content-container {
+            background: $white;
+            padding: 50px 30px 30px;
+            @include box-shadow;
+            @include breakpoint(medium) {
+              padding: 15px 30px 30px;
+            }
+
+            .mag-article-date {
+              color: $gray-orange;
+              font-size: em(20px);
+              font-weight: 100;
+              margin-bottom: 10px;
+              @include breakpoint(medium) {
+                font-size: em(18px);
+              }
+            }
+
+            .mag-article-title {
+              font-size: em(32px);
+              line-height: 1.2em;
+              font-weight: 600;
+              @include breakpoint(medium) {
+                font-size: em(26px);
+                line-height: 1.3em;
+              }
+            }
+
+            .mag-article-topics {
+              font-size: em(18px);
+              line-height: 1.3em;
+              margin: 30px 0;
+              @include breakpoint(medium) {
+                font-size: em(16px);
+                line-height: 1.2em;
+              }
+            }
+          }
         }
       }
 
@@ -449,6 +467,47 @@
         margin-right: 0;
         @include breakpoint(medium) {
           width: 100%;
+        }
+
+        .mag-article-container {
+          .mag-article-content-container {
+            background: $white;
+            padding: 50px 30px 30px;
+            @include box-shadow;
+            @include breakpoint(medium) {
+              padding: 15px 30px 30px;
+            }
+
+            .mag-article-date {
+              color: $gray-orange;
+              font-size: em(20px);
+              font-weight: 100;
+              margin-bottom: 10px;
+              @include breakpoint(medium) {
+                font-size: em(18px);
+              }
+            }
+
+            .mag-article-title {
+              font-size: em(32px);
+              line-height: 1.2em;
+              font-weight: 600;
+              @include breakpoint(medium) {
+                font-size: em(26px);
+                line-height: 1.3em;
+              }
+            }
+
+            .mag-article-topics {
+              font-size: em(18px);
+              line-height: 1.3em;
+              margin: 30px 0;
+              @include breakpoint(medium) {
+                font-size: em(16px);
+                line-height: 1.2em;
+              }
+            }
+          }
         }
       }
     }
