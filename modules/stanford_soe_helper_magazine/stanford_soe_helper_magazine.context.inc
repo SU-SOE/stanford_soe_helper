@@ -53,9 +53,9 @@ function stanford_soe_helper_magazine_context_default_contexts() {
           'region' => 'content_bottom',
           'weight' => '-9',
         ),
-        'bean-stanford-soe-mag-explore-issues' => array(
-          'module' => 'bean',
-          'delta' => 'stanford-soe-mag-explore-issues',
+        'stanford_soe_helper_magazine-soe_all_issues_link_2' => array(
+          'module' => 'stanford_soe_helper_magazine',
+          'delta' => 'soe_all_issues_link_2',
           'region' => 'content_bottom',
           'weight' => '-8',
         ),
@@ -228,6 +228,12 @@ function stanford_soe_helper_magazine_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
+        'views-badd269c61540ed2ff1a94de6a19b85c' => array(
+          'module' => 'views',
+          'delta' => 'badd269c61540ed2ff1a94de6a19b85c',
+          'region' => 'fullwidth_top',
+          'weight' => '-10',
+        ),
         'views-144213649de048346c08b149f75bc9dc' => array(
           'module' => 'views',
           'delta' => '144213649de048346c08b149f75bc9dc',
@@ -258,17 +264,23 @@ function stanford_soe_helper_magazine_context_default_contexts() {
           'region' => 'content_body_bottom',
           'weight' => '-9',
         ),
-        'views-81afc3faf7bc69c8ec1db8fd87d14e52' => array(
-          'module' => 'views',
-          'delta' => '81afc3faf7bc69c8ec1db8fd87d14e52',
-          'region' => 'content_body_bottom',
-          'weight' => '-8',
-        ),
         'stanford_soe_helper_magazine-soe_all_articles_link' => array(
           'module' => 'stanford_soe_helper_magazine',
           'delta' => 'soe_all_articles_link',
           'region' => 'content_body_bottom',
+          'weight' => '-8',
+        ),
+        'views-81afc3faf7bc69c8ec1db8fd87d14e52' => array(
+          'module' => 'views',
+          'delta' => '81afc3faf7bc69c8ec1db8fd87d14e52',
+          'region' => 'content_body_bottom',
           'weight' => '-7',
+        ),
+        'stanford_soe_helper_magazine-soe_all_issues_link' => array(
+          'module' => 'stanford_soe_helper_magazine',
+          'delta' => 'soe_all_issues_link',
+          'region' => 'content_body_bottom',
+          'weight' => '-6',
         ),
       ),
     ),

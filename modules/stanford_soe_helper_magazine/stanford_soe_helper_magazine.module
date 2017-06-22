@@ -37,6 +37,8 @@ function stanford_soe_helper_magazine_get_settings() {
   $default_settings = array(
     'soe_all_issues_link_title' => t('All Digital Magazine Issues'),
     'soe_all_issues_link_url' => 'magazine/issue',
+    'soe_all_issues_link_title_2' => t('Explore All Issues'),
+    'soe_all_issues_link_url_2' => 'magazine/issue',
     'soe_all_articles_link_title' => t('Read All Most Recent'),
     'soe_all_articles_link_url' => 'magazine/all',
   );
@@ -52,6 +54,9 @@ function stanford_soe_helper_magazine_block_info() {
   $blocks = array();
   $blocks['soe_all_issues_link'] = array(
     'info' => 'SoE All Issues Link',
+  );
+  $blocks['soe_all_issues_link_2'] = array(
+    'info' => 'SoE All Issues Link 2',
   );
   $blocks['soe_all_articles_link'] = array(
     'info' => 'SoE All Articles Link',
@@ -83,6 +88,27 @@ function stanford_soe_helper_magazine_block_configure($delta = '') {
         '#type' => 'textfield',
         '#title' => t('All Issues Button URL'),
         '#default_value' => $settings['soe_all_issues_link_url'],
+        '#required' => TRUE,
+      );
+
+      break;
+
+    case 'soe_all_issues_link_2':
+      $settings = stanford_soe_helper_magazine_get_settings();
+
+      // Link Title.
+      $form['soe_all_issues_link_title_2'] = array(
+        '#type' => 'textfield',
+        '#title' => t('All Issues Button Title 2'),
+        '#default_value' => $settings['soe_all_issues_link_title_2'],
+        '#required' => TRUE,
+      );
+
+      // Link URL.
+      $form['soe_all_issues_link_url_2'] = array(
+        '#type' => 'textfield',
+        '#title' => t('All Issues Button URL 2'),
+        '#default_value' => $settings['soe_all_issues_link_url_2'],
         '#required' => TRUE,
       );
 
@@ -128,6 +154,18 @@ function stanford_soe_helper_magazine_block_save($delta = '', $edit = array()) {
       variable_set('stanford_soe_helper_magazine_settings', $new_settings);
       break;
 
+    case 'soe_all_issues_link_2':
+
+      $settings = stanford_soe_helper_magazine_get_settings();
+      $new_settings = array_merge($settings, $edit);
+
+      $new_settings['soe_all_issues_link_title_2'] = filter_xss($new_settings['soe_all_issues_link_title_2']);
+      $new_settings['soe_all_issues_link_url_2'] = filter_xss($new_settings['soe_all_issues_link_url_2']);
+
+      variable_set('stanford_soe_helper_magazine_settings', $new_settings);
+      break;
+
+
     case 'soe_all_articles_link':
 
       $settings = stanford_soe_helper_magazine_get_settings();
@@ -153,6 +191,11 @@ function stanford_soe_helper_magazine_block_view($delta = '') {
       $block['content'] = soe_all_issues_link_block_view();
       break;
 
+    case 'soe_all_issues_link_2':
+      $block['subject'] = '<none>';
+      $block['content'] = soe_all_issues_link_2_block_view();
+      break;
+
     case 'soe_all_articles_link':
       $block['subject'] = '<none>';
       $block['content'] = soe_all_articles_link_block_view();
@@ -161,6 +204,7 @@ function stanford_soe_helper_magazine_block_view($delta = '') {
 
   return $block;
 }
+
 
 /**
  * Callback for the all issues link block.
@@ -176,6 +220,25 @@ function soe_all_issues_link_block_view() {
       '#markup' => l($settings['soe_all_issues_link_title'],
         $settings['soe_all_issues_link_url'],
         array('attributes' => array('class' => 'soe_all_issues_link btn'))),
+    ),
+  );
+  return $block;
+}
+
+/**
+ * Callback for the all issues link block.
+ *
+ * @return array
+ *   Array of blocks.
+ */
+function soe_all_issues_link_2_block_view() {
+  $settings = stanford_soe_helper_magazine_get_settings();
+  $block = array(
+    'soe_all_issues_link_2' => array(
+      '#type' => 'markup',
+      '#markup' => l($settings['soe_all_issues_link_title_2'],
+        $settings['soe_all_issues_link_url_2'],
+        array('attributes' => array('class' => 'soe_all_issues_link_2 btn'))),
     ),
   );
   return $block;
