@@ -5,6 +5,7 @@
 //
 
 // GENERAL
+
 body:not(.page-admin) {
   button,
   input,
@@ -163,8 +164,9 @@ body:not(.page-admin) {
       }
     }
 
-    .page-taxonomy-term &,
-    .page-magazine-all & {
+    .page-magazine &,
+    .page-magazine-all &,
+    .page-taxonomy-term & {
       margin-bottom: 80px;
       padding: 65px 0;
       box-shadow: none;
