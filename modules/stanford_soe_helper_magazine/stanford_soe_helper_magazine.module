@@ -217,9 +217,11 @@ function soe_all_issues_link_block_view() {
   $block = array(
     'soe_all_issues_link' => array(
       '#type' => 'markup',
+      '#prefix' => '<div class="soe_block_align">',
       '#markup' => l($settings['soe_all_issues_link_title'],
         $settings['soe_all_issues_link_url'],
-        array('attributes' => array('class' => 'soe_all_issues_link soe_block_align btn'))),
+        array('attributes' => array('class' => 'soe_all_issues_link soe_block_style btn'))),
+      '#suffix' => '</div>',
     ),
   );
   return $block;
@@ -236,9 +238,11 @@ function soe_all_issues_link_2_block_view() {
   $block = array(
     'soe_all_issues_link_2' => array(
       '#type' => 'markup',
+      '#prefix' => '<div class="soe_block_align">',
       '#markup' => l($settings['soe_all_issues_link_title_2'],
         $settings['soe_all_issues_link_url_2'],
-        array('attributes' => array('class' => 'soe_all_issues_link_2 soe_block_align btn'))),
+        array('attributes' => array('class' => 'soe_all_issues_link_2 soe_block_style btn'))),
+      '#suffix' => '</div>',
     ),
   );
   return $block;
@@ -255,9 +259,11 @@ function soe_all_articles_link_block_view() {
   $block = array(
     'soe_all_articles_link' => array(
       '#type' => 'markup',
+      '#prefix' => '<div class="soe_block_align">',
       '#markup' => l($settings['soe_all_articles_link_title'],
         $settings['soe_all_articles_link_url'],
         array('attributes' => array('class' => 'soe_all_articles_link soe_block_align btn'))),
+      '#suffix' => '</div>',
     ),
   );
   return $block;
