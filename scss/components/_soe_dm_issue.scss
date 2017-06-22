@@ -558,6 +558,11 @@
 // RECENT ISSUES VIEW
 
 .view-stanford-magazine-issue-recent {
+  &.views-grid-three .views-row {
+    margin-right: 4.49%;
+    margin-bottom: 4.49%;
+  }
+
   h2 {
     text-align: center;
   }
@@ -616,4 +621,12 @@
 
 #block-stanford-soe-helper-magazine-soe-all-issues-link {
   text-align: center;
+
+  h2 {
+    display: none;
+  }
+
+  a.btn {
+    margin: 40px 0 80px;
+  }
 }
