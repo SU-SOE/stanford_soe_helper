@@ -558,6 +558,29 @@
 // RECENT ISSUES VIEW
 
 .view-stanford-magazine-issue-recent {
+  &.views-grid-three .views-row {
+    margin-right: 4.49%;
+    margin-bottom: 4.49%;
+    @include breakpoint(large) {
+      width: 47.4%;
+
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+    }
+    @include breakpoint(small) {
+      width: 100%;
+      margin-right: 0;
+    }
+
+    &:nth-child(3n) {
+      margin-right: 0;
+      @include breakpoint(large) {
+        margin-right: 4.49%;
+      }
+    }
+  }
+
   h2 {
     text-align: center;
   }
@@ -595,8 +618,19 @@
       @include breakpoint(medium) {
         top: 30%;
       }
+      @include breakpoint(small) {
+        top: 45%;
+      }
       @include breakpoint(x-small) {
         top: 40%;
+      }
+    }
+
+    .prev-mag-issue-image {
+      img {
+        @include breakpoint(small) {
+          width: 100%;
+        }
       }
     }
 
@@ -616,4 +650,12 @@
 
 #block-stanford-soe-helper-magazine-soe-all-issues-link {
   text-align: center;
+
+  h2 {
+    display: none;
+  }
+
+  a.btn {
+    margin: 40px 0 80px;
+  }
 }
