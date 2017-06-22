@@ -561,6 +561,10 @@
   &.views-grid-three .views-row {
     margin-right: 4.49%;
     margin-bottom: 4.49%;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
   }
 
   h2 {
