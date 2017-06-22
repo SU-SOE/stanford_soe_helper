@@ -283,10 +283,14 @@
 // LATEST NEWS DM HOMEPAGE VIEW
 
 .view-stanford-magazine-article-mag-landing-page {
-  .views-row {
-    margin-bottom: 100px;
-    @include breakpoint(medium) {
-      margin-bottom: 50px;
+  h2 {
+    color: $gray-orange;
+    font-weight: 400;
+    width: 50%;
+    margin: 0 auto 60px;
+    text-align: center;
+    @include breakpoint(small) {
+      width: 100%;
     }
   }
 
@@ -467,6 +471,20 @@
           color: $primary-color;
         }
       }
+    }
+  }
+}
+
+.page-magazine #page-title {
+  text-align: center;
+}
+
+.page-magazine .main {
+  padding-bottom: 0;
+
+  .container {
+    @include breakpoint(small) {
+      margin-bottom: 0;
     }
   }
 }
