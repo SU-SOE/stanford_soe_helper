@@ -228,10 +228,10 @@ function stanford_soe_helper_magazine_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'views-badd269c61540ed2ff1a94de6a19b85c' => array(
+        'views-063f454257d6dfa5432155dce6a9a9e5' => array(
           'module' => 'views',
-          'delta' => 'badd269c61540ed2ff1a94de6a19b85c',
-          'region' => 'fullwidth_top',
+          'delta' => '063f454257d6dfa5432155dce6a9a9e5',
+          'region' => 'full_width_super_hero',
           'weight' => '-10',
         ),
         'views-144213649de048346c08b149f75bc9dc' => array(
