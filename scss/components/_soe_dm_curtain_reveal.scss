@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+//
+// CURTAIN REVEAL
+//
+
+html.js body > {
+  div[class*="hero"]:not([class*="reveal"]) img {
+    object-fit: cover;
+    object-position: center center;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .hero-curtain {
+    background: #000;
+    position: relative;
+    z-index: 10;
+
+    &.below-hero {
+      margin-bottom: 0 !important;
+    }
+  }
+
+  .hero-curtain-reveal {
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    &.below-hero {
+      position: relative;
+    }
+  }
+}
