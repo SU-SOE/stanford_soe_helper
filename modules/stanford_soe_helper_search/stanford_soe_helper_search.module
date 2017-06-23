@@ -19,6 +19,7 @@ function stanford_soe_helper_search_form_alter(&$form, &$form_state, $form_id) {
         '#type' => 'hidden',
         '#value' => 'TRUE',
       );
+      $form['#attached']['js'][] = drupal_get_path('module', 'stanford_soe_helper_search') . '/js/stanford_soe_helper_search.js';
     }
     if (isset($form_state['input']['is_magazine']) && $form_state['input']['is_magazine'] == 'TRUE') {
       unset($form['#submit']);
