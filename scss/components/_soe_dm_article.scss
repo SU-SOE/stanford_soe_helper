@@ -30,10 +30,21 @@
     color: $gray-orange;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     width: 75%;
     margin: 0 auto 18px;
     @include breakpoint(x-small) {
       width: 100%;
+    }
+
+    .group-s-date-and-byline,
+    .group-s-social-and-print {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .field-name-service-links-displays-group {
+      margin-right: 5px;
     }
 
     .field-name-field-s-mag-article-date {
