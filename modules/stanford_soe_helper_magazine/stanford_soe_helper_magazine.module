@@ -339,7 +339,6 @@ function stanford_soe_helper_magazine_preprocess_views_view(&$vars) {
     if ($view->current_display == 'page_1_3') {
       $file_path = drupal_get_path('module', 'stanford_soe_helper_magazine')
         . "/js/stanford_hero_curtain_reveal.js";
-      dpm($file_path);
       drupal_add_js($file_path);
     }
   }
