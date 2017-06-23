@@ -661,3 +661,83 @@
     }
   }
 }
+
+// BANNER CURTAIN DM HOMEPAGE VIEW
+
+.page-magazine {
+  .view-stanford-magazine-issue-most-recent {
+    .views-row {
+      margin-bottom: 0;
+    }
+
+    .mag-feat-image-container {
+      position: relative;
+
+      img {
+        width: 100%;
+        height: 100vh;
+
+        .logged-in & {
+          height: calc(100vh - 75px);
+        }
+      }
+
+      .mag-feat-content-container {
+        color: $white;
+        position: absolute;
+        bottom: 20%;
+        text-align: center;
+        width: 100%;
+        z-index: 1;
+
+        h1 {
+          color: $black;
+          font-size: em(32px);
+          display: inline;
+          padding: 15px 25px;
+          background: rgba(0, 0, 0, 0.3);
+          @include breakpoint(small) {
+            display: block;
+          }
+
+          &:after {
+            content: url("../img/soe_lg_arrow_right_black.png");
+            vertical-align: -6%;
+            padding-left: 20px;
+          }
+
+          &.mag-issue-color-orange {
+            background: $orange;
+          }
+
+          &.mag-issue-color-turquoise {
+            background: $turquoise;
+          }
+
+          &.mag-issue-color-pink {
+            background: $pink;
+          }
+        }
+
+        p {
+          margin: 10% 0 80px;
+        }
+
+        &:after {
+          content: url("../img/soe_chevron_down_white.png");
+          position: absolute;
+          bottom: 50px;
+        }
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        @include gradient-vertical($end-color: rgba(0, 0, 0, 0.3));
+      }
+    }
+  }
+}
