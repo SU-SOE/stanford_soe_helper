@@ -48,9 +48,12 @@
     }
 
     .field-name-field-s-mag-article-print a {
+      font-size: em(0px);
       color: transparent;
-      background: url("../img/soe_print_icon_gray.svg") no-repeat;
-      background-size: 30px;
+
+      &:after {
+        content: url("../img/soe_print_icon_gray.svg");
+      }
     }
 
     .field-name-field-s-mag-article-date {
