@@ -3,9 +3,10 @@
     attach: function (context, settings) {
       $( window ).load(function() {
         var soeSocialPathToImages = '/sites/default/modules/stanford/stanford_soe_helper/modules/stanford_soe_helper_magazine/img';
-        $('.group-s-social-and-print.field-group-div').prepend('<div class="widget-wrapper-linkedin"><a href="" class="share-linkedin"><img src="'+ location.protocol + '//' + location.host + soeSocialPathToImages + '/soe_linkedin_icon_blue.png"></a></div>');
-        $('.group-s-social-and-print.field-group-div').prepend('<div class="widget-wrapper-twitter"><a href="" class="share-twitter"><img src="'+ location.protocol + '//' + location.host + soeSocialPathToImages + '/soe_twitter_icon_blue.png"></a></div>');
-        $('.group-s-social-and-print.field-group-div').prepend('<div class="widget-wrapper-fb"><a href="" class="share-fb"><img src="'+ location.protocol + '//' + location.host + soeSocialPathToImages + '/soe_facebook_icon_blue.png"></a></div>');
+        var soeEnv = '/jse-soe-new-dev';
+        $('.group-s-social-and-print.field-group-div').prepend('<div class="widget-wrapper-linkedin"><a href="" class="share-linkedin"><img src="'+ location.protocol + '//' + location.host + soeEnv + SocialPathToImages + '/soe_linkedin_icon_blue.png"></a></div>');
+        $('.group-s-social-and-print.field-group-div').prepend('<div class="widget-wrapper-twitter"><a href="" class="share-twitter"><img src="'+ location.protocol + '//' + location.host + soeEnv + soeSocialPathToImages + '/soe_twitter_icon_blue.png"></a></div>');
+        $('.group-s-social-and-print.field-group-div').prepend('<div class="widget-wrapper-fb"><a href="" class="share-fb"><img src="'+ location.protocol + '//' + location.host + soeEnv + soeSocialPathToImages + '/soe_facebook_icon_blue.png"></a></div>');
         // Get the current URL
         var pathname = window.location,
           // Data
