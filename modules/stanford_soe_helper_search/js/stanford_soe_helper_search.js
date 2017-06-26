@@ -27,7 +27,6 @@
           dm_search.css({
             'z-index' : '',
             'position' : 'relative',
-            'width' : 'auto',
             'height' : 'auto'
           });
           $('.dm-search-close').remove();
@@ -41,7 +40,6 @@
         dm_search.css({
           'z-index' : '',
           'position' : 'relative',
-          'width' : 'auto',
           'height' : 'auto'
         });
         $('.dm-search-close').remove();
