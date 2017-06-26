@@ -48,6 +48,10 @@
       background: url("../img/soe_mag_glass_black.svg") no-repeat 6% 70%;
       @include breakpoint(small) {
         padding-top: 25px;
+
+        &:focus {
+          padding-top: 10px;
+        }
       }
 
       .not-logged-in & {
