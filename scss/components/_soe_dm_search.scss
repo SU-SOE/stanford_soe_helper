@@ -5,6 +5,21 @@
 //
 
 #digital-magazine-menu {
+  &.soe-mobile-search-active {
+    background: #b1fffe;
+
+    .block-stanford-search-api {
+      background: #b1fffe;
+      width: 90%;
+      z-index: 9999;
+
+      .dm-search-close {
+        float: right;
+        margin-top: -55px;
+      }
+    }
+  }
+
   .block-stanford-search-api {
     @include breakpoint(medium) {
       display: flex;
@@ -13,6 +28,7 @@
     }
     @include breakpoint(small) {
       display: block;
+      float: right;
       width: auto;
     }
 
@@ -30,6 +46,13 @@
       box-shadow: none;
       padding: 5px 0 0 40px;
       background: url("../img/soe_mag_glass_black.svg") no-repeat 6% 70%;
+      @include breakpoint(small) {
+        padding-top: 25px;
+
+        &:focus {
+          padding-top: 10px;
+        }
+      }
 
       .not-logged-in & {
         margin-right: -15px;
@@ -42,10 +65,13 @@
         width: 115px;
       }
       @include breakpoint(small) {
-        width: 175px;
+        width: 0;
+
+        &:focus {
+          width: 250px;
+        }
       }
     }
-
 
     input:-ms-input-placeholder {
       color: $primary-color;
