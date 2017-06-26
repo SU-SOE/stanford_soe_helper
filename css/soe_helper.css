@@ -1218,21 +1218,21 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
     @media (max-width: 767px) {
       /* line 19, ../scss/components/_soe_dm_navigation.scss */
       #digital-magazine-menu .region-digital-magazine-menu {
-        flex-wrap: nowrap;
-        justify-content: flex-start; } }
-    /* line 30, ../scss/components/_soe_dm_navigation.scss */
+        display: block; } }
+    /* line 29, ../scss/components/_soe_dm_navigation.scss */
     #digital-magazine-menu .region-digital-magazine-menu .block-menu-block {
       display: flex;
       align-items: center;
       justify-content: center;
       padding-top: 20px; }
       @media (max-width: 979px) {
-        /* line 30, ../scss/components/_soe_dm_navigation.scss */
+        /* line 29, ../scss/components/_soe_dm_navigation.scss */
         #digital-magazine-menu .region-digital-magazine-menu .block-menu-block {
           width: 100%; } }
       @media (max-width: 767px) {
-        /* line 30, ../scss/components/_soe_dm_navigation.scss */
+        /* line 29, ../scss/components/_soe_dm_navigation.scss */
         #digital-magazine-menu .region-digital-magazine-menu .block-menu-block {
+          float: left;
           width: auto; } }
       /* line 42, ../scss/components/_soe_dm_navigation.scss */
       #digital-magazine-menu .region-digital-magazine-menu .block-menu-block h2 {
@@ -1316,12 +1316,13 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
   /* line 8, ../scss/components/_soe_dm_search.scss */
   #digital-magazine-menu .block-stanford-search-api {
     display: block;
+    float: right;
     width: auto; } }
-/* line 19, ../scss/components/_soe_dm_search.scss */
+/* line 20, ../scss/components/_soe_dm_search.scss */
 #digital-magazine-menu .block-stanford-search-api h2,
 #digital-magazine-menu .block-stanford-search-api input.btn-search {
   display: none; }
-/* line 24, ../scss/components/_soe_dm_search.scss */
+/* line 25, ../scss/components/_soe_dm_search.scss */
 #digital-magazine-menu .block-stanford-search-api input[type="text"] {
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1em;
@@ -1332,34 +1333,34 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
   padding: 5px 0 0 40px;
   background: url("../img/soe_mag_glass_black.svg") no-repeat 6% 70%; }
   @media (max-width: 767px) {
-    /* line 24, ../scss/components/_soe_dm_search.scss */
+    /* line 25, ../scss/components/_soe_dm_search.scss */
     #digital-magazine-menu .block-stanford-search-api input[type="text"] {
       padding-top: 25px; } }
-  /* line 37, ../scss/components/_soe_dm_search.scss */
+  /* line 38, ../scss/components/_soe_dm_search.scss */
   .not-logged-in #digital-magazine-menu .block-stanford-search-api input[type="text"] {
     margin-right: -15px; }
-/* line 42, ../scss/components/_soe_dm_search.scss */
+/* line 43, ../scss/components/_soe_dm_search.scss */
 #digital-magazine-menu .block-stanford-search-api .input-medium {
   width: 175px; }
   @media (max-width: 979px) {
-    /* line 42, ../scss/components/_soe_dm_search.scss */
+    /* line 43, ../scss/components/_soe_dm_search.scss */
     #digital-magazine-menu .block-stanford-search-api .input-medium {
       width: 115px; } }
   @media (max-width: 767px) {
-    /* line 42, ../scss/components/_soe_dm_search.scss */
+    /* line 43, ../scss/components/_soe_dm_search.scss */
     #digital-magazine-menu .block-stanford-search-api .input-medium {
       width: 0; }
-      /* line 50, ../scss/components/_soe_dm_search.scss */
+      /* line 51, ../scss/components/_soe_dm_search.scss */
       #digital-magazine-menu .block-stanford-search-api .input-medium:focus {
         width: 250px; } }
-/* line 56, ../scss/components/_soe_dm_search.scss */
+/* line 57, ../scss/components/_soe_dm_search.scss */
 #digital-magazine-menu .block-stanford-search-api input:-ms-input-placeholder {
   color: #333333; }
-/* line 60, ../scss/components/_soe_dm_search.scss */
+/* line 61, ../scss/components/_soe_dm_search.scss */
 #digital-magazine-menu .block-stanford-search-api input::-moz-placeholder {
   color: #333333;
   opacity: 1; }
-/* line 65, ../scss/components/_soe_dm_search.scss */
+/* line 66, ../scss/components/_soe_dm_search.scss */
 #digital-magazine-menu .block-stanford-search-api input::-webkit-input-placeholder {
   color: #333333; }
 

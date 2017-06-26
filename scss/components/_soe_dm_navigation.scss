@@ -23,8 +23,7 @@
       flex-wrap: wrap;
     }
     @include breakpoint(small) {
-      flex-wrap: nowrap;
-      justify-content: flex-start;
+      display: block;
     }
 
     .block-menu-block {
@@ -36,6 +35,7 @@
         width: 100%;
       }
       @include breakpoint(small) {
+        float: left;
         width: auto;
       }
 
