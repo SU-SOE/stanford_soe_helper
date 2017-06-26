@@ -30,7 +30,6 @@
             'z-index' : '',
             'position' : 'relative',
             //potentially moving to external css
-            'background' : 'none',
             'width' : 'auto',
             'height' : 'auto'
           });
