@@ -18,8 +18,6 @@
             'z-index' : '9999',
             'position' : 'absolute',
             //potentially moving to external css
-            'background' : '#00ECE9',
-            'width' : '100%',
             'height' : dm_height
           });
           if ($('.dm-search-close').length === 0) {

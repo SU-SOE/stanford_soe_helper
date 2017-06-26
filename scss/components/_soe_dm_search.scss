@@ -5,7 +5,15 @@
 //
 
 #digital-magazine-menu {
+  .soe-mobile-search-active & {
+    background: #b1fffe;
+  }
+
   .block-stanford-search-api {
+    .soe-mobile-search-active & {
+      background: #b1fffe;
+      width: 100%;
+    }
     @include breakpoint(medium) {
       display: flex;
       justify-content: center;
