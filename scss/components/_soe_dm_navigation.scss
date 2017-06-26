@@ -9,6 +9,13 @@
 #digital-magazine-menu {
   background: $turquoise;
 
+  .container {
+    @include breakpoint(small) {
+      width: auto;
+      margin: 0 20px;
+    }
+  }
+
   .region-digital-magazine-menu {
     display: flex;
     justify-content: center;
@@ -17,6 +24,7 @@
     }
     @include breakpoint(small) {
       flex-wrap: nowrap;
+      justify-content: flex-start;
     }
 
     .block-menu-block {
@@ -41,6 +49,9 @@
           font-weight: 300;
           padding: 0 30px;
           vertical-align: top;
+          @include breakpoint(small) {
+            content: none;
+          }
         }
       }
 
@@ -64,12 +75,12 @@
 
           &.first.leaf a {
             &:after {
-              content: url("../img/soe_chevron_down_black.png");
+              content: url("../img/soe_chevron_down_black.png") "\00a0 \00a0 \00a0 |";
               padding-left: 10px;
             }
 
             &:focus:after {
-              content: url("../img/soe_chevron_up_black.png");
+              content: url("../img/soe_chevron_up_black.png") "\00a0 \00a0 \00a0 |";
             }
           }
 

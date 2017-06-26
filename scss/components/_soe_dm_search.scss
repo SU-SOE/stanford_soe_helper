@@ -30,6 +30,9 @@
       box-shadow: none;
       padding: 5px 0 0 40px;
       background: url("../img/soe_mag_glass_black.svg") no-repeat 6% 70%;
+      @include breakpoint(small) {
+        padding-top: 25px;
+      }
 
       .not-logged-in & {
         margin-right: -15px;
@@ -42,10 +45,13 @@
         width: 115px;
       }
       @include breakpoint(small) {
-        width: 175px;
+        width: 0;
+
+        &:focus {
+          width: 250px;
+        }
       }
     }
-
 
     input:-ms-input-placeholder {
       color: $primary-color;
