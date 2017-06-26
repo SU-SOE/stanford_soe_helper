@@ -84,9 +84,9 @@
 
             &:focus:after {
               content: url("../img/soe_chevron_up_black.png");
-            }
-            @include breakpoint(small) {
-              content: url("../img/soe_chevron_up_black.png") "\00a0 \00a0 \00a0 |";
+              @include breakpoint(small) {
+                content: url("../img/soe_chevron_up_black.png") "\00a0 \00a0 \00a0 |";
+              }
             }
           }
 
