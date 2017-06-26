@@ -15,9 +15,7 @@
         dm_search_input.on('focus', function() {
           $('#digital-magazine-menu').addClass('soe-mobile-search-active');
           dm_search.css({
-            // 'z-index' : '9999',
             'position' : 'absolute',
-            //potentially moving to external css
             'height' : dm_height
           });
           if ($('.dm-search-close').length === 0) {
@@ -29,7 +27,6 @@
           dm_search.css({
             'z-index' : '',
             'position' : 'relative',
-            //potentially moving to external css
             'width' : 'auto',
             'height' : 'auto'
           });
@@ -44,8 +41,6 @@
         dm_search.css({
           'z-index' : '',
           'position' : 'relative',
-          //potentially moving to external css
-          'background' : 'none',
           'width' : 'auto',
           'height' : 'auto'
         });
