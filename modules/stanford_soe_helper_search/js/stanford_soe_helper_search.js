@@ -15,7 +15,7 @@
         dm_search_input.on('focus', function() {
           $('#digital-magazine-menu').addClass('soe-mobile-search-active');
           dm_search.css({
-            'z-index' : '9999',
+            // 'z-index' : '9999',
             'position' : 'absolute',
             //potentially moving to external css
             'height' : dm_height
