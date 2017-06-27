@@ -577,10 +577,13 @@
       margin-right: 0;
     }
 
-    &:nth-child(3) {
+    &:nth-child(3n) {
       margin-right: 0;
       @include breakpoint(large) {
         margin-right: 4.49%;
+      }
+      @include breakpoint(small) {
+        margin-right: 0;
       }
     }
   }
