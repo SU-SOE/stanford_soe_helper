@@ -563,6 +563,11 @@
   &.views-grid-three .views-row {
     margin-right: 4.49%;
     margin-bottom: 4.49%;
+
+    &:nth-child(3),
+    &:nth-child(6) {
+      margin-right: 0;
+    }
     @include breakpoint(large) {
       width: 47.4%;
 
@@ -575,16 +580,6 @@
     @include breakpoint(small) {
       width: 100%;
       margin-right: 0;
-    }
-
-    &:nth-child(3n) {
-      margin-right: 0;
-      @include breakpoint(large) {
-        margin-right: 4.49%;
-      }
-      @include breakpoint(small) {
-        margin-right: 0;
-      }
     }
   }
 
