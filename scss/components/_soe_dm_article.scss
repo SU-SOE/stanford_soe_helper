@@ -43,32 +43,45 @@
       flex-wrap: wrap;
     }
 
-    .field-name-service-links-displays-group {
-      margin-right: 5px;
-    }
-
-    .field-name-forward-ds-field a {
-      font-size: em(0px);
-      color: transparent;
-
-      &:after {
-        content: url("../modules/stanford_soe_helper_magazine/img/soe_forward_icon_gray.svg");
-      }
-    }
-
-    .field-name-field-s-mag-article-print a {
-      font-size: em(0px);
-      color: transparent;
-
-      &:after {
-        content: url("../modules/stanford_soe_helper_magazine/img/soe_print_icon_gray.svg");
-      }
-    }
-
     .field-name-field-s-mag-article-date {
       .field-item {
         &:after {
           content: "\00a0 \00a0 |\00a0 \00a0 ";
+        }
+      }
+    }
+
+    .group-s-social-and-print {
+      a {
+        margin-right: 10px;
+      }
+
+      .field-name-forward-ds-field {
+        margin-top: 8px;
+        margin-bottom: 0;
+
+        a {
+          font-size: em(0px);
+          color: transparent;
+
+          &:after {
+            content: url("../modules/stanford_soe_helper_magazine/img/soe_forward_icon_gray.svg");
+          }
+        }
+      }
+
+      .field-name-field-s-mag-article-print {
+        margin-top: 6px;
+        margin-bottom: 0;
+
+        a {
+          font-size: em(0px);
+          color: transparent;
+          margin-right: 0;
+
+          &:after {
+            content: url("../modules/stanford_soe_helper_magazine/img/soe_print_icon_gray.svg");
+          }
         }
       }
     }
