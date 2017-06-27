@@ -1263,58 +1263,61 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
             @media (max-width: 767px) {
               /* line 66, ../scss/components/_soe_dm_navigation.scss */
               #digital-magazine-menu .region-digital-magazine-menu .block-menu-block ul li:first-child {
-                width: 100%;
-                margin-left: calc(100vw - 330px); } }
+                margin-left: calc(100vw - 315px); } }
+            @media (max-width: 767px) {
+              /* line 66, ../scss/components/_soe_dm_navigation.scss */
+              #digital-magazine-menu .region-digital-magazine-menu .block-menu-block ul li:first-child {
+                margin-left: calc(100vw - 305px); } }
           @media (max-width: 767px) {
-            /* line 74, ../scss/components/_soe_dm_navigation.scss */
+            /* line 76, ../scss/components/_soe_dm_navigation.scss */
             #digital-magazine-menu .region-digital-magazine-menu .block-menu-block ul li:nth-child(2) {
               display: none; } }
-          /* line 81, ../scss/components/_soe_dm_navigation.scss */
+          /* line 83, ../scss/components/_soe_dm_navigation.scss */
           #digital-magazine-menu .region-digital-magazine-menu .block-menu-block ul li.first.leaf a:after {
             content: url("../img/soe_chevron_down_black.png");
             padding-left: 10px; }
             @media (max-width: 767px) {
-              /* line 81, ../scss/components/_soe_dm_navigation.scss */
+              /* line 83, ../scss/components/_soe_dm_navigation.scss */
               #digital-magazine-menu .region-digital-magazine-menu .block-menu-block ul li.first.leaf a:after {
                 content: url("../img/soe_chevron_down_black.png") "   |"; } }
-          /* line 89, ../scss/components/_soe_dm_navigation.scss */
+          /* line 91, ../scss/components/_soe_dm_navigation.scss */
           #digital-magazine-menu .region-digital-magazine-menu .block-menu-block ul li.first.leaf a:focus:after {
             content: url("../img/soe_chevron_up_black.png"); }
             @media (max-width: 767px) {
-              /* line 89, ../scss/components/_soe_dm_navigation.scss */
+              /* line 91, ../scss/components/_soe_dm_navigation.scss */
               #digital-magazine-menu .region-digital-magazine-menu .block-menu-block ul li.first.leaf a:focus:after {
                 content: url("../img/soe_chevron_up_black.png") "   |"; } }
-          /* line 97, ../scss/components/_soe_dm_navigation.scss */
+          /* line 99, ../scss/components/_soe_dm_navigation.scss */
           #digital-magazine-menu .region-digital-magazine-menu .block-menu-block ul li a {
             color: #333333;
             padding-bottom: 20px;
             border-bottom: 2px solid transparent; }
-            /* line 102, ../scss/components/_soe_dm_navigation.scss */
+            /* line 104, ../scss/components/_soe_dm_navigation.scss */
             #digital-magazine-menu .region-digital-magazine-menu .block-menu-block ul li a:focus, #digital-magazine-menu .region-digital-magazine-menu .block-menu-block ul li a:hover {
               background-color: transparent;
               border-bottom-color: #333333; }
 
-/* line 117, ../scss/components/_soe_dm_navigation.scss */
+/* line 119, ../scss/components/_soe_dm_navigation.scss */
 #digital-magazine-megamenu .container {
   background-color: #575757; }
-  /* line 121, ../scss/components/_soe_dm_navigation.scss */
+  /* line 123, ../scss/components/_soe_dm_navigation.scss */
   #digital-magazine-megamenu .container .region-digital-magazine-megamenu .view-content {
     display: flex;
     flex-wrap: wrap;
     text-align: center; }
-    /* line 126, ../scss/components/_soe_dm_navigation.scss */
+    /* line 128, ../scss/components/_soe_dm_navigation.scss */
     #digital-magazine-megamenu .container .region-digital-magazine-megamenu .view-content .views-row {
       width: calc(100% * (1/4) - 2%);
       margin-right: 2%; }
       @media (max-width: 767px) {
-        /* line 126, ../scss/components/_soe_dm_navigation.scss */
+        /* line 128, ../scss/components/_soe_dm_navigation.scss */
         #digital-magazine-megamenu .container .region-digital-magazine-megamenu .view-content .views-row {
           width: calc(100% * (1/2) - 2%); } }
       @media (max-width: 480px) {
-        /* line 126, ../scss/components/_soe_dm_navigation.scss */
+        /* line 128, ../scss/components/_soe_dm_navigation.scss */
         #digital-magazine-megamenu .container .region-digital-magazine-megamenu .view-content .views-row {
           width: 100%; } }
-      /* line 136, ../scss/components/_soe_dm_navigation.scss */
+      /* line 138, ../scss/components/_soe_dm_navigation.scss */
       #digital-magazine-megamenu .container .region-digital-magazine-megamenu .view-content .views-row a {
         color: #FFFFFF;
         font-size: 0.90909em; }
