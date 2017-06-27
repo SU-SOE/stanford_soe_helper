@@ -47,12 +47,21 @@
       margin-right: 5px;
     }
 
+    .field-name-forward-ds-field a {
+      font-size: em(0px);
+      color: transparent;
+
+      &:after {
+        content: url("../img/soe_forward_icon_gray.svg");
+      }
+    }
+
     .field-name-field-s-mag-article-print a {
       font-size: em(0px);
       color: transparent;
 
       &:after {
-        content: url("../img/soe_print_icon_gray.svg");
+        content: url("../modules/stanford_soe_helper_magazine/img/soe_print_icon_gray.svg");
       }
     }
 
