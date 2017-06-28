@@ -26,16 +26,13 @@
 
         // add the URL's to anchors
         $('.share-fb').attr({
-          'href' : fburl,
-          'target' : '_blank'
+          'href' : fburl
         });
         $('.share-twitter').attr({
-          'href' : twurl,
-          'target' : '_blank'
+          'href' : twurl
         });
         $('.share-linkedin').attr({
-          'href' : liurl,
-          'target' : '_blank'
+          'href' : liurl
         });
       });
     }
