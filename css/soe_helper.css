@@ -2740,17 +2740,23 @@ html.js body > div[class*="hero"]:not([class*="reveal"]) img {
   height: 100vh; }
 /* line 16, ../scss/components/_soe_dm_curtain_reveal.scss */
 html.js body > .hero-curtain {
-  background: #000;
-  position: relative;
-  z-index: 10; }
-  /* line 21, ../scss/components/_soe_dm_curtain_reveal.scss */
+  background: transparent;
+  position: relative; }
+  /* line 20, ../scss/components/_soe_dm_curtain_reveal.scss */
+  html.js body > .hero-curtain > * {
+    position: relative;
+    z-index: 10; }
+  /* line 25, ../scss/components/_soe_dm_curtain_reveal.scss */
+  html.js body > .hero-curtain .entity {
+    background: #000; }
+  /* line 29, ../scss/components/_soe_dm_curtain_reveal.scss */
   html.js body > .hero-curtain.below-hero {
-    margin-bottom: 0 !important; }
-/* line 26, ../scss/components/_soe_dm_curtain_reveal.scss */
+    padding-bottom: 0 !important; }
+/* line 34, ../scss/components/_soe_dm_curtain_reveal.scss */
 html.js body > .hero-curtain-reveal {
   position: fixed;
   top: 0;
   width: 100%; }
-  /* line 31, ../scss/components/_soe_dm_curtain_reveal.scss */
+  /* line 39, ../scss/components/_soe_dm_curtain_reveal.scss */
   html.js body > .hero-curtain-reveal.below-hero {
     position: relative; }
