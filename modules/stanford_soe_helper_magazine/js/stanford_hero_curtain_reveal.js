@@ -1,7 +1,6 @@
 (function($) {
   Drupal.behaviors.stanfordherocurtainreveal = {
     attach: function(context, settings) {
-      console.log(settings);
       var classes = ['hero-curtain', 'hero-static', 'hero-scroll'];
 
       $.each(classes, function(i, heroClass) {
@@ -38,7 +37,7 @@
             .height(winHeight)
             .css('overflow', 'hidden');
         });
-        $('.hero-curtain').css('margin-bottom', $('.hero-curtain-reveal').height());
+        $('.hero-curtain').css('padding-bottom', $('.hero-curtain-reveal').height());
       }
 
       function heroScroller() {
