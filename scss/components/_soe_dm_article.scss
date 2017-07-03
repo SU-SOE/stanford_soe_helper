@@ -2,8 +2,10 @@
 
 //
 // DIGITAL MAGAZINE ARTICLE
-// FOR NODE DISPLAY
+// FOR NODE DISPLAY, VIEWS, PARAGRAPH TYPES, AND BLOCKS
 //
+
+// NODE DISPLAY
 
 .node-type-stanford-magazine-article {
   .field-name-field-s-mag-article-topics {
@@ -28,10 +30,17 @@
     color: $gray-orange;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     width: 75%;
     margin: 0 auto 18px;
     @include breakpoint(x-small) {
       width: 100%;
+    }
+
+    .group-s-date-and-byline,
+    .group-s-social-and-print {
+      display: flex;
+      flex-wrap: wrap;
     }
 
     .field-name-field-s-mag-article-date {
@@ -41,26 +50,653 @@
         }
       }
     }
+
+    .group-s-social-and-print {
+      a {
+        margin-right: 10px;
+      }
+
+      .field-name-forward-ds-field {
+        margin-top: 8px;
+        margin-bottom: 0;
+
+        a {
+          font-size: em(0px);
+          color: transparent;
+
+          &:after {
+            content: url("../modules/stanford_soe_helper_magazine/img/soe_forward_icon_gray.svg");
+          }
+        }
+      }
+
+      .field-name-field-s-mag-article-print {
+        margin-top: 6px;
+        margin-bottom: 0;
+
+        a {
+          font-size: em(0px);
+          color: transparent;
+          margin-right: 0;
+
+          &:after {
+            content: url("../modules/stanford_soe_helper_magazine/img/soe_print_icon_gray.svg");
+          }
+        }
+      }
+    }
+  }
+}
+
+// TAXONOMY AND ALL ARTICLES GRID VIEWS
+
+.page-magazine-all #page-title,
+.page-taxonomy-term #page-title {
+  text-align: center;
+}
+
+#block-views-a06b957e34c741c20a352da1b7ce0e12 h2 {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.view-stanford-magazine-article-most-recent,
+.view-stanford-magazine-articles,
+.view-stanford-magazine-topics {
+  &.most-recent-article {
+    margin: 40px 0 80px;
+    @include breakpoint(x-small) {
+      margin-bottom: 20px;
+    }
+
+    .most-recent-article-container {
+      position: relative;
+      display: flex;
+      @include box-shadow;
+      @include breakpoint(medium) {
+        display: block;
+      }
+
+      .mag-topic-card-container {
+        width: 50%;
+        background: $white;
+        padding: 50px 30px 30px;
+        @include breakpoint(medium) {
+          width: auto;
+        }
+        @include breakpoint(x-small) {
+          padding-top: 15px;
+        }
+
+        .mag-topic-card-content-container {
+          position: absolute;
+          bottom: 40px;
+          @include breakpoint(medium) {
+            position: static;
+          }
+        }
+
+        .mag-article-date {
+          color: $gray-orange;
+          font-size: em(20px);
+          font-weight: 100;
+          margin-bottom: 10px;
+        }
+
+        .mag-article-title {
+          font-size: em(32px);
+          line-height: 1.2em;
+          font-weight: 600;
+          @media (max-width: 1199px) and (min-width: 979px) {
+            font-size: em(20px);
+          }
+
+          &[class*="mag-article-color-"] a {
+            color: $primary-color;
+            text-decoration: underline;
+            text-decoration-skip: ink;
+
+            &:focus,
+            &:hover {
+              text-decoration-color: $primary-color;
+            }
+          }
+
+          &.mag-article-color-orange a {
+            text-decoration-color: $orange;
+          }
+
+          &.mag-article-color-turquoise a {
+            text-decoration-color: $turquoise;
+          }
+
+          &.mag-article-color-pink a {
+            text-decoration-color: $pink;
+          }
+        }
+
+        .mag-article-topics {
+          font-size: em(18px);
+          line-height: 1.3em;
+          margin: 30px 0;
+        }
+
+        .mag-article-issue {
+          position: absolute;
+          bottom: 15px;
+          right: 15px;
+
+          &[class*="mag-issue-color-"] {
+            padding: 0 9px;
+            font-size: em(18px);
+          }
+
+          &.mag-issue-color-orange {
+            background: $orange;
+          }
+
+          &.mag-issue-color-turquoise {
+            background: $turquoise;
+          }
+
+          &.mag-issue-color-pink {
+            background: $pink;
+          }
+
+          a {
+            color: $primary-color;
+          }
+        }
+      }
+
+      .mag-article-img img {
+        @include breakpoint(medium) {
+          width: 100%;
+        }
+      }
+    }
   }
 
-  .group-s-mag-article-dept {
-    width: 75%;
-    margin: 0 auto;
-    @include breakpoint(x-small) {
+  &.article-grouping {
+    .views-row {
+      margin-bottom: 80px;
+      @include breakpoint(x-small) {
+        margin-bottom: 20px;
+      }
+    }
+
+    .mag-topic-card-container {
+      position: relative;
+      background: $white;
+      padding: 15px 30px 30px;
+      @include box-shadow;
+
+      .mag-article-date {
+        color: $gray-orange;
+        font-size: em(18px);
+        font-weight: 100;
+      }
+
+      .mag-article-title {
+        font-size: em(26px);
+        line-height: 1.3em;
+        font-weight: 600;
+
+        &[class*="mag-article-color-"] a {
+          color: $primary-color;
+          text-decoration: underline;
+          text-decoration-skip: ink;
+
+          &:focus,
+          &:hover {
+            text-decoration-color: $primary-color;
+          }
+        }
+
+        &.mag-article-color-orange a {
+          text-decoration-color: $orange;
+        }
+
+        &.mag-article-color-turquoise a {
+          text-decoration-color: $turquoise;
+        }
+
+        &.mag-article-color-pink a {
+          text-decoration-color: $pink;
+        }
+      }
+
+      .mag-article-topics {
+        font-size: em(16px);
+        line-height: 1.2em;
+        margin: 30px 0;
+      }
+
+      .mag-article-issue {
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+
+        &[class*="mag-issue-color-"] {
+          padding: 0 9px;
+          font-size: em(16px);
+        }
+
+        &.mag-issue-color-orange {
+          background: $orange;
+        }
+
+        &.mag-issue-color-turquoise {
+          background: $turquoise;
+        }
+
+        &.mag-issue-color-pink {
+          background: $pink;
+        }
+
+        a {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+
+  .pager-load-more {
+    a {
+      color: $white;
+      background-color: $brand-bright;
+      border-radius: 0;
+      @include box-shadow;
+      padding: 0.7em 4em;
+
+      &:focus,
+      &:hover {
+        color: $white;
+        background-color: $primary-color;
+      }
+    }
+  }
+}
+
+.view-stanford-magazine-topics.most-recent-article {
+  margin-top: -30px;
+}
+
+// LATEST NEWS DM HOMEPAGE VIEW
+
+.view-stanford-magazine-article-mag-landing-page {
+  &.views-grid-three .views-row {
+    margin-bottom: 0;
+  }
+
+  h2 {
+    color: $gray-orange;
+    font-weight: 400;
+    width: 50%;
+    margin: 0 auto 60px;
+    text-align: center;
+    @include breakpoint(small) {
       width: 100%;
     }
+  }
 
-    h2 {
-      font-size: em(22px);
-      font-family: $primary-font;
-      margin-bottom: 0;
+  &.view-display-id-block_10_12,
+  &.view-display-id-page_1_3 {
+    .views-row {
+      &:nth-child(1) {
+        width: 22.5%;
+        margin-right: 4.5%;
+        @include breakpoint(medium) {
+          width: 100%;
+          margin-right: 0;
+        }
+      }
+
+      &:nth-child(2) {
+        width: 45%;
+        margin-right: 4.5%;
+        @include breakpoint(medium) {
+          width: 100%;
+          margin-right: 0;
+        }
+
+        .mag-article-container {
+          .mag-article-content-container {
+            background: $white;
+            padding: 50px 30px 30px;
+            @include box-shadow;
+            @include breakpoint(medium) {
+              padding: 15px 30px 30px;
+            }
+
+            .mag-article-date {
+              color: $gray-orange;
+              font-size: em(20px);
+              font-weight: 100;
+              margin-bottom: 10px;
+              @include breakpoint(medium) {
+                font-size: em(18px);
+              }
+            }
+
+            .mag-article-title {
+              font-size: em(32px);
+              line-height: 1.2em;
+              font-weight: 600;
+              @include breakpoint(medium) {
+                font-size: em(26px);
+                line-height: 1.3em;
+              }
+            }
+
+            .mag-article-topics {
+              font-size: em(18px);
+              line-height: 1.3em;
+              margin: 30px 0;
+              @include breakpoint(medium) {
+                font-size: em(16px);
+                line-height: 1.2em;
+              }
+            }
+          }
+        }
+      }
+
+      &:nth-child(3) {
+        width: 22.5%;
+        margin-right: 0;
+        @include breakpoint(medium) {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &.view-display-id-block_13_15,
+  &.view-display-id-block_4_6 {
+    .views-row {
+      &:nth-child(1) {
+        width: 45%;
+        margin-right: 4.5%;
+        @include breakpoint(medium) {
+          width: 100%;
+          margin-right: 0;
+        }
+
+        .mag-article-container {
+          .mag-article-content-container {
+            background: $white;
+            padding: 50px 30px 30px;
+            @include box-shadow;
+            @include breakpoint(medium) {
+              padding: 15px 30px 30px;
+            }
+
+            .mag-article-date {
+              color: $gray-orange;
+              font-size: em(20px);
+              font-weight: 100;
+              margin-bottom: 10px;
+              @include breakpoint(medium) {
+                font-size: em(18px);
+              }
+            }
+
+            .mag-article-title {
+              font-size: em(32px);
+              line-height: 1.2em;
+              font-weight: 600;
+              @include breakpoint(medium) {
+                font-size: em(26px);
+                line-height: 1.3em;
+              }
+            }
+
+            .mag-article-topics {
+              font-size: em(18px);
+              line-height: 1.3em;
+              margin: 30px 0;
+              @include breakpoint(medium) {
+                font-size: em(16px);
+                line-height: 1.2em;
+              }
+            }
+          }
+        }
+      }
+
+      &:nth-child(2) {
+        width: 22.5%;
+        margin-right: 4.5%;
+        @include breakpoint(medium) {
+          width: 100%;
+          margin-right: 0;
+        }
+      }
+
+      &:nth-child(3) {
+        width: 22.5%;
+        margin-right: 0;
+        @include breakpoint(medium) {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &.view-display-id-block_7_9 {
+    .views-row {
+      &:nth-child(1) {
+        width: 22.5%;
+        margin-right: 4.5%;
+        @include breakpoint(medium) {
+          width: 100%;
+          margin-right: 0;
+        }
+      }
+
+      &:nth-child(2) {
+        width: 22.5%;
+        margin-right: 4.5%;
+        @include breakpoint(medium) {
+          width: 100%;
+          margin-right: 0;
+        }
+      }
+
+      &:nth-child(3) {
+        width: 45%;
+        margin-right: 0;
+        @include breakpoint(medium) {
+          width: 100%;
+        }
+
+        .mag-article-container {
+          .mag-article-content-container {
+            background: $white;
+            padding: 50px 30px 30px;
+            @include box-shadow;
+            @include breakpoint(medium) {
+              padding: 15px 30px 30px;
+            }
+
+            .mag-article-date {
+              color: $gray-orange;
+              font-size: em(20px);
+              font-weight: 100;
+              margin-bottom: 10px;
+              @include breakpoint(medium) {
+                font-size: em(18px);
+              }
+            }
+
+            .mag-article-title {
+              font-size: em(32px);
+              line-height: 1.2em;
+              font-weight: 600;
+              @include breakpoint(medium) {
+                font-size: em(26px);
+                line-height: 1.3em;
+              }
+            }
+
+            .mag-article-topics {
+              font-size: em(18px);
+              line-height: 1.3em;
+              margin: 30px 0;
+              @include breakpoint(medium) {
+                font-size: em(16px);
+                line-height: 1.2em;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .mag-article-container {
+    margin-bottom: 80px;
+    @include breakpoint(medium) {
+      margin-bottom: 40px;
     }
 
-    .field-name-field-s-mag-article-dept {
-      width: 45%;
-      @include breakpoint(x-small) {
+    .mag-article-img img {
+      @include breakpoint(medium) {
         width: 100%;
       }
+    }
+
+    .mag-article-content-container {
+      position: relative;
+      background: $white;
+      padding: 15px 30px 30px;
+      @include box-shadow;
+
+      .mag-article-date {
+        color: $gray-orange;
+        font-size: em(18px);
+        font-weight: 100;
+      }
+
+      .mag-article-title {
+        font-size: em(26px);
+        line-height: 1.3em;
+        font-weight: 600;
+
+        &[class*="mag-article-color-"] a {
+          color: $primary-color;
+          text-decoration: underline;
+          text-decoration-skip: ink;
+
+          &:focus,
+          &:hover {
+            text-decoration-color: $primary-color;
+          }
+        }
+
+        &.mag-article-color-orange a {
+          text-decoration-color: $orange;
+        }
+
+        &.mag-article-color-turquoise a {
+          text-decoration-color: $turquoise;
+        }
+
+        &.mag-article-color-pink a {
+          text-decoration-color: $pink;
+        }
+      }
+
+      .mag-article-topics {
+        font-size: em(16px);
+        line-height: 1.2em;
+        margin: 30px 0;
+      }
+
+      .mag-article-issue {
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+
+        &[class*="mag-issue-color-"] {
+          padding: 0 9px;
+          font-size: em(18px);
+        }
+
+        &.mag-issue-color-orange {
+          background: $orange;
+        }
+
+        &.mag-issue-color-turquoise {
+          background: $turquoise;
+        }
+
+        &.mag-issue-color-pink {
+          background: $pink;
+        }
+
+        a {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
+
+.page-magazine {
+  .main {
+    padding-bottom: 0;
+
+    .container {
+      @include breakpoint(small) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  #page-title {
+    text-align: center;
+  }
+
+  .block-stanford-soe-helper-magazine {
+    a.btn {
+      margin: 0 0 80px;
+    }
+  }
+}
+
+// PARAGRAPH TYPES
+
+.node-type-stanford-magazine-article {
+  .paragraphs-item-p-two-columns {
+    font-family: $roboto-slab;
+    font-size: em(28px);
+    margin-bottom: 1em;
+  }
+}
+
+// RELATED DEPARTMENTS BLOCK
+
+#block-ds-extras-related-departments {
+  width: 75%;
+  border-top: 2px solid $dark-gray;
+  margin: 0 auto 50px;
+  padding-top: 20px;
+  @include breakpoint(x-small) {
+    width: 100%;
+  }
+
+  h2 {
+    font-size: em(22px);
+    font-family: $primary-font;
+    margin-bottom: 0;
+  }
+
+  .field-name-field-s-mag-article-dept {
+    width: 45%;
+    @include breakpoint(x-small) {
+      width: 100%;
     }
   }
 }

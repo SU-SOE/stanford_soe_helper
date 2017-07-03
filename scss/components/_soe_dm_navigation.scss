@@ -9,6 +9,13 @@
 #digital-magazine-menu {
   background: $turquoise;
 
+  .container {
+    @include breakpoint(small) {
+      width: auto;
+      margin: 0 20px;
+    }
+  }
+
   .region-digital-magazine-menu {
     display: flex;
     justify-content: center;
@@ -28,12 +35,17 @@
         width: 100%;
       }
       @include breakpoint(small) {
-        width: auto;
+        display: block;
+        float: left;
+        width: 100%;
       }
 
       h2 {
         margin-bottom: 0;
         padding-bottom: 20px;
+        @include breakpoint(small) {
+          float: left;
+        }
 
         &:after {
           content: "|";
@@ -41,6 +53,9 @@
           font-weight: 300;
           padding: 0 30px;
           vertical-align: top;
+          @include breakpoint(small) {
+            content: none;
+          }
         }
       }
 
@@ -54,6 +69,9 @@
 
           &:first-child {
             margin-left: 0;
+            @include breakpoint(small) {
+              float: right;
+            }
           }
 
           &:nth-child(2) {
@@ -66,10 +84,16 @@
             &:after {
               content: url("../img/soe_chevron_down_black.png");
               padding-left: 10px;
+              @include breakpoint(small) {
+                content: url("../img/soe_chevron_down_black.png") "\00a0 \00a0 \00a0 |";
+              }
             }
 
             &:focus:after {
               content: url("../img/soe_chevron_up_black.png");
+              @include breakpoint(small) {
+                content: url("../img/soe_chevron_up_black.png") "\00a0 \00a0 \00a0 |";
+              }
             }
           }
 

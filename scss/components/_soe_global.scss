@@ -44,12 +44,14 @@ h2 {
 }
 
 h3 {
+  font-family: $roboto-slab;
   font-size: em(26px);
   font-weight: 600;
   margin: 1.3em 0 0.3em;
 }
 
 h4 {
+  font-family: $roboto-slab;
   font-size: em(22px);
   font-weight: 600;
   margin: 1em 0 0.3em;
@@ -208,6 +210,26 @@ th {
 
 .views-row-lines .views-row {
   border-color: $gray;
+}
+
+.views-grid-three {
+  .views-row {
+    @include breakpoint(small) {
+      width: 46%;
+
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+
+      &:nth-child(3n) {
+        margin-right: 3%;
+      }
+    }
+    @include breakpoint(x-small) {
+      width: 100%;
+      margin-right: 0;
+    }
+  }
 }
 
 #wrap {

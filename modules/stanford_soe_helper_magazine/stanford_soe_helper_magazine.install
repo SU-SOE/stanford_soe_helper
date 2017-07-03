@@ -27,6 +27,10 @@ function stanford_soe_helper_magazine_enable() {
   }
   _stanford_soe_helper_magazine_site_owner_perms();
   _stanford_soe_helper_magazine_editor_perms();
+
+  // Initialize settings
+  $settings = stanford_soe_helper_magazine_get_settings();
+  variable_set('stanford_soe_helper_magazine_settings', $settings);
 }
 
 /**
@@ -36,6 +40,7 @@ function stanford_soe_helper_magazine_uninstall() {
   module_load_include('module', 'stanford_soe_helper');
   _stanford_soe_helper_delete_bean('stanford-soe-mag-news-signup');
   _stanford_soe_helper_delete_bean('stanford-soe-mag-explore-issues');
+  variable_del('stanford_soe_helper_magazine_settings');
 }
 
 /**

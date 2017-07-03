@@ -5,7 +5,6 @@
 //
 
 // GENERAL
-
 body:not(.page-admin) {
   button,
   input,
@@ -148,6 +147,10 @@ body:not(.page-admin) {
       margin-bottom: 0;
     }
 
+    h2 {
+      margin-bottom: 25px;
+    }
+
     .mc_signup_submission_wrapper {
       display: flex;
       justify-content: center;
@@ -164,6 +167,8 @@ body:not(.page-admin) {
       }
     }
 
+    .page-magazine &,
+    .page-magazine-all &,
     .page-taxonomy-term & {
       margin-bottom: 80px;
       padding: 65px 0;
@@ -172,5 +177,14 @@ body:not(.page-admin) {
         margin-bottom: 20px;
       }
     }
+
+    .node-type-stanford-magazine-issue & {
+      box-shadow: none;
+      padding: 65px 0;
+    }
   }
+}
+
+.node-type-stanford-magazine-issue .mailchimp-magazine-block form {
+  margin-bottom: 0;
 }

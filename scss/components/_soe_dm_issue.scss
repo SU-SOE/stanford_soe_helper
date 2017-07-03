@@ -13,6 +13,8 @@
       position: relative;
 
       img {
+        object-fit: cover;
+        object-position: center center;
         width: 100%;
         height: calc(100vh - 180px);
         @include breakpoint(x-small) {
@@ -318,6 +320,7 @@
     .mag-article-content-container {
       background: $white;
       padding: 50px 30px 30px;
+      @include box-shadow;
       @include breakpoint(medium) {
         padding: 15px 30px 30px;
       }
@@ -461,7 +464,7 @@
   }
 }
 
-// RELATED ISSUE VIEW
+// RELATED ISSUES VIEW
 
 .view-stanford-magazine-article-issue- {
   text-align: center;
@@ -550,6 +553,203 @@
 
     .mag-issue-color-pink a {
       background: $pink;
+    }
+  }
+}
+
+// RECENT ISSUES VIEW
+
+.view-stanford-magazine-issue-recent {
+  &.views-grid-three .views-row {
+    margin-right: 4.49%;
+    margin-bottom: 4.49%;
+
+    &:nth-child(3),
+    &:nth-child(6) {
+      margin-right: 0;
+    }
+    @include breakpoint(large) {
+      width: 47.4%;
+
+      &:nth-child(2),
+      &:nth-child(4),
+      &:nth-child(6) {
+        margin-right: 0;
+      }
+
+      &:nth-child(3) {
+        margin-right: 4.49%;
+      }
+    }
+    @include breakpoint(small) {
+      width: 100%;
+      margin-right: 0;
+
+      &:nth-child(3) {
+        margin-right: 0;
+      }
+    }
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  h3 {
+    font-family: $primary-font;
+    color: $gray-orange;
+    text-align: center;
+    margin: 0 0 40px;
+  }
+
+  .view-content {
+    width: 75%;
+    margin: 0 auto;
+    @include breakpoint(medium) {
+      width: 100%;
+    }
+  }
+
+  .prev-mag-issue-wrapper {
+    position: relative;
+
+    .prev-mag-issue-title-wrapper {
+      display: flex;
+      justify-content: center;
+    }
+
+    .prev-mag-issue-title {
+      font-family: $roboto-slab;
+      color: $black;
+      font-weight: 600;
+      position: absolute;
+      top: 32%;
+      padding: 10px 30px;
+      @include breakpoint(medium) {
+        top: 30%;
+      }
+      @include breakpoint(small) {
+        top: 45%;
+      }
+      @include breakpoint(x-small) {
+        top: 40%;
+      }
+    }
+
+    .prev-mag-issue-image {
+      img {
+        @include breakpoint(small) {
+          width: 100%;
+        }
+      }
+    }
+
+    &.prev-mag-issue-color-orange .prev-mag-issue-title {
+      background: $orange;
+    }
+
+    &.prev-mag-issue-color-turquoise .prev-mag-issue-title {
+      background: $turquoise;
+    }
+
+    &.prev-mag-issue-color-pink .prev-mag-issue-title {
+      background: $pink;
+    }
+  }
+}
+
+.block-stanford-soe-helper-magazine {
+  h2 {
+    display: none;
+  }
+
+  .soe_block_align {
+    text-align: center;
+
+    a.btn {
+      margin: 40px 0 80px;
+    }
+  }
+}
+
+// BANNER CURTAIN DM HOMEPAGE VIEW
+
+.page-magazine {
+  .view-stanford-magazine-issue-most-recent {
+    .views-row {
+      margin-bottom: 0;
+    }
+
+    .mag-feat-image-container {
+      position: relative;
+
+      img {
+        object-fit: cover;
+        object-position: center center;
+        width: 100%;
+        height: 100vh;
+
+        .logged-in & {
+          height: calc(100vh - 75px);
+        }
+      }
+
+      .mag-feat-content-container {
+        color: $white;
+        position: absolute;
+        bottom: 20%;
+        text-align: center;
+        width: 100%;
+        z-index: 1;
+
+        h1 {
+          color: $black;
+          font-size: em(32px);
+          display: inline;
+          padding: 15px 25px;
+          background: rgba(0, 0, 0, 0.3);
+          @include breakpoint(small) {
+            display: block;
+          }
+
+          &:after {
+            content: url("../img/soe_lg_arrow_right_black.png");
+            vertical-align: -6%;
+            padding-left: 20px;
+          }
+
+          &.mag-issue-color-orange {
+            background: $orange;
+          }
+
+          &.mag-issue-color-turquoise {
+            background: $turquoise;
+          }
+
+          &.mag-issue-color-pink {
+            background: $pink;
+          }
+        }
+
+        p {
+          margin: 10% 0 80px;
+        }
+
+        &:after {
+          content: url("../img/soe_chevron_down_white.png");
+          position: absolute;
+          bottom: 50px;
+        }
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        @include gradient-vertical($end-color: rgba(0, 0, 0, 0.3));
+      }
     }
   }
 }

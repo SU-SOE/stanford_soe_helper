@@ -9,6 +9,7 @@
 
   .dm-global-header & {
     position: absolute;
+    clip: rect(0 9999px 2px 0);
     clip-path: inset(0 0 55px 0);
     width: 100%;
     @include breakpoint(small) {
