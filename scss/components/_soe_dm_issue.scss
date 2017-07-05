@@ -498,7 +498,7 @@
         bottom: 38%;
         width: 100%;
         @include breakpoint(x-small) {
-          bottom: auto;
+          position: relative;
         }
 
         > a {
@@ -541,6 +541,9 @@
       bottom: 0;
       width: 100%;
       margin-bottom: 30px;
+      @include breakpoint(x-small) {
+        bottom: 115px;
+      }
     }
 
     .mag-issue-color-orange a {
