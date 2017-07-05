@@ -625,6 +625,9 @@
       left: 23%;
       padding: 10px 30px;
       @include breakpoint(medium) {
+        left: 28%;
+      }
+      @include breakpoint(medium) {
         top: 30%;
         left: 30%;
       }
@@ -634,6 +637,9 @@
       }
       @include breakpoint(x-small) {
         top: 40%;
+        left: 35%;
+      }
+      @media (max-width: 400px) {
         left: 30%;
       }
     }
