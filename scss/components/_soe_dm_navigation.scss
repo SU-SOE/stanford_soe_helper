@@ -17,20 +17,16 @@
   }
 
   .region-digital-magazine-menu {
-    display: -webkit-flex;
     display: flex;
     justify-content: center;
     @include breakpoint(medium) {
-      -webkit-flex-wrap: wrap;
       flex-wrap: wrap;
     }
     @include breakpoint(small) {
-      -webkit-flex-wrap: nowrap;
       flex-wrap: nowrap;
     }
 
     .block-menu-block {
-      display: -webkit-flex;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -125,9 +121,7 @@
 
     .region-digital-magazine-megamenu {
       .view-content {
-        display: -webkit-flex;
         display: flex;
-        -webkit-flex-wrap: wrap;
         flex-wrap: wrap;
         text-align: center;
 

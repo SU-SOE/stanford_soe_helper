@@ -12,6 +12,7 @@
       background: #b1fffe;
       width: 100%;
       z-index: 9999;
+      left: 0;
 
       .dm-search-close {
         float: right;
@@ -23,7 +24,6 @@
 
   .block-stanford-search-api {
     @include breakpoint(medium) {
-      display: -webkit-flex;
       display: flex;
       justify-content: center;
       width: 100%;

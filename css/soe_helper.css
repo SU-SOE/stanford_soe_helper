@@ -1212,44 +1212,40 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
       margin: 0 20px; } }
   /* line 19, ../scss/components/_soe_dm_navigation.scss */
   #digital-magazine-menu .region-digital-magazine-menu {
-    display: -webkit-flex;
     display: flex;
     justify-content: center; }
     @media (max-width: 979px) {
       /* line 19, ../scss/components/_soe_dm_navigation.scss */
       #digital-magazine-menu .region-digital-magazine-menu {
-        -webkit-flex-wrap: wrap;
         flex-wrap: wrap; } }
     @media (max-width: 767px) {
       /* line 19, ../scss/components/_soe_dm_navigation.scss */
       #digital-magazine-menu .region-digital-magazine-menu {
-        -webkit-flex-wrap: nowrap;
         flex-wrap: nowrap; } }
-    /* line 32, ../scss/components/_soe_dm_navigation.scss */
+    /* line 29, ../scss/components/_soe_dm_navigation.scss */
     #digital-magazine-menu .region-digital-magazine-menu .block-menu-block {
-      display: -webkit-flex;
       display: flex;
       align-items: center;
       justify-content: center;
       padding-top: 20px; }
       @media (max-width: 979px) {
-        /* line 32, ../scss/components/_soe_dm_navigation.scss */
+        /* line 29, ../scss/components/_soe_dm_navigation.scss */
         #digital-magazine-menu .region-digital-magazine-menu .block-menu-block {
           width: 100%; } }
       @media (max-width: 767px) {
-        /* line 32, ../scss/components/_soe_dm_navigation.scss */
+        /* line 29, ../scss/components/_soe_dm_navigation.scss */
         #digital-magazine-menu .region-digital-magazine-menu .block-menu-block {
           display: block;
           width: 100%; } }
-      /* line 46, ../scss/components/_soe_dm_navigation.scss */
+      /* line 42, ../scss/components/_soe_dm_navigation.scss */
       #digital-magazine-menu .region-digital-magazine-menu .block-menu-block h2 {
         margin-bottom: 0;
         padding-bottom: 20px; }
         @media (max-width: 767px) {
-          /* line 46, ../scss/components/_soe_dm_navigation.scss */
+          /* line 42, ../scss/components/_soe_dm_navigation.scss */
           #digital-magazine-menu .region-digital-magazine-menu .block-menu-block h2 {
             float: left; } }
-        /* line 53, ../scss/components/_soe_dm_navigation.scss */
+        /* line 49, ../scss/components/_soe_dm_navigation.scss */
         #digital-magazine-menu .region-digital-magazine-menu .block-menu-block h2:after {
           content: "|";
           font-size: 40px;
@@ -1257,76 +1253,74 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
           padding: 0 30px;
           vertical-align: top; }
           @media (max-width: 767px) {
-            /* line 53, ../scss/components/_soe_dm_navigation.scss */
+            /* line 49, ../scss/components/_soe_dm_navigation.scss */
             #digital-magazine-menu .region-digital-magazine-menu .block-menu-block h2:after {
               content: none; } }
-      /* line 65, ../scss/components/_soe_dm_navigation.scss */
+      /* line 61, ../scss/components/_soe_dm_navigation.scss */
       #digital-magazine-menu .region-digital-magazine-menu .block-menu-block ul {
         margin-bottom: 0; }
-        /* line 68, ../scss/components/_soe_dm_navigation.scss */
+        /* line 64, ../scss/components/_soe_dm_navigation.scss */
         #digital-magazine-menu .region-digital-magazine-menu .block-menu-block ul li {
           display: inline;
           float: left;
           list-style: none; }
-          /* line 73, ../scss/components/_soe_dm_navigation.scss */
+          /* line 69, ../scss/components/_soe_dm_navigation.scss */
           #digital-magazine-menu .region-digital-magazine-menu .block-menu-block ul li:first-child {
             margin-left: 0; }
             @media (max-width: 767px) {
-              /* line 73, ../scss/components/_soe_dm_navigation.scss */
+              /* line 69, ../scss/components/_soe_dm_navigation.scss */
               #digital-magazine-menu .region-digital-magazine-menu .block-menu-block ul li:first-child {
                 float: right; } }
           @media (max-width: 767px) {
-            /* line 80, ../scss/components/_soe_dm_navigation.scss */
+            /* line 76, ../scss/components/_soe_dm_navigation.scss */
             #digital-magazine-menu .region-digital-magazine-menu .block-menu-block ul li:nth-child(2) {
               display: none; } }
-          /* line 87, ../scss/components/_soe_dm_navigation.scss */
+          /* line 83, ../scss/components/_soe_dm_navigation.scss */
           #digital-magazine-menu .region-digital-magazine-menu .block-menu-block ul li.first.leaf a:after {
             content: url("../img/soe_chevron_down_black.png");
             padding-left: 10px; }
             @media (max-width: 767px) {
-              /* line 87, ../scss/components/_soe_dm_navigation.scss */
+              /* line 83, ../scss/components/_soe_dm_navigation.scss */
               #digital-magazine-menu .region-digital-magazine-menu .block-menu-block ul li.first.leaf a:after {
                 content: url("../img/soe_chevron_down_black.png") "   |"; } }
-          /* line 95, ../scss/components/_soe_dm_navigation.scss */
+          /* line 91, ../scss/components/_soe_dm_navigation.scss */
           #digital-magazine-menu .region-digital-magazine-menu .block-menu-block ul li.first.leaf a:focus:after {
             content: url("../img/soe_chevron_up_black.png"); }
             @media (max-width: 767px) {
-              /* line 95, ../scss/components/_soe_dm_navigation.scss */
+              /* line 91, ../scss/components/_soe_dm_navigation.scss */
               #digital-magazine-menu .region-digital-magazine-menu .block-menu-block ul li.first.leaf a:focus:after {
                 content: url("../img/soe_chevron_up_black.png") "   |"; } }
-          /* line 103, ../scss/components/_soe_dm_navigation.scss */
+          /* line 99, ../scss/components/_soe_dm_navigation.scss */
           #digital-magazine-menu .region-digital-magazine-menu .block-menu-block ul li a {
             color: #333333;
             padding-bottom: 20px;
             border-bottom: 2px solid transparent; }
-            /* line 108, ../scss/components/_soe_dm_navigation.scss */
+            /* line 104, ../scss/components/_soe_dm_navigation.scss */
             #digital-magazine-menu .region-digital-magazine-menu .block-menu-block ul li a:focus, #digital-magazine-menu .region-digital-magazine-menu .block-menu-block ul li a:hover {
               background-color: transparent;
               border-bottom-color: #333333; }
 
-/* line 123, ../scss/components/_soe_dm_navigation.scss */
+/* line 119, ../scss/components/_soe_dm_navigation.scss */
 #digital-magazine-megamenu .container {
   background-color: #575757; }
-  /* line 127, ../scss/components/_soe_dm_navigation.scss */
+  /* line 123, ../scss/components/_soe_dm_navigation.scss */
   #digital-magazine-megamenu .container .region-digital-magazine-megamenu .view-content {
-    display: -webkit-flex;
     display: flex;
-    -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
     text-align: center; }
-    /* line 134, ../scss/components/_soe_dm_navigation.scss */
+    /* line 128, ../scss/components/_soe_dm_navigation.scss */
     #digital-magazine-megamenu .container .region-digital-magazine-megamenu .view-content .views-row {
       width: calc(100% * (1/4) - 2%);
       margin-right: 2%; }
       @media (max-width: 767px) {
-        /* line 134, ../scss/components/_soe_dm_navigation.scss */
+        /* line 128, ../scss/components/_soe_dm_navigation.scss */
         #digital-magazine-megamenu .container .region-digital-magazine-megamenu .view-content .views-row {
           width: calc(100% * (1/2) - 2%); } }
       @media (max-width: 480px) {
-        /* line 134, ../scss/components/_soe_dm_navigation.scss */
+        /* line 128, ../scss/components/_soe_dm_navigation.scss */
         #digital-magazine-megamenu .container .region-digital-magazine-megamenu .view-content .views-row {
           width: 100%; } }
-      /* line 144, ../scss/components/_soe_dm_navigation.scss */
+      /* line 138, ../scss/components/_soe_dm_navigation.scss */
       #digital-magazine-megamenu .container .region-digital-magazine-megamenu .view-content .views-row a {
         color: #FFFFFF;
         font-size: 0.90909em; }
@@ -1338,21 +1332,21 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
   #digital-magazine-menu.soe-mobile-search-active .block-stanford-search-api {
     background: #b1fffe;
     width: 100%;
-    z-index: 9999; }
-    /* line 16, ../scss/components/_soe_dm_search.scss */
+    z-index: 9999;
+    left: 0; }
+    /* line 17, ../scss/components/_soe_dm_search.scss */
     #digital-magazine-menu.soe-mobile-search-active .block-stanford-search-api .dm-search-close {
       float: right;
       margin-top: -55px;
       padding-right: 20px; }
 @media (max-width: 979px) {
-  /* line 24, ../scss/components/_soe_dm_search.scss */
+  /* line 25, ../scss/components/_soe_dm_search.scss */
   #digital-magazine-menu .block-stanford-search-api {
-    display: -webkit-flex;
     display: flex;
     justify-content: center;
     width: 100%; } }
 @media (max-width: 767px) {
-  /* line 24, ../scss/components/_soe_dm_search.scss */
+  /* line 25, ../scss/components/_soe_dm_search.scss */
   #digital-magazine-menu .block-stanford-search-api {
     display: block;
     width: auto; } }
