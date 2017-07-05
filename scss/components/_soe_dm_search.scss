@@ -23,13 +23,12 @@
 
   .block-stanford-search-api {
     @include breakpoint(medium) {
+      display: -webkit-flex;
       display: flex;
       justify-content: center;
       width: 100%;
     }
     @include breakpoint(small) {
-      display: block;
-      float: right;
       width: auto;
     }
 
