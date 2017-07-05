@@ -616,26 +616,25 @@
   .prev-mag-issue-wrapper {
     position: relative;
 
-    .prev-mag-issue-title-wrapper {
-      display: flex;
-      justify-content: center;
-    }
-
     .prev-mag-issue-title {
       font-family: $roboto-slab;
       color: $black;
       font-weight: 600;
       position: absolute;
       top: 32%;
+      left: 23%;
       padding: 10px 30px;
       @include breakpoint(medium) {
         top: 30%;
+        left: 30%;
       }
       @include breakpoint(small) {
         top: 45%;
+        left: 40%;
       }
       @include breakpoint(x-small) {
         top: 40%;
+        left: 30%;
       }
     }
 
