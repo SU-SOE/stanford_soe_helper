@@ -31,6 +31,7 @@ This module provides custom functionality for the Stanford Magazine. This includ
 - Custom blocks that link to the all articles and all issues pages.
 - The Stanford Taxonomy Term view - this view overwrites Drupal's default system for handling taxonomy terms.
 - Some site owner and editor permissions
+
 This module uses the _stanford_department_ taxonomy. This taxonomy is defined in the 
 [stanford_news_extras](https://github.com/SU-SWS/stanford_news/stanford_news_extras) module.
 
