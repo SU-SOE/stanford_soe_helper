@@ -498,7 +498,7 @@
         bottom: 38%;
         width: 100%;
         @include breakpoint(x-small) {
-          bottom: auto;
+          position: relative;
         }
 
         > a {
@@ -541,6 +541,9 @@
       bottom: 0;
       width: 100%;
       margin-bottom: 30px;
+      @include breakpoint(x-small) {
+        bottom: 115px;
+      }
     }
 
     .mag-issue-color-orange a {
@@ -613,27 +616,14 @@
   .prev-mag-issue-wrapper {
     position: relative;
 
-    .prev-mag-issue-title-wrapper {
-      display: flex;
-      justify-content: center;
-    }
-
     .prev-mag-issue-title {
       font-family: $roboto-slab;
       color: $black;
       font-weight: 600;
       position: absolute;
-      top: 32%;
+      top: calc(50% - 25px);
+      left: calc(50% - 70px);
       padding: 10px 30px;
-      @include breakpoint(medium) {
-        top: 30%;
-      }
-      @include breakpoint(small) {
-        top: 45%;
-      }
-      @include breakpoint(x-small) {
-        top: 40%;
-      }
     }
 
     .prev-mag-issue-image {

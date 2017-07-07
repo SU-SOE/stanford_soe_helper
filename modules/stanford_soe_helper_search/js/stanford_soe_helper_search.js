@@ -16,7 +16,6 @@
           dm_search_input.attr("placeholder", "Search");
           $('#digital-magazine-menu').addClass('soe-mobile-search-active');
           dm_search.css({
-            'position': 'absolute',
             'height': dm_height
           });
           if ($('.dm-search-close').length === 0) {
@@ -27,7 +26,6 @@
           $('#digital-magazine-menu').removeClass('soe-mobile-search-active');
           dm_search.css({
             'z-index': '',
-            'position': 'relative',
             'height': 'auto'
           });
           $('.dm-search-close').remove();
@@ -40,7 +38,6 @@
         $('#digital-magazine-menu').removeClass('soe-mobile-search-active');
         dm_search.css({
           'z-index': '',
-          'position': 'relative',
           'height': 'auto'
         });
         $('.dm-search-close').remove();

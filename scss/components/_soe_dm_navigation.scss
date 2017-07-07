@@ -23,7 +23,7 @@
       flex-wrap: wrap;
     }
     @include breakpoint(small) {
-      display: block;
+      flex-wrap: nowrap;
     }
 
     .block-menu-block {
@@ -35,13 +35,16 @@
         width: 100%;
       }
       @include breakpoint(small) {
-        float: left;
-        width: auto;
+        display: block;
+        width: 100%;
       }
 
       h2 {
         margin-bottom: 0;
         padding-bottom: 20px;
+        @include breakpoint(small) {
+          float: left;
+        }
 
         &:after {
           content: "|";
@@ -66,10 +69,7 @@
           &:first-child {
             margin-left: 0;
             @include breakpoint(small) {
-              margin-left: calc(100vw - 315px);
-            }
-            @include breakpoint(small) {
-              margin-left: calc(100vw - 305px);
+              float: right;
             }
           }
 

@@ -10,17 +10,21 @@
 
     .block-stanford-search-api {
       background: #b1fffe;
-      width: 90%;
+      width: 100%;
       z-index: 9999;
+      position: absolute;
+      left: 0;
 
       .dm-search-close {
         float: right;
         margin-top: -55px;
+        padding-right: 20px;
       }
     }
   }
 
   .block-stanford-search-api {
+    position: relative;
     @include breakpoint(medium) {
       display: flex;
       justify-content: center;
@@ -28,7 +32,6 @@
     }
     @include breakpoint(small) {
       display: block;
-      float: right;
       width: auto;
     }
 
@@ -47,7 +50,7 @@
       padding: 5px 0 0 40px;
       background: url("../img/soe_mag_glass_black.svg") no-repeat 6% 70%;
       @include breakpoint(small) {
-        padding-top: 25px;
+        padding-top: 0;
 
         &:focus {
           padding-top: 10px;
