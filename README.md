@@ -22,13 +22,17 @@ This module provides custom functionality for the SoE Homepage.
 **[Stanford SoE Helper Landing_Page](https://github.com/SU-SWS/stanford_soe_helper/stanford_soe_helper_landing_page/)**
 This module provides custom functionality for landing pages.
 
+**[Stanford SoE Helper Magazine Views](https://github.com/SU-SWS/stanford_soe_helper/stanford_soe_helper_mag_views/)**
+This module provides custom magazine views that use template (tpl.php) files. 
+
 **[Stanford SoE Helper Magazine](https://github.com/SU-SWS/stanford_soe_helper/stanford_soe_helper_magazine/)**
 This module provides custom functionality for the Stanford Magazine. This includes:
 - The newsletter sign-up block that appears on magazine pages
+- Custom blocks that link to the all articles and all issues pages.
 - The Stanford Taxonomy Term view - this view overwrites Drupal's default system for handling taxonomy terms.
-- Setting site owner and editor permissions
-- TBD - The view that re-writes the department vocabulary term links on magazine article 
-pages to redirect to magazine/\<department/>
+- Some site owner and editor permissions
+This module uses the _stanford_department_ taxonomy. This taxonomy is defined in the 
+[stanford_news_extras](https://github.com/SU-SWS/stanford_news/stanford_news_extras) module.
 
 **[Stanford SoE Helper News](https://github.com/SU-SWS/stanford_soe_helper/stanford_soe_helper_news/)**
 This module provides custom functionality for news.
@@ -40,6 +44,7 @@ This module provides custom functionality for Stanford Pages.
 This module provides custom functionality for sitewide functionality. 
 This includes contexts and vocabulary including:
  - SoE Accent Color vocabulary
+ - Stanford SoE Intranet Link block
  
 
 Accessibility
