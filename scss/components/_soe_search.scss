@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+//
+// SEARCH
+//
+
+#global-header {
+  .block-stanford-search-api {
+    margin-top: -22px;
+
+    input#edit-search {
+      display: none;
+    }
+
+    input[type="text"] {
+      font-family: $primary-font;
+      font-size: 16px;
+      color: $white;
+      background-color: transparent;
+      border: none;
+      box-shadow: none;
+      padding: 5px 0 0 30px;
+      background: url("../img/soe_mag_glass_white.svg") no-repeat 5% center;
+      @include transition (width);
+
+      .not-logged-in & {
+        margin-right: -15px;
+      }
+
+      &:focus {
+        background-position-x: 0;
+        margin-right: 0;
+      }
+    }
+
+    .input-medium {
+      width: 60px;
+
+      &:focus {
+        width: 175px;
+        @include breakpoint(x-small) {
+          width: 170px;
+        }
+      }
+    }
+
+    input:-ms-input-placeholder {
+      color: $white;
+    }
+
+    input::-moz-placeholder {
+      color: $white;
+    }
+
+    input::-webkit-input-placeholder {
+      color: $white;
+    }
+  }
+}
+
+.page-search div#edit-basic {
+  margin-bottom: 5px;
+}

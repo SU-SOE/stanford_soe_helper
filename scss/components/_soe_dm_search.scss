@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+//
+// DIGITAL MAGAZINE SEARCH
+//
+
+#digital-magazine-menu {
+  &.soe-mobile-search-active {
+    background: #b1fffe;
+
+    .block-stanford-search-api {
+      background: #b1fffe;
+      width: 100%;
+      z-index: 9999;
+      position: absolute;
+      left: 0;
+
+      .dm-search-close {
+        float: right;
+        margin-top: -55px;
+        padding-right: 20px;
+      }
+    }
+  }
+
+  .block-stanford-search-api {
+    position: relative;
+    @include breakpoint(medium) {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+    @include breakpoint(small) {
+      display: block;
+      width: auto;
+    }
+
+    h2,
+    input.btn-search {
+      display: none;
+    }
+
+    input[type="text"] {
+      font-family: $primary-font;
+      font-size: em(22px, 22px);
+      color: $primary-color;
+      background-color: transparent;
+      border: none;
+      box-shadow: none;
+      padding: 5px 0 0 40px;
+      background: url("../img/soe_mag_glass_black.svg") no-repeat 6% 70%;
+      @include breakpoint(small) {
+        padding-top: 0;
+
+        &:focus {
+          padding-top: 10px;
+        }
+      }
+
+      .not-logged-in & {
+        margin-right: -15px;
+      }
+    }
+
+    .input-medium {
+      width: 175px;
+      @include breakpoint(medium) {
+        width: 115px;
+      }
+      @include breakpoint(small) {
+        width: 0;
+
+        &:focus {
+          width: 250px;
+        }
+      }
+    }
+
+    input:-ms-input-placeholder {
+      color: $primary-color;
+    }
+
+    input::-moz-placeholder {
+      color: $primary-color;
+      opacity: 1;
+    }
+
+    input::-webkit-input-placeholder {
+      color: $primary-color;
+    }
+  }
+}

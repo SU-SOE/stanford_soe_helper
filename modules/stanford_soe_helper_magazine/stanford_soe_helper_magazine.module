@@ -1,0 +1,352 @@
+<?php
+
+/**
+ * @file
+ * Code for the Stanford SoE Magazine feature.
+ */
+
+include_once 'stanford_soe_helper_magazine.features.inc';
+
+/**
+ * Implements hook_menu_block_blocks().
+ */
+function stanford_soe_helper_magazine_menu_block_blocks() {
+  // The array key is the block delta used by menu block.
+  return array(
+    'stanford_soe_helper_mag-1' => array(
+      'menu_name' => 'menu-magazine',
+      'parent_mlid' => 0,
+      'title_link' => 0,
+      'admin_title' => 'Digital Magazine Menu - Primary - 2 Depths',
+      'level' => 1,
+      'follow' => 0,
+      'depth' => 2,
+      'expanded' => 0,
+      'sort' => 0,
+    ),
+  );
+}
+
+/**
+ * Handle the variables for this module.
+ *
+ * @return array
+ *   array of variables for this module.
+ */
+function stanford_soe_helper_magazine_get_settings() {
+  $default_settings = array(
+    'soe_all_issues_link_title' => t('All Digital Magazine Issues'),
+    'soe_all_issues_link_url' => 'magazine/issue',
+    'soe_all_issues_link_title_2' => t('Explore All Issues'),
+    'soe_all_issues_link_url_2' => 'magazine/issue',
+    'soe_all_articles_link_title' => t('Read All Most Recent'),
+    'soe_all_articles_link_url' => 'magazine/all',
+  );
+  $settings = variable_get('stanford_soe_helper_magazine_settings', $default_settings);
+
+  return $settings;
+}
+
+/**
+ * Implements hook_block_info().
+ */
+function stanford_soe_helper_magazine_block_info() {
+  $blocks = array();
+  $blocks['soe_all_issues_link'] = array(
+    'info' => 'SoE All Issues Link',
+  );
+  $blocks['soe_all_issues_link_2'] = array(
+    'info' => 'SoE All Issues Link 2',
+  );
+  $blocks['soe_all_articles_link'] = array(
+    'info' => 'SoE All Articles Link',
+  );
+
+  return $blocks;
+}
+
+/**
+ * Implements hook_block_configure().
+ */
+function stanford_soe_helper_magazine_block_configure($delta = '') {
+  $form = array();
+
+  switch ($delta) {
+    case 'soe_all_issues_link':
+      $settings = stanford_soe_helper_magazine_get_settings();
+
+      // Link Title.
+      $form['soe_all_issues_link_title'] = array(
+        '#type' => 'textfield',
+        '#title' => t('All Issues Button Title'),
+        '#default_value' => $settings['soe_all_issues_link_title'],
+        '#required' => TRUE,
+      );
+
+      // Link URL.
+      $form['soe_all_issues_link_url'] = array(
+        '#type' => 'textfield',
+        '#title' => t('All Issues Button URL'),
+        '#default_value' => $settings['soe_all_issues_link_url'],
+        '#required' => TRUE,
+      );
+
+      break;
+
+    case 'soe_all_issues_link_2':
+      $settings = stanford_soe_helper_magazine_get_settings();
+
+      // Link Title.
+      $form['soe_all_issues_link_title_2'] = array(
+        '#type' => 'textfield',
+        '#title' => t('All Issues Button Title 2'),
+        '#default_value' => $settings['soe_all_issues_link_title_2'],
+        '#required' => TRUE,
+      );
+
+      // Link URL.
+      $form['soe_all_issues_link_url_2'] = array(
+        '#type' => 'textfield',
+        '#title' => t('All Issues Button URL 2'),
+        '#default_value' => $settings['soe_all_issues_link_url_2'],
+        '#required' => TRUE,
+      );
+
+      break;
+
+    case 'soe_all_articles_link':
+      $settings = stanford_soe_helper_magazine_get_settings();
+
+      // Link Title.
+      $form['soe_all_articles_link_title'] = array(
+        '#type' => 'textfield',
+        '#title' => t('All Articles Button Title'),
+        '#default_value' => $settings['soe_all_articles_link_title'],
+        '#required' => TRUE,
+      );
+
+      // Link URL.
+      $form['soe_all_articles_link_url'] = array(
+        '#type' => 'textfield',
+        '#title' => t('All Articles Button URL'),
+        '#default_value' => $settings['soe_all_articles_link_url'],
+        '#required' => TRUE,
+      );
+
+      break;
+  }
+  return $form;
+}
+
+/**
+ * Implements hook_block_save().
+ */
+function stanford_soe_helper_magazine_block_save($delta = '', $edit = array()) {
+  switch ($delta) {
+    case 'soe_all_issues_link':
+
+      $settings = stanford_soe_helper_magazine_get_settings();
+      $new_settings = array_merge($settings, $edit);
+
+      $new_settings['soe_all_issues_link_title'] = filter_xss($new_settings['soe_all_issues_link_title']);
+      $new_settings['soe_all_issues_link_url'] = filter_xss($new_settings['soe_all_issues_link_url']);
+
+      variable_set('stanford_soe_helper_magazine_settings', $new_settings);
+      break;
+
+    case 'soe_all_issues_link_2':
+
+      $settings = stanford_soe_helper_magazine_get_settings();
+      $new_settings = array_merge($settings, $edit);
+
+      $new_settings['soe_all_issues_link_title_2'] = filter_xss($new_settings['soe_all_issues_link_title_2']);
+      $new_settings['soe_all_issues_link_url_2'] = filter_xss($new_settings['soe_all_issues_link_url_2']);
+
+      variable_set('stanford_soe_helper_magazine_settings', $new_settings);
+      break;
+
+
+    case 'soe_all_articles_link':
+
+      $settings = stanford_soe_helper_magazine_get_settings();
+      $new_settings = array_merge($settings, $edit);
+
+      $new_settings['soe_all_articles_link_title'] = filter_xss($new_settings['soe_all_articles_link_title']);
+      $new_settings['soe_all_articles_link_url'] = filter_xss($new_settings['soe_all_articles_link_url']);
+
+      variable_set('stanford_soe_helper_magazine_settings', $new_settings);
+      break;
+  }
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function stanford_soe_helper_magazine_block_view($delta = '') {
+  $block = array();
+
+  switch ($delta) {
+    case 'soe_all_issues_link':
+      $block['subject'] = '<none>';
+      $block['content'] = soe_all_issues_link_block_view();
+      break;
+
+    case 'soe_all_issues_link_2':
+      $block['subject'] = '<none>';
+      $block['content'] = soe_all_issues_link_2_block_view();
+      break;
+
+    case 'soe_all_articles_link':
+      $block['subject'] = '<none>';
+      $block['content'] = soe_all_articles_link_block_view();
+      break;
+  }
+
+  return $block;
+}
+
+
+/**
+ * Callback for the all issues link block.
+ *
+ * @return array
+ *   Array of blocks.
+ */
+function soe_all_issues_link_block_view() {
+  $settings = stanford_soe_helper_magazine_get_settings();
+  $block = array(
+    'soe_all_issues_link' => array(
+      '#type' => 'markup',
+      '#prefix' => '<div class="soe_block_align">',
+      '#markup' => l($settings['soe_all_issues_link_title'],
+        $settings['soe_all_issues_link_url'],
+        array('attributes' => array('class' => 'soe_all_issues_link soe_block_style btn'))),
+      '#suffix' => '</div>',
+    ),
+  );
+  return $block;
+}
+
+/**
+ * Callback for the all issues link block.
+ *
+ * @return array
+ *   Array of blocks.
+ */
+function soe_all_issues_link_2_block_view() {
+  $settings = stanford_soe_helper_magazine_get_settings();
+  $block = array(
+    'soe_all_issues_link_2' => array(
+      '#type' => 'markup',
+      '#prefix' => '<div class="soe_block_align">',
+      '#markup' => l($settings['soe_all_issues_link_title_2'],
+        $settings['soe_all_issues_link_url_2'],
+        array('attributes' => array('class' => 'soe_all_issues_link_2 soe_block_style btn'))),
+      '#suffix' => '</div>',
+    ),
+  );
+  return $block;
+}
+
+/**
+ * Callback for the all articles link block.
+ *
+ * @return array
+ *   Array of blocks.
+ */
+function soe_all_articles_link_block_view() {
+  $settings = stanford_soe_helper_magazine_get_settings();
+  $block = array(
+    'soe_all_articles_link' => array(
+      '#type' => 'markup',
+      '#prefix' => '<div class="soe_block_align">',
+      '#markup' => l($settings['soe_all_articles_link_title'],
+        $settings['soe_all_articles_link_url'],
+        array('attributes' => array('class' => 'soe_all_articles_link soe_block_style btn'))),
+      '#suffix' => '</div>',
+    ),
+  );
+  return $block;
+}
+
+/**
+ * Implements hook_views_pre_view().
+ *
+ * This adds the SoE accent color field to the Recent Issues view.
+ */
+function stanford_soe_helper_magazine_views_pre_view(&$view, &$display_id, &$args) {
+
+  // Insert the accent color field after the title field.
+  if ($view->name == 'stanford_magazine_issue_recent') {
+    if (($view->current_display == "block_6") || ($view->current_display == "block_6_all")) {
+
+      $options['id'] = 'field_s_mag_issue_accent_color';
+      $options['table'] = 'field_data_field_s_mag_issue_accent_color';
+      $options['field'] = 'field_s_mag_issue_accent_color';
+      $options['type'] = 'taxonomy_term_reference_plain';
+      $options['delta_offset'] = '0';
+      $options['multi_type'] = 'separator';
+      $options['exclude'] = 1;
+      $options['label'] = '';
+      $options['element_label_colon'] = 'FALSE';
+      $options['type'] = 'taxonomy_term_reference_plain';
+
+      stanford_related_content_insert_item($view, $display_id, 'field', 'field_data_field_s_mag_issue_accent_color', 'field_s_mag_issue_accent_color', $options);
+    }
+  }
+}
+
+/**
+ * Implements hook_views_pre_build().
+ *
+ * This rewrites the color pattern in the Recent Issues view adding the token
+ * for the accent color.
+ */
+function stanford_soe_helper_magazine_views_pre_build(&$view) {
+  if ($view->name == "stanford_magazine_issue_recent") {
+    if ($view->current_display == "block_6") {
+
+      // Add the accent color token to the view rewrite.
+      $text = $view->display['block_6']->handler->handlers['field']['nothing']->options['alter']['text'];
+      $color = "[field_s_mag_issue_accent_color]";
+      $pattern = "prev-mag-issue-color";
+      $replacement = $pattern . "-" . $color . " " . $color;
+      $text = preg_replace("/" . $pattern . "/", $replacement, $text);
+      $view->display['block_6']->handler->handlers['field']['nothing']->options['alter']['text'] = $text;
+    }
+    elseif ($view->current_display == "block_6_all") {
+
+      // Add the accent color token to the view rewrite.
+      $text = $view->display['block_6_all']->handler->handlers['field']['nothing']->options['alter']['text'];
+      $color = "[field_s_mag_issue_accent_color]";
+      $pattern = "prev-mag-issue-color";
+      $replacement = $pattern . "-" . $color . " " . $color;
+      $text = preg_replace("/" . $pattern . "/", $replacement, $text);
+      $view->display['block_6_all']->handler->handlers['field']['nothing']->options['alter']['text'] = $text;
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_views_view().
+ *
+ * This adds the stanford_hero_curtain_reveal.js when we're looking
+ * at the landing page for the magazine.
+ */
+function stanford_soe_helper_magazine_preprocess_views_view(&$vars) {
+  $view = $vars['view'];
+  if ($view->name == 'stanford_magazine_article_mag_landing_page') {
+    if ($view->current_display == 'page_1_3') {
+      $file_path = drupal_get_path('module', 'stanford_soe_helper_magazine')
+        . "/js/stanford_hero_curtain_reveal.js";
+      drupal_add_js($file_path);
+    }
+  }
+}
+
+
+function stanford_soe_helper_magazine_preprocess_page(&$variables) {
+  if (isset($variables['node']) && $variables['node']->type == 'stanford_magazine_article') {
+    drupal_add_js(drupal_get_path('module', 'stanford_soe_helper_magazine') . '/js/stanford_social_widgets.js');
+  }
+}

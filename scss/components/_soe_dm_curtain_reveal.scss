@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+//
+// CURTAIN REVEAL
+// WORKS IN CONJUNCTION WITH STANFORD_HERO_CURTAIN_REVEAL.JS
+//
+
+html.js body > {
+  div[class*="hero"]:not([class*="reveal"]) img {
+    object-fit: cover;
+    object-position: center center;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .hero-curtain {
+    background: transparent;
+    position: relative;
+
+    > * {
+      position: relative;
+      z-index: 10;
+    }
+
+    .entity {
+      background: #000;
+    }
+
+    &.below-hero {
+      padding-bottom: 0 !important;
+    }
+  }
+
+  .hero-curtain-reveal {
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    &.below-hero {
+      position: relative;
+    }
+  }
+}

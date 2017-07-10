@@ -1,0 +1,191 @@
+@charset "UTF-8";
+
+//
+// IMAGES
+//
+
+// GENERAL
+
+.main {
+  .border-simple img,
+  .border-simple-nowidth img {
+    padding: 0;
+  }
+
+  .border-shadow img {
+    box-shadow: none;
+  }
+}
+
+.postcard-left > div:first-child img,
+.postcard-left-wrap > div:first-child img {
+  margin-top: 7px;
+}
+
+.node-stanford-landing-page.large-landscape .field-name-field-landing-page-item > .field-items > .field-item img {
+  @media (max-width: 550px) {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+.node .group_s_postcard_image {
+  @media (max-width: 400px) {
+    max-width: 100%;
+    float: none;
+  }
+}
+
+// PAGE FEATURED IMAGE
+
+#block-views-stanford-page-top-banner-block {
+  .page-feat-image-container {
+    position: relative;
+
+    img {
+      object-fit: cover;
+      object-position: center center;
+      width: 100%;
+      height: calc(100vh - 160px);
+      @include breakpoint(x-small) {
+        height: calc(100vh - 180px);
+      }
+
+      .logged-in & {
+        height: calc(100vh - 210px);
+      }
+    }
+  }
+
+  .page-feat-scroll-container {
+    color: $white;
+    @include gradient-vertical;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    height: 200px;
+
+    p {
+      position: absolute;
+      bottom: 55px;
+      width: 100%;
+      margin-bottom: 0;
+    }
+
+    &:after {
+      content: url("../img/soe_chevron_down_white.png");
+      position: absolute;
+      bottom: 20px;
+    }
+  }
+}
+
+// BOTTOM BANNER
+
+#fullwidth-bottom {
+  .view-stanford-page-banner-caption {
+    .views-row {
+      margin-bottom: 0;
+    }
+
+    .banner-bottom-container {
+      position: relative;
+      overflow: hidden;
+      @include breakpoint(small) {
+        position: inherit;
+      }
+
+      img {
+        width: 100%;
+        @include transition;
+      }
+
+      .more-link {
+        font-size: em(22px);
+
+        a {
+          color: $black;
+          font-family: $roboto-slab;
+          font-size: em(32px);
+          font-weight: 800;
+          line-height: 43px;
+
+          &:after {
+            content: url("../img/soe_lg_arrow_right_black.png");
+            vertical-align: -6%;
+            padding-left: 20px;
+          }
+        }
+      }
+
+      &:hover {
+        img {
+          @include transform (scale(1.03));
+        }
+
+        .more-link a {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    div.more-link {
+      padding: 18px 32px 20px;
+      margin: 0;
+      @include breakpoint(small) {
+        width: 100%;
+      }
+      @include breakpoint(x-small) {
+        width: 87%;
+      }
+    }
+
+    .banner-caption {
+      position: absolute;
+      width: 80%;
+      @include breakpoint(small) {
+        position: inherit;
+        width: 92%;
+      }
+      @include breakpoint(x-small) {
+        width: 100%;
+      }
+
+      &.banner-right {
+        right: 0;
+        text-align: right;
+        @include breakpoint(small) {
+          text-align: left;
+        }
+
+        &.banner-bottom {
+          bottom: 100px;
+          @include breakpoint(medium) {
+            bottom: 55px;
+          }
+        }
+
+        &.banner-top {
+          top: 100px;
+          @include breakpoint(medium) {
+            top: 55px;
+          }
+        }
+      }
+
+      &.banner-orange div.more-link {
+        background: $orange;
+      }
+
+      &.banner-turquoise div.more-link {
+        background: $turquoise;
+      }
+
+      &.banner-pink div.more-link {
+        background: $pink;
+      }
+
+    }
+  }
+}

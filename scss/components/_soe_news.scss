@@ -1,0 +1,160 @@
+@charset "UTF-8";
+
+//
+// NEWS
+//
+
+.node-type-stanford-news-item {
+  #page-title {
+    display: none;
+  }
+
+  div#content-head {
+    margin-bottom: 0;
+  }
+
+  .body-style {
+    width: 750px;
+    @media (max-width: 910px) {
+      width: 100%;
+    }
+  }
+
+  .postcard-image {
+    @media (min-width: 980px) {
+      width: 850px;
+    }
+  }
+
+  .fullwidth .field-name-field-s-news-banner {
+    .field-item {
+      background: $primary-color;
+    }
+
+    img {
+      width: 100%;
+      height: 300px;
+      opacity: 0.4;
+    }
+  }
+
+  .content-body {
+    .field-name-field-s-image-image {
+      margin-bottom: 0;
+    }
+
+    .group-s-news-body-style {
+      margin-top: 1em;
+    }
+  }
+
+  .caption {
+    font-size: 0.7em;
+    font-style: normal;
+
+    p:after {
+      padding-right: 3px;
+    }
+  }
+
+  .credits {
+    margin-bottom: 0;
+    margin-top: -8px;
+    color: $gray-orange;
+    font-size: 0.7em;
+  }
+
+  .group-s-news-byline-style.credits,
+  .group-s-news-date-style.credits {
+    color: $primary-color;
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+
+  .group-s-caption-style.field-group-div.caption,
+  .group-s-credits-style.field-group-div.credits {
+    @media (max-width: 550px) {
+      display: block;
+    }
+  }
+}
+
+#block-ds-extras-banner-overlay {
+  width: 750px;
+  position: absolute;
+  top: 210px;
+  @include breakpoint(large) {
+    top: 250px;
+  }
+  @media (max-width: 910px) {
+    width: 450px;
+    top: 225px;
+  }
+  @include breakpoint(small) {
+    position: relative;
+    top: -310px;
+    margin-bottom: -245px;
+  }
+  @media (max-width: 485px) {
+    width: 100%;
+  }
+  @media (max-width: 380px) {
+    top: -315px;
+    width: 250px;
+  }
+
+  .field-name-field-s-news-teaser .field-item {
+    color: $white;
+    text-shadow: 0 0 4px $black;
+    line-height: 1.3em;
+    @media (max-width: 910px) {
+      font-size: 16px;
+    }
+    @media (max-width: 485px) {
+      font-size: 15px;
+    }
+    @media (max-width: 380px) {
+      font-size: 14px;
+    }
+  }
+
+  .field-name-title h1 {
+    color: $white;
+    text-shadow: 0 0 4px $black;
+    line-height: 1.3em;
+    @media (max-width: 910px) {
+      font-size: 1.4em;
+    }
+    @media (max-width: 485px) {
+      font-size: 1.2em;
+    }
+    @media (max-width: 380px) {
+      font-size: 1em;
+    }
+  }
+
+  .logged-in & {
+    top: 285px;
+    @include breakpoint(large) {
+      top: 325px;
+    }
+    @include breakpoint(small) {
+      top: -305px;
+    }
+    @media (max-width: 380px) {
+      top: -325px;
+    }
+
+    .field-name-title h1 {
+      @media (max-width: 485px) {
+        font-size: 1.2em;
+      }
+    }
+
+    .field-name-field-s-news-teaser .field-item {
+      @media (max-width: 485px) {
+        font-size: 15px;
+      }
+    }
+  }
+}
