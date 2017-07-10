@@ -5,7 +5,7 @@
         var soeSocialPathToImages = '/sites/default/modules/stanford/stanford_soe_helper/modules/stanford_soe_helper_magazine/img';
         var soePath = location.pathname;
         var soeEnv = '';
-        if (soePath.indexOf("jse-soe-new-") !== -1) {
+        if (soePath.indexOf("jse-soe") !== -1) {
           var parts = soePath.split("/");
           soeEnv = "/" + parts[1];
         }
