@@ -29,6 +29,7 @@ function stanford_soe_helper_magazine_enable() {
   _stanford_soe_helper_magazine_editor_perms();
 
   // Initialize settings
+  module_load_include('module', 'stanford_soe_helper_magazine');
   $settings = stanford_soe_helper_magazine_get_settings();
   variable_set('stanford_soe_helper_magazine_settings', $settings);
 }
