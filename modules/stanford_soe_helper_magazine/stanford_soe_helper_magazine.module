@@ -146,7 +146,7 @@ function stanford_soe_helper_magazine_block_configure($delta = '') {
 
       // Link Content.
       $form['soe_search_all_link_text'] = array(
-        '#type' => 'text_area',
+        '#type' => 'textarea',
         '#title' => t('Search All Content Text'),
         '#default_value' => $settings['soe_search_all_link_text'],
         '#required' => FALSE,
