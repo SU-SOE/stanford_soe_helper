@@ -36,14 +36,14 @@ function stanford_soe_helper_magazine_menu_block_blocks() {
 function stanford_soe_helper_magazine_get_settings() {
   $default_settings = array(
     'soe_all_issues_link_title' => t('All Digital Magazine Issues'),
-    'soe_all_issues_link_url' => 'magazine/issue',
+    'soe_all_issues_link_url' => '/magazine/issue',
     'soe_all_issues_link_title_2' => t('Explore All Issues'),
-    'soe_all_issues_link_url_2' => 'magazine/issue',
+    'soe_all_issues_link_url_2' => '/magazine/issue',
     'soe_all_articles_link_title' => t('Read All Most Recent'),
-    'soe_all_articles_link_url' => 'magazine/all',
+    'soe_all_articles_link_url' => '/magazine/all',
     'soe_search_all_link_text' => t("You are currently searching the School of Engineering's Digital Magazine."),
     'soe_search_all_link_title' => t('Search the whole site'),
-    'soe_search_all_link_url' => 'search/content',
+    'soe_search_all_link_url' => '/search/content',
   );
   $settings = variable_get('stanford_soe_helper_magazine_settings', $default_settings);
 
@@ -338,7 +338,7 @@ function soe_search_all_link_block_view() {
       '#prefix' => '<div class="soe_block_align">',
       '#markup' => '<p>' . $settings['soe_search_all_link_text'] . '</p>' .
         l($settings['soe_search_all_link_title'],
-        $settings['soe_search_all_link_url'],
+          $settings['soe_search_all_link_url'],
         array('attributes' => array('class' => 'soe_search_all_link soe_block_style btn'))),
       '#suffix' => '</div>',
     ),
