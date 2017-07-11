@@ -217,7 +217,7 @@ function stanford_soe_helper_magazine_block_save($delta = '', $edit = array()) {
       $settings = stanford_soe_helper_magazine_get_settings();
       $new_settings = array_merge($settings, $edit);
 
-      $new_settings['soe_search_all_link_content'] = filter_xss($new_settings['soe_search_all_link_content']);
+      $new_settings['soe_search_all_link_text'] = filter_xss($new_settings['soe_search_all_link_text']);
       $new_settings['soe_search_all_link_title'] = filter_xss($new_settings['soe_search_all_link_title']);
       $new_settings['soe_search_all_link_url'] = filter_xss($new_settings['soe_search_all_link_url']);
 
