@@ -32,9 +32,9 @@ function stanford_soe_helper_homepage_context_default_contexts() {
           'region' => 'fullwidth_top',
           'weight' => '-10',
         ),
-        'bean-homepage-about-block' => array(
+        'bean-jumpstart-home-page-about-block-' => array(
           'module' => 'bean',
-          'delta' => 'homepage-about-block',
+          'delta' => 'jumpstart-home-page-about-block-',
           'region' => 'content_row3',
           'weight' => '-10',
         ),
