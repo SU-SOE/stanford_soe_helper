@@ -1,0 +1,13 @@
+name = Stanford People Spotlight views
+description = Views for Stanford People Spotlight
+core = 7.x
+package = Stanford
+version = 7.x-1.0-alpha1
+project = stanford_people_spotlight_views
+dependencies[] = views
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:2
+features[views_view][] = stanford_people_spotlight_fw_banner
+features_exclude[dependencies][ctools] = ctools
+project path = sites/default/modules/stanford/stanford_soe_helper/modules
+project status url = https://github.com/SU-SOE/stanford_soe_helper
