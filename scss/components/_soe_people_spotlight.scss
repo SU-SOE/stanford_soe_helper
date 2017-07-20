@@ -15,12 +15,9 @@
     .spotlight-all-content-container {
       display: flex;
       justify-content: center;
-      width: 75%;
+      width: 85%;
       margin: 0 auto;
       padding: 50px 0;
-      @include breakpoint(large) {
-        width: 85%;
-      }
       @include breakpoint(small) {
         display: block;
         text-align: center;
@@ -54,7 +51,7 @@
     }
 
     .spotlight-info-container {
-      width: 50%;
+      width: 60%;
       @include breakpoint(small) {
         width: auto;
       }
@@ -115,12 +112,9 @@
   .spotlight-all-content-container {
     display: flex;
     justify-content: center;
-    width: 75%;
+    width: 85%;
     margin: 0 auto;
     padding: 50px 0;
-    @include breakpoint(large) {
-      width: 85%;
-    }
     @include breakpoint(small) {
       width: 100%;
     }
@@ -156,7 +150,7 @@
   }
 
   .spotlight-info-container {
-    width: 50%;
+    width: 60%;
     @media (max-width: 650px) {
       width: auto;
       padding: 0 20px;
