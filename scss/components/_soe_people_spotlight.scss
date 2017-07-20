@@ -7,7 +7,8 @@
 
 // FULL WIDTH BANNER VIEW
 
-.view-stanford-people-spotlight-fw-banner {
+.view-stanford-people-spotlight-fw-banner,
+.view-stanford-people-spotlight-fw-banner-no-quote {
   .spotlight-container {
     background: $white;
 
@@ -162,8 +163,15 @@
     }
 
     .spotlight-name {
-      text-decoration: underline;
-      text-decoration-skip: ink;
+      &[class*="spotlight-name-color-"] a {
+        text-decoration: underline;
+        text-decoration-skip: ink;
+
+        &:focus,
+        &:hover {
+          text-decoration-color: $primary-color;
+        }
+      }
 
       h2 {
         margin: 15px 0 20px;
@@ -238,8 +246,15 @@
 
   .spotlight-info-container {
     .spotlight-name {
-      text-decoration: underline;
-      text-decoration-skip: ink;
+      &[class*="spotlight-name-color-"] a {
+        text-decoration: underline;
+        text-decoration-skip: ink;
+
+        &:focus,
+        &:hover {
+          text-decoration-color: $primary-color;
+        }
+      }
 
       h2 {
         margin: 15px 0 20px;
