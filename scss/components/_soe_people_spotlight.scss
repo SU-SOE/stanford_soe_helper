@@ -8,10 +8,10 @@
 // FULL WIDTH BANNER VIEW
 
 .view-stanford-people-spotlight-fw-banner {
-  .spotlight-fw-banner-container {
+  .spotlight-container {
     background: $white;
 
-    .spotlight-fw-banner-all-content-container {
+    .spotlight-all-content-container {
       display: flex;
       justify-content: center;
       width: 75%;
@@ -27,7 +27,7 @@
       }
     }
 
-    .spotlight-fw-banner-img {
+    .spotlight-img {
       margin-right: 40px;
       @include breakpoint(small) {
         margin-right: 0;
@@ -52,16 +52,21 @@
       }
     }
 
-    .spotlight-fw-banner-info-container {
+    .spotlight-info-container {
       width: 50%;
       @include breakpoint(small) {
         width: auto;
       }
 
-      .spotlight-fw-banner-name {
+      .spotlight-name {
         a {
           text-decoration: underline;
           text-decoration-skip: ink;
+
+          &:focus,
+          &:hover {
+            text-decoration-color: $primary-color;
+          }
         }
 
         h2 {
@@ -82,15 +87,16 @@
         }
       }
 
-      .spotlight-fw-banner-degree p {
+      .spotlight-degree p,
+      .spotlight-title p {
         margin: 0;
       }
 
-      .spotlight-fw-banner-department p {
+      .spotlight-department p {
         margin-top: 0;
       }
 
-      .spotlight-fw-banner-quote {
+      .spotlight-quote {
         font-family: $roboto-slab;
         font-size: em(28px);
         font-weight: 600;
@@ -101,11 +107,11 @@
 
 // HORIZONTAL CARD VIEW
 
-.spotlight-fw-banner-container {
+.spotlight-container {
   background: $white;
   @include box-shadow;
 
-  .spotlight-fw-banner-all-content-container {
+  .spotlight-all-content-container {
     display: flex;
     justify-content: center;
     width: 75%;
@@ -122,7 +128,7 @@
     }
   }
 
-  .spotlight-fw-banner-img {
+  .spotlight-img {
     margin-right: 40px;
     @media (max-width: 650px) {
       text-align: center;
@@ -148,14 +154,14 @@
     }
   }
 
-  .spotlight-fw-banner-info-container {
+  .spotlight-info-container {
     width: 50%;
     @media (max-width: 650px) {
       width: auto;
       padding: 0 20px;
     }
 
-    .spotlight-fw-banner-name {
+    .spotlight-name {
       text-decoration: underline;
       text-decoration-skip: ink;
 
@@ -176,15 +182,16 @@
       }
     }
 
-    .spotlight-fw-banner-degree p {
+    .spotlight-degree p,
+    .spotlight-title p {
       margin: 0;
     }
 
-    .spotlight-fw-banner-department p {
+    .spotlight-department p {
       margin-top: 0;
     }
 
-    .spotlight-fw-banner-quote {
+    .spotlight-quote {
       font-family: $roboto-slab;
       font-size: em(24px);
       font-weight: 600;
@@ -194,16 +201,16 @@
 
 // VERTICAL CARD VIEW
 
-.spotlight-fw-banner-container {
+.spotlight-container {
   background: $white;
   @include box-shadow;
 
-  .spotlight-fw-banner-all-content-container {
+  .spotlight-all-content-container {
     margin: 0 auto;
     padding: 50px 20px;
   }
 
-  .spotlight-fw-banner-img {
+  .spotlight-img {
     text-align: center;
     margin-right: 40px;
     @media (max-width: 650px) {
@@ -229,8 +236,8 @@
     }
   }
 
-  .spotlight-fw-banner-info-container {
-    .spotlight-fw-banner-name {
+  .spotlight-info-container {
+    .spotlight-name {
       text-decoration: underline;
       text-decoration-skip: ink;
 
@@ -251,15 +258,16 @@
       }
     }
 
-    .spotlight-fw-banner-degree p {
+    .spotlight-degree p,
+    .spotlight-title p {
       margin: 0;
     }
 
-    .spotlight-fw-banner-department p {
+    .spotlight-department p {
       margin-top: 0;
     }
 
-    .spotlight-fw-banner-quote {
+    .spotlight-quote {
       font-family: $roboto-slab;
       font-size: em(24px);
       font-weight: 600;

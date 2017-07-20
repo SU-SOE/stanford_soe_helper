@@ -40,8 +40,7 @@ function stanford_people_spotlight_views_views_default_views() {
   $handler->display->display_options['footer']['area']['id'] = 'area';
   $handler->display->display_options['footer']['area']['table'] = 'views';
   $handler->display->display_options['footer']['area']['field'] = 'area';
-  $handler->display->display_options['footer']['area']['content'] = '<!-- PASS THROUGH SAME TAXONOMY SELECTION AS FOR THE IMG -->
-<div class="spotlight-fw-banner-button spotlight-img-color-[field_s_ppl_spot_image_color]">
+  $handler->display->display_options['footer']['area']['content'] = '<div class="spotlight-button spotlight-img-color-[field_s_ppl_spot_image_color]">
   <a class="btn" href="https://stanford.edu">More Stories</a>
 </div>
 ';
@@ -152,29 +151,25 @@ function stanford_people_spotlight_views_views_default_views() {
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['ui_name'] = 'Global: View rewrite';
   $handler->display->display_options['fields']['nothing']['label'] = '';
-  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="spotlight-fw-banner-container">
-  <div class="spotlight-fw-banner-all-content-container">
-      <!-- WRAP IMG IN LINK TO NODE -->
-    <div class="spotlight-fw-banner-img spotlight-img-color-[field_s_ppl_spot_image_color]">
-       <!-- NEW IMAGE STYLE: SQUARE 370X370 -->
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="spotlight-container">
+  <div class="spotlight-all-content-container">
+    <div class="spotlight-img spotlight-img-color-[field_s_ppl_spot_image_color]">
       [field_s_ppl_spot_image]
     </div>
-    <div class="spotlight-fw-banner-info-container">
-      <!-- WRAP NAME IN LINK TO NODE -->
-      <div class="spotlight-fw-banner-name spotlight-name-color-[field_s_ppl_spot_name_color]">
+    <div class="spotlight-info-container">
+      <div class="spotlight-name spotlight-name-color-[field_s_ppl_spot_name_color]">
         <h2>[title]</h2>
       </div>
-      <div class="spotlight-fw-banner-title">
+      <div class="spotlight-title">
         <p>[field_s_ppl_spot_title]</p>
       </div>
-      <div class="spotlight-fw-banner-degree">
+      <div class="spotlight-degree">
         <p>[field_s_ppl_spot_degrees]</p>
       </div>
-      <div class="spotlight-fw-banner-department">
+      <div class="spotlight-department">
         <p>[field_s_ppl_spot_department]</p>
       </div>
-      <!-- CHARACTER LIMIT OF 105 ENDING ON A FULL WORD -->
-      <div class="spotlight-fw-banner-quote">
+      <div class="spotlight-quote">
         <p>[field_s_ppl_spot_quote]</p>
       </div>
       <div class="edit-link">[edit_node]</div>
@@ -293,8 +288,7 @@ function stanford_people_spotlight_views_views_default_views() {
   $handler->display->display_options['footer']['area']['id'] = 'area';
   $handler->display->display_options['footer']['area']['table'] = 'views';
   $handler->display->display_options['footer']['area']['field'] = 'area';
-  $handler->display->display_options['footer']['area']['content'] = '<!-- PASS THROUGH SAME TAXONOMY SELECTION AS FOR THE IMG -->
-<div class="spotlight-fw-banner-button spotlight-img-color-[field_s_ppl_spot_image_color]">
+  $handler->display->display_options['footer']['area']['content'] = '<div class="spotlight-button spotlight-img-color-[field_s_ppl_spot_image_color]">
   <a class="btn" href="https://stanford.edu">More Stories</a>
 </div>
 ';
@@ -388,25 +382,22 @@ function stanford_people_spotlight_views_views_default_views() {
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['ui_name'] = 'Global: View rewrite';
   $handler->display->display_options['fields']['nothing']['label'] = '';
-  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="spotlight-fw-banner-container">
-  <div class="spotlight-fw-banner-all-content-container">
-      <!-- WRAP IMG IN LINK TO NODE -->
-    <div class="spotlight-fw-banner-img spotlight-img-color-[field_s_ppl_spot_image_color]">
-       <!-- NEW IMAGE STYLE: SQUARE 370X370 -->
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="spotlight-container">
+  <div class="spotlight-all-content-container">
+    <div class="spotlight-img spotlight-img-color-[field_s_ppl_spot_image_color]">
       [field_s_ppl_spot_image]
     </div>
-    <div class="spotlight-fw-banner-info-container">
-      <!-- WRAP NAME IN LINK TO NODE -->
-      <div class="spotlight-fw-banner-name spotlight-name-color-[field_s_ppl_spot_name_color]">
+    <div class="spotlight-info-container">
+      <div class="spotlight-name spotlight-name-color-[field_s_ppl_spot_name_color]">
         <h2>[title]</h2>
       </div>
-      <div class="spotlight-fw-banner-title">
+      <div class="spotlight-title">
         <p>[field_s_ppl_spot_title]</p>
       </div>
-      <div class="spotlight-fw-banner-degree">
+      <div class="spotlight-degree">
         <p>[field_s_ppl_spot_degrees]</p>
       </div>
-      <div class="spotlight-fw-banner-department">
+      <div class="spotlight-department">
         <p>[field_s_ppl_spot_department]</p>
       </div>
       <div class="edit-link">[edit_node]</div>
