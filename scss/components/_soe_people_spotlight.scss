@@ -297,10 +297,11 @@
   margin-top: 30px;
 
   &[class*="spotlight-img-color-"] a {
-    color: $primary-color;
+    color: $black;
 
     &:focus,
     &:hover {
+      color: $white;
       background: $primary-color;
     }
   }
