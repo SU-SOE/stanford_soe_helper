@@ -1,0 +1,16 @@
+name = Stanford People Spotlight Layouts
+description = Layouts for Stanford People Spotlight
+core = 7.x
+package = Stanford
+version = 7.x-1.0-alpha1
+project = stanford_people_spotlight_layouts
+dependencies[] = context
+dependencies[] = stanford_people_spotlight
+dependencies[] = stanford_people_spotlight_views
+dependencies[] = views
+features[context][] = stanford_people_spotlight
+features[ctools][] = context:context:3
+features[ctools][] = strongarm:strongarm:1
+features[features_api][] = api:2
+project path = sites/default/modules/stanford/stanford_soe_helper/modules
+project status url = https://github.com/SU-SOE/stanford_soe_helper
