@@ -26,9 +26,10 @@ function stanford_people_spotlight_field_default_field_instances() {
       ),
       'full' => array(
         'label' => 'hidden',
+        'module' => 'text',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'text_default',
+        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -87,7 +88,7 @@ function stanford_people_spotlight_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 9,
+      'weight' => 7,
     ),
   );
 
@@ -113,15 +114,15 @@ function stanford_people_spotlight_field_default_field_instances() {
         'weight' => 6,
       ),
       'full' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'date',
         'settings' => array(
-          'format_type' => 'long',
+          'format_type' => 'short',
           'fromto' => 'both',
           'multiple_from' => '',
           'multiple_number' => '',
           'multiple_to' => '',
-          'show_remaining_days' => FALSE,
+          'show_remaining_days' => 0,
         ),
         'type' => 'date_default',
         'weight' => 6,
@@ -135,7 +136,7 @@ function stanford_people_spotlight_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_s_ppl_spot_date',
-    'label' => 'Published Date',
+    'label' => 'Publish Date',
     'required' => 0,
     'settings' => array(
       'default_value' => 'now',
@@ -158,7 +159,7 @@ function stanford_people_spotlight_field_default_field_instances() {
         'year_range' => '-3:+3',
       ),
       'type' => 'date_popup',
-      'weight' => 2,
+      'weight' => 5,
     ),
   );
 
@@ -179,10 +180,9 @@ function stanford_people_spotlight_field_default_field_instances() {
       ),
       'full' => array(
         'label' => 'above',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 9,
+        'type' => 'hidden',
+        'weight' => 25,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -236,7 +236,7 @@ function stanford_people_spotlight_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 6,
+      'weight' => 3,
     ),
   );
 
@@ -257,10 +257,9 @@ function stanford_people_spotlight_field_default_field_instances() {
       ),
       'full' => array(
         'label' => 'above',
-        'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 10,
+        'type' => 'hidden',
+        'weight' => 26,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -281,7 +280,7 @@ function stanford_people_spotlight_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 7,
+      'weight' => 4,
     ),
   );
 
@@ -304,13 +303,9 @@ function stanford_people_spotlight_field_default_field_instances() {
       ),
       'full' => array(
         'label' => 'above',
-        'module' => 'image',
-        'settings' => array(
-          'image_link' => '',
-          'image_style' => '',
-        ),
-        'type' => 'image',
-        'weight' => 7,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 23,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -474,7 +469,7 @@ function stanford_people_spotlight_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 4,
+        'weight' => 21,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -486,7 +481,7 @@ function stanford_people_spotlight_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_s_ppl_spot_image_color',
     'label' => 'Image Color',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
@@ -522,7 +517,7 @@ function stanford_people_spotlight_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 5,
+        'weight' => 22,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -534,7 +529,7 @@ function stanford_people_spotlight_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_s_ppl_spot_name_color',
     'label' => 'Name Color',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
@@ -543,7 +538,7 @@ function stanford_people_spotlight_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 1,
+      'weight' => 2,
     ),
   );
 
@@ -553,7 +548,7 @@ function stanford_people_spotlight_field_default_field_instances() {
     'bundle' => 'stanford_people_spotlight',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Use this field to display both credits for the photographer or organization.',
+    'description' => 'Use this field to display image credits for the photographer or organization.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -564,10 +559,9 @@ function stanford_people_spotlight_field_default_field_instances() {
       ),
       'full' => array(
         'label' => 'above',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 12,
+        'type' => 'hidden',
+        'weight' => 27,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -578,7 +572,7 @@ function stanford_people_spotlight_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_s_ppl_spot_photo_credit',
-    'label' => 'Photo credit',
+    'label' => 'Image credit',
     'required' => 0,
     'settings' => array(
       'better_formats' => array(
@@ -621,7 +615,7 @@ function stanford_people_spotlight_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 10,
+      'weight' => 5,
     ),
   );
 
@@ -642,11 +636,11 @@ function stanford_people_spotlight_field_default_field_instances() {
         'weight' => 11,
       ),
       'full' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 11,
+        'weight' => 3,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -690,7 +684,7 @@ function stanford_people_spotlight_field_default_field_instances() {
           ),
         ),
       ),
-      'text_processing' => 1,
+      'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -700,7 +694,7 @@ function stanford_people_spotlight_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 8,
+      'weight' => 6,
     ),
   );
 
@@ -721,10 +715,9 @@ function stanford_people_spotlight_field_default_field_instances() {
       ),
       'full' => array(
         'label' => 'above',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 8,
+        'type' => 'hidden',
+        'weight' => 24,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -778,7 +771,7 @@ function stanford_people_spotlight_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 5,
+      'weight' => 2,
     ),
   );
 
@@ -788,10 +781,10 @@ function stanford_people_spotlight_field_default_field_instances() {
   t('Department');
   t('Image');
   t('Image Color');
+  t('Image credit');
   t('Lead text/quote');
   t('Name Color');
-  t('Photo credit');
-  t('Published Date');
+  t('Publish Date');
   t('Spotlight story');
   t('These terms identify the associated accent color for the image. Select a color.');
   t('These terms identify the associated accent color for the name. Select a color.');
@@ -803,7 +796,7 @@ function stanford_people_spotlight_field_default_field_instances() {
   t('This text will lead the content on the page display in its entirety, and will be trimmed to up to 105 characters inside of quotation marks on block displays throughout the site.
 ');
   t('Title');
-  t('Use this field to display both credits for the photographer or organization.');
+  t('Use this field to display image credits for the photographer or organization.');
 
   return $field_instances;
 }

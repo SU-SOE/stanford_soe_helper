@@ -23,7 +23,7 @@ function stanford_people_spotlight_node_info() {
       'base' => 'node_content',
       'description' => t('Highlights a person with a quote and image.'),
       'has_title' => '1',
-      'title_label' => t('Title'),
+      'title_label' => t('Name'),
       'help' => '',
     ),
   );

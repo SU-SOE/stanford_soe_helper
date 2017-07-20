@@ -62,19 +62,19 @@ function stanford_people_spotlight_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '14',
+          'weight' => '12',
         ),
         'title' => array(
-          'weight' => '0',
+          'weight' => '1',
         ),
         'path' => array(
-          'weight' => '11',
+          'weight' => '9',
         ),
         'redirect' => array(
-          'weight' => '13',
+          'weight' => '11',
         ),
         'xmlsitemap' => array(
-          'weight' => '12',
+          'weight' => '10',
         ),
       ),
       'display' => array(),
