@@ -25,7 +25,11 @@ function stanford_people_spotlight_views_views_default_views() {
   $handler->display->display_options['title'] = 'Stanford People Spotlight: FW Banner';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
-  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['cache']['type'] = 'time';
+  $handler->display->display_options['cache']['results_lifespan'] = '3600';
+  $handler->display->display_options['cache']['results_lifespan_custom'] = '0';
+  $handler->display->display_options['cache']['output_lifespan'] = '3600';
+  $handler->display->display_options['cache']['output_lifespan_custom'] = '0';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'some';
@@ -173,9 +177,9 @@ function stanford_people_spotlight_views_views_default_views() {
       <div class="spotlight-fw-banner-quote">
         <p>[field_s_ppl_spot_quote]</p>
       </div>
+      <div class="edit-link">[edit_node]</div>
     </div>
   </div>
-  <div class="edit-link">[edit_node]</div>
 </div>
 
 ';
@@ -274,7 +278,11 @@ function stanford_people_spotlight_views_views_default_views() {
   $handler->display->display_options['title'] = 'Stanford People Spotlight: FW Banner';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
-  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['cache']['type'] = 'time';
+  $handler->display->display_options['cache']['results_lifespan'] = '3600';
+  $handler->display->display_options['cache']['results_lifespan_custom'] = '0';
+  $handler->display->display_options['cache']['output_lifespan'] = '3600';
+  $handler->display->display_options['cache']['output_lifespan_custom'] = '0';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'some';
@@ -401,9 +409,9 @@ function stanford_people_spotlight_views_views_default_views() {
       <div class="spotlight-fw-banner-department">
         <p>[field_s_ppl_spot_department]</p>
       </div>
+      <div class="edit-link">[edit_node]</div>
     </div>
   </div>
-  <div class="edit-link">[edit_node]</div>
 </div>
 
 ';
