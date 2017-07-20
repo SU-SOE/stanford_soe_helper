@@ -2807,11 +2807,11 @@ html.js body > .hero-curtain-reveal {
       .view-stanford-people-spotlight-fw-banner .spotlight-container .spotlight-info-container {
         width: auto; } }
     /* line 62, ../scss/components/_soe_people_spotlight.scss */
-    .view-stanford-people-spotlight-fw-banner .spotlight-container .spotlight-info-container .spotlight-name a {
+    .view-stanford-people-spotlight-fw-banner .spotlight-container .spotlight-info-container .spotlight-name[class*="spotlight-name-color-"] a {
       text-decoration: underline;
       text-decoration-skip: ink; }
       /* line 66, ../scss/components/_soe_people_spotlight.scss */
-      .view-stanford-people-spotlight-fw-banner .spotlight-container .spotlight-info-container .spotlight-name a:focus, .view-stanford-people-spotlight-fw-banner .spotlight-container .spotlight-info-container .spotlight-name a:hover {
+      .view-stanford-people-spotlight-fw-banner .spotlight-container .spotlight-info-container .spotlight-name[class*="spotlight-name-color-"] a:focus, .view-stanford-people-spotlight-fw-banner .spotlight-container .spotlight-info-container .spotlight-name[class*="spotlight-name-color-"] a:hover {
         text-decoration-color: #333333; }
     /* line 72, ../scss/components/_soe_people_spotlight.scss */
     .view-stanford-people-spotlight-fw-banner .spotlight-container .spotlight-info-container .spotlight-name h2 {
