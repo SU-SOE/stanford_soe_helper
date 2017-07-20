@@ -275,10 +275,11 @@ function stanford_people_spotlight_administration_views_default_views() {
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['path'] = 'admin/manage/stanford-people-spotlight';
   $handler->display->display_options['menu']['type'] = 'normal';
-  $handler->display->display_options['menu']['title'] = 'Manage Pages';
+  $handler->display->display_options['menu']['title'] = 'Manage People Spotlight';
   $handler->display->display_options['menu']['weight'] = '';
   $handler->display->display_options['menu']['name'] = 'menu-manage-content-by-type';
   $handler->display->display_options['menu']['context'] = 0;
+  $handler->display->display_options['menu']['context_only_inline'] = 0;
   $export['stanford_person_spotlight_manage'] = $view;
 
   return $export;
