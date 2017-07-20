@@ -57,7 +57,8 @@ function stanford_people_spotlight_field_group_info() {
     'weight' => '7',
     'children' => array(
       0 => 'body',
-      1 => 'field_s_ppl_spot_quote',
+      1 => 'field_s_ppl_spot_photo_credit',
+      2 => 'field_s_ppl_spot_quote',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -86,19 +87,19 @@ function stanford_people_spotlight_field_group_info() {
   $field_group->mode = 'full';
   $field_group->parent_name = 'group_s_ppl_spot_container';
   $field_group->data = array(
-    'label' => 'Story originally published ',
+    'label' => 'Published Date',
     'weight' => '5',
     'children' => array(
       0 => 'field_s_ppl_spot_date',
     ),
     'format_type' => 'div',
     'format_settings' => array(
-      'label' => 'Story originally published ',
+      'label' => 'Published Date',
       'instance_settings' => array(
         'id' => '',
         'classes' => 'group-s-ppl-spot-date-container field-group-div',
         'description' => '',
-        'show_label' => '1',
+        'show_label' => '0',
         'label_element' => 'h3',
         'effect' => 'none',
         'speed' => 'fast',
@@ -203,8 +204,8 @@ function stanford_people_spotlight_field_group_info() {
   t('Content Container');
   t('Image group');
   t('Name Group');
+  t('Published Date');
   t('Story Group');
-  t('Story originally published ');
 
   return $field_groups;
 }

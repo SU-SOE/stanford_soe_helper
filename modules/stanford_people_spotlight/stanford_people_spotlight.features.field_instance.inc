@@ -558,10 +558,11 @@ function stanford_people_spotlight_field_default_field_instances() {
         'weight' => 12,
       ),
       'full' => array(
-        'label' => 'above',
+        'label' => 'hidden',
+        'module' => 'text',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 27,
+        'type' => 'text_plain',
+        'weight' => 5,
       ),
       'teaser' => array(
         'label' => 'above',
