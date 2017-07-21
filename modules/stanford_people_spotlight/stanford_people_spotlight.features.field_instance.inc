@@ -15,7 +15,7 @@ function stanford_people_spotlight_field_default_field_instances() {
     'bundle' => 'stanford_people_spotlight',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'This text will follow the "Lead text/quote" text on the profile page.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -626,8 +626,7 @@ function stanford_people_spotlight_field_default_field_instances() {
     'bundle' => 'stanford_people_spotlight',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'This text will lead the content on the page display in its entirety, and will be trimmed to up to 105 characters inside of quotation marks on block displays throughout the site.
-',
+    'description' => 'This text will appear in block displays throughout the site and will also lead the content on the profile page display.  On block displays it will be trimmed to 105 characters and surrounded by quotation marks. On the profile page this text will appear in it\'s entirety.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -794,8 +793,8 @@ function stanford_people_spotlight_field_default_field_instances() {
   t('This is the image of the spotlighted person.');
   t('This text field displays education information (e.g. "B.A., Stanford University, 1972").');
   t('This text field displays the person\'s title. Ex. Professor of English');
-  t('This text will lead the content on the page display in its entirety, and will be trimmed to up to 105 characters inside of quotation marks on block displays throughout the site.
-');
+  t('This text will appear in block displays throughout the site and will also lead the content on the profile page display.  On block displays it will be trimmed to 105 characters and surrounded by quotation marks. On the profile page this text will appear in it\'s entirety.');
+  t('This text will follow the "Lead text/quote" text on the profile page.');
   t('Title');
   t('Use this field to display image credits for the photographer or organization.');
 
