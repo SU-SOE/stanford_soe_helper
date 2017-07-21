@@ -5,12 +5,57 @@
 // FOR NODE DISPLAY AND VIEWS
 //
 
+// NODE DISPLAY
+
+.node-type-stanford-people-spotlight {
+  .group-s-ppl-spot-container {
+    width: 75%;
+    margin: 0 auto;
+    @include breakpoint(x-small) {
+      width: 100%;
+    }
+
+    .field-name-field-s-ppl-spot-date {
+      font-size: em(20px);
+      color: $gray-orange;
+      font-weight: 100;
+      font-style: italic;
+      display: flex;
+      justify-content: flex-end;
+
+      .field-item {
+        &:before {
+          content: "Story originally published \00a0";
+        }
+      }
+    }
+
+    .field-name-field-s-ppl-spot-photo-credit {
+      font-size: em(20px);
+      color: $gray-orange;
+      font-weight: 100;
+      font-style: italic;
+      border-top: 1px solid $gray-orange;
+      padding-top: 5px;
+      margin-top: 40px;
+
+      .field-item {
+        &:before {
+          content: "Photo credit: \00a0";
+        }
+      }
+    }
+  }
+}
+
 // FULL WIDTH BANNER VIEW
 
 .view-stanford-people-spotlight-fw-banner,
 .view-stanford-people-spotlight-fw-banner-no-quote {
   .spotlight-container {
-    background: $white;
+    .front & {
+      background: $white;
+    }
 
     .spotlight-all-content-container {
       display: flex;
@@ -105,184 +150,184 @@
 
 // HORIZONTAL CARD VIEW
 
-.spotlight-container {
-  background: $white;
-  @include box-shadow;
-
-  .spotlight-all-content-container {
-    display: flex;
-    justify-content: center;
-    width: 85%;
-    margin: 0 auto;
-    padding: 50px 0;
-    @include breakpoint(small) {
-      width: 100%;
-    }
-    @media (max-width: 650px) {
-      display: block;
-    }
-  }
-
-  .spotlight-img {
-    margin-right: 40px;
-    @media (max-width: 650px) {
-      text-align: center;
-      margin-right: 0;
-    }
-
-    img {
-      border-radius: 50%;
-      border-width: 5px;
-      border-style: solid;
-    }
-
-    &.spotlight-img-color-orange img {
-      border-color: $orange;
-    }
-
-    &.spotlight-img-color-turquoise img {
-      border-color: $turquoise;
-    }
-
-    &.spotlight-img-color-pink img {
-      border-color: $pink;
-    }
-  }
-
-  .spotlight-info-container {
-    width: 60%;
-    @media (max-width: 650px) {
-      width: auto;
-      padding: 0 20px;
-    }
-
-    .spotlight-name {
-      &[class*="spotlight-name-color-"] a {
-        text-decoration: underline;
-        text-decoration-skip: ink;
-
-        &:focus,
-        &:hover {
-          text-decoration-color: $primary-color;
-        }
-      }
-
-      h2 {
-        margin: 15px 0 20px;
-      }
-
-      &.spotlight-name-color-orange {
-        text-decoration-color: $orange;
-      }
-
-      &.spotlight-name-color-turquoise {
-        text-decoration-color: $turquoise;
-      }
-
-      &.spotlight-name-color-pink {
-        text-decoration-color: $pink;
-      }
-    }
-
-    .spotlight-degree p,
-    .spotlight-title p {
-      margin: 0;
-    }
-
-    .spotlight-department p {
-      margin-top: 0;
-    }
-
-    .spotlight-quote {
-      font-family: $roboto-slab;
-      font-size: em(24px);
-      font-weight: 600;
-    }
-  }
-}
-
-// VERTICAL CARD VIEW
-
-.spotlight-container {
-  background: $white;
-  @include box-shadow;
-
-  .spotlight-all-content-container {
-    margin: 0 auto;
-    padding: 50px 20px;
-  }
-
-  .spotlight-img {
-    text-align: center;
-    margin-right: 40px;
-    @media (max-width: 650px) {
-      margin-right: 0;
-    }
-
-    img {
-      border-radius: 50%;
-      border-width: 5px;
-      border-style: solid;
-    }
-
-    &.spotlight-img-color-orange img {
-      border-color: $orange;
-    }
-
-    &.spotlight-img-color-turquoise img {
-      border-color: $turquoise;
-    }
-
-    &.spotlight-img-color-pink img {
-      border-color: $pink;
-    }
-  }
-
-  .spotlight-info-container {
-    .spotlight-name {
-      &[class*="spotlight-name-color-"] a {
-        text-decoration: underline;
-        text-decoration-skip: ink;
-
-        &:focus,
-        &:hover {
-          text-decoration-color: $primary-color;
-        }
-      }
-
-      h2 {
-        margin: 15px 0 20px;
-      }
-
-      &.spotlight-name-color-orange {
-        text-decoration-color: $orange;
-      }
-
-      &.spotlight-name-color-turquoise {
-        text-decoration-color: $turquoise;
-      }
-
-      &.spotlight-name-color-pink {
-        text-decoration-color: $pink;
-      }
-    }
-
-    .spotlight-degree p,
-    .spotlight-title p {
-      margin: 0;
-    }
-
-    .spotlight-department p {
-      margin-top: 0;
-    }
-
-    .spotlight-quote {
-      font-family: $roboto-slab;
-      font-size: em(24px);
-      font-weight: 600;
-    }
-  }
-}
+// .spotlight-container {
+//   background: $white;
+//   @include box-shadow;
+//
+//   .spotlight-all-content-container {
+//     display: flex;
+//     justify-content: center;
+//     width: 85%;
+//     margin: 0 auto;
+//     padding: 50px 0;
+//     @include breakpoint(small) {
+//       width: 100%;
+//     }
+//     @media (max-width: 650px) {
+//       display: block;
+//     }
+//   }
+//
+//   .spotlight-img {
+//     margin-right: 40px;
+//     @media (max-width: 650px) {
+//       text-align: center;
+//       margin-right: 0;
+//     }
+//
+//     img {
+//       border-radius: 50%;
+//       border-width: 5px;
+//       border-style: solid;
+//     }
+//
+//     &.spotlight-img-color-orange img {
+//       border-color: $orange;
+//     }
+//
+//     &.spotlight-img-color-turquoise img {
+//       border-color: $turquoise;
+//     }
+//
+//     &.spotlight-img-color-pink img {
+//       border-color: $pink;
+//     }
+//   }
+//
+//   .spotlight-info-container {
+//     width: 60%;
+//     @media (max-width: 650px) {
+//       width: auto;
+//       padding: 0 20px;
+//     }
+//
+//     .spotlight-name {
+//       &[class*="spotlight-name-color-"] a {
+//         text-decoration: underline;
+//         text-decoration-skip: ink;
+//
+//         &:focus,
+//         &:hover {
+//           text-decoration-color: $primary-color;
+//         }
+//       }
+//
+//       h2 {
+//         margin: 15px 0 20px;
+//       }
+//
+//       &.spotlight-name-color-orange {
+//         text-decoration-color: $orange;
+//       }
+//
+//       &.spotlight-name-color-turquoise {
+//         text-decoration-color: $turquoise;
+//       }
+//
+//       &.spotlight-name-color-pink {
+//         text-decoration-color: $pink;
+//       }
+//     }
+//
+//     .spotlight-degree p,
+//     .spotlight-title p {
+//       margin: 0;
+//     }
+//
+//     .spotlight-department p {
+//       margin-top: 0;
+//     }
+//
+//     .spotlight-quote {
+//       font-family: $roboto-slab;
+//       font-size: em(24px);
+//       font-weight: 600;
+//     }
+//   }
+// }
+//
+// // VERTICAL CARD VIEW
+//
+// .spotlight-container {
+//   background: $white;
+//   @include box-shadow;
+//
+//   .spotlight-all-content-container {
+//     margin: 0 auto;
+//     padding: 50px 20px;
+//   }
+//
+//   .spotlight-img {
+//     text-align: center;
+//     margin-right: 40px;
+//     @media (max-width: 650px) {
+//       margin-right: 0;
+//     }
+//
+//     img {
+//       border-radius: 50%;
+//       border-width: 5px;
+//       border-style: solid;
+//     }
+//
+//     &.spotlight-img-color-orange img {
+//       border-color: $orange;
+//     }
+//
+//     &.spotlight-img-color-turquoise img {
+//       border-color: $turquoise;
+//     }
+//
+//     &.spotlight-img-color-pink img {
+//       border-color: $pink;
+//     }
+//   }
+//
+//   .spotlight-info-container {
+//     .spotlight-name {
+//       &[class*="spotlight-name-color-"] a {
+//         text-decoration: underline;
+//         text-decoration-skip: ink;
+//
+//         &:focus,
+//         &:hover {
+//           text-decoration-color: $primary-color;
+//         }
+//       }
+//
+//       h2 {
+//         margin: 15px 0 20px;
+//       }
+//
+//       &.spotlight-name-color-orange {
+//         text-decoration-color: $orange;
+//       }
+//
+//       &.spotlight-name-color-turquoise {
+//         text-decoration-color: $turquoise;
+//       }
+//
+//       &.spotlight-name-color-pink {
+//         text-decoration-color: $pink;
+//       }
+//     }
+//
+//     .spotlight-degree p,
+//     .spotlight-title p {
+//       margin: 0;
+//     }
+//
+//     .spotlight-department p {
+//       margin-top: 0;
+//     }
+//
+//     .spotlight-quote {
+//       font-family: $roboto-slab;
+//       font-size: em(24px);
+//       font-weight: 600;
+//     }
+//   }
+// }
 
 // BUTTON TO MORE STORIES
 
