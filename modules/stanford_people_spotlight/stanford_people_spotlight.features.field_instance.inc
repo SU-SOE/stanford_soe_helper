@@ -182,7 +182,7 @@ function stanford_people_spotlight_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 25,
+        'weight' => 14,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -259,7 +259,7 @@ function stanford_people_spotlight_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 26,
+        'weight' => 15,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -305,7 +305,7 @@ function stanford_people_spotlight_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 23,
+        'weight' => 12,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -469,7 +469,7 @@ function stanford_people_spotlight_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 21,
+        'weight' => 10,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -517,7 +517,7 @@ function stanford_people_spotlight_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 22,
+        'weight' => 11,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -717,7 +717,7 @@ function stanford_people_spotlight_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 24,
+        'weight' => 13,
       ),
       'teaser' => array(
         'label' => 'above',
