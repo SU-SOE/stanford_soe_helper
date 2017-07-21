@@ -95,11 +95,6 @@
     }
 
     .spotlight-info-container {
-      width: 60%;
-      @include breakpoint(small) {
-        width: auto;
-      }
-
       .spotlight-name {
         &[class*="spotlight-name-color-"] a {
           text-decoration: underline;
@@ -194,12 +189,6 @@
 //   }
 //
 //   .spotlight-info-container {
-//     width: 60%;
-//     @media (max-width: 650px) {
-//       width: auto;
-//       padding: 0 20px;
-//     }
-//
 //     .spotlight-name {
 //       &[class*="spotlight-name-color-"] a {
 //         text-decoration: underline;
