@@ -59,6 +59,7 @@
     .spotlight-all-content-container {
       display: flex;
       justify-content: center;
+      align-items: center;
       width: 85%;
       margin: 0 auto;
       padding: 50px 0;
@@ -108,7 +109,10 @@
 
         h2 {
           font-size: em(56px);
-          margin: 15px 0 20px;
+          margin: 0 0 20px;
+          @include breakpoint(small) {
+            margin-top: 15px;
+          }
         }
 
         &.spotlight-name-color-orange a {
@@ -142,8 +146,7 @@
   }
 }
 
-// HORIZONTAL CARD VIEW
-
+//HORIZONTAL CARD VIEW
 // .spotlight-container {
 //   background: $white;
 //   @include box-shadow;
@@ -151,6 +154,7 @@
 //   .spotlight-all-content-container {
 //     display: flex;
 //     justify-content: center;
+//     align-items: center;
 //     width: 85%;
 //     margin: 0 auto;
 //     padding: 50px 0;
@@ -201,7 +205,10 @@
 //       }
 //
 //       h2 {
-//         margin: 15px 0 20px;
+//         margin: 0 0 20px;
+//         @include breakpoint(small) {
+//           margin-top: 15px;
+//         }
 //       }
 //
 //       &.spotlight-name-color-orange {
@@ -233,8 +240,8 @@
 //     }
 //   }
 // }
-//
-// // VERTICAL CARD VIEW
+
+// VERTICAL CARD VIEW
 //
 // .spotlight-container {
 //   background: $white;
