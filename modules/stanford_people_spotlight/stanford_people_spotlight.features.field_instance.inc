@@ -29,7 +29,7 @@ function stanford_people_spotlight_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 4,
+        'weight' => 31,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -562,7 +562,7 @@ function stanford_people_spotlight_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_plain',
-        'weight' => 5,
+        'weight' => 32,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -640,7 +640,7 @@ function stanford_people_spotlight_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 3,
+        'weight' => 30,
       ),
       'teaser' => array(
         'label' => 'above',
