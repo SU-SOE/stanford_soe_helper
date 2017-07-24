@@ -76,7 +76,7 @@ function soe_helper_sitewide_link_block_view() {
  * @param string $bundle
  *   Content type getting the new field.
  */
-function stanford_soe_helper_sitewide_add_tax_field($field_name, $tax_name, $bundle) {
+function stanford_soe_helper_sitewide_add_tax_field($field_name, $tax_name, $bundle, $label = 'Accent color') {
 
   $tax = taxonomy_vocabulary_machine_name_load($tax_name);
   if ($tax) {
@@ -145,7 +145,7 @@ function stanford_soe_helper_sitewide_add_tax_field($field_name, $tax_name, $bun
         ),
         'entity_type' => 'node',
         'field_name' => $field_name,
-        'label' => 'Accent color',
+        'label' => $label,
         'required' => 1,
         'settings' => array(
           'user_register_form' => FALSE,
@@ -159,10 +159,22 @@ function stanford_soe_helper_sitewide_add_tax_field($field_name, $tax_name, $bun
         ),
 
       );
-      field_create_instance($field_instance);
-      watchdog('stanford_soe_helper_sitewide',
-        '!field_name was added successfully.',
-        array('!field_name' => $field_name));
+
+      $success = TRUE;
+      try {
+        field_create_instance($field_instance);
+      } catch (Exception $e) {
+        echo 'Caught exception: ',  $e->getMessage(), "\n";
+        watchdog('stanford_soe_helper_sitewide',
+          'Error adding !field_name',
+          array('!field_name' => $field_name));
+        $success = FALSE;
+      }
+      if ($success) {
+        watchdog('stanford_soe_helper_sitewide',
+          '!field_name was added successfully.',
+          array('!field_name' => $field_name));
+      }
     }
   }
 }
