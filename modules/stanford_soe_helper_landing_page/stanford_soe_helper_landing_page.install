@@ -8,14 +8,12 @@
  * Implements hook_install().
  */
 function stanford_soe_helper_landing_page_install() {
-  /*
   _stanford_soe_helper_landing_page_add_color_field();
 
   $schema_version = drupal_get_installed_schema_version('stanford_soe_helper_landing_page');
   if ($schema_version < 7201) {
-    drupal_set_installed_schema_version('stanford_soe_helper_landing_page', 7101);
+    drupal_set_installed_schema_version('stanford_soe_helper_landing_page', 7201);
   }
-  */
 }
 
 
@@ -43,14 +41,15 @@ function stanford_soe_helper_landing_page_disable() {
  * Implements hook_uninstall().
  */
 function stanford_soe_helper_landing_page_uninstall() {
-  field_delete_instance('field_s_name_accent_color');
+  field_delete_field('field_s_title_accent_color');
+  field_delete_field('field_s_image_accent_color');
 }
 
 /**
  * Implements hook_update_N().
  */
 function stanford_soe_helper_landing_page_update_7201() {
-  //_stanford_soe_helper_landing_page_add_color_field();
+  _stanford_soe_helper_landing_page_add_color_field();
 }
 
 
