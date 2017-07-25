@@ -75,9 +75,14 @@ function soe_helper_sitewide_link_block_view() {
  *   Taxonomy associated with the new field.
  * @param string $bundle
  *   Content type getting the new field.
+ *
+ * @return
+ *   If successful, the $instance array with the id property filled in.
+ *   See field_create_instance().
  */
 function stanford_soe_helper_sitewide_add_tax_field($field_name, $tax_name, $bundle, $label = 'Accent color') {
 
+  $field = NULL;
   $tax = taxonomy_vocabulary_machine_name_load($tax_name);
   if ($tax) {
 
@@ -162,7 +167,7 @@ function stanford_soe_helper_sitewide_add_tax_field($field_name, $tax_name, $bun
 
       $success = TRUE;
       try {
-        field_create_instance($field_instance);
+        $field = field_create_instance($field_instance);
       } catch (Exception $e) {
         echo 'Caught exception: ',  $e->getMessage(), "\n";
         watchdog('stanford_soe_helper_sitewide',
@@ -177,6 +182,7 @@ function stanford_soe_helper_sitewide_add_tax_field($field_name, $tax_name, $bun
       }
     }
   }
+  return $field;
 }
 
 /**
@@ -217,3 +223,5 @@ function _stanford_soe_helper_sitewide_grant_permissions($rid, array $permission
   drupal_static_reset('user_access');
   drupal_static_reset('user_role_permissions');
 }
+
+
