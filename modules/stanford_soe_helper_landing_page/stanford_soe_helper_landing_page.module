@@ -17,17 +17,11 @@ include_once 'stanford_soe_helper_landing_page.features.inc';
 function _stanford_soe_helper_landing_page_add_color_field() {
 
   module_load_include('module', 'stanford_soe_helper_sitewide');
-  stanford_soe_helper_sitewide_add_tax_field(
-    'field_s_title_accent_color',
-    'soe_accent_color',
-    'field_landing_page_item',
-    'field_collection_item',
-    'Title accent color');
 
- stanford_soe_helper_sitewide_add_tax_field(
-    'field_s_image_accent_color',
+  stanford_soe_helper_sitewide_add_tax_field(
+    'field_s_arrow_accent_color',
     'soe_accent_color',
     'field_landing_page_item',
     'field_collection_item',
-    'Image accent color');
+    'Arrow accent color');
 }

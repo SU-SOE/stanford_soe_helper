@@ -42,8 +42,7 @@ function stanford_soe_helper_landing_page_disable() {
  * Implements hook_uninstall().
  */
 function stanford_soe_helper_landing_page_uninstall() {
-  field_delete_field('field_s_title_accent_color');
-  field_delete_field('field_s_image_accent_color');
+  field_delete_field('field_s_arrow_accent_color');
 }
 
 /**
