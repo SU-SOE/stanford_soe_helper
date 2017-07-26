@@ -8,6 +8,7 @@
  * Implements hook_install().
  */
 function stanford_soe_helper_landing_page_install() {
+  module_load_include('module', 'stanford_soe_helper_landing_page');
   _stanford_soe_helper_landing_page_add_color_field();
 
   $schema_version = drupal_get_installed_schema_version('stanford_soe_helper_landing_page');
@@ -49,6 +50,7 @@ function stanford_soe_helper_landing_page_uninstall() {
  * Implements hook_update_N().
  */
 function stanford_soe_helper_landing_page_update_7201() {
+  module_load_include('module', 'stanford_soe_helper_landing_page');
   _stanford_soe_helper_landing_page_add_color_field();
 }
 
