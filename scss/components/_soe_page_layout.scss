@@ -50,15 +50,31 @@
 
       .postcard-linked-img-container {
         margin-right: 30px;
-        width: 55%;
+        width: 52%;
         @include breakpoint(small) {
           margin-right: 0;
         }
 
         .postcard-linked-img {
+          position: relative;
+
           .field-name-field-s-lp-item-image img {
             @include breakpoint(small) {
               width: 100%;
+            }
+          }
+
+          .postcard-linked-arrow {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            background: gray;
+
+            img {
+              vertical-align: -17px;
+              padding: 0 4px;
             }
           }
         }
