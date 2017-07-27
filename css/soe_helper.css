@@ -773,7 +773,7 @@ p.summary.drop-cap:first-letter {
     text-decoration: underline; }
 
 /* line 41, ../scss/components/_soe_page_layout.scss */
-.node-type-stanford-landing-page.header-370x170 .postcard-linked-container {
+.node-type-stanford-landing-page .header-370x170 .postcard-linked-container {
   display: flex;
   background: #FFFFFF;
   padding: 30px;
@@ -782,74 +782,78 @@ p.summary.drop-cap:first-letter {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2); }
   @media (max-width: 767px) {
     /* line 41, ../scss/components/_soe_page_layout.scss */
-    .node-type-stanford-landing-page.header-370x170 .postcard-linked-container {
+    .node-type-stanford-landing-page .header-370x170 .postcard-linked-container {
       display: block; } }
   /* line 50, ../scss/components/_soe_page_layout.scss */
-  .node-type-stanford-landing-page.header-370x170 .postcard-linked-container .postcard-linked-img-container {
+  .node-type-stanford-landing-page .header-370x170 .postcard-linked-container .postcard-linked-img-container {
     margin-right: 30px; }
     @media (max-width: 767px) {
       /* line 50, ../scss/components/_soe_page_layout.scss */
-      .node-type-stanford-landing-page.header-370x170 .postcard-linked-container .postcard-linked-img-container {
+      .node-type-stanford-landing-page .header-370x170 .postcard-linked-container .postcard-linked-img-container {
         margin-right: 0; } }
   /* line 57, ../scss/components/_soe_page_layout.scss */
-  .node-type-stanford-landing-page.header-370x170 .postcard-linked-container a.postcard-linked-title {
+  .node-type-stanford-landing-page .header-370x170 .postcard-linked-container a.postcard-linked-title {
     color: #333333;
+    font-family: "Roboto Slab", serif;
+    font-size: 1.45455em;
+    font-weight: 600;
+    letter-spacing: 0.02em;
     text-decoration-skip: ink;
     text-decoration: underline;
     text-decoration-color: #00ECE9; }
     @media (max-width: 767px) {
       /* line 57, ../scss/components/_soe_page_layout.scss */
-      .node-type-stanford-landing-page.header-370x170 .postcard-linked-container a.postcard-linked-title {
+      .node-type-stanford-landing-page .header-370x170 .postcard-linked-container a.postcard-linked-title {
         margin-top: 20px; } }
-    /* line 66, ../scss/components/_soe_page_layout.scss */
-    .node-type-stanford-landing-page.header-370x170 .postcard-linked-container a.postcard-linked-title:focus, .node-type-stanford-landing-page.header-370x170 .postcard-linked-container a.postcard-linked-title:hover {
+    /* line 70, ../scss/components/_soe_page_layout.scss */
+    .node-type-stanford-landing-page .header-370x170 .postcard-linked-container a.postcard-linked-title:focus, .node-type-stanford-landing-page .header-370x170 .postcard-linked-container a.postcard-linked-title:hover {
       text-decoration-color: #333333; }
 @media (max-width: 1200px) {
-  /* line 74, ../scss/components/_soe_page_layout.scss */
+  /* line 78, ../scss/components/_soe_page_layout.scss */
   .node-type-stanford-landing-page.stanford-4-col-header .field-name-field-landing-page-item > .field-items > .field-item {
     width: 46.333%; } }
 @media (max-width: 979px) {
-  /* line 74, ../scss/components/_soe_page_layout.scss */
+  /* line 78, ../scss/components/_soe_page_layout.scss */
   .node-type-stanford-landing-page.stanford-4-col-header .field-name-field-landing-page-item > .field-items > .field-item {
     width: 48%;
     margin-right: 1.5%; } }
 @media (max-width: 525px) {
-  /* line 74, ../scss/components/_soe_page_layout.scss */
+  /* line 78, ../scss/components/_soe_page_layout.scss */
   .node-type-stanford-landing-page.stanford-4-col-header .field-name-field-landing-page-item > .field-items > .field-item {
     width: 100%;
     max-width: 100%;
     margin-right: 0; } }
 @media (max-width: 979px) {
-  /* line 89, ../scss/components/_soe_page_layout.scss */
+  /* line 93, ../scss/components/_soe_page_layout.scss */
   .node-type-stanford-landing-page.large-landscape .field-name-field-landing-page-item > .field-items > .field-item {
     width: 48%; }
-    /* line 93, ../scss/components/_soe_page_layout.scss */
+    /* line 97, ../scss/components/_soe_page_layout.scss */
     .node-type-stanford-landing-page.large-landscape .field-name-field-landing-page-item > .field-items > .field-item:nth-child(3n) {
       margin-right: 3%; }
-    /* line 97, ../scss/components/_soe_page_layout.scss */
+    /* line 101, ../scss/components/_soe_page_layout.scss */
     .node-type-stanford-landing-page.large-landscape .field-name-field-landing-page-item > .field-items > .field-item:nth-child(2n) {
       margin-right: 0; } }
 @media (max-width: 550px) {
-  /* line 89, ../scss/components/_soe_page_layout.scss */
+  /* line 93, ../scss/components/_soe_page_layout.scss */
   .node-type-stanford-landing-page.large-landscape .field-name-field-landing-page-item > .field-items > .field-item {
     width: 100%;
     margin-right: 0; }
-    /* line 105, ../scss/components/_soe_page_layout.scss */
+    /* line 109, ../scss/components/_soe_page_layout.scss */
     .node-type-stanford-landing-page.large-landscape .field-name-field-landing-page-item > .field-items > .field-item:nth-child(3n) {
       margin-right: 0; } }
-/* line 111, ../scss/components/_soe_page_layout.scss */
+/* line 115, ../scss/components/_soe_page_layout.scss */
 .node-type-stanford-landing-page .view-stanford-person-grid .views-row h3 {
   font-size: 1em;
   margin: 0.6em 0 0; }
-/* line 116, ../scss/components/_soe_page_layout.scss */
+/* line 120, ../scss/components/_soe_page_layout.scss */
 .node-type-stanford-landing-page .view-mode-stanford_medium_square {
   border-top: 1px solid #D7D7D7; }
 
-/* line 123, ../scss/components/_soe_page_layout.scss */
+/* line 127, ../scss/components/_soe_page_layout.scss */
 .node .group_s_postcard_image .field-collection-container > .field > .field-items > .field-item {
   margin-left: 2em; }
   @media (max-width: 400px) {
-    /* line 123, ../scss/components/_soe_page_layout.scss */
+    /* line 127, ../scss/components/_soe_page_layout.scss */
     .node .group_s_postcard_image .field-collection-container > .field > .field-items > .field-item {
       margin-left: 0; } }
 

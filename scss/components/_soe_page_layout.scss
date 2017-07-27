@@ -37,7 +37,7 @@
 // LANDING PAGE
 
 .node-type-stanford-landing-page {
-  &.header-370x170 {
+  .header-370x170 {
     .postcard-linked-container {
       display: flex;
       background: $white;
@@ -56,6 +56,10 @@
 
       a.postcard-linked-title {
         color: $primary-color;
+        font-family: $roboto-slab;
+        font-size: em(32px);
+        font-weight: 600;
+        letter-spacing: 0.02em;
         text-decoration-skip: ink;
         text-decoration: underline;
         text-decoration-color: $turquoise;
