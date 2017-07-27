@@ -20,6 +20,15 @@ This module provides the _People Spotlight_ content type.
 **[Stanford People Spotlight Administration](https://github.com/SU-SWS/stanford_soe_helper/stanford_people_spotlight_adminstration)**
 This module provides manage content for _People Spotlight_ content types.
 
+**[Stanford People Spotlight Layouts](https://github.com/SU-SWS/stanford_soe_helper/stanford_people_spotlight_layouts)**
+This module provides the context and layouts for _People Spotlight_.
+
+**[Stanford People Spotlight Views](https://github.com/SU-SWS/stanford_soe_helper/stanford_people_spotlight_views)**
+This module provides views for _People Spotlight_.
+
+**[Stanford SoE Helper Bean Types](https://github.com/SU-SWS/stanford_soe_helper/stanford_soe_helper_bean_types/)**
+This module provides custom functionality for bean types.
+
 **[Stanford SoE Helper Event](https://github.com/SU-SWS/stanford_soe_helper/stanford_soe_helper_event/)**
 This module provides custom functionality for events.
 
