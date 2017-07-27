@@ -37,6 +37,90 @@
 // LANDING PAGE
 
 .node-type-stanford-landing-page {
+  .header-370x170 {
+    .postcard-linked-container {
+      display: flex;
+      background: $white;
+      padding: 30px;
+      margin-bottom: 40px;
+      @include box-shadow;
+      @include breakpoint(small) {
+        display: block;
+      }
+
+      .postcard-linked-img-container {
+        margin-right: 30px;
+        width: 52%;
+        @include breakpoint(small) {
+          margin-right: 0;
+        }
+
+        .postcard-linked-img {
+          position: relative;
+
+          .field-name-field-s-lp-item-image img {
+            @include breakpoint(small) {
+              width: 100%;
+            }
+          }
+
+          .postcard-linked-arrow {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+
+            img {
+              width: 35px;
+              height: auto;
+              vertical-align: -16px;
+              padding: 0 7px;
+              @include breakpoint(x-small) {
+                vertical-align: -19px;
+              }
+            }
+          }
+        }
+      }
+
+      .postcard-linked-content-container {
+        width: 100%;
+
+        a.postcard-linked-title {
+          color: $primary-color;
+          font-family: $roboto-slab;
+          font-size: em(32px);
+          font-weight: 600;
+          letter-spacing: 0.02em;
+          text-decoration-skip: ink;
+          text-decoration: underline;
+          text-decoration-color: $turquoise;
+          @include breakpoint(small) {
+            margin-top: 20px;
+          }
+
+          &:focus,
+          &:hover {
+            text-decoration-color: $primary-color;
+          }
+        }
+      }
+    }
+
+    .postcard-linked-arrow-color-orange .postcard-linked-arrow {
+      background: $orange;
+    }
+
+    .postcard-linked-arrow-color-turquoise .postcard-linked-arrow {
+      background: $turquoise;
+    }
+
+    .postcard-linked-arrow-color-pink .postcard-linked-arrow {
+      background: $pink;
+    }
+  }
+
   &.stanford-4-col-header .field-name-field-landing-page-item > .field-items > .field-item {
     @include breakpoint(large) {
       width: 46.333%;
