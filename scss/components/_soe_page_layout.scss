@@ -37,6 +37,40 @@
 // LANDING PAGE
 
 .node-type-stanford-landing-page {
+  &.header-370x170 {
+    .postcard-linked-container {
+      display: flex;
+      background: $white;
+      padding: 30px;
+      @include box-shadow;
+      @include breakpoint(small) {
+        display: block;
+      }
+
+      .postcard-linked-img-container {
+        margin-right: 30px;
+        @include breakpoint(small) {
+          margin-right: 0;
+        }
+      }
+
+      a.postcard-linked-title {
+        color: $primary-color;
+        text-decoration-skip: ink;
+        text-decoration: underline;
+        text-decoration-color: $turquoise;
+        @include breakpoint(small) {
+          margin-top: 20px;
+        }
+
+        &:focus,
+        &:hover {
+          text-decoration-color: $primary-color;
+        }
+      }
+    }
+  }
+
   &.stanford-4-col-header .field-name-field-landing-page-item > .field-items > .field-item {
     @include breakpoint(large) {
       width: 46.333%;
