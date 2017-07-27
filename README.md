@@ -13,6 +13,13 @@ The Stanford SoE Helper module provides the custom code for the SoE school site.
 
 Sub Modules
 ---
+
+**[Stanford People Spotlight](https://github.com/SU-SWS/stanford_soe_helper/stanford_people_spotlight)**
+This module provides the _People Spotlight_ content type.
+
+**[Stanford People Spotlight Administration](https://github.com/SU-SWS/stanford_soe_helper/stanford_people_spotlight_adminstration)**
+This module provides manage content for _People Spotlight_ content types.
+
 **[Stanford SoE Helper Event](https://github.com/SU-SWS/stanford_soe_helper/stanford_soe_helper_event/)**
 This module provides custom functionality for events.
 
