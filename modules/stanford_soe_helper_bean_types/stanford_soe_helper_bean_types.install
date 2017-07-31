@@ -41,5 +41,8 @@ function stanford_soe_helper_bean_types_disable() {
  * Implements hook_uninstall().
  */
 function stanford_soe_helper_bean_types_uninstall() {
-  field_delete_field('field_s_postcard_color');
+  $field_info_field = field_info_field('field_s_postcard_linked_color');
+  if (!empty($field_info_field)) {
+    field_delete_field('field_s_postcard_linked_color');
+  }
 }
