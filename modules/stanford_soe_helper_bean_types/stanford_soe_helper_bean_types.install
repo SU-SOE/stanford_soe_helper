@@ -10,9 +10,9 @@ function stanford_soe_helper_bean_types_install() {
   module_load_include('module', 'stanford_soe_helper_landing_page');
 
   stanford_soe_helper_sitewide_add_tax_field(
-    'field_s_postcard_accent_color',
+    'field_s_postcard_linked_color',
     'soe_accent_color',
-    'stanford_postcard',
+    'stanford_postcard_linked',
     'bean',
     'Arrow accent color');
 }
@@ -41,5 +41,5 @@ function stanford_soe_helper_bean_types_disable() {
  * Implements hook_uninstall().
  */
 function stanford_soe_helper_bean_types_uninstall() {
-  field_delete_field('field_s_postcard_accent_color');
+  field_delete_field('field_s_postcard_color');
 }
