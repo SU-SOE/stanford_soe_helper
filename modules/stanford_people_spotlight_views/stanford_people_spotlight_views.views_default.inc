@@ -12,7 +12,7 @@ function stanford_people_spotlight_views_views_default_views() {
 
   $view = new view();
   $view->name = 'stanford_people_spotlight_fw_banner';
-  $view->description = '';
+  $view->description = 'This uses square image size 370x370';
   $view->tag = 'default';
   $view->base_table = 'node';
   $view->human_name = 'Stanford People Spotlight: FW Banner - No Quote';
@@ -162,12 +162,6 @@ function stanford_people_spotlight_views_views_default_views() {
   $handler->display->display_options['sorts']['random']['id'] = 'random';
   $handler->display->display_options['sorts']['random']['table'] = 'views';
   $handler->display->display_options['sorts']['random']['field'] = 'random';
-  /* Contextual filter: Content: Nid */
-  $handler->display->display_options['arguments']['nid']['id'] = 'nid';
-  $handler->display->display_options['arguments']['nid']['table'] = 'node';
-  $handler->display->display_options['arguments']['nid']['field'] = 'nid';
-  $handler->display->display_options['arguments']['nid']['default_argument_type'] = 'fixed';
-  $handler->display->display_options['arguments']['nid']['summary']['format'] = 'default_summary';
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -239,10 +233,10 @@ function stanford_people_spotlight_views_views_default_views() {
 
   $view = new view();
   $view->name = 'stanford_people_spotlight_fw_banner_no_quote';
-  $view->description = '';
+  $view->description = 'This uses square image size 370x370';
   $view->tag = 'default';
   $view->base_table = 'node';
-  $view->human_name = 'Stanford People Spotlight: FW Banner';
+  $view->human_name = 'Stanford People Spotlight: FW Banner - Quote';
   $view->core = 7;
   $view->api_version = '3.0';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
@@ -400,6 +394,12 @@ function stanford_people_spotlight_views_views_default_views() {
   $handler->display->display_options['sorts']['random']['id'] = 'random';
   $handler->display->display_options['sorts']['random']['table'] = 'views';
   $handler->display->display_options['sorts']['random']['field'] = 'random';
+  /* Contextual filter: Content: Has taxonomy term ID */
+  $handler->display->display_options['arguments']['tid']['id'] = 'tid';
+  $handler->display->display_options['arguments']['tid']['table'] = 'taxonomy_index';
+  $handler->display->display_options['arguments']['tid']['field'] = 'tid';
+  $handler->display->display_options['arguments']['tid']['default_argument_type'] = 'fixed';
+  $handler->display->display_options['arguments']['tid']['summary']['format'] = 'default_summary';
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -421,6 +421,29 @@ function stanford_people_spotlight_views_views_default_views() {
   /* Display: Block - no button */
   $handler = $view->new_display('block', 'Block - no button', 'block_no_button');
   $handler->display->display_options['defaults']['footer'] = FALSE;
+
+  /* Display: Block - depts, quote, button */
+  $handler = $view->new_display('block', 'Block - depts, quote, button', 'block_depts_quote_btn');
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Contextual filter: Content: Has taxonomy term ID */
+  $handler->display->display_options['arguments']['tid']['id'] = 'tid';
+  $handler->display->display_options['arguments']['tid']['table'] = 'taxonomy_index';
+  $handler->display->display_options['arguments']['tid']['field'] = 'tid';
+  $handler->display->display_options['arguments']['tid']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['tid']['default_argument_type'] = 'taxonomy_tid';
+  $handler->display->display_options['arguments']['tid']['default_argument_options']['node'] = TRUE;
+  $handler->display->display_options['arguments']['tid']['default_argument_options']['anyall'] = '+';
+  $handler->display->display_options['arguments']['tid']['default_argument_options']['vocabularies'] = array(
+    'stanford_department' => 'stanford_department',
+  );
+  $handler->display->display_options['arguments']['tid']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['tid']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['tid']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['arguments']['tid']['specify_validation'] = TRUE;
+  $handler->display->display_options['arguments']['tid']['validate']['type'] = 'taxonomy_term';
+  $handler->display->display_options['arguments']['tid']['validate_options']['type'] = 'convert';
+  $handler->display->display_options['arguments']['tid']['validate_options']['transform'] = TRUE;
+  $handler->display->display_options['arguments']['tid']['validate']['fail'] = 'ignore';
   $export['stanford_people_spotlight_fw_banner_no_quote'] = $view;
 
   return $export;
