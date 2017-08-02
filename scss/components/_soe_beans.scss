@@ -38,6 +38,7 @@
     @include box-shadow;
     @include breakpoint(small) {
       display: block;
+      padding: 0;
     }
 
     .postcard-linked-img-container {
@@ -78,6 +79,10 @@
 
     .postcard-linked-content-container {
       width: 100%;
+      @include breakpoint(small) {
+        width: auto;
+        padding: 30px;
+      }
 
       .postcard-linked-title {
         margin-bottom: 1em;
