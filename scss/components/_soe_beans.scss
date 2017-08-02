@@ -26,3 +26,121 @@
     font-weight: 400;
   }
 }
+
+// POSTCARD LINKED BEANS
+
+.bean-stanford-postcard-linked {
+  .postcard-linked-container {
+    display: flex;
+    background: $white;
+    padding: 30px;
+    margin-bottom: 40px;
+    @include box-shadow;
+    @include breakpoint(small) {
+      display: block;
+    }
+
+    .postcard-linked-img-container {
+      margin-right: 30px;
+      width: 52%;
+      @include breakpoint(small) {
+        margin-right: 0;
+      }
+
+      .postcard-linked-img {
+        position: relative;
+
+        .field-name-field-s-post-link-image img {
+          @include breakpoint(small) {
+            width: 100%;
+          }
+        }
+
+        .postcard-linked-arrow {
+          position: absolute;
+          bottom: 20px;
+          right: 20px;
+          width: 50px;
+          height: 50px;
+
+          img {
+            width: 35px;
+            height: auto;
+            vertical-align: -16px;
+            padding: 0 7px;
+            @include breakpoint(x-small) {
+              vertical-align: -19px;
+            }
+          }
+        }
+      }
+    }
+
+    .postcard-linked-content-container {
+      width: 100%;
+
+      .postcard-linked-title {
+        margin-bottom: 1em;
+
+        a {
+          color: $primary-color;
+          font-family: $roboto-slab;
+          font-size: em(32px);
+          font-weight: 600;
+          letter-spacing: 0.02em;
+          text-decoration-skip: ink;
+          text-decoration: underline;
+          text-decoration-color: $turquoise;
+          @include breakpoint(small) {
+            margin-top: 20px;
+          }
+
+          &:focus,
+          &:hover {
+            text-decoration-color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+
+  &.postcard-linked-arrow-color-orange .postcard-linked-arrow {
+    background: $orange;
+  }
+
+  &.postcard-linked-arrow-color-turquoise .postcard-linked-arrow {
+    background: $turquoise;
+  }
+
+  &.postcard-linked-arrow-color-pink .postcard-linked-arrow {
+    background: $pink;
+  }
+
+  .span1 &,
+  .span2 &,
+  .span3 &,
+  .span4 &,
+  .span5 &,
+  .span6 &,
+  .span7 & {
+    .postcard-linked-container {
+      display: block;
+      padding: 0;
+
+      .postcard-linked-img-container {
+        margin-right: 0;
+      }
+
+      .postcard-linked-img {
+        .field-name-field-s-post-link-image img {
+          width: 100%;
+        }
+      }
+
+      .postcard-linked-content-container {
+        width: auto;
+        padding: 30px;
+      }
+    }
+  }
+}
