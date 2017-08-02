@@ -62,19 +62,19 @@ function stanford_people_spotlight_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '12',
+          'weight' => '10',
         ),
         'title' => array(
           'weight' => '1',
         ),
         'path' => array(
-          'weight' => '9',
+          'weight' => '7',
         ),
         'redirect' => array(
-          'weight' => '11',
+          'weight' => '9',
         ),
         'xmlsitemap' => array(
-          'weight' => '10',
+          'weight' => '8',
         ),
       ),
       'display' => array(),
@@ -125,6 +125,13 @@ function stanford_people_spotlight_strongarm() {
   $strongarm->name = 'pathauto_node_stanford_people_spotlight_pattern';
   $strongarm->value = 'spotlight/[node:title]';
   $export['pathauto_node_stanford_people_spotlight_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_taxonomy_term_stanford_affiliation_pattern';
+  $strongarm->value = '';
+  $export['pathauto_taxonomy_term_stanford_affiliation_pattern'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
