@@ -50,7 +50,7 @@
       .postcard-linked-img {
         position: relative;
 
-        .field-name-field-s-lp-item-image img {
+        .field-name-field-s-post-link-image img {
           @include breakpoint(small) {
             width: 100%;
           }
@@ -79,7 +79,7 @@
     .postcard-linked-content-container {
       width: 100%;
 
-      a.postcard-linked-title {
+      .postcard-linked-title a {
         color: $primary-color;
         font-family: $roboto-slab;
         font-size: em(32px);
