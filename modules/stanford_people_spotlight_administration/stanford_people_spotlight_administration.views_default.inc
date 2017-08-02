@@ -205,6 +205,45 @@ function stanford_people_spotlight_administration_views_default_views() {
   $handler->display->display_options['fields']['name']['relationship'] = 'uid';
   $handler->display->display_options['fields']['name']['label'] = 'Author';
   $handler->display->display_options['fields']['name']['link_to_user'] = FALSE;
+  /* Field: Content: All taxonomy terms */
+  $handler->display->display_options['fields']['term_node_tid']['id'] = 'term_node_tid';
+  $handler->display->display_options['fields']['term_node_tid']['table'] = 'node';
+  $handler->display->display_options['fields']['term_node_tid']['field'] = 'term_node_tid';
+  $handler->display->display_options['fields']['term_node_tid']['label'] = 'Terms';
+  $handler->display->display_options['fields']['term_node_tid']['vocabularies'] = array(
+    'stanford_affiliate_organization_type' => 0,
+    'stanford_affiliation' => 0,
+    'stanford_cta_color' => 0,
+    'capx_organizations' => 0,
+    'stanford_department' => 0,
+    'stanford_event_type' => 0,
+    'stanford_faculty_type' => 0,
+    'fellowship_location' => 0,
+    'stanford_field_of_study' => 0,
+    'stanford_interests' => 0,
+    'stanford_magazine_eyebrow' => 0,
+    'stanford_magazine_series' => 0,
+    'stanford_magazine_topics' => 0,
+    'news_categories' => 0,
+    'stanford_opp_city' => 0,
+    'stanford_opp_location' => 0,
+    'stanford_opp_major' => 0,
+    'stanford_opp_open_to' => 0,
+    'stanford_opp_sponsor' => 0,
+    'stanford_opp_time_of_year' => 0,
+    'stanford_opp_type' => 0,
+    'publication_type' => 0,
+    'stanford_related_content' => 0,
+    'research_themes' => 0,
+    'school_themes' => 0,
+    'stanford_slide_category' => 0,
+    'soe_accent_color' => 0,
+    'stanford_staff_type' => 0,
+    'stanford_event_audience' => 0,
+    'stanford_event_categories' => 0,
+    'stanford_student_type' => 0,
+    'tags' => 0,
+  );
   /* Field: Content: Nid */
   $handler->display->display_options['fields']['nid']['id'] = 'nid';
   $handler->display->display_options['fields']['nid']['table'] = 'node';

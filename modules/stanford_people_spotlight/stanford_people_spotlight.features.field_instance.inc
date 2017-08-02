@@ -88,7 +88,51 @@ function stanford_people_spotlight_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 7,
+      'weight' => 16,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'node-stanford_people_spotlight-field_s_ppl_spot_affiliation'.
+  $field_instances['node-stanford_people_spotlight-field_s_ppl_spot_affiliation'] = array(
+    'bundle' => 'stanford_people_spotlight',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Select the appropriate affiliation(s) for this person.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 13,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_s_ppl_spot_affiliation',
+    'label' => 'Affiliation',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 5,
     ),
   );
 
@@ -159,7 +203,7 @@ function stanford_people_spotlight_field_default_field_instances() {
         'year_range' => '-3:+3',
       ),
       'type' => 'date_popup',
-      'weight' => 5,
+      'weight' => 14,
     ),
   );
 
@@ -694,7 +738,7 @@ function stanford_people_spotlight_field_default_field_instances() {
         'rows' => 4,
       ),
       'type' => 'text_textarea',
-      'weight' => 6,
+      'weight' => 15,
     ),
   );
 
@@ -777,6 +821,7 @@ function stanford_people_spotlight_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Affiliation');
   t('Degrees');
   t('Department');
   t('Image');
@@ -785,6 +830,7 @@ function stanford_people_spotlight_field_default_field_instances() {
   t('Lead text/quote');
   t('Name Color');
   t('Publish Date');
+  t('Select the appropriate affiliation(s) for this person.');
   t('Spotlight story');
   t('These terms identify the associated accent color for the image. Select a color.');
   t('These terms identify the associated accent color for the name. Select a color.');
