@@ -449,7 +449,7 @@ function stanford_people_spotlight_views_views_default_views() {
 
   $view = new view();
   $view->name = 'stanford_people_spotlight_h_card';
-  $view->description = 'This uses Large Square image style';
+  $view->description = 'This randomly selects Stanford People Spotlight nodes and uses Large Square image style';
   $view->tag = 'default';
   $view->base_table = 'node';
   $view->human_name = 'Stanford People Spotlight: Horizontal Card';
@@ -479,7 +479,7 @@ function stanford_people_spotlight_views_views_default_views() {
   $handler->display->display_options['footer']['area']['table'] = 'views';
   $handler->display->display_options['footer']['area']['field'] = 'area';
   $handler->display->display_options['footer']['area']['content'] = '<div class="spotlight-button spotlight-img-color-[field_s_ppl_spot_image_color]">
-  <a class="btn" href="https://stanford.edu">More Stories</a>
+  <a class="btn" href="spotlight">More Stories</a>
 </div>
 ';
   $handler->display->display_options['footer']['area']['format'] = 'full_html';
@@ -611,23 +611,6 @@ function stanford_people_spotlight_views_views_default_views() {
   $handler->display->display_options['sorts']['random']['id'] = 'random';
   $handler->display->display_options['sorts']['random']['table'] = 'views';
   $handler->display->display_options['sorts']['random']['field'] = 'random';
-  /* Contextual filter: Content: Has taxonomy term ID (with depth) */
-  $handler->display->display_options['arguments']['term_node_tid_depth']['id'] = 'term_node_tid_depth';
-  $handler->display->display_options['arguments']['term_node_tid_depth']['table'] = 'node';
-  $handler->display->display_options['arguments']['term_node_tid_depth']['field'] = 'term_node_tid_depth';
-  $handler->display->display_options['arguments']['term_node_tid_depth']['default_action'] = 'default';
-  $handler->display->display_options['arguments']['term_node_tid_depth']['default_argument_type'] = 'taxonomy_tid';
-  $handler->display->display_options['arguments']['term_node_tid_depth']['default_argument_options']['node'] = TRUE;
-  $handler->display->display_options['arguments']['term_node_tid_depth']['default_argument_options']['anyall'] = '+';
-  $handler->display->display_options['arguments']['term_node_tid_depth']['default_argument_options']['limit'] = TRUE;
-  $handler->display->display_options['arguments']['term_node_tid_depth']['default_argument_options']['vocabularies'] = array(
-    'stanford_department' => 'stanford_department',
-  );
-  $handler->display->display_options['arguments']['term_node_tid_depth']['summary']['number_of_records'] = '0';
-  $handler->display->display_options['arguments']['term_node_tid_depth']['summary']['format'] = 'default_summary';
-  $handler->display->display_options['arguments']['term_node_tid_depth']['summary_options']['items_per_page'] = '25';
-  $handler->display->display_options['arguments']['term_node_tid_depth']['depth'] = '0';
-  $handler->display->display_options['arguments']['term_node_tid_depth']['break_phrase'] = TRUE;
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -644,15 +627,46 @@ function stanford_people_spotlight_views_views_default_views() {
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
 
-  /* Display: Block All */
-  $handler = $view->new_display('block', 'Block All', 'block_all');
+  /* Display: Block Any */
+  $handler = $view->new_display('block', 'Block Any', 'block_any');
 
-  /* Display: Block All - no button */
-  $handler = $view->new_display('block', 'Block All - no button', 'block_all_no_button');
+  /* Display: Block Any - no button */
+  $handler = $view->new_display('block', 'Block Any - no button', 'block_any_no_button');
   $handler->display->display_options['defaults']['footer'] = FALSE;
 
   /* Display: Block Faculty */
   $handler = $view->new_display('block', 'Block Faculty', 'block_faculty');
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'stanford_people_spotlight' => 'stanford_people_spotlight',
+  );
+  $handler->display->display_options['filters']['type']['group'] = 1;
+  /* Filter criterion: Content: Affiliation (field_s_ppl_spot_affiliation) */
+  $handler->display->display_options['filters']['field_s_ppl_spot_affiliation_tid']['id'] = 'field_s_ppl_spot_affiliation_tid';
+  $handler->display->display_options['filters']['field_s_ppl_spot_affiliation_tid']['table'] = 'field_data_field_s_ppl_spot_affiliation';
+  $handler->display->display_options['filters']['field_s_ppl_spot_affiliation_tid']['field'] = 'field_s_ppl_spot_affiliation_tid';
+  $handler->display->display_options['filters']['field_s_ppl_spot_affiliation_tid']['value'] = array(
+    86 => '86',
+  );
+  $handler->display->display_options['filters']['field_s_ppl_spot_affiliation_tid']['group'] = 1;
+  $handler->display->display_options['filters']['field_s_ppl_spot_affiliation_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['field_s_ppl_spot_affiliation_tid']['vocabulary'] = 'stanford_affiliation';
+
+  /* Display: Block Faculty - No Button */
+  $handler = $view->new_display('block', 'Block Faculty - No Button', 'block_faculty_no_btn');
+  $handler->display->display_options['defaults']['footer'] = FALSE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Content: Published */
@@ -710,8 +724,45 @@ function stanford_people_spotlight_views_views_default_views() {
   $handler->display->display_options['filters']['field_s_ppl_spot_affiliation_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_s_ppl_spot_affiliation_tid']['vocabulary'] = 'stanford_affiliation';
 
-  /* Display: Block All - No Depts */
-  $handler = $view->new_display('block', 'Block All - No Depts', 'block_all_no_depts');
+  /* Display: Block Students - No Button */
+  $handler = $view->new_display('block', 'Block Students - No Button', 'block_students_no_btn');
+  $handler->display->display_options['defaults']['footer'] = FALSE;
+  /* Footer: Global: Text area */
+  $handler->display->display_options['footer']['area']['id'] = 'area';
+  $handler->display->display_options['footer']['area']['table'] = 'views';
+  $handler->display->display_options['footer']['area']['field'] = 'area';
+  $handler->display->display_options['footer']['area']['content'] = '<div class="spotlight-button spotlight-img-color-[field_s_ppl_spot_image_color]">
+  <a class="btn" href="spotlight">More Stories</a>
+</div>
+';
+  $handler->display->display_options['footer']['area']['format'] = 'full_html';
+  $handler->display->display_options['footer']['area']['tokenize'] = TRUE;
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'stanford_people_spotlight' => 'stanford_people_spotlight',
+  );
+  $handler->display->display_options['filters']['type']['group'] = 1;
+  /* Filter criterion: Content: Affiliation (field_s_ppl_spot_affiliation) */
+  $handler->display->display_options['filters']['field_s_ppl_spot_affiliation_tid']['id'] = 'field_s_ppl_spot_affiliation_tid';
+  $handler->display->display_options['filters']['field_s_ppl_spot_affiliation_tid']['table'] = 'field_data_field_s_ppl_spot_affiliation';
+  $handler->display->display_options['filters']['field_s_ppl_spot_affiliation_tid']['field'] = 'field_s_ppl_spot_affiliation_tid';
+  $handler->display->display_options['filters']['field_s_ppl_spot_affiliation_tid']['value'] = array(
+    88 => '88',
+  );
+  $handler->display->display_options['filters']['field_s_ppl_spot_affiliation_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['field_s_ppl_spot_affiliation_tid']['vocabulary'] = 'stanford_affiliation';
   $export['stanford_people_spotlight_h_card'] = $view;
 
   return $export;
