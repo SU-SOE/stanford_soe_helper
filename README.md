@@ -28,13 +28,13 @@ This module provides the context and layouts for _People Spotlight_.
 **[Stanford People Spotlight Views](https://github.com/SU-SWS/stanford_soe_helper/stanford_people_spotlight_views)**
 This module provides views for _People Spotlight_.
 
-*** Page views displays:
+***Views Pages:
 
 - All view is at /spotlight
 - All student view is at /spotlight/students
 - All faculty view is at /spotlight/faculty
 
-*** Block views displays:
+***Views Blocks:
 
 - Full width banner
 - Horizontal
