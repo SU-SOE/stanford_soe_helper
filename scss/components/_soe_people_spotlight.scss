@@ -69,6 +69,13 @@
         text-align: center;
         width: 100%;
       }
+
+      .spotlight-info-container {
+        width: 30%;
+        @include breakpoint(small) {
+          width: auto;
+        }
+      }
     }
 
     .spotlight-img {
