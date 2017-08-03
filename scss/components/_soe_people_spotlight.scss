@@ -149,6 +149,14 @@
         font-family: $roboto-slab;
         font-size: em(28px);
         font-weight: 600;
+
+        p:before {
+          content: open-quote;
+        }
+
+        p:after {
+          content: close-quote;
+        }
       }
     }
   }
@@ -252,6 +260,10 @@
 // VERTICAL CARD VIEW
 
 .view-stanford-ppl-spot-3-v-card {
+  .views-grid-three .views-row {
+    margin-bottom: 80px;
+  }
+
   .spotlight-container {
     background: $white;
     @include box-shadow;
@@ -263,7 +275,6 @@
 
     .spotlight-img {
       text-align: center;
-      margin-right: 40px;
       @media (max-width: 650px) {
         margin-right: 0;
       }
@@ -300,18 +311,19 @@
         }
 
         h2 {
-          margin: 15px 0 20px;
+          font-size: em(24px);
+          margin: 25px 0 10px;
         }
 
-        &.spotlight-name-color-orange {
+        &.spotlight-name-color-orange a {
           text-decoration-color: $orange;
         }
 
-        &.spotlight-name-color-turquoise {
+        &.spotlight-name-color-turquoise a {
           text-decoration-color: $turquoise;
         }
 
-        &.spotlight-name-color-pink {
+        &.spotlight-name-color-pink a {
           text-decoration-color: $pink;
         }
       }
