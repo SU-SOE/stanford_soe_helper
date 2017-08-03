@@ -28,17 +28,46 @@ This module provides the context and layouts for _People Spotlight_.
 **[Stanford People Spotlight Views](https://github.com/SU-SWS/stanford_soe_helper/stanford_people_spotlight_views)**
 This module provides views for _People Spotlight_.
 
-***Views Pages:
 
-- All view is at /spotlight
-- All student view is at /spotlight/students
-- All faculty view is at /spotlight/faculty
 
-***Views Blocks:
+Views Pages:
 
-- Full width banner
-- Horizontal
-- Vertical
+- All spotlights view is at /spotlight
+- Student spotlights view is at /spotlight/students
+- Faculty spotlights view is at /spotlight/faculty
+
+***Stanford People Spotlight: 1, Vertical, Span4, Card***
+Display: Block.
+This randomly selects Stanford People Spotlight nodes, displays 1, and uses span4 and Large Square image style	default		
+
+***Stanford People Spotlight: 1, Vertical, Span6, Card***
+Display: Block.
+This randomly selects Stanford People Spotlight nodes, displays 1, and uses span6 and Large Square image style	default		
+
+***Stanford People Spotlight: 2, Vertical, Span4, Card***
+Display: Block.
+This randomly selects Stanford People Spotlight nodes, displays 2, and uses span4 and Large Square image style	default		
+
+***Stanford People Spotlight: 2, Vertical, Span6, Card***
+Display: Block.
+This randomly selects Stanford People Spotlight nodes, displays 2, and uses span6 and Large Square image style	default		
+
+***Stanford People Spotlight: 3, Vertical, Card***
+Displays: Block, Page.
+This randomly selects Stanford People Spotlight nodes, displays 1, and uses span4 and Large Square image style	default	/spotlight	
+
+***Stanford People Spotlight: FW Banner - No Quote***
+Display: Block.
+This uses square image size 370x370	default		open
+
+***Stanford People Spotlight: FW Banner - Quote***
+Display: Block
+This uses square image size 370x370	default		open
+
+***Stanford People Spotlight: Horizontal Card***
+Display: Block
+This randomly selects Stanford People Spotlight nodes and uses Large Square image style
+
 
 **[Stanford SoE Helper Bean Types](https://github.com/SU-SWS/stanford_soe_helper/stanford_soe_helper_bean_types/)**
 This module provides custom functionality for bean types.
