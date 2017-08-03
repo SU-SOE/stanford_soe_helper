@@ -125,7 +125,15 @@ function stanford_people_spotlight_views_views_default_views() {
   $handler->display->display_options['fields']['field_s_ppl_spot_quote']['field'] = 'field_s_ppl_spot_quote';
   $handler->display->display_options['fields']['field_s_ppl_spot_quote']['label'] = '';
   $handler->display->display_options['fields']['field_s_ppl_spot_quote']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote']['alter']['max_length'] = '105';
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote']['alter']['strip_tags'] = TRUE;
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['field_s_ppl_spot_quote']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote']['type'] = 'text_trimmed';
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote']['settings'] = array(
+    'trim_length' => '600',
+  );
   /* Field: Content: Edit link */
   $handler->display->display_options['fields']['edit_node']['id'] = 'edit_node';
   $handler->display->display_options['fields']['edit_node']['table'] = 'views_entity_node';
@@ -434,7 +442,15 @@ function stanford_people_spotlight_views_views_default_views() {
   $handler->display->display_options['fields']['field_s_ppl_spot_quote']['field'] = 'field_s_ppl_spot_quote';
   $handler->display->display_options['fields']['field_s_ppl_spot_quote']['label'] = '';
   $handler->display->display_options['fields']['field_s_ppl_spot_quote']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote']['alter']['max_length'] = '105';
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote']['alter']['strip_tags'] = TRUE;
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['field_s_ppl_spot_quote']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote']['type'] = 'text_trimmed';
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote']['settings'] = array(
+    'trim_length' => '600',
+  );
   /* Field: Content: Edit link */
   $handler->display->display_options['fields']['edit_node']['id'] = 'edit_node';
   $handler->display->display_options['fields']['edit_node']['table'] = 'views_entity_node';
@@ -1296,7 +1312,15 @@ function stanford_people_spotlight_views_views_default_views() {
   $handler->display->display_options['fields']['field_s_ppl_spot_quote']['field'] = 'field_s_ppl_spot_quote';
   $handler->display->display_options['fields']['field_s_ppl_spot_quote']['label'] = '';
   $handler->display->display_options['fields']['field_s_ppl_spot_quote']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote']['alter']['max_length'] = '105';
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote']['alter']['strip_tags'] = TRUE;
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['field_s_ppl_spot_quote']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote']['type'] = 'text_trimmed';
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote']['settings'] = array(
+    'trim_length' => '600',
+  );
   /* Field: Content: Edit link */
   $handler->display->display_options['fields']['edit_node']['id'] = 'edit_node';
   $handler->display->display_options['fields']['edit_node']['table'] = 'views_entity_node';
@@ -1605,7 +1629,15 @@ function stanford_people_spotlight_views_views_default_views() {
   $handler->display->display_options['fields']['field_s_ppl_spot_quote']['field'] = 'field_s_ppl_spot_quote';
   $handler->display->display_options['fields']['field_s_ppl_spot_quote']['label'] = '';
   $handler->display->display_options['fields']['field_s_ppl_spot_quote']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote']['alter']['max_length'] = '105';
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote']['alter']['strip_tags'] = TRUE;
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['field_s_ppl_spot_quote']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote']['type'] = 'text_trimmed';
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote']['settings'] = array(
+    'trim_length' => '600',
+  );
   /* Field: Content: Edit link */
   $handler->display->display_options['fields']['edit_node']['id'] = 'edit_node';
   $handler->display->display_options['fields']['edit_node']['table'] = 'views_entity_node';
@@ -1914,7 +1946,15 @@ function stanford_people_spotlight_views_views_default_views() {
   $handler->display->display_options['fields']['field_s_ppl_spot_quote']['field'] = 'field_s_ppl_spot_quote';
   $handler->display->display_options['fields']['field_s_ppl_spot_quote']['label'] = '';
   $handler->display->display_options['fields']['field_s_ppl_spot_quote']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote']['alter']['max_length'] = '105';
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote']['alter']['strip_tags'] = TRUE;
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['field_s_ppl_spot_quote']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote']['type'] = 'text_trimmed';
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote']['settings'] = array(
+    'trim_length' => '600',
+  );
   /* Field: Content: Edit link */
   $handler->display->display_options['fields']['edit_node']['id'] = 'edit_node';
   $handler->display->display_options['fields']['edit_node']['table'] = 'views_entity_node';
