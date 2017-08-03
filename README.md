@@ -60,11 +60,11 @@ Display: Block.
 This uses square image size 370x370			
 
 ***Stanford People Spotlight: FW Banner - Quote***
-Display: Block
+Display: Block.
 This uses square image size 370x370			
 
 ***Stanford People Spotlight: Horizontal Card***
-Display: Block
+Display: Block.
 This randomly selects Stanford People Spotlight nodes and uses Large Square image style
 
 
