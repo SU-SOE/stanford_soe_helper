@@ -675,7 +675,7 @@ function stanford_people_spotlight_views_views_default_views() {
   $handler->display->display_options['footer']['area']['table'] = 'views';
   $handler->display->display_options['footer']['area']['field'] = 'area';
   $handler->display->display_options['footer']['area']['content'] = '<div class="spotlight-button spotlight-img-color-[field_s_ppl_spot_image_color]">
-  <a class="btn" href="https://stanford.edu">More Stories</a>
+  <a class="btn" href="spotlight">More Stories</a>
 </div>
 ';
   $handler->display->display_options['footer']['area']['format'] = 'full_html';
@@ -2126,7 +2126,7 @@ function stanford_people_spotlight_views_views_default_views() {
   $handler->display->display_options['footer']['area']['table'] = 'views';
   $handler->display->display_options['footer']['area']['field'] = 'area';
   $handler->display->display_options['footer']['area']['content'] = '<div class="spotlight-button spotlight-img-color-[field_s_ppl_spot_image_color]">
-  <a class="btn" href="https://stanford.edu">More Stories</a>
+  <a class="btn" href="spotlight">More Stories</a>
 </div>
 ';
   $handler->display->display_options['footer']['area']['format'] = 'full_html';
