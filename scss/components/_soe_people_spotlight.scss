@@ -67,8 +67,11 @@
       @media (max-width: 1900px) {
         width: 65%;
       }
-      @include breakpoint(large) {
+      @media (max-width: 1400px) {
         width: 85%;
+      }
+      @include breakpoint(large) {
+        width: 90%;
       }
       @include breakpoint(small) {
         display: block;
