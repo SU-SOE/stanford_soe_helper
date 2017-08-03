@@ -29,40 +29,39 @@ This module provides the context and layouts for _People Spotlight_.
 This module provides views for _People Spotlight_.
 
 
-
 Views Pages:
 
-- All spotlights view is at /spotlight
-- Student spotlights view is at /spotlight/students
-- Faculty spotlights view is at /spotlight/faculty
+- All spotlights view at /spotlight
+- Student spotlights view at /spotlight/students
+- Faculty spotlights view at /spotlight/faculty
 
 ***Stanford People Spotlight: 1, Vertical, Span4, Card***
 Display: Block.
-This randomly selects Stanford People Spotlight nodes, displays 1, and uses span4 and Large Square image style	default		
+This randomly selects Stanford People Spotlight nodes, displays 1, and uses span4 and Large Square image style			
 
 ***Stanford People Spotlight: 1, Vertical, Span6, Card***
 Display: Block.
-This randomly selects Stanford People Spotlight nodes, displays 1, and uses span6 and Large Square image style	default		
+This randomly selects Stanford People Spotlight nodes, displays 1, and uses span6 and Large Square image style			
 
 ***Stanford People Spotlight: 2, Vertical, Span4, Card***
 Display: Block.
-This randomly selects Stanford People Spotlight nodes, displays 2, and uses span4 and Large Square image style	default		
+This randomly selects Stanford People Spotlight nodes, displays 2, and uses span4 and Large Square image style			
 
 ***Stanford People Spotlight: 2, Vertical, Span6, Card***
 Display: Block.
-This randomly selects Stanford People Spotlight nodes, displays 2, and uses span6 and Large Square image style	default		
+This randomly selects Stanford People Spotlight nodes, displays 2, and uses span6 and Large Square image style			
 
 ***Stanford People Spotlight: 3, Vertical, Card***
-Displays: Block, Page.
-This randomly selects Stanford People Spotlight nodes, displays 1, and uses span4 and Large Square image style	default	/spotlight	
+Displays: Block, Page - /spotlight.
+This randomly selects Stanford People Spotlight nodes, displays 1, and uses span4 and Large Square image style			
 
 ***Stanford People Spotlight: FW Banner - No Quote***
 Display: Block.
-This uses square image size 370x370	default		open
+This uses square image size 370x370			
 
 ***Stanford People Spotlight: FW Banner - Quote***
 Display: Block
-This uses square image size 370x370	default		open
+This uses square image size 370x370			
 
 ***Stanford People Spotlight: Horizontal Card***
 Display: Block
