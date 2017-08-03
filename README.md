@@ -99,6 +99,9 @@ This module provides custom functionality for news.
 **[Stanford SoE Helper Page](https://github.com/SU-SWS/stanford_soe_helper/stanford_soe_helper_page/)**
 This module provides custom functionality for Stanford Pages.
 
+**[Stanford SoE Helper Search](https://github.com/SU-SWS/stanford_soe_helper/stanford_soe_helper_search/)**
+This module provides Solr search functionality.
+
 **[Stanford SoE Helper Sitewide](https://github.com/SU-SWS/stanford_soe_helper/stanford_soe_helper_sitewide/)**
 This module provides custom functionality for sitewide functionality. 
 This includes contexts and vocabulary including:
