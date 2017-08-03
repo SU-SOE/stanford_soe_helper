@@ -50,7 +50,8 @@
 // FULL WIDTH BANNER VIEW
 
 .view-stanford-people-spotlight-fw-banner,
-.view-stanford-people-spotlight-fw-banner-no-quote {
+.view-stanford-people-spotlight-fw-banner-no-quote,
+.view-stanford-ppl-spot-fw-banner-quote {
   .spotlight-container {
     .front & {
       background: $white;
@@ -242,87 +243,105 @@
 // }
 
 // VERTICAL CARD VIEW
-//
-// .spotlight-container {
-//   background: $white;
-//   @include box-shadow;
-//
-//   .spotlight-all-content-container {
-//     margin: 0 auto;
-//     padding: 50px 20px;
-//   }
-//
-//   .spotlight-img {
-//     text-align: center;
-//     margin-right: 40px;
-//     @media (max-width: 650px) {
-//       margin-right: 0;
-//     }
-//
-//     img {
-//       border-radius: 50%;
-//       border-width: 5px;
-//       border-style: solid;
-//     }
-//
-//     &.spotlight-img-color-orange img {
-//       border-color: $orange;
-//     }
-//
-//     &.spotlight-img-color-turquoise img {
-//       border-color: $turquoise;
-//     }
-//
-//     &.spotlight-img-color-pink img {
-//       border-color: $pink;
-//     }
-//   }
-//
-//   .spotlight-info-container {
-//     .spotlight-name {
-//       &[class*="spotlight-name-color-"] a {
-//         text-decoration: underline;
-//         text-decoration-skip: ink;
-//
-//         &:focus,
-//         &:hover {
-//           text-decoration-color: $primary-color;
-//         }
-//       }
-//
-//       h2 {
-//         margin: 15px 0 20px;
-//       }
-//
-//       &.spotlight-name-color-orange {
-//         text-decoration-color: $orange;
-//       }
-//
-//       &.spotlight-name-color-turquoise {
-//         text-decoration-color: $turquoise;
-//       }
-//
-//       &.spotlight-name-color-pink {
-//         text-decoration-color: $pink;
-//       }
-//     }
-//
-//     .spotlight-degree p,
-//     .spotlight-title p {
-//       margin: 0;
-//     }
-//
-//     .spotlight-department p {
-//       margin-top: 0;
-//     }
-//
-//     .spotlight-quote {
-//       font-family: $roboto-slab;
-//       font-size: em(24px);
-//       font-weight: 600;
-//     }
-//   }
-// }
+
+.view-stanford-ppl-spot-3-v-card {
+  .spotlight-container {
+    background: $white;
+    @include box-shadow;
+
+    .spotlight-all-content-container {
+      margin: 0 auto;
+      padding: 50px 20px;
+    }
+
+    .spotlight-img {
+      text-align: center;
+      margin-right: 40px;
+      @media (max-width: 650px) {
+        margin-right: 0;
+      }
+
+      img {
+        border-radius: 50%;
+        border-width: 5px;
+        border-style: solid;
+      }
+
+      &.spotlight-img-color-orange img {
+        border-color: $orange;
+      }
+
+      &.spotlight-img-color-turquoise img {
+        border-color: $turquoise;
+      }
+
+      &.spotlight-img-color-pink img {
+        border-color: $pink;
+      }
+    }
+
+    .spotlight-info-container {
+      .spotlight-name {
+        &[class*="spotlight-name-color-"] a {
+          text-decoration: underline;
+          text-decoration-skip: ink;
+
+          &:focus,
+          &:hover {
+            text-decoration-color: $primary-color;
+          }
+        }
+
+        h2 {
+          margin: 15px 0 20px;
+        }
+
+        &.spotlight-name-color-orange {
+          text-decoration-color: $orange;
+        }
+
+        &.spotlight-name-color-turquoise {
+          text-decoration-color: $turquoise;
+        }
+
+        &.spotlight-name-color-pink {
+          text-decoration-color: $pink;
+        }
+      }
+
+      .spotlight-degree p,
+      .spotlight-title p {
+        margin: 0;
+      }
+
+      .spotlight-department p {
+        margin-top: 0;
+      }
+
+      .spotlight-quote {
+        font-family: $roboto-slab;
+        font-size: em(24px);
+        font-weight: 600;
+      }
+    }
+  }
+
+  .pager-load-more {
+    a {
+      color: $white;
+      background-color: $brand-bright;
+      border-radius: 0;
+      @include box-shadow;
+      padding: 0.7em 4em;
+
+      &:focus,
+      &:hover {
+        color: $white;
+        background-color: $primary-color;
+      }
+    }
+  }
+}
 
 // BUTTON TO MORE STORIES
 
