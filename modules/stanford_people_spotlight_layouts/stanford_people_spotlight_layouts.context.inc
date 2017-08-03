@@ -64,11 +64,11 @@ function stanford_people_spotlight_layouts_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'views-05103c446aaa0fd3489626f207439a35' => array(
+        'views-c2b6153cde2b4573a636336531638758' => array(
           'module' => 'views',
-          'delta' => '05103c446aaa0fd3489626f207439a35',
+          'delta' => 'c2b6153cde2b4573a636336531638758',
           'region' => 'fullwidth_top',
-          'weight' => '-8',
+          'weight' => '-7',
         ),
         'views-4a896ddf5b3f786361686dc4271fd7aa' => array(
           'module' => 'views',
