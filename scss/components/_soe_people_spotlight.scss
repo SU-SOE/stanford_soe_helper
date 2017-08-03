@@ -61,25 +61,25 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 85%;
+      width: 50%;
       margin: 0 auto;
       padding: 50px 0;
+      @media (max-width: 1900px) {
+        width: 65%;
+      }
+      @include breakpoint(large) {
+        width: 85%;
+      }
       @include breakpoint(small) {
         display: block;
         text-align: center;
         width: 100%;
       }
-
-      .spotlight-info-container {
-        width: 30%;
-        @include breakpoint(small) {
-          width: auto;
-        }
-      }
     }
 
     .spotlight-img {
       margin-right: 40px;
+      flex-shrink: 0;
       @include breakpoint(small) {
         margin-right: 0;
       }
