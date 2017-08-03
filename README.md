@@ -31,7 +31,6 @@ This module provides views for _People Spotlight_.
 
 
 Views Pages:
-----
 
 - All spotlights view is at /spotlight
 - Student spotlights view is at /spotlight/students
