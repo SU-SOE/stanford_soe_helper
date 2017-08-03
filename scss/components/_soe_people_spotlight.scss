@@ -162,7 +162,7 @@
   }
 }
 
-//HORIZONTAL CARD VIEW
+// HORIZONTAL CARD VIEW
 // .spotlight-container {
 //   background: $white;
 //   @include box-shadow;
@@ -253,6 +253,14 @@
 //       font-family: $roboto-slab;
 //       font-size: em(24px);
 //       font-weight: 600;
+//
+//       p:before {
+//         content: open-quote;
+//       }
+//
+//       p:after {
+//         content: close-quote;
+//       }
 //     }
 //   }
 // }
@@ -341,6 +349,14 @@
         font-family: $roboto-slab;
         font-size: em(24px);
         font-weight: 600;
+
+        p:before {
+          content: open-quote;
+        }
+
+        p:after {
+          content: close-quote;
+        }
       }
     }
   }
