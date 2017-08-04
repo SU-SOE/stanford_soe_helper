@@ -23,7 +23,18 @@ function stanford_soe_helper_homepage_context_default_contexts() {
       ),
     ),
   );
-  $context->reactions = array();
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'views-3881814597a165e0ba56d47f5aeda6da' => array(
+          'module' => 'views',
+          'delta' => '3881814597a165e0ba56d47f5aeda6da',
+          'region' => 'content_body_bottom',
+          'weight' => '-10',
+        ),
+      ),
+    ),
+  );
   $context->condition_mode = 0;
 
   // Translatables
