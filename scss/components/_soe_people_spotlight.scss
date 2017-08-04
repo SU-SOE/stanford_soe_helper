@@ -165,10 +165,9 @@
   }
 }
 
-//HORIZONTAL CARD VIEW
+// HORIZONTAL CARD VIEW
 
-.view-stanford-people-spotlight-h-card,
-.view-stanford-ppl-spot-2-v-span4-card {
+.view-stanford-people-spotlight-h-card {
   .spotlight-container {
     background: $white;
     @include box-shadow;
@@ -233,15 +232,15 @@
           }
         }
 
-        &.spotlight-name-color-orange {
+        &.spotlight-name-color-orange a {
           text-decoration-color: $orange;
         }
 
-        &.spotlight-name-color-turquoise {
+        &.spotlight-name-color-turquoise a {
           text-decoration-color: $turquoise;
         }
 
-        &.spotlight-name-color-pink {
+        &.spotlight-name-color-pink a {
           text-decoration-color: $pink;
         }
       }
@@ -279,6 +278,7 @@
 // VERTICAL CARD VIEW
 
 .view-stanford-people-spotlight-1-v-span4-card,
+.view-stanford-ppl-spot-2-v-span4-card,
 .view-stanford-ppl-spot-2-v-span6-card,
 .view-stanford-ppl-spot-3-v-card {
   &.views-grid-three .views-row {
