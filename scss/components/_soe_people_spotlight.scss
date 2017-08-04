@@ -424,4 +424,17 @@
   &.spotlight-img-color-pink a {
     background: $pink;
   }
+
+  .view-stanford-people-spotlight-1-v-span4-card &,
+  .view-stanford-ppl-spot-2-v-span4-card &,
+  .view-stanford-ppl-spot-2-v-span6-card & {
+    clear: both;
+  }
+
+  .view-stanford-people-spotlight-1-v-span4-card & a,
+  .view-stanford-ppl-spot-2-v-span4-card & a,
+  .view-stanford-ppl-spot-2-v-span6-card & a {
+    display: block;
+    width: auto;
+  }
 }
