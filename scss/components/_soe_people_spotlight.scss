@@ -184,11 +184,13 @@
       }
       @media (max-width: 650px) {
         display: block;
+        padding: 50px 20px;
       }
     }
 
     .spotlight-img {
       margin-right: 40px;
+      flex-shrink: 0;
       @media (max-width: 650px) {
         text-align: center;
         margin-right: 0;
