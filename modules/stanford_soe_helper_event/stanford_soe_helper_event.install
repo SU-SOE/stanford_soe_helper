@@ -1,0 +1,135 @@
+<?php
+/**
+ * @file
+ * stanford_soe_helper_landing_page.install
+ */
+
+/**
+ * Implements hook_install().
+ */
+function stanford_soe_helper_event_install() {
+  _stanford_soe_helper_event_add_featured_field();
+
+  $schema_version = drupal_get_installed_schema_version('stanford_soe_helper_landing_page');
+  if ($schema_version < 7201) {
+    drupal_set_installed_schema_version('stanford_soe_helper_landing_page', 7201);
+  }
+}
+
+/**
+ * Implements hook_enable().
+ */
+function stanford_soe_helper_event_enable() {
+  /*
+   *mymodule_cache_rebuild();
+   */
+  /* Your code here */
+}
+
+/**
+ * Implements hook_disable().
+ */
+function stanford_soe_helper_event_disable() {
+  /*
+   *mymodule_cache_rebuild();
+   */
+  /* Your code here */
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function stanford_soe_helper_event_uninstall() {
+  field_delete_field('field_s_arrow_accent_color');
+}
+
+/**
+ * Implements hook_update_N().
+ */
+function stanford_soe_helper_event_update_7201() {
+  _stanford_soe_helper_event_add_featured_field();
+}
+
+
+/**
+ * Custom callback for creating field instance.
+ */
+function _stanford_soe_helper_event_add_featured_field() {
+
+  $field_bases['field_s_mag_article_featured'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_s_events_featured',
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        0 => 'Not featured',
+        1 => 'Featured',
+      ),
+      'allowed_values_function' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'list_boolean',
+  );
+
+  $field_instance = array(
+    'bundle' => 'stanford_event',
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => 'This indicates if this article will be featured on the homepage or other places. If setting this to "Featured" please verify that no other magazine articles are also set to "Featured".',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 13,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'taxonomy' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_s_events_featured',
+    'label' => 'Featured',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 14,
+    ),
+  );
+  field_create_instance($field_instance);
+}
