@@ -29,8 +29,14 @@ function stanford_soe_helper_homepage_context_default_contexts() {
         'views-3881814597a165e0ba56d47f5aeda6da' => array(
           'module' => 'views',
           'delta' => '3881814597a165e0ba56d47f5aeda6da',
-          'region' => 'content_body_bottom',
+          'region' => 'full_width_middle',
           'weight' => '-10',
+        ),
+        'views-stanford_news_featured-block_1' => array(
+          'module' => 'views',
+          'delta' => 'stanford_news_featured-block_1',
+          'region' => 'full_width_middle',
+          'weight' => '-9',
         ),
       ),
     ),
