@@ -435,13 +435,18 @@
 
   #content-body .content .view-stanford-people-spot-1-vertical-span6-card & a.btn,
   #content-body .content .view-stanford-people-spotlight-1-v-span4-card & a.btn,
+  .view-stanford-people-spot-1-vertical-span6-card & a,
+  .view-stanford-people-spotlight-1-v-span4-card & a {
+    display: block;
+    width: auto;
+  }
+
   #content-body .content .view-stanford-ppl-spot-2-v-span4-card & a.btn,
   #content-body .content .view-stanford-ppl-spot-2-v-span6-card & a.btn,
-  .view-stanford-people-spot-1-vertical-span6-card & a,
-  .view-stanford-people-spotlight-1-v-span4-card & a,
   .view-stanford-ppl-spot-2-v-span4-card & a,
   .view-stanford-ppl-spot-2-v-span6-card & a {
     display: block;
-    width: auto;
+    width: 30%;
+    margin: 0 auto;
   }
 }
