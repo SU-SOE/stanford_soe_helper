@@ -8,9 +8,14 @@
 // NODE DISPLAY
 
 .node-type-stanford-magazine-article {
+  h1 {
+    width: 85%;
+    margin: 0 auto;
+  }
+
   .field-name-field-s-mag-article-topics {
     font-size: em(20px);
-    width: 75%;
+    width: 65%;
     margin: 0 auto 18px;
     @include breakpoint(x-small) {
       width: 100%;
@@ -18,8 +23,10 @@
   }
 
   .field-name-field-s-mag-article-dek {
-    width: 75%;
-    margin: 0 auto 22px;
+    font-size: em(26px);
+    line-height: 1.3em;
+    width: 65%;
+    margin: 44px auto 22px;
     @include breakpoint(x-small) {
       width: 100%;
     }
@@ -31,8 +38,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 75%;
-    margin: 0 auto 18px;
+    width: 65%;
+    margin: 0 auto 32px;
     @include breakpoint(x-small) {
       width: 100%;
     }
@@ -679,21 +686,23 @@
 // RELATED DEPARTMENTS BLOCK
 
 #block-ds-extras-related-departments {
-  width: 75%;
-  border-top: 2px solid $dark-gray;
-  margin: 0 auto 50px;
+  width: 85%;
+  border-top: 1px solid $dark-gray;
+  margin: 0 auto 80px;
   padding-top: 20px;
   @include breakpoint(x-small) {
     width: 100%;
   }
 
   h2 {
-    font-size: em(22px);
+    font-size: em(18px);
     font-family: $primary-font;
     margin-bottom: 0;
   }
 
   .field-name-field-s-mag-article-dept {
+    font-size: em(18px);
+    line-height: 1.3em;
     width: 45%;
     @include breakpoint(x-small) {
       width: 100%;
