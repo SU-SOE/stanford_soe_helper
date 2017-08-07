@@ -1,0 +1,139 @@
+<?php
+/**
+ * @file
+ * stanford_soe_helper_event.install
+ */
+
+/**
+ * Implements hook_install().
+ */
+function stanford_soe_helper_event_install() {
+  _stanford_soe_helper_event_add_featured_field();
+
+  $schema_version = drupal_get_installed_schema_version('stanford_soe_helper_event');
+  if ($schema_version < 7201) {
+    drupal_set_installed_schema_version('stanford_soe_helper_event', 7201);
+  }
+}
+
+/**
+ * Implements hook_enable().
+ */
+function stanford_soe_helper_event_enable() {
+  /*
+   *mymodule_cache_rebuild();
+   */
+  /* Your code here */
+}
+
+/**
+ * Implements hook_disable().
+ */
+function stanford_soe_helper_event_disable() {
+  /*
+   *mymodule_cache_rebuild();
+   */
+  /* Your code here */
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function stanford_soe_helper_event_uninstall() {
+  field_delete_field('field_s_event_featured');
+}
+
+/**
+ * Implements hook_update_N().
+ */
+function stanford_soe_helper_event_update_7201() {
+  _stanford_soe_helper_event_add_featured_field();
+}
+
+
+/**
+ * Custom callback for creating field instance.
+ */
+function _stanford_soe_helper_event_add_featured_field() {
+
+  $field = field_info_field('field_s_event_featured');
+  if (empty($field)) {
+    $field_base = [
+      'active' => 1,
+      'cardinality' => 1,
+      'deleted' => 0,
+      'entity_types' => [],
+      'field_name' => 'field_s_event_featured',
+      'indexes' => [
+        'value' => [
+          0 => 'value',
+        ],
+      ],
+      'locked' => 0,
+      'module' => 'list',
+      'settings' => [
+        'allowed_values' => [
+          0 => 'Not featured',
+          1 => 'Featured',
+        ],
+        'allowed_values_function' => '',
+      ],
+      'translatable' => 0,
+      'type' => 'list_boolean',
+    ];
+    field_create_field($field_base);
+
+    $field_instance = [
+      'bundle' => 'stanford_event',
+      'default_value' => [
+        0 => [
+          'value' => 0,
+        ],
+      ],
+      'deleted' => 0,
+      'description' => 'This indicates if this event will be featured on the homepage or other places.',
+      'display' => [
+        'default' => [
+          'label' => 'above',
+          'module' => 'list',
+          'settings' => [],
+          'type' => 'list_default',
+          'weight' => 13,
+        ],
+        'full' => [
+          'label' => 'above',
+          'settings' => [],
+          'type' => 'hidden',
+          'weight' => 0,
+        ],
+        'taxonomy' => [
+          'label' => 'above',
+          'settings' => [],
+          'type' => 'hidden',
+          'weight' => 0,
+        ],
+        'teaser' => [
+          'label' => 'above',
+          'settings' => [],
+          'type' => 'hidden',
+          'weight' => 0,
+        ],
+      ],
+      'entity_type' => 'node',
+      'field_name' => 'field_s_event_featured',
+      'label' => 'Featured',
+      'required' => 1,
+      'settings' => [
+        'user_register_form' => FALSE,
+      ],
+      'widget' => [
+        'active' => 1,
+        'module' => 'options',
+        'settings' => [],
+        'type' => 'options_buttons',
+        'weight' => 14,
+      ],
+    ];
+    field_create_instance($field_instance);
+  }
+}
