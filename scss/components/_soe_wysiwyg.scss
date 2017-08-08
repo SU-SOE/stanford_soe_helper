@@ -8,8 +8,8 @@
   font-family: $roboto-slab;
   font-size: em(32px);
   font-weight: 400;
-  line-height: 1.4em;
-  margin-bottom: 30px;
+  line-height: 1.5em;
+  margin-bottom: 40px;
 }
 
 a {
@@ -50,7 +50,8 @@ p.columns {
 
 p.related-link {
   background: $white;
-  padding: 26px 36px;
+  line-height: 1.3em;
+  padding: 27px 36px 30px;
   @include box-shadow;
 
   a {
@@ -64,6 +65,7 @@ p.related-link {
 
   &:before {
     content: "Related \00a0 | \00a0";
+    font-weight: 600;
   }
 }
 
@@ -76,6 +78,16 @@ p.summary.drop-cap {
   }
 }
 
+.caption {
+  color: $gray-orange;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.3em;
+  text-align: center;
+  margin: 0 2em 4em;
+}
+
 .main table {
   width: 100%;
+  margin-bottom: 2em;
 }

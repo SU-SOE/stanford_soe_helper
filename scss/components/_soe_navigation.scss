@@ -42,10 +42,10 @@
       }
     }
 
-     > .active > a:hover,
+     > .active-trail > a,
      > li > a:focus,
      > li > a:hover,
-    > .active-trail > a {
+    > .active > a:hover {
       border-bottom: 2px solid $primary-color;
       @include breakpoint(small) {
         border-bottom: none;
@@ -108,6 +108,7 @@
 
       > a {
         border-top: none;
+        padding: 0.5em 0.5em 0.5em 0;
 
         &.active,
         &:focus,
@@ -146,7 +147,8 @@
 
         > a {
           border-top: none;
-          font-weight: 400;
+          font-weight: 600;
+          padding: 0.5em 0.5em 0.5em 0;
 
           &.active,
           &:focus,
@@ -173,7 +175,7 @@
       }
 
       ul.menu li ul {
-        padding: 0 0 0 20px;
+        padding: 0 0 0 11px;
       }
 
       .content > .menu > li.expanded {

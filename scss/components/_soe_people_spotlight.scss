@@ -8,8 +8,12 @@
 // NODE DISPLAY
 
 .node-type-stanford-people-spotlight {
+  .main {
+    padding-top: 0;
+  }
+
   .group-s-ppl-spot-container {
-    width: 75%;
+    width: 65%;
     margin: 0 auto;
     @include breakpoint(x-small) {
       width: 100%;
@@ -59,11 +63,10 @@
 
     .spotlight-all-content-container {
       display: flex;
-      justify-content: center;
       align-items: center;
       width: 50%;
       margin: 0 auto;
-      padding: 50px 0;
+      padding: 70px 0 0;
       @media (max-width: 1900px) {
         width: 65%;
       }
@@ -89,7 +92,7 @@
 
       img {
         border-radius: 50%;
-        border-width: 5px;
+        border-width: 8px;
         border-style: solid;
       }
 
@@ -294,7 +297,7 @@
 
     .spotlight-all-content-container {
       margin: 0 auto;
-      padding: 50px 20px;
+      padding: 36px 20px 50px;
     }
 
     .spotlight-img {

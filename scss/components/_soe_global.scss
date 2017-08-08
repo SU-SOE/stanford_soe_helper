@@ -63,7 +63,7 @@ h4 {
   font-family: $roboto-slab;
   font-size: em(22px);
   font-weight: 600;
-  margin: 1em 0 0.3em;
+  margin: 1em 0 0.5em;
 }
 
 h1,
@@ -91,7 +91,7 @@ a.btn {
   border-radius: 0;
   @include box-shadow;
   margin: 0 0 26px;
-  padding: 0.7em 1.4em .9em;
+  padding: 0.7em 1.4em 0.9em;
   line-height: 1.4em;
   letter-spacing: 0.03em;
   background: $brand-bright;
@@ -137,7 +137,7 @@ h3.normal-link {
 
 li {
   line-height: 1.4em;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
 }
 
 #content {
@@ -152,7 +152,7 @@ li {
 
     ol li {
       &:last-child {
-        margin-bottom: 1.5em;
+        margin-bottom: 2em;
       }
     }
 
@@ -230,10 +230,12 @@ th {
 }
 
 .main {
-  padding-top: 60px;
+  padding-top: 60px 0 50px;
   background: $off-white;
 
   p {
+    margin: 0 0 1.5em;
+
     a {
       text-decoration: underline;
     }
