@@ -12,19 +12,19 @@ html {
 body {
   font-size: em($base-font-size, $root-font-size);
   @include breakpoint(medium) {
-    font-size: 21px;
-    font-size: em(21px, $root-font-size);
-  }
-  @include breakpoint(small) {
-    font-size: 20px;
-    font-size: em(20px, $root-font-size);
-  }
-  @include breakpoint(x-small) {
     font-size: 19px;
     font-size: em(19px, $root-font-size);
   }
+  @include breakpoint(small) {
+    font-size: 18px;
+    font-size: em(18px, $root-font-size);
+  }
+  @include breakpoint(x-small) {
+    font-size: 17px;
+    font-size: em(17px, $root-font-size);
+  }
   font-weight: 400;
-  line-height: 1.45em;
+  line-height: 1.55em;
 }
 
 h1 {
@@ -33,6 +33,15 @@ h1 {
   font-weight: 600;
   letter-spacing: 0;
   margin: -9px 0 10px;
+  @include breakpoint(medium) {
+    font-size: em(46px);
+  }
+  @include breakpoint(small) {
+    font-size: em(40px);
+  }
+  @include breakpoint(x-small) {
+    font-size: em(36px);
+  }
 }
 
 h2 {
