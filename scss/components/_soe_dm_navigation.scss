@@ -25,6 +25,9 @@
     @include breakpoint(small) {
       flex-wrap: nowrap;
     }
+    @media (min-width: 1200px) {
+      margin-left: 74px;
+    }
 
     .block-menu-block {
       display: flex;
@@ -62,9 +65,16 @@
         margin-bottom: 0;
 
         li {
+          font-weight: 600;
           display: inline;
           float: left;
           list-style: none;
+
+          &.collapsed,
+          &.expanded,
+          &.leaf {
+            padding: 10px 20px 0 0;
+          }
 
           &:first-child {
             margin-left: 0;

@@ -61,3 +61,17 @@
 .page-search div#edit-basic {
   margin-bottom: 5px;
 }
+
+.search-views-left {
+  h2 a {
+    text-decoration: underline;
+    text-decoration-color: $turquoise;
+  }
+
+  &:hover,
+  &focus {
+    color: $gray-orange;
+    text-decoration: underline;
+    text-decoration-color: $gray-orange;
+  }
+}

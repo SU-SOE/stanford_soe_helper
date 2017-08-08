@@ -309,6 +309,11 @@
   }
 
   .pager-load-more {
+    margin-bottom: 100px;
+    @include breakpoint(small) {
+      margin-bottom: 50px;
+    }
+
     a {
       color: $white;
       background-color: $brand-bright;
@@ -337,11 +342,16 @@
   }
 
   h2 {
+    font-family: $primary-font;
     color: $gray-orange;
     font-weight: 400;
+    letter-spacing: 0;
     width: 50%;
     margin: 0 auto 60px;
     text-align: center;
+    @media (min-width: 1200px) {
+      width: 40%;
+    }
     @include breakpoint(small) {
       width: 100%;
     }
@@ -654,6 +664,9 @@
 .page-magazine {
   .main {
     padding-bottom: 0;
+    @media (min-width: 979px) {
+      padding-top: 100px;
+    }
 
     .container {
       @include breakpoint(small) {

@@ -382,6 +382,11 @@
   }
 
   .pager-load-more {
+    margin-bottom: 100px;
+    @include breakpoint(small) {
+      margin-bottom: 50px;
+    }
+
     a {
       color: $white;
       background-color: $brand-bright;

@@ -14,3 +14,18 @@
     @media (max-width: 480px)  { @content; }
   }
 }
+
+@mixin breakpoint-min($point) {
+  @if $point == large {
+    @media (min-width: 1200px) { @content; }
+  }
+  @else if $point == medium {
+    @media (min-width: 979px) { @content; }
+  }
+  @else if $point == small {
+    @media (min-width: 767px)  { @content; }
+  }
+  @else if $point == x-small {
+    @media (min-width: 480px)  { @content; }
+  }
+}
