@@ -38,6 +38,12 @@ function stanford_soe_helper_homepage_context_default_contexts() {
           'region' => 'full_width_middle',
           'weight' => '-9',
         ),
+        'views-stanford_event_featured-block_1' => array(
+          'module' => 'views',
+          'delta' => 'stanford_event_featured-block_1',
+          'region' => 'full_width_middle',
+          'weight' => '-8',
+        ),
       ),
     ),
   );
