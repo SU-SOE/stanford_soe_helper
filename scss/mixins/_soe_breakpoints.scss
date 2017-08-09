@@ -1,6 +1,8 @@
 @charset "UTF-8";
 
-@mixin breakpoint($point) {
+// MAX-WIDTH BREAKPOINTS
+
+@mixin breakpoint-max($point) {
   @if $point == large {
     @media (max-width: 1200px) { @content; }
   }
@@ -14,6 +16,8 @@
     @media (max-width: 480px)  { @content; }
   }
 }
+
+// MIN-WIDTH BREAKPOINTS
 
 @mixin breakpoint-min($point) {
   @if $point == large {

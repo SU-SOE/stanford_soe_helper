@@ -43,7 +43,7 @@ p.columns {
   font-weight: bold;
   @include column-count (2);
   @include column-gap (30px);
-  @include breakpoint(small) {
+  @include breakpoint-max(small) {
      @include column-count (1);
   }
 }

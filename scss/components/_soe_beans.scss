@@ -36,7 +36,7 @@
     padding: 30px;
     margin-bottom: 40px;
     @include box-shadow;
-    @include breakpoint(small) {
+    @include breakpoint-max(small) {
       display: block;
       padding: 0;
     }
@@ -44,7 +44,7 @@
     .postcard-linked-img-container {
       flex-shrink: 0;
       margin-right: 30px;
-      @include breakpoint(small) {
+      @include breakpoint-max(small) {
         margin-right: 0;
       }
 
@@ -52,7 +52,7 @@
         position: relative;
 
         .field-name-field-s-post-link-image img {
-          @include breakpoint(small) {
+          @include breakpoint-max(small) {
             width: 100%;
           }
         }
@@ -69,7 +69,7 @@
             height: auto;
             vertical-align: -16px;
             padding: 3px 8px;
-            @include breakpoint(x-small) {
+            @include breakpoint-max(x-small) {
               vertical-align: -19px;
             }
           }
@@ -79,7 +79,7 @@
 
     .postcard-linked-content-container {
       width: 100%;
-      @include breakpoint(small) {
+      @include breakpoint-max(small) {
         width: auto;
         padding: 30px;
       }
@@ -96,7 +96,7 @@
           text-decoration-skip: ink;
           text-decoration: underline;
           text-decoration-color: $turquoise;
-          @include breakpoint(small) {
+          @include breakpoint-max(small) {
             margin-top: 20px;
           }
 

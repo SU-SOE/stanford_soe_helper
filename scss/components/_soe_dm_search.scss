@@ -29,12 +29,12 @@
 
   .block-stanford-search-api {
     position: relative;
-    @include breakpoint(medium) {
+    @include breakpoint-max(medium) {
       display: flex;
       justify-content: center;
       width: 100%;
     }
-    @include breakpoint(small) {
+    @include breakpoint-max(small) {
       display: block;
       width: auto;
     }
@@ -54,7 +54,7 @@
       box-shadow: none;
       padding: 5px 0 0 40px;
       background: url("../img/soe_mag_glass_black.svg") no-repeat 6% 70%;
-      @include breakpoint(small) {
+      @include breakpoint-max(small) {
         padding-top: 0;
 
         &:focus {
@@ -69,10 +69,10 @@
 
     .input-medium {
       width: 175px;
-      @include breakpoint(medium) {
+      @include breakpoint-max(medium) {
         width: 115px;
       }
-      @include breakpoint(small) {
+      @include breakpoint-max(small) {
         width: 0;
 
         &:focus {

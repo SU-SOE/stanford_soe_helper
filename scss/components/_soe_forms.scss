@@ -108,7 +108,7 @@ body:not(.page-admin) {
       border-style: none;
       color: $white;
       margin-left: 1em;
-      @include breakpoint(small) {
+      @include breakpoint-max(small) {
         margin-left: 0.4em;
       }
     }
@@ -163,7 +163,7 @@ body:not(.page-admin) {
       input {
         width: 400px;
         box-shadow: none;
-        @include breakpoint(small) {
+        @include breakpoint-max(small) {
           width: 200px;
         }
       }
@@ -175,7 +175,7 @@ body:not(.page-admin) {
       margin-bottom: 80px;
       padding: 65px 0;
       box-shadow: none;
-      @include breakpoint(x-small) {
+      @include breakpoint-max(x-small) {
         margin-bottom: 20px;
       }
     }

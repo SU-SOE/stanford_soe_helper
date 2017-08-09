@@ -10,17 +10,17 @@
   .nav-collapse.collapse {
     float: right;
     margin-top: -46px;
-    @include breakpoint(large) {
+    @include breakpoint-max(large) {
       float: left;
       margin-top: 0;
     }
-    @include breakpoint(small) {
+    @include breakpoint-max(small) {
       width: 100%;
     }
   }
 
   .nav-collapse {
-    @include breakpoint(small) {
+    @include breakpoint-max(small) {
       width: 100%;
     }
   }
@@ -36,7 +36,7 @@
       font-weight: 400;
       border-bottom: 2px solid transparent;
       padding-bottom: 30px;
-      @include breakpoint(small) {
+      @include breakpoint-max(small) {
         padding-bottom: 0.25em;
         border-bottom: none;
       }
@@ -47,19 +47,19 @@
      > li > a:hover,
     > .active > a:hover {
       border-bottom: 2px solid $primary-color;
-      @include breakpoint(small) {
+      @include breakpoint-max(small) {
         border-bottom: none;
       }
     }
   }
 
   .btn.btn-navbar {
-    @include breakpoint(small) {
+    @include breakpoint-max(small) {
       background: $brand-bright;
       margin-top: -50px;
       float: right;
     }
-    @include breakpoint(x-small) {
+    @include breakpoint-max(x-small) {
       margin-top: -57px;
     }
     @media (max-width: 385px) {
@@ -74,7 +74,7 @@
   border-bottom: 1px solid #e1e1e1;
 
   ul li.last.leaf {
-    @include breakpoint(small) {
+    @include breakpoint-max(small) {
       height: auto;
       border-right: none;
       padding-right: 0;

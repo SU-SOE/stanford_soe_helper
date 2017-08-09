@@ -83,14 +83,14 @@
   width: 750px;
   position: absolute;
   top: 210px;
-  @include breakpoint(large) {
+  @include breakpoint-max(large) {
     top: 250px;
   }
   @media (max-width: 910px) {
     width: 450px;
     top: 225px;
   }
-  @include breakpoint(small) {
+  @include breakpoint-max(small) {
     position: relative;
     top: -310px;
     margin-bottom: -245px;
@@ -135,10 +135,10 @@
 
   .logged-in & {
     top: 285px;
-    @include breakpoint(large) {
+    @include breakpoint-max(large) {
       top: 325px;
     }
-    @include breakpoint(small) {
+    @include breakpoint-max(small) {
       top: -305px;
     }
     @media (max-width: 380px) {

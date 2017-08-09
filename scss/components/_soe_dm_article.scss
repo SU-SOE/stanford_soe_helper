@@ -17,7 +17,7 @@
     font-size: em(20px);
     width: 65%;
     margin: 0 auto 18px;
-    @include breakpoint(x-small) {
+    @include breakpoint-max(x-small) {
       width: 100%;
     }
   }
@@ -27,7 +27,7 @@
     line-height: 1.3em;
     width: 65%;
     margin: 44px auto 22px;
-    @include breakpoint(x-small) {
+    @include breakpoint-max(x-small) {
       width: 100%;
     }
   }
@@ -40,7 +40,7 @@
     justify-content: space-between;
     width: 65%;
     margin: 0 auto 32px;
-    @include breakpoint(x-small) {
+    @include breakpoint-max(x-small) {
       width: 100%;
     }
 
@@ -112,7 +112,7 @@
 .view-stanford-magazine-topics {
   &.most-recent-article {
     margin: 40px 0 80px;
-    @include breakpoint(x-small) {
+    @include breakpoint-max(x-small) {
       margin-bottom: 20px;
     }
 
@@ -120,7 +120,7 @@
       position: relative;
       display: flex;
       @include box-shadow;
-      @include breakpoint(medium) {
+      @include breakpoint-max(medium) {
         display: block;
       }
 
@@ -128,17 +128,17 @@
         width: 50%;
         background: $white;
         padding: 50px 30px 30px;
-        @include breakpoint(medium) {
+        @include breakpoint-max(medium) {
           width: auto;
         }
-        @include breakpoint(x-small) {
+        @include breakpoint-max(x-small) {
           padding-top: 15px;
         }
 
         .mag-topic-card-content-container {
           position: absolute;
           bottom: 40px;
-          @include breakpoint(medium) {
+          @include breakpoint-max(medium) {
             position: static;
           }
         }
@@ -217,7 +217,7 @@
       }
 
       .mag-article-img img {
-        @include breakpoint(medium) {
+        @include breakpoint-max(medium) {
           width: 100%;
         }
       }
@@ -227,7 +227,7 @@
   &.article-grouping {
     .views-row {
       margin-bottom: 80px;
-      @include breakpoint(x-small) {
+      @include breakpoint-max(x-small) {
         margin-bottom: 20px;
       }
     }
@@ -310,7 +310,7 @@
 
   .pager-load-more {
     margin-bottom: 100px;
-    @include breakpoint(small) {
+    @include breakpoint-max(small) {
       margin-bottom: 50px;
     }
 
@@ -352,7 +352,7 @@
     @media (min-width: 1200px) {
       width: 40%;
     }
-    @include breakpoint(small) {
+    @include breakpoint-max(small) {
       width: 100%;
     }
   }
@@ -363,7 +363,7 @@
       &:nth-child(1) {
         width: 22.5%;
         margin-right: 4.5%;
-        @include breakpoint(medium) {
+        @include breakpoint-max(medium) {
           width: 100%;
           margin-right: 0;
         }
@@ -372,7 +372,7 @@
       &:nth-child(2) {
         width: 45%;
         margin-right: 4.5%;
-        @include breakpoint(medium) {
+        @include breakpoint-max(medium) {
           width: 100%;
           margin-right: 0;
         }
@@ -382,7 +382,7 @@
             background: $white;
             padding: 50px 30px 30px;
             @include box-shadow;
-            @include breakpoint(medium) {
+            @include breakpoint-max(medium) {
               padding: 15px 30px 30px;
             }
 
@@ -391,7 +391,7 @@
               font-size: em(20px);
               font-weight: 100;
               margin-bottom: 10px;
-              @include breakpoint(medium) {
+              @include breakpoint-max(medium) {
                 font-size: em(18px);
               }
             }
@@ -400,7 +400,7 @@
               font-size: em(32px);
               line-height: 1.2em;
               font-weight: 600;
-              @include breakpoint(medium) {
+              @include breakpoint-max(medium) {
                 font-size: em(26px);
                 line-height: 1.3em;
               }
@@ -410,7 +410,7 @@
               font-size: em(18px);
               line-height: 1.3em;
               margin: 30px 0;
-              @include breakpoint(medium) {
+              @include breakpoint-max(medium) {
                 font-size: em(16px);
                 line-height: 1.2em;
               }
@@ -422,7 +422,7 @@
       &:nth-child(3) {
         width: 22.5%;
         margin-right: 0;
-        @include breakpoint(medium) {
+        @include breakpoint-max(medium) {
           width: 100%;
         }
       }
@@ -435,7 +435,7 @@
       &:nth-child(1) {
         width: 45%;
         margin-right: 4.5%;
-        @include breakpoint(medium) {
+        @include breakpoint-max(medium) {
           width: 100%;
           margin-right: 0;
         }
@@ -445,7 +445,7 @@
             background: $white;
             padding: 50px 30px 30px;
             @include box-shadow;
-            @include breakpoint(medium) {
+            @include breakpoint-max(medium) {
               padding: 15px 30px 30px;
             }
 
@@ -454,7 +454,7 @@
               font-size: em(20px);
               font-weight: 100;
               margin-bottom: 10px;
-              @include breakpoint(medium) {
+              @include breakpoint-max(medium) {
                 font-size: em(18px);
               }
             }
@@ -463,7 +463,7 @@
               font-size: em(32px);
               line-height: 1.2em;
               font-weight: 600;
-              @include breakpoint(medium) {
+              @include breakpoint-max(medium) {
                 font-size: em(26px);
                 line-height: 1.3em;
               }
@@ -473,7 +473,7 @@
               font-size: em(18px);
               line-height: 1.3em;
               margin: 30px 0;
-              @include breakpoint(medium) {
+              @include breakpoint-max(medium) {
                 font-size: em(16px);
                 line-height: 1.2em;
               }
@@ -485,7 +485,7 @@
       &:nth-child(2) {
         width: 22.5%;
         margin-right: 4.5%;
-        @include breakpoint(medium) {
+        @include breakpoint-max(medium) {
           width: 100%;
           margin-right: 0;
         }
@@ -494,7 +494,7 @@
       &:nth-child(3) {
         width: 22.5%;
         margin-right: 0;
-        @include breakpoint(medium) {
+        @include breakpoint-max(medium) {
           width: 100%;
         }
       }
@@ -506,7 +506,7 @@
       &:nth-child(1) {
         width: 22.5%;
         margin-right: 4.5%;
-        @include breakpoint(medium) {
+        @include breakpoint-max(medium) {
           width: 100%;
           margin-right: 0;
         }
@@ -515,7 +515,7 @@
       &:nth-child(2) {
         width: 22.5%;
         margin-right: 4.5%;
-        @include breakpoint(medium) {
+        @include breakpoint-max(medium) {
           width: 100%;
           margin-right: 0;
         }
@@ -524,7 +524,7 @@
       &:nth-child(3) {
         width: 45%;
         margin-right: 0;
-        @include breakpoint(medium) {
+        @include breakpoint-max(medium) {
           width: 100%;
         }
 
@@ -533,7 +533,7 @@
             background: $white;
             padding: 50px 30px 30px;
             @include box-shadow;
-            @include breakpoint(medium) {
+            @include breakpoint-max(medium) {
               padding: 15px 30px 30px;
             }
 
@@ -542,7 +542,7 @@
               font-size: em(20px);
               font-weight: 100;
               margin-bottom: 10px;
-              @include breakpoint(medium) {
+              @include breakpoint-max(medium) {
                 font-size: em(18px);
               }
             }
@@ -551,7 +551,7 @@
               font-size: em(32px);
               line-height: 1.2em;
               font-weight: 600;
-              @include breakpoint(medium) {
+              @include breakpoint-max(medium) {
                 font-size: em(26px);
                 line-height: 1.3em;
               }
@@ -561,7 +561,7 @@
               font-size: em(18px);
               line-height: 1.3em;
               margin: 30px 0;
-              @include breakpoint(medium) {
+              @include breakpoint-max(medium) {
                 font-size: em(16px);
                 line-height: 1.2em;
               }
@@ -574,12 +574,12 @@
 
   .mag-article-container {
     margin-bottom: 80px;
-    @include breakpoint(medium) {
+    @include breakpoint-max(medium) {
       margin-bottom: 40px;
     }
 
     .mag-article-img img {
-      @include breakpoint(medium) {
+      @include breakpoint-max(medium) {
         width: 100%;
       }
     }
@@ -669,7 +669,7 @@
     }
 
     .container {
-      @include breakpoint(small) {
+      @include breakpoint-max(small) {
         margin-bottom: 0;
       }
 
@@ -707,7 +707,7 @@
   border-top: 1px solid $dark-gray;
   margin: 0 auto 80px;
   padding-top: 20px;
-  @include breakpoint(x-small) {
+  @include breakpoint-max(x-small) {
     width: 100%;
   }
 
@@ -721,7 +721,7 @@
     font-size: em(18px);
     line-height: 1.3em;
     width: 45%;
-    @include breakpoint(x-small) {
+    @include breakpoint-max(x-small) {
       width: 100%;
     }
   }
