@@ -8,10 +8,14 @@
 // NODE DISPLAY
 
 .node-type-stanford-people-spotlight {
+  .main {
+    padding-top: 0;
+  }
+
   .group-s-ppl-spot-container {
-    width: 75%;
+    width: 65%;
     margin: 0 auto;
-    @include breakpoint(x-small) {
+    @include breakpoint-max(x-small) {
       width: 100%;
     }
 
@@ -59,21 +63,20 @@
 
     .spotlight-all-content-container {
       display: flex;
-      justify-content: center;
       align-items: center;
       width: 50%;
       margin: 0 auto;
-      padding: 50px 0;
+      padding: 70px 0 0;
       @media (max-width: 1900px) {
         width: 65%;
       }
       @media (max-width: 1400px) {
         width: 85%;
       }
-      @include breakpoint(large) {
+      @include breakpoint-max(large) {
         width: 90%;
       }
-      @include breakpoint(small) {
+      @include breakpoint-max(small) {
         display: block;
         text-align: center;
         width: 100%;
@@ -83,13 +86,13 @@
     .spotlight-img {
       margin-right: 40px;
       flex-shrink: 0;
-      @include breakpoint(small) {
+      @include breakpoint-max(small) {
         margin-right: 0;
       }
 
       img {
         border-radius: 50%;
-        border-width: 5px;
+        border-width: 8px;
         border-style: solid;
       }
 
@@ -121,7 +124,7 @@
         h2 {
           font-size: em(56px);
           margin: 0 0 20px;
-          @include breakpoint(small) {
+          @include breakpoint-max(small) {
             margin-top: 15px;
           }
         }
@@ -179,7 +182,7 @@
       width: 85%;
       margin: 0 auto;
       padding: 50px 0;
-      @include breakpoint(small) {
+      @include breakpoint-max(small) {
         width: 100%;
       }
       @media (max-width: 650px) {
@@ -229,7 +232,7 @@
 
         h2 {
           margin: 0 0 20px;
-          @include breakpoint(small) {
+          @include breakpoint-max(small) {
             margin-top: 15px;
           }
         }
@@ -294,7 +297,7 @@
 
     .spotlight-all-content-container {
       margin: 0 auto;
-      padding: 50px 20px;
+      padding: 36px 20px 50px;
     }
 
     .spotlight-img {
@@ -382,6 +385,11 @@
   }
 
   .pager-load-more {
+    margin-bottom: 100px;
+    @include breakpoint-max(small) {
+      margin-bottom: 50px;
+    }
+
     a {
       color: $white;
       background-color: $brand-bright;
@@ -448,7 +456,7 @@
     display: block;
     width: 30%;
     margin: 0 auto;
-    @include breakpoint(small) {
+    @include breakpoint-max(small) {
       width: auto;
     }
   }

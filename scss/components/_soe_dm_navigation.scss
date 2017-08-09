@@ -10,7 +10,7 @@
   background: $turquoise;
 
   .container {
-    @include breakpoint(small) {
+    @include breakpoint-max(small) {
       width: auto;
       margin: 0 20px;
     }
@@ -19,11 +19,14 @@
   .region-digital-magazine-menu {
     display: flex;
     justify-content: center;
-    @include breakpoint(medium) {
+    @include breakpoint-max(medium) {
       flex-wrap: wrap;
     }
-    @include breakpoint(small) {
+    @include breakpoint-max(small) {
       flex-wrap: nowrap;
+    }
+    @media (min-width: 1200px) {
+      margin-left: 74px;
     }
 
     .block-menu-block {
@@ -31,10 +34,10 @@
       align-items: center;
       justify-content: center;
       padding-top: 20px;
-      @include breakpoint(medium) {
+      @include breakpoint-max(medium) {
         width: 100%;
       }
-      @include breakpoint(small) {
+      @include breakpoint-max(small) {
         display: block;
         width: 100%;
       }
@@ -42,17 +45,17 @@
       h2 {
         margin-bottom: 0;
         padding-bottom: 20px;
-        @include breakpoint(small) {
+        @include breakpoint-max(small) {
           float: left;
         }
 
         &:after {
           content: "|";
-          font-size: 40px;
+          font-size: em(40px);
           font-weight: 300;
           padding: 0 30px;
           vertical-align: top;
-          @include breakpoint(small) {
+          @include breakpoint-max(small) {
             content: none;
           }
         }
@@ -62,19 +65,26 @@
         margin-bottom: 0;
 
         li {
+          font-weight: 600;
           display: inline;
           float: left;
           list-style: none;
 
+          &.collapsed,
+          &.expanded,
+          &.leaf {
+            padding: 10px 20px 0 0;
+          }
+
           &:first-child {
             margin-left: 0;
-            @include breakpoint(small) {
+            @include breakpoint-max(small) {
               float: right;
             }
           }
 
           &:nth-child(2) {
-            @include breakpoint(small) {
+            @include breakpoint-max(small) {
               display: none;
             }
           }
@@ -83,14 +93,14 @@
             &:after {
               content: url("../img/soe_chevron_down_black.png");
               padding-left: 10px;
-              @include breakpoint(small) {
+              @include breakpoint-max(small) {
                 content: url("../img/soe_chevron_down_black.png") "\00a0 \00a0 \00a0 |";
               }
             }
 
             &:focus:after {
               content: url("../img/soe_chevron_up_black.png");
-              @include breakpoint(small) {
+              @include breakpoint-max(small) {
                 content: url("../img/soe_chevron_up_black.png") "\00a0 \00a0 \00a0 |";
               }
             }
@@ -128,10 +138,10 @@
         .views-row {
           width: calc(100% * (1/4) - 2%);
           margin-right: 2%;
-          @include breakpoint(small) {
+          @include breakpoint-max(small) {
             width: calc(100% * (1/2) - 2%);
           }
-          @include breakpoint(x-small) {
+          @include breakpoint-max(x-small) {
             width: 100%;
           }
 

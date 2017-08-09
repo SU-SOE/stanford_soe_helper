@@ -83,14 +83,14 @@
   width: 750px;
   position: absolute;
   top: 210px;
-  @include breakpoint(large) {
+  @include breakpoint-max(large) {
     top: 250px;
   }
   @media (max-width: 910px) {
     width: 450px;
     top: 225px;
   }
-  @include breakpoint(small) {
+  @include breakpoint-max(small) {
     position: relative;
     top: -310px;
     margin-bottom: -245px;
@@ -108,13 +108,13 @@
     text-shadow: 0 0 4px $black;
     line-height: 1.3em;
     @media (max-width: 910px) {
-      font-size: 16px;
+      font-size: em(16px);
     }
     @media (max-width: 485px) {
-      font-size: 15px;
+      font-size: em(15px);
     }
     @media (max-width: 380px) {
-      font-size: 14px;
+      font-size: em(14px);
     }
   }
 
@@ -135,10 +135,10 @@
 
   .logged-in & {
     top: 285px;
-    @include breakpoint(large) {
+    @include breakpoint-max(large) {
       top: 325px;
     }
-    @include breakpoint(small) {
+    @include breakpoint-max(small) {
       top: -305px;
     }
     @media (max-width: 380px) {
@@ -153,7 +153,7 @@
 
     .field-name-field-s-news-teaser .field-item {
       @media (max-width: 485px) {
-        font-size: 15px;
+        font-size: em(15px);
       }
     }
   }

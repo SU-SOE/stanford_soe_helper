@@ -47,7 +47,7 @@
       object-position: center center;
       width: 100%;
       height: calc(100vh - 160px);
-      @include breakpoint(x-small) {
+      @include breakpoint-max(x-small) {
         height: calc(100vh - 180px);
       }
 
@@ -92,7 +92,7 @@
     .banner-bottom-container {
       position: relative;
       overflow: hidden;
-      @include breakpoint(small) {
+      @include breakpoint-max(small) {
         position: inherit;
       }
 
@@ -133,10 +133,10 @@
     div.more-link {
       padding: 18px 32px 20px;
       margin: 0;
-      @include breakpoint(small) {
+      @include breakpoint-max(small) {
         width: 100%;
       }
-      @include breakpoint(x-small) {
+      @include breakpoint-max(x-small) {
         width: 87%;
       }
     }
@@ -144,31 +144,31 @@
     .banner-caption {
       position: absolute;
       width: 80%;
-      @include breakpoint(small) {
+      @include breakpoint-max(small) {
         position: inherit;
         width: 92%;
       }
-      @include breakpoint(x-small) {
+      @include breakpoint-max(x-small) {
         width: 100%;
       }
 
       &.banner-right {
         right: 0;
         text-align: right;
-        @include breakpoint(small) {
+        @include breakpoint-max(small) {
           text-align: left;
         }
 
         &.banner-bottom {
           bottom: 100px;
-          @include breakpoint(medium) {
+          @include breakpoint-max(medium) {
             bottom: 55px;
           }
         }
 
         &.banner-top {
           top: 100px;
-          @include breakpoint(medium) {
+          @include breakpoint-max(medium) {
             top: 55px;
           }
         }

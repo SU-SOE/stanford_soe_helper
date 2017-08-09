@@ -8,8 +8,8 @@
   font-family: $roboto-slab;
   font-size: em(32px);
   font-weight: 400;
-  line-height: 1.4em;
-  margin-bottom: 30px;
+  line-height: 1.5em;
+  margin-bottom: 40px;
 }
 
 a {
@@ -43,14 +43,15 @@ p.columns {
   font-weight: bold;
   @include column-count (2);
   @include column-gap (30px);
-  @include breakpoint(small) {
+  @include breakpoint-max(small) {
      @include column-count (1);
   }
 }
 
 p.related-link {
   background: $white;
-  padding: 26px 36px;
+  line-height: 1.3em;
+  padding: 27px 36px 30px;
   @include box-shadow;
 
   a {
@@ -64,18 +65,29 @@ p.related-link {
 
   &:before {
     content: "Related \00a0 | \00a0";
+    font-weight: 600;
   }
 }
 
 p.summary.drop-cap {
   &:first-letter {
-    font-size: em(85px, 32px);
-    font-weight: 300;
+    font-size: em(92px, 32px);
+    font-weight: 600;
     float: left;
-    padding: 23px 10px 0 0;
+    padding: 18px 10px 0 0;
   }
+}
+
+.caption {
+  color: $gray-orange;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.3em;
+  text-align: center;
+  margin: 0 2em 4em;
 }
 
 .main table {
   width: 100%;
+  margin-bottom: 2em;
 }
