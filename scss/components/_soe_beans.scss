@@ -42,8 +42,8 @@
     }
 
     .postcard-linked-img-container {
+      flex-shrink: 0;
       margin-right: 30px;
-      width: 52%;
       @include breakpoint(small) {
         margin-right: 0;
       }
