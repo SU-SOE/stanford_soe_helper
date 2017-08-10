@@ -2,7 +2,10 @@
 
 //
 // NEWS
+// FOR NODE DISPLAY AND VIEWS
 //
+
+// NODE DISPLAY
 
 .node-type-stanford-news-item {
   #page-title {
@@ -154,6 +157,46 @@
     .field-name-field-s-news-teaser .field-item {
       @media (max-width: 485px) {
         font-size: em(15px);
+      }
+    }
+  }
+}
+
+// HOMEPAGE FEATURED NEWS VIEW
+
+.view-stanford-news-featured {
+  .feat-news-container {
+    .feat-news-img {
+      img {
+        width: 100%;
+      }
+    }
+
+    .feat-news-content-container {
+      background: $white;
+      padding: 50px 30px 30px;
+      @include box-shadow;
+
+      .feat-news-date {
+        color: $gray-orange;
+        font-size: em(20px);
+        font-weight: 100;
+        margin-bottom: 10px;
+      }
+
+      .feat-news-title {
+        a {
+          text-decoration-color: $pink;
+
+          &:focus,
+          &:hover {
+            text-decoration-color: $primary-color;
+          }
+        }
+      }
+
+      .feat-news-teaser {
+        font-size: em(20px);
       }
     }
   }
