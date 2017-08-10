@@ -25,7 +25,7 @@
     @include breakpoint-max(small) {
       flex-wrap: nowrap;
     }
-    @media (min-width: 1200px) {
+    @include breakpoint-min(large) {
       margin-left: 74px;
     }
 
@@ -114,6 +114,11 @@
             &:focus,
             &:hover {
               background-color: transparent;
+              border-bottom-color: $primary-color;
+            }
+
+            &.active {
+              color: $gray-orange;
               border-bottom-color: $primary-color;
             }
           }

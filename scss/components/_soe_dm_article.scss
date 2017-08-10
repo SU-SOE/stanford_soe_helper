@@ -349,7 +349,7 @@
     width: 50%;
     margin: 0 auto 60px;
     text-align: center;
-    @media (min-width: 1200px) {
+    @include breakpoint-min(large) {
       width: 40%;
     }
     @include breakpoint-max(small) {
@@ -664,7 +664,7 @@
 .page-magazine {
   .main {
     padding-bottom: 0;
-    @media (min-width: 979px) {
+    @include breakpoint-min(medium) {
       padding-top: 100px;
     }
 

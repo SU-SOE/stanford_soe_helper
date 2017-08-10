@@ -253,7 +253,7 @@ th {
 }
 
 #content.span9 {
-  @media (min-width: 1200px) {
+  @include breakpoint-min(large) {
     width: 740px;
     margin-left: 80px;
   }

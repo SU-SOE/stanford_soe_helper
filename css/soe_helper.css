@@ -1163,7 +1163,7 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
     /* line 16, ../scss/components/_soe_news.scss */
     .node-type-stanford-news-item .body-style {
       width: 100%; } }
-@media (min-width: 980px) {
+@media (min-width: 979px) {
   /* line 23, ../scss/components/_soe_news.scss */
   .node-type-stanford-news-item .postcard-image {
     width: 850px; } }
@@ -1514,28 +1514,32 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
             #digital-magazine-menu .region-digital-magazine-menu .block-menu-block ul li a:focus, #digital-magazine-menu .region-digital-magazine-menu .block-menu-block ul li a:hover {
               background-color: transparent;
               border-bottom-color: #333333; }
+            /* line 120, ../scss/components/_soe_dm_navigation.scss */
+            #digital-magazine-menu .region-digital-magazine-menu .block-menu-block ul li a.active {
+              color: #686868;
+              border-bottom-color: #333333; }
 
-/* line 129, ../scss/components/_soe_dm_navigation.scss */
+/* line 134, ../scss/components/_soe_dm_navigation.scss */
 #digital-magazine-megamenu .container {
   background-color: #575757; }
-  /* line 133, ../scss/components/_soe_dm_navigation.scss */
+  /* line 138, ../scss/components/_soe_dm_navigation.scss */
   #digital-magazine-megamenu .container .region-digital-magazine-megamenu .view-content {
     display: flex;
     flex-wrap: wrap;
     text-align: center; }
-    /* line 138, ../scss/components/_soe_dm_navigation.scss */
+    /* line 143, ../scss/components/_soe_dm_navigation.scss */
     #digital-magazine-megamenu .container .region-digital-magazine-megamenu .view-content .views-row {
       width: calc(100% * (1/4) - 2%);
       margin-right: 2%; }
       @media (max-width: 767px) {
-        /* line 138, ../scss/components/_soe_dm_navigation.scss */
+        /* line 143, ../scss/components/_soe_dm_navigation.scss */
         #digital-magazine-megamenu .container .region-digital-magazine-megamenu .view-content .views-row {
           width: calc(100% * (1/2) - 2%); } }
       @media (max-width: 480px) {
-        /* line 138, ../scss/components/_soe_dm_navigation.scss */
+        /* line 143, ../scss/components/_soe_dm_navigation.scss */
         #digital-magazine-megamenu .container .region-digital-magazine-megamenu .view-content .views-row {
           width: 100%; } }
-      /* line 148, ../scss/components/_soe_dm_navigation.scss */
+      /* line 153, ../scss/components/_soe_dm_navigation.scss */
       #digital-magazine-megamenu .container .region-digital-magazine-megamenu .view-content .views-row a {
         color: #FFFFFF;
         font-size: 1em; }
@@ -1576,7 +1580,11 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
   #digital-magazine-menu .block-stanford-search-api h2,
   #digital-magazine-menu .block-stanford-search-api input.btn-search {
     display: none; }
-  /* line 47, ../scss/components/_soe_dm_search.scss */
+  @media (max-width: 767px) {
+    /* line 47, ../scss/components/_soe_dm_search.scss */
+    #digital-magazine-menu .block-stanford-search-api .form-item {
+      margin-top: 26px; } }
+  /* line 53, ../scss/components/_soe_dm_search.scss */
   #digital-magazine-menu .block-stanford-search-api input[type="text"] {
     font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 1em;
@@ -1588,37 +1596,37 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
     padding: 5px 0 0 40px;
     background: url("../img/soe_mag_glass_black.svg") no-repeat 6% 70%; }
     @media (max-width: 767px) {
-      /* line 47, ../scss/components/_soe_dm_search.scss */
+      /* line 53, ../scss/components/_soe_dm_search.scss */
       #digital-magazine-menu .block-stanford-search-api input[type="text"] {
         padding-top: 0; }
-        /* line 60, ../scss/components/_soe_dm_search.scss */
+        /* line 66, ../scss/components/_soe_dm_search.scss */
         #digital-magazine-menu .block-stanford-search-api input[type="text"]:focus {
           padding-top: 10px; } }
-    /* line 65, ../scss/components/_soe_dm_search.scss */
+    /* line 71, ../scss/components/_soe_dm_search.scss */
     .not-logged-in #digital-magazine-menu .block-stanford-search-api input[type="text"] {
       margin-right: -15px; }
-  /* line 70, ../scss/components/_soe_dm_search.scss */
+  /* line 76, ../scss/components/_soe_dm_search.scss */
   #digital-magazine-menu .block-stanford-search-api .input-medium {
     width: 175px; }
     @media (max-width: 979px) {
-      /* line 70, ../scss/components/_soe_dm_search.scss */
+      /* line 76, ../scss/components/_soe_dm_search.scss */
       #digital-magazine-menu .block-stanford-search-api .input-medium {
         width: 115px; } }
     @media (max-width: 767px) {
-      /* line 70, ../scss/components/_soe_dm_search.scss */
+      /* line 76, ../scss/components/_soe_dm_search.scss */
       #digital-magazine-menu .block-stanford-search-api .input-medium {
         width: 0; }
-        /* line 78, ../scss/components/_soe_dm_search.scss */
+        /* line 84, ../scss/components/_soe_dm_search.scss */
         #digital-magazine-menu .block-stanford-search-api .input-medium:focus {
           width: 250px; } }
-  /* line 84, ../scss/components/_soe_dm_search.scss */
+  /* line 90, ../scss/components/_soe_dm_search.scss */
   #digital-magazine-menu .block-stanford-search-api input:-ms-input-placeholder {
     color: #333333; }
-  /* line 88, ../scss/components/_soe_dm_search.scss */
+  /* line 94, ../scss/components/_soe_dm_search.scss */
   #digital-magazine-menu .block-stanford-search-api input::-moz-placeholder {
     color: #333333;
     opacity: 1; }
-  /* line 93, ../scss/components/_soe_dm_search.scss */
+  /* line 99, ../scss/components/_soe_dm_search.scss */
   #digital-magazine-menu .block-stanford-search-api input::-webkit-input-placeholder {
     color: #333333; }
 
@@ -3017,12 +3025,15 @@ html.js body > .hero-curtain {
   /* line 29, ../scss/components/_soe_dm_curtain_reveal.scss */
   html.js body > .hero-curtain.below-hero {
     padding-bottom: 0 !important; }
-/* line 34, ../scss/components/_soe_dm_curtain_reveal.scss */
+  /* line 33, ../scss/components/_soe_dm_curtain_reveal.scss */
+  html.js body > .hero-curtain .mag-feat-image-container {
+    background: #333333; }
+/* line 38, ../scss/components/_soe_dm_curtain_reveal.scss */
 html.js body > .hero-curtain-reveal {
   position: fixed;
   top: 0;
   width: 100%; }
-  /* line 39, ../scss/components/_soe_dm_curtain_reveal.scss */
+  /* line 43, ../scss/components/_soe_dm_curtain_reveal.scss */
   html.js body > .hero-curtain-reveal.below-hero {
     position: relative; }
 
