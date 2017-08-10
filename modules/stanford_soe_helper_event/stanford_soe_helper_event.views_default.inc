@@ -176,15 +176,15 @@ function stanford_soe_helper_event_views_default_views() {
   $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="feat-events-container">
   <div class="feat-events-img-container">
     [field_stanford_event_image]
-    <div class="date-stacked">
-      <div class="date-month">[field_stanford_event_datetime_3]</div>
-      <div class="date-day">[field_stanford_event_datetime_4]</div>
-   </div>
-  <div class="feat-events-content-container">
-    <div class="feat-events-title">[title]</div>
-    <div class="feat-events-time">[field_stanford_event_datetime_5]</div>
+      <div class="date-stacked">
+        <div class="date-month">[field_stanford_event_datetime_3]</div>
+        <div class="date-day">[field_stanford_event_datetime_4]</div>
+      </div>
   </div>
-  </div>
+    <div class="feat-events-content-container">
+      <div class="feat-events-title">[title]</div>
+      <div class="feat-events-time">[field_stanford_event_datetime_5]</div>
+    </div>
 </div>';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   /* Sort criterion: Content: Date and Time -  start date (field_stanford_event_datetime) */
