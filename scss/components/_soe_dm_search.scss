@@ -44,6 +44,12 @@
       display: none;
     }
 
+    .form-item {
+      @include breakpoint-max(small) {
+        margin-top: 26px;
+      }
+    }
+
     input[type="text"] {
       font-family: $primary-font;
       font-size: em(22px, 22px);
