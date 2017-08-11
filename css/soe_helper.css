@@ -926,14 +926,20 @@ p.summary.drop-cap:first-letter {
 
 /* line 19, ../scss/components/_soe_calendar.scss */
 .date-stacked {
-  margin-top: 7px; }
-  /* line 22, ../scss/components/_soe_calendar.scss */
+  margin-top: 7px;
+  background: #333333;
+  padding: 8px 12px 10px; }
+  /* line 24, ../scss/components/_soe_calendar.scss */
+  .date-stacked .date-month {
+    font-weight: 100;
+    line-height: 16px; }
+  /* line 29, ../scss/components/_soe_calendar.scss */
   .date-stacked .date-day {
     font-size: 1.1em;
     font-family: "Roboto Slab", serif;
     font-weight: 400; }
 
-/* line 29, ../scss/components/_soe_calendar.scss */
+/* line 36, ../scss/components/_soe_calendar.scss */
 .view-stanford-events-calendar .view-header .date-nav-wrapper {
   background: #FFFFFF; }
 
