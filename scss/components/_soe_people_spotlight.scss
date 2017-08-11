@@ -81,6 +81,10 @@
         text-align: center;
         width: 100%;
       }
+
+      .front & {
+        padding: 70px 0;
+      }
     }
 
     .spotlight-img {
@@ -424,14 +428,44 @@
 
   &.spotlight-img-color-orange a {
     background: $orange;
+
+    .front & {
+      color: $white;
+      background: $brand-bright;
+
+      &:focus,
+      &:hover {
+        background: $primary-color;
+      }
+    }
   }
 
   &.spotlight-img-color-turquoise a {
     background: $turquoise;
+
+    .front & {
+      color: $white;
+      background: $brand-bright;
+
+      &:focus,
+      &:hover {
+        background: $primary-color;
+      }
+    }
   }
 
   &.spotlight-img-color-pink a {
     background: $pink;
+
+    .front & {
+      color: $white;
+      background: $brand-bright;
+
+      &:focus,
+      &:hover {
+        background: $primary-color;
+      }
+    }
   }
 
   .view-stanford-people-spot-1-vertical-span6-card &,
