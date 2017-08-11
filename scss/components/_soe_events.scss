@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+//
+// EVENTS
+//
+
+// HOMEPAGE FEATURED EVENT VIEW
+
+.view-stanford-event-featured {
+  .feat-events-container {
+    .feat-events-img-container {
+      position: relative;
+
+      img {
+        width: 100%;
+      }
+
+      .date-stacked {
+        position: absolute;
+        bottom: -20px;
+        left: 20px;
+      }
+    }
+
+    .feat-events-content-container {
+      background: $white;
+      padding: 50px 30px 30px;
+      @include box-shadow;
+
+      .feat-events-title {
+        h2 {
+          margin-top: 0;
+        }
+
+        a {
+          text-decoration-color: $orange;
+
+          &:focus,
+          &:hover {
+            text-decoration-color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+}

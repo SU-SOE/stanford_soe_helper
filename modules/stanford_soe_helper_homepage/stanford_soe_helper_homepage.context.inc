@@ -26,9 +26,9 @@ function stanford_soe_helper_homepage_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'views-3881814597a165e0ba56d47f5aeda6da' => array(
+        'views-0969cf96ba3c89e5f5ea0784f69f7372' => array(
           'module' => 'views',
-          'delta' => '3881814597a165e0ba56d47f5aeda6da',
+          'delta' => '0969cf96ba3c89e5f5ea0784f69f7372',
           'region' => 'full_width_middle',
           'weight' => '-10',
         ),
@@ -37,6 +37,12 @@ function stanford_soe_helper_homepage_context_default_contexts() {
           'delta' => 'stanford_news_featured-block_1',
           'region' => 'full_width_middle',
           'weight' => '-9',
+        ),
+        'views-stanford_event_featured-block_1' => array(
+          'module' => 'views',
+          'delta' => 'stanford_event_featured-block_1',
+          'region' => 'full_width_middle',
+          'weight' => '-8',
         ),
       ),
     ),

@@ -18,6 +18,13 @@
 
 .date-stacked {
   margin-top: 7px;
+  background: $primary-color;
+  padding: 8px 12px 10px;
+
+  .date-month {
+    font-weight: 100;
+    line-height: 16px;
+  }
 
   .date-day {
     font-size: em(22px);

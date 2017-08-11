@@ -52,6 +52,13 @@ function stanford_soe_helper_news_views_default_views() {
   $handler->display->display_options['fields']['nid']['table'] = 'node';
   $handler->display->display_options['fields']['nid']['field'] = 'nid';
   $handler->display->display_options['fields']['nid']['exclude'] = TRUE;
+  /* Field: Content: Path */
+  $handler->display->display_options['fields']['path']['id'] = 'path';
+  $handler->display->display_options['fields']['path']['table'] = 'node';
+  $handler->display->display_options['fields']['path']['field'] = 'path';
+  $handler->display->display_options['fields']['path']['label'] = '';
+  $handler->display->display_options['fields']['path']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['path']['element_label_colon'] = FALSE;
   /* Field: Field: Featured Image */
   $handler->display->display_options['fields']['field_s_image_info']['id'] = 'field_s_image_info';
   $handler->display->display_options['fields']['field_s_image_info']['table'] = 'field_data_field_s_image_info';
@@ -89,7 +96,7 @@ function stanford_soe_helper_news_views_default_views() {
   $handler->display->display_options['fields']['field_s_news_date']['element_wrapper_class'] = 'descriptor';
   $handler->display->display_options['fields']['field_s_news_date']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_s_news_date']['settings'] = array(
-    'format_type' => 'stanford_month_date_year',
+    'format_type' => 'short',
     'fromto' => 'both',
     'multiple_number' => '',
     'multiple_from' => '',
@@ -119,18 +126,16 @@ function stanford_soe_helper_news_views_default_views() {
   $handler->display->display_options['fields']['nothing']['table'] = 'views';
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['label'] = '';
-  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="postcard-left">
-      <div class="postcard-image">
-           <div class="news-image">[field_s_image_info]</div>
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="feat-news-container">
+  <a href=[path]>
+      <div class="feat-news-img">[field_s_image_info]</div>
+  </a>
+      <div class="feat-news-content-container">
+           <div class="feat-news-date">[field_s_news_date]</div>
+           <div class="feat-news-title"><h2>[title]</h2></div>
+           <div class="feat-news-teaser">[field_s_news_teaser]</div>
       </div>
-
-      <div class="postcard-content">
-           <div class="descriptor">[field_s_news_date]</div>
-           <div><h3>[title]</h3></div>
-           <div>[field_s_news_teaser]</div>
-      </div>
-
-      </div>
+ </div>
 <div class="edit-link">[edit_node]</div>';
   $handler->display->display_options['fields']['nothing']['element_type'] = 'div';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;

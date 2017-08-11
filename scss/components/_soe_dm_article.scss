@@ -334,7 +334,7 @@
   margin-top: -30px;
 }
 
-// LATEST NEWS DM HOMEPAGE VIEW
+// LATEST NEWS DM LANDING PAGE VIEW
 
 .view-stanford-magazine-article-mag-landing-page {
   &.views-grid-three .views-row {
@@ -686,6 +686,58 @@
   .block-stanford-soe-helper-magazine {
     a.btn {
       margin: 0 0 80px;
+    }
+  }
+}
+
+// HOMEPAGE FEATURED ARTICLE VIEW
+
+.view-stanford-magazine-article-featured {
+  .mag-article-container {
+    .mag-article-img {
+      img {
+        width: 100%;
+      }
+    }
+
+    .mag-article-content-container {
+      background: $white;
+      padding: 15px 30px 30px;
+      @include box-shadow;
+      @include breakpoint-max(medium) {
+        padding: 15px 30px 30px;
+      }
+
+      .mag-article-date {
+        color: $gray-orange;
+        font-size: em(20px);
+        font-weight: 100;
+        margin-bottom: 10px;
+        @include breakpoint-max(medium) {
+          font-size: em(18px);
+        }
+      }
+
+      .mag-article-title {
+        a {
+          text-decoration-color: $turquoise;
+
+          &:focus,
+          &:hover {
+            text-decoration-color: $primary-color;
+          }
+        }
+      }
+
+      .mag-article-topics {
+        font-size: em(18px);
+        line-height: 1.3em;
+        margin: 30px 0;
+        @include breakpoint-max(medium) {
+          font-size: em(16px);
+          line-height: 1.2em;
+        }
+      }
     }
   }
 }
