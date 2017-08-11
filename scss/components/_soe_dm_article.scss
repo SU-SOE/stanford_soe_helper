@@ -719,12 +719,13 @@
       }
 
       .mag-article-title {
-        font-size: em(32px);
-        line-height: 1.2em;
-        font-weight: 600;
-        @include breakpoint-max(medium) {
-          font-size: em(26px);
-          line-height: 1.3em;
+        a {
+          text-decoration-color: $turquoise;
+
+          &:focus,
+          &:hover {
+            text-decoration-color: $primary-color;
+          }
         }
       }
 
