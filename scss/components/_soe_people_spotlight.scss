@@ -428,14 +428,26 @@
 
   &.spotlight-img-color-orange a {
     background: $orange;
+
+    .front & {
+      background: $brand-bright;
+    }
   }
 
   &.spotlight-img-color-turquoise a {
     background: $turquoise;
+
+    .front & {
+      background: $brand-bright;
+    }
   }
 
   &.spotlight-img-color-pink a {
     background: $pink;
+
+    .front & {
+      background: $brand-bright;
+    }
   }
 
   .view-stanford-people-spot-1-vertical-span6-card &,
