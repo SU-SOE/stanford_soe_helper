@@ -181,7 +181,7 @@ function stanford_soe_helper_event_views_default_views() {
       </div>
   </div>
     <div class="feat-events-content-container">
-      <div class="feat-events-title">[title]</div>
+      <div class="feat-events-title"><h2>[title]</h2></div>
       <div class="feat-events-time">[field_stanford_event_datetime_5]</div>
     </div>
 </div>';
