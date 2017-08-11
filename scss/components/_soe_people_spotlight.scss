@@ -419,6 +419,10 @@
   &[class*="spotlight-img-color-"] a {
     color: $black;
 
+    .front & {
+      color: $white;
+    }
+
     &:focus,
     &:hover {
       color: $white;
