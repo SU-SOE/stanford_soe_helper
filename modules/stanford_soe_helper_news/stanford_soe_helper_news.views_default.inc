@@ -96,7 +96,7 @@ function stanford_soe_helper_news_views_default_views() {
   $handler->display->display_options['fields']['field_s_news_date']['element_wrapper_class'] = 'descriptor';
   $handler->display->display_options['fields']['field_s_news_date']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_s_news_date']['settings'] = array(
-    'format_type' => 'stanford_month_date_year',
+    'format_type' => 'short',
     'fromto' => 'both',
     'multiple_number' => '',
     'multiple_from' => '',
