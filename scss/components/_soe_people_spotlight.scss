@@ -419,17 +419,9 @@
   &[class*="spotlight-img-color-"] a {
     color: $black;
 
-    .front & {
-      color: $white;
-    }
-
     &:focus,
     &:hover {
       color: $white;
-      background: $primary-color;
-    }
-
-    .front & {
       background: $primary-color;
     }
   }
@@ -438,7 +430,13 @@
     background: $orange;
 
     .front & {
+      color: $white;
       background: $brand-bright;
+
+      &:focus,
+      &:hover {
+        background: $primary-color;
+      }
     }
   }
 
@@ -446,7 +444,13 @@
     background: $turquoise;
 
     .front & {
+      color: $white;
       background: $brand-bright;
+
+      &:focus,
+      &:hover {
+        background: $primary-color;
+      }
     }
   }
 
@@ -454,7 +458,13 @@
     background: $pink;
 
     .front & {
+      color: $white;
       background: $brand-bright;
+
+      &:focus,
+      &:hover {
+        background: $primary-color;
+      }
     }
   }
 
