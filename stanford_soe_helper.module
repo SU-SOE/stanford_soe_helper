@@ -277,7 +277,6 @@ function _stanford_soe_helper_delete_bean($delta) {
  * Implements hook_views_post_execute().
  */
 function stanford_soe_helper_views_post_execute(&$view) {
-  //dpm($view);
   // Removing title on view as we have placed it in the main_top region.
   $test = _stanford_soe_helper_view_title($view->name, $view->current_display);
   if ($test) {
