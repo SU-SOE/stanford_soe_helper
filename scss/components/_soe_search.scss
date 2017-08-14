@@ -65,13 +65,13 @@
 .search-views-left {
   h2 a {
     text-decoration: underline;
-    text-decoration-color: $turquoise;
+    @include td-color($turquoise);
   }
 
   &:hover,
   &focus {
     color: $gray-orange;
     text-decoration: underline;
-    text-decoration-color: $gray-orange;
+    @include td-color($gray-orange);
   }
 }

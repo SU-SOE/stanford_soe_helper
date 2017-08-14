@@ -186,11 +186,11 @@
 
       .feat-news-title {
         a {
-          text-decoration-color: $pink;
+          @include td-color($pink);
 
           &:focus,
           &:hover {
-            text-decoration-color: $primary-color;
+            @include td-color($primary-color);
           }
         }
       }

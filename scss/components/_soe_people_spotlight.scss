@@ -117,11 +117,11 @@
       .spotlight-name {
         &[class*="spotlight-name-color-"] a {
           text-decoration: underline;
-          text-decoration-skip: ink;
+          @include td-skip;
 
           &:focus,
           &:hover {
-            text-decoration-color: $primary-color;
+            @include td-color($primary-color);
           }
         }
 
@@ -134,15 +134,15 @@
         }
 
         &.spotlight-name-color-orange a {
-          text-decoration-color: $orange;
+          @include td-color($orange);
         }
 
         &.spotlight-name-color-turquoise a {
-          text-decoration-color: $turquoise;
+          @include td-color($turquoise);
         }
 
         &.spotlight-name-color-pink a {
-          text-decoration-color: $pink;
+          @include td-color($pink);
         }
       }
 
@@ -226,11 +226,11 @@
       .spotlight-name {
         &[class*="spotlight-name-color-"] a {
           text-decoration: underline;
-          text-decoration-skip: ink;
+          @include td-skip;
 
           &:focus,
           &:hover {
-            text-decoration-color: $primary-color;
+            @include td-color($primary-color);
           }
         }
 
@@ -242,15 +242,15 @@
         }
 
         &.spotlight-name-color-orange a {
-          text-decoration-color: $orange;
+          @include td-color($orange);
         }
 
         &.spotlight-name-color-turquoise a {
-          text-decoration-color: $turquoise;
+          @include td-color($turquoise);
         }
 
         &.spotlight-name-color-pink a {
-          text-decoration-color: $pink;
+          @include td-color($pink);
         }
       }
 
@@ -333,11 +333,11 @@
       .spotlight-name {
         &[class*="spotlight-name-color-"] a {
           text-decoration: underline;
-          text-decoration-skip: ink;
+          @include td-skip;
 
           &:focus,
           &:hover {
-            text-decoration-color: $primary-color;
+            @include td-color($primary-color);
           }
         }
 
@@ -347,15 +347,15 @@
         }
 
         &.spotlight-name-color-orange a {
-          text-decoration-color: $orange;
+          @include td-color($orange);
         }
 
         &.spotlight-name-color-turquoise a {
-          text-decoration-color: $turquoise;
+          @include td-color($turquoise);
         }
 
         &.spotlight-name-color-pink a {
-          text-decoration-color: $pink;
+          @include td-color($pink);
         }
       }
 
