@@ -161,24 +161,24 @@
           &[class*="mag-article-color-"] a {
             color: $primary-color;
             text-decoration: underline;
-            text-decoration-skip: ink;
+            @include td-skip;
 
             &:focus,
             &:hover {
-              text-decoration-color: $primary-color;
+              @include td-color($primary-color);
             }
           }
 
           &.mag-article-color-orange a {
-            text-decoration-color: $orange;
+            @include td-color($orange);
           }
 
           &.mag-article-color-turquoise a {
-            text-decoration-color: $turquoise;
+            @include td-color($turquoise);
           }
 
           &.mag-article-color-pink a {
-            text-decoration-color: $pink;
+            @include td-color($pink);
           }
         }
 
@@ -252,24 +252,24 @@
         &[class*="mag-article-color-"] a {
           color: $primary-color;
           text-decoration: underline;
-          text-decoration-skip: ink;
+          @include td-skip;
 
           &:focus,
           &:hover {
-            text-decoration-color: $primary-color;
+            @include td-color($primary-color);
           }
         }
 
         &.mag-article-color-orange a {
-          text-decoration-color: $orange;
+          @include td-color($orange);
         }
 
         &.mag-article-color-turquoise a {
-          text-decoration-color: $turquoise;
+          @include td-color($turquoise);
         }
 
         &.mag-article-color-pink a {
-          text-decoration-color: $pink;
+          @include td-color($pink);
         }
       }
 
@@ -604,24 +604,24 @@
         &[class*="mag-article-color-"] a {
           color: $primary-color;
           text-decoration: underline;
-          text-decoration-skip: ink;
+          @include td-skip;
 
           &:focus,
           &:hover {
-            text-decoration-color: $primary-color;
+            @include td-color($primary-color);
           }
         }
 
         &.mag-article-color-orange a {
-          text-decoration-color: $orange;
+          @include td-color($orange);
         }
 
         &.mag-article-color-turquoise a {
-          text-decoration-color: $turquoise;
+          @include td-color($turquoise);
         }
 
         &.mag-article-color-pink a {
-          text-decoration-color: $pink;
+          @include td-color($pink);
         }
       }
 
@@ -720,11 +720,11 @@
 
       .mag-article-title {
         a {
-          text-decoration-color: $turquoise;
+          @include td-color($turquoise);
 
           &:focus,
           &:hover {
-            text-decoration-color: $primary-color;
+            @include td-color($primary-color);
           }
         }
       }

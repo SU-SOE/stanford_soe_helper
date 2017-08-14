@@ -33,11 +33,11 @@
         }
 
         a {
-          text-decoration-color: $orange;
+          @include td-color($orange);
 
           &:focus,
           &:hover {
-            text-decoration-color: $primary-color;
+            @include td-color($primary-color);
           }
         }
       }

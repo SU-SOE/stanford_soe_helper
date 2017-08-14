@@ -93,16 +93,16 @@
           font-size: em(32px);
           font-weight: 600;
           letter-spacing: 0.02em;
-          text-decoration-skip: ink;
+          @include td-skip;
           text-decoration: underline;
-          text-decoration-color: $turquoise;
+          @include td-color($turquoise);
           @include breakpoint-max(small) {
             margin-top: 20px;
           }
 
           &:focus,
           &:hover {
-            text-decoration-color: $primary-color;
+            @include td-color($primary-color);
           }
         }
       }
