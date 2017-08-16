@@ -51,7 +51,7 @@
 
         &:after {
           content: "|";
-          font-size: em(40px);
+          font-size: em(42px, 32px);
           font-weight: 300;
           padding: 0 30px;
           vertical-align: top;
@@ -113,13 +113,14 @@
 
             &:focus,
             &:hover {
+              color: $gray-orange;
               background-color: transparent;
-              border-bottom-color: $primary-color;
+              border-bottom-color: $gray-orange;
             }
 
             &.active {
               color: $gray-orange;
-              border-bottom-color: $primary-color;
+              border-bottom-color: $gray-orange;
             }
           }
         }

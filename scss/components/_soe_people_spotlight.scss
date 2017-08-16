@@ -34,6 +34,16 @@
       }
     }
 
+    .field-name-field-s-ppl-spot-quote {
+      .field-item:before {
+        content: open-quote;
+      }
+
+      .field-item:after {
+        content: close-quote;
+      }
+    }
+
     .field-name-field-s-ppl-spot-photo-credit {
       font-size: em(20px);
       color: $gray-orange;

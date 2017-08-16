@@ -42,10 +42,10 @@
       }
     }
 
-     > .active-trail > a,
+     > .active > a:hover,
      > li > a:focus,
      > li > a:hover,
-    > .active > a:hover {
+    > .active-trail > a {
       border-bottom: 2px solid $primary-color;
       @include breakpoint-max(small) {
         border-bottom: none;
@@ -125,6 +125,8 @@
   }
 
   &#sidebar-first {
+    margin-top: 20px;
+
     .block-menu-block {
       background: none;
       margin: 1px;

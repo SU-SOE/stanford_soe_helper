@@ -102,9 +102,16 @@
   text-align: center;
 }
 
-#block-views-a06b957e34c741c20a352da1b7ce0e12 h2 {
-  text-align: center;
-  margin-bottom: 2em;
+#block-views-a06b957e34c741c20a352da1b7ce0e12 {
+  h2 {
+    text-align: center;
+    margin: 2em 0 1.5em;
+  }
+
+  .article-grouping {
+    @include breakpoint-min(medium);
+    padding: 0 70px;
+  }
 }
 
 .view-stanford-magazine-article-most-recent,
@@ -749,6 +756,12 @@
     font-family: $roboto-slab;
     font-size: em(28px);
     margin-bottom: 1em;
+  }
+
+  .paragraphs-item-p-wysiwyg-simple {
+    a {
+      text-decoration: underline;
+    }
   }
 }
 
