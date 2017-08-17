@@ -49,6 +49,45 @@ function stanford_people_spotlight_layouts_context_default_contexts() {
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
+  $context->name = 'stanford_people_spotlight_faculty_page_engineering';
+  $context->description = 'Engineering context for people spotlight faculty page';
+  $context->tag = 'Engineering';
+  $context->conditions = array(
+    'path' => array(
+      'values' => array(
+        'spotlight/faculty' => 'spotlight/faculty',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'views-c2b6153cde2b4573a636336531638758' => array(
+          'module' => 'views',
+          'delta' => 'c2b6153cde2b4573a636336531638758',
+          'region' => 'fullwidth_top',
+          'weight' => '-7',
+        ),
+        'views-a45f81a823bb67c64d53eeb553d909bd' => array(
+          'module' => 'views',
+          'delta' => 'a45f81a823bb67c64d53eeb553d909bd',
+          'region' => 'content_body_bottom',
+          'weight' => '-10',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('Engineering');
+  t('Engineering context for people spotlight faculty page');
+  $export['stanford_people_spotlight_faculty_page_engineering'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
   $context->name = 'stanford_people_spotlight_page_engineering';
   $context->description = 'Engineering context for people spotlight landing page';
   $context->tag = 'Engineering';
@@ -56,8 +95,6 @@ function stanford_people_spotlight_layouts_context_default_contexts() {
     'path' => array(
       'values' => array(
         'spotlight' => 'spotlight',
-        'spotlight/faculty' => 'spotlight/faculty',
-        'spotlight/students' => 'spotlight/students',
       ),
     ),
   );
@@ -113,6 +150,46 @@ function stanford_people_spotlight_layouts_context_default_contexts() {
   t('Context for Stanford People Spotlight related departments');
   t('Spotlight');
   $export['stanford_people_spotlight_related_departments'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
+  $context->name = 'stanford_people_spotlight_student_page_engineering';
+  $context->description = 'Engineering context for people spotlight student page';
+  $context->tag = 'Engineering';
+  $context->conditions = array(
+    'path' => array(
+      'values' => array(
+        'spotlight/students' => 'spotlight/students',
+        'spotlight/student' => 'spotlight/student',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'views-c2b6153cde2b4573a636336531638758' => array(
+          'module' => 'views',
+          'delta' => 'c2b6153cde2b4573a636336531638758',
+          'region' => 'fullwidth_top',
+          'weight' => '-7',
+        ),
+        'views-ff02f9228dd54cf63d6ba15f2256fc62' => array(
+          'module' => 'views',
+          'delta' => 'ff02f9228dd54cf63d6ba15f2256fc62',
+          'region' => 'content_bottom',
+          'weight' => '-10',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('Engineering');
+  t('Engineering context for people spotlight student page');
+  $export['stanford_people_spotlight_student_page_engineering'] = $context;
 
   return $export;
 }
