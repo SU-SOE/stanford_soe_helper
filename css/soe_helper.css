@@ -1370,33 +1370,43 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
 @media (min-width: 979px) {
   /* line 49, ../scss/components/_soe_events.scss */
   .span12 .view-stanford-event-featured .feat-events-container {
+    position: relative;
     background: #FFFFFF;
     display: flex;
     padding: 30px;
     -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2); }
-    /* line 55, ../scss/components/_soe_events.scss */
+    /* line 56, ../scss/components/_soe_events.scss */
     .span12 .view-stanford-event-featured .feat-events-container .feat-events-img-container {
       position: static;
       flex-shrink: 1; }
-      /* line 59, ../scss/components/_soe_events.scss */
+      /* line 60, ../scss/components/_soe_events.scss */
       .span12 .view-stanford-event-featured .feat-events-container .feat-events-img-container .date-stacked {
         top: 30px;
-        right: 255px;
+        right: 240px;
         left: auto;
         margin: 0;
-        height: 35px; } }
+        height: 45px;
+        width: 40px;
+        -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2); } }
       @media (min-width: 979px) and (max-width: 1200px) {
-        /* line 59, ../scss/components/_soe_events.scss */
+        /* line 60, ../scss/components/_soe_events.scss */
         .span12 .view-stanford-event-featured .feat-events-container .feat-events-img-container .date-stacked {
-          right: 235px; } }
+          right: 215px; } }
 @media (min-width: 979px) {
-    /* line 71, ../scss/components/_soe_events.scss */
+        /* line 72, ../scss/components/_soe_events.scss */
+        .span12 .view-stanford-event-featured .feat-events-container .feat-events-img-container .date-stacked .date-month {
+          font-size: 0.9em;
+          line-height: 25px; }
+    /* line 79, ../scss/components/_soe_events.scss */
     .span12 .view-stanford-event-featured .feat-events-container .feat-events-content-container {
       background: none;
       box-shadow: none;
-      padding: 80px 0 0 30px; } }
+      padding: 80px 0 0 30px;
+      width: 80%; } }
 
 /* line 11, ../scss/components/_soe_beans.scss */
 .block-bean:nth-child(1n) .bean-stanford-call-to-action .group-s-cta-title-style {

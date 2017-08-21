@@ -47,6 +47,7 @@
   .span12 & {
     @include breakpoint-min(medium) {
       .feat-events-container {
+        position: relative;
         background: $white;
         display: flex;
         padding: 30px;
@@ -58,12 +59,19 @@
 
           .date-stacked {
             top: 30px;
-            right: 255px;
+            right: 240px;
             left: auto;
             margin: 0;
-            height: 35px;
+            height: 45px;
+            width: 40px;
+            @include box-shadow;
             @include breakpoint-max(large) {
-              right: 235px;
+              right: 215px;
+            }
+
+            .date-month {
+              font-size: em(18px);
+              line-height: 25px;
             }
           }
         }
@@ -72,6 +80,7 @@
           background: none;
           box-shadow: none;
           padding: 80px 0 0 30px;
+          width: 80%;
         }
       }
     }
