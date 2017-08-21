@@ -43,4 +43,37 @@
       }
     }
   }
+
+  .span12 & {
+    @include breakpoint-min(medium) {
+      .feat-events-container {
+        background: $white;
+        display: flex;
+        padding: 30px;
+        @include box-shadow;
+
+        .feat-events-img-container {
+          position: static;
+          flex-shrink: 1;
+
+          .date-stacked {
+            top: 30px;
+            right: 255px;
+            left: auto;
+            margin: 0;
+            height: 35px;
+            @include breakpoint-max(large) {
+              right: 235px;
+            }
+          }
+        }
+
+        .feat-events-content-container {
+          background: none;
+          box-shadow: none;
+          padding: 80px 0 0 30px;
+        }
+      }
+    }
+  }
 }
