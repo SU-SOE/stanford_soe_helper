@@ -933,10 +933,10 @@ p.summary.drop-cap:first-letter {
   padding: 0; }
 /* line 13, ../scss/components/_soe_homepage.scss */
 .front [id*="block-bean-homepage-2-column-"] .content {
-  width: 50%;
+  width: 65%;
   margin: 0 auto; }
   /* line 17, ../scss/components/_soe_homepage.scss */
-  .front [id*="block-bean-homepage-2-column-"] .content a {
+  .front [id*="block-bean-homepage-2-column-"] .content a:not(.btn) {
     color: #333333;
     text-decoration: underline;
     -webkit-text-decoration-skip: ink;
@@ -944,7 +944,7 @@ p.summary.drop-cap:first-letter {
     -webkit-text-decoration-color: #00ECE9;
     text-decoration-color: #00ECE9; }
     /* line 23, ../scss/components/_soe_homepage.scss */
-    .front [id*="block-bean-homepage-2-column-"] .content a:focus, .front [id*="block-bean-homepage-2-column-"] .content a:hover {
+    .front [id*="block-bean-homepage-2-column-"] .content a:not(.btn):focus, .front [id*="block-bean-homepage-2-column-"] .content a:not(.btn):hover {
       -webkit-text-decoration-color: #333333;
       text-decoration-color: #333333; }
 

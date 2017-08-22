@@ -11,10 +11,10 @@
 
   [id*="block-bean-homepage-2-column-"] {
     .content {
-      width: 50%;
+      width: 65%;
       margin: 0 auto;
 
-      a {
+      a:not(.btn) {
         color: $primary-color;
         text-decoration: underline;
         @include td-skip;
