@@ -290,15 +290,11 @@ p.btn-center {
       /* line 42, ../scss/components/_soe_wysiwyg.scss */
       p.btn-center a.btn {
         margin-right: 10px; } }
-    @media (max-width: 480px) {
-      /* line 42, ../scss/components/_soe_wysiwyg.scss */
-      p.btn-center a.btn {
-        margin-right: 0; } }
-    /* line 51, ../scss/components/_soe_wysiwyg.scss */
+    /* line 48, ../scss/components/_soe_wysiwyg.scss */
     p.btn-center a.btn:last-child {
       margin-right: 0; }
 
-/* line 57, ../scss/components/_soe_wysiwyg.scss */
+/* line 54, ../scss/components/_soe_wysiwyg.scss */
 p.columns {
   font-family: "Roboto Slab", serif;
   font-size: 1.4em;
@@ -311,13 +307,13 @@ p.columns {
   -moz-column-gap: 30px;
   column-gap: 30px; }
   @media (max-width: 767px) {
-    /* line 57, ../scss/components/_soe_wysiwyg.scss */
+    /* line 54, ../scss/components/_soe_wysiwyg.scss */
     p.columns {
       -webkit-column-count: 1;
       -moz-column-count: 1;
       column-count: 1; } }
 
-/* line 69, ../scss/components/_soe_wysiwyg.scss */
+/* line 66, ../scss/components/_soe_wysiwyg.scss */
 p.related-link {
   background: #FFFFFF;
   line-height: 1.3em;
@@ -325,25 +321,25 @@ p.related-link {
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2); }
-  /* line 75, ../scss/components/_soe_wysiwyg.scss */
+  /* line 72, ../scss/components/_soe_wysiwyg.scss */
   p.related-link a {
     text-decoration: none; }
-    /* line 78, ../scss/components/_soe_wysiwyg.scss */
+    /* line 75, ../scss/components/_soe_wysiwyg.scss */
     p.related-link a:focus, p.related-link a:hover {
       text-decoration: underline; }
-  /* line 84, ../scss/components/_soe_wysiwyg.scss */
+  /* line 81, ../scss/components/_soe_wysiwyg.scss */
   p.related-link:before {
     content: "Related \00a0 | \00a0";
     font-weight: 600; }
 
-/* line 91, ../scss/components/_soe_wysiwyg.scss */
+/* line 88, ../scss/components/_soe_wysiwyg.scss */
 p.summary.drop-cap:first-letter {
   font-size: 2.875em;
   font-weight: 600;
   float: left;
   padding: 25px 10px 0 0; }
 
-/* line 99, ../scss/components/_soe_wysiwyg.scss */
+/* line 96, ../scss/components/_soe_wysiwyg.scss */
 .caption {
   color: #686868;
   font-weight: 300;
@@ -352,7 +348,7 @@ p.summary.drop-cap:first-letter {
   text-align: center;
   margin: 0 2em 4em; }
 
-/* line 108, ../scss/components/_soe_wysiwyg.scss */
+/* line 105, ../scss/components/_soe_wysiwyg.scss */
 .main table {
   width: 100%;
   margin-bottom: 2em; }
@@ -965,6 +961,24 @@ p.summary.drop-cap:first-letter {
     .front [id*="block-bean-homepage-2-column-"] .content a:not(.btn):focus, .front [id*="block-bean-homepage-2-column-"] .content a:not(.btn):hover {
       -webkit-text-decoration-color: #333333;
       text-decoration-color: #333333; }
+/* line 34, ../scss/components/_soe_homepage.scss */
+.front [id*="block-bean-homepage-pl-block-1"],
+.front [id*="block-views-0969cf96ba3c89e5f5ea0784f69f7372"] {
+  margin-left: 12.75%; }
+  @media (max-width: 767px) {
+    /* line 34, ../scss/components/_soe_homepage.scss */
+    .front [id*="block-bean-homepage-pl-block-1"],
+    .front [id*="block-views-0969cf96ba3c89e5f5ea0784f69f7372"] {
+      margin-left: 0; } }
+/* line 42, ../scss/components/_soe_homepage.scss */
+.front [id*="block-bean-homepage-pl-block-3"],
+.front [id*="block-views-stanford-event-featured-block-1"] {
+  margin-right: 12.75%; }
+  @media (max-width: 767px) {
+    /* line 42, ../scss/components/_soe_homepage.scss */
+    .front [id*="block-bean-homepage-pl-block-3"],
+    .front [id*="block-views-stanford-event-featured-block-1"] {
+      margin-right: 0; } }
 
 /* line 8, ../scss/components/_soe_calendar.scss */
 .calendar-calendar .mini td,
