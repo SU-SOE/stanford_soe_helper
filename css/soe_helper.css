@@ -286,11 +286,15 @@ p.btn-center {
   /* line 42, ../scss/components/_soe_wysiwyg.scss */
   p.btn-center a.btn {
     margin-right: 40px; }
-    /* line 45, ../scss/components/_soe_wysiwyg.scss */
+    @media (max-width: 767px) {
+      /* line 42, ../scss/components/_soe_wysiwyg.scss */
+      p.btn-center a.btn {
+        margin-right: 10px; } }
+    /* line 51, ../scss/components/_soe_wysiwyg.scss */
     p.btn-center a.btn:last-child {
       margin-right: 0; }
 
-/* line 51, ../scss/components/_soe_wysiwyg.scss */
+/* line 57, ../scss/components/_soe_wysiwyg.scss */
 p.columns {
   font-family: "Roboto Slab", serif;
   font-size: 1.4em;
@@ -303,13 +307,13 @@ p.columns {
   -moz-column-gap: 30px;
   column-gap: 30px; }
   @media (max-width: 767px) {
-    /* line 51, ../scss/components/_soe_wysiwyg.scss */
+    /* line 57, ../scss/components/_soe_wysiwyg.scss */
     p.columns {
       -webkit-column-count: 1;
       -moz-column-count: 1;
       column-count: 1; } }
 
-/* line 63, ../scss/components/_soe_wysiwyg.scss */
+/* line 69, ../scss/components/_soe_wysiwyg.scss */
 p.related-link {
   background: #FFFFFF;
   line-height: 1.3em;
@@ -317,25 +321,25 @@ p.related-link {
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2); }
-  /* line 69, ../scss/components/_soe_wysiwyg.scss */
+  /* line 75, ../scss/components/_soe_wysiwyg.scss */
   p.related-link a {
     text-decoration: none; }
-    /* line 72, ../scss/components/_soe_wysiwyg.scss */
+    /* line 78, ../scss/components/_soe_wysiwyg.scss */
     p.related-link a:focus, p.related-link a:hover {
       text-decoration: underline; }
-  /* line 78, ../scss/components/_soe_wysiwyg.scss */
+  /* line 84, ../scss/components/_soe_wysiwyg.scss */
   p.related-link:before {
     content: "Related \00a0 | \00a0";
     font-weight: 600; }
 
-/* line 85, ../scss/components/_soe_wysiwyg.scss */
+/* line 91, ../scss/components/_soe_wysiwyg.scss */
 p.summary.drop-cap:first-letter {
   font-size: 2.875em;
   font-weight: 600;
   float: left;
   padding: 25px 10px 0 0; }
 
-/* line 93, ../scss/components/_soe_wysiwyg.scss */
+/* line 99, ../scss/components/_soe_wysiwyg.scss */
 .caption {
   color: #686868;
   font-weight: 300;
@@ -344,7 +348,7 @@ p.summary.drop-cap:first-letter {
   text-align: center;
   margin: 0 2em 4em; }
 
-/* line 102, ../scss/components/_soe_wysiwyg.scss */
+/* line 108, ../scss/components/_soe_wysiwyg.scss */
 .main table {
   width: 100%;
   margin-bottom: 2em; }
@@ -939,9 +943,13 @@ p.summary.drop-cap:first-letter {
   padding: 0; }
 /* line 13, ../scss/components/_soe_homepage.scss */
 .front [id*="block-bean-homepage-2-column-"] .content {
-  width: 65%;
+  width: 90%;
   margin: 0 auto; }
-  /* line 17, ../scss/components/_soe_homepage.scss */
+  @media (min-width: 1200px) {
+    /* line 13, ../scss/components/_soe_homepage.scss */
+    .front [id*="block-bean-homepage-2-column-"] .content {
+      width: 75%; } }
+  /* line 20, ../scss/components/_soe_homepage.scss */
   .front [id*="block-bean-homepage-2-column-"] .content a:not(.btn) {
     color: #333333;
     text-decoration: underline;
@@ -949,7 +957,7 @@ p.summary.drop-cap:first-letter {
     text-decoration-skip: ink;
     -webkit-text-decoration-color: #00ECE9;
     text-decoration-color: #00ECE9; }
-    /* line 23, ../scss/components/_soe_homepage.scss */
+    /* line 26, ../scss/components/_soe_homepage.scss */
     .front [id*="block-bean-homepage-2-column-"] .content a:not(.btn):focus, .front [id*="block-bean-homepage-2-column-"] .content a:not(.btn):hover {
       -webkit-text-decoration-color: #333333;
       text-decoration-color: #333333; }

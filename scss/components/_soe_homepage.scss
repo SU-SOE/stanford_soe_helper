@@ -11,8 +11,11 @@
 
   [id*="block-bean-homepage-2-column-"] {
     .content {
-      width: 65%;
+      width: 90%;
       margin: 0 auto;
+      @include breakpoint-min(large) {
+        width: 75%;
+      }
 
       a:not(.btn) {
         color: $primary-color;

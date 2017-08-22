@@ -41,6 +41,12 @@ p.btn-center {
 
   a.btn {
     margin-right: 40px;
+    @include breakpoint-max(small) {
+      margin-right: 10px;
+    }
+    @include breakpoint-max(x-mall) {
+      margin-right: 0;
+    }
 
     &:last-child {
       margin-right: 0;
