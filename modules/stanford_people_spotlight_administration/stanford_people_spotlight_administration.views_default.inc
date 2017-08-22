@@ -244,6 +244,15 @@ function stanford_people_spotlight_administration_views_default_views() {
     'stanford_student_type' => 0,
     'tags' => 0,
   );
+  /* Field: Content: Related Page */
+  $handler->display->display_options['fields']['field_s_ppl_spot_related_page']['id'] = 'field_s_ppl_spot_related_page';
+  $handler->display->display_options['fields']['field_s_ppl_spot_related_page']['table'] = 'field_data_field_s_ppl_spot_related_page';
+  $handler->display->display_options['fields']['field_s_ppl_spot_related_page']['field'] = 'field_s_ppl_spot_related_page';
+  $handler->display->display_options['fields']['field_s_ppl_spot_related_page']['label'] = 'Related Pages';
+  $handler->display->display_options['fields']['field_s_ppl_spot_related_page']['settings'] = array(
+    'link' => 0,
+  );
+  $handler->display->display_options['fields']['field_s_ppl_spot_related_page']['delta_offset'] = '0';
   /* Field: Content: Nid */
   $handler->display->display_options['fields']['nid']['id'] = 'nid';
   $handler->display->display_options['fields']['nid']['table'] = 'node';
