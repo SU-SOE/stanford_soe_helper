@@ -283,8 +283,14 @@ a.external-link:after {
 /* line 39, ../scss/components/_soe_wysiwyg.scss */
 p.btn-center {
   text-align: center; }
+  /* line 42, ../scss/components/_soe_wysiwyg.scss */
+  p.btn-center a.btn {
+    margin-right: 40px; }
+    /* line 45, ../scss/components/_soe_wysiwyg.scss */
+    p.btn-center a.btn:last-child {
+      margin-right: 0; }
 
-/* line 43, ../scss/components/_soe_wysiwyg.scss */
+/* line 51, ../scss/components/_soe_wysiwyg.scss */
 p.columns {
   font-family: "Roboto Slab", serif;
   font-size: 1.4em;
@@ -297,13 +303,13 @@ p.columns {
   -moz-column-gap: 30px;
   column-gap: 30px; }
   @media (max-width: 767px) {
-    /* line 43, ../scss/components/_soe_wysiwyg.scss */
+    /* line 51, ../scss/components/_soe_wysiwyg.scss */
     p.columns {
       -webkit-column-count: 1;
       -moz-column-count: 1;
       column-count: 1; } }
 
-/* line 55, ../scss/components/_soe_wysiwyg.scss */
+/* line 63, ../scss/components/_soe_wysiwyg.scss */
 p.related-link {
   background: #FFFFFF;
   line-height: 1.3em;
@@ -311,25 +317,25 @@ p.related-link {
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2); }
-  /* line 61, ../scss/components/_soe_wysiwyg.scss */
+  /* line 69, ../scss/components/_soe_wysiwyg.scss */
   p.related-link a {
     text-decoration: none; }
-    /* line 64, ../scss/components/_soe_wysiwyg.scss */
+    /* line 72, ../scss/components/_soe_wysiwyg.scss */
     p.related-link a:focus, p.related-link a:hover {
       text-decoration: underline; }
-  /* line 70, ../scss/components/_soe_wysiwyg.scss */
+  /* line 78, ../scss/components/_soe_wysiwyg.scss */
   p.related-link:before {
     content: "Related \00a0 | \00a0";
     font-weight: 600; }
 
-/* line 77, ../scss/components/_soe_wysiwyg.scss */
+/* line 85, ../scss/components/_soe_wysiwyg.scss */
 p.summary.drop-cap:first-letter {
   font-size: 2.875em;
   font-weight: 600;
   float: left;
   padding: 25px 10px 0 0; }
 
-/* line 85, ../scss/components/_soe_wysiwyg.scss */
+/* line 93, ../scss/components/_soe_wysiwyg.scss */
 .caption {
   color: #686868;
   font-weight: 300;
@@ -338,7 +344,7 @@ p.summary.drop-cap:first-letter {
   text-align: center;
   margin: 0 2em 4em; }
 
-/* line 94, ../scss/components/_soe_wysiwyg.scss */
+/* line 102, ../scss/components/_soe_wysiwyg.scss */
 .main table {
   width: 100%;
   margin-bottom: 2em; }
