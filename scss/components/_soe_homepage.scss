@@ -12,7 +12,7 @@
   [id*="block-bean-homepage-2-column-"] {
     .content {
       width: 90%;
-      margin: 0 auto;
+      margin: 0 auto 50px;
       @include breakpoint-min(large) {
         width: 75%;
       }
@@ -29,6 +29,20 @@
         }
       }
     }
+  }
+
+  .bean-stanford-postcard-linked .postcard-linked-container,
+  .view-stanford-page-banner-caption {
+    margin-bottom: 100px;
+  }
+
+  .view-stanford-ppl-spot-fw-banner-quote {
+    margin-bottom: 70px;
+  }
+
+  #block-bean-homepage-magazine-postcard-butto,
+  #block-bean-stanford-soe-mailchimp-homepage- {
+    margin-top: 80px;
   }
 
   [id*="block-bean-homepage-pl-block-1"],
