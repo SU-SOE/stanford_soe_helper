@@ -49,6 +49,45 @@ function stanford_people_spotlight_layouts_context_default_contexts() {
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
+  $context->name = 'stanford_people_spotlight_alumni_page_engineering';
+  $context->description = 'Engineering context for people spotlight alumni page';
+  $context->tag = 'Engineering';
+  $context->conditions = array(
+    'path' => array(
+      'values' => array(
+        'spotlight/alumni' => 'spotlight/alumni',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'views-6841529eb684eef35e2143f17c8a9e6a' => array(
+          'module' => 'views',
+          'delta' => '6841529eb684eef35e2143f17c8a9e6a',
+          'region' => 'fullwidth_top',
+          'weight' => '-10',
+        ),
+        'views-16eec9ec5c69af61bfa88f8fc6afb1d9' => array(
+          'module' => 'views',
+          'delta' => '16eec9ec5c69af61bfa88f8fc6afb1d9',
+          'region' => 'content_body_bottom',
+          'weight' => '-9',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('Engineering');
+  t('Engineering context for people spotlight alumni page');
+  $export['stanford_people_spotlight_alumni_page_engineering'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
   $context->name = 'stanford_people_spotlight_faculty_page_engineering';
   $context->description = 'Engineering context for people spotlight faculty page';
   $context->tag = 'Engineering';
@@ -62,11 +101,11 @@ function stanford_people_spotlight_layouts_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'views-c2b6153cde2b4573a636336531638758' => array(
+        'views-c7dddf342ae8352a0ca505dca04b5e11' => array(
           'module' => 'views',
-          'delta' => 'c2b6153cde2b4573a636336531638758',
+          'delta' => 'c7dddf342ae8352a0ca505dca04b5e11',
           'region' => 'fullwidth_top',
-          'weight' => '-7',
+          'weight' => '-6',
         ),
         'views-a45f81a823bb67c64d53eeb553d909bd' => array(
           'module' => 'views',
@@ -168,11 +207,11 @@ function stanford_people_spotlight_layouts_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'views-c2b6153cde2b4573a636336531638758' => array(
+        'views-a00bf0cdfeec27788a85334604efef57' => array(
           'module' => 'views',
-          'delta' => 'c2b6153cde2b4573a636336531638758',
+          'delta' => 'a00bf0cdfeec27788a85334604efef57',
           'region' => 'fullwidth_top',
-          'weight' => '-7',
+          'weight' => '-6',
         ),
         'views-ff02f9228dd54cf63d6ba15f2256fc62' => array(
           'module' => 'views',
