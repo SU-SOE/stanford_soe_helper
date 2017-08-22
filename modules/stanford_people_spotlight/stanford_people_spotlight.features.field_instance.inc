@@ -132,7 +132,7 @@ function stanford_people_spotlight_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 5,
+      'weight' => 7,
     ),
   );
 
@@ -324,7 +324,7 @@ function stanford_people_spotlight_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 4,
+      'weight' => 5,
     ),
   );
 
@@ -743,6 +743,54 @@ function stanford_people_spotlight_field_default_field_instances() {
   );
 
   // Exported field_instance:
+  // 'node-stanford_people_spotlight-field_s_ppl_spot_related_page'.
+  $field_instances['node-stanford_people_spotlight-field_s_ppl_spot_related_page'] = array(
+    'bundle' => 'stanford_people_spotlight',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Select the appropriate pages. Then, when the appropriate views block is added to a page, this field will identify the related People Spotlights to display on that page.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 14,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_s_ppl_spot_related_page',
+    'label' => 'Related Page',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'apply_chosen' => '',
+      ),
+      'type' => 'options_select',
+      'weight' => 6,
+    ),
+  );
+
+  // Exported field_instance:
   // 'node-stanford_people_spotlight-field_s_ppl_spot_title'.
   $field_instances['node-stanford_people_spotlight-field_s_ppl_spot_title'] = array(
     'bundle' => 'stanford_people_spotlight',
@@ -830,7 +878,9 @@ function stanford_people_spotlight_field_default_field_instances() {
   t('Lead text/quote');
   t('Name Color');
   t('Publish Date');
+  t('Related Page');
   t('Select the appropriate affiliation(s) for this person.');
+  t('Select the appropriate pages. Then, when the appropriate views block is added to a page, this field will identify the related People Spotlights to display on that page.');
   t('Spotlight story');
   t('These terms identify the associated accent color for the image. Select a color.');
   t('These terms identify the associated accent color for the name. Select a color.');
