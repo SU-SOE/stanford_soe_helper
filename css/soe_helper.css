@@ -281,6 +281,10 @@ a.external-link:after {
   vertical-align: -2%; }
 
 /* line 39, ../scss/components/_soe_wysiwyg.scss */
+p.btn-center {
+  text-align: center; }
+
+/* line 43, ../scss/components/_soe_wysiwyg.scss */
 p.columns {
   font-family: "Roboto Slab", serif;
   font-size: 1.4em;
@@ -293,13 +297,13 @@ p.columns {
   -moz-column-gap: 30px;
   column-gap: 30px; }
   @media (max-width: 767px) {
-    /* line 39, ../scss/components/_soe_wysiwyg.scss */
+    /* line 43, ../scss/components/_soe_wysiwyg.scss */
     p.columns {
       -webkit-column-count: 1;
       -moz-column-count: 1;
       column-count: 1; } }
 
-/* line 51, ../scss/components/_soe_wysiwyg.scss */
+/* line 55, ../scss/components/_soe_wysiwyg.scss */
 p.related-link {
   background: #FFFFFF;
   line-height: 1.3em;
@@ -307,25 +311,25 @@ p.related-link {
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2); }
-  /* line 57, ../scss/components/_soe_wysiwyg.scss */
+  /* line 61, ../scss/components/_soe_wysiwyg.scss */
   p.related-link a {
     text-decoration: none; }
-    /* line 60, ../scss/components/_soe_wysiwyg.scss */
+    /* line 64, ../scss/components/_soe_wysiwyg.scss */
     p.related-link a:focus, p.related-link a:hover {
       text-decoration: underline; }
-  /* line 66, ../scss/components/_soe_wysiwyg.scss */
+  /* line 70, ../scss/components/_soe_wysiwyg.scss */
   p.related-link:before {
     content: "Related \00a0 | \00a0";
     font-weight: 600; }
 
-/* line 73, ../scss/components/_soe_wysiwyg.scss */
+/* line 77, ../scss/components/_soe_wysiwyg.scss */
 p.summary.drop-cap:first-letter {
   font-size: 2.875em;
   font-weight: 600;
   float: left;
   padding: 25px 10px 0 0; }
 
-/* line 81, ../scss/components/_soe_wysiwyg.scss */
+/* line 85, ../scss/components/_soe_wysiwyg.scss */
 .caption {
   color: #686868;
   font-weight: 300;
@@ -334,7 +338,7 @@ p.summary.drop-cap:first-letter {
   text-align: center;
   margin: 0 2em 4em; }
 
-/* line 90, ../scss/components/_soe_wysiwyg.scss */
+/* line 94, ../scss/components/_soe_wysiwyg.scss */
 .main table {
   width: 100%;
   margin-bottom: 2em; }
@@ -675,103 +679,103 @@ p.summary.drop-cap:first-letter {
     position: absolute;
     bottom: 20px; }
 
-/* line 88, ../scss/components/_soe_images.scss */
-#fullwidth-bottom .view-stanford-page-banner-caption .views-row {
+/* line 87, ../scss/components/_soe_images.scss */
+.view-stanford-page-banner-caption .views-row {
   margin-bottom: 0; }
-/* line 92, ../scss/components/_soe_images.scss */
-#fullwidth-bottom .view-stanford-page-banner-caption .banner-bottom-container {
+/* line 91, ../scss/components/_soe_images.scss */
+.view-stanford-page-banner-caption .banner-bottom-container {
   position: relative;
   overflow: hidden; }
   @media (max-width: 767px) {
-    /* line 92, ../scss/components/_soe_images.scss */
-    #fullwidth-bottom .view-stanford-page-banner-caption .banner-bottom-container {
+    /* line 91, ../scss/components/_soe_images.scss */
+    .view-stanford-page-banner-caption .banner-bottom-container {
       position: inherit; } }
-  /* line 99, ../scss/components/_soe_images.scss */
-  #fullwidth-bottom .view-stanford-page-banner-caption .banner-bottom-container img {
+  /* line 98, ../scss/components/_soe_images.scss */
+  .view-stanford-page-banner-caption .banner-bottom-container img {
     width: 100%;
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
     -o-transition: all 1s ease;
     transition: all 1s ease; }
-  /* line 104, ../scss/components/_soe_images.scss */
-  #fullwidth-bottom .view-stanford-page-banner-caption .banner-bottom-container .more-link {
+  /* line 103, ../scss/components/_soe_images.scss */
+  .view-stanford-page-banner-caption .banner-bottom-container .more-link {
     font-size: 1.1em; }
-    /* line 107, ../scss/components/_soe_images.scss */
-    #fullwidth-bottom .view-stanford-page-banner-caption .banner-bottom-container .more-link a {
+    /* line 106, ../scss/components/_soe_images.scss */
+    .view-stanford-page-banner-caption .banner-bottom-container .more-link a {
       color: #000000;
       font-family: "Roboto Slab", serif;
       font-size: 1.6em;
       font-weight: 800;
       line-height: 43px; }
-      /* line 114, ../scss/components/_soe_images.scss */
-      #fullwidth-bottom .view-stanford-page-banner-caption .banner-bottom-container .more-link a:after {
+      /* line 113, ../scss/components/_soe_images.scss */
+      .view-stanford-page-banner-caption .banner-bottom-container .more-link a:after {
         content: url("../img/soe_lg_arrow_right_black.png");
         vertical-align: -6%;
         padding-left: 20px; }
-  /* line 123, ../scss/components/_soe_images.scss */
-  #fullwidth-bottom .view-stanford-page-banner-caption .banner-bottom-container:hover img {
+  /* line 122, ../scss/components/_soe_images.scss */
+  .view-stanford-page-banner-caption .banner-bottom-container:hover img {
     -webkit-transform: scale(1.03);
     -moz-transform: scale(1.03);
     -o-transform: scale(1.03);
     transform: scale(1.03); }
-  /* line 127, ../scss/components/_soe_images.scss */
-  #fullwidth-bottom .view-stanford-page-banner-caption .banner-bottom-container:hover .more-link a {
+  /* line 126, ../scss/components/_soe_images.scss */
+  .view-stanford-page-banner-caption .banner-bottom-container:hover .more-link a {
     text-decoration: underline; }
-/* line 133, ../scss/components/_soe_images.scss */
-#fullwidth-bottom .view-stanford-page-banner-caption div.more-link {
+/* line 132, ../scss/components/_soe_images.scss */
+.view-stanford-page-banner-caption div.more-link {
   padding: 18px 32px 20px;
   margin: 0; }
   @media (max-width: 767px) {
-    /* line 133, ../scss/components/_soe_images.scss */
-    #fullwidth-bottom .view-stanford-page-banner-caption div.more-link {
+    /* line 132, ../scss/components/_soe_images.scss */
+    .view-stanford-page-banner-caption div.more-link {
       width: 100%; } }
   @media (max-width: 480px) {
-    /* line 133, ../scss/components/_soe_images.scss */
-    #fullwidth-bottom .view-stanford-page-banner-caption div.more-link {
+    /* line 132, ../scss/components/_soe_images.scss */
+    .view-stanford-page-banner-caption div.more-link {
       width: 87%; } }
-/* line 144, ../scss/components/_soe_images.scss */
-#fullwidth-bottom .view-stanford-page-banner-caption .banner-caption {
+/* line 143, ../scss/components/_soe_images.scss */
+.view-stanford-page-banner-caption .banner-caption {
   position: absolute;
   width: 80%; }
   @media (max-width: 767px) {
-    /* line 144, ../scss/components/_soe_images.scss */
-    #fullwidth-bottom .view-stanford-page-banner-caption .banner-caption {
+    /* line 143, ../scss/components/_soe_images.scss */
+    .view-stanford-page-banner-caption .banner-caption {
       position: inherit;
       width: 92%; } }
   @media (max-width: 480px) {
-    /* line 144, ../scss/components/_soe_images.scss */
-    #fullwidth-bottom .view-stanford-page-banner-caption .banner-caption {
+    /* line 143, ../scss/components/_soe_images.scss */
+    .view-stanford-page-banner-caption .banner-caption {
       width: 100%; } }
-  /* line 155, ../scss/components/_soe_images.scss */
-  #fullwidth-bottom .view-stanford-page-banner-caption .banner-caption.banner-right {
+  /* line 154, ../scss/components/_soe_images.scss */
+  .view-stanford-page-banner-caption .banner-caption.banner-right {
     right: 0;
     text-align: right; }
     @media (max-width: 767px) {
-      /* line 155, ../scss/components/_soe_images.scss */
-      #fullwidth-bottom .view-stanford-page-banner-caption .banner-caption.banner-right {
+      /* line 154, ../scss/components/_soe_images.scss */
+      .view-stanford-page-banner-caption .banner-caption.banner-right {
         text-align: left; } }
-    /* line 162, ../scss/components/_soe_images.scss */
-    #fullwidth-bottom .view-stanford-page-banner-caption .banner-caption.banner-right.banner-bottom {
+    /* line 161, ../scss/components/_soe_images.scss */
+    .view-stanford-page-banner-caption .banner-caption.banner-right.banner-bottom {
       bottom: 100px; }
       @media (max-width: 979px) {
-        /* line 162, ../scss/components/_soe_images.scss */
-        #fullwidth-bottom .view-stanford-page-banner-caption .banner-caption.banner-right.banner-bottom {
+        /* line 161, ../scss/components/_soe_images.scss */
+        .view-stanford-page-banner-caption .banner-caption.banner-right.banner-bottom {
           bottom: 55px; } }
-    /* line 169, ../scss/components/_soe_images.scss */
-    #fullwidth-bottom .view-stanford-page-banner-caption .banner-caption.banner-right.banner-top {
+    /* line 168, ../scss/components/_soe_images.scss */
+    .view-stanford-page-banner-caption .banner-caption.banner-right.banner-top {
       top: 100px; }
       @media (max-width: 979px) {
-        /* line 169, ../scss/components/_soe_images.scss */
-        #fullwidth-bottom .view-stanford-page-banner-caption .banner-caption.banner-right.banner-top {
+        /* line 168, ../scss/components/_soe_images.scss */
+        .view-stanford-page-banner-caption .banner-caption.banner-right.banner-top {
           top: 55px; } }
-  /* line 177, ../scss/components/_soe_images.scss */
-  #fullwidth-bottom .view-stanford-page-banner-caption .banner-caption.banner-orange div.more-link {
+  /* line 176, ../scss/components/_soe_images.scss */
+  .view-stanford-page-banner-caption .banner-caption.banner-orange div.more-link {
     background: #FFBD54; }
-  /* line 181, ../scss/components/_soe_images.scss */
-  #fullwidth-bottom .view-stanford-page-banner-caption .banner-caption.banner-turquoise div.more-link {
+  /* line 180, ../scss/components/_soe_images.scss */
+  .view-stanford-page-banner-caption .banner-caption.banner-turquoise div.more-link {
     background: #00ECE9; }
-  /* line 185, ../scss/components/_soe_images.scss */
-  #fullwidth-bottom .view-stanford-page-banner-caption .banner-caption.banner-pink div.more-link {
+  /* line 184, ../scss/components/_soe_images.scss */
+  .view-stanford-page-banner-caption .banner-caption.banner-pink div.more-link {
     background: #FF525C; }
 
 /* line 11, ../scss/components/_soe_page_layout.scss */
