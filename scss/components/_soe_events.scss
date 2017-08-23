@@ -7,80 +7,97 @@
 // HOMEPAGE FEATURED EVENT VIEW
 
 .view-stanford-event-featured {
-  .feat-events-container {
-    .feat-events-img-container {
-      position: relative;
+  &.vertical-event {
+    .feat-events-container {
+      .feat-events-img-container {
+        position: relative;
 
-      img {
-        width: 100%;
-      }
-
-      .date-stacked {
-        position: absolute;
-        bottom: -20px;
-        left: 20px;
-      }
-    }
-
-    .feat-events-content-container {
-      background: $white;
-      padding: 50px 30px 30px;
-      @include box-shadow;
-
-      .feat-events-title {
-        h2 {
-          margin-top: 0;
+        img {
+          width: 100%;
         }
 
-        a {
-          @include td-color($orange);
+        .date-stacked {
+          position: absolute;
+          bottom: -20px;
+          left: 20px;
+        }
+      }
 
-          &:focus,
-          &:hover {
-            @include td-color($primary-color);
+      .feat-events-content-container {
+        background: $white;
+        padding: 50px 30px 30px;
+        @include box-shadow;
+
+        .feat-events-title {
+          h2 {
+            margin-top: 0;
+          }
+
+          a {
+            @include td-color($orange);
+
+            &:focus,
+            &:hover {
+              @include td-color($primary-color);
+            }
           }
         }
       }
     }
   }
 
-  .span12 & {
-    @include breakpoint-min(medium) {
-      .feat-events-container {
-        position: relative;
+  &.horizontal-event {
+    .feat-events-container {
+      @include breakpoint-min(medium) {
         background: $white;
         display: flex;
         padding: 30px;
         @include box-shadow;
+      }
 
-        .feat-events-img-container {
-          position: static;
-          flex-shrink: 1;
+      .feat-events-img-container {
+        flex-shrink: 0;
 
-          .date-stacked {
-            top: 30px;
-            right: 240px;
-            left: auto;
-            margin: 0;
-            height: 45px;
-            width: 40px;
-            @include box-shadow;
-            @include breakpoint-max(large) {
-              right: 215px;
-            }
+        img {
+          @include breakpoint-max(medium) {
+            width: 100%;
+          }
+        }
+      }
 
-            .date-month {
-              font-size: em(18px);
-              line-height: 25px;
+      .feat-events-content-container {
+        padding-left: 30px;
+        @include breakpoint-max(medium) {
+          background: $white;
+          padding: 30px;
+          @include box-shadow;
+        }
+
+        .feat-events-title {
+          h2 {
+            margin-top: 0;
+          }
+
+          a {
+            @include td-color($orange);
+
+            &:focus,
+            &:hover {
+              @include td-color($primary-color);
             }
           }
         }
 
-        .feat-events-content-container {
-          background: none;
-          box-shadow: none;
-          padding: 80px 0 0 30px;
-          width: 80%;
+        .date-stacked {
+          margin: 0 0 20px;
+          height: 45px;
+          width: 40px;
+          @include box-shadow;
+
+          .date-month {
+            font-size: em(18px);
+            line-height: 25px;
+          }
         }
       }
     }
