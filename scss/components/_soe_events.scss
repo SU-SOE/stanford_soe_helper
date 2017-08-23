@@ -69,7 +69,7 @@
         padding-left: 30px;
         @include breakpoint-max(medium) {
           background: $white;
-          padding: 50px 30px 30px;
+          padding: 30px;
           @include box-shadow;
         }
 
@@ -93,6 +93,9 @@
           height: 45px;
           width: 40px;
           @include box-shadow;
+          @include breakpoint-max(medium) {
+            margin-bottom: 20px;
+          }
 
           .date-month {
             font-size: em(18px);

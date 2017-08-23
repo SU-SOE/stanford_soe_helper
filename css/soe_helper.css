@@ -1465,7 +1465,7 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
     /* line 68, ../scss/components/_soe_events.scss */
     .view-stanford-event-featured.horizontal-event .feat-events-container .feat-events-content-container {
       background: #FFFFFF;
-      padding: 50px 30px 30px;
+      padding: 30px;
       -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
       -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
       box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2); } }
@@ -1488,7 +1488,11 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
     -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2); }
-    /* line 97, ../scss/components/_soe_events.scss */
+    @media (max-width: 979px) {
+      /* line 91, ../scss/components/_soe_events.scss */
+      .view-stanford-event-featured.horizontal-event .feat-events-container .feat-events-content-container .date-stacked {
+        margin-bottom: 20px; } }
+    /* line 100, ../scss/components/_soe_events.scss */
     .view-stanford-event-featured.horizontal-event .feat-events-container .feat-events-content-container .date-stacked .date-month {
       font-size: 0.9em;
       line-height: 25px; }
