@@ -47,46 +47,56 @@
   }
 
   &.horizontal-event {
-    @include breakpoint-min(medium) {
-      .feat-events-container {
+    .feat-events-container {
+      @include breakpoint-min(medium) {
         background: $white;
         display: flex;
         padding: 30px;
         @include box-shadow;
+      }
 
-        .feat-events-img-container {
-          flex-shrink: 0;
+      .feat-events-img-container {
+        flex-shrink: 0;
+
+        img {
+          @include breakpoint-max(medium) {
+            width: 100%;
+          }
+        }
+      }
+
+      .feat-events-content-container {
+        padding-left: 30px;
+        @include breakpoint-max(medium) {
+          background: $white;
+          padding: 50px 30px 30px;
+          @include box-shadow;
         }
 
-        .feat-events-content-container {
-          padding-left: 30px;
-          width: 80%;
-
-          .feat-events-title {
-            h2 {
-              margin-top: 0;
-            }
-
-            a {
-              @include td-color($orange);
-
-              &:focus,
-              &:hover {
-                @include td-color($primary-color);
-              }
-            }
+        .feat-events-title {
+          h2 {
+            margin-top: 0;
           }
 
-          .date-stacked {
-            margin: 0;
-            height: 45px;
-            width: 40px;
-            @include box-shadow;
+          a {
+            @include td-color($orange);
 
-            .date-month {
-              font-size: em(18px);
-              line-height: 25px;
+            &:focus,
+            &:hover {
+              @include td-color($primary-color);
             }
+          }
+        }
+
+        .date-stacked {
+          margin: 0;
+          height: 45px;
+          width: 40px;
+          @include box-shadow;
+
+          .date-month {
+            font-size: em(18px);
+            line-height: 25px;
           }
         }
       }
