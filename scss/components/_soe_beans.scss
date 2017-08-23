@@ -11,6 +11,12 @@
     margin-bottom: 100px;
   }
 
+  &:last-child {
+    @include breakpoint-max(small) {
+      margin-bottom: 100px;
+    }
+  }
+
   .group-s-cta-title-style {
     .block-bean:nth-child(1n) & {
       background: $turquoise;
