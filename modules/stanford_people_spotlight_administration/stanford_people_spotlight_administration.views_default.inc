@@ -250,7 +250,7 @@ function stanford_people_spotlight_administration_views_default_views() {
   $handler->display->display_options['fields']['field_s_ppl_spot_related_page']['field'] = 'field_s_ppl_spot_related_page';
   $handler->display->display_options['fields']['field_s_ppl_spot_related_page']['label'] = 'Related Pages';
   $handler->display->display_options['fields']['field_s_ppl_spot_related_page']['settings'] = array(
-    'link' => 0,
+    'link' => 1,
   );
   $handler->display->display_options['fields']['field_s_ppl_spot_related_page']['delta_offset'] = '0';
   /* Field: Content: Nid */
@@ -317,6 +317,56 @@ function stanford_people_spotlight_administration_views_default_views() {
   $handler->display->display_options['filters']['status']['expose']['label'] = 'Published';
   $handler->display->display_options['filters']['status']['expose']['operator'] = 'status_op';
   $handler->display->display_options['filters']['status']['expose']['identifier'] = 'status';
+  /* Filter criterion: Content: Has taxonomy term */
+  $handler->display->display_options['filters']['tid']['id'] = 'tid';
+  $handler->display->display_options['filters']['tid']['table'] = 'taxonomy_index';
+  $handler->display->display_options['filters']['tid']['field'] = 'tid';
+  $handler->display->display_options['filters']['tid']['value'] = '';
+  $handler->display->display_options['filters']['tid']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['tid']['expose']['operator_id'] = 'tid_op';
+  $handler->display->display_options['filters']['tid']['expose']['label'] = 'Filter by department';
+  $handler->display->display_options['filters']['tid']['expose']['operator'] = 'tid_op';
+  $handler->display->display_options['filters']['tid']['expose']['identifier'] = 'tid';
+  $handler->display->display_options['filters']['tid']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    12 => 0,
+    10 => 0,
+    8 => 0,
+    6 => 0,
+    20 => 0,
+    14 => 0,
+    16 => 0,
+    18 => 0,
+  );
+  $handler->display->display_options['filters']['tid']['type'] = 'select';
+  $handler->display->display_options['filters']['tid']['vocabulary'] = 'stanford_department';
+  $handler->display->display_options['filters']['tid']['hierarchy'] = 1;
+  /* Filter criterion: Content: Has taxonomy term */
+  $handler->display->display_options['filters']['tid_1']['id'] = 'tid_1';
+  $handler->display->display_options['filters']['tid_1']['table'] = 'taxonomy_index';
+  $handler->display->display_options['filters']['tid_1']['field'] = 'tid';
+  $handler->display->display_options['filters']['tid_1']['value'] = '';
+  $handler->display->display_options['filters']['tid_1']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['tid_1']['expose']['operator_id'] = 'tid_1_op';
+  $handler->display->display_options['filters']['tid_1']['expose']['label'] = 'Filter by affiliation';
+  $handler->display->display_options['filters']['tid_1']['expose']['operator'] = 'tid_1_op';
+  $handler->display->display_options['filters']['tid_1']['expose']['identifier'] = 'tid_1';
+  $handler->display->display_options['filters']['tid_1']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    12 => 0,
+    10 => 0,
+    8 => 0,
+    6 => 0,
+    20 => 0,
+    14 => 0,
+    16 => 0,
+    18 => 0,
+  );
+  $handler->display->display_options['filters']['tid_1']['type'] = 'select';
+  $handler->display->display_options['filters']['tid_1']['vocabulary'] = 'stanford_affiliation';
+  $handler->display->display_options['filters']['tid_1']['hierarchy'] = 1;
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
