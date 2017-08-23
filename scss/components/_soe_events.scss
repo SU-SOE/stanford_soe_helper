@@ -55,14 +55,27 @@
         @include box-shadow;
 
         .feat-events-img-container {
-          flex-shrink: 1;
+          flex-shrink: 0;
         }
 
         .feat-events-content-container {
-          background: none;
-          box-shadow: none;
-          padding-left: 0px;
+          padding-left: 30px;
           width: 80%;
+
+          .feat-events-title {
+            h2 {
+              margin-top: 0;
+            }
+
+            a {
+              @include td-color($orange);
+
+              &:focus,
+              &:hover {
+                @include td-color($primary-color);
+              }
+            }
+          }
 
           .date-stacked {
             margin: 0;
