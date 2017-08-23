@@ -293,7 +293,7 @@ function stanford_soe_helper_views_post_execute(&$view) {
  * Custom callback to test whether view title should be placed in main_top and removed from view.
  */
 function _stanford_soe_helper_view_title($viewname, $displayname) {
-  $views = array('stanford_events_views', 'stanford_news_with_teaser', 'stanford_person_grid', 'soe_opportunity_grid');
+  $views = array('stanford_events_views', 'soe_school_news_with_teaser', 'stanford_person_grid', 'soe_opportunity_grid');
   $displays = array('page', 'page_1', 'grouped_page', 'gep_page');
   $viewtest = in_array($viewname, $views);
   $displaytest = in_array($displayname, $displays);
