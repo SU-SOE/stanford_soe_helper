@@ -13,6 +13,37 @@ function stanford_people_spotlight_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_s_ppl_spot_categories|node|stanford_people_spotlight|form';
+  $field_group->group_name = 'group_s_ppl_spot_categories';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'stanford_people_spotlight';
+  $field_group->mode = 'form';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Categories Group',
+    'weight' => '4',
+    'children' => array(
+      0 => 'field_s_ppl_spot_department',
+      1 => 'field_s_ppl_spot_affiliation',
+      2 => 'field_s_ppl_spot_related_page',
+    ),
+    'format_type' => 'fieldset',
+    'format_settings' => array(
+      'label' => 'Categories Group',
+      'instance_settings' => array(
+        'required_fields' => 0,
+        'id' => '',
+        'classes' => 'group-s-ppl-spot-categories field-group-fieldset',
+        'description' => '',
+      ),
+      'formatter' => 'collapsible',
+    ),
+  );
+  $field_groups['group_s_ppl_spot_categories|node|stanford_people_spotlight|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_s_ppl_spot_container|node|stanford_people_spotlight|full';
   $field_group->group_name = 'group_s_ppl_spot_container';
   $field_group->entity_type = 'node';
@@ -122,8 +153,8 @@ function stanford_people_spotlight_field_group_info() {
     'label' => 'Image group',
     'weight' => '1',
     'children' => array(
-      0 => 'field_s_ppl_spot_image_color',
-      1 => 'field_s_ppl_spot_image',
+      0 => 'field_s_ppl_spot_image',
+      1 => 'field_s_ppl_spot_image_color',
       2 => 'field_s_ppl_spot_photo_credit',
     ),
     'format_type' => 'fieldset',
@@ -179,7 +210,7 @@ function stanford_people_spotlight_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Story Group',
-    'weight' => '6',
+    'weight' => '8',
     'children' => array(
       0 => 'body',
       1 => 'field_s_ppl_spot_date',
@@ -232,6 +263,7 @@ function stanford_people_spotlight_field_group_info() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Categories Group');
   t('Container');
   t('Content Container');
   t('Image group');
