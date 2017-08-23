@@ -7,16 +7,22 @@
 // CALL TO ACTION BEANS
 
 .bean-stanford-call-to-action {
+  #content-body-bottom & {
+    @include breakpoint-min(small) {
+      margin-bottom: 100px;
+    }
+  }
+
   .group-s-cta-title-style {
-    .block-bean:nth-child(1n) & {
+    .turquoise & {
       background: $turquoise;
     }
 
-    .block-bean:nth-child(2n) & {
+    .orange & {
       background: $orange;
     }
 
-    .block-bean:nth-child(3n) & {
+    .pink & {
       background: $pink;
     }
   }
@@ -24,6 +30,15 @@
   .group-s-cta-title-style h2 {
     font-family: $primary-font;
     font-weight: 400;
+  }
+}
+
+[id*="block-bean-sitewide-facebook-cta-block"].block[class*="span"],
+[id*="block-bean-sitewide-instagram-cta-block"].block[class*="span"],
+[id*="block-bean-sitewide-twitter-cta-block"].block[class*="span"] {
+  @include breakpoint-max(small) {
+    width: 100%;
+    margin: 0;
   }
 }
 
