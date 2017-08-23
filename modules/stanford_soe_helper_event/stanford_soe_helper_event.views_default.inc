@@ -218,8 +218,15 @@ function stanford_soe_helper_event_views_default_views() {
     1 => '1',
   );
 
-  /* Display: Block */
-  $handler = $view->new_display('block', 'Block', 'block_1');
+  /* Display: Vertical */
+  $handler = $view->new_display('block', 'Vertical', 'block_1');
+  $handler->display->display_options['defaults']['css_class'] = FALSE;
+  $handler->display->display_options['css_class'] = 'vertical-event';
+
+  /* Display: Horizontal */
+  $handler = $view->new_display('block', 'Horizontal', 'block_2');
+  $handler->display->display_options['defaults']['css_class'] = FALSE;
+  $handler->display->display_options['css_class'] = 'horizontal-event';
   $export['stanford_event_featured'] = $view;
 
   return $export;
