@@ -89,13 +89,10 @@
         }
 
         .date-stacked {
-          margin: 0;
+          margin: 0 0 20px;
           height: 45px;
           width: 40px;
           @include box-shadow;
-          @include breakpoint-max(medium) {
-            margin-bottom: 20px;
-          }
 
           .date-month {
             font-size: em(18px);
