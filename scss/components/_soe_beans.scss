@@ -33,9 +33,9 @@
   }
 }
 
-[id*="block-bean-sitewide-facebook-cta-block"],
-[id*="block-bean-sitewide-instagram-cta-block"],
-[id*="block-bean-sitewide-twitter-cta-block"] {
+[id*="block-bean-sitewide-facebook-cta-block"].block[class*="span"],
+[id*="block-bean-sitewide-instagram-cta-block"].block[class*="span"],
+[id*="block-bean-sitewide-twitter-cta-block"].block[class*="span"] {
   @include breakpoint-max(small) {
     width: 100%;
     margin: 0;

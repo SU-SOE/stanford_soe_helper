@@ -1497,9 +1497,9 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
 
 @media (max-width: 767px) {
   /* line 36, ../scss/components/_soe_beans.scss */
-  [id*="block-bean-sitewide-facebook-cta-block"],
-  [id*="block-bean-sitewide-instagram-cta-block"],
-  [id*="block-bean-sitewide-twitter-cta-block"] {
+  [id*="block-bean-sitewide-facebook-cta-block"].block[class*="span"],
+  [id*="block-bean-sitewide-instagram-cta-block"].block[class*="span"],
+  [id*="block-bean-sitewide-twitter-cta-block"].block[class*="span"] {
     width: 100%;
     margin: 0; } }
 
