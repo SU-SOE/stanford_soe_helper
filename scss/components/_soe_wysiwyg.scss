@@ -102,7 +102,19 @@ p.summary.drop-cap {
   margin: 0 2em 4em;
 }
 
-.main table {
-  width: 100%;
-  margin-bottom: 2em;
+.main {
+  table {
+    width: 100%;
+    margin-bottom: 2em;
+  }
+
+  p {
+    &.float-left {
+      margin-right: 15px;
+    }
+
+    &.float-right {
+      margin-left: 15px;
+    }
+  }
 }
