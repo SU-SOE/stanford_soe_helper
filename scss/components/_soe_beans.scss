@@ -7,12 +7,8 @@
 // CALL TO ACTION BEANS
 
 .bean-stanford-call-to-action {
-  @include breakpoint-min(small) {
-    margin-bottom: 100px;
-  }
-
-  &:last-child {
-    @include breakpoint-max(small) {
+  #content-body-bottom & {
+    @include breakpoint-min(small) {
       margin-bottom: 100px;
     }
   }
@@ -37,9 +33,9 @@
   }
 }
 
-#block-bean-sitewide-facebook-cta-block,
-#block-bean-sitewide-instagram-cta-block,
-#block-bean-sitewide-twitter-cta-block {
+[id*="block-bean-sitewide-facebook-cta-block"],
+[id*="block-bean-sitewide-instagram-cta-block"],
+[id*="block-bean-sitewide-twitter-cta-block"] {
   @include breakpoint-max(small) {
     width: 100%;
     margin: 0;
