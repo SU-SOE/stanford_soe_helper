@@ -1413,75 +1413,65 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
   .view-stanford-news-featured .feat-news-container .feat-news-content-container .feat-news-teaser {
     font-size: 1em; }
 
-/* line 11, ../scss/components/_soe_events.scss */
-.view-stanford-event-featured .feat-events-container .feat-events-img-container {
+/* line 12, ../scss/components/_soe_events.scss */
+.view-stanford-event-featured.vertical-event .feat-events-container .feat-events-img-container {
   position: relative; }
-  /* line 14, ../scss/components/_soe_events.scss */
-  .view-stanford-event-featured .feat-events-container .feat-events-img-container img {
+  /* line 15, ../scss/components/_soe_events.scss */
+  .view-stanford-event-featured.vertical-event .feat-events-container .feat-events-img-container img {
     width: 100%; }
-  /* line 18, ../scss/components/_soe_events.scss */
-  .view-stanford-event-featured .feat-events-container .feat-events-img-container .date-stacked {
+  /* line 19, ../scss/components/_soe_events.scss */
+  .view-stanford-event-featured.vertical-event .feat-events-container .feat-events-img-container .date-stacked {
     position: absolute;
     bottom: -20px;
     left: 20px; }
-/* line 25, ../scss/components/_soe_events.scss */
-.view-stanford-event-featured .feat-events-container .feat-events-content-container {
+/* line 26, ../scss/components/_soe_events.scss */
+.view-stanford-event-featured.vertical-event .feat-events-container .feat-events-content-container {
   background: #FFFFFF;
   padding: 50px 30px 30px;
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2); }
-  /* line 31, ../scss/components/_soe_events.scss */
-  .view-stanford-event-featured .feat-events-container .feat-events-content-container .feat-events-title h2 {
+  /* line 32, ../scss/components/_soe_events.scss */
+  .view-stanford-event-featured.vertical-event .feat-events-container .feat-events-content-container .feat-events-title h2 {
     margin-top: 0; }
-  /* line 35, ../scss/components/_soe_events.scss */
-  .view-stanford-event-featured .feat-events-container .feat-events-content-container .feat-events-title a {
+  /* line 36, ../scss/components/_soe_events.scss */
+  .view-stanford-event-featured.vertical-event .feat-events-container .feat-events-content-container .feat-events-title a {
     -webkit-text-decoration-color: #FFBD54;
     text-decoration-color: #FFBD54; }
-    /* line 38, ../scss/components/_soe_events.scss */
-    .view-stanford-event-featured .feat-events-container .feat-events-content-container .feat-events-title a:focus, .view-stanford-event-featured .feat-events-container .feat-events-content-container .feat-events-title a:hover {
+    /* line 39, ../scss/components/_soe_events.scss */
+    .view-stanford-event-featured.vertical-event .feat-events-container .feat-events-content-container .feat-events-title a:focus, .view-stanford-event-featured.vertical-event .feat-events-container .feat-events-content-container .feat-events-title a:hover {
       -webkit-text-decoration-color: #333333;
       text-decoration-color: #333333; }
 @media (min-width: 979px) {
-  /* line 49, ../scss/components/_soe_events.scss */
-  .span12 .view-stanford-event-featured .feat-events-container {
-    position: relative;
+  /* line 51, ../scss/components/_soe_events.scss */
+  .view-stanford-event-featured.horizontal-event .feat-events-container {
     background: #FFFFFF;
     display: flex;
     padding: 30px;
     -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2); }
-    /* line 56, ../scss/components/_soe_events.scss */
-    .span12 .view-stanford-event-featured .feat-events-container .feat-events-img-container {
-      position: static;
+    /* line 57, ../scss/components/_soe_events.scss */
+    .view-stanford-event-featured.horizontal-event .feat-events-container .feat-events-img-container {
       flex-shrink: 1; }
-      /* line 60, ../scss/components/_soe_events.scss */
-      .span12 .view-stanford-event-featured .feat-events-container .feat-events-img-container .date-stacked {
-        top: 30px;
-        right: 240px;
-        left: auto;
+    /* line 61, ../scss/components/_soe_events.scss */
+    .view-stanford-event-featured.horizontal-event .feat-events-container .feat-events-content-container {
+      background: none;
+      box-shadow: none;
+      padding-left: 0px;
+      width: 80%; }
+      /* line 67, ../scss/components/_soe_events.scss */
+      .view-stanford-event-featured.horizontal-event .feat-events-container .feat-events-content-container .date-stacked {
         margin: 0;
         height: 45px;
         width: 40px;
         -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
         -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
-        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2); } }
-      @media (min-width: 979px) and (max-width: 1200px) {
-        /* line 60, ../scss/components/_soe_events.scss */
-        .span12 .view-stanford-event-featured .feat-events-container .feat-events-img-container .date-stacked {
-          right: 215px; } }
-@media (min-width: 979px) {
-        /* line 72, ../scss/components/_soe_events.scss */
-        .span12 .view-stanford-event-featured .feat-events-container .feat-events-img-container .date-stacked .date-month {
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2); }
+        /* line 73, ../scss/components/_soe_events.scss */
+        .view-stanford-event-featured.horizontal-event .feat-events-container .feat-events-content-container .date-stacked .date-month {
           font-size: 0.9em;
-          line-height: 25px; }
-    /* line 79, ../scss/components/_soe_events.scss */
-    .span12 .view-stanford-event-featured .feat-events-container .feat-events-content-container {
-      background: none;
-      box-shadow: none;
-      padding: 80px 0 0 30px;
-      width: 80%; } }
+          line-height: 25px; } }
 
 @media (min-width: 767px) {
   /* line 10, ../scss/components/_soe_beans.scss */
@@ -1501,6 +1491,12 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400; }
 
+@media (min-width: 1200px) {
+  /* line 36, ../scss/components/_soe_beans.scss */
+  [id*="block-bean-sitewide-facebook-cta-block"].block[class*="span"],
+  [id*="block-bean-sitewide-instagram-cta-block"].block[class*="span"],
+  [id*="block-bean-sitewide-twitter-cta-block"].block[class*="span"] {
+    width: 25%; } }
 @media (max-width: 767px) {
   /* line 36, ../scss/components/_soe_beans.scss */
   [id*="block-bean-sitewide-facebook-cta-block"].block[class*="span"],
@@ -1509,7 +1505,17 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
     width: 100%;
     margin: 0; } }
 
-/* line 48, ../scss/components/_soe_beans.scss */
+@media (min-width: 1200px) {
+  /* line 48, ../scss/components/_soe_beans.scss */
+  [id*="block-bean-sitewide-instagram-cta-block"].block[class*="span"] {
+    margin-left: 9.75%; } }
+
+@media (min-width: 1200px) {
+  /* line 54, ../scss/components/_soe_beans.scss */
+  [id*="block-bean-sitewide-twitter-cta-block"].block[class*="span"] {
+    margin-right: 9.75%; } }
+
+/* line 63, ../scss/components/_soe_beans.scss */
 .bean-stanford-postcard-linked .postcard-linked-container {
   display: flex;
   background: #FFFFFF;
@@ -1519,54 +1525,54 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
   -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2); }
   @media (max-width: 767px) {
-    /* line 48, ../scss/components/_soe_beans.scss */
+    /* line 63, ../scss/components/_soe_beans.scss */
     .bean-stanford-postcard-linked .postcard-linked-container {
       display: block;
       padding: 0; } }
-  /* line 59, ../scss/components/_soe_beans.scss */
+  /* line 74, ../scss/components/_soe_beans.scss */
   .bean-stanford-postcard-linked .postcard-linked-container .postcard-linked-img-container {
     flex-shrink: 0;
     margin-right: 30px; }
     @media (max-width: 767px) {
-      /* line 59, ../scss/components/_soe_beans.scss */
+      /* line 74, ../scss/components/_soe_beans.scss */
       .bean-stanford-postcard-linked .postcard-linked-container .postcard-linked-img-container {
         margin-right: 0; } }
-    /* line 66, ../scss/components/_soe_beans.scss */
+    /* line 81, ../scss/components/_soe_beans.scss */
     .bean-stanford-postcard-linked .postcard-linked-container .postcard-linked-img-container .postcard-linked-img {
       position: relative; }
       @media (max-width: 767px) {
-        /* line 69, ../scss/components/_soe_beans.scss */
+        /* line 84, ../scss/components/_soe_beans.scss */
         .bean-stanford-postcard-linked .postcard-linked-container .postcard-linked-img-container .postcard-linked-img .field-name-field-s-post-link-image img {
           width: 100%; } }
-      /* line 75, ../scss/components/_soe_beans.scss */
+      /* line 90, ../scss/components/_soe_beans.scss */
       .bean-stanford-postcard-linked .postcard-linked-container .postcard-linked-img-container .postcard-linked-img .postcard-linked-arrow {
         position: absolute;
         bottom: 20px;
         right: 20px;
         width: 50px;
         height: 50px; }
-        /* line 82, ../scss/components/_soe_beans.scss */
+        /* line 97, ../scss/components/_soe_beans.scss */
         .bean-stanford-postcard-linked .postcard-linked-container .postcard-linked-img-container .postcard-linked-img .postcard-linked-arrow img {
           width: 34px;
           height: auto;
           vertical-align: -16px;
           padding: 3px 8px; }
           @media (max-width: 480px) {
-            /* line 82, ../scss/components/_soe_beans.scss */
+            /* line 97, ../scss/components/_soe_beans.scss */
             .bean-stanford-postcard-linked .postcard-linked-container .postcard-linked-img-container .postcard-linked-img .postcard-linked-arrow img {
               vertical-align: -19px; } }
-  /* line 95, ../scss/components/_soe_beans.scss */
+  /* line 110, ../scss/components/_soe_beans.scss */
   .bean-stanford-postcard-linked .postcard-linked-container .postcard-linked-content-container {
     width: 100%; }
     @media (max-width: 767px) {
-      /* line 95, ../scss/components/_soe_beans.scss */
+      /* line 110, ../scss/components/_soe_beans.scss */
       .bean-stanford-postcard-linked .postcard-linked-container .postcard-linked-content-container {
         width: auto;
         padding: 30px; } }
-    /* line 102, ../scss/components/_soe_beans.scss */
+    /* line 117, ../scss/components/_soe_beans.scss */
     .bean-stanford-postcard-linked .postcard-linked-container .postcard-linked-content-container .postcard-linked-title {
       margin-bottom: 1em; }
-      /* line 105, ../scss/components/_soe_beans.scss */
+      /* line 120, ../scss/components/_soe_beans.scss */
       .bean-stanford-postcard-linked .postcard-linked-container .postcard-linked-content-container .postcard-linked-title a {
         color: #333333;
         font-family: "Roboto Slab", serif;
@@ -1579,37 +1585,37 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
         -webkit-text-decoration-color: #00ECE9;
         text-decoration-color: #00ECE9; }
         @media (max-width: 767px) {
-          /* line 105, ../scss/components/_soe_beans.scss */
+          /* line 120, ../scss/components/_soe_beans.scss */
           .bean-stanford-postcard-linked .postcard-linked-container .postcard-linked-content-container .postcard-linked-title a {
             margin-top: 20px; } }
-        /* line 118, ../scss/components/_soe_beans.scss */
+        /* line 133, ../scss/components/_soe_beans.scss */
         .bean-stanford-postcard-linked .postcard-linked-container .postcard-linked-content-container .postcard-linked-title a:focus, .bean-stanford-postcard-linked .postcard-linked-container .postcard-linked-content-container .postcard-linked-title a:hover {
           -webkit-text-decoration-color: #333333;
           text-decoration-color: #333333; }
-  /* line 126, ../scss/components/_soe_beans.scss */
+  /* line 141, ../scss/components/_soe_beans.scss */
   .bean-stanford-postcard-linked .postcard-linked-container a.btn {
     text-decoration: none;
     margin-bottom: 0; }
-/* line 132, ../scss/components/_soe_beans.scss */
+/* line 147, ../scss/components/_soe_beans.scss */
 .bean-stanford-postcard-linked.postcard-linked-arrow-color-orange .postcard-linked-arrow {
   background: #FFBD54; }
-/* line 136, ../scss/components/_soe_beans.scss */
+/* line 151, ../scss/components/_soe_beans.scss */
 .bean-stanford-postcard-linked.postcard-linked-arrow-color-turquoise .postcard-linked-arrow {
   background: #00ECE9; }
-/* line 140, ../scss/components/_soe_beans.scss */
+/* line 155, ../scss/components/_soe_beans.scss */
 .bean-stanford-postcard-linked.postcard-linked-arrow-color-pink .postcard-linked-arrow {
   background: #FF525C; }
-/* line 151, ../scss/components/_soe_beans.scss */
+/* line 166, ../scss/components/_soe_beans.scss */
 .span1 .bean-stanford-postcard-linked .postcard-linked-container, .span2 .bean-stanford-postcard-linked .postcard-linked-container, .span3 .bean-stanford-postcard-linked .postcard-linked-container, .span4 .bean-stanford-postcard-linked .postcard-linked-container, .span5 .bean-stanford-postcard-linked .postcard-linked-container, .span6 .bean-stanford-postcard-linked .postcard-linked-container, .span7 .bean-stanford-postcard-linked .postcard-linked-container {
   display: block;
   padding: 0; }
-  /* line 155, ../scss/components/_soe_beans.scss */
+  /* line 170, ../scss/components/_soe_beans.scss */
   .span1 .bean-stanford-postcard-linked .postcard-linked-container .postcard-linked-img-container, .span2 .bean-stanford-postcard-linked .postcard-linked-container .postcard-linked-img-container, .span3 .bean-stanford-postcard-linked .postcard-linked-container .postcard-linked-img-container, .span4 .bean-stanford-postcard-linked .postcard-linked-container .postcard-linked-img-container, .span5 .bean-stanford-postcard-linked .postcard-linked-container .postcard-linked-img-container, .span6 .bean-stanford-postcard-linked .postcard-linked-container .postcard-linked-img-container, .span7 .bean-stanford-postcard-linked .postcard-linked-container .postcard-linked-img-container {
     margin-right: 0; }
-  /* line 160, ../scss/components/_soe_beans.scss */
+  /* line 175, ../scss/components/_soe_beans.scss */
   .span1 .bean-stanford-postcard-linked .postcard-linked-container .postcard-linked-img .field-name-field-s-post-link-image img, .span2 .bean-stanford-postcard-linked .postcard-linked-container .postcard-linked-img .field-name-field-s-post-link-image img, .span3 .bean-stanford-postcard-linked .postcard-linked-container .postcard-linked-img .field-name-field-s-post-link-image img, .span4 .bean-stanford-postcard-linked .postcard-linked-container .postcard-linked-img .field-name-field-s-post-link-image img, .span5 .bean-stanford-postcard-linked .postcard-linked-container .postcard-linked-img .field-name-field-s-post-link-image img, .span6 .bean-stanford-postcard-linked .postcard-linked-container .postcard-linked-img .field-name-field-s-post-link-image img, .span7 .bean-stanford-postcard-linked .postcard-linked-container .postcard-linked-img .field-name-field-s-post-link-image img {
     width: 100%; }
-  /* line 165, ../scss/components/_soe_beans.scss */
+  /* line 180, ../scss/components/_soe_beans.scss */
   .span1 .bean-stanford-postcard-linked .postcard-linked-container .postcard-linked-content-container, .span2 .bean-stanford-postcard-linked .postcard-linked-container .postcard-linked-content-container, .span3 .bean-stanford-postcard-linked .postcard-linked-container .postcard-linked-content-container, .span4 .bean-stanford-postcard-linked .postcard-linked-container .postcard-linked-content-container, .span5 .bean-stanford-postcard-linked .postcard-linked-container .postcard-linked-content-container, .span6 .bean-stanford-postcard-linked .postcard-linked-container .postcard-linked-content-container, .span7 .bean-stanford-postcard-linked .postcard-linked-container .postcard-linked-content-container {
     width: auto;
     padding: 30px; }
