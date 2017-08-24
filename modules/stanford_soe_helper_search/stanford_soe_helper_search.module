@@ -26,6 +26,9 @@ function stanford_soe_helper_search_form_alter(&$form, &$form_state, $form_id) {
       $form['#submit'][] = 'stanford_soe_helper_search_magazine';
     }
   }
+  if($form_id == 'views_exposed_form' && $form['submit']['#id'] == 'edit-submit-dm-search-solr-nodes') {
+    $form['submit']['#value'] = 'Search';
+  }
 }
 
 /**
