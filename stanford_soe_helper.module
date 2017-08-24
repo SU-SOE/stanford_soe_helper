@@ -55,6 +55,25 @@ user/*/edit";
       ),
     );
   }
+  // Programmatically adding views title to main_top region
+  $views_page = views_get_page_view();
+  if (is_object($views_page)) {
+    $test = _stanford_soe_helper_view_title($views_page->name, $views_page->current_display);
+    if ($test) {
+      $current_display = $views_page->current_display;
+      if (isset($views_page->display[$current_display]->display_options['title'])) {
+        $title = $views_page->display[$current_display]->display_options['title'];
+      }
+      else {
+        $path = $views_page->display[$current_display]->display_options['path'];
+        $parts = explode('/', $path);
+        $title = ucfirst($parts[0]);
+      }
+      $variables['page']['main_top'][] = [
+        '#markup' => '<h1>' . $title . '</h1>',
+      ];
+    }
+  }
 }
 
 /**
@@ -251,5 +270,37 @@ function _stanford_soe_helper_delete_bean($delta) {
   if (!empty($bid)) {
     $bean = bean_load($bid);
     bean_delete($bean);
+  }
+}
+
+/**
+ * Implements hook_views_post_execute().
+ */
+function stanford_soe_helper_views_post_execute(&$view) {
+  // Removing title on view as we have placed it in the main_top region.
+  $test = _stanford_soe_helper_view_title($view->name, $view->current_display);
+  if ($test) {
+    $current_display = $view->current_display;
+    unset($view->display[$current_display]->handler->view->display[$current_display]->handler->options['title']);
+    $view->display[$current_display]->handler->view->display[$current_display]->handler->view->display[$current_display]->handler->view->build_info['substitutions']['%1'] = '';
+    if ($view->name == 'soe_opportunity_grid' && $view->current_display == 'gep_page') {
+      unset($view->display[$current_display]->handler->view->display[$current_display]->handler->view->display[$current_display]->handler->view->build_info['title']);
+    }
+  }
+}
+
+/**
+ * Custom callback to test whether view title should be placed in main_top and removed from view.
+ */
+function _stanford_soe_helper_view_title($viewname, $displayname) {
+  $views = array('stanford_events_views', 'soe_school_news_with_teaser', 'stanford_person_grid', 'soe_opportunity_grid');
+  $displays = array('page', 'page_1', 'grouped_page', 'gep_page');
+  $viewtest = in_array($viewname, $views);
+  $displaytest = in_array($displayname, $displays);
+  if ($viewtest && $displaytest) {
+    return TRUE;
+  }
+  else {
+    return FAlSE;
   }
 }

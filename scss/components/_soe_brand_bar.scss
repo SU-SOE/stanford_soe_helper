@@ -12,7 +12,7 @@
     clip: rect(0 9999px 2px 0);
     clip-path: inset(0 0 55px 0);
     width: 100%;
-    @include breakpoint(small) {
+    @include breakpoint-max(small) {
       clip-path: inset(0 0 60px 0);
     }
   }
@@ -30,7 +30,7 @@
     }
 
     &.logo-mobile {
-      @include breakpoint(x-small) {
+      @include breakpoint-max(x-small) {
         display: table-cell;
         padding: 0 10px 0 0;
         border-right: 1px solid !important;
@@ -43,7 +43,7 @@
   }
 
   #name-and-slogan.with-logo {
-    @include breakpoint(x-small) {
+    @include breakpoint-max(x-small) {
       display: table-cell;
       padding: 0 0 0 10px;
     }
@@ -55,7 +55,7 @@
 
     #site-title-first-line.site-title-uppercase {
       font-size: 34px;
-      @include breakpoint(x-small) {
+      @include breakpoint-max(x-small) {
         font-size: 28px;
       }
       @media (max-width: 400px) {

@@ -11,20 +11,20 @@ html {
 
 body {
   font-size: em($base-font-size, $root-font-size);
-  @include breakpoint(medium) {
-    font-size: 21px;
-    font-size: em(21px, $root-font-size);
-  }
-  @include breakpoint(small) {
-    font-size: 20px;
-    font-size: em(20px, $root-font-size);
-  }
-  @include breakpoint(x-small) {
+  @include breakpoint-max(medium) {
     font-size: 19px;
     font-size: em(19px, $root-font-size);
   }
+  @include breakpoint-max(small) {
+    font-size: 18px;
+    font-size: em(18px, $root-font-size);
+  }
+  @include breakpoint-max(x-small) {
+    font-size: 17px;
+    font-size: em(17px, $root-font-size);
+  }
   font-weight: 400;
-  line-height: 1.45em;
+  line-height: 1.55em;
 }
 
 h1 {
@@ -33,6 +33,15 @@ h1 {
   font-weight: 600;
   letter-spacing: 0;
   margin: -9px 0 10px;
+  @include breakpoint-max(medium) {
+    font-size: em(46px);
+  }
+  @include breakpoint-max(small) {
+    font-size: em(40px);
+  }
+  @include breakpoint-max(x-small) {
+    font-size: em(36px);
+  }
 }
 
 h2 {
@@ -54,7 +63,7 @@ h4 {
   font-family: $roboto-slab;
   font-size: em(22px);
   font-weight: 600;
-  margin: 1em 0 0.3em;
+  margin: 1em 0 0.5em;
 }
 
 h1,
@@ -73,12 +82,16 @@ h6 {
   }
 }
 
+iframe {
+  margin: 20px 0;
+}
+
 .btn a,
 a.btn {
   border-radius: 0;
   @include box-shadow;
   margin: 0 0 26px;
-  padding: 0.7em 1em;
+  padding: 0.7em 1.4em 0.9em;
   line-height: 1.4em;
   letter-spacing: 0.03em;
   background: $brand-bright;
@@ -94,7 +107,7 @@ a.btn {
     width: 30%;
     margin-bottom: 30px;
     text-decoration: none;
-    @include breakpoint(x-small) {
+    @include breakpoint-max(x-small) {
       width: 65%;
     }
   }
@@ -107,7 +120,7 @@ a {
 
 .more-link a,
 a.more-link {
-  font-size: 20px;
+  font-size: em(20px);
   color: $brand-bright;
 
   &:after {
@@ -124,7 +137,7 @@ h3.normal-link {
 
 li {
   line-height: 1.4em;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
 }
 
 #content {
@@ -139,7 +152,7 @@ li {
 
     ol li {
       &:last-child {
-        margin-bottom: 1.5em;
+        margin-bottom: 2em;
       }
     }
 
@@ -212,43 +225,29 @@ th {
   border-color: $gray;
 }
 
-.views-grid-three {
-  .views-row {
-    @include breakpoint(small) {
-      width: 46%;
-
-      &:nth-child(2n) {
-        margin-right: 0;
-      }
-
-      &:nth-child(3n) {
-        margin-right: 3%;
-      }
-    }
-    @include breakpoint(x-small) {
-      width: 100%;
-      margin-right: 0;
-    }
-  }
-}
-
 #wrap {
   background: $off-white;
 }
 
 .main {
-  padding-top: 60px;
+  padding: 80px 0 50px;
   background: $off-white;
 
   p {
+    margin: 0 0 1.5em;
+
     a {
       text-decoration: underline;
+
+      &.btn {
+        text-decoration: none;
+      }
     }
   }
 }
 
 .container {
-  @include breakpoint(small) {
+  @include breakpoint-max(small) {
     margin-bottom: 10px;
 
     #fullwidth-bottom & {
@@ -258,7 +257,7 @@ th {
 }
 
 #content.span9 {
-  @media (min-width: 1200px) {
+  @include breakpoint-min(large) {
     width: 740px;
     margin-left: 80px;
   }

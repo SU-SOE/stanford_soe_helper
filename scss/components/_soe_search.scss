@@ -38,7 +38,7 @@
 
       &:focus {
         width: 175px;
-        @include breakpoint(x-small) {
+        @include breakpoint-max(x-small) {
           width: 170px;
         }
       }
@@ -60,4 +60,18 @@
 
 .page-search div#edit-basic {
   margin-bottom: 5px;
+}
+
+.search-views-left {
+  h2 a {
+    text-decoration: underline;
+    @include td-color($turquoise);
+  }
+
+  &:hover,
+  &focus {
+    color: $gray-orange;
+    text-decoration: underline;
+    @include td-color($gray-orange);
+  }
 }

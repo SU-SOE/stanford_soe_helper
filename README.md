@@ -1,5 +1,5 @@
 # [Stanford SoE Helper](https://github.com/SU-SWS/stanford_soe_helper)
-##### Version: 7.x-2.x
+##### Version: 7.x-2.0-alpha1 
 
 Maintainers: [boznik](https://github.com/bosnik), [cjwest](https://github.com/cjwest), [josephgknox](https://github.com/josephgknox)  
 
@@ -13,6 +13,64 @@ The Stanford SoE Helper module provides the custom code for the SoE school site.
 
 Sub Modules
 ---
+
+**[Stanford People Spotlight](https://github.com/SU-SWS/stanford_soe_helper/stanford_people_spotlight)**
+This module provides the _People Spotlight_ content type.
+
+- Nodes path is at: /spotlight/<title>
+
+**[Stanford People Spotlight Administration](https://github.com/SU-SWS/stanford_soe_helper/stanford_people_spotlight_adminstration)**
+This module provides manage content for _People Spotlight_ content types.
+
+**[Stanford People Spotlight Layouts](https://github.com/SU-SWS/stanford_soe_helper/stanford_people_spotlight_layouts)**
+This module provides the context and layouts for _People Spotlight_.
+
+**[Stanford People Spotlight Views](https://github.com/SU-SWS/stanford_soe_helper/stanford_people_spotlight_views)**
+This module provides views for _People Spotlight_.
+
+
+Views Pages:
+
+- All spotlights view at /spotlight
+- Student spotlights view at /spotlight/students
+- Faculty spotlights view at /spotlight/faculty
+
+***Stanford People Spotlight: 1, Vertical, Span4, Card***
+Display: Block.
+This randomly selects Stanford People Spotlight nodes, displays 1, and uses span4 and Large Square image style			
+
+***Stanford People Spotlight: 1, Vertical, Span6, Card***
+Display: Block.
+This randomly selects Stanford People Spotlight nodes, displays 1, and uses span6 and Large Square image style			
+
+***Stanford People Spotlight: 2, Vertical, Span4, Card***
+Display: Block.
+This randomly selects Stanford People Spotlight nodes, displays 2, and uses span4 and Large Square image style			
+
+***Stanford People Spotlight: 2, Vertical, Span6, Card***
+Display: Block.
+This randomly selects Stanford People Spotlight nodes, displays 2, and uses span6 and Large Square image style			
+
+***Stanford People Spotlight: 3, Vertical, Card***
+Displays: Block, Page - /spotlight.
+This randomly selects Stanford People Spotlight nodes, displays 1, and uses span4 and Large Square image style			
+
+***Stanford People Spotlight: FW Banner - No Quote***
+Display: Block.
+This uses square image size 370x370			
+
+***Stanford People Spotlight: FW Banner - Quote***
+Display: Block.
+This uses square image size 370x370			
+
+***Stanford People Spotlight: Horizontal Card***
+Display: Block.
+This randomly selects Stanford People Spotlight nodes and uses Large Square image style
+
+
+**[Stanford SoE Helper Bean Types](https://github.com/SU-SWS/stanford_soe_helper/stanford_soe_helper_bean_types/)**
+This module provides custom functionality for bean types.
+
 **[Stanford SoE Helper Event](https://github.com/SU-SWS/stanford_soe_helper/stanford_soe_helper_event/)**
 This module provides custom functionality for events.
 
@@ -40,6 +98,9 @@ This module provides custom functionality for news.
 
 **[Stanford SoE Helper Page](https://github.com/SU-SWS/stanford_soe_helper/stanford_soe_helper_page/)**
 This module provides custom functionality for Stanford Pages.
+
+**[Stanford SoE Helper Search](https://github.com/SU-SWS/stanford_soe_helper/stanford_soe_helper_search/)**
+This module provides Solr search functionality.
 
 **[Stanford SoE Helper Sitewide](https://github.com/SU-SWS/stanford_soe_helper/stanford_soe_helper_sitewide/)**
 This module provides custom functionality for sitewide functionality. 

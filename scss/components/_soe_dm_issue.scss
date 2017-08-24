@@ -17,7 +17,7 @@
         object-position: center center;
         width: 100%;
         height: calc(100vh - 180px);
-        @include breakpoint(x-small) {
+        @include breakpoint-max(x-small) {
           height: calc(100vh - 210px);
         }
 
@@ -41,7 +41,7 @@
           display: inline;
           padding: 15px 25px;
           background: rgba(0, 0, 0, 0.3);
-          @include breakpoint(small) {
+          @include breakpoint-max(small) {
             display: block;
           }
 
@@ -75,20 +75,20 @@
         bottom: 0;
         height: 100%;
         width: 100%;
-        @include gradient-vertical($end-color: rgba(0, 0, 0, 0.3));
+        @include gradient-vertical($end-color: rgba(0, 0, 0, 0.75));
       }
     }
 
     .mag-feat-details-container {
       width: 1000px;
       margin: 0 auto;
-      @include breakpoint(large) {
+      @include breakpoint-max(large) {
         width: 800px;
       }
-      @include breakpoint(medium) {
+      @include breakpoint-max(medium) {
         width: 650px;
       }
-      @include breakpoint(small) {
+      @include breakpoint-max(small) {
         width: auto;
         margin: 0 20px;
       }
@@ -108,28 +108,30 @@
         &[class*="mag-article-color-"] {
           color: $primary-color;
           text-decoration: underline;
-          text-decoration-skip: ink;
+          @include td-skip;
 
           &:focus,
           &:hover {
-            text-decoration-color: $primary-color;
+            @include td-color($primary-color);
           }
         }
 
         &.mag-article-color-orange {
-          text-decoration-color: $orange;
+          @include td-color($orange);
         }
 
         &.mag-article-color-turquoise {
-          text-decoration-color: $turquoise;
+          @include td-color($turquoise);
         }
 
         &.mag-article-color-pink {
-          text-decoration-color: $pink;
+          @include td-color($pink);
         }
       }
 
       .mag-feat-dek {
+        font-size: em(26px);
+        width: 85%;
         margin-bottom: 40px;
       }
 
@@ -160,24 +162,24 @@
       &[class*="mag-article-color-"] {
         color: $primary-color;
         text-decoration: underline;
-        text-decoration-skip: ink;
+        @include td-skip;
 
         &:focus,
         &:hover {
-          text-decoration-color: $primary-color;
+          @include td-color($primary-color);
         }
       }
 
       &.mag-article-color-orange {
-        text-decoration-color: $orange;
+        @include td-color($orange);
       }
 
       &.mag-article-color-turquoise {
-        text-decoration-color: $turquoise;
+        @include td-color($turquoise);
       }
 
       &.mag-article-color-pink {
-        text-decoration-color: $pink;
+        @include td-color($pink);
       }
     }
 
@@ -193,6 +195,7 @@
 
 .view-stanford-magazine-issues {
   h1 {
+    font-family: $primary-font;
     color: $gray-orange;
     font-size: em(26px);
     text-align: center;
@@ -201,7 +204,7 @@
 
   .views-row {
     margin-bottom: 100px;
-    @include breakpoint(medium) {
+    @include breakpoint-max(medium) {
       margin-bottom: 50px;
     }
 
@@ -209,7 +212,7 @@
       .mag-issue-col-1 {
         float: right;
         width: 22.5%;
-        @include breakpoint(medium) {
+        @include breakpoint-max(medium) {
           float: none;
           width: 100%;
         }
@@ -219,7 +222,7 @@
         float: left;
         width: 45%;
         margin-right: 5%;
-        @include breakpoint(medium) {
+        @include breakpoint-max(medium) {
           float: none;
           width: 100%;
           margin-right: 0;
@@ -230,7 +233,7 @@
         float: right;
         width: 22.5%;
         margin-right: 5%;
-        @include breakpoint(medium) {
+        @include breakpoint-max(medium) {
           float: none;
           width: 100%;
           margin-right: 0;
@@ -243,7 +246,7 @@
         float: left;
         width: 22.5%;
         margin-right: 5%;
-        @include breakpoint(medium) {
+        @include breakpoint-max(medium) {
           float: none;
           width: 100%;
           margin-right: 0;
@@ -254,7 +257,7 @@
         float: left;
         width: 45%;
         margin-right: 5%;
-        @include breakpoint(medium) {
+        @include breakpoint-max(medium) {
           float: none;
           width: 100%;
           margin-right: 0;
@@ -264,7 +267,7 @@
       .mag-issue-col-3 {
         float: left;
         width: 22.5%;
-        @include breakpoint(medium) {
+        @include breakpoint-max(medium) {
           float: none;
           width: 100%;
         }
@@ -275,7 +278,7 @@
       .mag-issue-col-1 {
         float: left;
         width: 22.5%;
-        @include breakpoint(medium) {
+        @include breakpoint-max(medium) {
           float: none;
           width: 100%;
         }
@@ -285,7 +288,7 @@
         float: right;
         width: 45%;
         margin-left: 5%;
-        @include breakpoint(medium) {
+        @include breakpoint-max(medium) {
           float: none;
           width: 100%;
           margin-left: 0;
@@ -296,7 +299,7 @@
         float: left;
         width: 22.5%;
         margin-left: 5%;
-        @include breakpoint(medium) {
+        @include breakpoint-max(medium) {
           float: none;
           width: 100%;
           margin-left: 0;
@@ -307,13 +310,13 @@
     h2 {
       font-size: em(56px);
       text-align: center;
-      margin-bottom: 40px;
+      margin-bottom: 60px;
     }
   }
 
   .mag-feat-article-container {
     margin-bottom: 80px;
-    @include breakpoint(medium) {
+    @include breakpoint-max(medium) {
       margin-bottom: 40px;
     }
 
@@ -321,7 +324,7 @@
       background: $white;
       padding: 50px 30px 30px;
       @include box-shadow;
-      @include breakpoint(medium) {
+      @include breakpoint-max(medium) {
         padding: 15px 30px 30px;
       }
 
@@ -330,7 +333,7 @@
         font-size: em(20px);
         font-weight: 100;
         margin-bottom: 10px;
-        @include breakpoint(medium) {
+        @include breakpoint-max(medium) {
           font-size: em(18px);
         }
       }
@@ -339,7 +342,8 @@
         font-size: em(32px);
         line-height: 1.2em;
         font-weight: 600;
-        @include breakpoint(medium) {
+        margin-bottom: 12px;
+        @include breakpoint-max(medium) {
           font-size: em(26px);
           line-height: 1.3em;
         }
@@ -347,32 +351,36 @@
         &[class*="mag-article-color-"] a {
           color: $primary-color;
           text-decoration: underline;
-          text-decoration-skip: ink;
+          @include td-skip;
 
           &:focus,
           &:hover {
-            text-decoration-color: $primary-color;
+            @include td-color($primary-color);
           }
         }
 
         &.mag-article-color-orange a {
-          text-decoration-color: $orange;
+          @include td-color($orange);
         }
 
         &.mag-article-color-turquoise a {
-          text-decoration-color: $turquoise;
+          @include td-color($turquoise);
         }
 
         &.mag-article-color-pink a {
-          text-decoration-color: $pink;
+          @include td-color($pink);
         }
+      }
+
+      .mag-article-dek {
+        line-height: 1.3em;
       }
 
       .mag-article-topics {
         font-size: em(18px);
         line-height: 1.3em;
         margin: 30px 0;
-        @include breakpoint(medium) {
+        @include breakpoint-max(medium) {
           font-size: em(16px);
           line-height: 1.2em;
         }
@@ -382,12 +390,12 @@
 
   .mag-article-container {
     margin-bottom: 80px;
-    @include breakpoint(medium) {
+    @include breakpoint-max(medium) {
       margin-bottom: 40px;
     }
 
     .mag-article-img img {
-      @include breakpoint(medium) {
+      @include breakpoint-max(medium) {
         width: 100%;
       }
     }
@@ -411,24 +419,24 @@
         &[class*="mag-article-color-"] a {
           color: $primary-color;
           text-decoration: underline;
-          text-decoration-skip: ink;
+          @include td-skip;
 
           &:focus,
           &:hover {
-            text-decoration-color: $primary-color;
+            @include td-color($primary-color);
           }
         }
 
         &.mag-article-color-orange a {
-          text-decoration-color: $orange;
+          @include td-color($orange);
         }
 
         &.mag-article-color-turquoise a {
-          text-decoration-color: $turquoise;
+          @include td-color($turquoise);
         }
 
         &.mag-article-color-pink a {
-          text-decoration-color: $pink;
+          @include td-color($pink);
         }
       }
 
@@ -442,6 +450,11 @@
 
   #content .content & {
     .pager-load-more {
+      margin-bottom: 100px;
+      @include breakpoint-max(small) {
+        margin-bottom: 50px;
+      }
+
       a {
         color: $white;
         font-size: em(22px);
@@ -481,11 +494,11 @@
         right: 160px;
         height: 100%;
         @include gradient-vertical;
-        @include breakpoint(large) {
+        @include breakpoint-max(large) {
           left: 45px;
           right: 45px;
         }
-        @include breakpoint(medium) {
+        @include breakpoint-max(medium) {
           left: 0;
           right: 0;
         }
@@ -497,7 +510,7 @@
         position: absolute;
         bottom: 38%;
         width: 100%;
-        @include breakpoint(x-small) {
+        @include breakpoint-max(x-small) {
           position: relative;
         }
 
@@ -508,7 +521,7 @@
           font-weight: 800;
           font-size: em(32px);
           padding: 30px;
-          @include breakpoint(x-small) {
+          @include breakpoint-max(x-small) {
             display: block;
           }
         }
@@ -516,7 +529,7 @@
         .mag-article-issue-title {
           &:after {
             content: "\00a0 \00a0 |\00a0 \00a0 ";
-            @include breakpoint(x-small) {
+            @include breakpoint-max(x-small) {
               content: normal;
             }
           }
@@ -534,14 +547,14 @@
 
     .mag-article-issue-text {
       color: $white;
-      font-size: em(28px);
+      font-size: em(20px);
       font-weight: 100;
       font-style: italic;
       position: absolute;
       bottom: 0;
       width: 100%;
       margin-bottom: 30px;
-      @include breakpoint(x-small) {
+      @include breakpoint-max(x-small) {
         bottom: 115px;
       }
     }
@@ -566,12 +579,13 @@
   &.views-grid-three .views-row {
     margin-right: 4.49%;
     margin-bottom: 4.49%;
+    width: 30%;
 
     &:nth-child(3),
     &:nth-child(6) {
       margin-right: 0;
     }
-    @include breakpoint(large) {
+    @include breakpoint-max(large) {
       width: 47.4%;
 
       &:nth-child(2),
@@ -584,7 +598,7 @@
         margin-right: 4.49%;
       }
     }
-    @include breakpoint(small) {
+    @include breakpoint-max(small) {
       width: 100%;
       margin-right: 0;
 
@@ -596,10 +610,12 @@
 
   h2 {
     text-align: center;
+    margin: 1.8em 0 0.2em;
   }
 
   h3 {
     font-family: $primary-font;
+    font-weight: 400;
     color: $gray-orange;
     text-align: center;
     margin: 0 0 40px;
@@ -608,7 +624,7 @@
   .view-content {
     width: 75%;
     margin: 0 auto;
-    @include breakpoint(medium) {
+    @include breakpoint-max(medium) {
       width: 100%;
     }
   }
@@ -628,7 +644,7 @@
 
     .prev-mag-issue-image {
       img {
-        @include breakpoint(small) {
+        @include breakpoint-max(small) {
           width: 100%;
         }
       }
@@ -657,7 +673,7 @@
     text-align: center;
 
     a.btn {
-      margin: 40px 0 80px;
+      margin: 0 0 80px;
     }
   }
 }
@@ -696,9 +712,9 @@
           color: $black;
           font-size: em(32px);
           display: inline;
-          padding: 15px 25px;
+          padding: 18px 30px;
           background: rgba(0, 0, 0, 0.3);
-          @include breakpoint(small) {
+          @include breakpoint-max(small) {
             display: block;
           }
 
@@ -738,7 +754,7 @@
         bottom: 0;
         height: 100%;
         width: 100%;
-        @include gradient-vertical($end-color: rgba(0, 0, 0, 0.3));
+        @include gradient-vertical($end-color: rgba(0, 0, 0, 0.75));
       }
     }
   }

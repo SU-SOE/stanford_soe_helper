@@ -7,16 +7,22 @@
 // CALL TO ACTION BEANS
 
 .bean-stanford-call-to-action {
+  #content-body-bottom & {
+    @include breakpoint-min(small) {
+      margin-bottom: 100px;
+    }
+  }
+
   .group-s-cta-title-style {
-    .block-bean:nth-child(1n) & {
+    .turquoise & {
       background: $turquoise;
     }
 
-    .block-bean:nth-child(2n) & {
+    .orange & {
       background: $orange;
     }
 
-    .block-bean:nth-child(3n) & {
+    .pink & {
       background: $pink;
     }
   }
@@ -24,5 +30,157 @@
   .group-s-cta-title-style h2 {
     font-family: $primary-font;
     font-weight: 400;
+  }
+}
+
+[id*="block-bean-sitewide-facebook-cta-block"].block[class*="span"],
+[id*="block-bean-sitewide-instagram-cta-block"].block[class*="span"],
+[id*="block-bean-sitewide-twitter-cta-block"].block[class*="span"] {
+  @include breakpoint-min(large) {
+    width: 25%;
+  }
+  @include breakpoint-max(small) {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+[id*="block-bean-sitewide-instagram-cta-block"].block[class*="span"] {
+  @include breakpoint-min(large) {
+    margin-left: 9.75%;
+  }
+}
+
+[id*="block-bean-sitewide-twitter-cta-block"].block[class*="span"] {
+  @include breakpoint-min(large) {
+    margin-right: 9.75%;
+  }
+}
+
+// POSTCARD LINKED BEANS
+
+.bean-stanford-postcard-linked {
+  .postcard-linked-container {
+    display: flex;
+    background: $white;
+    padding: 30px;
+    margin-bottom: 40px;
+    @include box-shadow;
+    @include breakpoint-max(small) {
+      display: block;
+      padding: 0;
+    }
+
+    .postcard-linked-img-container {
+      flex-shrink: 0;
+      margin-right: 30px;
+      @include breakpoint-max(small) {
+        margin-right: 0;
+      }
+
+      .postcard-linked-img {
+        position: relative;
+
+        .field-name-field-s-post-link-image img {
+          @include breakpoint-max(small) {
+            width: 100%;
+          }
+        }
+
+        .postcard-linked-arrow {
+          position: absolute;
+          bottom: 20px;
+          right: 20px;
+          width: 50px;
+          height: 50px;
+
+          img {
+            width: 34px;
+            height: auto;
+            vertical-align: -16px;
+            padding: 3px 8px;
+            @include breakpoint-max(x-small) {
+              vertical-align: -19px;
+            }
+          }
+        }
+      }
+    }
+
+    .postcard-linked-content-container {
+      width: 100%;
+      @include breakpoint-max(small) {
+        width: auto;
+        padding: 30px;
+      }
+
+      .postcard-linked-title {
+        margin-bottom: 1em;
+
+        a {
+          color: $primary-color;
+          font-family: $roboto-slab;
+          font-size: em(32px);
+          font-weight: 600;
+          letter-spacing: 0.02em;
+          @include td-skip;
+          text-decoration: underline;
+          @include td-color($turquoise);
+          @include breakpoint-max(small) {
+            margin-top: 20px;
+          }
+
+          &:focus,
+          &:hover {
+            @include td-color($primary-color);
+          }
+        }
+      }
+    }
+
+    a.btn {
+      text-decoration: none;
+      margin-bottom: 0;
+    }
+  }
+
+  &.postcard-linked-arrow-color-orange .postcard-linked-arrow {
+    background: $orange;
+  }
+
+  &.postcard-linked-arrow-color-turquoise .postcard-linked-arrow {
+    background: $turquoise;
+  }
+
+  &.postcard-linked-arrow-color-pink .postcard-linked-arrow {
+    background: $pink;
+  }
+
+  .span1 &,
+  .span2 &,
+  .span3 &,
+  .span4 &,
+  .span5 &,
+  .span6 &,
+  .span7 & {
+    .postcard-linked-container {
+      display: block;
+      padding: 0;
+
+      .postcard-linked-img-container {
+        margin-right: 0;
+      }
+
+      .postcard-linked-img {
+        .field-name-field-s-post-link-image img {
+          width: 100%;
+        }
+      }
+
+      .postcard-linked-content-container {
+        width: auto;
+        padding: 30px;
+      }
+    }
   }
 }

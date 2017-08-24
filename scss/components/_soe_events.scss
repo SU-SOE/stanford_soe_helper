@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+//
+// EVENTS
+//
+
+// HOMEPAGE FEATURED EVENT VIEW
+
+.view-stanford-event-featured {
+  &.vertical-event {
+    .feat-events-container {
+      .feat-events-img-container {
+        position: relative;
+
+        img {
+          width: 100%;
+        }
+
+        .date-stacked {
+          position: absolute;
+          bottom: -20px;
+          left: 20px;
+        }
+      }
+
+      .feat-events-content-container {
+        background: $white;
+        padding: 50px 30px 30px;
+        @include box-shadow;
+
+        .feat-events-title {
+          h2 {
+            margin-top: 0;
+          }
+
+          a {
+            @include td-color($orange);
+
+            &:focus,
+            &:hover {
+              @include td-color($primary-color);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.horizontal-event {
+    .feat-events-container {
+      @include breakpoint-min(medium) {
+        background: $white;
+        display: flex;
+        padding: 30px;
+        @include box-shadow;
+      }
+
+      .feat-events-img-container {
+        flex-shrink: 0;
+
+        img {
+          @include breakpoint-max(medium) {
+            width: 100%;
+          }
+        }
+      }
+
+      .feat-events-content-container {
+        padding-left: 30px;
+        @include breakpoint-max(medium) {
+          background: $white;
+          padding: 30px;
+          @include box-shadow;
+        }
+
+        .feat-events-title {
+          h2 {
+            margin-top: 0;
+          }
+
+          a {
+            @include td-color($orange);
+
+            &:focus,
+            &:hover {
+              @include td-color($primary-color);
+            }
+          }
+        }
+
+        .date-stacked {
+          margin: 0 0 20px;
+          height: 45px;
+          width: 40px;
+          @include box-shadow;
+
+          .date-month {
+            font-size: em(18px);
+            line-height: 25px;
+          }
+        }
+      }
+    }
+  }
+}

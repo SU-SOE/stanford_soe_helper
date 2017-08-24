@@ -8,19 +8,26 @@
 // NODE DISPLAY
 
 .node-type-stanford-magazine-article {
+  h1 {
+    width: 85%;
+    margin: 0 auto;
+  }
+
   .field-name-field-s-mag-article-topics {
     font-size: em(20px);
-    width: 75%;
+    width: 65%;
     margin: 0 auto 18px;
-    @include breakpoint(x-small) {
+    @include breakpoint-max(x-small) {
       width: 100%;
     }
   }
 
   .field-name-field-s-mag-article-dek {
-    width: 75%;
-    margin: 0 auto 22px;
-    @include breakpoint(x-small) {
+    font-size: em(26px);
+    line-height: 1.3em;
+    width: 65%;
+    margin: 44px auto 22px;
+    @include breakpoint-max(x-small) {
       width: 100%;
     }
   }
@@ -31,9 +38,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 75%;
-    margin: 0 auto 18px;
-    @include breakpoint(x-small) {
+    width: 65%;
+    margin: 0 auto 32px;
+    @include breakpoint-max(x-small) {
       width: 100%;
     }
 
@@ -95,9 +102,16 @@
   text-align: center;
 }
 
-#block-views-a06b957e34c741c20a352da1b7ce0e12 h2 {
-  text-align: center;
-  margin-bottom: 2em;
+#block-views-a06b957e34c741c20a352da1b7ce0e12 {
+  h2 {
+    text-align: center;
+    margin: 2em 0 1.5em;
+  }
+
+  .article-grouping {
+    @include breakpoint-min(medium);
+    padding: 0 70px;
+  }
 }
 
 .view-stanford-magazine-article-most-recent,
@@ -105,7 +119,7 @@
 .view-stanford-magazine-topics {
   &.most-recent-article {
     margin: 40px 0 80px;
-    @include breakpoint(x-small) {
+    @include breakpoint-max(x-small) {
       margin-bottom: 20px;
     }
 
@@ -113,7 +127,7 @@
       position: relative;
       display: flex;
       @include box-shadow;
-      @include breakpoint(medium) {
+      @include breakpoint-max(medium) {
         display: block;
       }
 
@@ -121,17 +135,17 @@
         width: 50%;
         background: $white;
         padding: 50px 30px 30px;
-        @include breakpoint(medium) {
+        @include breakpoint-max(medium) {
           width: auto;
         }
-        @include breakpoint(x-small) {
+        @include breakpoint-max(x-small) {
           padding-top: 15px;
         }
 
         .mag-topic-card-content-container {
           position: absolute;
           bottom: 40px;
-          @include breakpoint(medium) {
+          @include breakpoint-max(medium) {
             position: static;
           }
         }
@@ -154,24 +168,24 @@
           &[class*="mag-article-color-"] a {
             color: $primary-color;
             text-decoration: underline;
-            text-decoration-skip: ink;
+            @include td-skip;
 
             &:focus,
             &:hover {
-              text-decoration-color: $primary-color;
+              @include td-color($primary-color);
             }
           }
 
           &.mag-article-color-orange a {
-            text-decoration-color: $orange;
+            @include td-color($orange);
           }
 
           &.mag-article-color-turquoise a {
-            text-decoration-color: $turquoise;
+            @include td-color($turquoise);
           }
 
           &.mag-article-color-pink a {
-            text-decoration-color: $pink;
+            @include td-color($pink);
           }
         }
 
@@ -210,7 +224,7 @@
       }
 
       .mag-article-img img {
-        @include breakpoint(medium) {
+        @include breakpoint-max(medium) {
           width: 100%;
         }
       }
@@ -220,7 +234,7 @@
   &.article-grouping {
     .views-row {
       margin-bottom: 80px;
-      @include breakpoint(x-small) {
+      @include breakpoint-max(x-small) {
         margin-bottom: 20px;
       }
     }
@@ -245,24 +259,24 @@
         &[class*="mag-article-color-"] a {
           color: $primary-color;
           text-decoration: underline;
-          text-decoration-skip: ink;
+          @include td-skip;
 
           &:focus,
           &:hover {
-            text-decoration-color: $primary-color;
+            @include td-color($primary-color);
           }
         }
 
         &.mag-article-color-orange a {
-          text-decoration-color: $orange;
+          @include td-color($orange);
         }
 
         &.mag-article-color-turquoise a {
-          text-decoration-color: $turquoise;
+          @include td-color($turquoise);
         }
 
         &.mag-article-color-pink a {
-          text-decoration-color: $pink;
+          @include td-color($pink);
         }
       }
 
@@ -302,6 +316,11 @@
   }
 
   .pager-load-more {
+    margin-bottom: 100px;
+    @include breakpoint-max(small) {
+      margin-bottom: 50px;
+    }
+
     a {
       color: $white;
       background-color: $brand-bright;
@@ -322,7 +341,7 @@
   margin-top: -30px;
 }
 
-// LATEST NEWS DM HOMEPAGE VIEW
+// LATEST NEWS DM LANDING PAGE VIEW
 
 .view-stanford-magazine-article-mag-landing-page {
   &.views-grid-three .views-row {
@@ -330,12 +349,17 @@
   }
 
   h2 {
+    font-family: $primary-font;
     color: $gray-orange;
     font-weight: 400;
+    letter-spacing: 0;
     width: 50%;
     margin: 0 auto 60px;
     text-align: center;
-    @include breakpoint(small) {
+    @include breakpoint-min(large) {
+      width: 40%;
+    }
+    @include breakpoint-max(small) {
       width: 100%;
     }
   }
@@ -346,7 +370,7 @@
       &:nth-child(1) {
         width: 22.5%;
         margin-right: 4.5%;
-        @include breakpoint(medium) {
+        @include breakpoint-max(medium) {
           width: 100%;
           margin-right: 0;
         }
@@ -355,7 +379,7 @@
       &:nth-child(2) {
         width: 45%;
         margin-right: 4.5%;
-        @include breakpoint(medium) {
+        @include breakpoint-max(medium) {
           width: 100%;
           margin-right: 0;
         }
@@ -365,7 +389,7 @@
             background: $white;
             padding: 50px 30px 30px;
             @include box-shadow;
-            @include breakpoint(medium) {
+            @include breakpoint-max(medium) {
               padding: 15px 30px 30px;
             }
 
@@ -374,7 +398,7 @@
               font-size: em(20px);
               font-weight: 100;
               margin-bottom: 10px;
-              @include breakpoint(medium) {
+              @include breakpoint-max(medium) {
                 font-size: em(18px);
               }
             }
@@ -383,7 +407,7 @@
               font-size: em(32px);
               line-height: 1.2em;
               font-weight: 600;
-              @include breakpoint(medium) {
+              @include breakpoint-max(medium) {
                 font-size: em(26px);
                 line-height: 1.3em;
               }
@@ -393,7 +417,7 @@
               font-size: em(18px);
               line-height: 1.3em;
               margin: 30px 0;
-              @include breakpoint(medium) {
+              @include breakpoint-max(medium) {
                 font-size: em(16px);
                 line-height: 1.2em;
               }
@@ -405,7 +429,7 @@
       &:nth-child(3) {
         width: 22.5%;
         margin-right: 0;
-        @include breakpoint(medium) {
+        @include breakpoint-max(medium) {
           width: 100%;
         }
       }
@@ -418,7 +442,7 @@
       &:nth-child(1) {
         width: 45%;
         margin-right: 4.5%;
-        @include breakpoint(medium) {
+        @include breakpoint-max(medium) {
           width: 100%;
           margin-right: 0;
         }
@@ -428,7 +452,7 @@
             background: $white;
             padding: 50px 30px 30px;
             @include box-shadow;
-            @include breakpoint(medium) {
+            @include breakpoint-max(medium) {
               padding: 15px 30px 30px;
             }
 
@@ -437,7 +461,7 @@
               font-size: em(20px);
               font-weight: 100;
               margin-bottom: 10px;
-              @include breakpoint(medium) {
+              @include breakpoint-max(medium) {
                 font-size: em(18px);
               }
             }
@@ -446,7 +470,7 @@
               font-size: em(32px);
               line-height: 1.2em;
               font-weight: 600;
-              @include breakpoint(medium) {
+              @include breakpoint-max(medium) {
                 font-size: em(26px);
                 line-height: 1.3em;
               }
@@ -456,7 +480,7 @@
               font-size: em(18px);
               line-height: 1.3em;
               margin: 30px 0;
-              @include breakpoint(medium) {
+              @include breakpoint-max(medium) {
                 font-size: em(16px);
                 line-height: 1.2em;
               }
@@ -468,7 +492,7 @@
       &:nth-child(2) {
         width: 22.5%;
         margin-right: 4.5%;
-        @include breakpoint(medium) {
+        @include breakpoint-max(medium) {
           width: 100%;
           margin-right: 0;
         }
@@ -477,7 +501,7 @@
       &:nth-child(3) {
         width: 22.5%;
         margin-right: 0;
-        @include breakpoint(medium) {
+        @include breakpoint-max(medium) {
           width: 100%;
         }
       }
@@ -489,7 +513,7 @@
       &:nth-child(1) {
         width: 22.5%;
         margin-right: 4.5%;
-        @include breakpoint(medium) {
+        @include breakpoint-max(medium) {
           width: 100%;
           margin-right: 0;
         }
@@ -498,7 +522,7 @@
       &:nth-child(2) {
         width: 22.5%;
         margin-right: 4.5%;
-        @include breakpoint(medium) {
+        @include breakpoint-max(medium) {
           width: 100%;
           margin-right: 0;
         }
@@ -507,7 +531,7 @@
       &:nth-child(3) {
         width: 45%;
         margin-right: 0;
-        @include breakpoint(medium) {
+        @include breakpoint-max(medium) {
           width: 100%;
         }
 
@@ -516,7 +540,7 @@
             background: $white;
             padding: 50px 30px 30px;
             @include box-shadow;
-            @include breakpoint(medium) {
+            @include breakpoint-max(medium) {
               padding: 15px 30px 30px;
             }
 
@@ -525,7 +549,7 @@
               font-size: em(20px);
               font-weight: 100;
               margin-bottom: 10px;
-              @include breakpoint(medium) {
+              @include breakpoint-max(medium) {
                 font-size: em(18px);
               }
             }
@@ -534,7 +558,7 @@
               font-size: em(32px);
               line-height: 1.2em;
               font-weight: 600;
-              @include breakpoint(medium) {
+              @include breakpoint-max(medium) {
                 font-size: em(26px);
                 line-height: 1.3em;
               }
@@ -544,7 +568,7 @@
               font-size: em(18px);
               line-height: 1.3em;
               margin: 30px 0;
-              @include breakpoint(medium) {
+              @include breakpoint-max(medium) {
                 font-size: em(16px);
                 line-height: 1.2em;
               }
@@ -557,12 +581,12 @@
 
   .mag-article-container {
     margin-bottom: 80px;
-    @include breakpoint(medium) {
+    @include breakpoint-max(medium) {
       margin-bottom: 40px;
     }
 
     .mag-article-img img {
-      @include breakpoint(medium) {
+      @include breakpoint-max(medium) {
         width: 100%;
       }
     }
@@ -587,24 +611,24 @@
         &[class*="mag-article-color-"] a {
           color: $primary-color;
           text-decoration: underline;
-          text-decoration-skip: ink;
+          @include td-skip;
 
           &:focus,
           &:hover {
-            text-decoration-color: $primary-color;
+            @include td-color($primary-color);
           }
         }
 
         &.mag-article-color-orange a {
-          text-decoration-color: $orange;
+          @include td-color($orange);
         }
 
         &.mag-article-color-turquoise a {
-          text-decoration-color: $turquoise;
+          @include td-color($turquoise);
         }
 
         &.mag-article-color-pink a {
-          text-decoration-color: $pink;
+          @include td-color($pink);
         }
       }
 
@@ -647,9 +671,16 @@
 .page-magazine {
   .main {
     padding-bottom: 0;
+    @include breakpoint-min(medium) {
+      padding-top: 100px;
+    }
 
     .container {
-      @include breakpoint(small) {
+      @include breakpoint-max(small) {
+        margin-bottom: 0;
+      }
+
+      .content-head {
         margin-bottom: 0;
       }
     }
@@ -666,6 +697,58 @@
   }
 }
 
+// HOMEPAGE FEATURED ARTICLE VIEW
+
+.view-stanford-magazine-article-featured {
+  .mag-article-container {
+    .mag-article-img {
+      img {
+        width: 100%;
+      }
+    }
+
+    .mag-article-content-container {
+      background: $white;
+      padding: 15px 30px 30px;
+      @include box-shadow;
+      @include breakpoint-max(medium) {
+        padding: 15px 30px 30px;
+      }
+
+      .mag-article-date {
+        color: $gray-orange;
+        font-size: em(20px);
+        font-weight: 100;
+        margin-bottom: 10px;
+        @include breakpoint-max(medium) {
+          font-size: em(18px);
+        }
+      }
+
+      .mag-article-title {
+        a {
+          @include td-color($turquoise);
+
+          &:focus,
+          &:hover {
+            @include td-color($primary-color);
+          }
+        }
+      }
+
+      .mag-article-topics {
+        font-size: em(18px);
+        line-height: 1.3em;
+        margin: 30px 0;
+        @include breakpoint-max(medium) {
+          font-size: em(16px);
+          line-height: 1.2em;
+        }
+      }
+    }
+  }
+}
+
 // PARAGRAPH TYPES
 
 .node-type-stanford-magazine-article {
@@ -674,28 +757,36 @@
     font-size: em(28px);
     margin-bottom: 1em;
   }
+
+  .paragraphs-item-p-wysiwyg-simple {
+    a {
+      text-decoration: underline;
+    }
+  }
 }
 
 // RELATED DEPARTMENTS BLOCK
 
 #block-ds-extras-related-departments {
-  width: 75%;
-  border-top: 2px solid $dark-gray;
-  margin: 0 auto 50px;
+  width: 85%;
+  border-top: 1px solid $dark-gray;
+  margin: 0 auto 80px;
   padding-top: 20px;
-  @include breakpoint(x-small) {
+  @include breakpoint-max(x-small) {
     width: 100%;
   }
 
   h2 {
-    font-size: em(22px);
+    font-size: em(18px);
     font-family: $primary-font;
     margin-bottom: 0;
   }
 
   .field-name-field-s-mag-article-dept {
+    font-size: em(18px);
+    line-height: 1.3em;
     width: 45%;
-    @include breakpoint(x-small) {
+    @include breakpoint-max(x-small) {
       width: 100%;
     }
   }

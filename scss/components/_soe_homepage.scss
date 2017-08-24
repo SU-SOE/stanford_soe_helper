@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+//
+// HOMEPAGE
+//
+
+.front {
+  .main {
+    padding: 0;
+  }
+
+  [id*="block-bean-homepage-2-column-"] {
+    .content {
+      width: 90%;
+      margin: 0 auto 50px;
+      @include breakpoint-min(large) {
+        width: 75%;
+      }
+
+      a:not(.btn) {
+        color: $primary-color;
+        text-decoration: underline;
+        @include td-skip;
+        @include td-color($turquoise);
+
+        &:focus,
+        &:hover {
+          @include td-color($primary-color);
+        }
+      }
+    }
+  }
+
+  .bean-stanford-postcard-linked .postcard-linked-container,
+  .view-stanford-page-banner-caption {
+    margin-bottom: 100px;
+  }
+
+  .view-stanford-ppl-spot-fw-banner-quote {
+    margin-bottom: 60px;
+  }
+
+  #block-bean-homepage-magazine-postcard-butto {
+    margin: 80px 0 60px;
+  }
+
+  #block-bean-stanford-soe-mailchimp-homepage- {
+    margin-bottom: 80px;
+  }
+
+  [id*="block-bean-homepage-pl-block-1"],
+  [id*="block-views-0969cf96ba3c89e5f5ea0784f69f7372"] {
+    margin-left: 12.75%;
+    @include breakpoint-max(small) {
+      margin-left: 0;
+    }
+  }
+
+  [id*="block-bean-homepage-pl-block-3"],
+  [id*="block-views-stanford-event-featured-block-1"] {
+    margin-right: 12.75%;
+    @include breakpoint-max(small) {
+      margin-right: 0;
+    }
+  }
+}
