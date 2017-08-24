@@ -5,7 +5,6 @@
 //
 
 // GENERAL
-
 body:not(.page-admin) {
   button,
   input,
@@ -111,6 +110,11 @@ body:not(.page-admin) {
       @include breakpoint-max(small) {
         margin-left: 0.4em;
       }
+    }
+
+    &.button:focus,
+    &.button:hover {
+      background-color: $primary-color;
     }
   }
 

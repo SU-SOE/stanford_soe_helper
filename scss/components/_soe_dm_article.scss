@@ -726,12 +726,16 @@
       }
 
       .mag-article-title {
-        a {
-          @include td-color($turquoise);
+        h2 {
+          font-size: em(28px);
 
-          &:focus,
-          &:hover {
-            @include td-color($primary-color);
+          a {
+            @include td-color($turquoise);
+
+            &:focus,
+            &:hover {
+              @include td-color($primary-color);
+            }
           }
         }
       }
