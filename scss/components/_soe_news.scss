@@ -36,7 +36,7 @@
 
     img {
       width: 100%;
-      height: 300px;
+      height: 360px;
       opacity: 0.4;
     }
   }
@@ -123,8 +123,10 @@
 
   .field-name-title h1 {
     color: $white;
+    font-size: em(48px);
     text-shadow: 0 0 4px $black;
     line-height: 1.3em;
+    margin: -9px 0 22px;
     @media (max-width: 910px) {
       font-size: 1.4em;
     }
@@ -186,6 +188,7 @@
 
       .feat-news-title {
         a {
+          font-size: em(28px);
           @include td-color($pink);
 
           &:focus,
@@ -196,7 +199,8 @@
       }
 
       .feat-news-teaser {
-        font-size: em(20px);
+        font-size: em(18px);
+        line-height: 1.3em;
       }
     }
   }

@@ -63,8 +63,7 @@
   .postcard-linked-container {
     display: flex;
     background: $white;
-    padding: 30px;
-    margin-bottom: 40px;
+    padding: 40px;
     @include box-shadow;
     @include breakpoint-max(small) {
       display: block;
@@ -91,13 +90,13 @@
           position: absolute;
           bottom: 20px;
           right: 20px;
-          width: 50px;
-          height: 50px;
+          width: 40px;
+          height: 40px;
 
           img {
-            width: 34px;
+            width: 26px;
             height: auto;
-            vertical-align: -16px;
+            vertical-align: -9px;
             padding: 3px 8px;
             @include breakpoint-max(x-small) {
               vertical-align: -19px;
@@ -112,6 +111,15 @@
       @include breakpoint-max(small) {
         width: auto;
         padding: 30px;
+      }
+
+      p {
+        font-size: em(18px);
+        line-height: 1.3em;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
       }
 
       .postcard-linked-title {
