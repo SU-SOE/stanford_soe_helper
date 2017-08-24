@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+//
+// PRINT
+// THIS STYLESHEET IS POINTED TO BY THE DRUPAL SUBMODULE BEING USED FOR DOM PDF
+// THIS FILE IS NOT INCLUDED IN THE SOE_COMPONENTS ROLL UP FILE. IT IS INCLUDED IN THE SOE_HELPER_PRINT SCSS FILE
+//
+
+// DM MAGAZINE ARTICLES
+
+.print-breadcrumb,
+.print-content .node-stanford-magazine-article .field-name-field-s-mag-article-accent-color,
+.print-content .node-stanford-magazine-article .field-name-field-s-mag-article-dept,
+.print-content .node-stanford-magazine-article .field-name-field-s-mag-article-featured,
+.print-content .node-stanford-magazine-article .field-name-field-s-mag-article-print,
+.print-footnote,
+.print-hr,
+.print-links,
+.print-site_name,
+.print-source_url {
+  display: none;
+}
+
+.print-logo {
+  width: 82%;
+  margin: 0 auto;
+
+  img {
+    width: 25%;
+    height: auto;
+    margin-top: 40px;
+  }
+}
+
+.print-content {
+  font-family: $primary-font;
+
+  h2:first-child {
+    font-size: em(26px);
+    line-height: 1.2em;
+    width: 90%;
+    margin: 40px auto 10px;
+  }
+
+  .paragraphs-item-p-wysiwyg-simple {
+    width: 100%;
+  }
+
+  .node-stanford-magazine-article {
+    h2,
+    h3,
+    h4 {
+      font-family: $roboto-slab;
+    }
+
+    h2 {
+      font-size: em(20px);
+      margin-top: 30px;
+    }
+
+    h3 {
+      font-size: em(16px);
+    }
+
+    h4 {
+      font-size: em(13px);
+    }
+
+    p {
+      font-size: em(13px);
+      line-height: 18px;
+    }
+
+    .content {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    .field-name-field-s-mag-article-topics {
+      width: 100%;
+      margin: 0 auto;
+
+      .field-items {
+        display: inline-flex;
+
+        .field-item {
+          a:after {
+            content: ", \00a0";
+            color: #333333;
+          }
+
+          &:last-child a:after {
+            content: none;
+          }
+        }
+      }
+
+      a {
+        color: $brand-bright;
+        font-size: em(13px);
+        font-weight: 300;
+        margin: 0 auto 18px;
+      }
+    }
+
+    .field-name-field-s-mag-article-byline,
+    .field-name-field-s-mag-article-date {
+      color: $gray-orange;
+      font-size: em(13px);
+      font-weight: 300;
+      display: inline-flex;
+      margin: 0 auto 32px;
+    }
+
+    .field-name-field-s-mag-article-date {
+      margin-left: 0;
+
+      .field-item:after {
+        content: "\00a0 | \00a0";
+      }
+    }
+
+    .field-name-field-s-mag-article-dek {
+      font-size: em(18px);
+      line-height: 1.3em;
+      margin: 20px auto 22px;
+      width: 90%;
+    }
+
+    .field-name-body {
+      margin: 0 auto;
+
+      .caption {
+        color: $gray-orange;
+        font-size: em(9px);
+        font-style: italic;
+        text-align: center;
+        margin: 0 auto;
+      }
+    }
+  }
+}

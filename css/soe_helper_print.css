@@ -1,0 +1,109 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100);
+/* line 11, ../scss/components/_soe_print.scss */
+.print-breadcrumb,
+.print-content .node-stanford-magazine-article .field-name-field-s-mag-article-accent-color,
+.print-content .node-stanford-magazine-article .field-name-field-s-mag-article-dept,
+.print-content .node-stanford-magazine-article .field-name-field-s-mag-article-featured,
+.print-content .node-stanford-magazine-article .field-name-field-s-mag-article-print,
+.print-footnote,
+.print-hr,
+.print-links,
+.print-site_name,
+.print-source_url {
+  display: none; }
+
+/* line 24, ../scss/components/_soe_print.scss */
+.print-logo {
+  width: 82%;
+  margin: 0 auto; }
+  /* line 28, ../scss/components/_soe_print.scss */
+  .print-logo img {
+    width: 25%;
+    height: auto;
+    margin-top: 40px; }
+
+/* line 35, ../scss/components/_soe_print.scss */
+.print-content {
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  /* line 38, ../scss/components/_soe_print.scss */
+  .print-content h2:first-child {
+    font-size: 1.3em;
+    line-height: 1.2em;
+    width: 90%;
+    margin: 40px auto 10px; }
+  /* line 45, ../scss/components/_soe_print.scss */
+  .print-content .paragraphs-item-p-wysiwyg-simple {
+    width: 100%; }
+  /* line 50, ../scss/components/_soe_print.scss */
+  .print-content .node-stanford-magazine-article h2,
+  .print-content .node-stanford-magazine-article h3,
+  .print-content .node-stanford-magazine-article h4 {
+    font-family: "Roboto Slab", serif; }
+  /* line 56, ../scss/components/_soe_print.scss */
+  .print-content .node-stanford-magazine-article h2 {
+    font-size: 1em;
+    margin-top: 30px; }
+  /* line 61, ../scss/components/_soe_print.scss */
+  .print-content .node-stanford-magazine-article h3 {
+    font-size: 0.8em; }
+  /* line 65, ../scss/components/_soe_print.scss */
+  .print-content .node-stanford-magazine-article h4 {
+    font-size: 0.65em; }
+  /* line 69, ../scss/components/_soe_print.scss */
+  .print-content .node-stanford-magazine-article p {
+    font-size: 0.65em;
+    line-height: 18px; }
+  /* line 74, ../scss/components/_soe_print.scss */
+  .print-content .node-stanford-magazine-article .content {
+    width: 90%;
+    margin: 0 auto; }
+  /* line 79, ../scss/components/_soe_print.scss */
+  .print-content .node-stanford-magazine-article .field-name-field-s-mag-article-topics {
+    width: 100%;
+    margin: 0 auto; }
+    /* line 83, ../scss/components/_soe_print.scss */
+    .print-content .node-stanford-magazine-article .field-name-field-s-mag-article-topics .field-items {
+      display: inline-flex; }
+      /* line 87, ../scss/components/_soe_print.scss */
+      .print-content .node-stanford-magazine-article .field-name-field-s-mag-article-topics .field-items .field-item a:after {
+        content: ", \00a0";
+        color: #333333; }
+      /* line 92, ../scss/components/_soe_print.scss */
+      .print-content .node-stanford-magazine-article .field-name-field-s-mag-article-topics .field-items .field-item:last-child a:after {
+        content: none; }
+    /* line 98, ../scss/components/_soe_print.scss */
+    .print-content .node-stanford-magazine-article .field-name-field-s-mag-article-topics a {
+      color: #B1040E;
+      font-size: 0.65em;
+      font-weight: 300;
+      margin: 0 auto 18px; }
+  /* line 106, ../scss/components/_soe_print.scss */
+  .print-content .node-stanford-magazine-article .field-name-field-s-mag-article-byline,
+  .print-content .node-stanford-magazine-article .field-name-field-s-mag-article-date {
+    color: #686868;
+    font-size: 0.65em;
+    font-weight: 300;
+    display: inline-flex;
+    margin: 0 auto 32px; }
+  /* line 115, ../scss/components/_soe_print.scss */
+  .print-content .node-stanford-magazine-article .field-name-field-s-mag-article-date {
+    margin-left: 0; }
+    /* line 118, ../scss/components/_soe_print.scss */
+    .print-content .node-stanford-magazine-article .field-name-field-s-mag-article-date .field-item:after {
+      content: "\00a0 | \00a0"; }
+  /* line 123, ../scss/components/_soe_print.scss */
+  .print-content .node-stanford-magazine-article .field-name-field-s-mag-article-dek {
+    font-size: 0.9em;
+    line-height: 1.3em;
+    margin: 20px auto 22px;
+    width: 90%; }
+  /* line 130, ../scss/components/_soe_print.scss */
+  .print-content .node-stanford-magazine-article .field-name-body {
+    margin: 0 auto; }
+    /* line 133, ../scss/components/_soe_print.scss */
+    .print-content .node-stanford-magazine-article .field-name-body .caption {
+      color: #686868;
+      font-size: 0.45em;
+      font-style: italic;
+      text-align: center;
+      margin: 0 auto; }
