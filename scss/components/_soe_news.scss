@@ -187,13 +187,16 @@
       }
 
       .feat-news-title {
-        a {
+        h2 {
           font-size: em(28px);
-          @include td-color($pink);
 
-          &:focus,
-          &:hover {
-            @include td-color($primary-color);
+          a {
+            @include td-color($pink);
+
+            &:focus,
+            &:hover {
+              @include td-color($primary-color);
+            }
           }
         }
       }

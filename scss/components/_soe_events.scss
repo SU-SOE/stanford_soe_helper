@@ -30,16 +30,16 @@
 
         .feat-events-title {
           h2 {
-            margin-top: 0;
-          }
-
-          a {
             font-size: em(28px);
-            @include td-color($orange);
+            margin-top: 0;
 
-            &:focus,
-            &:hover {
-              @include td-color($primary-color);
+            a {
+              @include td-color($orange);
+
+              &:focus,
+              &:hover {
+                @include td-color($primary-color);
+              }
             }
           }
         }
