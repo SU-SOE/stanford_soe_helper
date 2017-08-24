@@ -11,10 +11,10 @@
 
   [id*="block-bean-homepage-2-column-"] {
     .content {
-      width: 90%;
+      width: 82%;
       margin: 0 auto 50px;
       @include breakpoint-min(large) {
-        width: 75%;
+        width: 85%;
       }
 
       a:not(.btn) {
@@ -27,6 +27,10 @@
         &:hover {
           @include td-color($primary-color);
         }
+      }
+
+      p.columns {
+        margin-bottom: 50px;
       }
     }
   }
@@ -46,6 +50,18 @@
 
   #block-bean-stanford-soe-mailchimp-homepage- {
     margin-bottom: 80px;
+  }
+
+  .mailchimp-magazine-block #mc_embed_signup_scroll {
+    padding: 50px;
+
+    h2 {
+      margin-bottom: 0;
+    }
+
+    p {
+      margin-bottom: 1.8em;
+    }
   }
 
   [id*="block-bean-homepage-pl-block-1"],

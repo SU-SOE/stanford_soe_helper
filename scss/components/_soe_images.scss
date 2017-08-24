@@ -101,12 +101,12 @@
     }
 
     .more-link {
-      font-size: em(22px);
+      font-size: em(20px);
 
       a {
         color: $black;
         font-family: $roboto-slab;
-        font-size: em(32px);
+        font-size: em(28px);
         font-weight: 800;
         line-height: 43px;
 
@@ -159,17 +159,11 @@
       }
 
       &.banner-bottom {
-        bottom: 100px;
-        @include breakpoint-max(medium) {
-          bottom: 55px;
-        }
+        bottom: 40px;
       }
 
       &.banner-top {
-        top: 100px;
-        @include breakpoint-max(medium) {
-          top: 55px;
-        }
+        top: 40px;
       }
     }
 
