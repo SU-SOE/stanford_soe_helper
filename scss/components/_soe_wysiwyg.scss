@@ -29,6 +29,19 @@ a {
     background: $pink;
   }
 
+  &.external-link {
+    :after {
+      content: url("../img/soe_external_link_icon_red.svg");
+      padding-left: 5px;
+      vertical-align: -2%;
+    }
+
+    &:focus:after,
+    &:hover:after {
+      content: url("../img/soe_external_link_icon_black.svg");
+    }
+  }
+
   &.btn.external-link:after {
     content: url("../img/soe_external_link_icon_white.svg");
     padding-left: 5px;
@@ -45,19 +58,6 @@ a {
     &:focus:after,
     &:hover:after {
       content: url("../img/soe_external_link_icon_white.svg");
-    }
-  }
-
-  &.external-link {
-    :after {
-      content: url("../img/soe_external_link_icon_red.svg");
-      padding-left: 5px;
-      vertical-align: -2%;
-    }
-
-    &:focus:after,
-    &:hover:after {
-      content: url("../img/soe_external_link_icon_black.svg");
     }
   }
 }
