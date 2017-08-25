@@ -283,34 +283,37 @@ a.btn.external-link:after {
   padding-left: 5px;
   vertical-align: -2%; }
 /* line 39, ../scss/components/_soe_wysiwyg.scss */
-a[class*="btn-"].btn.external-link :after {
+a[class*="btn-"].btn.external-link:after {
   content: url("../img/soe_external_link_icon_black.svg");
   padding-left: 5px;
   vertical-align: -2%; }
 /* line 45, ../scss/components/_soe_wysiwyg.scss */
 a[class*="btn-"].btn.external-link:focus:after, a[class*="btn-"].btn.external-link:hover:after {
   content: url("../img/soe_external_link_icon_white.svg"); }
-/* line 51, ../scss/components/_soe_wysiwyg.scss */
-a.external-link:after {
+/* line 52, ../scss/components/_soe_wysiwyg.scss */
+a.external-link :after {
   content: url("../img/soe_external_link_icon_red.svg");
   padding-left: 5px;
   vertical-align: -2%; }
-
 /* line 58, ../scss/components/_soe_wysiwyg.scss */
+a.external-link:focus:after, a.external-link:hover:after {
+  content: url("../img/soe_external_link_icon_black.svg"); }
+
+/* line 65, ../scss/components/_soe_wysiwyg.scss */
 p.btn-center {
   text-align: center; }
-  /* line 61, ../scss/components/_soe_wysiwyg.scss */
+  /* line 68, ../scss/components/_soe_wysiwyg.scss */
   p.btn-center a.btn {
     margin-right: 40px; }
     @media (max-width: 767px) {
-      /* line 61, ../scss/components/_soe_wysiwyg.scss */
+      /* line 68, ../scss/components/_soe_wysiwyg.scss */
       p.btn-center a.btn {
         margin-right: 10px; } }
-    /* line 67, ../scss/components/_soe_wysiwyg.scss */
+    /* line 74, ../scss/components/_soe_wysiwyg.scss */
     p.btn-center a.btn:last-child {
       margin-right: 0; }
 
-/* line 73, ../scss/components/_soe_wysiwyg.scss */
+/* line 80, ../scss/components/_soe_wysiwyg.scss */
 p.columns {
   font-family: "Roboto Slab", serif;
   font-size: 1.4em;
@@ -323,13 +326,13 @@ p.columns {
   -moz-column-gap: 30px;
   column-gap: 30px; }
   @media (max-width: 767px) {
-    /* line 73, ../scss/components/_soe_wysiwyg.scss */
+    /* line 80, ../scss/components/_soe_wysiwyg.scss */
     p.columns {
       -webkit-column-count: 1;
       -moz-column-count: 1;
       column-count: 1; } }
 
-/* line 85, ../scss/components/_soe_wysiwyg.scss */
+/* line 92, ../scss/components/_soe_wysiwyg.scss */
 p.related-link {
   background: #FFFFFF;
   line-height: 1.3em;
@@ -337,25 +340,25 @@ p.related-link {
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2); }
-  /* line 91, ../scss/components/_soe_wysiwyg.scss */
+  /* line 98, ../scss/components/_soe_wysiwyg.scss */
   p.related-link a {
     text-decoration: none; }
-    /* line 94, ../scss/components/_soe_wysiwyg.scss */
+    /* line 101, ../scss/components/_soe_wysiwyg.scss */
     p.related-link a:focus, p.related-link a:hover {
       text-decoration: underline; }
-  /* line 100, ../scss/components/_soe_wysiwyg.scss */
+  /* line 107, ../scss/components/_soe_wysiwyg.scss */
   p.related-link:before {
     content: "Related \00a0 | \00a0";
     font-weight: 600; }
 
-/* line 107, ../scss/components/_soe_wysiwyg.scss */
+/* line 114, ../scss/components/_soe_wysiwyg.scss */
 p.summary.drop-cap:first-letter {
   font-size: 2.875em;
   font-weight: 600;
   float: left;
   padding: 25px 10px 0 0; }
 
-/* line 115, ../scss/components/_soe_wysiwyg.scss */
+/* line 122, ../scss/components/_soe_wysiwyg.scss */
 .caption {
   color: #686868;
   font-weight: 300;
@@ -364,14 +367,14 @@ p.summary.drop-cap:first-letter {
   text-align: center;
   margin: 0 2em 4em; }
 
-/* line 125, ../scss/components/_soe_wysiwyg.scss */
+/* line 132, ../scss/components/_soe_wysiwyg.scss */
 .main table {
   width: 100%;
   margin-bottom: 2em; }
-/* line 131, ../scss/components/_soe_wysiwyg.scss */
+/* line 138, ../scss/components/_soe_wysiwyg.scss */
 .main p.float-left {
   margin-right: 15px; }
-/* line 135, ../scss/components/_soe_wysiwyg.scss */
+/* line 142, ../scss/components/_soe_wysiwyg.scss */
 .main p.float-right {
   margin-left: 15px; }
 
