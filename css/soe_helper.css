@@ -268,23 +268,23 @@ th {
 /* line 16, ../scss/components/_soe_wysiwyg.scss */
 a[class*="btn-"] {
   color: #000000; }
-  /* line 19, ../scss/components/_soe_wysiwyg.scss */
-  a[class*="btn-"].external-link:after {
-    content: url("../img/soe_external_link_icon_black.svg");
-    padding-left: 5px;
-    vertical-align: -2%; }
-/* line 26, ../scss/components/_soe_wysiwyg.scss */
+/* line 20, ../scss/components/_soe_wysiwyg.scss */
 a.btn-orange {
   background: #FFBD54; }
-/* line 30, ../scss/components/_soe_wysiwyg.scss */
+/* line 24, ../scss/components/_soe_wysiwyg.scss */
 a.btn-turquoise {
   background: #00ECE9; }
-/* line 34, ../scss/components/_soe_wysiwyg.scss */
+/* line 28, ../scss/components/_soe_wysiwyg.scss */
 a.btn-pink {
   background: #FF525C; }
-/* line 38, ../scss/components/_soe_wysiwyg.scss */
+/* line 32, ../scss/components/_soe_wysiwyg.scss */
 a.btn.external-link:after {
   content: url("../img/soe_external_link_icon_white.svg");
+  padding-left: 5px;
+  vertical-align: -2%; }
+/* line 38, ../scss/components/_soe_wysiwyg.scss */
+a[class*="btn-"].btn.external-link:after {
+  content: url("../img/soe_external_link_icon_black.svg");
   padding-left: 5px;
   vertical-align: -2%; }
 /* line 44, ../scss/components/_soe_wysiwyg.scss */
