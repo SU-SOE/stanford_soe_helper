@@ -268,36 +268,46 @@ th {
 /* line 16, ../scss/components/_soe_wysiwyg.scss */
 a[class*="btn-"] {
   color: #000000; }
-/* line 20, ../scss/components/_soe_wysiwyg.scss */
+  /* line 19, ../scss/components/_soe_wysiwyg.scss */
+  a[class*="btn-"].external-link {
+    content: url("../img/soe_external_link_icon_black.svg");
+    padding-left: 5px;
+    vertical-align: -2%; }
+/* line 26, ../scss/components/_soe_wysiwyg.scss */
 a.btn-orange {
   background: #FFBD54; }
-/* line 24, ../scss/components/_soe_wysiwyg.scss */
+/* line 30, ../scss/components/_soe_wysiwyg.scss */
 a.btn-turquoise {
   background: #00ECE9; }
-/* line 28, ../scss/components/_soe_wysiwyg.scss */
+/* line 34, ../scss/components/_soe_wysiwyg.scss */
 a.btn-pink {
   background: #FF525C; }
-/* line 32, ../scss/components/_soe_wysiwyg.scss */
+/* line 38, ../scss/components/_soe_wysiwyg.scss */
+a.btn.external-link:after {
+  content: url("../img/soe_external_link_icon_white.svg");
+  padding-left: 5px;
+  vertical-align: -2%; }
+/* line 44, ../scss/components/_soe_wysiwyg.scss */
 a.external-link:after {
   content: url("../img/soe_external_link_icon_red.svg");
   padding-left: 5px;
   vertical-align: -2%; }
 
-/* line 39, ../scss/components/_soe_wysiwyg.scss */
+/* line 51, ../scss/components/_soe_wysiwyg.scss */
 p.btn-center {
   text-align: center; }
-  /* line 42, ../scss/components/_soe_wysiwyg.scss */
+  /* line 54, ../scss/components/_soe_wysiwyg.scss */
   p.btn-center a.btn {
     margin-right: 40px; }
     @media (max-width: 767px) {
-      /* line 42, ../scss/components/_soe_wysiwyg.scss */
+      /* line 54, ../scss/components/_soe_wysiwyg.scss */
       p.btn-center a.btn {
         margin-right: 10px; } }
-    /* line 48, ../scss/components/_soe_wysiwyg.scss */
+    /* line 60, ../scss/components/_soe_wysiwyg.scss */
     p.btn-center a.btn:last-child {
       margin-right: 0; }
 
-/* line 54, ../scss/components/_soe_wysiwyg.scss */
+/* line 66, ../scss/components/_soe_wysiwyg.scss */
 p.columns {
   font-family: "Roboto Slab", serif;
   font-size: 1.4em;
@@ -310,13 +320,13 @@ p.columns {
   -moz-column-gap: 30px;
   column-gap: 30px; }
   @media (max-width: 767px) {
-    /* line 54, ../scss/components/_soe_wysiwyg.scss */
+    /* line 66, ../scss/components/_soe_wysiwyg.scss */
     p.columns {
       -webkit-column-count: 1;
       -moz-column-count: 1;
       column-count: 1; } }
 
-/* line 66, ../scss/components/_soe_wysiwyg.scss */
+/* line 78, ../scss/components/_soe_wysiwyg.scss */
 p.related-link {
   background: #FFFFFF;
   line-height: 1.3em;
@@ -324,25 +334,25 @@ p.related-link {
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2); }
-  /* line 72, ../scss/components/_soe_wysiwyg.scss */
+  /* line 84, ../scss/components/_soe_wysiwyg.scss */
   p.related-link a {
     text-decoration: none; }
-    /* line 75, ../scss/components/_soe_wysiwyg.scss */
+    /* line 87, ../scss/components/_soe_wysiwyg.scss */
     p.related-link a:focus, p.related-link a:hover {
       text-decoration: underline; }
-  /* line 81, ../scss/components/_soe_wysiwyg.scss */
+  /* line 93, ../scss/components/_soe_wysiwyg.scss */
   p.related-link:before {
     content: "Related \00a0 | \00a0";
     font-weight: 600; }
 
-/* line 88, ../scss/components/_soe_wysiwyg.scss */
+/* line 100, ../scss/components/_soe_wysiwyg.scss */
 p.summary.drop-cap:first-letter {
   font-size: 2.875em;
   font-weight: 600;
   float: left;
   padding: 25px 10px 0 0; }
 
-/* line 96, ../scss/components/_soe_wysiwyg.scss */
+/* line 108, ../scss/components/_soe_wysiwyg.scss */
 .caption {
   color: #686868;
   font-weight: 300;
@@ -351,14 +361,14 @@ p.summary.drop-cap:first-letter {
   text-align: center;
   margin: 0 2em 4em; }
 
-/* line 106, ../scss/components/_soe_wysiwyg.scss */
+/* line 118, ../scss/components/_soe_wysiwyg.scss */
 .main table {
   width: 100%;
   margin-bottom: 2em; }
-/* line 112, ../scss/components/_soe_wysiwyg.scss */
+/* line 124, ../scss/components/_soe_wysiwyg.scss */
 .main p.float-left {
   margin-right: 15px; }
-/* line 116, ../scss/components/_soe_wysiwyg.scss */
+/* line 128, ../scss/components/_soe_wysiwyg.scss */
 .main p.float-right {
   margin-left: 15px; }
 
