@@ -1562,21 +1562,21 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
 
 @media (min-width: 1200px) {
   /* line 40, ../scss/components/_soe_beans.scss */
-  [id*="block-bean-sitewide-facebook-cta-block"].block[class*="span"],
-  [id*="block-bean-sitewide-instagram-cta-block"].block[class*="span"],
-  [id*="block-bean-sitewide-twitter-cta-block"].block[class*="span"] {
+  .content-body [id*="block-bean-sitewide-facebook-cta-block"].block[class*="span"],
+  .content-body [id*="block-bean-sitewide-instagram-cta-block"].block[class*="span"],
+  .content-body [id*="block-bean-sitewide-twitter-cta-block"].block[class*="span"] {
     width: 20%; } }
 @media (max-width: 767px) {
   /* line 40, ../scss/components/_soe_beans.scss */
-  [id*="block-bean-sitewide-facebook-cta-block"].block[class*="span"],
-  [id*="block-bean-sitewide-instagram-cta-block"].block[class*="span"],
-  [id*="block-bean-sitewide-twitter-cta-block"].block[class*="span"] {
-    width: 100%;
-    margin: 0; } }
+  .content-body [id*="block-bean-sitewide-facebook-cta-block"].block[class*="span"],
+  .content-body [id*="block-bean-sitewide-instagram-cta-block"].block[class*="span"],
+  .content-body [id*="block-bean-sitewide-twitter-cta-block"].block[class*="span"] {
+    width: 50%;
+    margin: 0 25% 20px; } }
 /* line 51, ../scss/components/_soe_beans.scss */
-[id*="block-bean-sitewide-facebook-cta-block"].block[class*="span"] .field-name-field-s-cta-icon,
-[id*="block-bean-sitewide-instagram-cta-block"].block[class*="span"] .field-name-field-s-cta-icon,
-[id*="block-bean-sitewide-twitter-cta-block"].block[class*="span"] .field-name-field-s-cta-icon {
+.content-body [id*="block-bean-sitewide-facebook-cta-block"].block[class*="span"] .field-name-field-s-cta-icon,
+.content-body [id*="block-bean-sitewide-instagram-cta-block"].block[class*="span"] .field-name-field-s-cta-icon,
+.content-body [id*="block-bean-sitewide-twitter-cta-block"].block[class*="span"] .field-name-field-s-cta-icon {
   font-size: 2.5em; }
 
 @media (min-width: 1200px) {
