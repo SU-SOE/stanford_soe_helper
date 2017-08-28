@@ -178,6 +178,15 @@
     &.banner-pink div.more-link {
       background: $pink;
     }
+  }
+}
 
+// OPPORTUNITY GRID VIEW
+
+.view-soe-opportunity-grid {
+  .views-row img {
+    @include breakpoint-max(small) {
+      width: 100%;
+    }
   }
 }
