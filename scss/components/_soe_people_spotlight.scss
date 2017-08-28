@@ -38,8 +38,10 @@
       .field-item:before {
         content: open-quote;
       }
+    }
 
-      .field-item:after {
+    .field-name-body {
+      p:last-child:after {
         content: close-quote;
       }
     }
