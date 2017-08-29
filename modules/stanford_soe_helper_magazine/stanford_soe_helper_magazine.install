@@ -224,3 +224,25 @@ function _stanford_soe_helper_magazine_editor_perms() {
     _stanford_soe_helper_sitewide_grant_permissions($editor->rid, $editor_perms);
   }
 }
+
+/**
+ * Implements hook_update_N().
+ */
+function stanford_soe_helper_magazine_update_7201() {
+  $field = field_info_field('field_s_mag_article_featured');
+  if (!empty($field)) {
+    $q = db_select('node', 'n');
+    $q->fields('n', array('nid'));
+    $q->condition('n.type', 'stanford_magazine_article', '=');
+    $q->condition('n.uid', 0 , '=');
+    $q->join('pathauto_state', 'ps', 'ps.entity_id = n.nid');
+    $r = $q->execute()->fetchAll();
+    foreach ($r as $mag_article) {
+      $node = node_load($mag_article->nid);
+      if ($node->path['pathauto'] == 0) {
+        $node->path['pathauto'] = 1;
+        node_save($node);
+      }
+    }
+  }
+}
