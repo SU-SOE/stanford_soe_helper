@@ -42,10 +42,10 @@
       }
     }
 
-     > .active > a:hover,
+     > .active-trail > a,
      > li > a:focus,
      > li > a:hover,
-    > .active-trail > a {
+    > .active > a:hover {
       border-bottom: 2px solid $primary-color;
       @include breakpoint-max(small) {
         border-bottom: none;
@@ -74,6 +74,7 @@
   border-bottom: 1px solid #e1e1e1;
 
   ul li.last.leaf {
+    margin-bottom: 0;
     @include breakpoint-max(small) {
       height: auto;
       border-right: none;

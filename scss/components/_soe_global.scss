@@ -144,23 +144,23 @@ li {
   margin-bottom: 16px;
 }
 
-#content {
-  .content {
-    ul li {
-      list-style-type: disc;
+.content {
+  ul li {
+    list-style-type: disc;
 
-      &:last-child {
-        margin-bottom: 1.5em;
-      }
+    &:last-child {
+      margin-bottom: 1.5em;
     }
+  }
 
-    ol li {
-      &:last-child {
-        margin-bottom: 2em;
-      }
+  ol li {
+    &:last-child {
+      margin-bottom: 2em;
     }
+  }
 
-    ul.pager li {
+  ul.pager {
+    li {
       a {
         border: 1px solid $gray;
         background: $white;
@@ -178,6 +178,32 @@ li {
       &.pager-current {
         margin-right: 4px;
         font-weight: 300;
+      }
+    }
+
+    &.pager-load-more {
+      margin-bottom: 100px;
+      @include breakpoint-max(small) {
+        margin-bottom: 50px;
+      }
+
+      a {
+        color: $white;
+        font-size: em(20px);
+        text-transform: capitalize;
+        background-color: $brand-bright;
+        border-radius: 0;
+        border: none;
+        @include box-shadow;
+        padding: 0.7em 4em;
+        margin-bottom: 0;
+
+        &:focus,
+        &:hover {
+          color: $white;
+          background-color: $primary-color;
+          font-weight: 400;
+        }
       }
     }
   }
