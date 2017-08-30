@@ -447,34 +447,6 @@
       }
     }
   }
-
-  #content .content & {
-    .pager-load-more {
-      margin-bottom: 100px;
-      @include breakpoint-max(small) {
-        margin-bottom: 50px;
-      }
-
-      a {
-        color: $white;
-        font-size: em(22px);
-        background-color: $brand-bright;
-        border-radius: 0;
-        border-style: none;
-        @include box-shadow;
-        padding: 0.7em 4em;
-        margin: 0;
-
-        &:focus,
-        &:hover {
-          color: $white;
-          font-weight: 400;
-          background-color: $primary-color;
-          margin: 0;
-        }
-      }
-    }
-  }
 }
 
 // RELATED ISSUES VIEW
