@@ -87,10 +87,16 @@
 
       .postcard-linked-img {
         position: relative;
+        overflow: hidden;
 
         .field-name-field-s-post-link-image img {
+          @include transition;
           @include breakpoint-max(small) {
             width: 100%;
+          }
+
+          &:hover {
+            @include transform (scale(1.03));
           }
         }
 
