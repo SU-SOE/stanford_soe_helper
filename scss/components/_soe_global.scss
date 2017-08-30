@@ -160,27 +160,29 @@ li {
       }
     }
 
-    ul.pager li {
-      a {
-        border: 1px solid $gray;
-        background: $white;
-        margin-bottom: 12px;
-        margin-right: 4px;
-        font-size: 0.9em;
+    ul.pager {
+      li {
+        a {
+          border: 1px solid $gray;
+          background: $white;
+          margin-bottom: 12px;
+          margin-right: 4px;
+          font-size: 0.9em;
 
-        &:focus,
-        &:hover {
+          &:focus,
+          &:hover {
+            margin-right: 4px;
+            font-weight: 300;
+          }
+        }
+
+        &.pager-current {
           margin-right: 4px;
           font-weight: 300;
         }
       }
 
-      &.pager-current {
-        margin-right: 4px;
-        font-weight: 300;
-      }
-
-      .pager-load-more {
+      &.pager-load-more {
         margin-bottom: 100px;
         @include breakpoint-max(small) {
           margin-bottom: 50px;
