@@ -58,9 +58,18 @@
         .postcard-linked-img {
           position: relative;
 
-          .field-name-field-s-lp-item-image img {
-            @include breakpoint-max(small) {
-              width: 100%;
+          .field-name-field-s-lp-item-image {
+            overflow: hidden;
+
+            img {
+              @include transition;
+              @include breakpoint-max(small) {
+                width: 100%;
+              }
+
+              &:hover {
+                @include transform (scale(1.03));
+              }
             }
           }
 
