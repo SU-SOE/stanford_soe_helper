@@ -190,15 +190,19 @@ li {
 
         a {
           color: $white;
+          font-size: em(20px);
           background-color: $brand-bright;
           border-radius: 0;
+          border: none;
           @include box-shadow;
           padding: 0.7em 4em;
+          margin-bottom: 0;
 
           &:focus,
           &:hover {
             color: $white;
             background-color: $primary-color;
+            font-weight: 400;
           }
         }
       }
