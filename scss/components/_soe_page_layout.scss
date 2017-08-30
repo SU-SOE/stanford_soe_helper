@@ -171,8 +171,19 @@
 // VIEWS GRID
 
 .views-grid-two .views-row {
-  width: 46%;
-  margin-right: 7%;
+  @include breakpoint-min(small) {
+    width: 46%;
+    margin-right: 7%;
+  }
+}
+
+// SPANS
+
+.row-fluid .span6 {
+  @include breakpoint-min(large) {
+    width: 46.5%;
+    margin-left: 7%;
+  }
 }
 
 // MISCELLANEOUS

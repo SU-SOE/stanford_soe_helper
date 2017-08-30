@@ -203,7 +203,6 @@
       }
       @media (max-width: 650px) {
         display: block;
-        padding: 50px 20px;
       }
     }
 
@@ -235,6 +234,10 @@
     }
 
     .spotlight-info-container {
+      @media (max-width: 650px) {
+        padding: 50px 20px;
+      }
+
       .spotlight-name {
         &[class*="spotlight-name-color-"] a {
           text-decoration: underline;
