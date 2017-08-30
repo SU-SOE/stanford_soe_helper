@@ -58,9 +58,18 @@
         .postcard-linked-img {
           position: relative;
 
-          .field-name-field-s-lp-item-image img {
-            @include breakpoint-max(small) {
-              width: 100%;
+          .field-name-field-s-lp-item-image {
+            overflow: hidden;
+
+            img {
+              @include transition;
+              @include breakpoint-max(small) {
+                width: 100%;
+              }
+
+              &:hover {
+                @include transform (scale(1.03));
+              }
             }
           }
 
@@ -90,7 +99,7 @@
         a.postcard-linked-title {
           color: $primary-color;
           font-family: $roboto-slab;
-          font-size: em(32px);
+          font-size: em(28px);
           font-weight: 600;
           letter-spacing: 0.02em;
           @include td-skip;
@@ -165,6 +174,30 @@
 
   .view-mode-stanford_medium_square {
     border-top: 1px solid $gray;
+  }
+}
+
+// VIEWS GRID
+
+.views-grid-two .views-row {
+  @include breakpoint-min(small) {
+    width: 46%;
+    margin-right: 7%;
+  }
+}
+
+// SPANS
+
+.row-fluid .span6 {
+  @include breakpoint-min(large) {
+    width: 46.5%;
+    margin-left: 7%;
+  }
+
+  &.next-row {
+    @include breakpoint-min(large) {
+      margin-left: 0;
+    }
   }
 }
 
