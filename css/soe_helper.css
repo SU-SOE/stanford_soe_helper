@@ -190,6 +190,7 @@ li {
   .content ul.pager.pager-load-more a {
     color: #FFFFFF;
     font-size: 1em;
+    text-transform: capitalize;
     background-color: #B1040E;
     border-radius: 0;
     border: none;
@@ -198,13 +199,13 @@ li {
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
     padding: 0.7em 4em;
     margin-bottom: 0; }
-    /* line 200, ../scss/components/_soe_global.scss */
+    /* line 201, ../scss/components/_soe_global.scss */
     .content ul.pager.pager-load-more a:focus, .content ul.pager.pager-load-more a:hover {
       color: #FFFFFF;
       background-color: #333333;
       font-weight: 400; }
 
-/* line 211, ../scss/components/_soe_global.scss */
+/* line 212, ../scss/components/_soe_global.scss */
 td,
 th {
   padding: 0.8em;
@@ -214,27 +215,27 @@ th {
   border-right: none;
   border-left: none; }
 
-/* line 221, ../scss/components/_soe_global.scss */
+/* line 222, ../scss/components/_soe_global.scss */
 th {
   background: #EFEFEF; }
 
-/* line 225, ../scss/components/_soe_global.scss */
+/* line 226, ../scss/components/_soe_global.scss */
 .well {
   background: #FFFFFF;
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2); }
-  /* line 229, ../scss/components/_soe_global.scss */
+  /* line 230, ../scss/components/_soe_global.scss */
   .well h2 {
     font-size: 1.6em;
     font-weight: 600; }
-  /* line 234, ../scss/components/_soe_global.scss */
+  /* line 235, ../scss/components/_soe_global.scss */
   .well p {
     font-size: 1em;
     font-weight: 400;
     line-height: 1.5em; }
 
-/* line 241, ../scss/components/_soe_global.scss */
+/* line 242, ../scss/components/_soe_global.scss */
 .descriptor {
   font-size: 0.9em;
   line-height: 1.2em;
@@ -242,45 +243,45 @@ th {
   text-transform: none;
   margin-bottom: 4px; }
 
-/* line 249, ../scss/components/_soe_global.scss */
+/* line 250, ../scss/components/_soe_global.scss */
 .postcard-left {
   margin-top: 6px; }
 
-/* line 253, ../scss/components/_soe_global.scss */
+/* line 254, ../scss/components/_soe_global.scss */
 .views-row-lines .views-row {
   border-color: #D7D7D7; }
 
-/* line 257, ../scss/components/_soe_global.scss */
+/* line 258, ../scss/components/_soe_global.scss */
 #wrap {
   background: #F8F8F8; }
 
-/* line 261, ../scss/components/_soe_global.scss */
+/* line 262, ../scss/components/_soe_global.scss */
 .main {
   padding: 80px 0 50px;
   background: #F8F8F8; }
-  /* line 265, ../scss/components/_soe_global.scss */
+  /* line 266, ../scss/components/_soe_global.scss */
   .main p {
     margin: 0 0 1.5em; }
-    /* line 268, ../scss/components/_soe_global.scss */
+    /* line 269, ../scss/components/_soe_global.scss */
     .main p a {
       text-decoration: underline; }
-      /* line 271, ../scss/components/_soe_global.scss */
+      /* line 272, ../scss/components/_soe_global.scss */
       .main p a.btn {
         text-decoration: none; }
-  /* line 277, ../scss/components/_soe_global.scss */
+  /* line 278, ../scss/components/_soe_global.scss */
   .main .block {
     margin-bottom: 50px; }
 
 @media (max-width: 767px) {
-  /* line 282, ../scss/components/_soe_global.scss */
+  /* line 283, ../scss/components/_soe_global.scss */
   .container {
     margin-bottom: 10px; }
-    /* line 286, ../scss/components/_soe_global.scss */
+    /* line 287, ../scss/components/_soe_global.scss */
     #fullwidth-bottom .container {
       margin-bottom: 0; } }
 
 @media (min-width: 1200px) {
-  /* line 292, ../scss/components/_soe_global.scss */
+  /* line 293, ../scss/components/_soe_global.scss */
   #content.span9 {
     width: 740px;
     margin-left: 80px; } }
