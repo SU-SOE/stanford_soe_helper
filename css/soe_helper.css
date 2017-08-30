@@ -963,12 +963,16 @@ p.summary.drop-cap:first-letter {
   .row-fluid .span6 {
     width: 46.5%;
     margin-left: 7%; } }
+@media (min-width: 1200px) {
+  /* line 188, ../scss/components/_soe_page_layout.scss */
+  .row-fluid .span6.next-row {
+    margin-left: 0; } }
 
-/* line 191, ../scss/components/_soe_page_layout.scss */
+/* line 197, ../scss/components/_soe_page_layout.scss */
 .node .group_s_postcard_image .field-collection-container > .field > .field-items > .field-item {
   margin-left: 2em; }
   @media (max-width: 400px) {
-    /* line 191, ../scss/components/_soe_page_layout.scss */
+    /* line 197, ../scss/components/_soe_page_layout.scss */
     .node .group_s_postcard_image .field-collection-container > .field > .field-items > .field-item {
       margin-left: 0; } }
 

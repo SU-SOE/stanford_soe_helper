@@ -184,6 +184,12 @@
     width: 46.5%;
     margin-left: 7%;
   }
+
+  &.next-row {
+    @include breakpoint-min(large) {
+      margin-left: 0;
+    }
+  }
 }
 
 // MISCELLANEOUS
