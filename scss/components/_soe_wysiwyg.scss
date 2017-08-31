@@ -15,6 +15,10 @@
 a {
   &[class*="btn-"] {
     color: $black;
+
+    .node-type-stanford-event & {
+      color: $white;
+    }
   }
 
   &.btn-orange {

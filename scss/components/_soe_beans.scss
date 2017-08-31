@@ -13,6 +13,18 @@
     }
   }
 
+  a.group-s-cta-link:hover img {
+    @include transform (scale(1.03));
+  }
+
+  .field-name-field-s-cta-image {
+    overflow: hidden;
+
+    img {
+      @include transition;
+    }
+  }
+
   .group-s-cta-title-style {
     padding: 18px 0 22px;
 
@@ -78,11 +90,15 @@
       padding: 0;
     }
 
-    .postcard-linked-img-container {
+    a.postcard-linked-img-container {
       flex-shrink: 0;
       margin-right: 30px;
       @include breakpoint-max(small) {
         margin-right: 0;
+      }
+
+      &:hover img {
+        @include transform (scale(1.03));
       }
 
       .postcard-linked-img {
@@ -93,10 +109,6 @@
           @include transition;
           @include breakpoint-max(small) {
             width: 100%;
-          }
-
-          &:hover {
-            @include transform (scale(1.03));
           }
         }
 

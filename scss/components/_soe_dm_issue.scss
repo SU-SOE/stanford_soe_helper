@@ -601,8 +601,12 @@
     }
   }
 
-  .prev-mag-issue-wrapper {
+  a .prev-mag-issue-wrapper {
     position: relative;
+
+    &:hover img {
+      @include transform (scale(1.03));
+    }
 
     .prev-mag-issue-title {
       font-family: $roboto-slab;
@@ -622,10 +626,6 @@
         @include transition;
         @include breakpoint-max(small) {
           width: 100%;
-        }
-
-        &:hover {
-          @include transform (scale(1.03));
         }
       }
     }

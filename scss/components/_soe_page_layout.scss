@@ -48,11 +48,15 @@
         display: block;
       }
 
-      .postcard-linked-img-container {
+      a.postcard-linked-img-container {
         flex-shrink: 0;
         margin-right: 30px;
         @include breakpoint-max(small) {
           margin-right: 0;
+        }
+
+        &:hover img {
+          @include transform (scale(1.03));
         }
 
         .postcard-linked-img {
@@ -66,10 +70,6 @@
               @include breakpoint-max(small) {
                 width: 100%;
               }
-
-              &:hover {
-                @include transform (scale(1.03));
-              }
             }
           }
 
@@ -77,14 +77,14 @@
             position: absolute;
             bottom: 20px;
             right: 20px;
-            width: 50px;
-            height: 50px;
+            width: 40px;
+            height: 40px;
 
             img {
-              width: 35px;
+              width: 26px;
               height: auto;
-              vertical-align: -16px;
-              padding: 0 7px;
+              vertical-align: -9px;
+              padding: 3px 8px;
               @include breakpoint-max(x-small) {
                 vertical-align: -19px;
               }
