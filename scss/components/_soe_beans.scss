@@ -103,12 +103,15 @@
 
       .postcard-linked-img {
         position: relative;
-        overflow: hidden;
 
-        .field-name-field-s-post-link-image img {
-          @include transition;
-          @include breakpoint-max(small) {
-            width: 100%;
+        .field-name-field-s-post-link-image {
+          overflow: hidden;
+
+          img {
+            @include transition;
+            @include breakpoint-max(small) {
+              width: 100%;
+            }
           }
         }
 
