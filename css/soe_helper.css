@@ -430,7 +430,7 @@ p.summary.drop-cap:first-letter {
 /* line 28, ../scss/components/_soe_brand_bar.scss */
 #header #logo img {
   max-width: 160px; }
-  @media (max-width: 380px) and (min-width: 320px) {
+  @media (max-width: 380px) {
     /* line 28, ../scss/components/_soe_brand_bar.scss */
     #header #logo img {
       max-width: 80px; } }
@@ -463,6 +463,11 @@ p.summary.drop-cap:first-letter {
       /* line 59, ../scss/components/_soe_brand_bar.scss */
       #header.header #site-title-first-line.site-title-uppercase {
         font-size: 24px; } }
+    @media (max-width: 380px) {
+      /* line 59, ../scss/components/_soe_brand_bar.scss */
+      #header.header #site-title-first-line.site-title-uppercase {
+        font-size: 16px;
+        margin-bottom: -4px; } }
 
 /* line 8, ../scss/components/_soe_footer.scss */
 #footer.site-footer {
@@ -1133,14 +1138,14 @@ p.summary.drop-cap:first-letter {
 .view-stanford-events-calendar .view-header .date-nav-wrapper {
   background: #FFFFFF; }
 
-/* line 9, ../scss/components/_soe_forms.scss */
+/* line 10, ../scss/components/_soe_forms.scss */
 body:not(.page-admin) button,
 body:not(.page-admin) input,
 body:not(.page-admin) label,
 body:not(.page-admin) select,
 body:not(.page-admin) textarea {
   font-size: 0.8em; }
-/* line 17, ../scss/components/_soe_forms.scss */
+/* line 18, ../scss/components/_soe_forms.scss */
 body:not(.page-admin) .uneditable-input,
 body:not(.page-admin) input[type="color"],
 body:not(.page-admin) input[type="date"],
@@ -1159,54 +1164,54 @@ body:not(.page-admin) input[type="week"],
 body:not(.page-admin) textarea {
   height: 30px;
   padding: 4px 13px 7px; }
-/* line 37, ../scss/components/_soe_forms.scss */
+/* line 38, ../scss/components/_soe_forms.scss */
 body:not(.page-admin) input[type="file"],
 body:not(.page-admin) select {
   height: 40px; }
-/* line 42, ../scss/components/_soe_forms.scss */
+/* line 43, ../scss/components/_soe_forms.scss */
 body:not(.page-admin) .uneditable-input,
 body:not(.page-admin) input,
 body:not(.page-admin) textarea {
   width: 178px; }
-/* line 48, ../scss/components/_soe_forms.scss */
+/* line 49, ../scss/components/_soe_forms.scss */
 body:not(.page-admin) .form-item label {
   font-weight: 400; }
-/* line 52, ../scss/components/_soe_forms.scss */
+/* line 53, ../scss/components/_soe_forms.scss */
 body:not(.page-admin) input.form-submit {
   padding: 0 13px;
   background-image: none;
   background: #FFFFFF;
   color: #8c1515; }
-  /* line 58, ../scss/components/_soe_forms.scss */
+  /* line 59, ../scss/components/_soe_forms.scss */
   body:not(.page-admin) input.form-submit:focus, body:not(.page-admin) input.form-submit:hover {
     background: #B1040E;
     color: #FFFFFF; }
-/* line 66, ../scss/components/_soe_forms.scss */
+/* line 67, ../scss/components/_soe_forms.scss */
 body:not(.page-admin) .views-exposed-form label {
   font-weight: normal; }
-/* line 70, ../scss/components/_soe_forms.scss */
+/* line 71, ../scss/components/_soe_forms.scss */
 body:not(.page-admin) .views-exposed-form .views-exposed-widget {
   padding: 0.8em 0.7em 0 0; }
-/* line 75, ../scss/components/_soe_forms.scss */
+/* line 76, ../scss/components/_soe_forms.scss */
 body:not(.page-admin) .node-type-webform textarea {
   height: 100px; }
-/* line 79, ../scss/components/_soe_forms.scss */
+/* line 80, ../scss/components/_soe_forms.scss */
 body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-submit {
   margin-top: 1em; }
 
-/* line 87, ../scss/components/_soe_forms.scss */
+/* line 88, ../scss/components/_soe_forms.scss */
 #mc_embed_signup_scroll .mc-field-group {
   float: left; }
-  /* line 90, ../scss/components/_soe_forms.scss */
+  /* line 91, ../scss/components/_soe_forms.scss */
   #mc_embed_signup_scroll .mc-field-group input {
     border-radius: 0; }
-  /* line 94, ../scss/components/_soe_forms.scss */
+  /* line 95, ../scss/components/_soe_forms.scss */
   #mc_embed_signup_scroll .mc-field-group input::-webkit-input-placeholder {
     color: #CCCCCC; }
-  /* line 98, ../scss/components/_soe_forms.scss */
+  /* line 99, ../scss/components/_soe_forms.scss */
   #mc_embed_signup_scroll .mc-field-group input::-moz-placeholder {
     color: #CCCCCC; }
-/* line 104, ../scss/components/_soe_forms.scss */
+/* line 105, ../scss/components/_soe_forms.scss */
 #mc_embed_signup_scroll #mc-embedded-subscribe.button,
 #mc_embed_signup_scroll #mc-embedded-subscribe input {
   background-color: #B1040E;
@@ -1214,34 +1219,34 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
   color: #FFFFFF;
   margin-left: 1em; }
   @media (max-width: 767px) {
-    /* line 104, ../scss/components/_soe_forms.scss */
+    /* line 105, ../scss/components/_soe_forms.scss */
     #mc_embed_signup_scroll #mc-embedded-subscribe.button,
     #mc_embed_signup_scroll #mc-embedded-subscribe input {
       margin-left: 0.4em; } }
-/* line 115, ../scss/components/_soe_forms.scss */
+/* line 116, ../scss/components/_soe_forms.scss */
 #mc_embed_signup_scroll #mc-embedded-subscribe.button:focus, #mc_embed_signup_scroll #mc-embedded-subscribe.button:hover {
   background-color: #333333; }
-/* line 121, ../scss/components/_soe_forms.scss */
+/* line 122, ../scss/components/_soe_forms.scss */
 #mc_embed_signup_scroll p {
   padding-right: 10px; }
-/* line 125, ../scss/components/_soe_forms.scss */
+/* line 126, ../scss/components/_soe_forms.scss */
 #mc_embed_signup_scroll input.button {
   height: 43px;
   padding: 0 13px 3px;
   width: 75px;
   -webkit-border-radius: 0; }
-/* line 132, ../scss/components/_soe_forms.scss */
+/* line 133, ../scss/components/_soe_forms.scss */
 #mc_embed_signup_scroll .uneditable-input,
 #mc_embed_signup_scroll input,
 #mc_embed_signup_scroll textarea {
   width: 110px; }
-/* line 138, ../scss/components/_soe_forms.scss */
+/* line 139, ../scss/components/_soe_forms.scss */
 #mc_embed_signup_scroll button,
 #mc_embed_signup_scroll input,
 #mc_embed_signup_scroll select,
 #mc_embed_signup_scroll textarea {
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; }
-/* line 145, ../scss/components/_soe_forms.scss */
+/* line 146, ../scss/components/_soe_forms.scss */
 .mailchimp-magazine-block #mc_embed_signup_scroll {
   background: #ffffff;
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
@@ -1249,42 +1254,42 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
   padding: 35px;
   text-align: center; }
-  /* line 151, ../scss/components/_soe_forms.scss */
+  /* line 152, ../scss/components/_soe_forms.scss */
   .mailchimp-magazine-block #mc_embed_signup_scroll form {
     margin-bottom: 0; }
-  /* line 155, ../scss/components/_soe_forms.scss */
+  /* line 156, ../scss/components/_soe_forms.scss */
   .mailchimp-magazine-block #mc_embed_signup_scroll h2 {
     margin-bottom: 25px; }
-  /* line 159, ../scss/components/_soe_forms.scss */
+  /* line 160, ../scss/components/_soe_forms.scss */
   .mailchimp-magazine-block #mc_embed_signup_scroll .mc_signup_submission_wrapper {
     display: flex;
     justify-content: center; }
-  /* line 164, ../scss/components/_soe_forms.scss */
+  /* line 165, ../scss/components/_soe_forms.scss */
   .mailchimp-magazine-block #mc_embed_signup_scroll .mc-field-group {
     float: none; }
-    /* line 167, ../scss/components/_soe_forms.scss */
+    /* line 168, ../scss/components/_soe_forms.scss */
     .mailchimp-magazine-block #mc_embed_signup_scroll .mc-field-group input {
       width: 400px;
       box-shadow: none; }
       @media (max-width: 767px) {
-        /* line 167, ../scss/components/_soe_forms.scss */
+        /* line 168, ../scss/components/_soe_forms.scss */
         .mailchimp-magazine-block #mc_embed_signup_scroll .mc-field-group input {
           width: 200px; } }
-  /* line 176, ../scss/components/_soe_forms.scss */
+  /* line 177, ../scss/components/_soe_forms.scss */
   .page-magazine .mailchimp-magazine-block #mc_embed_signup_scroll, .page-magazine-all .mailchimp-magazine-block #mc_embed_signup_scroll, .page-taxonomy-term .mailchimp-magazine-block #mc_embed_signup_scroll {
     margin-bottom: 80px;
     padding: 65px 0;
     box-shadow: none; }
     @media (max-width: 480px) {
-      /* line 176, ../scss/components/_soe_forms.scss */
+      /* line 177, ../scss/components/_soe_forms.scss */
       .page-magazine .mailchimp-magazine-block #mc_embed_signup_scroll, .page-magazine-all .mailchimp-magazine-block #mc_embed_signup_scroll, .page-taxonomy-term .mailchimp-magazine-block #mc_embed_signup_scroll {
         margin-bottom: 20px; } }
-  /* line 187, ../scss/components/_soe_forms.scss */
+  /* line 188, ../scss/components/_soe_forms.scss */
   .node-type-stanford-magazine-issue .mailchimp-magazine-block #mc_embed_signup_scroll {
     box-shadow: none;
     padding: 65px 0; }
 
-/* line 194, ../scss/components/_soe_forms.scss */
+/* line 195, ../scss/components/_soe_forms.scss */
 .node-type-stanford-magazine-issue .mailchimp-magazine-block form {
   margin-bottom: 0; }
 
