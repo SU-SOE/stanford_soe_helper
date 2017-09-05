@@ -42,10 +42,10 @@
       }
     }
 
-     > .active-trail > a,
+     > .active > a:hover,
      > li > a:focus,
      > li > a:hover,
-    > .active > a:hover {
+    > .active-trail > a {
       border-bottom: 2px solid $primary-color;
       @include breakpoint-max(small) {
         border-bottom: none;
@@ -62,7 +62,10 @@
     @include breakpoint-max(x-small) {
       margin-top: -57px;
     }
-    @media (max-width: 385px) {
+    @media (max-width: 380px) {
+      margin-top: -63px;
+    }
+    @media (max-width: 320px) {
       float: left;
       margin-top: 0;
     }
