@@ -47,8 +47,8 @@
       object-position: center center;
       width: 100%;
       height: calc(100vh - 160px);
-      @include breakpoint-max(x-small) {
-        height: calc(100vh - 180px);
+      @include breakpoint-max(medium) {
+        height: auto;
       }
 
       .logged-in & {
