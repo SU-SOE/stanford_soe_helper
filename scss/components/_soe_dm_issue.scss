@@ -36,7 +36,7 @@
         text-align: center;
         width: 100%;
         z-index: 1;
-        @include breakpoint-max(medium) {
+        @include breakpoint-max(small) {
           color: $primary-color;
           position: static;
         }
@@ -88,6 +88,7 @@
         @include breakpoint-max(small) {
           content: url("../img/soe_chevron_down_black.png");
           bottom: -25px;
+          background: none;
         }
       }
     }
@@ -748,9 +749,6 @@
         height: 100%;
         width: 100%;
         @include gradient-vertical($end-color: rgba(0, 0, 0, 0.75));
-        @include breakpoint-max(small) {
-          background: none;
-        }
       }
     }
   }
