@@ -2,7 +2,7 @@
   Drupal.behaviors.stanfordSoeHelperMagazine = {
     attach: function (context, settings) {
       $( window ).load(function() {
-        var soeSocialPathToImages = '/sites/default/modules/stanford/stanford_soe_helper/modules/stanford_soe_helper_magazine/img';
+        var soeSocialPathToImages = '/sites/default/files';
         var soePath = location.pathname;
         var soeEnv = '';
         if (soePath.indexOf("jse-soe") !== -1) {
