@@ -824,69 +824,73 @@ p.summary.drop-cap:first-letter {
           font-size: 1.1em; } }
       /* line 122, ../scss/components/_soe_images.scss */
       .view-stanford-page-banner-caption .banner-bottom-container .more-link a:after {
-        content: url("../img/soe_lg_arrow_right_black.png");
+        content: "";
+        background-image: url("../img/soe_lg_arrow_right_black.png");
+        background-repeat: no-repeat;
+        background-size: 41px 30px;
         vertical-align: -6%;
-        padding-left: 20px; }
-  /* line 131, ../scss/components/_soe_images.scss */
+        padding-left: 41px;
+        margin-left: 12px; }
+  /* line 135, ../scss/components/_soe_images.scss */
   .view-stanford-page-banner-caption .banner-bottom-container:hover img {
     -webkit-transform: scale(1.03);
     -moz-transform: scale(1.03);
     -o-transform: scale(1.03);
     transform: scale(1.03); }
-  /* line 135, ../scss/components/_soe_images.scss */
+  /* line 139, ../scss/components/_soe_images.scss */
   .view-stanford-page-banner-caption .banner-bottom-container:hover .more-link a {
     text-decoration: underline; }
-/* line 141, ../scss/components/_soe_images.scss */
+/* line 145, ../scss/components/_soe_images.scss */
 .view-stanford-page-banner-caption div.more-link {
   padding: 18px 32px 20px;
   margin: 0; }
   @media (max-width: 767px) {
-    /* line 141, ../scss/components/_soe_images.scss */
+    /* line 145, ../scss/components/_soe_images.scss */
     .view-stanford-page-banner-caption div.more-link {
       width: 100%; } }
   @media (max-width: 480px) {
-    /* line 141, ../scss/components/_soe_images.scss */
+    /* line 145, ../scss/components/_soe_images.scss */
     .view-stanford-page-banner-caption div.more-link {
       width: 87%; } }
-/* line 152, ../scss/components/_soe_images.scss */
+/* line 156, ../scss/components/_soe_images.scss */
 .view-stanford-page-banner-caption .banner-caption {
   position: absolute;
   width: 80%; }
   @media (max-width: 767px) {
-    /* line 152, ../scss/components/_soe_images.scss */
+    /* line 156, ../scss/components/_soe_images.scss */
     .view-stanford-page-banner-caption .banner-caption {
       position: inherit;
       width: 92%; } }
   @media (max-width: 480px) {
-    /* line 152, ../scss/components/_soe_images.scss */
+    /* line 156, ../scss/components/_soe_images.scss */
     .view-stanford-page-banner-caption .banner-caption {
       width: 100%; } }
-  /* line 163, ../scss/components/_soe_images.scss */
+  /* line 167, ../scss/components/_soe_images.scss */
   .view-stanford-page-banner-caption .banner-caption.banner-right {
     right: 0;
     text-align: right; }
     @media (max-width: 767px) {
-      /* line 163, ../scss/components/_soe_images.scss */
+      /* line 167, ../scss/components/_soe_images.scss */
       .view-stanford-page-banner-caption .banner-caption.banner-right {
         text-align: left; } }
-    /* line 170, ../scss/components/_soe_images.scss */
+    /* line 174, ../scss/components/_soe_images.scss */
     .view-stanford-page-banner-caption .banner-caption.banner-right.banner-bottom {
       bottom: 40px; }
-    /* line 174, ../scss/components/_soe_images.scss */
+    /* line 178, ../scss/components/_soe_images.scss */
     .view-stanford-page-banner-caption .banner-caption.banner-right.banner-top {
       top: 40px; }
-  /* line 179, ../scss/components/_soe_images.scss */
+  /* line 183, ../scss/components/_soe_images.scss */
   .view-stanford-page-banner-caption .banner-caption.banner-orange div.more-link {
     background: #FFBD54; }
-  /* line 183, ../scss/components/_soe_images.scss */
+  /* line 187, ../scss/components/_soe_images.scss */
   .view-stanford-page-banner-caption .banner-caption.banner-turquoise div.more-link {
     background: #00ECE9; }
-  /* line 187, ../scss/components/_soe_images.scss */
+  /* line 191, ../scss/components/_soe_images.scss */
   .view-stanford-page-banner-caption .banner-caption.banner-pink div.more-link {
     background: #FF525C; }
 
 @media (max-width: 767px) {
-  /* line 196, ../scss/components/_soe_images.scss */
+  /* line 200, ../scss/components/_soe_images.scss */
   .view-soe-opportunity-grid .views-row img {
     width: 100%; } }
 
