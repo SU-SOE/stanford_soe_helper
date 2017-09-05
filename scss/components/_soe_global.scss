@@ -262,6 +262,9 @@ th {
 .main {
   padding: 80px 0 50px;
   background: $off-white;
+  @include breakpoint-max(small) {
+    padding-top: 40px;
+  }
 
   p {
     margin: 0 0 1.5em;

@@ -110,6 +110,9 @@
         border-radius: 50%;
         border-width: 8px;
         border-style: solid;
+        @include breakpoint-max(small) {
+          max-width: 80%;
+        }
       }
 
       &.spotlight-img-color-orange img {

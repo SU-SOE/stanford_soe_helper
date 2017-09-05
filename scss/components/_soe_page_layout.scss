@@ -7,6 +7,12 @@
 // STANFORD PAGE
 
 .node-type-stanford-page {
+  @include breakpoint-max(small) {
+    #block-ds-extras-stanford-page-title {
+      margin-bottom: 0;
+    }
+  }
+
   #block-views-stanford-page-top-banner-block {
     .page-feat-caption-container {
       font-size: em(18px);

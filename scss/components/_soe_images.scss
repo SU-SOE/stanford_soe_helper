@@ -109,6 +109,15 @@
         font-size: em(28px);
         font-weight: 800;
         line-height: 43px;
+        @include breakpoint-max(large) {
+          font-size: em(26px);
+        }
+        @include breakpoint-max(medium) {
+          font-size: em(24px);
+        }
+        @include breakpoint-max(small) {
+          font-size: em(22px);
+        }
 
         &:after {
           content: url("../img/soe_lg_arrow_right_black.png");
