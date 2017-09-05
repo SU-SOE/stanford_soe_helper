@@ -504,52 +504,58 @@ p.summary.drop-cap:first-letter {
   /* line 22, ../scss/components/_soe_footer.scss */
   #footer .block p {
     margin-bottom: 0.5em; }
-@media (max-width: 979px) {
+@media (max-width: 767px) {
   /* line 27, ../scss/components/_soe_footer.scss */
+  #footer #block-bean-jse-linked-logo-block,
+  #footer #block-bean-jumpstart-custom-footer-block,
+  #footer #block-bean-jumpstart-links-footer-block {
+    margin-bottom: 15px; } }
+@media (max-width: 979px) {
+  /* line 35, ../scss/components/_soe_footer.scss */
   #footer #block-stanford-soe-helper-sitewide-stanford-soe-intranet-link {
     margin-top: 50px; } }
 @media (max-width: 767px) {
-  /* line 27, ../scss/components/_soe_footer.scss */
+  /* line 35, ../scss/components/_soe_footer.scss */
   #footer #block-stanford-soe-helper-sitewide-stanford-soe-intranet-link {
     margin-top: 0; } }
-/* line 36, ../scss/components/_soe_footer.scss */
+/* line 44, ../scss/components/_soe_footer.scss */
 #footer #block-bean-jumpstart-footer-social-media-0 {
   float: right;
   width: 22%;
   margin-bottom: 50px; }
   @media (max-width: 1199px) {
-    /* line 36, ../scss/components/_soe_footer.scss */
+    /* line 44, ../scss/components/_soe_footer.scss */
     #footer #block-bean-jumpstart-footer-social-media-0 {
       width: 24%; } }
   @media (max-width: 979px) {
-    /* line 36, ../scss/components/_soe_footer.scss */
+    /* line 44, ../scss/components/_soe_footer.scss */
     #footer #block-bean-jumpstart-footer-social-media-0 {
       float: none;
       width: auto;
       margin-bottom: 30px; } }
-  /* line 50, ../scss/components/_soe_footer.scss */
+  /* line 58, ../scss/components/_soe_footer.scss */
   #footer #block-bean-jumpstart-footer-social-media-0 .bean-stanford-social-media-connect a {
     height: 28px;
     background-repeat: no-repeat;
     background-size: auto 28px;
     margin-right: 18px; }
-  /* line 57, ../scss/components/_soe_footer.scss */
+  /* line 65, ../scss/components/_soe_footer.scss */
   #footer #block-bean-jumpstart-footer-social-media-0 .bean-stanford-social-media-connect .field-name-field-s-smc-facebook a {
     background-image: url("../img/soe_facebook_icon.png");
     width: 15px; }
-  /* line 62, ../scss/components/_soe_footer.scss */
+  /* line 70, ../scss/components/_soe_footer.scss */
   #footer #block-bean-jumpstart-footer-social-media-0 .bean-stanford-social-media-connect .field-name-field-s-smc-twitter a {
     background-image: url("../img/soe_twitter_icon.png");
     width: 35px; }
-  /* line 67, ../scss/components/_soe_footer.scss */
+  /* line 75, ../scss/components/_soe_footer.scss */
   #footer #block-bean-jumpstart-footer-social-media-0 .bean-stanford-social-media-connect .field-name-field-s-smc-linkedin a {
     background-image: url("../img/soe_linkedin_icon.png");
     width: 30px; }
-  /* line 72, ../scss/components/_soe_footer.scss */
+  /* line 80, ../scss/components/_soe_footer.scss */
   #footer #block-bean-jumpstart-footer-social-media-0 .bean-stanford-social-media-connect .field-name-field-s-smc-youtube a {
     background-image: url("../img/soe_youtube_icon.png");
     width: 40px; }
-  /* line 77, ../scss/components/_soe_footer.scss */
+  /* line 85, ../scss/components/_soe_footer.scss */
   #footer #block-bean-jumpstart-footer-social-media-0 .bean-stanford-social-media-connect .field-name-field-s-smc-instagram a {
     background-image: url("../img/soe_instagram_icon.png");
     width: 30px;
