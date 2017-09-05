@@ -47,6 +47,9 @@
       object-position: center center;
       width: 100%;
       height: calc(100vh - 160px);
+      @include breakpoint-max(large) {
+        height: calc(100vh - 205px);
+      }
       @include breakpoint-max(medium) {
         height: auto;
       }
