@@ -35,6 +35,36 @@ function stanford_people_spotlight_layouts_context_default_contexts() {
           'region' => 'fullwidth_top',
           'weight' => '-10',
         ),
+        'views-2fcd39157bff8c00657e1a30f3c68acd' => array(
+          'module' => 'views',
+          'delta' => '2fcd39157bff8c00657e1a30f3c68acd',
+          'region' => 'content_lower',
+          'weight' => '-10',
+        ),
+        'views-cce725b87703df7091be7141c85f572a' => array(
+          'module' => 'views',
+          'delta' => 'cce725b87703df7091be7141c85f572a',
+          'region' => 'content_lower',
+          'weight' => '-9',
+        ),
+        'views-53b18b9a83044b1915e5fc9b12d4c987' => array(
+          'module' => 'views',
+          'delta' => '53b18b9a83044b1915e5fc9b12d4c987',
+          'region' => 'content_lower',
+          'weight' => '-8',
+        ),
+        'views-d8991b10efdf7863ee4d0c0541278203' => array(
+          'module' => 'views',
+          'delta' => 'd8991b10efdf7863ee4d0c0541278203',
+          'region' => 'content_lower',
+          'weight' => '-7',
+        ),
+        'views-d620267553c6e6c1f042a493bdb8b37b' => array(
+          'module' => 'views',
+          'delta' => 'd620267553c6e6c1f042a493bdb8b37b',
+          'region' => 'content_lower',
+          'weight' => '-6',
+        ),
       ),
     ),
   );
