@@ -296,6 +296,39 @@ function stanford_soe_helper_magazine_context_default_contexts() {
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
+  $context->name = 'stanford_magazine_search_engineering';
+  $context->description = 'Engineering context for Stanford Magazine search page';
+  $context->tag = 'Engineering';
+  $context->conditions = array(
+    'path' => array(
+      'values' => array(
+        'magazine/search/content' => 'magazine/search/content',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'stanford_soe_helper_magazine-soe_search_all_link' => array(
+          'module' => 'stanford_soe_helper_magazine',
+          'delta' => 'soe_search_all_link',
+          'region' => 'content_lower',
+          'weight' => '-10',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('Engineering');
+  t('Engineering context for Stanford Magazine search page');
+  $export['stanford_magazine_search_engineering'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
   $context->name = 'stanford_magazine_tax_views';
   $context->description = 'Context for Stanford Magazine Taxonomy View';
   $context->tag = 'Magazine';

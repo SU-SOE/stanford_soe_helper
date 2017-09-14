@@ -36,11 +36,14 @@ function stanford_soe_helper_magazine_menu_block_blocks() {
 function stanford_soe_helper_magazine_get_settings() {
   $default_settings = array(
     'soe_all_issues_link_title' => t('All Digital Magazine Issues'),
-    'soe_all_issues_link_url' => 'magazine/issue',
+    'soe_all_issues_link_url' => '/magazine/issue',
     'soe_all_issues_link_title_2' => t('Explore All Issues'),
-    'soe_all_issues_link_url_2' => 'magazine/issue',
+    'soe_all_issues_link_url_2' => '/magazine/issue',
     'soe_all_articles_link_title' => t('Read All Most Recent'),
-    'soe_all_articles_link_url' => 'magazine/all',
+    'soe_all_articles_link_url' => '/magazine/all',
+    'soe_search_all_link_text' => t("You are currently searching the School of Engineering's Digital Magazine."),
+    'soe_search_all_link_title' => t('Search the whole site'),
+    'soe_search_all_link_url' => '/search/content',
   );
   $settings = variable_get('stanford_soe_helper_magazine_settings', $default_settings);
 
@@ -60,6 +63,9 @@ function stanford_soe_helper_magazine_block_info() {
   );
   $blocks['soe_all_articles_link'] = array(
     'info' => 'SoE All Articles Link',
+  );
+  $blocks['soe_search_all_link'] = array(
+    'info' => 'SoE Search Whole Site Link',
   );
 
   return $blocks;
@@ -134,6 +140,35 @@ function stanford_soe_helper_magazine_block_configure($delta = '') {
       );
 
       break;
+
+    case 'soe_search_all_link':
+      $settings = stanford_soe_helper_magazine_get_settings();
+
+      // Link Content.
+      $form['soe_search_all_link_text'] = array(
+        '#type' => 'textarea',
+        '#title' => t('Search All Content Text'),
+        '#default_value' => $settings['soe_search_all_link_text'],
+        '#required' => FALSE,
+      );
+
+        // Link Title.
+      $form['soe_search_all_link_title'] = array(
+        '#type' => 'textfield',
+        '#title' => t('Search All Content Button Title'),
+        '#default_value' => $settings['soe_search_all_link_title'],
+        '#required' => TRUE,
+      );
+
+      // Link URL.
+      $form['soe_search_all_link_url'] = array(
+        '#type' => 'textfield',
+        '#title' => t('Search All Content Button URL'),
+        '#default_value' => $settings['soe_search_all_link_url'],
+        '#required' => TRUE,
+      );
+
+      break;
   }
   return $form;
 }
@@ -176,6 +211,19 @@ function stanford_soe_helper_magazine_block_save($delta = '', $edit = array()) {
 
       variable_set('stanford_soe_helper_magazine_settings', $new_settings);
       break;
+
+    case 'soe_search_all_link':
+
+      $settings = stanford_soe_helper_magazine_get_settings();
+      $new_settings = array_merge($settings, $edit);
+
+      $new_settings['soe_search_all_link_text'] = filter_xss($new_settings['soe_search_all_link_text']);
+      $new_settings['soe_search_all_link_title'] = filter_xss($new_settings['soe_search_all_link_title']);
+      $new_settings['soe_search_all_link_url'] = filter_xss($new_settings['soe_search_all_link_url']);
+
+      variable_set('stanford_soe_helper_magazine_settings', $new_settings);
+      break;
+
   }
 }
 
@@ -200,6 +248,12 @@ function stanford_soe_helper_magazine_block_view($delta = '') {
       $block['subject'] = '<none>';
       $block['content'] = soe_all_articles_link_block_view();
       break;
+
+    case 'soe_search_all_link':
+      $block['subject'] = '<none>';
+      $block['content'] = soe_search_all_link_block_view();
+      break;
+
   }
 
   return $block;
@@ -263,6 +317,29 @@ function soe_all_articles_link_block_view() {
       '#markup' => l($settings['soe_all_articles_link_title'],
         $settings['soe_all_articles_link_url'],
         array('attributes' => array('class' => 'soe_all_articles_link soe_block_style btn'))),
+      '#suffix' => '</div>',
+    ),
+  );
+  return $block;
+}
+
+/**
+ * Callback for the search all the site link block.
+ * This is instead of searching just the magazine.
+ *
+ * @return array
+ *   Array of blocks.
+ */
+function soe_search_all_link_block_view() {
+  $settings = stanford_soe_helper_magazine_get_settings();
+  $block = array(
+    'soe_search_all_link' => array(
+      '#type' => 'markup',
+      '#prefix' => '<div class="soe_block_align">',
+      '#markup' => '<p>' . $settings['soe_search_all_link_text'] . '</p>' .
+        l($settings['soe_search_all_link_title'],
+          $settings['soe_search_all_link_url'],
+        array('attributes' => array('class' => 'soe_search_all_link soe_block_style btn'))),
       '#suffix' => '</div>',
     ),
   );
