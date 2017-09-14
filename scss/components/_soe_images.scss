@@ -47,8 +47,11 @@
       object-position: center center;
       width: 100%;
       height: calc(100vh - 160px);
-      @include breakpoint-max(x-small) {
-        height: calc(100vh - 180px);
+      @include breakpoint-max(large) {
+        height: calc(100vh - 205px);
+      }
+      @include breakpoint-max(medium) {
+        height: auto;
       }
 
       .logged-in & {
@@ -108,12 +111,39 @@
         font-family: $roboto-slab;
         font-size: em(28px);
         font-weight: 800;
-        line-height: 43px;
+        line-height: 1.6em;
+        @include breakpoint-max(large) {
+          font-size: em(26px);
+        }
+        @include breakpoint-max(medium) {
+          font-size: em(24px);
+        }
+        @include breakpoint-max(small) {
+          font-size: em(22px);
+        }
 
         &:after {
-          content: url("../img/soe_lg_arrow_right_black.png");
+          content: "";
+          background-image: url("../img/soe_lg_arrow_right_black.png");
+          background-repeat: no-repeat;
+          background-size: 41px 30px;
           vertical-align: -6%;
-          padding-left: 20px;
+          padding-left: 41px;
+          margin-left: 12px;
+          @include breakpoint-max(medium) {
+            background-size: 31px 23px;
+            vertical-align: -9%;
+            padding-left: 31px;
+          }
+          @include breakpoint-max(small) {
+            background-size: 28px 20px;
+            padding-left: 28px;
+          }
+          @include breakpoint-max(small) {
+            background-size: 25px 18px;
+            vertical-align: -14%;
+            padding-left: 25px;
+          }
         }
       }
     }

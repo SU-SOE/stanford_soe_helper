@@ -7,6 +7,12 @@
 // STANFORD PAGE
 
 .node-type-stanford-page {
+  @include breakpoint-max(small) {
+    #block-ds-extras-stanford-page-title {
+      margin-bottom: 0;
+    }
+  }
+
   #block-views-stanford-page-top-banner-block {
     .page-feat-caption-container {
       font-size: em(18px);
@@ -85,8 +91,11 @@
               height: auto;
               vertical-align: -9px;
               padding: 3px 8px;
+              @include breakpoint-max(small) {
+                vertical-align: -12px;
+              }
               @include breakpoint-max(x-small) {
-                vertical-align: -19px;
+                vertical-align: -14px;
               }
             }
           }
