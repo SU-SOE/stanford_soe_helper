@@ -27,6 +27,19 @@
   #logo {
     img {
       max-width: 160px;
+      .page-magazine &,
+      .page-magazine-all {
+        max-width: 90px;
+        @include breakpoint-max(small) {
+          max-width: 160px;
+        }
+        @media (max-width: 480px) {
+        max-width: 120px;
+      }
+        @media (max-width: 380px) {
+          max-width: 80px;
+        }
+      }
     }
 
     &.logo-mobile {
@@ -70,6 +83,27 @@
       @media (max-width: 380px) {
         font-size: 16px;
         margin-bottom: -4px;
+      }
+    }
+
+    .page-magazine &,
+    .page-magazine-all {
+      #site-title-first-line.site-title-uppercase {
+        font-size: 18px;
+        margin-bottom: -3px;
+        @include breakpoint-max(small) {
+          font-size: 34px;
+          //margin-bottom: -7px;
+        }
+        @include breakpoint-max(x-small) {
+          font-size: 28px;
+        }
+        @media (max-width: 400px) {
+          font-size: 24px;
+        }
+        @media (max-width: 380px) {
+          font-size: 16px;
+        }
       }
     }
   }
