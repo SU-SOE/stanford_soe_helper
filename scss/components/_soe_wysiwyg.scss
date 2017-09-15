@@ -10,6 +10,18 @@
   font-weight: 400;
   line-height: 1.5em;
   margin-bottom: 40px;
+  @include breakpoint-max(large) {
+    font-size: em(28px);
+  }
+  @include breakpoint-max(medium) {
+    font-size: em(26px);
+  }
+  @include breakpoint-max(small) {
+    font-size: em(24px);
+  }
+  @include breakpoint-max(x-small) {
+    font-size: em(22px);
+  }
 }
 
 a {

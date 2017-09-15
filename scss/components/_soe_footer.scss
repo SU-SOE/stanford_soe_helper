@@ -24,6 +24,14 @@
     }
   }
 
+  #block-bean-jse-linked-logo-block,
+  #block-bean-jumpstart-custom-footer-block,
+  #block-bean-jumpstart-links-footer-block {
+    @include breakpoint-max(small) {
+      margin-bottom: 15px;
+    }
+  }
+
   #block-stanford-soe-helper-sitewide-stanford-soe-intranet-link {
     @include breakpoint-max(medium) {
       margin-top: 50px;

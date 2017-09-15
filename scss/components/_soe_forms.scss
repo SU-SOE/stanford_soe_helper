@@ -5,6 +5,7 @@
 //
 
 // GENERAL
+
 body:not(.page-admin) {
   button,
   input,
@@ -106,7 +107,7 @@ body:not(.page-admin) {
       background-color: $brand-bright;
       border-style: none;
       color: $white;
-      margin-left: .5em;
+      margin-left: 0.7em;
       @include breakpoint-max(small) {
         margin-left: 0.4em;
       }
@@ -126,7 +127,7 @@ body:not(.page-admin) {
     height: 43px;
     padding: 0 13px 3px;
     -webkit-border-radius: 0;
-    width: 68px;
+    width: 71px;
   }
 
   .uneditable-input,
