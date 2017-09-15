@@ -308,6 +308,12 @@
 .view-stanford-ppl-spot-3-v-card {
   &.views-grid-three .views-row {
     margin-bottom: 80px;
+    @media (max-width: 1200px) {
+      width: 46.1%;
+    }
+    @media (max-width: 580px) {
+      width: 96.2%;
+    }
   }
 
   .spotlight-container {
