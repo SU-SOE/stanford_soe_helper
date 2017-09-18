@@ -372,7 +372,7 @@ function stanford_soe_helper_magazine_preprocess_page(&$variables) {
       'twitter_image' => array(
         '#tag' => 'meta',
         '#attributes' => array(
-          'name' => 'twitter:image',
+          'name' => 'twitter:image:src',
           'content' => 'https://engineering.stanford.edu/sites/default/files/styles/sm-square/public/' . $variables['node']->field_s_mag_article_image[LANGUAGE_NONE][0]['filename'],
         )
       ),
