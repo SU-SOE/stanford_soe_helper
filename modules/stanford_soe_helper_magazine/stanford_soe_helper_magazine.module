@@ -347,6 +347,40 @@ function stanford_soe_helper_magazine_preprocess_views_view(&$vars) {
 
 function stanford_soe_helper_magazine_preprocess_page(&$variables) {
   if (isset($variables['node']) && $variables['node']->type == 'stanford_magazine_article') {
+    $html_head = array(
+      'twitter_card' => array(
+        '#tag' => 'meta',
+        '#attributes' => array(
+          'name' => 'twitter:card',
+          'content' => 'summary',
+        )
+      ),
+      'twitter_title' => array(
+        '#tag' => 'meta',
+        '#attributes' => array(
+          'name' => 'twitter:title',
+          'content' => $variables['node']->title,
+        )
+      ),
+      'twitter_description' => array(
+        '#tag' => 'meta',
+        '#attributes' => array(
+          'name' => 'twitter:description',
+          'content' => 'Stanford Engineering Digital Magazine Article',
+        )
+      ),
+      'twitter_image' => array(
+        '#tag' => 'meta',
+        '#attributes' => array(
+          'name' => 'twitter:image',
+          'content' => $GLOBALS['base_url'] . '/sites/default/files/styles/large-square/public/' . $variables['node']->field_s_mag_article_image[LANGUAGE_NONE][0]['filename'],
+        )
+      ),
+    );
+    foreach ($html_head as $key => $data) {
+      drupal_add_html_head($data, $key);
+    }
+    drupal_add_js('https://platform.twitter.com/widgets.js');
     drupal_add_js(drupal_get_path('module', 'stanford_soe_helper_magazine') . '/js/stanford_social_widgets.js');
   }
 }
