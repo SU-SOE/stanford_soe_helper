@@ -376,6 +376,20 @@ function stanford_soe_helper_magazine_preprocess_page(&$variables) {
           'content' => $GLOBALS['base_url'] . '/sites/default/files/styles/large-square/public/' . $variables['node']->field_s_mag_article_image[LANGUAGE_NONE][0]['filename'],
         )
       ),
+      'twitter_facebook_image_width' => array(
+        '#tag' => 'meta',
+        '#attributes' => array(
+          'property' => 'og:image:width',
+          'content' => '270',
+        )
+      ),
+      'twitter_facebook_image_height' => array(
+        '#tag' => 'meta',
+        '#attributes' => array(
+          'property' => 'og:image:height',
+          'content' => '270',
+        )
+      ),
     );
     foreach ($html_head as $key => $data) {
       drupal_add_html_head($data, $key);
