@@ -347,6 +347,7 @@ function stanford_soe_helper_magazine_preprocess_views_view(&$vars) {
 
 function stanford_soe_helper_magazine_preprocess_page(&$variables) {
   if (isset($variables['node']) && $variables['node']->type == 'stanford_magazine_article') {
+    dpm($GLOBALS['base_url']);
     $html_head = array(
       'twitter_card' => array(
         '#tag' => 'meta',
@@ -373,7 +374,7 @@ function stanford_soe_helper_magazine_preprocess_page(&$variables) {
         '#tag' => 'meta',
         '#attributes' => array(
           'name' => 'twitter:image',
-          'content' => 'https://engineering.stanford.edu/sites/default/files/styles/sm-square/public/' . $variables['node']->field_s_mag_article_image[LANGUAGE_NONE][0]['filename'],
+          'content' => $GLOBALS['base_url'] . '/sites/default/files/styles/sm-square/public/' . $variables['node']->field_s_mag_article_image[LANGUAGE_NONE][0]['filename'],
         )
       ),
     );
