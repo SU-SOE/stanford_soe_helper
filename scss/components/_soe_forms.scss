@@ -107,8 +107,8 @@ body:not(.page-admin) {
       background-color: $brand-bright;
       border-style: none;
       color: $white;
-      margin-left: 1em;
-      @include breakpoint-max(large) {
+      margin-left: 0.7em;
+      @include breakpoint-max(small) {
         margin-left: 0.4em;
       }
     }
@@ -126,8 +126,8 @@ body:not(.page-admin) {
   input.button {
     height: 43px;
     padding: 0 13px 3px;
-    width: 75px;
     -webkit-border-radius: 0;
+    width: 71px;
   }
 
   .uneditable-input,
