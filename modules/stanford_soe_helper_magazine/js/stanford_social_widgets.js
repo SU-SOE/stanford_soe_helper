@@ -20,7 +20,7 @@
           shareSubtitle = $('.share-sub').text(),
 
           // URL's
-          twurl = 'http://twitter.com/share?url='+encodeURI(pathname)+'&text='+shareTitle+' '+shareSubtitle,
+          twurl = 'https://twitter.com/intent/tweet?url='+encodeURI(pathname)+'&text='+shareTitle+' '+shareSubtitle,
           fburl = 'http://www.facebook.com/sharer.php?u='+pathname+'&display=popup',
           liurl = 'https://www.linkedin.com/shareArticle?mini=true&url='+pathname+'&title='+shareTitle+'&summary='+shareSubtitle;
 
