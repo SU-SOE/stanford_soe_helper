@@ -9,10 +9,17 @@
 .view-stanford-event-featured {
   &.vertical-event {
     .feat-events-container {
+      overflow: hidden;
+
       .feat-events-img-container {
         position: relative;
 
+        &:hover img {
+          @include transform (scale(1.03));
+        }
+
         img {
+          @include transition;
           width: 100%;
         }
 

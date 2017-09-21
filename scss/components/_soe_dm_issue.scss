@@ -336,6 +336,18 @@
       margin-bottom: 40px;
     }
 
+    .mag-article-img {
+      overflow: hidden;
+
+      &:hover img {
+        @include transform (scale(1.03));
+      }
+
+      img {
+        @include transition;
+      }
+    }
+
     .mag-article-content-container {
       background: $white;
       padding: 50px 30px 30px;
@@ -410,9 +422,18 @@
       margin-bottom: 40px;
     }
 
-    .mag-article-img img {
-      @include breakpoint-max(medium) {
-        width: 100%;
+    .mag-article-img {
+      overflow: hidden;
+
+      &:hover img {
+        @include transform (scale(1.03));
+      }
+
+      img {
+        @include transition;
+        @include breakpoint-max(medium) {
+          width: 100%;
+        }
       }
     }
 
