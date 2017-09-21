@@ -20,6 +20,7 @@ function stanford_soe_helper_news_context_default_contexts() {
     'path' => array(
       'values' => array(
         'news/recent-news' => 'news/recent-news',
+        'news/school-news' => 'news/school-news',
       ),
     ),
   );

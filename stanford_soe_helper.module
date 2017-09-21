@@ -65,9 +65,15 @@ user/*/edit";
         $title = $views_page->display[$current_display]->display_options['title'];
       }
       else {
-        $path = $views_page->display[$current_display]->display_options['path'];
+        $path = drupal_get_path_alias(current_path());
         $parts = explode('/', $path);
-        $title = ucfirst($parts[0]);
+        if (isset($parts[1]) && $parts[1] != 'all') {
+          $title = $parts[1];
+        }
+        else {
+          $title = $parts[0];
+        }
+        $title = ucwords(str_replace('-', ' ', $title));
       }
       $variables['page']['main_top'][] = [
         '#markup' => '<h1>' . $title . '</h1>',
