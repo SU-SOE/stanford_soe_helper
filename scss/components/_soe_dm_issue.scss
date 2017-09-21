@@ -587,6 +587,14 @@
       }
     }
     @include breakpoint-max(small) {
+      margin-right: 4%;
+      margin-bottom: 4%;
+
+      &:nth-child(3) {
+        margin-right: 4%;
+      }
+    }
+    @include breakpoint-max(x-small) {
       width: 100%;
       margin-right: 0;
 

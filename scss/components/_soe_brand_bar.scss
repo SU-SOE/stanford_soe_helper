@@ -19,8 +19,8 @@
 
   .container {
     padding: 13px 0;
+    margin-bottom: 0;
   }
-
 }
 
 #header {
@@ -28,7 +28,8 @@
     img {
       max-width: 160px;
       .page-magazine &,
-      .page-magazine-all {
+      .page-magazine-all,
+      .node-type-stanford-magazine-article & {
         max-width: 90px;
         @include breakpoint-max(small) {
           max-width: 160px;
@@ -90,7 +91,8 @@
     }
 
     .page-magazine &,
-    .page-magazine-all {
+    .page-magazine-all,
+    .node-type-stanford-magazine-article & {
       #site-title-first-line.site-title-uppercase {
         font-size: 18px;
         margin-bottom: -3px;
