@@ -230,9 +230,18 @@
         }
       }
 
-      .mag-article-img img {
-        @include breakpoint-max(medium) {
-          width: 100%;
+      .mag-article-img {
+        overflow: hidden;
+
+        &:hover img {
+          @include transform (scale(1.03));
+        }
+
+        img {
+          @include transition;
+          @include breakpoint-max(medium) {
+            width: 100%;
+          }
         }
       }
     }
@@ -709,7 +718,14 @@
 .view-stanford-magazine-article-featured {
   .mag-article-container {
     .mag-article-img {
+      overflow: hidden;
+
+      &:hover img {
+        @include transform (scale(1.03));
+      }
+
       img {
+        @include transition;
         width: 100%;
       }
     }
