@@ -8,7 +8,7 @@
 include_once 'stanford_soe_helper_event.features.inc';
 
 /**
- * Implements hook_views_pre_view
+ * Implements hook_views_pre_view().
  */
 function stanford_soe_helper_event_views_pre_view(&$view, &$display_id, &$args) {
   if ($view->name == 'stanford_events_manage') {
