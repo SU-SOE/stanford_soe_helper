@@ -2078,7 +2078,7 @@ function stanford_people_spotlight_views_views_default_views() {
   $handler->display->display_options['fields']['field_s_ppl_spot_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_s_ppl_spot_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_s_ppl_spot_image']['settings'] = array(
-    'image_style' => 'large-square',
+    'image_style' => 'square_scale_and_crop_270_x_270',
     'image_link' => 'content',
   );
   /* Field: Content: Image Color */
