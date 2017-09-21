@@ -69,3 +69,53 @@ function stanford_soe_news_link_block_view() {
   );
   return $block;
 }
+
+/**
+ * Implements hook_views_pre_view().
+ */
+function stanford_soe_helper_news_views_pre_view(&$view, &$display_id, &$args) {
+  if ($view->name == 'admin_manage_stanford_news_item') {
+
+    // Add Field: Content: Featured.
+    $options['id'] = 'field_s_news_featured';
+    $options['table'] = 'field_data_field_s_news_featured';
+    $options['field'] = 'field_s_news_featured';
+
+    stanford_related_content_insert_item(
+      $view,
+      $display_id,
+      'field',
+      'field_data_field_s_news_featured',
+      'field_s_news_featured',
+      $options,
+      'field_s_news_date');
+
+    if ($view->set_display('page')) {
+      $handler = $view->display_handler;
+
+      // Add Filter criterion: Content: Featured (field_s_event_featured).
+      $options = $handler->get_option('filters');
+      $options['field_s_news_featured_value']['id'] = 'field_s_news_featured_value';
+      $options['field_s_news_featured_value']['table'] = 'field_data_field_s_news_featured';
+      $options['field_s_news_featured_value']['field'] = 'field_s_news_featured_value';
+      $options['field_s_news_featured_value']['exposed'] = TRUE;
+      $options['field_s_news_featured_value']['expose']['operator_id'] = 'field_s_news_featured_value_op';
+      $options['field_s_news_featured_value']['expose']['label'] = 'Featured';
+      $options['field_s_news_featured_value']['expose']['operator'] = 'field_s_news_featured_value_op';
+      $options['field_s_news_featured_value']['expose']['identifier'] = 'field_s_news_featured_value';
+      $options['field_s_news_featured_value']['expose']['remember_roles'] = array(
+        2 => '2',
+        1 => 0,
+        12 => 0,
+        10 => 0,
+        8 => 0,
+        6 => 0,
+        20 => 0,
+        14 => 0,
+        16 => 0,
+        18 => 0,
+      );
+      $handler->set_option('filters', $options);
+    }
+  }
+}
