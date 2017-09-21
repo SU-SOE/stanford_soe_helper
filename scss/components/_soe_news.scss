@@ -169,7 +169,14 @@
 .view-stanford-news-featured {
   .feat-news-container {
     .feat-news-img {
+      overflow: hidden;
+
+      &:hover img {
+        @include transform (scale(1.03));
+      }
+
       img {
+        @include transition;
         width: 100%;
       }
     }
