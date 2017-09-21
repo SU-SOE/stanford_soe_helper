@@ -6,3 +6,60 @@
  */
 
 include_once 'stanford_soe_helper_event.features.inc';
+
+/**
+ * Implements hook_views_pre_view
+ */
+function stanford_soe_helper_event_views_pre_view(&$view, &$display_id, &$args) {
+  if ($view->name == 'stanford_events_manage') {
+
+    // Add Field: Content: Featured.
+    $options['id'] = 'field_s_event_featured';
+    $options['table'] = 'field_data_field_s_event_featured';
+    $options['field'] = 'field_s_event_featured';
+
+    stanford_related_content_insert_item(
+      $view,
+      $display_id,
+      'field',
+      'field_data_field_s_event_featured',
+      'field_s_event_featured',
+      $options,
+      'field_s_event_type');
+
+    if ($view->set_display('page')) {
+      $handler = $view->display_handler;
+
+      // Add VBO option.
+      $options = $handler->get_option('fields');
+      $options['views_bulk_operations']['vbo_operations']['action::views_bulk_operations_modify_action']
+        ['settings']['display_values']['stanford_event::field_s_event_featured']
+        = 'stanford_event::field_s_event_featured';
+      $handler->set_option('fields', $options);
+
+      // Add Filter criterion: Content: Featured (field_s_event_featured).
+      $options = $handler->get_option('filters');
+      $options['field_s_event_featured_value']['id'] = 'field_s_event_featured_value';
+      $options['field_s_event_featured_value']['table'] = 'field_data_field_s_event_featured';
+      $options['field_s_event_featured_value']['field'] = 'field_s_event_featured_value';
+      $options['field_s_event_featured_value']['exposed'] = TRUE;
+      $options['field_s_event_featured_value']['expose']['operator_id'] = 'field_s_event_featured_value_op';
+      $options['field_s_event_featured_value']['expose']['label'] = 'Featured';
+      $options['field_s_event_featured_value']['expose']['operator'] = 'field_s_event_featured_value_op';
+      $options['field_s_event_featured_value']['expose']['identifier'] = 'field_s_event_featured_value';
+      $options['field_s_event_featured_value']['expose']['remember_roles'] = array(
+        2 => '2',
+        1 => 0,
+        12 => 0,
+        10 => 0,
+        8 => 0,
+        6 => 0,
+        20 => 0,
+        14 => 0,
+        16 => 0,
+        18 => 0,
+      );
+      $handler->set_option('filters', $options);
+    }
+  }
+}
