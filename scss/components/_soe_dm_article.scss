@@ -340,6 +340,18 @@
           color: $primary-color;
         }
       }
+
+      .mag-article-img {
+        overflow: hidden;
+
+        &:hover img {
+          @include transform (scale(1.03));
+        }
+
+        img {
+          @include transition;
+        }
+      }
     }
   }
 }
