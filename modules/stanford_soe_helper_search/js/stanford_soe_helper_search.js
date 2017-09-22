@@ -7,6 +7,10 @@
       var dm_search = $('#digital-magazine-menu .block-stanford-search-api');
       var dm_search_input = $('#digital-magazine-menu .block-stanford-search-api input[type="text"]');
       var searchCloseMarkup = '<div class="dm-search-close">| X</div>';
+      if (soePath.indexOf("jse-soe") !== -1) {
+        var parts = soePath.split("/");
+        soeEnv = "/" + parts[1];
+      }
 
       if (windowSize < 768) {
         randi.html("Research <br>& Ideas");
@@ -32,7 +36,7 @@
         });
       }
       if (windowSize > 767) {
-        randi.html("<a href='"+ location.protocol + '//' + location.host +"/magazine' >Research & Ideas</a>");
+        randi.html("<a href='"+ location.protocol + '//' + location.host + soeEnv +"/magazine' >Research & Ideas</a>");
         dm_search_input.attr("placeholder", "Search");
         dm_search_input.unbind();
         $('#digital-magazine-menu').removeClass('soe-mobile-search-active');
