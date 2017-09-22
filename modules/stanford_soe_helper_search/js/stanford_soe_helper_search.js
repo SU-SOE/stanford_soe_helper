@@ -7,6 +7,7 @@
       var dm_search = $('#digital-magazine-menu .block-stanford-search-api');
       var dm_search_input = $('#digital-magazine-menu .block-stanford-search-api input[type="text"]');
       var searchCloseMarkup = '<div class="dm-search-close">| X</div>';
+      var soeEnv = '';
       if (soePath.indexOf("jse-soe") !== -1) {
         var parts = soePath.split("/");
         soeEnv = "/" + parts[1];
