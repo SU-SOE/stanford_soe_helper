@@ -32,7 +32,7 @@
         });
       }
       if (windowSize > 767) {
-        randi.html("<a href='/magazine' >Research & Ideas</a>");
+        randi.html("<a href='"+ location.protocol + '//' + location.host +"/magazine' >Research & Ideas</a>");
         dm_search_input.attr("placeholder", "Search");
         dm_search_input.unbind();
         $('#digital-magazine-menu').removeClass('soe-mobile-search-active');
