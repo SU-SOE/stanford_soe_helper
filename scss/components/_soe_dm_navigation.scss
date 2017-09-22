@@ -161,3 +161,18 @@
     }
   }
 }
+#main-menu {
+  .navbar {
+    margin-bottom: 0;
+
+    .nav {
+      > li > a {
+        .page-magazine &,
+        .page-magazine-all,
+        .node-type-stanford-magazine-article & {
+          padding-bottom: 20px;
+        }
+      }
+    }
+  }
+}
