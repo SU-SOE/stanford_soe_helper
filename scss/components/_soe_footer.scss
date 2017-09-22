@@ -32,6 +32,10 @@
     }
   }
 
+  #block-bean-jse-linked-logo-block img {
+    max-width: 270px;
+  }
+
   #block-stanford-soe-helper-sitewide-stanford-soe-intranet-link {
     @include breakpoint-max(medium) {
       margin-top: 50px;
@@ -90,7 +94,8 @@
     }
   }
 
-  a.private-link, .private-link a {
+  .private-link a,
+  a.private-link {
     font-size: 18px;
     font-weight: 400;
   }
