@@ -2059,11 +2059,11 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
               display: none; } }
           /* line 98, ../scss/components/_soe_dm_navigation.scss */
           #digital-magazine-menu .region-digital-magazine-menu .block-menu-block ul li.first.leaf a:after {
-            content: "";
+            content: "\00a0 \00a0 \00a0 |";
             background-image: url("../img/soe_chevron_down_black.svg");
             background-repeat: no-repeat;
             background-size: 18px 11px;
-            vertical-align: -31%;
+            background-position-y: center;
             padding-left: 18px;
             margin-left: 12px; }
           /* line 108, ../scss/components/_soe_dm_navigation.scss */

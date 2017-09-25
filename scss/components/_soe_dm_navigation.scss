@@ -96,11 +96,11 @@
 
           &.first.leaf a {
             &:after {
-              content: "";
+              content: "\00a0 \00a0 \00a0 |";
               background-image: url("../img/soe_chevron_down_black.svg");
               background-repeat: no-repeat;
               background-size: 18px 11px;
-              vertical-align: -31%;
+              background-position-y: center;
               padding-left: 18px;
               margin-left: 12px;
             }
