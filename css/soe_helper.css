@@ -350,22 +350,29 @@ a[class*="btn-"].btn.external-link:after {
 /* line 74, ../scss/components/_soe_wysiwyg.scss */
 a[class*="btn-"].btn.external-link:focus:after, a[class*="btn-"].btn.external-link:hover:after {
   content: url("../img/soe_external_link_icon_white.svg"); }
+/* line 80, ../scss/components/_soe_wysiwyg.scss */
+a.private-link, .private-link a {
+  font-size: 18px;
+  font-weight: 400; }
+  /* line 85, ../scss/components/_soe_wysiwyg.scss */
+  a.private-link:after, .private-link a:after {
+    background-image: url("../img/soe_lock_black.svg"); }
 
-/* line 81, ../scss/components/_soe_wysiwyg.scss */
+/* line 91, ../scss/components/_soe_wysiwyg.scss */
 p.btn-center {
   text-align: center; }
-  /* line 84, ../scss/components/_soe_wysiwyg.scss */
+  /* line 94, ../scss/components/_soe_wysiwyg.scss */
   p.btn-center a.btn {
     margin-right: 40px; }
     @media (max-width: 767px) {
-      /* line 84, ../scss/components/_soe_wysiwyg.scss */
+      /* line 94, ../scss/components/_soe_wysiwyg.scss */
       p.btn-center a.btn {
         margin-right: 10px; } }
-    /* line 90, ../scss/components/_soe_wysiwyg.scss */
+    /* line 100, ../scss/components/_soe_wysiwyg.scss */
     p.btn-center a.btn:last-child {
       margin-right: 0; }
 
-/* line 96, ../scss/components/_soe_wysiwyg.scss */
+/* line 106, ../scss/components/_soe_wysiwyg.scss */
 p.columns {
   font-family: "Roboto Slab", serif;
   font-size: 1.4em;
@@ -378,13 +385,13 @@ p.columns {
   -moz-column-gap: 30px;
   column-gap: 30px; }
   @media (max-width: 767px) {
-    /* line 96, ../scss/components/_soe_wysiwyg.scss */
+    /* line 106, ../scss/components/_soe_wysiwyg.scss */
     p.columns {
       -webkit-column-count: 1;
       -moz-column-count: 1;
       column-count: 1; } }
 
-/* line 108, ../scss/components/_soe_wysiwyg.scss */
+/* line 118, ../scss/components/_soe_wysiwyg.scss */
 p.related-link {
   background: #FFFFFF;
   line-height: 1.3em;
@@ -392,25 +399,25 @@ p.related-link {
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2); }
-  /* line 114, ../scss/components/_soe_wysiwyg.scss */
+  /* line 124, ../scss/components/_soe_wysiwyg.scss */
   p.related-link a {
     text-decoration: none; }
-    /* line 117, ../scss/components/_soe_wysiwyg.scss */
+    /* line 127, ../scss/components/_soe_wysiwyg.scss */
     p.related-link a:focus, p.related-link a:hover {
       text-decoration: underline; }
-  /* line 123, ../scss/components/_soe_wysiwyg.scss */
+  /* line 133, ../scss/components/_soe_wysiwyg.scss */
   p.related-link:before {
     content: "Related \00a0 | \00a0";
     font-weight: 600; }
 
-/* line 130, ../scss/components/_soe_wysiwyg.scss */
+/* line 140, ../scss/components/_soe_wysiwyg.scss */
 p.summary.drop-cap:first-letter {
   font-size: 2.875em;
   font-weight: 600;
   float: left;
   padding: 25px 10px 0 0; }
 
-/* line 138, ../scss/components/_soe_wysiwyg.scss */
+/* line 148, ../scss/components/_soe_wysiwyg.scss */
 .caption {
   color: #686868;
   font-weight: 300;
@@ -419,14 +426,14 @@ p.summary.drop-cap:first-letter {
   text-align: center;
   margin: 0 2em 4em; }
 
-/* line 148, ../scss/components/_soe_wysiwyg.scss */
+/* line 158, ../scss/components/_soe_wysiwyg.scss */
 .main table {
   width: 100%;
   margin-bottom: 2em; }
-/* line 154, ../scss/components/_soe_wysiwyg.scss */
+/* line 164, ../scss/components/_soe_wysiwyg.scss */
 .main p.float-left {
   margin-right: 15px; }
-/* line 158, ../scss/components/_soe_wysiwyg.scss */
+/* line 168, ../scss/components/_soe_wysiwyg.scss */
 .main p.float-right {
   margin-left: 15px; }
 
@@ -615,11 +622,6 @@ p.summary.drop-cap:first-letter {
     background-image: url("../img/soe_instagram_icon.png");
     width: 30px;
     margin-right: 0; }
-/* line 97, ../scss/components/_soe_footer.scss */
-#footer .private-link a,
-#footer a.private-link {
-  font-size: 18px;
-  font-weight: 400; }
 
 /* line 10, ../scss/components/_soe_navigation.scss */
 #main-menu .nav-collapse.collapse {

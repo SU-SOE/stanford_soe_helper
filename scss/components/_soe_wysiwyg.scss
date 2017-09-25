@@ -76,6 +76,16 @@ a {
       content: url("../img/soe_external_link_icon_white.svg");
     }
   }
+
+  &.private-link,
+  .private-link & {
+    font-size: 18px;
+    font-weight: 400;
+
+    &:after {
+      background-image: url("../img/soe_lock_black.svg");
+    }
+  }
 }
 
 p.btn-center {
