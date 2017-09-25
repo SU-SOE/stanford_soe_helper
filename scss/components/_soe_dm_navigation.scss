@@ -96,10 +96,10 @@
 
           &.first.leaf a {
             &:after {
-              content: url("../img/soe_chevron_down_black.png");
+              content: url("../img/soe_chevron_down_black.svg");
               padding-left: 10px;
               @include breakpoint-max(small) {
-                content: url("../img/soe_chevron_down_black.png") "\00a0 \00a0 \00a0 |";
+                content: url("../img/soe_chevron_down_black.svg") "\00a0 \00a0 \00a0 |";
               }
             }
 
