@@ -2059,55 +2059,52 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
               display: none; } }
           /* line 98, ../scss/components/_soe_dm_navigation.scss */
           #digital-magazine-menu .region-digital-magazine-menu .block-menu-block ul li.first.leaf a:after {
-            content: url("../img/soe_chevron_down_black.svg");
-            padding-left: 10px; }
-            @media (max-width: 767px) {
-              /* line 98, ../scss/components/_soe_dm_navigation.scss */
-              #digital-magazine-menu .region-digital-magazine-menu .block-menu-block ul li.first.leaf a:after {
-                content: url("../img/soe_chevron_down_black.svg") "   |"; } }
-          /* line 106, ../scss/components/_soe_dm_navigation.scss */
+            content: "";
+            background-image: url("../img/soe_chevron_down_black.svg");
+            background-repeat: no-repeat;
+            background-size: 18px 11px;
+            vertical-align: -31%;
+            padding-left: 18px;
+            margin-left: 12px; }
+          /* line 108, ../scss/components/_soe_dm_navigation.scss */
           #digital-magazine-menu .region-digital-magazine-menu .block-menu-block ul li.first.leaf a:focus:after {
-            content: url("../img/soe_chevron_up_black.png"); }
-            @media (max-width: 767px) {
-              /* line 106, ../scss/components/_soe_dm_navigation.scss */
-              #digital-magazine-menu .region-digital-magazine-menu .block-menu-block ul li.first.leaf a:focus:after {
-                content: url("../img/soe_chevron_up_black.png") "   |"; } }
-          /* line 114, ../scss/components/_soe_dm_navigation.scss */
+            background-image: url("../img/soe_chevron_up_black.svg"); }
+          /* line 113, ../scss/components/_soe_dm_navigation.scss */
           #digital-magazine-menu .region-digital-magazine-menu .block-menu-block ul li a {
             color: #333333;
             padding-bottom: 20px;
             border-bottom: 2px solid transparent; }
-            /* line 119, ../scss/components/_soe_dm_navigation.scss */
+            /* line 118, ../scss/components/_soe_dm_navigation.scss */
             #digital-magazine-menu .region-digital-magazine-menu .block-menu-block ul li a:focus, #digital-magazine-menu .region-digital-magazine-menu .block-menu-block ul li a:hover {
               color: #686868;
               background-color: transparent;
               border-bottom-color: #686868; }
-            /* line 126, ../scss/components/_soe_dm_navigation.scss */
+            /* line 125, ../scss/components/_soe_dm_navigation.scss */
             #digital-magazine-menu .region-digital-magazine-menu .block-menu-block ul li a.active {
               color: #686868;
               border-bottom-color: #686868; }
 
-/* line 140, ../scss/components/_soe_dm_navigation.scss */
+/* line 139, ../scss/components/_soe_dm_navigation.scss */
 #digital-magazine-megamenu .container {
   background-color: #575757; }
-  /* line 144, ../scss/components/_soe_dm_navigation.scss */
+  /* line 143, ../scss/components/_soe_dm_navigation.scss */
   #digital-magazine-megamenu .container .region-digital-magazine-megamenu .view-content {
     display: flex;
     flex-wrap: wrap;
     text-align: center; }
-    /* line 149, ../scss/components/_soe_dm_navigation.scss */
+    /* line 148, ../scss/components/_soe_dm_navigation.scss */
     #digital-magazine-megamenu .container .region-digital-magazine-megamenu .view-content .views-row {
       width: calc(100% * (1/4) - 2%);
       margin-right: 2%; }
       @media (max-width: 767px) {
-        /* line 149, ../scss/components/_soe_dm_navigation.scss */
+        /* line 148, ../scss/components/_soe_dm_navigation.scss */
         #digital-magazine-megamenu .container .region-digital-magazine-megamenu .view-content .views-row {
           width: calc(100% * (1/2) - 2%); } }
       @media (max-width: 480px) {
-        /* line 149, ../scss/components/_soe_dm_navigation.scss */
+        /* line 148, ../scss/components/_soe_dm_navigation.scss */
         #digital-magazine-megamenu .container .region-digital-magazine-megamenu .view-content .views-row {
           width: 100%; } }
-      /* line 159, ../scss/components/_soe_dm_navigation.scss */
+      /* line 158, ../scss/components/_soe_dm_navigation.scss */
       #digital-magazine-megamenu .container .region-digital-magazine-megamenu .view-content .views-row a {
         color: #FFFFFF;
         font-size: 1em; }
