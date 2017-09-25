@@ -96,13 +96,16 @@
 
           &.first.leaf a {
             &:after {
-              content: "\00a0 \00a0 \00a0 |";
+              content: "";
               background-image: url("../img/soe_chevron_down_black.svg");
               background-repeat: no-repeat;
               background-size: 18px 11px;
               background-position-y: center;
               padding-left: 18px;
               margin-left: 12px;
+              @include breakpoint-max(small) {
+                content: "\00a0 \00a0 \00a0 |";
+              }
             }
 
             &:focus:after {
