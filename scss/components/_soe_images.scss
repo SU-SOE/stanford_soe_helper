@@ -128,22 +128,20 @@
           background-image: url("../img/soe_lg_arrow_right_black.svg");
           background-repeat: no-repeat;
           background-size: 41px 30px;
-          vertical-align: -6%;
+          vertical-align: -10%;
           padding-left: 41px;
           margin-left: 12px;
           @include breakpoint-max(medium) {
             background-size: 31px 23px;
-            vertical-align: -9%;
+            vertical-align: -16%;
             padding-left: 31px;
           }
           @include breakpoint-max(small) {
             background-size: 28px 20px;
             padding-left: 28px;
           }
-          @include breakpoint-max(small) {
-            background-size: 25px 18px;
-            vertical-align: -14%;
-            padding-left: 25px;
+          @include breakpoint-max(x-small) {
+            vertical-align: -19%;
           }
         }
       }

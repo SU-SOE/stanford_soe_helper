@@ -546,9 +546,21 @@
 
         .mag-article-issue-more {
           &:after {
-            content: url("../img/soe_lg_arrow_right_black.svg");
-            vertical-align: middle;
-            padding-left: 20px;
+            content: "";
+            background-image: url("../img/soe_lg_arrow_right_black.svg");
+            background-repeat: no-repeat;
+            background-size: 41px 30px;
+            vertical-align: -24%;
+            padding-left: 41px;
+            margin-left: 12px;
+            @include breakpoint-max(small) {
+              background-size: 35px 26px;
+              vertical-align: -20%;
+            }
+            @include breakpoint-max(x-small) {
+              background-size: 31px 23px;
+              vertical-align: -32%;
+            }
           }
         }
       }
@@ -744,9 +756,20 @@
           }
 
           &:after {
-            content: url("../img/soe_lg_arrow_right_black.svg");
-            vertical-align: -6%;
-            padding-left: 20px;
+            content: "";
+            background-image: url("../img/soe_lg_arrow_right_black.svg");
+            background-repeat: no-repeat;
+            background-size: 41px 30px;
+            vertical-align: -10%;
+            padding-left: 41px;
+            margin-left: 12px;
+            @include breakpoint-max(small) {
+              vertical-align: -14%;
+            }
+            @include breakpoint-max(x-small) {
+              background-size: 31px 23px;
+              vertical-align: -25%;
+            }
           }
 
           &.mag-issue-color-orange {
