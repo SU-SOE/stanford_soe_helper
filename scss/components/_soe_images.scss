@@ -47,16 +47,16 @@
       object-fit: cover;
       object-position: center center;
       width: 100%;
-      height: calc(100vh - 160px);
+      height: calc(100vh - 157px);
       @include breakpoint-max(large) {
-        height: calc(100vh - 205px);
+        height: calc(100vh - 203px);
       }
       @include breakpoint-max(medium) {
         height: auto;
       }
 
       .logged-in & {
-        height: calc(100vh - 210px);
+        height: calc(100vh - 235px);
       }
     }
   }

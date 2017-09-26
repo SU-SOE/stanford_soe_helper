@@ -16,16 +16,12 @@
         object-fit: cover;
         object-position: center center;
         width: 100%;
-        height: calc(100vh - 180px);
+        height: calc(100vh - 144px);
         @include breakpoint-max(large) {
-          height: calc(100vh - 233px);
+          height: calc(100vh - 189px);
         }
         @include breakpoint-max(medium) {
           height: auto;
-        }
-
-        .logged-in & {
-          height: calc(100vh - 210px);
         }
       }
 
