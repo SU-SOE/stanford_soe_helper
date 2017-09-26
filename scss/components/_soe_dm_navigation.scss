@@ -96,18 +96,24 @@
 
           &.first.leaf a {
             &:after {
-              content: url("../img/soe_chevron_down_black.png");
-              padding-left: 10px;
+              content: "";
+              background-image: url("../img/soe_chevron_down_black.svg");
+              background-repeat: no-repeat;
+              background-size: 18px 11px;
+              background-position-y: center;
+              padding-left: 18px;
+              margin-left: 12px;
               @include breakpoint-max(small) {
-                content: url("../img/soe_chevron_down_black.png") "\00a0 \00a0 \00a0 |";
+                content: "\00a0 \00a0 \00a0 |";
               }
             }
 
+            &:hover:after {
+              background-image: url("../img/soe_chevron_down_gray-orange.svg");
+            }
+
             &:focus:after {
-              content: url("../img/soe_chevron_up_black.png");
-              @include breakpoint-max(small) {
-                content: url("../img/soe_chevron_up_black.png") "\00a0 \00a0 \00a0 |";
-              }
+              background-image: url("../img/soe_chevron_up_gray-orange.svg");
             }
           }
 

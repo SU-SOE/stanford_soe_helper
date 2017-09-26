@@ -47,16 +47,16 @@
       object-fit: cover;
       object-position: center center;
       width: 100%;
-      height: calc(100vh - 160px);
+      height: calc(100vh - 157px);
       @include breakpoint-max(large) {
-        height: calc(100vh - 205px);
+        height: calc(100vh - 203px);
       }
       @include breakpoint-max(medium) {
         height: auto;
       }
 
       .logged-in & {
-        height: calc(100vh - 210px);
+        height: calc(100vh - 235px);
       }
     }
   }
@@ -125,25 +125,23 @@
 
         &:after {
           content: "";
-          background-image: url("../img/soe_lg_arrow_right_black.png");
+          background-image: url("../img/soe_lg_arrow_right_black.svg");
           background-repeat: no-repeat;
           background-size: 41px 30px;
-          vertical-align: -6%;
+          vertical-align: -10%;
           padding-left: 41px;
           margin-left: 12px;
           @include breakpoint-max(medium) {
             background-size: 31px 23px;
-            vertical-align: -9%;
+            vertical-align: -16%;
             padding-left: 31px;
           }
           @include breakpoint-max(small) {
             background-size: 28px 20px;
             padding-left: 28px;
           }
-          @include breakpoint-max(small) {
-            background-size: 25px 18px;
-            vertical-align: -14%;
-            padding-left: 25px;
+          @include breakpoint-max(x-small) {
+            vertical-align: -19%;
           }
         }
       }
