@@ -92,12 +92,6 @@
 
     a.postcard-linked-img-container {
       flex-shrink: 0;
-
-      /*** CJW: SPAN 12 BEAN RESPONSIVE***/
-      @include breakpoint-max(medium) {
-          flex-shrink: .9;
-      }
-
       margin-right: 30px;
       @include breakpoint-max(small) {
         margin-right: 0;
@@ -181,15 +175,6 @@
             @include td-color($primary-color);
           }
         }
-      }
-
-      /***CJW: STANDARDIZE PADDING INSIDE POSTCARD LINKED BLOCKS, WILL NEED TO REPEAT FOR POSTCARD BLOCKS**/
-      .postcard-linked-body p:last-child{
-        margin-bottom: .8em;
-      }
-
-      .postcard-linked-body p {
-        margin-bottom: 1em;
       }
     }
 

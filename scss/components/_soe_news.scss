@@ -8,10 +8,6 @@
 // NODE DISPLAY
 
 .node-type-stanford-news-item {
-  .date-display-single {
-    font-weight: 600;
-  }
-
   #page-title {
     display: none;
   }
@@ -202,7 +198,6 @@
           font-size: em(28px);
 
           a {
-            margin: 1.8em 0 1em;
             @include td-color($pink);
 
             &:focus,
@@ -234,14 +229,4 @@
   img {
     margin-bottom: 10px;
   }
-}
-
-// NEWS PAGE VIEW
-
-.page-news .date-display-single {
-  font-weight: 600;
-}
-
-.view-soe-school-news-with-teaser {
-  margin-top: 12px;
 }
