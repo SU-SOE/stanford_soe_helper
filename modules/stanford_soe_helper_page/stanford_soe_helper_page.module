@@ -5,3 +5,81 @@
  */
 
 include_once 'stanford_soe_helper_page.features.inc';
+/**
+ * Implements hook_views_pre_view().
+ */
+function stanford_soe_helper_page_views_pre_view(&$view, &$display_id, &$args) {
+  if ($view->name == 'stanford_page_manage') {
+
+
+    // Add Field: Content: Accent color.
+    $options['id'] = 'field_s_banner_accent_color';
+    $options['table'] = 'field_data_field_s_banner_accent_color';
+    $options['field'] = 'field_s_banner_accent_color';
+    $options['type'] = 'taxonomy_term_reference_plain';
+
+    stanford_related_content_insert_item(
+      $view,
+      $display_id,
+      'field',
+      'field_data_field_s_banner_accent_color',
+      'field_s_banner_accent_color',
+      $options,
+      'name'
+    );
+
+    unset($options);
+
+    // Add Field: Content: Banner image.
+    $options['id'] = 'field_s_banner_image';
+    $options['table'] = 'field_data_field_s_banner_image';
+    $options['field'] = 'field_s_banner_image';
+    $options['click_sort_column'] = 'fid';
+    $options['settings'] = array(
+      'image_style' => 'thumbnail',
+      'image_link' => '',
+    );
+    stanford_related_content_insert_item(
+      $view,
+      $display_id,
+      'field',
+      'field_data_field_s_banner_image',
+      'field_s_banner_image',
+      $options,
+      'name'
+    );
+
+    if ($view->set_display('page')) {
+      unset($options);
+      $handler = $view->display_handler;
+
+      // Add Filter criterion: Content: Accent color (field_s_banner_accent_color).
+      $options = $handler->get_option('filters');
+      $options['field_s_banner_accent_color_tid']['id'] = 'field_s_banner_accent_color_tid';
+      $options['field_s_banner_accent_color_tid']['table'] = 'field_data_field_s_banner_accent_color';
+      $options['field_s_banner_accent_color_tid']['field'] = 'field_s_banner_accent_color_tid';
+      $options['field_s_banner_accent_color_tid']['value'] = '';
+      $options['field_s_banner_accent_color_tid']['exposed'] = TRUE;
+      $options['field_s_banner_accent_color_tid']['expose']['operator_id'] = 'field_s_banner_accent_color_tid_op';
+      $options['field_s_banner_accent_color_tid']['expose']['label'] = 'Accent color';
+      $options['field_s_banner_accent_color_tid']['expose']['operator'] = 'field_s_banner_accent_color_tid_op';
+      $options['field_s_banner_accent_color_tid']['expose']['identifier'] = 'field_s_banner_accent_color_tid';
+      $options['field_s_banner_accent_color_tid']['expose']['remember_roles'] = array(
+        2 => '2',
+        1 => 0,
+        12 => 0,
+        10 => 0,
+        8 => 0,
+        6 => 0,
+        20 => 0,
+        14 => 0,
+        16 => 0,
+        18 => 0,
+      );
+      $options['field_s_banner_accent_color_tid']['vocabulary'] = 'soe_accent_color';
+
+      $handler->set_option('filters', $options);
+    }
+  }
+}
+
