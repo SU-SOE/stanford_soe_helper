@@ -14,6 +14,11 @@
   }
 
   #block-views-stanford-page-top-banner-block {
+    .views-row {
+      @include breakpoint-max(small) {
+        margin-bottom: 0;
+      }
+    }
     .page-feat-caption-container {
       font-size: em(18px);
       font-weight: 100;
