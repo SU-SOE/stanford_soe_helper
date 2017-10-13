@@ -6,6 +6,35 @@
 
 // PRIMARY NAVIGATION
 
+.node-type-stanford-magazine-issue,
+.page-taxonomy-term,
+.node-type-stanford-magazine-issue,
+.page-magazine,
+.page-magazine-all,
+.node-type-stanford-magazine-article {
+  .navbar {
+    .btn.btn-navbar {
+      @include breakpoint-max(small) {
+        background: $brand-bright;
+        margin-top: -47px;
+        float: right;
+      }
+      @include breakpoint-max(x-small) {
+        margin-top: -47px;
+      }
+      @media (max-width: 380px) {
+        margin-top: -47px;
+      }
+      @media (max-width: 305px) {
+        float: left;
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+// DIGITAL MAGAZINE NAVIGATION
+
 #digital-magazine-menu {
   background: $turquoise;
 
