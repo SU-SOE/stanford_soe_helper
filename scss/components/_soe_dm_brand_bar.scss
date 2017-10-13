@@ -15,6 +15,12 @@
       img {
         max-width: 90px;
       }
+
+      &.logo-mobile {
+        @include breakpoint-max(x-small) {
+          padding: 0 5px 0 0;
+        }
+      }
     }
 
     &.header {
@@ -25,6 +31,12 @@
     #site-title-first-line.site-title-uppercase {
       font-size: 18px;
       margin-bottom: -3px;
+    }
+
+    #name-and-slogan.with-logo {
+      @include breakpoint-max(x-small) {
+        padding: 0 0 0 5px;
+      }
     }
   }
 }
