@@ -93,7 +93,7 @@
     a.postcard-linked-img-container {
       flex-shrink: 0;
 
-      /*** CJW: SPAN 12 BEAN RESPONSIVE***/
+      /*** SPAN 12 BEAN RESPONSIVE ***/
       @include breakpoint-max(medium) {
           flex-shrink: .9;
       }
@@ -183,7 +183,7 @@
         }
       }
 
-      /***CJW: STANDARDIZE PADDING INSIDE POSTCARD LINKED BLOCKS, WILL NEED TO REPEAT FOR POSTCARD BLOCKS**/
+      /*** STANDARDIZE PADDING INSIDE POSTCARD LINKED BLOCKS, WILL NEED TO REPEAT FOR POSTCARD BLOCKS**/
       .postcard-linked-body p:last-child{
         margin-bottom: .8em;
       }
