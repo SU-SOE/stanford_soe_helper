@@ -17,9 +17,6 @@
     font-size: em(20px);
     width: 65%;
     margin: 0 auto 18px;
-    @include breakpoint-max(medium) {
-      width: 85%;
-    }
     @include breakpoint-max(x-small) {
       width: 100%;
     }
@@ -30,9 +27,6 @@
     line-height: 1.3em;
     width: 65%;
     margin: 44px auto 22px;
-    @include breakpoint-max(medium) {
-      width: 85%;
-    }
     @include breakpoint-max(x-small) {
       width: 100%;
     }
@@ -46,9 +40,6 @@
     justify-content: space-between;
     width: 65%;
     margin: 0 auto 32px;
-    @include breakpoint-max(medium) {
-      width: 85%;
-    }
     @include breakpoint-max(x-small) {
       width: 100%;
     }
@@ -143,10 +134,8 @@
   }
 
   .article-grouping {
+    @include breakpoint-min(medium);
     padding: 0 70px;
-    @include breakpoint-max(medium) {
-      padding: 0px;
-    }
   }
 }
 
@@ -827,9 +816,6 @@
   }
 
   .paragraphs-item-p-wysiwyg-simple {
-    @include breakpoint-max(medium) {
-      width: 85%;
-    }
     a {
       text-decoration: underline;
     }
