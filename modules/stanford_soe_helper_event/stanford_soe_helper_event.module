@@ -63,3 +63,27 @@ function stanford_soe_helper_event_views_pre_view(&$view, &$display_id, &$args) 
     }
   }
 }
+
+/**
+ * Alter the results of node_view().
+ *
+ * This hook is called after the content has been assembled in a structured
+ * array and may be used for doing processing which requires that the complete
+ * node content structure has been built.
+ *
+ * If the module wishes to act on the rendered HTML of the node rather than the
+ * structured content array, it may use this hook to add a #post_render
+ * callback.  Alternatively, it could also implement hook_preprocess_node(). See
+ * drupal_render() and theme() documentation respectively for details.
+ *
+ * @param $build
+ *   A renderable array representing the node content.
+ *
+ */
+function stanford_soe_helper_event_node_view_alter(&$build) {
+  // Removing the image from node view on stanford_event.
+  // Doing this here as we don't want to contribute this back to the feature.
+  if ($build['#view_mode'] == 'full' && isset($build['field_stanford_event_image'])) {
+    unset($build['field_stanford_event_image']);
+  }
+}
