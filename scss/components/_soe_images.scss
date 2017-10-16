@@ -54,14 +54,9 @@
       @include breakpoint-max(medium) {
         height: auto;
       }
+      
       .logged-in & {
         height: calc(100vh - 235px);
-        @include breakpoint-max(small) {
-          height: calc(100vh - 230px);
-        }
-        @include breakpoint-max(x-small) {
-          height: calc(100vh - 235px);
-        }
       }
     }
   }
