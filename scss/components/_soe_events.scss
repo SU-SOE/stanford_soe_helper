@@ -35,32 +35,64 @@
 
 .view-stanford-event-featured {
   &.vertical-event {
+    .front & {
+      @include breakpoint-max(small) {
+        width: 95%;
+        margin: 0 auto;
+      }
+    }
+
     .feat-events-container {
       overflow: hidden;
+      @include box-shadow;
 
-      .feat-events-img-container {
+      .feat-events-date-time-container {
         position: relative;
-
-        &:hover img {
-          @include transform (scale(1.03));
-        }
-
-        img {
-          @include transition;
-          width: 100%;
+        background: $white;
+        height: 93px;
+        @media (min-width: 768px) and (max-width: 979px) {
+          height: auto;
         }
 
         .date-stacked {
+          float: left;
+          height: 93px;
+          width: 93px;
+          margin: 0;
+          padding: 0;
+
+          .date-month {
+            font-size: em(20px);
+            line-height: 38px;
+            margin-top: 11px;
+          }
+
+          .date-day {
+            font-size: em(38px);
+          }
+        }
+
+        .feat-events-label-time-container {
           position: absolute;
-          bottom: -20px;
-          left: 20px;
+          bottom: -7px;
+          left: 108px;
+          @media (min-width: 768px) and (max-width: 979px) {
+            position: static;
+            clear: both;
+            padding: 10px 30px 0;
+          }
+
+          .feat-events-label p {
+            color: $gray-orange;
+            font-weight: 100;
+            margin-bottom: 0;
+          }
         }
       }
 
       .feat-events-content-container {
         background: $white;
-        padding: 50px 30px 30px;
-        @include box-shadow;
+        padding: 30px;
 
         .feat-events-title {
           h2 {
@@ -76,6 +108,11 @@
               }
             }
           }
+        }
+
+        .feat-events-teaser {
+          font-size: em(18px);
+          line-height: 1.3em;
         }
       }
     }
@@ -142,6 +179,6 @@
 
 // Event Node
 
-#content-body .content .field-name-field-s-event-map-link a.btn  {
+#content-body .content .field-name-field-s-event-map-link a.btn {
   margin: 0;
 }

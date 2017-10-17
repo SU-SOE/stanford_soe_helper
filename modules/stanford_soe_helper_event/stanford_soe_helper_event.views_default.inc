@@ -83,7 +83,6 @@ function stanford_soe_helper_event_views_default_views() {
   $handler->display->display_options['fields']['field_stanford_event_datetime']['field'] = 'field_stanford_event_datetime';
   $handler->display->display_options['fields']['field_stanford_event_datetime']['label'] = '';
   $handler->display->display_options['fields']['field_stanford_event_datetime']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_stanford_event_datetime']['alter']['text'] = '<div class="clearfix">[field_stanford_event_datetime]</div>';
   $handler->display->display_options['fields']['field_stanford_event_datetime']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_stanford_event_datetime']['settings'] = array(
     'format_type' => 'search_api_facetapi_YEAR',
@@ -99,8 +98,6 @@ function stanford_soe_helper_event_views_default_views() {
   $handler->display->display_options['fields']['field_stanford_event_datetime_1']['field'] = 'field_stanford_event_datetime';
   $handler->display->display_options['fields']['field_stanford_event_datetime_1']['label'] = '';
   $handler->display->display_options['fields']['field_stanford_event_datetime_1']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_stanford_event_datetime_1']['alter']['text'] = '[field_stanford_event_datetime]
-  [field_stanford_event_datetime_1]';
   $handler->display->display_options['fields']['field_stanford_event_datetime_1']['alter']['nl2br'] = TRUE;
   $handler->display->display_options['fields']['field_stanford_event_datetime_1']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_stanford_event_datetime_1']['settings'] = array(
@@ -156,17 +153,18 @@ function stanford_soe_helper_event_views_default_views() {
     'multiple_to' => '',
     'show_remaining_days' => 0,
   );
-  /* Field: Content: Image */
-  $handler->display->display_options['fields']['field_stanford_event_image']['id'] = 'field_stanford_event_image';
-  $handler->display->display_options['fields']['field_stanford_event_image']['table'] = 'field_data_field_stanford_event_image';
-  $handler->display->display_options['fields']['field_stanford_event_image']['field'] = 'field_stanford_event_image';
-  $handler->display->display_options['fields']['field_stanford_event_image']['label'] = '';
-  $handler->display->display_options['fields']['field_stanford_event_image']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_stanford_event_image']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_stanford_event_image']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_stanford_event_image']['settings'] = array(
-    'image_style' => 'header_370_x_170',
-    'image_link' => 'content',
+  /* Field: Content: Body */
+  $handler->display->display_options['fields']['body']['id'] = 'body';
+  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
+  $handler->display->display_options['fields']['body']['field'] = 'body';
+  $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['body']['alter']['max_length'] = '140';
+  $handler->display->display_options['fields']['body']['alter']['trim'] = TRUE;
+  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['body']['type'] = 'text_trimmed';
+  $handler->display->display_options['fields']['body']['settings'] = array(
+    'trim_length' => '140',
   );
   /* Field: Content: Edit link */
   $handler->display->display_options['fields']['edit_node']['id'] = 'edit_node';
@@ -186,18 +184,21 @@ function stanford_soe_helper_event_views_default_views() {
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['label'] = '';
   $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="feat-events-container">
-  <div class="feat-events-img-container">
-    [field_stanford_event_image]
+    <div class="feat-events-date-time-container">
       <div class="date-stacked">
         <div class="date-month">[field_stanford_event_datetime_3]</div>
         <div class="date-day">[field_stanford_event_datetime_4]</div>
       </div>
-  </div>
+      <div class="feat-events-label-time-container">
+        <div class="feat-events-label"><p>Event</p></div>
+        <div class="feat-events-time">[field_stanford_event_datetime_5]</div>
+      </div>
+    </div>
     <div class="feat-events-content-container">
       <div class="feat-events-title"><h2>[title]</h2></div>
-      <div class="feat-events-time">[field_stanford_event_datetime_5]</div>
+      <div class="feat-events-teaser"><p>[body]</p></div>
       <div class="edit-link">[edit_node]</div>
-    </div>
+   </div>
 </div>';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   /* Sort criterion: Content: Date and Time -  start date (field_stanford_event_datetime) */
