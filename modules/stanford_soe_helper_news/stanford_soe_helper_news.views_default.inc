@@ -132,7 +132,7 @@ function stanford_soe_helper_news_views_default_views() {
       <div class="feat-news-img">[field_s_image_info]</div>
   </a>
       <div class="feat-news-content-container">
-           <div class="feat-news-date">[field_s_news_date]</div>
+           <div class="feat-news-date">School News – [field_s_news_date]</div>
            <div class="feat-news-title"><h2>[title]</h2></div>
            <div class="feat-news-teaser">[field_s_news_teaser]</div>
            <div class="edit-link">[edit_node]</div>
