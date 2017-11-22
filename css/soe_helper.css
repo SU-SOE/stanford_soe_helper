@@ -228,14 +228,15 @@ th {
   /* line 230, ../scss/components/_soe_global.scss */
   .well h2 {
     font-size: 1.6em;
-    font-weight: 600; }
-  /* line 235, ../scss/components/_soe_global.scss */
+    font-weight: 600;
+    margin-bottom: 1.1em; }
+  /* line 236, ../scss/components/_soe_global.scss */
   .well p {
     font-size: 1em;
     font-weight: 400;
     line-height: 1.5em; }
 
-/* line 242, ../scss/components/_soe_global.scss */
+/* line 243, ../scss/components/_soe_global.scss */
 .descriptor {
   font-size: 0.9em;
   line-height: 1.2em;
@@ -243,59 +244,59 @@ th {
   text-transform: none;
   margin-bottom: 4px; }
 
-/* line 250, ../scss/components/_soe_global.scss */
+/* line 251, ../scss/components/_soe_global.scss */
 .postcard-left {
   margin-top: 6px; }
 
-/* line 254, ../scss/components/_soe_global.scss */
+/* line 255, ../scss/components/_soe_global.scss */
 .views-row-lines .views-row {
   border-color: #D7D7D7; }
 
-/* line 258, ../scss/components/_soe_global.scss */
+/* line 259, ../scss/components/_soe_global.scss */
 #wrap {
   background: #F8F8F8; }
 
-/* line 262, ../scss/components/_soe_global.scss */
+/* line 263, ../scss/components/_soe_global.scss */
 .main {
   padding: 80px 0 50px;
   background: #F8F8F8; }
   @media (max-width: 767px) {
-    /* line 262, ../scss/components/_soe_global.scss */
+    /* line 263, ../scss/components/_soe_global.scss */
     .main {
       padding-top: 40px; } }
-  /* line 269, ../scss/components/_soe_global.scss */
+  /* line 270, ../scss/components/_soe_global.scss */
   .main p {
     margin: 0 0 1.5em; }
-    /* line 272, ../scss/components/_soe_global.scss */
+    /* line 273, ../scss/components/_soe_global.scss */
     .main p a {
       text-decoration: underline; }
-      /* line 275, ../scss/components/_soe_global.scss */
+      /* line 276, ../scss/components/_soe_global.scss */
       .main p a.btn {
         text-decoration: none; }
-  /* line 281, ../scss/components/_soe_global.scss */
+  /* line 282, ../scss/components/_soe_global.scss */
   .main .block {
     margin-bottom: 50px; }
 
 @media (max-width: 767px) {
-  /* line 286, ../scss/components/_soe_global.scss */
+  /* line 287, ../scss/components/_soe_global.scss */
   .container {
     margin-bottom: 10px; }
-    /* line 290, ../scss/components/_soe_global.scss */
+    /* line 291, ../scss/components/_soe_global.scss */
     #fullwidth-bottom .container {
       margin-bottom: 0; } }
 
 @media (min-width: 1200px) {
-  /* line 296, ../scss/components/_soe_global.scss */
+  /* line 297, ../scss/components/_soe_global.scss */
   #content.span9 {
     width: 740px;
     margin-left: 80px; } }
 
 /*** BODY - MORE SPACE FROM LAST CHILD TO TOP OF BLOCKS AFTER WYSIWYG ***/
-/* line 304, ../scss/components/_soe_global.scss */
+/* line 305, ../scss/components/_soe_global.scss */
 .content-body p:last-child {
   margin-bottom: 2.5em; }
 
-/* line 308, ../scss/components/_soe_global.scss */
+/* line 309, ../scss/components/_soe_global.scss */
 .region-sidebar-second {
   margin-top: 34px; }
 
@@ -1670,21 +1671,31 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
     font-size: 0.9em;
     line-height: 1.3em; }
 
-/* line 226, ../scss/components/_soe_news.scss */
+/* line 227, ../scss/components/_soe_news.scss */
+.view-stanford-news-with-title h3,
 .view-stanford-news-image-title h3 {
   font-size: 1.1em;
-  line-height: 1.2em;
+  line-height: 1.1em;
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-decoration: none; }
-/* line 233, ../scss/components/_soe_news.scss */
+  /* line 232, ../scss/components/_soe_news.scss */
+  .view-stanford-news-with-title h3 a,
+  .view-stanford-news-image-title h3 a {
+    text-decoration: none; }
+/* line 236, ../scss/components/_soe_news.scss */
+.view-stanford-news-with-title .views-row,
+.view-stanford-news-image-title .views-row {
+  margin-bottom: 1.5em; }
+/* line 241, ../scss/components/_soe_news.scss */
+.view-stanford-news-with-title img,
 .view-stanford-news-image-title img {
   margin-bottom: 10px; }
 
-/* line 240, ../scss/components/_soe_news.scss */
+/* line 248, ../scss/components/_soe_news.scss */
 .page-news .date-display-single {
   font-weight: 600; }
 
-/* line 244, ../scss/components/_soe_news.scss */
+/* line 252, ../scss/components/_soe_news.scss */
 .view-soe-school-news-with-teaser {
   margin-top: 12px; }
 
