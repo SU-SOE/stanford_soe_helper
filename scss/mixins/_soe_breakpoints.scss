@@ -15,6 +15,9 @@
   @else if $point == x-small {
     @media (max-width: 480px)  { @content; }
   }
+  @else if $point == xx-small {
+    @media (max-width: 400px)  { @content; }
+  }
 }
 
 // MIN-WIDTH BREAKPOINTS
@@ -31,5 +34,8 @@
   }
   @else if $point == x-small {
     @media (min-width: 480px)  { @content; }
+  }
+  @else if $point == xx-small {
+    @media (min-width: 400px)  { @content; }
   }
 }
