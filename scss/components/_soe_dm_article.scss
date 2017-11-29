@@ -378,7 +378,7 @@
   margin-top: -30px;
 }
 
-// LATEST NEWS DM LANDING PAGE VIEW AND ISSUE VIEW
+// LATEST NEWS DM LANDING PAGE VIEW
 
 .view-stanford-magazine-issue-article,
 .view-stanford-magazine-article-mag-landing-page {
@@ -399,6 +399,12 @@
     }
     @include breakpoint-max(small) {
       width: 100%;
+    }
+    &.mag-article-title {
+      letter-spacing: normal;
+      margin: 0;
+      text-align: start;
+      width: auto;
     }
   }
 
