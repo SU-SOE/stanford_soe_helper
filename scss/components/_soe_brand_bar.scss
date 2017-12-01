@@ -25,8 +25,18 @@
 
 #header {
   #logo {
+    &.logo-mobile img,
     img {
       max-width: 160px;
+      @include breakpoint-max(x-small) {
+        max-width: 130px;
+      }
+      @include breakpoint-max(xx-small) {
+        max-width: 90px;
+      }
+      @media (max-width: 380px) {
+        max-width: 80px;
+      }
     }
 
     &.logo-mobile {
@@ -40,12 +50,10 @@
           background-size: 120px 26.66px;
         }
       }
-
-      img {
-        @media (max-width: 380px) {
-          max-width: 80px;
-        }
+      @include breakpoint-max(xx-small) {
+        padding: 0 5px 0 0;
       }
+
     }
   }
 
@@ -55,19 +63,28 @@
       display: table-cell;
       padding: 0 0 0 10px;
     }
+    @include breakpoint-max(xx-small) {
+      padding: 0 0 0 5px;
+    }
   }
 
   &.header {
     background: $white;
     padding: 30px 0 0;
+    @include breakpoint-max(xx-small) {
+      min-height: 45px;
+      padding: 20px 0 0;
+    }
 
     #site-title-first-line.site-title-uppercase {
       font-size: 34px;
       @include breakpoint-max(x-small) {
         font-size: 28px;
+        margin-bottom: -5px;
       }
-      @media (max-width: 400px) {
-        font-size: 24px;
+      @include breakpoint-max(xx-small) {
+        font-size: 18px;
+        margin-bottom: -3px;
       }
       @media (max-width: 380px) {
         font-size: 16px;

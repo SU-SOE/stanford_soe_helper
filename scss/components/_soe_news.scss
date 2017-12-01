@@ -220,14 +220,22 @@
   }
 }
 
-// THREE ITEM RECENT NEWS VIEW
+// RECENT NEWS VIEW
 
+.view-stanford-news-with-title,
 .view-stanford-news-image-title {
   h3 {
     font-size: em(22px);
-    line-height: 1.2em;
+    line-height: 1.1em;
     font-family: $primary-font;
     text-decoration: none;
+    a {
+      text-decoration: none;
+    }
+  }
+  .views-row
+  {
+    margin-bottom: 1.5em;
   }
 
   img {
