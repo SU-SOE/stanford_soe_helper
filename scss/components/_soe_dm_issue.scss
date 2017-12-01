@@ -166,9 +166,11 @@
       margin-bottom: 5px;
     }
 
+    // See also .mag-article-title in _soe_dm_article.css
     a h2.mag-article-title {
-      font-size: em(26px);
-      line-height: 1.3em;
+      font-family: $primary-font;
+      font-size: em(32px);
+      line-height: 1.2em;
       font-weight: 600;
 
       &[class*="mag-article-color-"] {
