@@ -380,7 +380,7 @@ function stanford_soe_helper_magazine_preprocess_page(&$variables) {
         '#tag' => 'meta',
         '#attributes' => array(
           'property' => 'og:image',
-          'content' => $GLOBALS['base_url'] . '/sites/default/files/styles/full_width_banner_tall/public/' . $variables['node']->field_s_mag_article_image[LANGUAGE_NONE][0]['filename'],
+          'content' => $GLOBALS['base_url'] . '/sites/default/files/' . $variables['node']->field_s_mag_article_image[LANGUAGE_NONE][0]['filename'],
         )
       ),
       'facebook_image_width' => array(
