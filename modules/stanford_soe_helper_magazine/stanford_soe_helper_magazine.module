@@ -347,6 +347,10 @@ function stanford_soe_helper_magazine_preprocess_views_view(&$vars) {
 
 function stanford_soe_helper_magazine_preprocess_page(&$variables) {
   if (isset($variables['node']) && $variables['node']->type == 'stanford_magazine_article') {
+    $facebook_image = array(
+      'style_name' => 'facebook_share_image',
+      'path' => $GLOBALS['base_url'] . '/sites/default/files/styles/facebook_share_image/public/' . $variables['node']->field_s_mag_article_image[LANGUAGE_NONE][0]['filename'], 
+    );
     $html_head = array(
       'twitter_card' => array(
         '#tag' => 'meta',
@@ -380,21 +384,21 @@ function stanford_soe_helper_magazine_preprocess_page(&$variables) {
         '#tag' => 'meta',
         '#attributes' => array(
           'property' => 'og:image',
-          'content' => $GLOBALS['base_url'] . '/sites/default/files/styles/full_width_banner_tall/public/' . $variables['node']->field_s_mag_article_image[LANGUAGE_NONE][0]['filename'],
+          'content' => $GLOBALS['base_url'] . '/sites/default/files/styles/facebook_share_image/public/' . $variables['node']->field_s_mag_article_image[LANGUAGE_NONE][0]['filename'],
         )
       ),
       'facebook_image_width' => array(
         '#tag' => 'meta',
         '#attributes' => array(
           'property' => 'og:image:width',
-          'content' => '1170',
+          'content' => '1200',
         )
       ),
       'facebook_image_height' => array(
         '#tag' => 'meta',
         '#attributes' => array(
           'property' => 'og:image:height',
-          'content' => '550',
+          'content' => '630',
         )
       ),
     );
