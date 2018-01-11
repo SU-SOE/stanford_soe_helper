@@ -1433,42 +1433,46 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
   /* line 152, ../scss/components/_soe_forms.scss */
   .mailchimp-magazine-block #mc_embed_signup_scroll p {
     line-height: 1.3em; }
-  /* line 156, ../scss/components/_soe_forms.scss */
+    @media (max-width: 480px) {
+      /* line 152, ../scss/components/_soe_forms.scss */
+      .mailchimp-magazine-block #mc_embed_signup_scroll p {
+        margin-top: 10px; } }
+  /* line 159, ../scss/components/_soe_forms.scss */
   .mailchimp-magazine-block #mc_embed_signup_scroll form {
     margin-bottom: 0; }
-  /* line 160, ../scss/components/_soe_forms.scss */
+  /* line 163, ../scss/components/_soe_forms.scss */
   .mailchimp-magazine-block #mc_embed_signup_scroll h2 {
     margin-bottom: 25px; }
-  /* line 164, ../scss/components/_soe_forms.scss */
+  /* line 167, ../scss/components/_soe_forms.scss */
   .mailchimp-magazine-block #mc_embed_signup_scroll .mc_signup_submission_wrapper {
     display: flex;
     justify-content: center; }
-  /* line 169, ../scss/components/_soe_forms.scss */
+  /* line 172, ../scss/components/_soe_forms.scss */
   .mailchimp-magazine-block #mc_embed_signup_scroll .mc-field-group {
     float: none; }
-    /* line 172, ../scss/components/_soe_forms.scss */
+    /* line 175, ../scss/components/_soe_forms.scss */
     .mailchimp-magazine-block #mc_embed_signup_scroll .mc-field-group input {
       width: 400px;
       box-shadow: none; }
       @media (max-width: 767px) {
-        /* line 172, ../scss/components/_soe_forms.scss */
+        /* line 175, ../scss/components/_soe_forms.scss */
         .mailchimp-magazine-block #mc_embed_signup_scroll .mc-field-group input {
           width: 200px; } }
-  /* line 181, ../scss/components/_soe_forms.scss */
+  /* line 184, ../scss/components/_soe_forms.scss */
   .page-magazine .mailchimp-magazine-block #mc_embed_signup_scroll, .page-magazine-all .mailchimp-magazine-block #mc_embed_signup_scroll, .page-taxonomy-term .mailchimp-magazine-block #mc_embed_signup_scroll {
     margin-bottom: 80px;
     padding: 65px 0;
     box-shadow: none; }
     @media (max-width: 480px) {
-      /* line 181, ../scss/components/_soe_forms.scss */
+      /* line 184, ../scss/components/_soe_forms.scss */
       .page-magazine .mailchimp-magazine-block #mc_embed_signup_scroll, .page-magazine-all .mailchimp-magazine-block #mc_embed_signup_scroll, .page-taxonomy-term .mailchimp-magazine-block #mc_embed_signup_scroll {
         margin-bottom: 20px; } }
-  /* line 192, ../scss/components/_soe_forms.scss */
+  /* line 195, ../scss/components/_soe_forms.scss */
   .node-type-stanford-magazine-issue .mailchimp-magazine-block #mc_embed_signup_scroll {
     box-shadow: none;
     padding: 65px 0; }
 
-/* line 199, ../scss/components/_soe_forms.scss */
+/* line 202, ../scss/components/_soe_forms.scss */
 .node-type-stanford-magazine-issue .mailchimp-magazine-block form {
   margin-bottom: 0; }
 

@@ -151,6 +151,9 @@ body:not(.page-admin) {
 
     p {
       line-height: 1.3em;
+      @include breakpoint-max(x-small) {
+        margin-top: 10px;
+      }
     }
 
     form {
