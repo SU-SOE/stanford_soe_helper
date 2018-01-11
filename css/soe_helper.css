@@ -452,6 +452,16 @@ p.summary.drop-cap:first-letter {
 .main p.float-right {
   margin-left: 15px; }
 
+@media (max-width: 767px) {
+  /* line 179, ../scss/components/_soe_wysiwyg.scss */
+  .field-type-text-with-summary h2, .field-type-text-long h2 {
+    font-size: 1.2em; } }
+
+@media (max-width: 767px) {
+  /* line 188, ../scss/components/_soe_wysiwyg.scss */
+  .field-type-text-with-summary h3, .field-type-text-long h3 {
+    font-size: 1em; } }
+
 /* line 7, ../scss/components/_soe_brand_bar.scss */
 #global-header {
   background-color: #B1040E; }

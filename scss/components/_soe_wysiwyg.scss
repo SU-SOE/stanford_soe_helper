@@ -174,3 +174,22 @@ p.summary.drop-cap {
     }
   }
 }
+
+h2 {
+  .field-type-text-with-summary &,
+  .field-type-text-long & {
+    @include breakpoint-max(small) {
+      font-size: em(24px);
+    }
+  }
+}
+
+h3 {
+  .field-type-text-with-summary &,
+  .field-type-text-long & {
+    @include breakpoint-max(small) {
+      font-size: em(20px);
+    }
+  }
+}
+
