@@ -7,6 +7,8 @@
 
 // NODE DISPLAY
 
+
+
 .node-type-stanford-news-item {
   .date-display-single {
     font-weight: 600;
@@ -22,7 +24,7 @@
 
   .body-style {
     width: 750px;
-    @media (max-width: 910px) {
+    @include breakpoint-max(med-small) {
       width: 100%;
     }
   }
@@ -39,9 +41,23 @@
     }
 
     img {
+      @include breakpoint-max(med-small) {
+        height: 215px;
+      }
+
       width: 100%;
       height: 360px;
       opacity: 0.4;
+    }
+  }
+
+  &.logged-in {
+    .fullwidth .field-name-field-s-news-banner {
+      img {
+        @include breakpoint-max(med-small) {
+          height: 315px;
+        }
+      }
     }
   }
 
@@ -93,13 +109,13 @@
   @include breakpoint-max(large) {
     top: 250px;
   }
-  @media (max-width: 910px) {
+  @include breakpoint-max(med-small) {
     width: 450px;
     top: 225px;
   }
   @include breakpoint-max(small) {
     position: relative;
-    top: -310px;
+    top: -196px;
     margin-bottom: -245px;
   }
   @media (max-width: 485px) {
@@ -114,7 +130,7 @@
     color: $white;
     text-shadow: 0 0 4px $black;
     line-height: 1.3em;
-    @media (max-width: 910px) {
+    @include breakpoint-max(med-small) {
       font-size: em(16px);
     }
     @media (max-width: 485px) {
@@ -131,7 +147,7 @@
     text-shadow: 0 0 4px $black;
     line-height: 1.3em;
     margin: -9px 0 22px;
-    @media (max-width: 910px) {
+    @include breakpoint-max(med-small) {
       font-size: 1.4em;
     }
     @media (max-width: 485px) {
