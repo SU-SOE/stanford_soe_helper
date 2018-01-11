@@ -12,6 +12,9 @@
   @else if $point == small {
     @media (max-width: 767px)  { @content; }
   }
+  @else if $point == smaller {
+    @media (max-width: 580px)  { @content; }
+  }
   @else if $point == x-small {
     @media (max-width: 480px)  { @content; }
   }
@@ -31,6 +34,9 @@
   }
   @else if $point == small {
     @media (min-width: 767px)  { @content; }
+  }
+  @else if $point == smaller {
+    @media (min-width: 580px)  { @content; }
   }
   @else if $point == x-small {
     @media (min-width: 480px)  { @content; }
