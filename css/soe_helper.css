@@ -755,47 +755,57 @@ p.summary.drop-cap:first-letter {
     background: none;
     margin: 1px 1px 36px;
     padding: 0; }
-    /* line 146, ../scss/components/_soe_navigation.scss */
+    @media (max-width: 767px) {
+      /* line 141, ../scss/components/_soe_navigation.scss */
+      .sidebar#sidebar-first .block-menu-block {
+        width: 100%; } }
+    /* line 149, ../scss/components/_soe_navigation.scss */
     .sidebar#sidebar-first .block-menu-block h2 {
       font-family: "Roboto Slab", serif;
       font-weight: 400;
       letter-spacing: 0; }
-    /* line 153, ../scss/components/_soe_navigation.scss */
+    @media (max-width: 767px) {
+      /* line 156, ../scss/components/_soe_navigation.scss */
+      .sidebar#sidebar-first .block-menu-block .menu-block-wrapper.menu-block-stanford_jsa_layouts-1.menu-name-main-menu.parent-mlid-0.menu-level-2 {
+        background: #FFFFFF;
+        padding: 20px;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2); } }
+    /* line 165, ../scss/components/_soe_navigation.scss */
     .sidebar#sidebar-first .block-menu-block .menu-block-wrapper > .menu > li.active-trail {
       background: none; }
-    /* line 157, ../scss/components/_soe_navigation.scss */
+    /* line 169, ../scss/components/_soe_navigation.scss */
     .sidebar#sidebar-first .block-menu-block .menu-block-wrapper > .menu > li.last {
       border-bottom: none; }
-    /* line 161, ../scss/components/_soe_navigation.scss */
+    /* line 173, ../scss/components/_soe_navigation.scss */
     .sidebar#sidebar-first .block-menu-block .menu-block-wrapper > .menu > li > a {
       border-top: none;
       font-weight: 600;
       padding: 0.5em 0.5em 0.5em 0; }
-      /* line 166, ../scss/components/_soe_navigation.scss */
+      /* line 178, ../scss/components/_soe_navigation.scss */
       .sidebar#sidebar-first .block-menu-block .menu-block-wrapper > .menu > li > a.active, .sidebar#sidebar-first .block-menu-block .menu-block-wrapper > .menu > li > a:focus, .sidebar#sidebar-first .block-menu-block .menu-block-wrapper > .menu > li > a:hover {
         background: none; }
-    /* line 173, ../scss/components/_soe_navigation.scss */
+    /* line 185, ../scss/components/_soe_navigation.scss */
     .sidebar#sidebar-first .block-menu-block .menu-block-wrapper > .menu > li li a {
       font-size: 0.9em;
       padding: 0.25em; }
-      /* line 177, ../scss/components/_soe_navigation.scss */
+      /* line 189, ../scss/components/_soe_navigation.scss */
       .sidebar#sidebar-first .block-menu-block .menu-block-wrapper > .menu > li li a.active-trail, .sidebar#sidebar-first .block-menu-block .menu-block-wrapper > .menu > li li a:focus, .sidebar#sidebar-first .block-menu-block .menu-block-wrapper > .menu > li li a:hover {
         text-decoration: none; }
-        /* line 182, ../scss/components/_soe_navigation.scss */
+        /* line 194, ../scss/components/_soe_navigation.scss */
         .sidebar#sidebar-first .block-menu-block .menu-block-wrapper > .menu > li li a.active-trail:before, .sidebar#sidebar-first .block-menu-block .menu-block-wrapper > .menu > li li a:focus:before, .sidebar#sidebar-first .block-menu-block .menu-block-wrapper > .menu > li li a:hover:before {
           content: "> ";
           margin-left: -12.5px; }
-    /* line 190, ../scss/components/_soe_navigation.scss */
+    /* line 202, ../scss/components/_soe_navigation.scss */
     .sidebar#sidebar-first .block-menu-block ul.menu li ul {
       padding: 0 0 0 11px; }
-    /* line 194, ../scss/components/_soe_navigation.scss */
+    /* line 206, ../scss/components/_soe_navigation.scss */
     .sidebar#sidebar-first .block-menu-block .content > .menu > li.expanded {
       background: none; }
-/* line 200, ../scss/components/_soe_navigation.scss */
+/* line 212, ../scss/components/_soe_navigation.scss */
 .sidebar .nav li a {
   color: #B1040E; }
 
-/* line 205, ../scss/components/_soe_navigation.scss */
+/* line 217, ../scss/components/_soe_navigation.scss */
 .main .menu li {
   line-height: 1.2em; }
 
