@@ -118,7 +118,10 @@
     top: -196px;
     margin-bottom: -245px;
   }
-  @media (max-width: 485px) {
+  @include breakpoint-max(smaller) {
+    top: -224px;
+  }
+  @include breakpoint-max(x-small) {
     width: 100%;
   }
   @media (max-width: 380px) {
