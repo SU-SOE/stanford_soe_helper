@@ -144,16 +144,14 @@ body:not(.page-admin) {
   }
 
   .mailchimp-magazine-block & {
-    background: #ffffff;
+    background: $white;
     @include box-shadow;
     padding: 35px;
     text-align: center;
 
     p {
       line-height: 1.3em;
-      @include breakpoint-max(x-small) {
-        margin-top: 10px;
-      }
+      margin-top: 10px;
     }
 
     form {

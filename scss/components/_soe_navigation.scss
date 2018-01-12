@@ -157,10 +157,11 @@
           @include breakpoint-max(small) {
             background: $white;
             padding: 20px;
-            box-shadow: 0 2px 2px 0 $black-opacity;
+            box-shadow: 0 2px 2px 0 $box-shadow;
           }
         }
       }
+
       .menu-block-wrapper > .menu > li {
         &.active-trail {
           background: none;
