@@ -139,6 +139,9 @@
     margin-top: 20px;
 
     .block-menu-block {
+      @include breakpoint-max(small) {
+        width: 100%;
+      }
       background: none;
       margin: 1px 1px 36px;
       padding: 0;
@@ -147,6 +150,16 @@
         font-family: $roboto-slab;
         font-weight: 400;
         letter-spacing: 0;
+      }
+
+      .menu-block-wrapper {
+        &.menu-block-stanford_jsa_layouts-1.menu-name-main-menu.parent-mlid-0.menu-level-2 {
+          @include breakpoint-max(small) {
+            background: $white;
+            padding: 20px;
+            box-shadow: 0 2px 2px 0 $box-shadow;
+          }
+        }
       }
 
       .menu-block-wrapper > .menu > li {

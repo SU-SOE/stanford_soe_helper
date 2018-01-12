@@ -12,6 +12,16 @@
   }
   h1 {
     font-size: 2.4em;
+    @include breakpoint-min(smaller) {
+      width: 70%;
+    }
+  }
+
+  .main #block-system-main {
+    @include breakpoint-min(smaller) {
+      margin: 0 auto 1em;
+      width: 70%;
+    }
   }
   .main #block-system-main.block {
     margin-bottom: 0;
