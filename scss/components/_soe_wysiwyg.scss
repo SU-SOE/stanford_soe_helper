@@ -142,10 +142,20 @@ p.related-link {
 
 p.summary.drop-cap {
   &:first-letter {
+    padding: 25px 10px 0 0;
+    @include breakpoint-max(large) {
+      padding: 21px 10px 0 0;
+    }
+    @include breakpoint-max(medium) {
+       padding: 16px 10px 0 0;
+    }
+    @include breakpoint-max(x-small) {
+        padding: 15px 10px 0 0;
+    }
+
     font-size: em(92px, 32px);
     font-weight: 600;
     float: left;
-    padding: 25px 10px 0 0;
   }
 }
 
@@ -192,4 +202,3 @@ h3 {
     }
   }
 }
-

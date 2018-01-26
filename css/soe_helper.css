@@ -427,12 +427,24 @@ p.related-link {
 
 /* line 144, ../scss/components/_soe_wysiwyg.scss */
 p.summary.drop-cap:first-letter {
+  padding: 25px 10px 0 0;
   font-size: 2.875em;
   font-weight: 600;
-  float: left;
-  padding: 25px 10px 0 0; }
+  float: left; }
+  @media (max-width: 1200px) {
+    /* line 144, ../scss/components/_soe_wysiwyg.scss */
+    p.summary.drop-cap:first-letter {
+      padding: 21px 10px 0 0; } }
+  @media (max-width: 979px) {
+    /* line 144, ../scss/components/_soe_wysiwyg.scss */
+    p.summary.drop-cap:first-letter {
+      padding: 16px 10px 0 0; } }
+  @media (max-width: 480px) {
+    /* line 144, ../scss/components/_soe_wysiwyg.scss */
+    p.summary.drop-cap:first-letter {
+      padding: 15px 10px 0 0; } }
 
-/* line 152, ../scss/components/_soe_wysiwyg.scss */
+/* line 162, ../scss/components/_soe_wysiwyg.scss */
 .caption {
   color: #686868;
   font-weight: 300;
@@ -441,24 +453,24 @@ p.summary.drop-cap:first-letter {
   text-align: center;
   margin: 0 2em 4em; }
 
-/* line 162, ../scss/components/_soe_wysiwyg.scss */
+/* line 172, ../scss/components/_soe_wysiwyg.scss */
 .main table {
   width: 100%;
   margin-bottom: 2em; }
-/* line 168, ../scss/components/_soe_wysiwyg.scss */
+/* line 178, ../scss/components/_soe_wysiwyg.scss */
 .main p.float-left {
   margin-right: 15px; }
-/* line 172, ../scss/components/_soe_wysiwyg.scss */
+/* line 182, ../scss/components/_soe_wysiwyg.scss */
 .main p.float-right {
   margin-left: 15px; }
 
 @media (max-width: 767px) {
-  /* line 179, ../scss/components/_soe_wysiwyg.scss */
+  /* line 189, ../scss/components/_soe_wysiwyg.scss */
   .field-type-text-with-summary h2, .field-type-text-long h2 {
     font-size: 1.2em; } }
 
 @media (max-width: 767px) {
-  /* line 188, ../scss/components/_soe_wysiwyg.scss */
+  /* line 198, ../scss/components/_soe_wysiwyg.scss */
   .field-type-text-with-summary h3, .field-type-text-long h3 {
     font-size: 1em; } }
 
