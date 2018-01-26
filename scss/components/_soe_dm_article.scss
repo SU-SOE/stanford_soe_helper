@@ -27,6 +27,9 @@
     line-height: 1.3em;
     width: 65%;
     margin: 44px auto 22px;
+    @include breakpoint-max(medium) {
+      width: 85%;
+    }
     @include breakpoint-max(x-small) {
       width: 100%;
     }
@@ -859,4 +862,3 @@
     }
   }
 }
-
