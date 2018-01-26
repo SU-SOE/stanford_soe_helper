@@ -830,6 +830,12 @@
     a {
       text-decoration: underline;
     }
+    @include breakpoint-max(medium) {
+      width: 85%;
+    }
+    @include breakpoint-max(x-small) {
+      width: 100%;
+    }
   }
 }
 
