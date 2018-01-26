@@ -826,6 +826,12 @@
     margin-bottom: 1em;
   }
 
+  h1 {
+    @include breakpoint-max(x-small) {
+      width: 100%;
+    }
+  }
+
   .paragraphs-item-p-wysiwyg-simple {
     a {
       text-decoration: underline;
