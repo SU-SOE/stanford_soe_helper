@@ -36,16 +36,20 @@
   }
 
   .group-s-mag-article-date-byline {
+    @include breakpoint-max(medium) {
+      width: 85%;
+    }
+    @include breakpoint-max(x-small) {
+      width: 100%;
+    }
+    width: 65%;
+
     font-size: em(18px);
     color: $gray-orange;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 65%;
     margin: 0 auto 32px;
-    @include breakpoint-max(x-small) {
-      width: 100%;
-    }
 
     .group-s-date-and-byline,
     .group-s-social-and-print {
