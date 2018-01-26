@@ -15,8 +15,11 @@
 
   .field-name-field-s-mag-article-topics {
     font-size: em(20px);
-    width: 65%;
     margin: 0 auto 18px;
+    width: 65%;
+    @include breakpoint-max(medium) {
+      width: 85%;
+    }
     @include breakpoint-max(x-small) {
       width: 100%;
     }
@@ -25,8 +28,8 @@
   .field-name-field-s-mag-article-dek {
     font-size: em(26px);
     line-height: 1.3em;
-    width: 65%;
     margin: 44px auto 22px;
+    width: 65%;
     @include breakpoint-max(medium) {
       width: 85%;
     }
