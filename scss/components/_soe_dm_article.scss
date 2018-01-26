@@ -144,8 +144,10 @@
   }
 
   .article-grouping {
-    @include breakpoint-min(medium);
     padding: 0 70px;
+    @include breakpoint-max(medium) {
+      padding: 0px;
+    }
   }
 }
 
