@@ -15,8 +15,11 @@
 
   .field-name-field-s-mag-article-topics {
     font-size: em(20px);
-    width: 65%;
     margin: 0 auto 18px;
+    width: 65%;
+    @include breakpoint-max(medium) {
+      width: 85%;
+    }
     @include breakpoint-max(x-small) {
       width: 100%;
     }
@@ -25,24 +28,31 @@
   .field-name-field-s-mag-article-dek {
     font-size: em(26px);
     line-height: 1.3em;
-    width: 65%;
     margin: 44px auto 22px;
+    width: 65%;
+    @include breakpoint-max(medium) {
+      width: 85%;
+    }
     @include breakpoint-max(x-small) {
       width: 100%;
     }
   }
 
   .group-s-mag-article-date-byline {
+    @include breakpoint-max(medium) {
+      width: 85%;
+    }
+    @include breakpoint-max(x-small) {
+      width: 100%;
+    }
+    width: 65%;
+
     font-size: em(18px);
     color: $gray-orange;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 65%;
     margin: 0 auto 32px;
-    @include breakpoint-max(x-small) {
-      width: 100%;
-    }
 
     .group-s-date-and-byline,
     .group-s-social-and-print {
@@ -134,8 +144,10 @@
   }
 
   .article-grouping {
-    @include breakpoint-min(medium);
     padding: 0 70px;
+    @include breakpoint-max(medium) {
+      padding: 0px;
+    }
   }
 }
 
@@ -816,9 +828,21 @@
     margin-bottom: 1em;
   }
 
+  h1 {
+    @include breakpoint-max(x-small) {
+      width: 100%;
+    }
+  }
+
   .paragraphs-item-p-wysiwyg-simple {
     a {
       text-decoration: underline;
+    }
+    @include breakpoint-max(medium) {
+      width: 85%;
+    }
+    @include breakpoint-max(x-small) {
+      width: 100%;
     }
   }
 }
@@ -859,4 +883,3 @@
     }
   }
 }
-
