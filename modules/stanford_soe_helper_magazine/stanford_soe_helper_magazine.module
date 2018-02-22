@@ -346,7 +346,9 @@ function stanford_soe_helper_magazine_preprocess_views_view(&$vars) {
 
 
 function stanford_soe_helper_magazine_preprocess_page(&$variables) {
+
   if (isset($variables['node']) && $variables['node']->type == 'stanford_magazine_article') {
+    update_print_fields();
     $html_head = array(
       'twitter_card' => array(
         '#tag' => 'meta',
@@ -403,5 +405,34 @@ function stanford_soe_helper_magazine_preprocess_page(&$variables) {
     }
     drupal_add_js('https://platform.twitter.com/widgets.js');
     drupal_add_js(drupal_get_path('module', 'stanford_soe_helper_magazine') . '/js/stanford_social_widgets.js');
+  }
+}
+
+function update_print_fields() {
+  $title = 'Print';
+  $url = '/print/[current-page:url:path]';
+
+  $query = db_query("SELECT nid, vid from {node} WHERE type = :type",
+    array(':type' => 'stanford_magazine_article'));
+
+  $records = $query->fetchAll();
+  foreach ($records as $record) {
+
+    db_merge('field_data_field_s_mag_article_print')
+      ->key(array(
+        'entity_type' => 'node',
+        'entity_id' => $record->nid,
+        'deleted' => '0',
+        'language' => 'und',
+        'delta' => '0',
+        'bundle' => 'stanford_magazine_article',
+        'revision_id' => $record->vid,
+      ))
+      ->fields(array(
+        'field_s_mag_article_print_url' => $url,
+        'field_s_mag_article_print_title' => $title,
+        'field_s_mag_article_print_attributes' => array(),
+      ))
+      ->execute();
   }
 }
