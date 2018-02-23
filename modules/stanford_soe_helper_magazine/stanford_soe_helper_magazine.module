@@ -411,28 +411,36 @@ function stanford_soe_helper_magazine_preprocess_page(&$variables) {
 function update_print_fields() {
   $title = 'Print';
   $url = '/print/[current-page:url:path]';
+  $attributes = array();
 
   $query = db_query("SELECT nid, vid from {node} WHERE type = :type",
     array(':type' => 'stanford_magazine_article'));
 
   $records = $query->fetchAll();
+  $count = 0;
   foreach ($records as $record) {
 
-    db_merge('field_data_field_s_mag_article_print')
-      ->key(array(
+    if ($count == 3) {
+      $query = db_merge('field_data_field_s_mag_article_print')
+        ->key(array(
+          'entity_id' => $record->nid,
+        ))
+        ->fields(array(
         'entity_type' => 'node',
-        'entity_id' => $record->nid,
-        'deleted' => '0',
-        'language' => 'und',
-        'delta' => '0',
-        'bundle' => 'stanford_magazine_article',
-        'revision_id' => $record->vid,
-      ))
-      ->fields(array(
         'field_s_mag_article_print_url' => $url,
         'field_s_mag_article_print_title' => $title,
-        'field_s_mag_article_print_attributes' => array(),
-      ))
-      ->execute();
+        'field_s_mag_article_print_attributes' => $attributes,
+        'deleted' => 0,
+        'delta' => 0,
+        'bundle' => 'stanford_magazine_article',
+        'revision_id' => $record->vid,
+        ))
+        ->execute();
+      dpm($query);
+      dpm($count);
+      dpm($record);
+
+    }
+    $count++;
   }
 }
