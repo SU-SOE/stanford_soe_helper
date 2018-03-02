@@ -11,10 +11,13 @@
 
   [id*="block-bean-homepage-2-column-"] {
     .content {
-      width: 82%;
+      width: 90%;
       margin: 0 auto 50px;
       @include breakpoint-min(large) {
         width: 85%;
+      }
+      @include breakpoint-max(small) {
+        margin-bottom: 20px;
       }
 
       a:not(.btn) {
@@ -29,8 +32,19 @@
         }
       }
 
+      // CJW 29
       p.columns {
         margin-bottom: 50px;
+        @include breakpoint-max(small) {
+          margin-top: -36px;
+          margin-bottom: 30px;
+        }
+        @include breakpoint-max(smaller) {
+          font-size: 1.1em;
+        }
+        @include breakpoint-max(x-small) {
+          line-height: 1.5em;
+        }
       }
     }
   }
@@ -69,6 +83,16 @@
     margin-left: 12.75%;
     @include breakpoint-max(small) {
       margin-left: 0;
+      margin: 0 auto;
+      width: 95%;
+    }
+  }
+
+  [id*="block-bean-homepage-pl-block-2"],
+  .view-stanford-news-featured {
+    @include breakpoint-max(small) {
+      margin: 0 auto;
+      width: 95%;
     }
   }
 
@@ -77,6 +101,14 @@
     margin-right: 12.75%;
     @include breakpoint-max(small) {
       margin-right: 0;
+      margin: 0 auto;
+      width: 95%;
+    }
+  }
+
+  [id*="block-bean-homepage-magazine-postcard-butto"] {
+      @include breakpoint-max(smaller) {
+      margin: 30px 0 30px;
     }
   }
 }
