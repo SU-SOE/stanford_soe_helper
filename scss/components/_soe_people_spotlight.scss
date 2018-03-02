@@ -116,7 +116,7 @@
       @include breakpoint-max(smaller) {
         width: 200px;
       }
-      @include breakpoint-max(x-small) {
+      @media (max-width: 500px) {
         flex-shrink: 0;
         margin: 0 auto;
         width: 60%;
@@ -129,7 +129,7 @@
         @include breakpoint-max(small) {
           max-width: 82%;
         }
-        @include breakpoint-max(x-small) {
+        @media (max-width: 500px) {
           border-width: 6px;
         }
       }
