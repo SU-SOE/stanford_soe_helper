@@ -32,7 +32,6 @@
         }
       }
 
-      // CJW 29
       p.columns {
         margin-bottom: 50px;
         @include breakpoint-max(small) {
@@ -49,9 +48,15 @@
     }
   }
 
+  // BLOCK TRIOS
+
   .bean-stanford-postcard-linked .postcard-linked-container,
   .view-stanford-page-banner-caption {
     margin-bottom: 100px;
+
+    @include breakpoint-max(small) {
+      margin-bottom: 30px;
+    }
   }
 
   .view-stanford-ppl-spot-fw-banner-quote {
@@ -77,6 +82,7 @@
       margin-bottom: 1.8em;
     }
   }
+
 
   [id*="block-bean-homepage-pl-block-1"],
   [id*="block-views-0969cf96ba3c89e5f5ea0784f69f7372"] {
