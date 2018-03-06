@@ -243,3 +243,51 @@ function stanford_soe_helper_magazine_update_7201() {
     }
   }
 }
+
+/**
+ * Implements hook_update_N().
+ */
+function stanford_soe_helper_magazine_update_7202(&$sandbox) {
+  $title = 'Print';
+  $url = '/print/[current-page:url:path]';
+
+  $query = db_query("SELECT nid, vid from {node} WHERE type = :type",
+    array(':type' => 'stanford_magazine_article'));
+
+  $records = $query->fetchAll();
+  foreach ($records as $record) {
+    $query = db_merge('field_data_field_s_mag_article_print')
+      ->key(array(
+        'entity_id' => $record->nid,
+      ))
+      ->fields(array(
+        'entity_type' => 'node',
+        'field_s_mag_article_print_url' => $url,
+        'field_s_mag_article_print_title' => $title,
+        'field_s_mag_article_print_attributes' => serialize(array()),
+        'deleted' => 0,
+        'delta' => 0,
+        'bundle' => 'stanford_magazine_article',
+        'revision_id' => $record->vid,
+        'language' => 'und',
+      ))
+      ->execute();
+
+    $query = db_merge('field_revision_field_s_mag_article_print')
+      ->key(array(
+        'entity_id' => $record->nid,
+      ))
+      ->fields(array(
+        'entity_type' => 'node',
+        'field_s_mag_article_print_url' => $url,
+        'field_s_mag_article_print_title' => $title,
+        'field_s_mag_article_print_attributes' => serialize(array()),
+        'deleted' => 0,
+        'delta' => 0,
+        'bundle' => 'stanford_magazine_article',
+        'revision_id' => $record->vid,
+        'language' => 'und',
+      ))
+      ->execute();
+  }
+}
