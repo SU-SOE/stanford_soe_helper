@@ -89,6 +89,12 @@
         width: 90%;
       }
       @include breakpoint-max(small) {
+        display: flex;
+        text-align: left;
+        width: 90%;
+        padding: 50px 0 0;
+      }
+      @media (max-width: 500px) {
         display: block;
         text-align: center;
         width: 100%;
@@ -104,6 +110,15 @@
       flex-shrink: 0;
       @include breakpoint-max(small) {
         margin-right: 0;
+        width: 286px;
+      }
+      @include breakpoint-max(smaller) {
+        width: 200px;
+      }
+      @media (max-width: 500px) {
+        flex-shrink: 0;
+        margin: 0 auto;
+        width: 60%;
       }
 
       img {
@@ -111,7 +126,10 @@
         border-width: 8px;
         border-style: solid;
         @include breakpoint-max(small) {
-          max-width: 80%;
+          max-width: 82%;
+        }
+        @media (max-width: 500px) {
+          border-width: 6px;
         }
       }
 
@@ -145,6 +163,13 @@
           margin: 0 0 20px;
           @include breakpoint-max(small) {
             margin-top: 15px;
+            font-size: em(34px);
+          }
+          @include breakpoint-max(smaller) {
+            font-size: em(28px);
+          }
+          @include breakpoint-max(x-small) {
+            margin-bottom: 4px;
           }
         }
 
@@ -166,6 +191,9 @@
       .spotlight-title p {
         font-size: em(24px);
         margin: 0;
+        @include breakpoint-max(small) {
+          font-size: em(20px);
+        }
       }
 
       .spotlight-quote {
@@ -175,6 +203,17 @@
         line-height: 1.3em;
         margin-top: 20px;
 
+        @include breakpoint-max(smaller) {
+          font-size: em(24px);
+        }
+        @media (max-width: 500px) {
+          width: 80%;
+          margin: 20px auto;
+        }
+        @include breakpoint-max(x-small) {
+          font-size: em(20px);
+        }
+
         p:before {
           content: open-quote;
         }
@@ -182,6 +221,7 @@
         p:after {
           content: close-quote;
         }
+
       }
     }
   }
