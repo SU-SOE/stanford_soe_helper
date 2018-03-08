@@ -207,16 +207,20 @@ function stanford_soe_helper_collection_administration_views_default_views() {
       'label' => 'Unpublish',
     ),
   );
+  /* Field: Content: Collection Image */
+  $handler->display->display_options['fields']['field_s_collection_featured']['id'] = 'field_s_collection_featured';
+  $handler->display->display_options['fields']['field_s_collection_featured']['table'] = 'field_data_field_s_collection_featured';
+  $handler->display->display_options['fields']['field_s_collection_featured']['field'] = 'field_s_collection_featured';
+  $handler->display->display_options['fields']['field_s_collection_featured']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_s_collection_featured']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_s_collection_featured']['settings'] = array(
+    'image_style' => 'thumbnail',
+    'image_link' => '',
+  );
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
-  /* Field: Content: Has new content */
-  $handler->display->display_options['fields']['timestamp']['id'] = 'timestamp';
-  $handler->display->display_options['fields']['timestamp']['table'] = 'history';
-  $handler->display->display_options['fields']['timestamp']['field'] = 'timestamp';
-  $handler->display->display_options['fields']['timestamp']['label'] = '';
-  $handler->display->display_options['fields']['timestamp']['element_label_colon'] = FALSE;
   /* Field: Content: Published */
   $handler->display->display_options['fields']['status']['id'] = 'status';
   $handler->display->display_options['fields']['status']['table'] = 'node';
@@ -227,6 +231,12 @@ function stanford_soe_helper_collection_administration_views_default_views() {
   $handler->display->display_options['fields']['changed']['table'] = 'node';
   $handler->display->display_options['fields']['changed']['field'] = 'changed';
   $handler->display->display_options['fields']['changed']['date_format'] = 'short';
+  /* Field: Content: Has new content */
+  $handler->display->display_options['fields']['timestamp']['id'] = 'timestamp';
+  $handler->display->display_options['fields']['timestamp']['table'] = 'history';
+  $handler->display->display_options['fields']['timestamp']['field'] = 'timestamp';
+  $handler->display->display_options['fields']['timestamp']['label'] = '';
+  $handler->display->display_options['fields']['timestamp']['element_label_colon'] = FALSE;
   /* Field: User: Name */
   $handler->display->display_options['fields']['name']['id'] = 'name';
   $handler->display->display_options['fields']['name']['table'] = 'users';
@@ -234,28 +244,16 @@ function stanford_soe_helper_collection_administration_views_default_views() {
   $handler->display->display_options['fields']['name']['relationship'] = 'uid';
   $handler->display->display_options['fields']['name']['label'] = 'Author';
   $handler->display->display_options['fields']['name']['link_to_user'] = FALSE;
-  /* Field: Content: Collection Image */
-  $handler->display->display_options['fields']['field_s_collection_featured']['id'] = 'field_s_collection_featured';
-  $handler->display->display_options['fields']['field_s_collection_featured']['table'] = 'field_data_field_s_collection_featured';
-  $handler->display->display_options['fields']['field_s_collection_featured']['field'] = 'field_s_collection_featured';
-  $handler->display->display_options['fields']['field_s_collection_featured']['label'] = '';
-  $handler->display->display_options['fields']['field_s_collection_featured']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_s_collection_featured']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_s_collection_featured']['settings'] = array(
-    'image_style' => 'thumbnail',
-    'image_link' => '',
-  );
   /* Field: Content: Superhead */
   $handler->display->display_options['fields']['field_s_collection_superhead']['id'] = 'field_s_collection_superhead';
   $handler->display->display_options['fields']['field_s_collection_superhead']['table'] = 'field_data_field_s_collection_superhead';
   $handler->display->display_options['fields']['field_s_collection_superhead']['field'] = 'field_s_collection_superhead';
-  $handler->display->display_options['fields']['field_s_collection_superhead']['label'] = '';
   $handler->display->display_options['fields']['field_s_collection_superhead']['element_label_colon'] = FALSE;
   /* Field: Content: Lead text */
   $handler->display->display_options['fields']['field_s_collection_lead_text']['id'] = 'field_s_collection_lead_text';
   $handler->display->display_options['fields']['field_s_collection_lead_text']['table'] = 'field_data_field_s_collection_lead_text';
   $handler->display->display_options['fields']['field_s_collection_lead_text']['field'] = 'field_s_collection_lead_text';
-  $handler->display->display_options['fields']['field_s_collection_lead_text']['label'] = '';
+  $handler->display->display_options['fields']['field_s_collection_lead_text']['label'] = 'Lead Text';
   $handler->display->display_options['fields']['field_s_collection_lead_text']['element_label_colon'] = FALSE;
   /* Field: Content: Nid */
   $handler->display->display_options['fields']['nid']['id'] = 'nid';
