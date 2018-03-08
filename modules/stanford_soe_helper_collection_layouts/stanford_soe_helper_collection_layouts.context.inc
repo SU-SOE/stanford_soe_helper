@@ -59,18 +59,6 @@ function stanford_soe_helper_collection_layouts_context_default_contexts() {
           'region' => 'content_body_bottom',
           'weight' => '-9',
         ),
-        'views-81afc3faf7bc69c8ec1db8fd87d14e52' => array(
-          'module' => 'views',
-          'delta' => '81afc3faf7bc69c8ec1db8fd87d14e52',
-          'region' => 'content_body_bottom',
-          'weight' => '-8',
-        ),
-        'stanford_soe_helper_magazine-soe_all_issues_link' => array(
-          'module' => 'stanford_soe_helper_magazine',
-          'delta' => 'soe_all_issues_link',
-          'region' => 'content_body_bottom',
-          'weight' => '-7',
-        ),
       ),
     ),
   );
