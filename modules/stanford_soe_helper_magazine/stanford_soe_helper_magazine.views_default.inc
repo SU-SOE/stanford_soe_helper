@@ -219,15 +219,16 @@ function stanford_soe_helper_magazine_views_default_views() {
   $handler->display->display_options['fields']['edit_node']['exclude'] = TRUE;
   $handler->display->display_options['fields']['edit_node']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['edit_node']['text'] = 'Edit';
-  /* Field: Global: Custom text */
+  /* Field: Global: View Rewrite */
   $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['table'] = 'views';
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['ui_name'] = 'Global: View Rewrite';
   $handler->display->display_options['fields']['nothing']['label'] = '';
   $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="mag-article-container">
   <div class="mag-article-img">[field_s_mag_article_image]</div>
     <div class="mag-article-content-container">
-      <div class="mag-article-date">Research & Ideas – [field_s_mag_article_date]</div>
+      <div class="mag-article-date">Research &amp Ideas – [field_s_mag_article_date]</div>
       <div class="mag-article-title"><h2>[title]</h2></div>
       <div class="mag-article-topics">[field_s_mag_article_topics]</div>
       <div class="edit-link">[edit_node]</div>
