@@ -239,7 +239,7 @@
   }
 }
 
-// RECENT NEWS VIEW
+// RECENT NEWS VIEWS
 
 .view-stanford-news-with-title,
 .view-stanford-news-image-title {
@@ -267,7 +267,10 @@
 .view-stanford-news-with-title {
   h3 {
     a {
-      text-decoration: underline;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 }
