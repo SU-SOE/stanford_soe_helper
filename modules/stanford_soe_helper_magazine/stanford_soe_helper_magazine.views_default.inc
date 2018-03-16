@@ -43,7 +43,7 @@ function stanford_soe_helper_magazine_views_default_views() {
   $handler->display->display_options['empty']['view']['table'] = 'views';
   $handler->display->display_options['empty']['view']['field'] = 'view';
   $handler->display->display_options['empty']['view']['empty'] = TRUE;
-  $handler->display->display_options['empty']['view']['view_to_insert'] = 'stanford_magazine_article_featured:block_recent';
+  $handler->display->display_options['empty']['view']['view_to_insert'] = 'stanford_magazine_article_department:all_articles_block';
   $handler->display->display_options['empty']['view']['inherit_arguments'] = TRUE;
   /* Relationship: Entity Reference: Referencing entity */
   $handler->display->display_options['relationships']['reverse_field_s_mag_issue_article_3_node']['id'] = 'reverse_field_s_mag_issue_article_3_node';
@@ -258,14 +258,6 @@ function stanford_soe_helper_magazine_views_default_views() {
 
   /* Display: Block Dept Featured */
   $handler = $view->new_display('block', 'Block Dept Featured', 'block_dept_featured');
-  $handler->display->display_options['defaults']['empty'] = FALSE;
-  /* No results behavior: Global: View area */
-  $handler->display->display_options['empty']['view']['id'] = 'view';
-  $handler->display->display_options['empty']['view']['table'] = 'views';
-  $handler->display->display_options['empty']['view']['field'] = 'view';
-  $handler->display->display_options['empty']['view']['empty'] = TRUE;
-  $handler->display->display_options['empty']['view']['view_to_insert'] = 'stanford_magazine_article_featured:block_dept_recent';
-  $handler->display->display_options['empty']['view']['inherit_arguments'] = TRUE;
   $handler->display->display_options['defaults']['arguments'] = FALSE;
   /* Contextual filter: Content: Has taxonomy term ID */
   $handler->display->display_options['arguments']['tid']['id'] = 'tid';
@@ -340,14 +332,6 @@ function stanford_soe_helper_magazine_views_default_views() {
 
   /* Display: Block Dept Random */
   $handler = $view->new_display('block', 'Block Dept Random', 'block_dept_random');
-  $handler->display->display_options['defaults']['empty'] = FALSE;
-  /* No results behavior: Global: View area */
-  $handler->display->display_options['empty']['view']['id'] = 'view';
-  $handler->display->display_options['empty']['view']['table'] = 'views';
-  $handler->display->display_options['empty']['view']['field'] = 'view';
-  $handler->display->display_options['empty']['view']['empty'] = TRUE;
-  $handler->display->display_options['empty']['view']['view_to_insert'] = 'stanford_magazine_article_featured:block_recent';
-  $handler->display->display_options['empty']['view']['inherit_arguments'] = TRUE;
   $handler->display->display_options['defaults']['sorts'] = FALSE;
   /* Sort criterion: Global: Random */
   $handler->display->display_options['sorts']['random']['id'] = 'random';
@@ -391,6 +375,18 @@ function stanford_soe_helper_magazine_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'stanford_magazine_article' => 'stanford_magazine_article',
   );
+
+  /* Display: All Articles Block */
+  $handler = $view->new_display('block', 'All Articles Block', 'all_articles_block');
+  $handler->display->display_options['display_description'] = 'If no department related articles appear, this will display just the most recent article.';
+  $handler->display->display_options['defaults']['empty'] = FALSE;
+  /* No results behavior: Global: Text area */
+  $handler->display->display_options['empty']['area']['id'] = 'area';
+  $handler->display->display_options['empty']['area']['table'] = 'views';
+  $handler->display->display_options['empty']['area']['field'] = 'area';
+  $handler->display->display_options['empty']['area']['empty'] = TRUE;
+  $handler->display->display_options['empty']['area']['content'] = 'Currently we have no stories to display.';
+  $handler->display->display_options['empty']['area']['format'] = 'content_editor_text_format';
   $export['stanford_magazine_article_department'] = $view;
 
   $view = new view();
