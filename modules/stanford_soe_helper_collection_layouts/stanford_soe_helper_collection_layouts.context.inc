@@ -32,7 +32,7 @@ function stanford_soe_helper_collection_layouts_context_default_contexts() {
         'views-2b6c7ff4f6ce82a33670edba016946ec' => array(
           'module' => 'views',
           'delta' => '2b6c7ff4f6ce82a33670edba016946ec',
-          'region' => 'content_body_lower',
+          'region' => 'fullwidth_top',
           'weight' => '-10',
         ),
         'views-ef5e993e39b3be625bbb88867712757a' => array(

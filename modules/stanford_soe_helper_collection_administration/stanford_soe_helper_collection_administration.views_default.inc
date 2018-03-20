@@ -207,16 +207,6 @@ function stanford_soe_helper_collection_administration_views_default_views() {
       'label' => 'Unpublish',
     ),
   );
-  /* Field: Content: Collection Image */
-  $handler->display->display_options['fields']['field_s_collection_featured']['id'] = 'field_s_collection_featured';
-  $handler->display->display_options['fields']['field_s_collection_featured']['table'] = 'field_data_field_s_collection_featured';
-  $handler->display->display_options['fields']['field_s_collection_featured']['field'] = 'field_s_collection_featured';
-  $handler->display->display_options['fields']['field_s_collection_featured']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_s_collection_featured']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_s_collection_featured']['settings'] = array(
-    'image_style' => 'thumbnail',
-    'image_link' => '',
-  );
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -324,6 +314,118 @@ function stanford_soe_helper_collection_administration_views_default_views() {
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Bulk operations: Content */
+  $handler->display->display_options['fields']['views_bulk_operations']['id'] = 'views_bulk_operations';
+  $handler->display->display_options['fields']['views_bulk_operations']['table'] = 'node';
+  $handler->display->display_options['fields']['views_bulk_operations']['field'] = 'views_bulk_operations';
+  $handler->display->display_options['fields']['views_bulk_operations']['vbo_settings']['display_type'] = '0';
+  $handler->display->display_options['fields']['views_bulk_operations']['vbo_settings']['enable_select_all_pages'] = 1;
+  $handler->display->display_options['fields']['views_bulk_operations']['vbo_settings']['row_clickable'] = 1;
+  $handler->display->display_options['fields']['views_bulk_operations']['vbo_settings']['force_single'] = 0;
+  $handler->display->display_options['fields']['views_bulk_operations']['vbo_settings']['entity_load_capacity'] = '10';
+  $handler->display->display_options['fields']['views_bulk_operations']['vbo_operations'] = array(
+    'action::views_bulk_operations_delete_item' => array(
+      'selected' => 1,
+      'postpone_processing' => 0,
+      'skip_confirmation' => 0,
+      'override_label' => 1,
+      'label' => 'Delete',
+    ),
+    'action::views_bulk_operations_modify_action' => array(
+      'selected' => 1,
+      'postpone_processing' => 0,
+      'skip_confirmation' => 0,
+      'override_label' => 1,
+      'label' => 'Modify',
+      'settings' => array(
+        'show_all_tokens' => 0,
+        'display_values' => array(
+          'stanford_magazine_issue::field_s_mag_issue_accent_color' => 'stanford_magazine_issue::field_s_mag_issue_accent_color',
+          'stanford_magazine_issue::field_s_mag_issue_layout' => 'stanford_magazine_issue::field_s_mag_issue_layout',
+        ),
+      ),
+    ),
+    'action::node_publish_action' => array(
+      'selected' => 1,
+      'postpone_processing' => 0,
+      'skip_confirmation' => 0,
+      'override_label' => 1,
+      'label' => 'Publish',
+    ),
+    'action::node_unpublish_action' => array(
+      'selected' => 1,
+      'postpone_processing' => 0,
+      'skip_confirmation' => 0,
+      'override_label' => 1,
+      'label' => 'Unpublish',
+    ),
+  );
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  /* Field: Content: Published */
+  $handler->display->display_options['fields']['status']['id'] = 'status';
+  $handler->display->display_options['fields']['status']['table'] = 'node';
+  $handler->display->display_options['fields']['status']['field'] = 'status';
+  $handler->display->display_options['fields']['status']['not'] = 0;
+  /* Field: Content: Updated date */
+  $handler->display->display_options['fields']['changed']['id'] = 'changed';
+  $handler->display->display_options['fields']['changed']['table'] = 'node';
+  $handler->display->display_options['fields']['changed']['field'] = 'changed';
+  $handler->display->display_options['fields']['changed']['date_format'] = 'short';
+  /* Field: Content: Has new content */
+  $handler->display->display_options['fields']['timestamp']['id'] = 'timestamp';
+  $handler->display->display_options['fields']['timestamp']['table'] = 'history';
+  $handler->display->display_options['fields']['timestamp']['field'] = 'timestamp';
+  $handler->display->display_options['fields']['timestamp']['label'] = '';
+  $handler->display->display_options['fields']['timestamp']['element_label_colon'] = FALSE;
+  /* Field: User: Name */
+  $handler->display->display_options['fields']['name']['id'] = 'name';
+  $handler->display->display_options['fields']['name']['table'] = 'users';
+  $handler->display->display_options['fields']['name']['field'] = 'name';
+  $handler->display->display_options['fields']['name']['relationship'] = 'uid';
+  $handler->display->display_options['fields']['name']['label'] = 'Author';
+  $handler->display->display_options['fields']['name']['link_to_user'] = FALSE;
+  /* Field: Content: Superhead */
+  $handler->display->display_options['fields']['field_s_collection_superhead']['id'] = 'field_s_collection_superhead';
+  $handler->display->display_options['fields']['field_s_collection_superhead']['table'] = 'field_data_field_s_collection_superhead';
+  $handler->display->display_options['fields']['field_s_collection_superhead']['field'] = 'field_s_collection_superhead';
+  $handler->display->display_options['fields']['field_s_collection_superhead']['element_label_colon'] = FALSE;
+  /* Field: Content: Lead text */
+  $handler->display->display_options['fields']['field_s_collection_lead_text']['id'] = 'field_s_collection_lead_text';
+  $handler->display->display_options['fields']['field_s_collection_lead_text']['table'] = 'field_data_field_s_collection_lead_text';
+  $handler->display->display_options['fields']['field_s_collection_lead_text']['field'] = 'field_s_collection_lead_text';
+  $handler->display->display_options['fields']['field_s_collection_lead_text']['label'] = 'Lead Text';
+  $handler->display->display_options['fields']['field_s_collection_lead_text']['element_label_colon'] = FALSE;
+  /* Field: Content: Intro label */
+  $handler->display->display_options['fields']['field_s_collectlon_intro_label']['id'] = 'field_s_collectlon_intro_label';
+  $handler->display->display_options['fields']['field_s_collectlon_intro_label']['table'] = 'field_data_field_s_collectlon_intro_label';
+  $handler->display->display_options['fields']['field_s_collectlon_intro_label']['field'] = 'field_s_collectlon_intro_label';
+  /* Field: Content: Continue label */
+  $handler->display->display_options['fields']['field_s_collection_cont_label']['id'] = 'field_s_collection_cont_label';
+  $handler->display->display_options['fields']['field_s_collection_cont_label']['table'] = 'field_data_field_s_collection_cont_label';
+  $handler->display->display_options['fields']['field_s_collection_cont_label']['field'] = 'field_s_collection_cont_label';
+  /* Field: Content: Nid */
+  $handler->display->display_options['fields']['nid']['id'] = 'nid';
+  $handler->display->display_options['fields']['nid']['table'] = 'node';
+  $handler->display->display_options['fields']['nid']['field'] = 'nid';
+  $handler->display->display_options['fields']['nid']['label'] = 'Node ID';
+  $handler->display->display_options['fields']['nid']['link_to_node'] = TRUE;
+  /* Field: Content: Edit link */
+  $handler->display->display_options['fields']['edit_node']['id'] = 'edit_node';
+  $handler->display->display_options['fields']['edit_node']['table'] = 'views_entity_node';
+  $handler->display->display_options['fields']['edit_node']['field'] = 'edit_node';
+  $handler->display->display_options['fields']['edit_node']['label'] = 'Actions';
+  /* Field: Content: Link */
+  $handler->display->display_options['fields']['view_node']['id'] = 'view_node';
+  $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
+  $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
+  /* Field: Content: Delete link */
+  $handler->display->display_options['fields']['delete_node']['id'] = 'delete_node';
+  $handler->display->display_options['fields']['delete_node']['table'] = 'views_entity_node';
+  $handler->display->display_options['fields']['delete_node']['field'] = 'delete_node';
   $handler->display->display_options['path'] = 'admin/manage/collection';
   $handler->display->display_options['menu']['type'] = 'normal';
   $handler->display->display_options['menu']['title'] = 'Manage Collections';

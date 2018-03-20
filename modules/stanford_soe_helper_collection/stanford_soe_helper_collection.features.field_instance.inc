@@ -11,17 +11,22 @@ function stanford_soe_helper_collection_field_default_field_instances() {
   $field_instances = array();
 
   // Exported field_instance:
-  // 'node-stanford_collection-field_s_collection_featured'.
-  $field_instances['node-stanford_collection-field_s_collection_featured'] = array(
+  // 'node-stanford_collection-field_s_collection_cont_label'.
+  $field_instances['node-stanford_collection-field_s_collection_cont_label'] = array(
     'bundle' => 'stanford_collection',
+    'default_value' => array(
+      0 => array(
+        'value' => 'Continue reading articles from',
+      ),
+    ),
     'deleted' => 0,
-    'description' => 'Enter the image you want to show on the magazine/collections page list for this collection.',
+    'description' => 'This is the header text for the collection block showing at the bottom of articles in the collection.',
     'display' => array(
       'default' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 3,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -31,146 +36,51 @@ function stanford_soe_helper_collection_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_s_collection_featured',
-    'label' => 'Collection Image',
-    'required' => 0,
+    'field_name' => 'field_s_collection_cont_label',
+    'label' => 'Continue label',
+    'required' => 1,
     'settings' => array(
-      'alt_field' => 0,
-      'default_image' => 0,
-      'file_directory' => '',
-      'file_extensions' => 'png gif jpg jpeg',
-      'max_filesize' => '',
-      'max_resolution' => '',
-      'min_resolution' => '',
-      'title_field' => 0,
+      'better_formats' => array(
+        'allowed_formats' => array(
+          'content_editor_text_format' => 'content_editor_text_format',
+          'filtered_html' => 'filtered_html',
+          'full_html' => 'full_html',
+          'minimal_html' => 'minimal_html',
+          'plain_text' => 'plain_text',
+        ),
+        'allowed_formats_toggle' => 0,
+        'default_order_toggle' => 0,
+        'default_order_wrapper' => array(
+          'formats' => array(
+            'content_editor_text_format' => array(
+              'weight' => -10,
+            ),
+            'filtered_html' => array(
+              'weight' => 0,
+            ),
+            'full_html' => array(
+              'weight' => 1,
+            ),
+            'minimal_html' => array(
+              'weight' => 0,
+            ),
+            'plain_text' => array(
+              'weight' => 10,
+            ),
+          ),
+        ),
+      ),
+      'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'image',
+      'module' => 'text',
       'settings' => array(
-        'insert' => 0,
-        'insert_absolute' => 0,
-        'insert_class' => '',
-        'insert_default' => 'auto',
-        'insert_styles' => array(
-          'auto' => 'auto',
-          'colorbox__3-col-header' => 0,
-          'colorbox__4-col-header' => 0,
-          'colorbox__6-col-banner' => 0,
-          'colorbox__6-col-banner-short' => 0,
-          'colorbox__6-col-banner-tall' => 0,
-          'colorbox__6-col-photo-landscape' => 0,
-          'colorbox__8-col-banner' => 0,
-          'colorbox__8-col-banner-short' => 0,
-          'colorbox__8-col-banner-tall' => 0,
-          'colorbox__9-col-banner' => 0,
-          'colorbox__9-col-banner-short' => 0,
-          'colorbox__12-col-banner' => 0,
-          'colorbox__12-col-banner-tall' => 0,
-          'colorbox__banner-850x400' => 0,
-          'colorbox__facebook_share_image' => 0,
-          'colorbox__full-width-banner' => 0,
-          'colorbox__full-width-banner-short' => 0,
-          'colorbox__full_width_banner_shorts_scale_and_crop_1600x400' => 0,
-          'colorbox__full_width_banner_tall' => 0,
-          'colorbox__half-page-profile' => 0,
-          'colorbox__header_370_x_170' => 0,
-          'colorbox__header_370_x_240' => 0,
-          'colorbox__header_scale_850x400' => 0,
-          'colorbox__huge-landscape' => 0,
-          'colorbox__icon-profile' => 0,
-          'colorbox__icon-scaled' => 0,
-          'colorbox__icon-square' => 0,
-          'colorbox__large' => 0,
-          'colorbox__large-landscape' => 0,
-          'colorbox__large-landscape-scaled' => 0,
-          'colorbox__large-profile' => 0,
-          'colorbox__large-profile-scaled' => 0,
-          'colorbox__large-scaled' => 0,
-          'colorbox__large-square' => 0,
-          'colorbox__med-landscape' => 0,
-          'colorbox__med-landscape-scaled' => 0,
-          'colorbox__med-profile' => 0,
-          'colorbox__med-profile-scaled' => 0,
-          'colorbox__med-square' => 0,
-          'colorbox__medium' => 0,
-          'colorbox__page-width' => 0,
-          'colorbox__sm-landscape' => 0,
-          'colorbox__sm-landscape-scaled' => 0,
-          'colorbox__sm-profile' => 0,
-          'colorbox__sm-profile-scaled' => 0,
-          'colorbox__sm-scaled' => 0,
-          'colorbox__sm-square' => 0,
-          'colorbox__square_370_x_370' => 0,
-          'colorbox__square_scale_and_crop_270_x_270' => 0,
-          'colorbox__thmb-landscape' => 0,
-          'colorbox__thmb-profile' => 0,
-          'colorbox__thmb-square' => 0,
-          'colorbox__thumbnail' => 0,
-          'icon_link' => 0,
-          'image' => 0,
-          'image_3-col-header' => 0,
-          'image_4-col-header' => 0,
-          'image_6-col-banner' => 0,
-          'image_6-col-banner-short' => 0,
-          'image_6-col-banner-tall' => 0,
-          'image_6-col-photo-landscape' => 0,
-          'image_8-col-banner' => 0,
-          'image_8-col-banner-short' => 0,
-          'image_8-col-banner-tall' => 0,
-          'image_9-col-banner' => 0,
-          'image_9-col-banner-short' => 0,
-          'image_12-col-banner' => 0,
-          'image_12-col-banner-tall' => 0,
-          'image_banner-850x400' => 0,
-          'image_facebook_share_image' => 0,
-          'image_full-width-banner' => 0,
-          'image_full-width-banner-short' => 0,
-          'image_full_width_banner_shorts_scale_and_crop_1600x400' => 0,
-          'image_full_width_banner_tall' => 0,
-          'image_half-page-profile' => 0,
-          'image_header_370_x_170' => 0,
-          'image_header_370_x_240' => 0,
-          'image_header_scale_850x400' => 0,
-          'image_huge-landscape' => 0,
-          'image_icon-profile' => 0,
-          'image_icon-scaled' => 0,
-          'image_icon-square' => 0,
-          'image_large' => 0,
-          'image_large-landscape' => 0,
-          'image_large-landscape-scaled' => 0,
-          'image_large-profile' => 0,
-          'image_large-profile-scaled' => 0,
-          'image_large-scaled' => 0,
-          'image_large-square' => 0,
-          'image_med-landscape' => 0,
-          'image_med-landscape-scaled' => 0,
-          'image_med-profile' => 0,
-          'image_med-profile-scaled' => 0,
-          'image_med-square' => 0,
-          'image_medium' => 0,
-          'image_page-width' => 0,
-          'image_sm-landscape' => 0,
-          'image_sm-landscape-scaled' => 0,
-          'image_sm-profile' => 0,
-          'image_sm-profile-scaled' => 0,
-          'image_sm-scaled' => 0,
-          'image_sm-square' => 0,
-          'image_square_370_x_370' => 0,
-          'image_square_scale_and_crop_270_x_270' => 0,
-          'image_thmb-landscape' => 0,
-          'image_thmb-profile' => 0,
-          'image_thmb-square' => 0,
-          'image_thumbnail' => 0,
-          'link' => 0,
-        ),
-        'insert_width' => '',
-        'preview_image_style' => 'medium',
-        'progress_indicator' => 'throbber',
+        'size' => 60,
       ),
-      'type' => 'image_image',
-      'weight' => 3,
+      'type' => 'text_textfield',
+      'weight' => 4,
     ),
   );
 
@@ -186,7 +96,7 @@ function stanford_soe_helper_collection_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 1,
+        'weight' => 0,
       ),
       'full' => array(
         'label' => 'hidden',
@@ -264,7 +174,7 @@ function stanford_soe_helper_collection_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 2,
+        'weight' => 1,
       ),
       'full' => array(
         'label' => 'hidden',
@@ -330,14 +240,90 @@ function stanford_soe_helper_collection_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance:
+  // 'node-stanford_collection-field_s_collectlon_intro_label'.
+  $field_instances['node-stanford_collection-field_s_collectlon_intro_label'] = array(
+    'bundle' => 'stanford_collection',
+    'default_value' => array(
+      0 => array(
+        'value' => 'This article is part of',
+      ),
+    ),
+    'deleted' => 0,
+    'description' => 'This is the text that will show up on the grey intro block on the article page for the collection.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 2,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_s_collectlon_intro_label',
+    'label' => 'Intro label',
+    'required' => 1,
+    'settings' => array(
+      'better_formats' => array(
+        'allowed_formats' => array(
+          'content_editor_text_format' => 'content_editor_text_format',
+          'filtered_html' => 'filtered_html',
+          'full_html' => 'full_html',
+          'minimal_html' => 'minimal_html',
+          'plain_text' => 'plain_text',
+        ),
+        'allowed_formats_toggle' => 0,
+        'default_order_toggle' => 0,
+        'default_order_wrapper' => array(
+          'formats' => array(
+            'content_editor_text_format' => array(
+              'weight' => -10,
+            ),
+            'filtered_html' => array(
+              'weight' => 0,
+            ),
+            'full_html' => array(
+              'weight' => 1,
+            ),
+            'minimal_html' => array(
+              'weight' => 0,
+            ),
+            'plain_text' => array(
+              'weight' => 10,
+            ),
+          ),
+        ),
+      ),
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 3,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
-  t('Collection Image');
-  t('Enter the image you want to show on the magazine/collections page list for this collection.');
+  t('Continue label');
+  t('Intro label');
   t('Lead text');
   t('Please enter the lead text ( aka: description ) for the collection.');
   t('Please enter the text that will show above the collection title.');
   t('Superhead');
+  t('This is the header text for the collection block showing at the bottom of articles in the collection.');
+  t('This is the text that will show up on the grey intro block on the article page for the collection.');
 
   return $field_instances;
 }

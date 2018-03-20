@@ -420,18 +420,13 @@ function stanford_soe_helper_collection_views_views_default_views() {
   $handler->display->display_options['fields']['edit_node']['exclude'] = TRUE;
   $handler->display->display_options['fields']['edit_node']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['edit_node']['text'] = 'Edit';
-  /* Field: Content: Collection Image */
+  /* Field: Broken/missing handler */
   $handler->display->display_options['fields']['field_s_collection_featured']['id'] = 'field_s_collection_featured';
   $handler->display->display_options['fields']['field_s_collection_featured']['table'] = 'field_data_field_s_collection_featured';
   $handler->display->display_options['fields']['field_s_collection_featured']['field'] = 'field_s_collection_featured';
   $handler->display->display_options['fields']['field_s_collection_featured']['label'] = '';
   $handler->display->display_options['fields']['field_s_collection_featured']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_s_collection_featured']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_s_collection_featured']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_s_collection_featured']['settings'] = array(
-    'image_style' => 'header_370_x_240',
-    'image_link' => 'content',
-  );
   /* Field: Content: Superhead */
   $handler->display->display_options['fields']['field_s_collection_superhead']['id'] = 'field_s_collection_superhead';
   $handler->display->display_options['fields']['field_s_collection_superhead']['table'] = 'field_data_field_s_collection_superhead';
@@ -660,8 +655,8 @@ function stanford_soe_helper_collection_views_views_default_views() {
   $handler->display->display_options['fields']['nothing']['label'] = '';
   $handler->display->display_options['fields']['nothing']['alter']['text'] = ' <div class="mag-collection-container">
   <div class ="mag-collection-content-container">
-    <div class="mag-collection-superhead">[field_s_collection_superhead]</div>
     <div class="mag-collection-title">[title]</div>
+    <div class="mag-collection-superhead">[field_s_collection_superhead]</div>
     <div class="mag-collection-lead-text">[field_s_collection_lead_text]</div>
   </div>
 </div>';
