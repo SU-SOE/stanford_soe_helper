@@ -166,8 +166,67 @@ function stanford_soe_helper_collection_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance:
+  // 'node-stanford_magazine_article-field_s_mag_article_collection'.
+  $field_instances['node-stanford_magazine_article-field_s_mag_article_collection'] = array(
+    'bundle' => 'stanford_magazine_article',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'If this article is part of a collection, pick it here.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 14,
+      ),
+      'full' => array(
+        'label' => 'inline',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => 1,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 5,
+      ),
+      'taxonomy' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_s_mag_article_collection',
+    'label' => 'Collection',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'apply_chosen' => '',
+      ),
+      'type' => 'options_select',
+      'weight' => 11,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
+  t('Collection');
+  t('If this article is part of a collection, pick it here.');
   t('Lead text');
   t('Please enter the lead text ( aka: description ) for the collection.');
   t('Please enter the text that will show above the collection title ( Max length: 50 char ).');
