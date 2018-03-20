@@ -271,18 +271,6 @@ function stanford_soe_helper_collection_views_views_default_views() {
 <h2>Available Collections<h2>';
   $handler->display->display_options['header']['area']['format'] = 'full_html';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Featured Image */
-  $handler->display->display_options['fields']['field_s_mag_article_image']['id'] = 'field_s_mag_article_image';
-  $handler->display->display_options['fields']['field_s_mag_article_image']['table'] = 'field_data_field_s_mag_article_image';
-  $handler->display->display_options['fields']['field_s_mag_article_image']['field'] = 'field_s_mag_article_image';
-  $handler->display->display_options['fields']['field_s_mag_article_image']['label'] = '';
-  $handler->display->display_options['fields']['field_s_mag_article_image']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_s_mag_article_image']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_s_mag_article_image']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_s_mag_article_image']['settings'] = array(
-    'image_style' => '6-col-banner-short',
-    'image_link' => 'content',
-  );
   /* Field: Content: Publishing Date */
   $handler->display->display_options['fields']['field_s_mag_article_date']['id'] = 'field_s_mag_article_date';
   $handler->display->display_options['fields']['field_s_mag_article_date']['table'] = 'field_data_field_s_mag_article_date';
@@ -420,13 +408,6 @@ function stanford_soe_helper_collection_views_views_default_views() {
   $handler->display->display_options['fields']['edit_node']['exclude'] = TRUE;
   $handler->display->display_options['fields']['edit_node']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['edit_node']['text'] = 'Edit';
-  /* Field: Broken/missing handler */
-  $handler->display->display_options['fields']['field_s_collection_featured']['id'] = 'field_s_collection_featured';
-  $handler->display->display_options['fields']['field_s_collection_featured']['table'] = 'field_data_field_s_collection_featured';
-  $handler->display->display_options['fields']['field_s_collection_featured']['field'] = 'field_s_collection_featured';
-  $handler->display->display_options['fields']['field_s_collection_featured']['label'] = '';
-  $handler->display->display_options['fields']['field_s_collection_featured']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_s_collection_featured']['element_label_colon'] = FALSE;
   /* Field: Content: Superhead */
   $handler->display->display_options['fields']['field_s_collection_superhead']['id'] = 'field_s_collection_superhead';
   $handler->display->display_options['fields']['field_s_collection_superhead']['table'] = 'field_data_field_s_collection_superhead';
@@ -449,7 +430,7 @@ function stanford_soe_helper_collection_views_views_default_views() {
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['label'] = '';
   $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="mag-collection-container">
-  <div class="mag-collection-img">[field_s_collection_featured]</div>
+  <div class="mag-collection-color"></div>
   <div class ="mag-collection-content-container">
     <div class="mag-collection-title">[title]</div>
     <div class="mag-collection-superhead">[field_s_collection_superhead]</div>
