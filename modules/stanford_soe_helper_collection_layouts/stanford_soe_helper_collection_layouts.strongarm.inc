@@ -65,7 +65,7 @@ function stanford_soe_helper_collection_layouts_strongarm() {
           'weight' => '8',
         ),
         'title' => array(
-          'weight' => '1',
+          'weight' => '0',
         ),
         'path' => array(
           'weight' => '7',

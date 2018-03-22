@@ -168,7 +168,7 @@ function stanford_soe_helper_collection_field_default_field_instances() {
     'bundle' => 'stanford_collection',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Please enter the text that will show above the collection title ( Max length: 50 char ).',
+    'description' => 'Please enter the text that will show below the collection title. ( Max length: 50 char ).',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -236,7 +236,7 @@ function stanford_soe_helper_collection_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 0,
+      'weight' => 1,
     ),
   );
 
@@ -379,7 +379,7 @@ function stanford_soe_helper_collection_field_default_field_instances() {
   t('Intro label');
   t('Lead text');
   t('Please enter the lead text ( aka: description ) for the collection.');
-  t('Please enter the text that will show above the collection title ( Max length: 50 char ).');
+  t('Please enter the text that will show below the collection title. ( Max length: 50 char ).');
   t('Superhead');
   t('This is the header text for the collection block showing at the bottom of articles in the collection.');
   t('This is the text that will show up on the grey intro block on the article page for the collection.');
