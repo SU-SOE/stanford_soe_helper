@@ -50,13 +50,13 @@ function stanford_soe_helper_collection_field_default_field_bases() {
     'type' => 'text_long',
   );
 
-  // Exported field_base: 'field_s_collection_superhead'.
-  $field_bases['field_s_collection_superhead'] = array(
+  // Exported field_base: 'field_s_collection_subtitle'.
+  $field_bases['field_s_collection_subtitle'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_s_collection_superhead',
+    'field_name' => 'field_s_collection_subtitle',
     'indexes' => array(
       'format' => array(
         0 => 'format',
@@ -65,7 +65,7 @@ function stanford_soe_helper_collection_field_default_field_bases() {
     'locked' => 0,
     'module' => 'text',
     'settings' => array(
-      'max_length' => 50,
+      'max_length' => 100,
     ),
     'translatable' => 0,
     'type' => 'text',

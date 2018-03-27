@@ -164,12 +164,12 @@ function stanford_soe_helper_collection_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'node-stanford_collection-field_s_collection_superhead'.
-  $field_instances['node-stanford_collection-field_s_collection_superhead'] = array(
+  // 'node-stanford_collection-field_s_collection_subtitle'.
+  $field_instances['node-stanford_collection-field_s_collection_subtitle'] = array(
     'bundle' => 'stanford_collection',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Please enter the text that will show below the collection title. ( Max length: 50 char ).',
+    'description' => 'Please enter the text that will show below the collection title. ( Max length: 100 char ).',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -194,8 +194,8 @@ function stanford_soe_helper_collection_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_s_collection_superhead',
-    'label' => 'Superhead',
+    'field_name' => 'field_s_collection_subtitle',
+    'label' => 'Subtitle',
     'required' => 1,
     'settings' => array(
       'better_formats' => array(
@@ -382,7 +382,7 @@ function stanford_soe_helper_collection_field_default_field_instances() {
   t('Lead text');
   t('Please enter the lead text ( aka: description ) for the collection.');
   t('Please enter the text that will show below the collection title. ( Max length: 50 char ).');
-  t('Superhead');
+  t('Subtitle');
   t('This is the header text for the collection block showing at the bottom of articles in the collection.');
   t('This is the text that will show up on the grey intro block on the article page for the collection.');
 
