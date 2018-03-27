@@ -26,7 +26,7 @@ function stanford_soe_helper_collection_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 3,
+        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -258,7 +258,7 @@ function stanford_soe_helper_collection_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 2,
+        'weight' => 3,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -381,7 +381,7 @@ function stanford_soe_helper_collection_field_default_field_instances() {
   t('Intro label');
   t('Lead text');
   t('Please enter the lead text ( aka: description ) for the collection.');
-  t('Please enter the text that will show below the collection title. ( Max length: 50 char ).');
+  t('Please enter the text that will show below the collection title. ( Max length: 100 char ).');
   t('Subtitle');
   t('This is the header text for the collection block showing at the bottom of articles in the collection.');
   t('This is the text that will show up on the grey intro block on the article page for the collection.');
