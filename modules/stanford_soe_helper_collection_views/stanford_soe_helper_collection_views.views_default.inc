@@ -11,11 +11,11 @@ function stanford_soe_helper_collection_views_views_default_views() {
   $export = array();
 
   $view = new view();
-  $view->name = '_stanford_magazine_collection_list';
+  $view->name = 'stanford_magazine_collection_list';
   $view->description = '';
   $view->tag = 'default';
   $view->base_table = 'node';
-  $view->human_name = ' Stanford Magazine Collection: List';
+  $view->human_name = 'Stanford Magazine Collection: List';
   $view->core = 7;
   $view->api_version = '3.0';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
@@ -187,7 +187,7 @@ function stanford_soe_helper_collection_views_views_default_views() {
   $handler->display->display_options['pager']['options']['quantity'] = '9';
   $handler->display->display_options['pager']['options']['effects']['type'] = 'fade';
   $handler->display->display_options['pager']['options']['effects']['speed'] = 'slow';
-  $export['_stanford_magazine_collection_list'] = $view;
+  $export['stanford_magazine_collection_list'] = $view;
 
   $view = new view();
   $view->name = 'stanford_magazine_collection_mag_landing_page';
