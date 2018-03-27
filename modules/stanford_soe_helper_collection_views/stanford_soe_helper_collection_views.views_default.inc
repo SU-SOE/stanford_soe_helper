@@ -31,6 +31,7 @@ function stanford_soe_helper_collection_views_views_default_views() {
   $handler->display->display_options['cache']['output_lifespan'] = '3600';
   $handler->display->display_options['cache']['output_lifespan_custom'] = '0';
   $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['query']['options']['disable_sql_rewrite'] = TRUE;
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '3';
@@ -488,7 +489,6 @@ function stanford_soe_helper_collection_views_views_default_views() {
   $handler->display->display_options['relationships']['field_s_mag_article_collection_target_id']['id'] = 'field_s_mag_article_collection_target_id';
   $handler->display->display_options['relationships']['field_s_mag_article_collection_target_id']['table'] = 'field_data_field_s_mag_article_collection';
   $handler->display->display_options['relationships']['field_s_mag_article_collection_target_id']['field'] = 'field_s_mag_article_collection_target_id';
-  $handler->display->display_options['relationships']['field_s_mag_article_collection_target_id']['required'] = TRUE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Featured Image */
   $handler->display->display_options['fields']['field_s_mag_article_image']['id'] = 'field_s_mag_article_image';
