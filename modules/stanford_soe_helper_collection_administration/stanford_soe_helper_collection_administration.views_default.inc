@@ -234,11 +234,11 @@ function stanford_soe_helper_collection_administration_views_default_views() {
   $handler->display->display_options['fields']['name']['relationship'] = 'uid';
   $handler->display->display_options['fields']['name']['label'] = 'Author';
   $handler->display->display_options['fields']['name']['link_to_user'] = FALSE;
-  /* Field: Content: Superhead */
-  $handler->display->display_options['fields']['field_s_collection_superhead']['id'] = 'field_s_collection_superhead';
-  $handler->display->display_options['fields']['field_s_collection_superhead']['table'] = 'field_data_field_s_collection_superhead';
-  $handler->display->display_options['fields']['field_s_collection_superhead']['field'] = 'field_s_collection_superhead';
-  $handler->display->display_options['fields']['field_s_collection_superhead']['element_label_colon'] = FALSE;
+  /* Field: Content: Subtitle */
+  $handler->display->display_options['fields']['field_s_collection_subtitle']['id'] = 'field_s_collection_subtitle';
+  $handler->display->display_options['fields']['field_s_collection_subtitle']['table'] = 'field_data_field_s_collection_subtitle';
+  $handler->display->display_options['fields']['field_s_collection_subtitle']['field'] = 'field_s_collection_subtitle';
+  $handler->display->display_options['fields']['field_s_collection_subtitle']['element_label_colon'] = FALSE;
   /* Field: Content: Lead text */
   $handler->display->display_options['fields']['field_s_collection_lead_text']['id'] = 'field_s_collection_lead_text';
   $handler->display->display_options['fields']['field_s_collection_lead_text']['table'] = 'field_data_field_s_collection_lead_text';
@@ -388,11 +388,11 @@ function stanford_soe_helper_collection_administration_views_default_views() {
   $handler->display->display_options['fields']['name']['relationship'] = 'uid';
   $handler->display->display_options['fields']['name']['label'] = 'Author';
   $handler->display->display_options['fields']['name']['link_to_user'] = FALSE;
-  /* Field: Content: Superhead */
-  $handler->display->display_options['fields']['field_s_collection_superhead']['id'] = 'field_s_collection_superhead';
-  $handler->display->display_options['fields']['field_s_collection_superhead']['table'] = 'field_data_field_s_collection_superhead';
-  $handler->display->display_options['fields']['field_s_collection_superhead']['field'] = 'field_s_collection_superhead';
-  $handler->display->display_options['fields']['field_s_collection_superhead']['element_label_colon'] = FALSE;
+  /* Field: Content: Subtitle */
+  $handler->display->display_options['fields']['field_s_collection_subtitle']['id'] = 'field_s_collection_subtitle';
+  $handler->display->display_options['fields']['field_s_collection_subtitle']['table'] = 'field_data_field_s_collection_subtitle';
+  $handler->display->display_options['fields']['field_s_collection_subtitle']['field'] = 'field_s_collection_subtitle';
+  $handler->display->display_options['fields']['field_s_collection_subtitle']['element_label_colon'] = FALSE;
   /* Field: Content: Lead text */
   $handler->display->display_options['fields']['field_s_collection_lead_text']['id'] = 'field_s_collection_lead_text';
   $handler->display->display_options['fields']['field_s_collection_lead_text']['table'] = 'field_data_field_s_collection_lead_text';

@@ -401,13 +401,13 @@ function stanford_soe_helper_collection_views_views_default_views() {
   $handler->display->display_options['fields']['edit_node']['exclude'] = TRUE;
   $handler->display->display_options['fields']['edit_node']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['edit_node']['text'] = 'Edit';
-  /* Field: Content: Superhead */
-  $handler->display->display_options['fields']['field_s_collection_superhead']['id'] = 'field_s_collection_superhead';
-  $handler->display->display_options['fields']['field_s_collection_superhead']['table'] = 'field_data_field_s_collection_superhead';
-  $handler->display->display_options['fields']['field_s_collection_superhead']['field'] = 'field_s_collection_superhead';
-  $handler->display->display_options['fields']['field_s_collection_superhead']['label'] = '';
-  $handler->display->display_options['fields']['field_s_collection_superhead']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_s_collection_superhead']['element_label_colon'] = FALSE;
+  /* Field: Content: Subtitle */
+  $handler->display->display_options['fields']['field_s_collection_subtitle']['id'] = 'field_s_collection_subtitle';
+  $handler->display->display_options['fields']['field_s_collection_subtitle']['table'] = 'field_data_field_s_collection_subtitle';
+  $handler->display->display_options['fields']['field_s_collection_subtitle']['field'] = 'field_s_collection_subtitle';
+  $handler->display->display_options['fields']['field_s_collection_subtitle']['label'] = '';
+  $handler->display->display_options['fields']['field_s_collection_subtitle']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_s_collection_subtitle']['element_label_colon'] = FALSE;
   /* Field: Content: Lead text */
   $handler->display->display_options['fields']['field_s_collection_lead_text']['id'] = 'field_s_collection_lead_text';
   $handler->display->display_options['fields']['field_s_collection_lead_text']['table'] = 'field_data_field_s_collection_lead_text';
@@ -426,7 +426,7 @@ function stanford_soe_helper_collection_views_views_default_views() {
   <div class="mag-collection-color"></div>
   <div class ="mag-collection-content-container">
     <div class="mag-collection-title">[title]</div>
-    <div class="mag-collection-superhead">[field_s_collection_superhead]</div>
+    <div class="mag-collection-subtitle">[field_s_collection_subtitle]</div>
     <div class="mag-collection-lead">[field_s_collection_lead_text]</div>
   </div>
 </div>';
