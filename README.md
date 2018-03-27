@@ -1,5 +1,5 @@
 # [Stanford SoE Helper](https://github.com/SU-SWS/stanford_soe_helper)
-##### Version: 7.x-2.0-beta3
+##### Version: 7.x-2.0-dev
 
 Maintainers: [boznik](https://github.com/boznik), [cjwest](https://github.com/cjwest), [josephgknox](https://github.com/josephgknox)
 
@@ -17,7 +17,7 @@ Sub Modules
 **[Stanford People Spotlight](https://github.com/SU-SWS/stanford_soe_helper/stanford_people_spotlight)**
 This module provides the _People Spotlight_ content type.
 
-- Nodes path is at: /spotlight/<title>
+- Nodes path is at: /spotlight/
 
 **[Stanford People Spotlight Administration](https://github.com/SU-SWS/stanford_soe_helper/stanford_people_spotlight_adminstration)**
 This module provides manage content for _People Spotlight_ content types.
@@ -79,6 +79,18 @@ This module provides custom functionality for the SoE Homepage.
 
 **[Stanford SoE Helper Landing_Page](https://github.com/SU-SWS/stanford_soe_helper/stanford_soe_helper_landing_page/)**
 This module provides custom functionality for landing pages.
+
+**[Stanford SoE Helper Collection](https://github.com/SU-SOE/stanford_soe_helper/stanford_soe_helper_collection/)**
+This module defines the collection content type. 
+
+**[Stanford SoE Helper Collection Administration](https://github.com/SU-SOE/stanford_soe_helper/stanford_soe_helper_collection_administration/)**
+This module provides the collection administration view.
+
+**[Stanford SoE Helper Collection Layouts](https://github.com/SU-SOE/stanford_soe_helper/stanford_soe_helper_collection_layouts/)**
+This module provides the context layout for collection.
+
+**[Stanford SoE Helper Collection Views](https://github.com/SU-SOE/stanford_soe_helper/stanford_soe_helper_collection_views/)**
+This module provides custom collection views.
 
 **[Stanford SoE Helper Magazine Views](https://github.com/SU-SWS/stanford_soe_helper/stanford_soe_helper_mag_views/)**
 This module provides custom magazine views that use template (tpl.php) files. 

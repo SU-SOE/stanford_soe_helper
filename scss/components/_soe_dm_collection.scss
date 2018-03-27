@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+//
+// DIGITAL MAGAZINE CCOLLECTIONS
+// LANDING PAGE
+//
+
+// COLLECTIONS LANDING PAGE
+
+.page-magazine-collections,
+.node-type-stanford-collection {
+  #content-body-bottom {
+    margin-top: 60px;
+  }
+
+  #mc_embed_signup_scroll {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .main {
+    padding: 0;
+  }
+}
+
+//
+// A DIGITAL MAGAZINE COLLECTION PAGE
+//
+
+// A COLLECTION PAGE
+
+.node-type-stanford-collection {
+  #content-head {
+    display: block;
+  }
+
+  #main {
+    padding-bottom: 80px;
+    padding-top: 80px;
+    background-color: #e4e4e4;
+
+    .mc-content {
+      margin: 0;
+      .title {
+        color: #333;
+        font-family: "Roboto Slab", serif;
+        font-size: 2.8em;
+        font-weight: 600;
+        letter-spacing: 0;
+        margin: 0 0 20px;
+        text-align: center;
+
+        @include breakpoint-max(small) {
+          line-height: 1em;
+        }
+      }
+
+      .field-name-field-s-collection-subtitle {
+        color: #606060;
+        font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: 400;
+        letter-spacing: 0;
+        font-size: 1.6em;
+        margin: 0 auto 60px;
+        text-align: center;
+        width: 70%;
+      }
+
+      .field-name-field-s-collection-lead-text {
+        color: #686868;
+        font-family: "Source Sans Pro", sans-serif;
+        font-size: 24px;
+        line-height: 36px;
+        padding: 0 80px;
+        text-align: center;
+      }
+    }
+  }
+
+  .view-display-id-collection_group_block_1 {
+    .views-row {
+      margin-bottom: 0;
+      margin-top: 40px;
+    }
+
+    .mag-article-img {
+      width: 45%;
+      float: left;
+
+      @include breakpoint-max(large) {
+        width: 41%;
+      }
+
+      @include breakpoint-max(medium) {
+        width: 100%;
+      }
+    }
+
+    .mag-article-container {
+      background: #FFFFFF;
+      float: left;
+      position: relative;
+      width: 100%;
+      -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+      -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+
+      .mag-article-content-container {
+        float: left;
+        width: 49%;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+
+        @include breakpoint-max(large) {
+          min-height: auto;
+          width: 52%;
+
+          .mag-article-topics {
+            margin: 20px 0 0 !important;
+          }
+        }
+
+        @include breakpoint-max(medium) {
+          width: auto;
+        }
+      }
+    }
+
+    .edit-link {
+      float: left;
+      margin-bottom: 20px;
+      width: 100%;
+    }
+  }
+}
