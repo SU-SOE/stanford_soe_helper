@@ -21,78 +21,6 @@
   .main {
     padding: 0;
   }
-
-  .view-display-id-collections_page {
-    margin: 0 10%;
-    table {
-      tr {
-        td {
-          border: none;
-        }
-      }
-    }
-
-    .view-header {
-      h1 {
-        font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-        color: #686868;
-        font-size: 1.3em;
-        text-align: center;
-        margin-bottom: 0;
-      }
-
-      h2 {
-        font-size: 2.8em;
-        text-align: center;
-        margin: 0 0 60px;
-        width: 100%;
-      }
-    }
-
-    .mag-collection-container {
-      background-color: #fff;
-      float: left;
-      width: 100%;
-      -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
-      -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
-      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
-
-      .mag-collection-img {
-        float: left;
-      }
-
-      .mag-collection-content-container {
-        float: left;
-        padding: 25px 10px 0 40px;
-        width: 50%;
-
-        .mag-collection-title {
-          font-size: 1.3em;
-          line-height: 1.3em;
-          font-weight: 600;
-          margin-bottom: 25px;
-          margin-top: 10px;
-
-          a {
-            color: #B1040E;
-          }
-        }
-
-        .mag-collection-subtitle {
-          color: #686868;
-          font-size: 0.9em;
-          font-weight: 100;
-        }
-
-        .mag-collection-lead {
-          font-size: 0.8em;
-          font-weight: 400;
-          line-height: 1.2em;
-          margin: 20px 0;
-        }
-      }
-    }
-  }
 }
 
 //
@@ -109,8 +37,6 @@
   #main {
     padding-bottom: 80px;
     padding-top: 80px;
-    padding-left: 10%;
-    padding-right: 10%;
     background-color: #e4e4e4;
 
     .mc-content {
@@ -171,13 +97,20 @@
     }
 
     .mag-article-container {
-      margin-bottom: 0px;
+      background: #FFFFFF;
+      float: left;
+      position: relative;
+      width: 100%;
+      -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+      -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
 
       .mag-article-content-container {
         float: left;
-        margin-bottom: 80px;
-        min-height: 202px;
         width: 49%;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
 
         @include breakpoint-max(large) {
           min-height: auto;
