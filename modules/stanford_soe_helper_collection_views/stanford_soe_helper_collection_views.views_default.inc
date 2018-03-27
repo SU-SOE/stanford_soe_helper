@@ -489,6 +489,7 @@ function stanford_soe_helper_collection_views_views_default_views() {
   $handler->display->display_options['relationships']['field_s_mag_article_collection_target_id']['id'] = 'field_s_mag_article_collection_target_id';
   $handler->display->display_options['relationships']['field_s_mag_article_collection_target_id']['table'] = 'field_data_field_s_mag_article_collection';
   $handler->display->display_options['relationships']['field_s_mag_article_collection_target_id']['field'] = 'field_s_mag_article_collection_target_id';
+  $handler->display->display_options['relationships']['field_s_mag_article_collection_target_id']['required'] = TRUE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Featured Image */
   $handler->display->display_options['fields']['field_s_mag_article_image']['id'] = 'field_s_mag_article_image';
