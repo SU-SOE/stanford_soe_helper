@@ -80,15 +80,15 @@ function stanford_soe_helper_collection_layouts_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'views-ec30c8d802384689c15bd391ff8bd4c3' => array(
+        'views-8a1fed7db97eea60e090e427ade80280' => array(
           'module' => 'views',
-          'delta' => 'ec30c8d802384689c15bd391ff8bd4c3',
+          'delta' => '8a1fed7db97eea60e090e427ade80280',
           'region' => 'content_upper',
           'weight' => '-10',
         ),
-        'views-0587d51a03220703a86070d2a1038cb0' => array(
+        'views-051989bdd2c9899c84c78f70d0fb1e3e' => array(
           'module' => 'views',
-          'delta' => '0587d51a03220703a86070d2a1038cb0',
+          'delta' => '051989bdd2c9899c84c78f70d0fb1e3e',
           'region' => 'content_bottom',
           'weight' => '-10',
         ),
