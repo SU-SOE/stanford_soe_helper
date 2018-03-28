@@ -1143,3 +1143,4 @@ function stanford_soe_helper_collection_views_views_default_views() {
 
   return $export;
 }
+
