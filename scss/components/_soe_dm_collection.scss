@@ -11,7 +11,7 @@
 
   .views-row {
     margin-bottom: 80px;
-    @media (max-width: 480px) {
+    @include breakpoint-max(x-small) {
       margin-bottom: 20px;
     }
     &:nth-child(3n+1) {
@@ -91,6 +91,9 @@
     .collection-container {
       display: flex;
       margin: 40px 0 80px;
+      @include breakpoint-max(x-small) {
+         margin-bottom: 0;
+      }
 
       .collection-title {
         a {
