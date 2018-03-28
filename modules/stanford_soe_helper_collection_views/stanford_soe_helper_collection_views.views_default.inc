@@ -124,7 +124,7 @@ function stanford_soe_helper_collection_views_views_default_views() {
   /* Display: Page 2-13 */
   $handler = $view->new_display('page', 'Page 2-13', 'page_2_13');
   $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'Collections';
+  $handler->display->display_options['title'] = 'All Collections';
   $handler->display->display_options['display_description'] = 'Collections 2-13';
   $handler->display->display_options['defaults']['use_ajax'] = FALSE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
