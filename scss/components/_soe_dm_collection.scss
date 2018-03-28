@@ -8,23 +8,46 @@
 // COLLECTIONS LANDING PAGE
 
 .view-stanford-magazine-collection-list {
-  .most-recent-collection {
-    a {
-      -webkit-text-decoration-color: #00ECE9;
-      text-decoration-color: #00ECE9;
+
+  .views-row {
+    margin-bottom: 80px;
+    &:nth-child(3n+1) {
+      a {
+        -webkit-text-decoration-color: $orange;
+        text-decoration-color: $orange;
+      }
+      .collection-img {
+        background-color: $orange;
+      }
+    }
+    &:nth-child(3n+2) {
+      a {
+        -webkit-text-decoration-color: $pink;
+        text-decoration-color: $pink;
+      }
+      .collection-img {
+        background-color: $pink;
+      }
+    }
+    &:nth-child(3n) {
+      a {
+        -webkit-text-decoration-color: $turquoise;
+        text-decoration-color: $turquoise;
+      }
+      .collection-img {
+        background-color: $turquoise;
+      }
     }
   }
-  .views-row {
-  margin-bottom: 80px;
-  }
+
   .collection-date {
-    color: #686868;
+    color: $gray-orange;
     font-size: 0.9em;
     font-weight: 100;
   }
   .collection-content-container {
     position: relative;
-    background: #FFFFFF;
+    background: $white;
     padding: 15px 30px 30px;
     -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
@@ -36,38 +59,37 @@
     line-height: 1.3em;
     font-weight: 600;
     a {
-      color: #333333;
+      color: $primary-color;
       text-decoration: underline;
       text-decoration-skip: ink;
     }
-    // TODO: Every third item should be turquoise.
-    a {
-      -webkit-text-decoration-color: #00ECE9;
-      text-decoration-color: #00ECE9;
-    }
+  }
+  .collection-img {
+    height: 100px;
   }
 
+  &.most-recent-collection {
+    .collection-container {
+      display: flex;
 
+      .collection-title {
+        a {
+          -webkit-text-decoration-color: $turquoise;
+          text-decoration-color: $turquoise;
+        }
+      }
+      .collection-img {
+        width: 60%;
+        height: auto;
+        background-color: $turquoise;
+      }
+      .collection-content-container {
+        width: 40%;
+        height: 220px;
+      }
+    }
+  }
 }
-//.view-id-_stanford_magazine_collection_list {
-//{
-//  width: 50%;
-//  background: #FFFFFF;
-//  padding: 50px 30px 30px;
-//}
-//
-//
-//{
-//  position: relative;
-//  background: #FFFFFF;
-//  padding: 15px 30px 30px;
-//  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
-//  -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
-//  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
-//}
-//}
-
-
 
 .page-magazine-collections,
 .node-type-stanford-collection {
