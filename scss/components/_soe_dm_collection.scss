@@ -7,7 +7,117 @@
 
 // COLLECTIONS LANDING PAGE
 
-.page-magazine-collections,
+.view-stanford-magazine-collection-list {
+
+  .views-row {
+    margin-bottom: 80px;
+    @include breakpoint-max(x-small) {
+      margin-bottom: 20px;
+    }
+    &:nth-child(3n+1) {
+      a {
+        -webkit-text-decoration-color: $orange;
+        text-decoration-color: $orange;
+        &:focus,
+        &:hover {
+          @include td-color($primary-color);
+        }
+      }
+      .collection-img {
+        background-color: $orange;
+      }
+    }
+    &:nth-child(3n+2) {
+      a {
+        -webkit-text-decoration-color: $pink;
+        text-decoration-color: $pink;
+        &:focus,
+        &:hover {
+          @include td-color($primary-color);
+        }
+      }
+      .collection-img {
+        background-color: $pink;
+      }
+    }
+    &:nth-child(3n) {
+      a {
+        -webkit-text-decoration-color: $turquoise;
+        text-decoration-color: $turquoise;
+        &:focus,
+        &:hover {
+          @include td-color($primary-color);
+        }
+      }
+      .collection-img {
+        background-color: $turquoise;
+      }
+    }
+  }
+
+  .collection-date {
+    color: $gray-orange;
+    font-size: 0.9em;
+    font-weight: 100;
+  }
+  .collection-content-container {
+    position: relative;
+    background: $white;
+    padding: 15px 30px 30px;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .collection-title {
+    font-size: 1.3em;
+    line-height: 1.3em;
+    font-weight: 600;
+    a {
+      color: $primary-color;
+      text-decoration: underline;
+      text-decoration-skip: ink;
+      &:focus,
+      &:hover {
+        @include td-color($primary-color);
+      }
+    }
+  }
+  .collection-img {
+    height: 130px;
+  }
+
+  &.most-recent-collection {
+    .collection-container {
+      display: flex;
+      margin: 40px 0 80px;
+      @include breakpoint-max(x-small) {
+         margin-bottom: 0;
+      }
+
+      .collection-title {
+        a {
+          -webkit-text-decoration-color: $turquoise;
+          text-decoration-color: $turquoise;
+          &:focus,
+          &:hover {
+            @include td-color($primary-color);
+          }
+        }
+      }
+      .collection-img {
+        width: 45%;
+        height: 260px;
+        background-color: $turquoise;
+      }
+      .collection-content-container {
+        width: 55%;
+        height: auto;
+      }
+    }
+  }
+}
+
 .node-type-stanford-collection {
   #content-body-bottom {
     margin-top: 60px;
