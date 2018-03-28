@@ -1,11 +1,11 @@
 @charset "UTF-8";
 
 //
-// DIGITAL MAGAZINE CCOLLECTIONS
+// DIGITAL MAGAZINE COLLECTIONS
 // LANDING PAGE
 //
 
-// COLLECTIONS LANDING PAGE
+// COLLECTIONS LANDING PAGE (LIST PAGE)
 
 .view-stanford-magazine-collection-list {
 
@@ -137,7 +137,7 @@
 // A DIGITAL MAGAZINE COLLECTION PAGE
 //
 
-// A COLLECTION PAGE
+// A COLLECTION PAGE NODE DISPLAY
 
 .node-type-stanford-collection {
   #content-head {
@@ -147,16 +147,11 @@
   #main {
     padding-bottom: 80px;
     padding-top: 80px;
-    background-color: #e4e4e4;
+    background-color: $light-gray;
 
     .mc-content {
       margin: 0;
       .title {
-        color: #333;
-        font-family: "Roboto Slab", serif;
-        font-size: 2.8em;
-        font-weight: 600;
-        letter-spacing: 0;
         margin: 0 0 20px;
         text-align: center;
 
@@ -166,7 +161,7 @@
       }
 
       .field-name-field-s-collection-subtitle {
-        color: #606060;
+        color: $gray-orange;
         font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-weight: 400;
         letter-spacing: 0;
@@ -177,7 +172,7 @@
       }
 
       .field-name-field-s-collection-lead-text {
-        color: #686868;
+        color: $gray-orange;
         font-family: "Source Sans Pro", sans-serif;
         font-size: 24px;
         line-height: 36px;
@@ -207,7 +202,7 @@
     }
 
     .mag-article-container {
-      background: #FFFFFF;
+      background: $white;
       float: left;
       position: relative;
       width: 100%;
