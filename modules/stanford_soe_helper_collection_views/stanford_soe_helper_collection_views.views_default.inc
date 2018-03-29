@@ -107,7 +107,7 @@ function stanford_soe_helper_collection_views_views_default_views() {
   $handler->display->display_options['header']['area']['id'] = 'area';
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
-  $handler->display->display_options['header']['area']['content'] = '<div class="views-field-field-s-collectlon-intro-label">[field_s_collection_cont_label]</div>
+  $handler->display->display_options['header']['area']['content'] = '<div class="views-field-field-s-collection-cont-label">[field_s_collection_cont_label]</div>
 <div class="views-field-title">[title_6]</div>
 <div class="views-field-field-s-collection-subtitle">[field_s_collection_subtitle]</div>';
   $handler->display->display_options['header']['area']['format'] = 'full_html';
