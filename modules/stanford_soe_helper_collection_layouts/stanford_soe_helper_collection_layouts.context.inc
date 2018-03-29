@@ -101,5 +101,50 @@ function stanford_soe_helper_collection_layouts_context_default_contexts() {
   t('Engineering context for Stanford Magazine Collections');
   $export['stanford_magazine_collection_engineering'] = $context;
 
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
+  $context->name = 'stanford_magazine_collection_list_page';
+  $context->description = 'Engineering context for Stanford Magazine Collections';
+  $context->tag = 'Engineering';
+  $context->conditions = array(
+    'path' => array(
+      'values' => array(
+        'magazine/collections' => 'magazine/collections',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'views-8a1fed7db97eea60e090e427ade80280' => array(
+          'module' => 'views',
+          'delta' => '8a1fed7db97eea60e090e427ade80280',
+          'region' => 'content_upper',
+          'weight' => '-10',
+        ),
+        'bean-stanford-soe-mag-news-signup' => array(
+          'module' => 'bean',
+          'delta' => 'stanford-soe-mag-news-signup',
+          'region' => 'full_width_middle',
+          'weight' => '-10',
+        ),
+        'views-051989bdd2c9899c84c78f70d0fb1e3e' => array(
+          'module' => 'views',
+          'delta' => '051989bdd2c9899c84c78f70d0fb1e3e',
+          'region' => 'content_body_bottom',
+          'weight' => '-10',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('Engineering');
+  t('Engineering context for Stanford Magazine Collections');
+  $export['stanford_magazine_collection_list_page'] = $context;
+
   return $export;
 }
