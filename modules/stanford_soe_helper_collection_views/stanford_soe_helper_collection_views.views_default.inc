@@ -102,6 +102,15 @@ function stanford_soe_helper_collection_views_views_default_views() {
   $handler->display->display_options['pager']['options']['items_per_page'] = '8';
   $handler->display->display_options['pager']['options']['offset'] = '1';
   $handler->display->display_options['defaults']['header'] = FALSE;
+  /* Header: Global: Text area */
+  $handler->display->display_options['header']['area']['id'] = 'area';
+  $handler->display->display_options['header']['area']['table'] = 'views';
+  $handler->display->display_options['header']['area']['field'] = 'area';
+  $handler->display->display_options['header']['area']['content'] = '<p>[field_s_collection_cont_label]</p>
+<h1>[title_6]</h1>
+<h2>[field_s_collection_subtitle]</h2>';
+  $handler->display->display_options['header']['area']['format'] = 'full_html';
+  $handler->display->display_options['header']['area']['tokenize'] = TRUE;
   $handler->display->display_options['defaults']['relationships'] = FALSE;
   /* Relationship: Entity Reference: Referencing entity */
   $handler->display->display_options['relationships']['reverse_field_s_mag_issue_article_3_node']['id'] = 'reverse_field_s_mag_issue_article_3_node';
@@ -287,6 +296,31 @@ function stanford_soe_helper_collection_views_views_default_views() {
   $handler->display->display_options['fields']['edit_node']['exclude'] = TRUE;
   $handler->display->display_options['fields']['edit_node']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['edit_node']['text'] = 'Edit';
+  /* Field: Content: Continue label */
+  $handler->display->display_options['fields']['field_s_collection_cont_label']['id'] = 'field_s_collection_cont_label';
+  $handler->display->display_options['fields']['field_s_collection_cont_label']['table'] = 'field_data_field_s_collection_cont_label';
+  $handler->display->display_options['fields']['field_s_collection_cont_label']['field'] = 'field_s_collection_cont_label';
+  $handler->display->display_options['fields']['field_s_collection_cont_label']['relationship'] = 'field_s_mag_article_collection_target_id';
+  $handler->display->display_options['fields']['field_s_collection_cont_label']['label'] = '';
+  $handler->display->display_options['fields']['field_s_collection_cont_label']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_s_collection_cont_label']['element_label_colon'] = FALSE;
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title_6']['id'] = 'title_6';
+  $handler->display->display_options['fields']['title_6']['table'] = 'node';
+  $handler->display->display_options['fields']['title_6']['field'] = 'title';
+  $handler->display->display_options['fields']['title_6']['relationship'] = 'field_s_mag_article_collection_target_id';
+  $handler->display->display_options['fields']['title_6']['label'] = '';
+  $handler->display->display_options['fields']['title_6']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['title_6']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title_6']['link_to_node'] = FALSE;
+  /* Field: Content: Subtitle */
+  $handler->display->display_options['fields']['field_s_collection_subtitle']['id'] = 'field_s_collection_subtitle';
+  $handler->display->display_options['fields']['field_s_collection_subtitle']['table'] = 'field_data_field_s_collection_subtitle';
+  $handler->display->display_options['fields']['field_s_collection_subtitle']['field'] = 'field_s_collection_subtitle';
+  $handler->display->display_options['fields']['field_s_collection_subtitle']['relationship'] = 'field_s_mag_article_collection_target_id';
+  $handler->display->display_options['fields']['field_s_collection_subtitle']['label'] = '';
+  $handler->display->display_options['fields']['field_s_collection_subtitle']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_s_collection_subtitle']['element_label_colon'] = FALSE;
   /* Field: Global: Custom text */
   $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['table'] = 'views';
@@ -303,20 +337,12 @@ function stanford_soe_helper_collection_views_views_default_views() {
 </div>
 <div class="edit-link">[edit_node]</div>';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
-  /* Field: Content: Collection */
-  $handler->display->display_options['fields']['field_s_mag_article_collection']['id'] = 'field_s_mag_article_collection';
-  $handler->display->display_options['fields']['field_s_mag_article_collection']['table'] = 'field_data_field_s_mag_article_collection';
-  $handler->display->display_options['fields']['field_s_mag_article_collection']['field'] = 'field_s_mag_article_collection';
-  $handler->display->display_options['fields']['field_s_mag_article_collection']['type'] = 'entityreference_entity_id';
-  $handler->display->display_options['fields']['field_s_mag_article_collection']['settings'] = array(
-    'link' => 0,
-  );
   $handler->display->display_options['defaults']['arguments'] = FALSE;
   /* Contextual filter: Content: Nid */
   $handler->display->display_options['arguments']['nid']['id'] = 'nid';
   $handler->display->display_options['arguments']['nid']['table'] = 'node';
   $handler->display->display_options['arguments']['nid']['field'] = 'nid';
-  $handler->display->display_options['arguments']['nid']['relationship'] = 'field_s_mag_article_collection_target_id';
+  $handler->display->display_options['arguments']['nid']['relationship'] = 'reverse_field_s_mag_article_collection_node';
   $handler->display->display_options['arguments']['nid']['default_action'] = 'default';
   $handler->display->display_options['arguments']['nid']['default_argument_type'] = 'node';
   $handler->display->display_options['arguments']['nid']['summary']['number_of_records'] = '0';
