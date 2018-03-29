@@ -226,6 +226,29 @@
         text-align: center;
       }
     }
+
+    .view-footer {
+      text-align: center;
+
+      a {
+        background: $brand-bright;
+        border-radius: 0;
+        color: #fbfbf9;
+        text-decoration: none;
+        -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+        margin: 0 0 26px;
+        padding: 0.7em 1.4em 0.9em;
+        line-height: 1.4em;
+        letter-spacing: 0.03em;
+        margin: 0 0 80px;
+
+        &:hover {
+          background: $primary-color;
+        }
+      }
+    }
   }
 }
 
