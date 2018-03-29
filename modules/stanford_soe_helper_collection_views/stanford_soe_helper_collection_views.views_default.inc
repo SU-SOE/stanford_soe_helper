@@ -59,11 +59,11 @@ function stanford_soe_helper_collection_views_views_default_views() {
   $handler->display->display_options['fields']['field_s_collection_subtitle']['field'] = 'field_s_collection_subtitle';
   $handler->display->display_options['fields']['field_s_collection_subtitle']['label'] = '';
   $handler->display->display_options['fields']['field_s_collection_subtitle']['element_label_colon'] = FALSE;
-  /* Sort criterion: Content: Post date */
-  $handler->display->display_options['sorts']['created']['id'] = 'created';
-  $handler->display->display_options['sorts']['created']['table'] = 'node';
-  $handler->display->display_options['sorts']['created']['field'] = 'created';
-  $handler->display->display_options['sorts']['created']['order'] = 'DESC';
+  /* Sort criterion: Content: Publishing Date (field_s_mag_article_date) */
+  $handler->display->display_options['sorts']['field_s_mag_article_date_value']['id'] = 'field_s_mag_article_date_value';
+  $handler->display->display_options['sorts']['field_s_mag_article_date_value']['table'] = 'field_data_field_s_mag_article_date';
+  $handler->display->display_options['sorts']['field_s_mag_article_date_value']['field'] = 'field_s_mag_article_date_value';
+  $handler->display->display_options['sorts']['field_s_mag_article_date_value']['order'] = 'DESC';
   /* Contextual filter: Content: Nid */
   $handler->display->display_options['arguments']['nid']['id'] = 'nid';
   $handler->display->display_options['arguments']['nid']['table'] = 'node';
