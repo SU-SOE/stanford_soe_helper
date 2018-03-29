@@ -83,6 +83,18 @@ user/*/edit";
 }
 
 /**
+ * Implements hook_page_build().
+ */
+function stanford_soe_helper_page_build(&$page) {
+  // If we are on an Article that is part of a collection, hide the related article block and the issues block.
+  if ($page['fullwidth_top']['views_7b2ef00c5f030c4c2234b21e8fcfdf5d']) {
+    unset($page['content_bottom']['views_a06b957e34c741c20a352da1b7ce0e12']);
+    unset($page['content_bottom']['views_ed6257626b15a2207dd0724b1a8cd3c4']);
+    unset($page['content_bottom']['stanford_soe_helper_magazine_soe_all_issues_link_2']);
+  }
+}
+
+/**
  * Implements hook_menu().
  */
 function stanford_soe_helper_menu() {
