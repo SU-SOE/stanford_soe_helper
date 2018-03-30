@@ -13,6 +13,48 @@ function stanford_soe_helper_collection_layouts_context_default_contexts() {
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
+  $context->name = 'stanford_magazine_collection_article_engineering';
+  $context->description = 'Engineering context for Stanford Magazine Collections and the collection blocks on the article pages.';
+  $context->tag = 'Engineering';
+  $context->conditions = array(
+    'node' => array(
+      'values' => array(
+        'stanford_magazine_article' => 'stanford_magazine_article',
+      ),
+      'options' => array(
+        'node_form' => '1',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'views-7b2ef00c5f030c4c2234b21e8fcfdf5d' => array(
+          'module' => 'views',
+          'delta' => '7b2ef00c5f030c4c2234b21e8fcfdf5d',
+          'region' => 'fullwidth_top',
+          'weight' => '-10',
+        ),
+        'views-791d235d18b47f6352dcdf232609d31b' => array(
+          'module' => 'views',
+          'delta' => '791d235d18b47f6352dcdf232609d31b',
+          'region' => 'fullwidth_bottom',
+          'weight' => '-10',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('Engineering');
+  t('Engineering context for Stanford Magazine Collections and the collection blocks on the article pages.');
+  $export['stanford_magazine_collection_article_engineering'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
   $context->name = 'stanford_magazine_collection_engineering';
   $context->description = 'Engineering context for Stanford Magazine Collections';
   $context->tag = 'Engineering';
