@@ -1,5 +1,5 @@
 # [Stanford SoE Helper](https://github.com/SU-SWS/stanford_soe_helper)
-##### Version: 7.x-2.1-alpha2
+##### Version: 7.x-2.x-dev
 
 Maintainers: [boznik](https://github.com/boznik), [cjwest](https://github.com/cjwest), [josephgknox](https://github.com/josephgknox)
 
@@ -81,7 +81,7 @@ This module provides custom functionality for the SoE Homepage.
 This module provides custom functionality for landing pages.
 
 **[Stanford SoE Helper Collection](https://github.com/SU-SOE/stanford_soe_helper/stanford_soe_helper_collection/)**
-This module defines the collection content type. 
+This module defines the collection content type.
 
 **[Stanford SoE Helper Collection Administration](https://github.com/SU-SOE/stanford_soe_helper/stanford_soe_helper_collection_administration/)**
 This module provides the collection administration view.
@@ -93,7 +93,7 @@ This module provides the context layout for collection.
 This module provides custom collection views.
 
 **[Stanford SoE Helper Magazine Views](https://github.com/SU-SWS/stanford_soe_helper/stanford_soe_helper_mag_views/)**
-This module provides custom magazine views that use template (tpl.php) files. 
+This module provides custom magazine views that use template (tpl.php) files.
 
 **[Stanford SoE Helper Magazine](https://github.com/SU-SWS/stanford_soe_helper/stanford_soe_helper_magazine/)**
 This module provides custom functionality for the Stanford Magazine. This includes:
@@ -102,7 +102,7 @@ This module provides custom functionality for the Stanford Magazine. This includ
 - The Stanford Taxonomy Term view - this view overwrites Drupal's default system for handling taxonomy terms.
 - Some site owner and editor permissions
 
-This module uses the _stanford_department_ taxonomy. This taxonomy is defined in the 
+This module uses the _stanford_department_ taxonomy. This taxonomy is defined in the
 [stanford_news_extras](https://github.com/SU-SWS/stanford_news/stanford_news_extras) module.
 
 **[Stanford SoE Helper News](https://github.com/SU-SWS/stanford_soe_helper/stanford_soe_helper_news/)**
@@ -115,11 +115,11 @@ This module provides custom functionality for Stanford Pages.
 This module provides Solr search functionality.
 
 **[Stanford SoE Helper Sitewide](https://github.com/SU-SWS/stanford_soe_helper/stanford_soe_helper_sitewide/)**
-This module provides custom functionality for sitewide functionality. 
+This module provides custom functionality for sitewide functionality.
 This includes contexts and vocabulary including:
  - SoE Accent Color vocabulary
  - Stanford SoE Intranet Link block
- 
+
 
 Accessibility
 ---
