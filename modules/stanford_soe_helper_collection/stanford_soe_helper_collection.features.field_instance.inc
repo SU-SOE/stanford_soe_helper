@@ -11,6 +11,47 @@ function stanford_soe_helper_collection_field_default_field_instances() {
   $field_instances = array();
 
   // Exported field_instance:
+  // 'node-stanford_collection-field_s_col_article_accent_color'.
+  $field_instances['node-stanford_collection-field_s_col_article_accent_color'] = array(
+    'bundle' => 'stanford_collection',
+    'default_value' => array(
+      0 => array(
+        'tid' => 3743,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => 'These terms identify the associated accent color. Select a color.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 2,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_s_col_article_accent_color',
+    'label' => 'Accent Color',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 5,
+    ),
+  );
+
+  // Exported field_instance:
   // 'node-stanford_collection-field_s_collection_cont_label'.
   $field_instances['node-stanford_collection-field_s_collection_cont_label'] = array(
     'bundle' => 'stanford_collection',
@@ -375,6 +416,7 @@ function stanford_soe_helper_collection_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Accent Color');
   t('Collection');
   t('Continue label');
   t('If this article is part of a collection, pick it here.');
@@ -383,6 +425,7 @@ function stanford_soe_helper_collection_field_default_field_instances() {
   t('Please enter the lead text ( aka: description ) for the collection.');
   t('Please enter the text that will show below the collection title. ( Max length: 100 char ).');
   t('Subtitle');
+  t('These terms identify the associated accent color. Select a color.');
   t('This is the header text for the collection block showing at the bottom of articles in the collection.');
   t('This is the text that will show up on the grey intro block on the article page for the collection.');
 
