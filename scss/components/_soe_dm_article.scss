@@ -853,10 +853,15 @@
 .entity-paragraphs-item {
   iframe {
     width: 100%;
-    height: 400px;
     &.iframe-auto {
       height: auto;
     }
+  }
+
+  iframe[src*="youtube"],
+  iframe[src*="vimeo"]
+  {
+    height: 400px;
   }
 }
 
