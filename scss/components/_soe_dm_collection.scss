@@ -160,7 +160,7 @@
       text-align: center;
     }
 
-    .views-field-title {
+    .mag-collection-title {
       color: $black;
       font-family: "Roboto Slab", serif;
       font-size: 20px;
@@ -170,6 +170,29 @@
 
       @include breakpoint-max(small) {
         line-height: 1em;
+      }
+
+      &[class*="mag-collection-color-"] a {
+        color: $primary-color;
+        text-decoration: underline;
+        @include td-skip;
+
+        &:focus,
+        &:hover {
+          @include td-color($primary-color);
+        }
+      }
+
+      &.mag-collection-color-orange a {
+        @include td-color($orange);
+      }
+
+      &.mag-collection-color-turquoise a {
+        @include td-color($turquoise);
+      }
+
+      &.mag-collection-color-pink a {
+        @include td-color($pink);
       }
     }
 
