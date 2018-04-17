@@ -117,7 +117,7 @@ function stanford_soe_helper_collection_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_s_collection_lead_text',
     'label' => 'Lead text',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'better_formats' => array(
         'allowed_formats' => array(
