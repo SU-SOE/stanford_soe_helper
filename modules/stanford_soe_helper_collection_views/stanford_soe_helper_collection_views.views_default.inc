@@ -101,6 +101,43 @@ function stanford_soe_helper_collection_views_views_default_views() {
 
   /* Display: Article Collection Top Block  */
   $handler = $view->new_display('block', 'Article Collection Top Block ', 'article_collection');
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Intro label */
+  $handler->display->display_options['fields']['field_s_collectlon_intro_label']['id'] = 'field_s_collectlon_intro_label';
+  $handler->display->display_options['fields']['field_s_collectlon_intro_label']['table'] = 'field_data_field_s_collectlon_intro_label';
+  $handler->display->display_options['fields']['field_s_collectlon_intro_label']['field'] = 'field_s_collectlon_intro_label';
+  $handler->display->display_options['fields']['field_s_collectlon_intro_label']['label'] = '';
+  $handler->display->display_options['fields']['field_s_collectlon_intro_label']['element_label_colon'] = FALSE;
+  /* Field: Content: Accent Color */
+  $handler->display->display_options['fields']['field_s_col_article_accent_color']['id'] = 'field_s_col_article_accent_color';
+  $handler->display->display_options['fields']['field_s_col_article_accent_color']['table'] = 'field_data_field_s_col_article_accent_color';
+  $handler->display->display_options['fields']['field_s_col_article_accent_color']['field'] = 'field_s_col_article_accent_color';
+  $handler->display->display_options['fields']['field_s_col_article_accent_color']['label'] = '';
+  $handler->display->display_options['fields']['field_s_col_article_accent_color']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_s_col_article_accent_color']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_s_col_article_accent_color']['type'] = 'taxonomy_term_reference_plain';
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  /* Field: Global: Custom text */
+  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['label'] = '';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="mag-collection-title mag-collection-color-[field_s_col_article_accent_color]">[title]</div>';
+  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
+  /* Field: Content: Subtitle */
+  $handler->display->display_options['fields']['field_s_collection_subtitle']['id'] = 'field_s_collection_subtitle';
+  $handler->display->display_options['fields']['field_s_collection_subtitle']['table'] = 'field_data_field_s_collection_subtitle';
+  $handler->display->display_options['fields']['field_s_collection_subtitle']['field'] = 'field_s_collection_subtitle';
+  $handler->display->display_options['fields']['field_s_collection_subtitle']['label'] = '';
+  $handler->display->display_options['fields']['field_s_collection_subtitle']['element_label_colon'] = FALSE;
   $handler->display->display_options['block_description'] = 'Article Collection';
 
   /* Display: Article Collection Bottom Block  */
