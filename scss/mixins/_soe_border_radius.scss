@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+@mixin border-radius($top: 0, $right: 0, $bottom: 0, $left: 0) {
+  -webkit-border-radius:  $top, $right, $bottom, $left;
+  -moz-border-radius: $top, $right, $bottom, $left;
+  -border-radius: $top, $right, $bottom, $left;
+}
+
