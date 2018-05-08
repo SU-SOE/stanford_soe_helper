@@ -176,6 +176,14 @@ function stanford_soe_helper_form_alter(
       _stanford_soe_helper_deprecate_image_credits($form, $form_id);
       break;
   }
+
+  // Handle exposed filter dropdowns for spotlight page.
+  switch ($form['#id']) {
+    case "views-exposed-form-stanford-ppl-spot-3-v-card-page-1":
+      $form['field_s_ppl_spot_affiliation_tid']['#options']["All"] = 'All people';
+      $form['field_s_ppl_spot_department_tid']['#options']["All"] = 'All departments';
+      break;
+  }
 }
 
 /**
