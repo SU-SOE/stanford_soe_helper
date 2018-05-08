@@ -349,6 +349,19 @@
 .view-stanford-ppl-spot-2-v-span4-card,
 .view-stanford-ppl-spot-2-v-span6-card,
 .view-stanford-ppl-spot-3-v-card {
+
+  .view-filters {
+    select {
+      border: $dark-gray 1px solid;
+      @include border-radius;
+      option {
+        font-family: $primary-font;
+        font-weight: 400;
+        font-size: 18px;
+        color: $primary-color;
+      }
+    }
+  }
   &.views-grid-three .views-row {
     margin-bottom: 80px;
     @media (max-width: 1200px) {
@@ -451,16 +464,10 @@
         }
       }
     }
-    .view-filters {
-
-      select {
-        border: red 10px solid;
-      }
-    }
   }
 }
 
-// BUTTON TO MORE STORIES
+  // BUTTON TO MORE STORIES
 
 .spotlight-button {
   text-align: center;
