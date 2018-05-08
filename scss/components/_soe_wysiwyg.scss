@@ -107,15 +107,31 @@ p.btn-center {
   }
 }
 
+p.highlight {
+  border: none;
+  @include column-count (1);
+  font-family: $roboto-slab;
+  font-size: 1.2em;
+  font-weight: bold;
+  line-height: 1.6em;
+  padding: 0 50px;
+}
+
 p.columns {
   font-family: $roboto-slab;
-  font-size: em(28px);
-  line-height: 1.8em;
+  font-size: em(1.4em);
+  line-height: 1.6em;
   font-weight: bold;
   @include column-count (2);
-  @include column-gap (30px);
+  @include column-gap (80px);
   @include breakpoint-max(small) {
      @include column-count (1);
+  }
+  .group-p-ws-style & {
+    font-size: 1.2em;
+    line-height: 1.6em;
+    padding: 0 50px;
+    @include column-count (1);
   }
 }
 
