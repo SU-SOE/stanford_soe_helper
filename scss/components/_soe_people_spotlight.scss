@@ -63,8 +63,255 @@
   }
 }
 
+// HORIZONTAL CARD VIEW
+
+.view-stanford-people-spotlight-h-card {
+  .spotlight-container {
+    background: $white;
+    @include box-shadow;
+
+    .spotlight-all-content-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 85%;
+      margin: 0 auto;
+      padding: 50px 0;
+      @include breakpoint-max(small) {
+        width: 100%;
+      }
+      @media (max-width: 650px) {
+        display: block;
+      }
+    }
+
+    .spotlight-img {
+      margin-right: 40px;
+      flex-shrink: 0;
+      @media (max-width: 650px) {
+        text-align: center;
+        margin-right: 0;
+      }
+
+      img {
+        border-radius: 50%;
+        border-width: 5px;
+        border-style: solid;
+      }
+
+      &.spotlight-img-color-orange img {
+        border-color: $orange;
+      }
+
+      &.spotlight-img-color-turquoise img {
+        border-color: $turquoise;
+      }
+
+      &.spotlight-img-color-pink img {
+        border-color: $pink;
+      }
+    }
+
+    .spotlight-info-container {
+      @media (max-width: 650px) {
+        padding: 30px 20px;
+      }
+
+      .spotlight-name {
+        &[class*="spotlight-name-color-"] a {
+          text-decoration: underline;
+          @include td-skip;
+
+          &:focus,
+          &:hover {
+            @include td-color($primary-color);
+          }
+        }
+
+        h2 {
+          margin: 0 0 20px;
+          @include breakpoint-max(small) {
+            margin-top: 15px;
+          }
+        }
+
+        &.spotlight-name-color-orange a {
+          @include td-color($orange);
+        }
+
+        &.spotlight-name-color-turquoise a {
+          @include td-color($turquoise);
+        }
+
+        &.spotlight-name-color-pink a {
+          @include td-color($pink);
+        }
+      }
+
+      .spotlight-degree p,
+      .spotlight-title p {
+        font-size: em(18px);
+        line-height: 1.3em;
+        margin: 0;
+      }
+
+      .spotlight-department p {
+        font-size: em(18px);
+        line-height: 1.3em;
+        margin-top: 0;
+      }
+
+      .spotlight-quote {
+        font-family: $roboto-slab;
+        font-size: em(24px);
+        font-weight: 600;
+
+        p:before {
+          content: open-quote;
+        }
+
+        p:after {
+          content: close-quote;
+        }
+      }
+    }
+  }
+}
+
+// VERTICAL CARD VIEW
+
+.view-stanford-people-spot-1-vertical-span6-card,
+.view-stanford-people-spotlight-1-v-span4-card,
+.view-stanford-ppl-spot-2-v-span4-card,
+.view-stanford-ppl-spot-2-v-span6-card,
+.view-stanford-ppl-spot-3-v-card {
+  .view-content {
+    clear: both;
+  }
+
+  .view-filters {
+    float: right;
+    clear: both;
+    select {
+      border: $dark-gray 1px solid;
+      @include border-radius;
+      option {
+        font-family: $primary-font;
+        font-weight: 400;
+        font-size: 18px;
+        color: $primary-color;
+      }
+    }
+  }
+  &.views-grid-three .views-row {
+    margin-bottom: 80px;
+    @media (max-width: 1200px) {
+      width: 46.1%;
+    }
+    // Chrome doesn't seem to pick up the 450px
+    @media (max-width: 580px) {
+      width: 96.2%;
+    }
+  }
+
+  .spotlight-container {
+    background: $white;
+    @include box-shadow;
+
+    .spotlight-all-content-container {
+      margin: 0 auto;
+      padding: 36px 40px 50px;
+    }
+
+    .spotlight-img {
+      text-align: center;
+      @media (max-width: 650px) {
+        margin-right: 0;
+      }
+
+      img {
+        border-radius: 50%;
+        border-width: 5px;
+        border-style: solid;
+      }
+
+      &.spotlight-img-color-orange img {
+        border-color: $orange;
+      }
+
+      &.spotlight-img-color-turquoise img {
+        border-color: $turquoise;
+      }
+
+      &.spotlight-img-color-pink img {
+        border-color: $pink;
+      }
+    }
+
+    .spotlight-info-container {
+      .spotlight-name {
+        &[class*="spotlight-name-color-"] a {
+          text-decoration: underline;
+          @include td-skip;
+
+          &:focus,
+          &:hover {
+            @include td-color($primary-color);
+          }
+        }
+
+        h2 {
+          font-size: em(26px);
+          margin: 25px 0 10px;
+        }
+
+        &.spotlight-name-color-orange a {
+          @include td-color($orange);
+        }
+
+        &.spotlight-name-color-turquoise a {
+          @include td-color($turquoise);
+        }
+
+        &.spotlight-name-color-pink a {
+          @include td-color($pink);
+        }
+      }
+
+      .spotlight-degree p,
+      .spotlight-title p {
+        font-size: em(18px);
+        line-height: 1.3em;
+        margin: 0;
+      }
+
+      .spotlight-department p {
+        font-size: em(18px);
+        line-height: 1.3em;
+        margin-top: 0;
+      }
+
+      .spotlight-quote {
+        font-family: $roboto-slab;
+        font-size: em(24px);
+        font-weight: 600;
+
+        p:before {
+          content: open-quote;
+        }
+
+        p:after {
+          content: close-quote;
+        }
+      }
+    }
+  }
+}
+
+
 // FULL WIDTH BANNER VIEW
 
+.view-stanford-ppl-spot-3-v-card.views-grid-three .view-display-id-attachment_first_spot,
 .view-stanford-people-spotlight-fw-banner,
 .view-stanford-people-spotlight-fw-banner-no-quote,
 .view-stanford-ppl-spot-fw-banner-quote {
@@ -227,247 +474,75 @@
   }
 }
 
-// HORIZONTAL CARD VIEW
 
-.view-stanford-people-spotlight-h-card {
-  .spotlight-container {
-    background: $white;
-    @include box-shadow;
+// SPOTLIGHT PAGE
 
+.view-stanford-ppl-spot-3-v-card.views-grid-three .view-display-id-attachment_first_spot {
+  .view-content .views-row-1.views-row {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+    padding: 70px 0 0;
+    @media (max-width: 1900px) {
+      width: 100%;
+    }
     .spotlight-all-content-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 85%;
-      margin: 0 auto;
-      padding: 50px 0;
-      @include breakpoint-max(small) {
+      @media (max-width: 1900px) {
         width: 100%;
       }
-      @media (max-width: 650px) {
-        display: block;
-      }
+    }
+    @media (max-width: 1400px) {
+      width: 95%;
+    }
+    @include breakpoint-max(large) {
+      width: 100%;
+    }
+    @include breakpoint-max(small) {
+      display: flex;
+      text-align: left;
+      width: 100%;
+      padding: 50px 0 0;
+    }
+    @media (max-width: 500px) {
+      display: block;
+      text-align: center;
+      width: 100%;
     }
 
-    .spotlight-img {
-      margin-right: 40px;
-      flex-shrink: 0;
-      @media (max-width: 650px) {
-        text-align: center;
-        margin-right: 0;
-      }
-
-      img {
-        border-radius: 50%;
-        border-width: 5px;
-        border-style: solid;
-      }
-
-      &.spotlight-img-color-orange img {
-        border-color: $orange;
-      }
-
-      &.spotlight-img-color-turquoise img {
-        border-color: $turquoise;
-      }
-
-      &.spotlight-img-color-pink img {
-        border-color: $pink;
-      }
-    }
-
-    .spotlight-info-container {
-      @media (max-width: 650px) {
-        padding: 30px 20px;
-      }
-
-      .spotlight-name {
-        &[class*="spotlight-name-color-"] a {
-          text-decoration: underline;
-          @include td-skip;
-
-          &:focus,
-          &:hover {
-            @include td-color($primary-color);
-          }
-        }
-
-        h2 {
-          margin: 0 0 20px;
-          @include breakpoint-max(small) {
-            margin-top: 15px;
-          }
-        }
-
-        &.spotlight-name-color-orange a {
-          @include td-color($orange);
-        }
-
-        &.spotlight-name-color-turquoise a {
-          @include td-color($turquoise);
-        }
-
-        &.spotlight-name-color-pink a {
-          @include td-color($pink);
-        }
-      }
-
-      .spotlight-degree p,
-      .spotlight-title p {
-        font-size: em(18px);
-        line-height: 1.3em;
-        margin: 0;
-      }
-
-      .spotlight-department p {
-        font-size: em(18px);
-        line-height: 1.3em;
-        margin-top: 0;
-      }
-
-      .spotlight-quote {
-        font-family: $roboto-slab;
-        font-size: em(24px);
-        font-weight: 600;
-
-        p:before {
-          content: open-quote;
-        }
-
-        p:after {
-          content: close-quote;
-        }
-      }
-    }
-  }
-}
-
-// VERTICAL CARD VIEW
-
-.view-stanford-people-spot-1-vertical-span6-card,
-.view-stanford-people-spotlight-1-v-span4-card,
-.view-stanford-ppl-spot-2-v-span4-card,
-.view-stanford-ppl-spot-2-v-span6-card,
-.view-stanford-ppl-spot-3-v-card {
-
-  .view-filters {
-    float: right;
-    clear: both;
-    select {
-      border: $dark-gray 1px solid;
-      @include border-radius;
-      option {
-        font-family: $primary-font;
-        font-weight: 400;
-        font-size: 18px;
-        color: $primary-color;
-      }
-    }
-  }
-  &.views-grid-three .views-row {
-    margin-bottom: 80px;
-    @media (max-width: 1200px) {
-      width: 46.1%;
-    }
-    // Chrome doesn't seem to pick up the 450px
-    @media (max-width: 580px) {
-      width: 96.2%;
+    .front & {
+      padding: 70px 0;
     }
   }
 
   .spotlight-container {
-    background: $white;
-    @include box-shadow;
-
-    .spotlight-all-content-container {
-      margin: 0 auto;
-      padding: 36px 40px 50px;
-    }
-
-    .spotlight-img {
-      text-align: center;
-      @media (max-width: 650px) {
-        margin-right: 0;
-      }
-
-      img {
-        border-radius: 50%;
-        border-width: 5px;
-        border-style: solid;
-      }
-
-      &.spotlight-img-color-orange img {
-        border-color: $orange;
-      }
-
-      &.spotlight-img-color-turquoise img {
-        border-color: $turquoise;
-      }
-
-      &.spotlight-img-color-pink img {
-        border-color: $pink;
-      }
-    }
-
-    .spotlight-info-container {
-      .spotlight-name {
-        &[class*="spotlight-name-color-"] a {
-          text-decoration: underline;
-          @include td-skip;
-
-          &:focus,
-          &:hover {
-            @include td-color($primary-color);
-          }
-        }
-
-        h2 {
-          font-size: em(26px);
-          margin: 25px 0 10px;
-        }
-
-        &.spotlight-name-color-orange a {
-          @include td-color($orange);
-        }
-
-        &.spotlight-name-color-turquoise a {
-          @include td-color($turquoise);
-        }
-
-        &.spotlight-name-color-pink a {
-          @include td-color($pink);
-        }
-      }
-
-      .spotlight-degree p,
-      .spotlight-title p {
-        font-size: em(18px);
-        line-height: 1.3em;
-        margin: 0;
-      }
-
-      .spotlight-department p {
-        font-size: em(18px);
-        line-height: 1.3em;
-        margin-top: 0;
-      }
-
-      .spotlight-quote {
-        font-family: $roboto-slab;
-        font-size: em(24px);
-        font-weight: 600;
-
-        p:before {
-          content: open-quote;
-        }
-
-        p:after {
-          content: close-quote;
-        }
-      }
-    }
+    background: $off-white;
+    box-shadow: none;
+  }
+ :nth-child(2) {
+    order: inherit;
   }
 }
+
+.view-stanford-ppl-spot-3-v-card,
+.view-stanford-ppl-spot-3-card-and-banner {
+  display: flex;
+  flex-direction: column;
+}
+.view-stanford-ppl-spot-3-v-card :nth-child(1) {
+  order: 2;
+}
+.view-stanford-ppl-spot-3-v-card :nth-child(2) {
+  order: 1;
+}
+.view-stanford-ppl-spot-3-v-card :nth-child(3) {
+  order: 3;
+}
+.view-stanford-ppl-spot-3-v-card :nth-child(4) {
+  order: 4;
+}
+
+
 
   // BUTTON TO MORE STORIES
 
