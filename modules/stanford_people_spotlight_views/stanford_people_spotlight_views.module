@@ -15,39 +15,15 @@ function stanford_people_spotlight_views_preprocess_views_view(&$vars) {
   // Get the current view info
   $view = $vars['view'];
 
-  var_dump($view->name);
-  // Add JS/CSS based on view name
+  // Add CSS/JS based on view name
   if ($view->name == 'stanford_ppl_spot_3_v_card') {
-    var_dump($view->current_display);
-
-    $file_path = drupal_get_path('module', 'stanford_people_spotlight_views');
-
-    drupal_add_css($file_path, '/css/stanford_people_spotlight_views.css');
-    //dpm($view);
-
-    // Add JS/CSS based on current view display
+    //Add CSS/JS based on current view display
     if ($view->current_display == 'page_1') {
-      drupal_add_js($file_path, '/js/stanford_people_spotlight_views.js');
+
+      $file_path = drupal_get_path('module', 'stanford_people_spotlight_views');
+
+      drupal_add_css($file_path . '/css/stanford_people_spotlight_views.css');
+      drupal_add_js($file_path . '/js/stanford_people_spotlight_views.js');
     }
-  }
-}
-/**
- * Implements hook_views_pre_render().
- */
-//function stanford_people_spotlight_views_preprocess_views_view(&$vars) {
-function stanford_people_spotlight_views_views_pre_render(&$view) {
-  //https://benmarshall.me/load-js-css-conditionally-drupal-7/
-  // devel_debug_log
-  //print_r($view->display);
-  //ddl($view->display);
-  if ($view->name == 'stanford_ppl_spot_3_v_card') {
-    //print_r($view->display);
-    //&& ($view->display == 'page_1')) {
-    //print_r($view->display);
-    //ddl($view);
-    //$file_path = drupal_get_path('module', 'stanford_people_spotlight_views');
-    //drupal_add_js($file_path, '/js/stanford_people_spotlight_views.js');
-    //drupal_add_css($file_path, '/css/stanford_people_spotlight_views.css');
-    //$view->pre_render_called = TRUE;
   }
 }
