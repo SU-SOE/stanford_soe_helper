@@ -105,7 +105,7 @@ function stanford_people_spotlight_field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 13,
+        'weight' => 10,
       ),
       'full' => array(
         'label' => 'above',
@@ -155,7 +155,7 @@ function stanford_people_spotlight_field_default_field_instances() {
           'show_remaining_days' => FALSE,
         ),
         'type' => 'date_default',
-        'weight' => 6,
+        'weight' => 3,
       ),
       'full' => array(
         'label' => 'hidden',
@@ -220,7 +220,7 @@ function stanford_people_spotlight_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 9,
+        'weight' => 6,
       ),
       'full' => array(
         'label' => 'above',
@@ -297,7 +297,7 @@ function stanford_people_spotlight_field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 10,
+        'weight' => 7,
       ),
       'full' => array(
         'label' => 'above',
@@ -329,6 +329,49 @@ function stanford_people_spotlight_field_default_field_instances() {
   );
 
   // Exported field_instance:
+  // 'node-stanford_people_spotlight-field_s_ppl_spot_featured'.
+  $field_instances['node-stanford_people_spotlight-field_s_ppl_spot_featured'] = array(
+    'bundle' => 'stanford_people_spotlight',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'If this is a featured spotlight, select one or more values to define where it will be featured. ',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 12,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_s_ppl_spot_featured',
+    'label' => 'Featured',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 8,
+    ),
+  );
+
+  // Exported field_instance:
   // 'node-stanford_people_spotlight-field_s_ppl_spot_image'.
   $field_instances['node-stanford_people_spotlight-field_s_ppl_spot_image'] = array(
     'bundle' => 'stanford_people_spotlight',
@@ -343,7 +386,7 @@ function stanford_people_spotlight_field_default_field_instances() {
           'image_style' => '',
         ),
         'type' => 'image',
-        'weight' => 7,
+        'weight' => 4,
       ),
       'full' => array(
         'label' => 'above',
@@ -507,7 +550,7 @@ function stanford_people_spotlight_field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 4,
+        'weight' => 1,
       ),
       'full' => array(
         'label' => 'hidden',
@@ -555,7 +598,7 @@ function stanford_people_spotlight_field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 5,
+        'weight' => 2,
       ),
       'full' => array(
         'label' => 'hidden',
@@ -599,7 +642,7 @@ function stanford_people_spotlight_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 12,
+        'weight' => 9,
       ),
       'full' => array(
         'label' => 'hidden',
@@ -677,7 +720,7 @@ function stanford_people_spotlight_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 11,
+        'weight' => 8,
       ),
       'full' => array(
         'label' => 'hidden',
@@ -757,7 +800,7 @@ function stanford_people_spotlight_field_default_field_instances() {
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 14,
+        'weight' => 11,
       ),
       'full' => array(
         'label' => 'above',
@@ -803,7 +846,7 @@ function stanford_people_spotlight_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 8,
+        'weight' => 5,
       ),
       'full' => array(
         'label' => 'above',
@@ -872,6 +915,8 @@ function stanford_people_spotlight_field_default_field_instances() {
   t('Affiliation');
   t('Degrees');
   t('Department');
+  t('Featured');
+  t('If this is a featured spotlight, select one or more values to define where it will be featured. ');
   t('Image');
   t('Image Color');
   t('Image credit');

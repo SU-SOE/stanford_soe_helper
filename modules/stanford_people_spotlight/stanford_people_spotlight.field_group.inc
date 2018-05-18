@@ -26,6 +26,7 @@ function stanford_people_spotlight_field_group_info() {
       0 => 'field_s_ppl_spot_department',
       1 => 'field_s_ppl_spot_affiliation',
       2 => 'field_s_ppl_spot_related_page',
+      3 => 'field_s_ppl_spot_featured',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
