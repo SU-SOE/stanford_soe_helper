@@ -2053,6 +2053,7 @@ function stanford_people_spotlight_views_views_default_views() {
   $handler->display->display_options['cache']['output_lifespan_custom'] = '0';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['exposed_form']['options']['autosubmit'] = TRUE;
   $handler->display->display_options['pager']['type'] = 'load_more';
   $handler->display->display_options['pager']['options']['items_per_page'] = '3';
   $handler->display->display_options['pager']['options']['offset'] = '7';
@@ -2238,6 +2239,52 @@ function stanford_people_spotlight_views_views_default_views() {
     'stanford_people_spotlight' => 'stanford_people_spotlight',
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
+  /* Filter criterion: Content: Affiliation (field_s_ppl_spot_affiliation) */
+  $handler->display->display_options['filters']['field_s_ppl_spot_affiliation_tid']['id'] = 'field_s_ppl_spot_affiliation_tid';
+  $handler->display->display_options['filters']['field_s_ppl_spot_affiliation_tid']['table'] = 'field_data_field_s_ppl_spot_affiliation';
+  $handler->display->display_options['filters']['field_s_ppl_spot_affiliation_tid']['field'] = 'field_s_ppl_spot_affiliation_tid';
+  $handler->display->display_options['filters']['field_s_ppl_spot_affiliation_tid']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_s_ppl_spot_affiliation_tid']['expose']['operator_id'] = 'field_s_ppl_spot_affiliation_tid_op';
+  $handler->display->display_options['filters']['field_s_ppl_spot_affiliation_tid']['expose']['label'] = 'All People';
+  $handler->display->display_options['filters']['field_s_ppl_spot_affiliation_tid']['expose']['operator'] = 'field_s_ppl_spot_affiliation_tid_op';
+  $handler->display->display_options['filters']['field_s_ppl_spot_affiliation_tid']['expose']['identifier'] = 'field_s_ppl_spot_affiliation_tid';
+  $handler->display->display_options['filters']['field_s_ppl_spot_affiliation_tid']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    12 => 0,
+    10 => 0,
+    8 => 0,
+    6 => 0,
+    20 => 0,
+    14 => 0,
+    16 => 0,
+    18 => 0,
+  );
+  $handler->display->display_options['filters']['field_s_ppl_spot_affiliation_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['field_s_ppl_spot_affiliation_tid']['vocabulary'] = 'stanford_affiliation';
+  /* Filter criterion: Content: Department (field_s_ppl_spot_department) */
+  $handler->display->display_options['filters']['field_s_ppl_spot_department_tid']['id'] = 'field_s_ppl_spot_department_tid';
+  $handler->display->display_options['filters']['field_s_ppl_spot_department_tid']['table'] = 'field_data_field_s_ppl_spot_department';
+  $handler->display->display_options['filters']['field_s_ppl_spot_department_tid']['field'] = 'field_s_ppl_spot_department_tid';
+  $handler->display->display_options['filters']['field_s_ppl_spot_department_tid']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_s_ppl_spot_department_tid']['expose']['operator_id'] = 'field_s_ppl_spot_department_tid_op';
+  $handler->display->display_options['filters']['field_s_ppl_spot_department_tid']['expose']['label'] = 'All Departments';
+  $handler->display->display_options['filters']['field_s_ppl_spot_department_tid']['expose']['operator'] = 'field_s_ppl_spot_department_tid_op';
+  $handler->display->display_options['filters']['field_s_ppl_spot_department_tid']['expose']['identifier'] = 'field_s_ppl_spot_department_tid';
+  $handler->display->display_options['filters']['field_s_ppl_spot_department_tid']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    12 => 0,
+    10 => 0,
+    8 => 0,
+    6 => 0,
+    20 => 0,
+    14 => 0,
+    16 => 0,
+    18 => 0,
+  );
+  $handler->display->display_options['filters']['field_s_ppl_spot_department_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['field_s_ppl_spot_department_tid']['vocabulary'] = 'stanford_department';
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page_1');
