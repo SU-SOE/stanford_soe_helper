@@ -125,6 +125,10 @@ function stanford_people_spotlight_layouts_context_default_contexts() {
     'path' => array(
       'values' => array(
         'spotlight/faculty' => 'spotlight/faculty',
+        'spotlight?field_s_ppl_spot_affiliation_tid=86*' => 'spotlight?field_s_ppl_spot_affiliation_tid=86*',
+        'spotlighttest?field_s_ppl_spot_affiliation_tid=86*' => 'spotlighttest?field_s_ppl_spot_affiliation_tid=86*',
+        'spotlight?field_s_ppl_spot_affiliation_tid=86' => 'spotlight?field_s_ppl_spot_affiliation_tid=86',
+        'spotlighttest?field_s_ppl_spot_affiliation_tid=86' => 'spotlighttest?field_s_ppl_spot_affiliation_tid=86',
       ),
     ),
   );
@@ -206,18 +210,7 @@ function stanford_people_spotlight_layouts_context_default_contexts() {
       ),
     ),
   );
-  $context->reactions = array(
-    'block' => array(
-      'blocks' => array(
-        'views-c2b6153cde2b4573a636336531638758' => array(
-          'module' => 'views',
-          'delta' => 'c2b6153cde2b4573a636336531638758',
-          'region' => 'fullwidth_top',
-          'weight' => '-7',
-        ),
-      ),
-    ),
-  );
+  $context->reactions = array();
   $context->condition_mode = 0;
 
   // Translatables
