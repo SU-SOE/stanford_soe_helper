@@ -2049,13 +2049,9 @@ function stanford_people_spotlight_views_views_default_views() {
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
-  $handler->display->display_options['pager']['type'] = 'load_more';
+  $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '3';
   $handler->display->display_options['pager']['options']['offset'] = '7';
-  $handler->display->display_options['pager']['options']['id'] = '0';
-  $handler->display->display_options['pager']['options']['quantity'] = '9';
-  $handler->display->display_options['pager']['options']['effects']['type'] = 'fade';
-  $handler->display->display_options['pager']['options']['effects']['speed'] = 'slow';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
   /* No results behavior: Global: Text area */
@@ -2238,9 +2234,20 @@ function stanford_people_spotlight_views_views_default_views() {
   );
   $handler->display->display_options['filters']['field_s_ppl_spot_affiliation_tid']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_s_ppl_spot_affiliation_tid']['expose']['operator_id'] = 'field_s_ppl_spot_affiliation_tid_op';
-  $handler->display->display_options['filters']['field_s_ppl_spot_affiliation_tid']['expose']['label'] = 'Affiliation (field_s_ppl_spot_affiliation)';
   $handler->display->display_options['filters']['field_s_ppl_spot_affiliation_tid']['expose']['operator'] = 'field_s_ppl_spot_affiliation_tid_op';
   $handler->display->display_options['filters']['field_s_ppl_spot_affiliation_tid']['expose']['identifier'] = 'field_s_ppl_spot_affiliation_tid';
+  $handler->display->display_options['filters']['field_s_ppl_spot_affiliation_tid']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    12 => 0,
+    10 => 0,
+    8 => 0,
+    6 => 0,
+    20 => 0,
+    14 => 0,
+    16 => 0,
+    18 => 0,
+  );
   $handler->display->display_options['filters']['field_s_ppl_spot_affiliation_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_s_ppl_spot_affiliation_tid']['vocabulary'] = 'stanford_affiliation';
   /* Filter criterion: Content: Department (field_s_ppl_spot_department) */
@@ -2287,9 +2294,18 @@ function stanford_people_spotlight_views_views_default_views() {
   $handler->display->display_options['pager']['options']['id'] = '0';
   $handler->display->display_options['pager']['options']['quantity'] = '9';
   $handler->display->display_options['pager']['options']['effects']['type'] = 'fade';
-  $handler->display->display_options['pager']['options']['effects']['speed'] = 'slow';
+  $handler->display->display_options['pager']['options']['effects']['speed'] = 'fast';
   $handler->display->display_options['defaults']['header'] = FALSE;
   $handler->display->display_options['defaults']['footer'] = FALSE;
+  $handler->display->display_options['defaults']['empty'] = FALSE;
+  /* No results behavior: Global: Text area */
+  $handler->display->display_options['empty']['area']['id'] = 'area';
+  $handler->display->display_options['empty']['area']['table'] = 'views';
+  $handler->display->display_options['empty']['area']['field'] = 'area';
+  $handler->display->display_options['empty']['area']['label'] = 'No spotlight filter results';
+  $handler->display->display_options['empty']['area']['empty'] = TRUE;
+  $handler->display->display_options['empty']['area']['content'] = 'No spotlights available with those filter criteria. Please try a different selection option.';
+  $handler->display->display_options['empty']['area']['format'] = 'content_editor_text_format';
   $handler->display->display_options['path'] = 'spotlight';
 
   /* Display: Block Any */
