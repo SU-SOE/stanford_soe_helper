@@ -40,7 +40,6 @@ function stanford_people_spotlight_views_form_alter(
   // Handle exposed filter dropdowns for spotlight page.
   switch ($form['#id']) {
     case "views-exposed-form-stanford-ppl-spot-3-v-card-page-1":
-      dpm($form);
       $form['field_s_ppl_spot_affiliation_tid']['#options']["All"] = 'All people';
       $form['field_s_ppl_spot_department_tid']['#options']["All"] = 'All departments';
       break;
