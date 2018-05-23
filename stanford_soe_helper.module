@@ -105,7 +105,7 @@ function stanford_soe_helper_page_build(&$page) {
   // Get the collection if there is one.
   $collection = NULL;
   if (isset($page['content']['system_main']['nodes'])) {
-    $flip = array_reverse($page['content']['system_main']['nodes'])
+    $flip = array_reverse($page['content']['system_main']['nodes']);
     $collection = array_pop($flip);
   }
 
