@@ -58,12 +58,49 @@
     .group-s-social-and-print {
       display: flex;
       flex-wrap: wrap;
+      height: 30px;
     }
 
     .field-name-field-s-mag-article-date {
       .field-item {
         &:after {
           content: "\00a0 \00a0 |\00a0 \00a0 ";
+        }
+      }
+    }
+
+    .field-name-field-s-mag-article-collection {
+      .field-label {
+        font-family: Source sans pro;
+
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.2em;
+
+        &:after {
+          content: "\00a0 \00a0 |\00a0 \00a0 ";
+        }
+      }
+
+      .field-items {
+        font-family: "Roboto Slab";
+        font-size: 0.9em;
+        font-weight: bold;
+        line-height: 1.2em;
+
+        a.orange {
+          color: $black;
+          @include td-color($orange);
+        }
+
+        a.pink {
+          color: $black;
+          @include td-color($pink);
+        }
+
+        a.turquoise {
+          color: $black;
+          @include td-color($turquoise);
         }
       }
     }
