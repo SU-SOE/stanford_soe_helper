@@ -29,12 +29,6 @@ function stanford_soe_helper_collection_layouts_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'views-7b2ef00c5f030c4c2234b21e8fcfdf5d' => array(
-          'module' => 'views',
-          'delta' => '7b2ef00c5f030c4c2234b21e8fcfdf5d',
-          'region' => 'fullwidth_top',
-          'weight' => '-10',
-        ),
         'views-791d235d18b47f6352dcdf232609d31b' => array(
           'module' => 'views',
           'delta' => '791d235d18b47f6352dcdf232609d31b',

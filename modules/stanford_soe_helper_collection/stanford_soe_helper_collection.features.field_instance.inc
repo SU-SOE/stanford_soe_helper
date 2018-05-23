@@ -363,7 +363,7 @@ function stanford_soe_helper_collection_field_default_field_instances() {
     'bundle' => 'stanford_magazine_article',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'If this article is part of a collection, pick it here.',
+    'description' => 'If this article is part of a collection series, pick it here.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -381,7 +381,7 @@ function stanford_soe_helper_collection_field_default_field_instances() {
           'link' => 1,
         ),
         'type' => 'entityreference_label',
-        'weight' => 5,
+        'weight' => 24,
       ),
       'taxonomy' => array(
         'label' => 'above',
@@ -398,7 +398,7 @@ function stanford_soe_helper_collection_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_s_mag_article_collection',
-    'label' => 'Collection',
+    'label' => 'This article is part of the series',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -417,15 +417,15 @@ function stanford_soe_helper_collection_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Accent Color');
-  t('Collection');
   t('Continue label');
-  t('If this article is part of a collection, pick it here.');
+  t('If this article is part of a collection series, pick it here.');
   t('Intro label');
   t('Lead text');
   t('Please enter the lead text ( aka: description ) for the collection.');
   t('Please enter the text that will show below the collection title. ( Max length: 100 char ).');
   t('Subtitle');
   t('These terms identify the associated accent color. Select a color.');
+  t('This article is part of the series');
   t('This is the header text for the collection block showing at the bottom of articles in the collection.');
   t('This is the text that will show up on the grey intro block on the article page for the collection.');
 
