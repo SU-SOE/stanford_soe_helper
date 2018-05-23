@@ -105,7 +105,8 @@ function stanford_soe_helper_page_build(&$page) {
   // Get the collection if there is one.
   $collection = NULL;
   if (isset($page['content']['system_main']['nodes'])) {
-    $collection = array_pop(array_reverse($page['content']['system_main']['nodes']));
+    $flip = array_reverse($page['content']['system_main']['nodes'])
+    $collection = array_pop($flip);
   }
 
   // If we are on an Article that is part of a collection, hide the related article block and the issues block.
