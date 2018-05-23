@@ -88,9 +88,10 @@ user/*/edit";
 
 function stanford_soe_helper_preprocess_field(&$vars) {
   // On the magazine article page we need to set the color for the link back to the collection if it exists.
+
   switch ($vars['element']['#field_name']) {
     case 'field_s_mag_article_collection':
-      $term_accent_color = taxonomy_term_load($vars['element']['#object']->field_s_mag_article_accent_color['und'][0]['tid']);
+      $term_accent_color = taxonomy_term_load($vars['element']['#object']->field_s_mag_article_collection['und'][0]['entity']->field_s_col_article_accent_color['und'][0]['tid']);
       $accent_color = $term_accent_color->name;
       $vars['items'][0]['#markup'] = str_replace('<a ', '<a class="'. $accent_color . '" ', $vars['items'][0]['#markup']);
       break;
@@ -103,7 +104,7 @@ function stanford_soe_helper_preprocess_field(&$vars) {
 function stanford_soe_helper_page_build(&$page) {
   // Get the collection if there is one.
   $collection = array_pop(array_reverse($page['content']['system_main']['nodes']));
-
+//print '<pre>'; dpr(get_defined_vars()); print '</pre>';
   // If we are on an Article that is part of a collection, hide the related article block and the issues block.
   if (isset($collection)) {
     if (isset($page['content_bottom']['views_a06b957e34c741c20a352da1b7ce0e12'])) {
