@@ -77,20 +77,27 @@
     }
 
     #site-title-first-line.site-title-uppercase {
-      font-size: 34px;
+      font-size: auto !important;
       @include breakpoint-max(x-small) {
-        font-size: 28px;
+        font-size: auto !important;
         margin-bottom: -5px;
       }
       @include breakpoint-max(xx-small) {
-        font-size: 18px;
+        font-size: auto !important;
         margin-bottom: -3px;
       }
       @media (max-width: 380px) {
-        font-size: 16px;
+        font-size: auto !important;
         margin-bottom: -4px;
       }
     }
   }
 }
 
+#site-title-first-line.site-title-uppercase,
+#site-title-first-line.site-title-uppercase a {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: -7px;
+}
