@@ -60,13 +60,12 @@
       flex-wrap: wrap;
       height: auto;
     }
- 
-    .group-s-date-and-byline {
-      width: auto;
 
-      @include breakpoint-min(large) {
-        width: 70%;
-      }
+    .group-s-date-and-byline {
+      width: 70%;
+
+      @include breakpoint-max(x-small) {
+        width: 100%;
 
       .field-name-field-s-mag-article-date,
       .field-name-field-s-mag-article-byline {
