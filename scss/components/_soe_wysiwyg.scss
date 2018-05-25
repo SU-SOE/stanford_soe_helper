@@ -122,8 +122,8 @@ p.columns {
   font-size: em(1.4em);
   line-height: 1.6em;
   font-weight: bold;
-  @include column-count (2);
-  @include column-gap (80px);
+  @include column-count (1);
+  @include column-gap (0);
   @include breakpoint-max(small) {
      @include column-count (1);
   }
@@ -132,6 +132,13 @@ p.columns {
     line-height: 1.6em;
     padding: 0 50px;
     @include column-count (1);
+
+    p.columns {
+      font-size: 1.2em;
+      line-height: 1.6em;
+      column-count: 1;
+      padding: 0 50px;
+    }
   }
 }
 
