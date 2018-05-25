@@ -899,9 +899,16 @@
   .paragraphs-item-p-two-columns {
     font-family: $roboto-slab;
     font-size: em(28px);
-    margin-bottom: 1em;
-  }
+    margin: 0 auto;
+    column-count: 1;
+    column-gap: 0;
+    width: 85%;
 
+    @include breakpoint-max(x-small) {
+      width: 100%;
+    }
+  }
+  
   h1 {
     @include breakpoint-max(x-small) {
       width: 100%;
