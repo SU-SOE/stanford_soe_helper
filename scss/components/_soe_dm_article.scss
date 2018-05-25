@@ -107,22 +107,32 @@
 
       .field-items {
         font-family: "Roboto Slab";
-        font-size: 0.9em;
+        font-size: .95em;
         font-weight: bold;
         line-height: 1.2em;
 
         a.orange {
           color: $black;
+          text-decoration: underline;
+          text-decoration-color: $orange;
           @include td-color($orange);
+
+          &:hover {
+            content: "\00a0 \00a0 |\00a0 \00a0 ";
+          }
         }
 
         a.pink {
           color: $black;
+          text-decoration: underline;
+          text-decoration-color: $pink;
           @include td-color($pink);
         }
 
         a.turquoise {
           color: $black;
+          text-decoration: underline;
+          text-decoration-color: $turquoise;
           @include td-color($turquoise);
         }
       }
