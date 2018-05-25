@@ -136,7 +136,7 @@ p.columns {
     p.columns {
       font-size: 1.2em;
       line-height: 1.6em;
-      column-count: 1;
+      @include column-count (1);
       padding: 0 50px;
     }
   }
