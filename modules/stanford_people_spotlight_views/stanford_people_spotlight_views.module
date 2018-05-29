@@ -5,3 +5,30 @@
  */
 
 include_once 'stanford_people_spotlight_views.features.inc';
+
+
+/**
+ * Implements hook_form_alter().
+ */
+function stanford_people_spotlight_views_form_alter(
+  &$form,
+  &$form_state,
+  $form_id) {
+
+  $default_affiliation = "All people";
+  $default_department = "All departments";
+  dpm($form);
+  // Handle exposed filter dropdowns for spotlight page.
+  switch ($form['#id']) {
+    case "views-exposed-form-stanford-ppl-spot-3-v-card-page-1":
+      $form['field_s_ppl_spot_affiliation_tid']['#options']["All"] = $default_affiliation;
+      $form['field_s_ppl_spot_department_tid']['#options']["All"] = $default_department;
+      $form['field_s_ppl_spot_affiliation_tid']['#default_value'] = 'Faculty';
+      break;
+    case "views-exposed-form-stanford-ppl-spot-3-v-card-page-faculty":
+      $form['field_s_ppl_spot_affiliation_tid']['#options']["All"] = 'Faculty';
+      $form['field_s_ppl_spot_department_tid']['#options']["All"] = $default_department;
+      $form['field_s_ppl_spot_affiliation_tid']['#default_value'] = 'Faculty';
+      break;
+  }
+}

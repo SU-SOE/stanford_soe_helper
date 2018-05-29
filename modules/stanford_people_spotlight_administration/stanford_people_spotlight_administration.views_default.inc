@@ -136,43 +136,45 @@ function stanford_people_spotlight_administration_views_default_views() {
   $handler->display->display_options['fields']['views_bulk_operations']['field'] = 'views_bulk_operations';
   $handler->display->display_options['fields']['views_bulk_operations']['vbo_settings']['display_type'] = '0';
   $handler->display->display_options['fields']['views_bulk_operations']['vbo_settings']['enable_select_all_pages'] = 1;
+  $handler->display->display_options['fields']['views_bulk_operations']['vbo_settings']['row_clickable'] = 1;
   $handler->display->display_options['fields']['views_bulk_operations']['vbo_settings']['force_single'] = 0;
   $handler->display->display_options['fields']['views_bulk_operations']['vbo_settings']['entity_load_capacity'] = '10';
   $handler->display->display_options['fields']['views_bulk_operations']['vbo_operations'] = array(
     'action::views_bulk_operations_delete_item' => array(
       'selected' => 1,
+      'postpone_processing' => 0,
       'skip_confirmation' => 0,
       'override_label' => 1,
       'label' => 'Delete',
-      'postpone_processing' => 0,
     ),
     'action::views_bulk_operations_modify_action' => array(
       'selected' => 1,
+      'postpone_processing' => 0,
       'skip_confirmation' => 0,
       'override_label' => 1,
       'label' => 'Modify',
       'settings' => array(
         'show_all_tokens' => 1,
         'display_values' => array(
-          'stanford_page::field_s_image_info' => 'stanford_page::field_s_image_info',
-          'stanford_page::field_s_page_file' => 'stanford_page::field_s_page_file',
+          'stanford_people_spotlight::field_s_ppl_spot_department' => 'stanford_people_spotlight::field_s_ppl_spot_department',
+          'stanford_people_spotlight::field_s_ppl_spot_affiliation' => 'stanford_people_spotlight::field_s_ppl_spot_affiliation',
+          'stanford_people_spotlight::field_s_ppl_spot_featured' => 'stanford_people_spotlight::field_s_ppl_spot_featured',
         ),
       ),
-      'postpone_processing' => 0,
     ),
     'action::node_publish_action' => array(
       'selected' => 1,
+      'postpone_processing' => 0,
       'skip_confirmation' => 0,
       'override_label' => 1,
       'label' => 'Publish',
-      'postpone_processing' => 0,
     ),
     'action::node_unpublish_action' => array(
       'selected' => 1,
+      'postpone_processing' => 0,
       'skip_confirmation' => 0,
       'override_label' => 1,
       'label' => 'Unpublish',
-      'postpone_processing' => 0,
     ),
   );
   /* Field: Content: Image */
@@ -367,6 +369,30 @@ function stanford_people_spotlight_administration_views_default_views() {
   $handler->display->display_options['filters']['tid_1']['type'] = 'select';
   $handler->display->display_options['filters']['tid_1']['vocabulary'] = 'stanford_affiliation';
   $handler->display->display_options['filters']['tid_1']['hierarchy'] = 1;
+  /* Filter criterion: Content: Has taxonomy term */
+  $handler->display->display_options['filters']['tid_2']['id'] = 'tid_2';
+  $handler->display->display_options['filters']['tid_2']['table'] = 'taxonomy_index';
+  $handler->display->display_options['filters']['tid_2']['field'] = 'tid';
+  $handler->display->display_options['filters']['tid_2']['value'] = '';
+  $handler->display->display_options['filters']['tid_2']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['tid_2']['expose']['operator_id'] = 'tid_2_op';
+  $handler->display->display_options['filters']['tid_2']['expose']['label'] = 'Filter by featured spotlight';
+  $handler->display->display_options['filters']['tid_2']['expose']['operator'] = 'tid_2_op';
+  $handler->display->display_options['filters']['tid_2']['expose']['identifier'] = 'tid_2';
+  $handler->display->display_options['filters']['tid_2']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    12 => 0,
+    10 => 0,
+    8 => 0,
+    6 => 0,
+    20 => 0,
+    14 => 0,
+    16 => 0,
+    18 => 0,
+  );
+  $handler->display->display_options['filters']['tid_2']['type'] = 'select';
+  $handler->display->display_options['filters']['tid_2']['vocabulary'] = 'featured_spotlight';
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
