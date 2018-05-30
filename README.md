@@ -1,5 +1,5 @@
 # [Stanford SoE Helper](https://github.com/SU-SWS/stanford_soe_helper)
-##### Version: 7.x-2.1-dev
+##### Version: 7.x-2.1-alpha4
 
 Maintainers: [boznik](https://github.com/boznik), [cjwest](https://github.com/cjwest), [josephgknox](https://github.com/josephgknox)
 
