@@ -19,15 +19,16 @@ function stanford_people_spotlight_views_preprocess_views_view(&$vars) {
   if ($view->name == 'stanford_ppl_spot_3_v_card') {
     //Add CSS/JS based on current view display
     if ($view->current_display == 'page_1') {
+      drupal_page_is_cacheable(FALSE);
 
       $file_path = drupal_get_path('module', 'stanford_people_spotlight_views');
 
       drupal_add_css($file_path . '/css/stanford_people_spotlight_views.css');
       drupal_add_js($file_path . '/js/stanford_people_spotlight_views.js');
     }
+    //dpm($view);
   }
 }
-
 
 /**
  * Implements hook_form_alter().

@@ -2297,15 +2297,7 @@ function stanford_people_spotlight_views_views_default_views() {
   $handler->display->display_options['pager']['options']['effects']['speed'] = 'fast';
   $handler->display->display_options['defaults']['header'] = FALSE;
   $handler->display->display_options['defaults']['footer'] = FALSE;
-  $handler->display->display_options['defaults']['empty'] = FALSE;
-  /* No results behavior: Global: Text area */
-  $handler->display->display_options['empty']['area']['id'] = 'area';
-  $handler->display->display_options['empty']['area']['table'] = 'views';
-  $handler->display->display_options['empty']['area']['field'] = 'area';
-  $handler->display->display_options['empty']['area']['label'] = 'No spotlight filter results';
-  $handler->display->display_options['empty']['area']['empty'] = TRUE;
-  $handler->display->display_options['empty']['area']['content'] = 'No spotlights available with those filter criteria. Please try a different selection option.';
-  $handler->display->display_options['empty']['area']['format'] = 'content_editor_text_format';
+  $handler->display->display_options['defaults']['empty'] = FALSE
   $handler->display->display_options['path'] = 'spotlight';
 
   /* Display: Block Any */

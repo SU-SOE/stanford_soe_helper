@@ -31,14 +31,6 @@
         //Let's kick this thing off...
         spotlight();
 
-        // Updates the spotlight transition when AJAX completes.
-        $(document).ajaxComplete(function(event, xhr, settings) {
-            // Is from our view?
-            if (settings.data.indexOf( "view_name=stanford_ppl_spot_3_v_card") !== -1) {
-                spotlight();
-            }
-        });
-
         $(document).ajaxStart(function() {
             spotlightTransition();
         });
