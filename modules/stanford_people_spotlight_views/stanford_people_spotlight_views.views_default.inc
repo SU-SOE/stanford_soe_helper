@@ -2297,7 +2297,7 @@ function stanford_people_spotlight_views_views_default_views() {
   $handler->display->display_options['pager']['options']['effects']['speed'] = 'fast';
   $handler->display->display_options['defaults']['header'] = FALSE;
   $handler->display->display_options['defaults']['footer'] = FALSE;
-  $handler->display->display_options['defaults']['empty'] = FALSE
+  $handler->display->display_options['defaults']['empty'] = FALSE;
   $handler->display->display_options['path'] = 'spotlight';
 
   /* Display: Block Any */
