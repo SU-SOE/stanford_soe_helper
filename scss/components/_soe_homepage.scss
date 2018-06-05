@@ -11,10 +11,11 @@
 
   [id*="block-bean-homepage-2-column-"] {
     .content {
-      width: 93%;
+      width: 85%;
       margin: 0 auto 50px;
       @include breakpoint-max(small) {
         margin-bottom: 20px;
+        width: 95%;
       }
 
       a:not(.btn) {
