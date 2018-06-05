@@ -2,6 +2,7 @@
   Drupal.behaviors.peopleSpotlightViews = {
     attach: function (context, settings) {
 
+        //Due to the exposed filters, this creates a transition after selection.
         function spotlightTransition() {
             if (document.getElementsByClassName("view-stanford-ppl-spot-3-v-card").length > 0) {
                 var element = document.getElementById("main");
@@ -12,7 +13,7 @@
             }
         }
 
-
+        //This function controls the transition.
         function spotlight() {
             if (document.getElementsByClassName("view-stanford-ppl-spot-3-v-card").length > 0) {
                 var element = document.getElementById("main");
@@ -28,9 +29,10 @@
             }
         }
 
-        //Let's kick this thing off...
+        //Starts with a transition.
         spotlight();
 
+        //Triggering a transition after a selection is made.
         $(document).ajaxStart(function() {
             spotlightTransition();
         });
