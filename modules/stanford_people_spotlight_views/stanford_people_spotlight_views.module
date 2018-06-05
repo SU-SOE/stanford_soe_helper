@@ -5,3 +5,44 @@
  */
 
 include_once 'stanford_people_spotlight_views.features.inc';
+/**
+ * Implements template_preprocess_views_view()
+ *
+ * @link https://api.drupal.org/api/views/theme%21theme.inc/function/template_preprocess_views_view/7.x-3.x
+ */
+function stanford_people_spotlight_views_preprocess_views_view(&$vars) {
+  // Get the current view info
+  $view = $vars['view'];
+
+  // Add CSS/JS based on view name
+  if ($view->name == 'stanford_ppl_spot_3_v_card') {
+    //Add CSS/JS based on current view display
+    if ($view->current_display == 'page_1') {
+      //Disabling page cache due to an issue regarding the combination of
+      //views_load_more and the cache along with the exposed filters.
+      drupal_page_is_cacheable(FALSE);
+
+      $file_path = drupal_get_path('module', 'stanford_people_spotlight_views');
+
+      drupal_add_css($file_path . '/css/stanford_people_spotlight_views.css');
+      drupal_add_js($file_path . '/js/stanford_people_spotlight_views.js');
+    }
+  }
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function stanford_people_spotlight_views_form_alter(
+  &$form,
+  &$form_state,
+  $form_id) {
+
+  // Handle exposed filter dropdowns for spotlight page.
+  switch ($form['#id']) {
+    case "views-exposed-form-stanford-ppl-spot-3-v-card-page-1":
+      $form['field_s_ppl_spot_affiliation_tid']['#options']["All"] = t('All people');
+      $form['field_s_ppl_spot_department_tid']['#options']["All"] = t('All departments');
+      break;
+  }
+}
