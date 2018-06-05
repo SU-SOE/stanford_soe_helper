@@ -2248,6 +2248,7 @@ function stanford_people_spotlight_views_views_default_views() {
     16 => 0,
     18 => 0,
   );
+  $handler->display->display_options['filters']['field_s_ppl_spot_affiliation_tid']['expose']['reduce'] = TRUE;
   $handler->display->display_options['filters']['field_s_ppl_spot_affiliation_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_s_ppl_spot_affiliation_tid']['vocabulary'] = 'stanford_affiliation';
   /* Filter criterion: Content: Department (field_s_ppl_spot_department) */
@@ -2335,6 +2336,7 @@ function stanford_people_spotlight_views_views_default_views() {
   $handler->display->display_options['filters']['field_s_ppl_spot_affiliation_tid']['expose']['label'] = 'Affiliation (field_s_ppl_spot_affiliation)';
   $handler->display->display_options['filters']['field_s_ppl_spot_affiliation_tid']['expose']['operator'] = 'field_s_ppl_spot_affiliation_tid_op';
   $handler->display->display_options['filters']['field_s_ppl_spot_affiliation_tid']['expose']['identifier'] = 'field_s_ppl_spot_affiliation_tid';
+  $handler->display->display_options['filters']['field_s_ppl_spot_affiliation_tid']['expose']['reduce'] = TRUE;
   $handler->display->display_options['filters']['field_s_ppl_spot_affiliation_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_s_ppl_spot_affiliation_tid']['vocabulary'] = 'stanford_affiliation';
 
