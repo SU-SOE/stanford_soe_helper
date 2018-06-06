@@ -101,7 +101,7 @@
         line-height: 1.2em;
 
         &:after {
-          content: "\00a0 \00a0 |\00a0 \00a0 ";
+          content: "\00a0 \00a0 ";
         }
       }
 
@@ -110,7 +110,8 @@
         font-size: .95em;
         font-weight: bold;
         line-height: 1.2em;
-
+        margin-top: 1px;
+        
         a.orange {
           color: $black;
           text-decoration: underline;
