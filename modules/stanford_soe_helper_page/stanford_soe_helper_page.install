@@ -29,9 +29,22 @@ function stanford_soe_helper_page_uninstall() {
 function stanford_soe_helper_page_update_7101() {
   _stanford_soe_helper_page_add_color_field();
 }
+/**
+ * Implements hook_update_N().
+ *
+ * Add the accent color field for the top banner to Stanford Page
+ */
+function stanford_soe_helper_page_update_7102() {
+  stanford_soe_helper_sitewide_add_tax_field(
+    'field_s_top_banner_color',
+    'soe_accent_color',
+    'stanford_page',
+    'node',
+    'Top Banner Accent Color');
+}
 
 /**
- * Add the accent color field to Stanford Page
+ * Add the accent color field for the bottom banner to Stanford Page
  *
  * If the soe_accent_color vocabulary exists, then add the
  * field to the Stanford Page. We're doing it this way because

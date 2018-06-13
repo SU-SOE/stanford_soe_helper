@@ -55,11 +55,15 @@ function stanford_soe_helper_page_ds_layout_settings_info() {
       'stanford_page_title' => array(
         2 => 'title',
       ),
+      'featured_image' => array(
+        3 => 'field_s_image_info',
+      ),
     ),
     'fields' => array(
       'body' => 'ds_content',
       'field_s_page_file' => 'ds_content',
       'title' => 'stanford_page_title',
+      'field_s_image_info' => 'featured_image',
     ),
     'classes' => array(),
     'wrappers' => array(

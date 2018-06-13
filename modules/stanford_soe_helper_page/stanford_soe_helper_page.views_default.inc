@@ -236,11 +236,10 @@ function stanford_soe_helper_page_views_default_views() {
   $handler->display->display_options['fields']['field_s_image_image']['relationship'] = 'field_s_image_info_value';
   $handler->display->display_options['fields']['field_s_image_image']['label'] = '';
   $handler->display->display_options['fields']['field_s_image_image']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_s_image_image']['alter']['text'] = '
-<div class="page-feat-image-container">
+  $handler->display->display_options['fields']['field_s_image_image']['alter']['text'] = '<div class="page-feat-image-container">
   <div>[field_s_image_image]</div>
   <div class ="page-feat-scroll-container">
-    <p>Scroll to <strong>Explore [title]</strong></p>
+    <p class="ga-scroll-tracking">Scroll to <strong>Explore [title]</strong></p>
   </div>
 </div>
 <div class ="page-feat-caption-container">
