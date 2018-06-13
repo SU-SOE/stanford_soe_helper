@@ -203,16 +203,6 @@ function stanford_soe_helper_page_views_default_views() {
   $handler->display->display_options['relationships']['field_s_image_info_value']['field'] = 'field_s_image_info_value';
   $handler->display->display_options['relationships']['field_s_image_info_value']['label'] = 'Featured Image';
   $handler->display->display_options['relationships']['field_s_image_info_value']['delta'] = '-1';
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
   /* Field: Field collection item: Caption */
   $handler->display->display_options['fields']['field_s_image_caption']['id'] = 'field_s_image_caption';
   $handler->display->display_options['fields']['field_s_image_caption']['table'] = 'field_data_field_s_image_caption';
@@ -221,7 +211,7 @@ function stanford_soe_helper_page_views_default_views() {
   $handler->display->display_options['fields']['field_s_image_caption']['label'] = '';
   $handler->display->display_options['fields']['field_s_image_caption']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_s_image_caption']['alter']['trim_whitespace'] = TRUE;
-  $handler->display->display_options['fields']['field_s_image_caption']['alter']['max_length'] = '150';
+  $handler->display->display_options['fields']['field_s_image_caption']['alter']['max_length'] = '200';
   $handler->display->display_options['fields']['field_s_image_caption']['alter']['strip_tags'] = TRUE;
   $handler->display->display_options['fields']['field_s_image_caption']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['field_s_image_caption']['alter']['preserve_tags'] = '<em> <strong> <a>';
@@ -269,10 +259,9 @@ function stanford_soe_helper_page_views_default_views() {
   <div class="banner-image">[field_s_image_image]</div>
 
   <div class="banner-overlay [field_s_top_banner_caption_horiz] [field_s_top_banner_caption_vert]">
-  <div class="page-caption-credits-container">
-    <div class="page-title ga-scroll-tracking"><h2>[title]</h2></div>
+    <div>
     <div class="page-feat-caption-container">[field_s_image_caption]</div>
-  </div>
+    </div>
   </div>
 </div>';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
