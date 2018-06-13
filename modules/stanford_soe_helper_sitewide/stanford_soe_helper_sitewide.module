@@ -166,7 +166,7 @@ function stanford_soe_helper_sitewide_add_tax_field($field_name,
       'entity_type' => $entity_type,
       'field_name' => $field_name,
       'label' => $label,
-      'required' => 1,
+      'required' => 0,
       'settings' => array(
         'user_register_form' => FALSE,
       ),

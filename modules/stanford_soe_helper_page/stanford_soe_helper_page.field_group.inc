@@ -59,16 +59,18 @@ function stanford_soe_helper_page_field_group_info() {
       0 => 'field_s_image_info',
       1 => 'field_s_top_banner_caption_horiz',
       2 => 'field_s_top_banner_caption_vert',
+      3 => 'field_s_top_banner_color',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
-      'formatter' => 'collapsible',
+      'label' => 'Add/Edit Top Banner',
       'instance_settings' => array(
-        'description' => '',
-        'classes' => 'group-s-page-top-banner field-group-fieldset',
-        'required_fields' => 1,
+        'required_fields' => 0,
         'id' => '',
+        'classes' => 'group-s-page-top-banner field-group-fieldset',
+        'description' => '',
       ),
+      'formatter' => 'collapsed',
     ),
   );
   $field_groups['group_s_page_top_banner|node|stanford_page|form'] = $field_group;

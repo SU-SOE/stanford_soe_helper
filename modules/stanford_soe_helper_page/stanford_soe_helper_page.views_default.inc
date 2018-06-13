@@ -249,6 +249,13 @@ function stanford_soe_helper_page_views_default_views() {
   $handler->display->display_options['fields']['field_s_top_banner_caption_vert']['label'] = '';
   $handler->display->display_options['fields']['field_s_top_banner_caption_vert']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_s_top_banner_caption_vert']['element_label_colon'] = FALSE;
+  /* Field: Content: Top Banner Accent Color */
+  $handler->display->display_options['fields']['field_s_top_banner_color']['id'] = 'field_s_top_banner_color';
+  $handler->display->display_options['fields']['field_s_top_banner_color']['table'] = 'field_data_field_s_top_banner_color';
+  $handler->display->display_options['fields']['field_s_top_banner_color']['field'] = 'field_s_top_banner_color';
+  $handler->display->display_options['fields']['field_s_top_banner_color']['label'] = '';
+  $handler->display->display_options['fields']['field_s_top_banner_color']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_s_top_banner_color']['type'] = 'taxonomy_term_reference_plain';
   /* Field: Global: Custom text view rewrite */
   $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['table'] = 'views';
@@ -258,7 +265,7 @@ function stanford_soe_helper_page_views_default_views() {
   $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="page-feat-image-container">
   <div class="banner-image">[field_s_image_image]</div>
 
-  <div class="banner-overlay [field_s_top_banner_caption_horiz] [field_s_top_banner_caption_vert]">
+  <div class="banner-overlay [field_s_top_banner_color]  [field_s_top_banner_caption_horiz] [field_s_top_banner_caption_vert]">
     <div>
     <div class="page-feat-caption-container">[field_s_image_caption]</div>
     </div>
