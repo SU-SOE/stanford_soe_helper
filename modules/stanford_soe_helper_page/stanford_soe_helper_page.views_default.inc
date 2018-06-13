@@ -220,10 +220,12 @@ function stanford_soe_helper_page_views_default_views() {
   $handler->display->display_options['fields']['field_s_image_caption']['relationship'] = 'field_s_image_info_value';
   $handler->display->display_options['fields']['field_s_image_caption']['label'] = '';
   $handler->display->display_options['fields']['field_s_image_caption']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_s_image_caption']['alter']['max_length'] = '900';
+  $handler->display->display_options['fields']['field_s_image_caption']['alter']['trim_whitespace'] = TRUE;
+  $handler->display->display_options['fields']['field_s_image_caption']['alter']['max_length'] = '150';
   $handler->display->display_options['fields']['field_s_image_caption']['alter']['strip_tags'] = TRUE;
   $handler->display->display_options['fields']['field_s_image_caption']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['field_s_image_caption']['alter']['preserve_tags'] = '<em> <strong> <a>';
+  $handler->display->display_options['fields']['field_s_image_caption']['alter']['html'] = TRUE;
   $handler->display->display_options['fields']['field_s_image_caption']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_s_image_caption']['type'] = 'text_trimmed';
   $handler->display->display_options['fields']['field_s_image_caption']['settings'] = array(
@@ -235,23 +237,45 @@ function stanford_soe_helper_page_views_default_views() {
   $handler->display->display_options['fields']['field_s_image_image']['field'] = 'field_s_image_image';
   $handler->display->display_options['fields']['field_s_image_image']['relationship'] = 'field_s_image_info_value';
   $handler->display->display_options['fields']['field_s_image_image']['label'] = '';
-  $handler->display->display_options['fields']['field_s_image_image']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_s_image_image']['alter']['text'] = '<div class="page-feat-image-container">
-  <div>[field_s_image_image]</div>
-  <div class ="page-feat-scroll-container">
-    <p class="ga-scroll-tracking">Scroll to <strong>Explore [title]</strong></p>
-  </div>
-</div>
-<div class ="page-feat-caption-container">
-  [field_s_image_caption]
-</div>';
+  $handler->display->display_options['fields']['field_s_image_image']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_s_image_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_s_image_image']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_s_image_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_s_image_image']['settings'] = array(
-    'image_style' => 'full_width_banner_tall',
+    'image_style' => 'full-width-banner-short',
     'image_link' => '',
   );
+  /* Field: Content: Top Caption Position Horizontal */
+  $handler->display->display_options['fields']['field_s_top_banner_caption_horiz']['id'] = 'field_s_top_banner_caption_horiz';
+  $handler->display->display_options['fields']['field_s_top_banner_caption_horiz']['table'] = 'field_data_field_s_top_banner_caption_horiz';
+  $handler->display->display_options['fields']['field_s_top_banner_caption_horiz']['field'] = 'field_s_top_banner_caption_horiz';
+  $handler->display->display_options['fields']['field_s_top_banner_caption_horiz']['label'] = '';
+  $handler->display->display_options['fields']['field_s_top_banner_caption_horiz']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_s_top_banner_caption_horiz']['element_label_colon'] = FALSE;
+  /* Field: Content: Top Caption Position Vertical */
+  $handler->display->display_options['fields']['field_s_top_banner_caption_vert']['id'] = 'field_s_top_banner_caption_vert';
+  $handler->display->display_options['fields']['field_s_top_banner_caption_vert']['table'] = 'field_data_field_s_top_banner_caption_vert';
+  $handler->display->display_options['fields']['field_s_top_banner_caption_vert']['field'] = 'field_s_top_banner_caption_vert';
+  $handler->display->display_options['fields']['field_s_top_banner_caption_vert']['label'] = '';
+  $handler->display->display_options['fields']['field_s_top_banner_caption_vert']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_s_top_banner_caption_vert']['element_label_colon'] = FALSE;
+  /* Field: Global: Custom text view rewrite */
+  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['ui_name'] = 'Global: Custom text view rewrite';
+  $handler->display->display_options['fields']['nothing']['label'] = '';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="page-feat-image-container">
+  <div class="banner-image">[field_s_image_image]</div>
+
+  <div class="banner-overlay [field_s_top_banner_caption_horiz] [field_s_top_banner_caption_vert]">
+  <div class="page-caption-credits-container">
+    <div class="page-title ga-scroll-tracking"><h2>[title]</h2></div>
+    <div class="page-feat-caption-container">[field_s_image_caption]</div>
+  </div>
+  </div>
+</div>';
+  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   /* Contextual filter: Content: Nid */
   $handler->display->display_options['arguments']['nid']['id'] = 'nid';
   $handler->display->display_options['arguments']['nid']['table'] = 'node';
