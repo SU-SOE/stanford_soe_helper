@@ -214,19 +214,19 @@
 
   .view-stanford-magazine-article-collection {
     .views-field-field-s-collection-cont-label {
-      @include breakpoint-max(small) {
+      @include breakpoint-max(smaller) {
         font-size: 14px;
       }
     }
 
     .views-field-title {
-      @include breakpoint-max(small) {
+      @include breakpoint-max(smaller) {
         font-size: 18px;
       }
     }
 
     .views-field-field-s-collection-subtitle {
-      @include breakpoint-max(small) {
+      @include breakpoint-max(smaller) {
         font-size: 16px;
       }
     }
@@ -238,7 +238,7 @@
       .view-header {
         margin-bottom: 80px;
 
-        @include breakpoint-max(small) {
+        @include breakpoint-max(smaller) {
           margin-bottom: 40px;
         }
 
@@ -253,7 +253,7 @@
           padding-top: 40px;
           text-align: center;
 
-          @include breakpoint-max(small) {
+          @include breakpoint-max(smaller) {
             font-size: 14px;
           }
         }
@@ -268,7 +268,7 @@
           margin-bottom: 4px;
           text-align: center;
 
-          @include breakpoint-max(small) {
+          @include breakpoint-max(smaller) {
             font-size: 18px;
             line-height: 1em;
           }
@@ -284,7 +284,7 @@
           padding: 0 20px;
           text-align: center;
 
-          @include breakpoint-max(small) {
+          @include breakpoint-max(smaller) {
             font-size: 16px;
           }
         }
