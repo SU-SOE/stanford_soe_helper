@@ -52,22 +52,28 @@ h2 {
   font-weight: 600;
   letter-spacing: 0.02em;
   margin: 1.8em 0 0.5em; }
+  /* line 54, ../scss/components/_soe_global.scss */
+  h2 a {
+    font-weight: 600; }
 
-/* line 55, ../scss/components/_soe_global.scss */
+/* line 59, ../scss/components/_soe_global.scss */
 h3 {
   font-family: "Roboto Slab", serif;
   font-size: 1.2em;
   font-weight: 600;
   margin: 1.6em 0 0.3em; }
+  /* line 65, ../scss/components/_soe_global.scss */
+  h3 a {
+    font-weight: 600; }
 
-/* line 62, ../scss/components/_soe_global.scss */
+/* line 70, ../scss/components/_soe_global.scss */
 h4 {
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.1em;
   font-weight: 600;
   margin: 1em 0 0.5em; }
 
-/* line 75, ../scss/components/_soe_global.scss */
+/* line 83, ../scss/components/_soe_global.scss */
 h1 a,
 h2 a,
 h3 a,
@@ -75,7 +81,7 @@ h4 a,
 h5 a,
 h6 a {
   text-decoration: underline; }
-  /* line 78, ../scss/components/_soe_global.scss */
+  /* line 86, ../scss/components/_soe_global.scss */
   h1 a:focus, h1 a:hover,
   h2 a:focus,
   h2 a:hover,
@@ -89,12 +95,16 @@ h6 a {
   h6 a:hover {
     text-decoration: underline; }
 
-/* line 85, ../scss/components/_soe_global.scss */
+/* line 94, ../scss/components/_soe_global.scss */
+p.columns a {
+  font-weight: bold; }
+
+/* line 99, ../scss/components/_soe_global.scss */
 iframe {
   margin: 20px 0;
   min-width: 100%; }
 
-/* line 90, ../scss/components/_soe_global.scss */
+/* line 104, ../scss/components/_soe_global.scss */
 .btn a,
 a.btn {
   border-radius: 0;
@@ -106,12 +116,12 @@ a.btn {
   line-height: 1.4em;
   letter-spacing: 0.03em;
   background: #B1040E; }
-  /* line 100, ../scss/components/_soe_global.scss */
+  /* line 114, ../scss/components/_soe_global.scss */
   .btn a:focus, .btn a:hover,
   a.btn:focus,
   a.btn:hover {
     color: #FFFFFF; }
-  /* line 105, ../scss/components/_soe_global.scss */
+  /* line 119, ../scss/components/_soe_global.scss */
   #content-body .content .btn a, #content-body .content
   a.btn {
     display: block;
@@ -120,74 +130,74 @@ a.btn {
     margin-bottom: 30px;
     text-decoration: none; }
     @media (max-width: 480px) {
-      /* line 105, ../scss/components/_soe_global.scss */
+      /* line 119, ../scss/components/_soe_global.scss */
       #content-body .content .btn a, #content-body .content
       a.btn {
         width: 65%; } }
 
-/* line 117, ../scss/components/_soe_global.scss */
+/* line 131, ../scss/components/_soe_global.scss */
 .normal-link a,
 a {
   color: #B1040E; }
 
-/* line 122, ../scss/components/_soe_global.scss */
+/* line 136, ../scss/components/_soe_global.scss */
 div.more-link {
   font-size: 1em; }
 
-/* line 126, ../scss/components/_soe_global.scss */
+/* line 140, ../scss/components/_soe_global.scss */
 .more-link a,
 a.more-link {
   font-size: 0.9em;
   color: #B1040E; }
-  /* line 131, ../scss/components/_soe_global.scss */
+  /* line 145, ../scss/components/_soe_global.scss */
   .more-link a:after,
   a.more-link:after {
     content: " ›"; }
 
-/* line 136, ../scss/components/_soe_global.scss */
+/* line 150, ../scss/components/_soe_global.scss */
 .normal-link h2,
 .normal-link h3,
 h2.normal-link,
 h3.normal-link {
   font-size: 1.1em; }
 
-/* line 143, ../scss/components/_soe_global.scss */
+/* line 157, ../scss/components/_soe_global.scss */
 li {
   line-height: 1.4em;
   margin-bottom: 16px; }
 
-/* line 149, ../scss/components/_soe_global.scss */
+/* line 163, ../scss/components/_soe_global.scss */
 .content ul li {
   list-style-type: disc; }
-  /* line 152, ../scss/components/_soe_global.scss */
+  /* line 166, ../scss/components/_soe_global.scss */
   .content ul li:last-child {
     margin-bottom: 1.5em; }
-/* line 158, ../scss/components/_soe_global.scss */
+/* line 172, ../scss/components/_soe_global.scss */
 .content ol li:last-child {
   margin-bottom: 2em; }
-/* line 165, ../scss/components/_soe_global.scss */
+/* line 179, ../scss/components/_soe_global.scss */
 .content ul.pager li a {
   border: 1px solid #D7D7D7;
   background: #FFFFFF;
   margin-bottom: 12px;
   margin-right: 4px;
   font-size: 0.9em; }
-  /* line 172, ../scss/components/_soe_global.scss */
+  /* line 186, ../scss/components/_soe_global.scss */
   .content ul.pager li a:focus, .content ul.pager li a:hover {
     margin-right: 4px;
     font-weight: 300; }
-/* line 179, ../scss/components/_soe_global.scss */
+/* line 193, ../scss/components/_soe_global.scss */
 .content ul.pager li.pager-current {
   margin-right: 4px;
   font-weight: 300; }
-/* line 185, ../scss/components/_soe_global.scss */
+/* line 199, ../scss/components/_soe_global.scss */
 .content ul.pager.pager-load-more {
   margin-bottom: 100px; }
   @media (max-width: 767px) {
-    /* line 185, ../scss/components/_soe_global.scss */
+    /* line 199, ../scss/components/_soe_global.scss */
     .content ul.pager.pager-load-more {
       margin-bottom: 50px; } }
-  /* line 191, ../scss/components/_soe_global.scss */
+  /* line 205, ../scss/components/_soe_global.scss */
   .content ul.pager.pager-load-more a {
     color: #FFFFFF;
     font-size: 1em;
@@ -200,13 +210,13 @@ li {
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
     padding: 0.7em 4em;
     margin-bottom: 0; }
-    /* line 202, ../scss/components/_soe_global.scss */
+    /* line 216, ../scss/components/_soe_global.scss */
     .content ul.pager.pager-load-more a:focus, .content ul.pager.pager-load-more a:hover {
       color: #FFFFFF;
       background-color: #333333;
       font-weight: 400; }
 
-/* line 213, ../scss/components/_soe_global.scss */
+/* line 227, ../scss/components/_soe_global.scss */
 td,
 th {
   padding: 0.8em;
@@ -216,28 +226,28 @@ th {
   border-right: none;
   border-left: none; }
 
-/* line 223, ../scss/components/_soe_global.scss */
+/* line 237, ../scss/components/_soe_global.scss */
 th {
   background: #EFEFEF; }
 
-/* line 227, ../scss/components/_soe_global.scss */
+/* line 241, ../scss/components/_soe_global.scss */
 .well {
   background: #FFFFFF;
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2); }
-  /* line 231, ../scss/components/_soe_global.scss */
+  /* line 245, ../scss/components/_soe_global.scss */
   .well h2 {
     font-size: 1.6em;
     font-weight: 600;
     margin-bottom: 1.1em; }
-  /* line 237, ../scss/components/_soe_global.scss */
+  /* line 251, ../scss/components/_soe_global.scss */
   .well p {
     font-size: 1em;
     font-weight: 400;
     line-height: 1.5em; }
 
-/* line 244, ../scss/components/_soe_global.scss */
+/* line 258, ../scss/components/_soe_global.scss */
 .descriptor {
   font-size: 0.9em;
   line-height: 1.2em;
@@ -245,68 +255,68 @@ th {
   text-transform: none;
   margin-bottom: 4px; }
 
-/* line 252, ../scss/components/_soe_global.scss */
+/* line 266, ../scss/components/_soe_global.scss */
 .postcard-left {
   margin-top: 6px; }
 
-/* line 256, ../scss/components/_soe_global.scss */
+/* line 270, ../scss/components/_soe_global.scss */
 .views-row-lines .views-row {
   border-color: #D7D7D7; }
 
-/* line 260, ../scss/components/_soe_global.scss */
+/* line 274, ../scss/components/_soe_global.scss */
 #wrap {
   background: #F8F8F8; }
 
-/* line 264, ../scss/components/_soe_global.scss */
+/* line 278, ../scss/components/_soe_global.scss */
 .main {
   padding: 80px 0 50px;
   background: #F8F8F8; }
   @media (max-width: 767px) {
-    /* line 264, ../scss/components/_soe_global.scss */
+    /* line 278, ../scss/components/_soe_global.scss */
     .main {
       padding: 40px 0 0; } }
-  /* line 271, ../scss/components/_soe_global.scss */
+  /* line 285, ../scss/components/_soe_global.scss */
   .main p {
     margin: 0 0 1.5em; }
-    /* line 274, ../scss/components/_soe_global.scss */
+    /* line 288, ../scss/components/_soe_global.scss */
     .main p.columns {
       column-count: 1;
       column-gap: 0; }
-    /* line 278, ../scss/components/_soe_global.scss */
+    /* line 292, ../scss/components/_soe_global.scss */
     .main p a {
       text-decoration: underline; }
-      /* line 281, ../scss/components/_soe_global.scss */
+      /* line 295, ../scss/components/_soe_global.scss */
       .main p a.btn {
         text-decoration: none; }
-  /* line 287, ../scss/components/_soe_global.scss */
+  /* line 301, ../scss/components/_soe_global.scss */
   .main .block {
     margin-bottom: 50px; }
 
 @media (max-width: 767px) {
-  /* line 292, ../scss/components/_soe_global.scss */
+  /* line 306, ../scss/components/_soe_global.scss */
   .container {
     margin-bottom: 10px; }
-    /* line 296, ../scss/components/_soe_global.scss */
+    /* line 310, ../scss/components/_soe_global.scss */
     #fullwidth-bottom .container {
       margin-bottom: 0; } }
 
 @media (min-width: 1200px) {
-  /* line 302, ../scss/components/_soe_global.scss */
+  /* line 316, ../scss/components/_soe_global.scss */
   #content.span9 {
     width: 740px;
     margin-left: 80px; } }
 
 /*** BODY - MORE SPACE FROM LAST CHILD TO TOP OF BLOCKS AFTER WYSIWYG ***/
-/* line 310, ../scss/components/_soe_global.scss */
+/* line 324, ../scss/components/_soe_global.scss */
 .content-body p:last-child {
   margin-bottom: 2.5em; }
 
-/* line 314, ../scss/components/_soe_global.scss */
+/* line 328, ../scss/components/_soe_global.scss */
 .region-sidebar-second {
   margin-top: 34px; }
 
 /*** Full width region ***/
-/* line 320, ../scss/components/_soe_global.scss */
+/* line 334, ../scss/components/_soe_global.scss */
 .region-fullwidth-top #block-ds-extras-featured-image img {
   width: 100%; }
 
@@ -512,99 +522,128 @@ p.summary.drop-cap:first-letter {
     font-size: 1em; } }
 
 /* line 7, ../scss/components/_soe_brand_bar.scss */
+a {
+  font-weight: 400; }
+
+/* line 13, ../scss/components/_soe_brand_bar.scss */
+.node-type-stanford-magazine-article #header.header {
+  background: #FFFFFF;
+  padding: 30px 0 0; }
+  @media (max-width: 400px) {
+    /* line 13, ../scss/components/_soe_brand_bar.scss */
+    .node-type-stanford-magazine-article #header.header {
+      min-height: 45px;
+      padding: 20px 0 0; } }
+  @media (max-width: 480px) {
+    /* line 21, ../scss/components/_soe_brand_bar.scss */
+    .node-type-stanford-magazine-article #header.header #site-title-first-line.site-title-uppercase a {
+      font-size: 28px !important;
+      margin-bottom: -5px; } }
+  @media (max-width: 400px) {
+    /* line 21, ../scss/components/_soe_brand_bar.scss */
+    .node-type-stanford-magazine-article #header.header #site-title-first-line.site-title-uppercase a {
+      font-size: 18px;
+      margin-bottom: -3px; } }
+  @media (max-width: 380px) {
+    /* line 21, ../scss/components/_soe_brand_bar.scss */
+    .node-type-stanford-magazine-article #header.header #site-title-first-line.site-title-uppercase a {
+      font-size: 16px;
+      margin-bottom: -4px; } }
+
+/* line 39, ../scss/components/_soe_brand_bar.scss */
 #global-header {
   background-color: #B1040E; }
-  /* line 10, ../scss/components/_soe_brand_bar.scss */
+  /* line 42, ../scss/components/_soe_brand_bar.scss */
   .dm-global-header #global-header {
     position: absolute;
     clip: rect(0 9999px 2px 0);
     clip-path: inset(0 0 55px 0);
     width: 100%; }
     @media (max-width: 767px) {
-      /* line 10, ../scss/components/_soe_brand_bar.scss */
+      /* line 42, ../scss/components/_soe_brand_bar.scss */
       .dm-global-header #global-header {
         clip-path: inset(0 0 60px 0); } }
-  /* line 20, ../scss/components/_soe_brand_bar.scss */
+  /* line 52, ../scss/components/_soe_brand_bar.scss */
   #global-header .container {
     padding: 13px 0;
     margin-bottom: 0; }
 
-/* line 28, ../scss/components/_soe_brand_bar.scss */
+/* line 60, ../scss/components/_soe_brand_bar.scss */
 #header #logo.logo-mobile img,
 #header #logo img {
   max-width: 160px; }
   @media (max-width: 480px) {
-    /* line 28, ../scss/components/_soe_brand_bar.scss */
+    /* line 60, ../scss/components/_soe_brand_bar.scss */
     #header #logo.logo-mobile img,
     #header #logo img {
       max-width: 130px; } }
   @media (max-width: 400px) {
-    /* line 28, ../scss/components/_soe_brand_bar.scss */
+    /* line 60, ../scss/components/_soe_brand_bar.scss */
     #header #logo.logo-mobile img,
     #header #logo img {
       max-width: 90px; } }
   @media (max-width: 380px) {
-    /* line 28, ../scss/components/_soe_brand_bar.scss */
+    /* line 60, ../scss/components/_soe_brand_bar.scss */
     #header #logo.logo-mobile img,
     #header #logo img {
       max-width: 80px; } }
-/* line 42, ../scss/components/_soe_brand_bar.scss */
+/* line 74, ../scss/components/_soe_brand_bar.scss */
 #header #logo.logo-mobile {
   padding: 0 5px 0 0; }
   @media (max-width: 480px) {
-    /* line 42, ../scss/components/_soe_brand_bar.scss */
+    /* line 74, ../scss/components/_soe_brand_bar.scss */
     #header #logo.logo-mobile {
       display: table-cell;
       padding: 0 10px 0 0;
       border-right: 1px solid !important; }
-      /* line 49, ../scss/components/_soe_brand_bar.scss */
+      /* line 81, ../scss/components/_soe_brand_bar.scss */
       #header #logo.logo-mobile a {
         background-size: 120px 26.66px; } }
   @media (max-width: 400px) {
-    /* line 42, ../scss/components/_soe_brand_bar.scss */
+    /* line 74, ../scss/components/_soe_brand_bar.scss */
     #header #logo.logo-mobile {
       padding: 0 5px 0 0; } }
-/* line 60, ../scss/components/_soe_brand_bar.scss */
+/* line 92, ../scss/components/_soe_brand_bar.scss */
 #header #name-and-slogan.with-logo {
   padding: 0 0 0 5px; }
   @media (max-width: 480px) {
-    /* line 60, ../scss/components/_soe_brand_bar.scss */
+    /* line 92, ../scss/components/_soe_brand_bar.scss */
     #header #name-and-slogan.with-logo {
       display: table-cell;
       padding: 0 0 0 10px; } }
   @media (max-width: 400px) {
-    /* line 60, ../scss/components/_soe_brand_bar.scss */
+    /* line 92, ../scss/components/_soe_brand_bar.scss */
     #header #name-and-slogan.with-logo {
       padding: 0 0 0 5px; } }
-/* line 71, ../scss/components/_soe_brand_bar.scss */
+/* line 103, ../scss/components/_soe_brand_bar.scss */
 #header.header {
   background: #FFFFFF;
   padding: 30px 0 0; }
   @media (max-width: 400px) {
-    /* line 71, ../scss/components/_soe_brand_bar.scss */
+    /* line 103, ../scss/components/_soe_brand_bar.scss */
     #header.header {
       min-height: 45px;
       padding: 20px 0 0; } }
-  /* line 79, ../scss/components/_soe_brand_bar.scss */
+  /* line 111, ../scss/components/_soe_brand_bar.scss */
   #header.header #site-title-first-line.site-title-uppercase {
     font-size: 34px; }
     @media (max-width: 480px) {
-      /* line 79, ../scss/components/_soe_brand_bar.scss */
+      /* line 111, ../scss/components/_soe_brand_bar.scss */
       #header.header #site-title-first-line.site-title-uppercase {
         font-size: 28px;
         margin-bottom: -5px; } }
     @media (max-width: 400px) {
-      /* line 79, ../scss/components/_soe_brand_bar.scss */
+      /* line 111, ../scss/components/_soe_brand_bar.scss */
       #header.header #site-title-first-line.site-title-uppercase {
         font-size: 18px;
         margin-bottom: -3px; } }
     @media (max-width: 380px) {
-      /* line 79, ../scss/components/_soe_brand_bar.scss */
+      /* line 111, ../scss/components/_soe_brand_bar.scss */
       #header.header #site-title-first-line.site-title-uppercase {
         font-size: 16px;
         margin-bottom: -4px; } }
 
-/* line 98, ../scss/components/_soe_brand_bar.scss */
+/* line 130, ../scss/components/_soe_brand_bar.scss */
 .dm-global-header #site-title-first-line.site-title-uppercase,
 .dm-global-header #site-title-first-line.site-title-uppercase a {
   font-size: 18px; }
@@ -2801,46 +2840,50 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
           #digital-magazine-menu .region-digital-magazine-menu .block-menu-block ul li a {
             color: #333333;
             padding-bottom: 20px;
-            border-bottom: 2px solid transparent; }
-            /* line 154, ../scss/components/_soe_dm_navigation.scss */
+            border-bottom: 2px solid transparent;
+            font-weight: 600; }
+            /* line 155, ../scss/components/_soe_dm_navigation.scss */
             #digital-magazine-menu .region-digital-magazine-menu .block-menu-block ul li a:focus, #digital-magazine-menu .region-digital-magazine-menu .block-menu-block ul li a:hover {
               color: #606060;
               background-color: transparent;
               border-bottom-color: #606060; }
-            /* line 161, ../scss/components/_soe_dm_navigation.scss */
+            /* line 162, ../scss/components/_soe_dm_navigation.scss */
             #digital-magazine-menu .region-digital-magazine-menu .block-menu-block ul li a.active {
               color: #606060;
               border-bottom-color: #606060; }
+    /* line 172, ../scss/components/_soe_dm_navigation.scss */
+    #digital-magazine-menu .region-digital-magazine-menu .block-stanford-search-api .form-item-keywords {
+      margin-top: 1.1em; }
 
-/* line 175, ../scss/components/_soe_dm_navigation.scss */
+/* line 182, ../scss/components/_soe_dm_navigation.scss */
 #digital-magazine-megamenu .container {
   background-color: #575757; }
-  /* line 179, ../scss/components/_soe_dm_navigation.scss */
+  /* line 186, ../scss/components/_soe_dm_navigation.scss */
   #digital-magazine-megamenu .container .region-digital-magazine-megamenu .view-content {
     display: flex;
     flex-wrap: wrap;
     text-align: center; }
-    /* line 184, ../scss/components/_soe_dm_navigation.scss */
+    /* line 191, ../scss/components/_soe_dm_navigation.scss */
     #digital-magazine-megamenu .container .region-digital-magazine-megamenu .view-content .views-row {
       width: calc(100% * (1/4) - 2%);
       margin-right: 2%; }
       @media (max-width: 767px) {
-        /* line 184, ../scss/components/_soe_dm_navigation.scss */
+        /* line 191, ../scss/components/_soe_dm_navigation.scss */
         #digital-magazine-megamenu .container .region-digital-magazine-megamenu .view-content .views-row {
           width: calc(100% * (1/2) - 2%); } }
       @media (max-width: 480px) {
-        /* line 184, ../scss/components/_soe_dm_navigation.scss */
+        /* line 191, ../scss/components/_soe_dm_navigation.scss */
         #digital-magazine-megamenu .container .region-digital-magazine-megamenu .view-content .views-row {
           width: 100%; } }
-      /* line 194, ../scss/components/_soe_dm_navigation.scss */
+      /* line 201, ../scss/components/_soe_dm_navigation.scss */
       #digital-magazine-megamenu .container .region-digital-magazine-megamenu .view-content .views-row a {
         color: #FFFFFF;
         font-size: 1em; }
 
-/* line 205, ../scss/components/_soe_dm_navigation.scss */
+/* line 212, ../scss/components/_soe_dm_navigation.scss */
 #main-menu .navbar {
   margin-bottom: 0; }
-  /* line 210, ../scss/components/_soe_dm_navigation.scss */
+  /* line 217, ../scss/components/_soe_dm_navigation.scss */
   .node-type-stanford-collection #main-menu .navbar .nav > li > a, .page-taxonomy-term #main-menu .navbar .nav > li > a, .node-type-stanford-magazine-issue #main-menu .navbar .nav > li > a, .page-magazine #main-menu .navbar .nav > li > a,
   #main-menu .navbar .nav > li > a .page-magazine-all, .node-type-stanford-magazine-article #main-menu .navbar .nav > li > a {
     padding-bottom: 15px; }
@@ -3361,9 +3404,10 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
     .view-stanford-magazine-topics.article-grouping .mag-topic-card-container .mag-article-title[class*="mag-article-color-"] a {
       color: #333333;
       text-decoration: underline;
+      font-weight: 600;
       -webkit-text-decoration-skip: ink;
       text-decoration-skip: ink; }
-      /* line 402, ../scss/components/_soe_dm_article.scss */
+      /* line 404, ../scss/components/_soe_dm_article.scss */
       .view-stanford-magazine-article-most-recent.article-grouping .mag-topic-card-container .mag-article-title[class*="mag-article-color-"] a:focus, .view-stanford-magazine-article-most-recent.article-grouping .mag-topic-card-container .mag-article-title[class*="mag-article-color-"] a:hover,
       .view-stanford-magazine-articles.article-grouping .mag-topic-card-container .mag-article-title[class*="mag-article-color-"] a:focus,
       .view-stanford-magazine-articles.article-grouping .mag-topic-card-container .mag-article-title[class*="mag-article-color-"] a:hover,
@@ -3371,70 +3415,70 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
       .view-stanford-magazine-topics.article-grouping .mag-topic-card-container .mag-article-title[class*="mag-article-color-"] a:hover {
         -webkit-text-decoration-color: #333333;
         text-decoration-color: #333333; }
-    /* line 408, ../scss/components/_soe_dm_article.scss */
+    /* line 410, ../scss/components/_soe_dm_article.scss */
     .view-stanford-magazine-article-most-recent.article-grouping .mag-topic-card-container .mag-article-title.mag-article-color-orange a,
     .view-stanford-magazine-articles.article-grouping .mag-topic-card-container .mag-article-title.mag-article-color-orange a,
     .view-stanford-magazine-topics.article-grouping .mag-topic-card-container .mag-article-title.mag-article-color-orange a {
       -webkit-text-decoration-color: #FFBD54;
       text-decoration-color: #FFBD54; }
-    /* line 412, ../scss/components/_soe_dm_article.scss */
+    /* line 414, ../scss/components/_soe_dm_article.scss */
     .view-stanford-magazine-article-most-recent.article-grouping .mag-topic-card-container .mag-article-title.mag-article-color-turquoise a,
     .view-stanford-magazine-articles.article-grouping .mag-topic-card-container .mag-article-title.mag-article-color-turquoise a,
     .view-stanford-magazine-topics.article-grouping .mag-topic-card-container .mag-article-title.mag-article-color-turquoise a {
       -webkit-text-decoration-color: #00ECE9;
       text-decoration-color: #00ECE9; }
-    /* line 416, ../scss/components/_soe_dm_article.scss */
+    /* line 418, ../scss/components/_soe_dm_article.scss */
     .view-stanford-magazine-article-most-recent.article-grouping .mag-topic-card-container .mag-article-title.mag-article-color-pink a,
     .view-stanford-magazine-articles.article-grouping .mag-topic-card-container .mag-article-title.mag-article-color-pink a,
     .view-stanford-magazine-topics.article-grouping .mag-topic-card-container .mag-article-title.mag-article-color-pink a {
       -webkit-text-decoration-color: #FF525C;
       text-decoration-color: #FF525C; }
-  /* line 421, ../scss/components/_soe_dm_article.scss */
+  /* line 423, ../scss/components/_soe_dm_article.scss */
   .view-stanford-magazine-article-most-recent.article-grouping .mag-topic-card-container .mag-article-topics,
   .view-stanford-magazine-articles.article-grouping .mag-topic-card-container .mag-article-topics,
   .view-stanford-magazine-topics.article-grouping .mag-topic-card-container .mag-article-topics {
     font-size: 0.8em;
     line-height: 1.2em;
     margin: 30px 0; }
-  /* line 427, ../scss/components/_soe_dm_article.scss */
+  /* line 429, ../scss/components/_soe_dm_article.scss */
   .view-stanford-magazine-article-most-recent.article-grouping .mag-topic-card-container .mag-article-issue,
   .view-stanford-magazine-articles.article-grouping .mag-topic-card-container .mag-article-issue,
   .view-stanford-magazine-topics.article-grouping .mag-topic-card-container .mag-article-issue {
     position: absolute;
     bottom: 15px;
     right: 15px; }
-    /* line 432, ../scss/components/_soe_dm_article.scss */
+    /* line 434, ../scss/components/_soe_dm_article.scss */
     .view-stanford-magazine-article-most-recent.article-grouping .mag-topic-card-container .mag-article-issue[class*="mag-issue-color-"],
     .view-stanford-magazine-articles.article-grouping .mag-topic-card-container .mag-article-issue[class*="mag-issue-color-"],
     .view-stanford-magazine-topics.article-grouping .mag-topic-card-container .mag-article-issue[class*="mag-issue-color-"] {
       padding: 0 9px;
       font-size: 0.8em; }
-    /* line 437, ../scss/components/_soe_dm_article.scss */
+    /* line 439, ../scss/components/_soe_dm_article.scss */
     .view-stanford-magazine-article-most-recent.article-grouping .mag-topic-card-container .mag-article-issue.mag-issue-color-orange,
     .view-stanford-magazine-articles.article-grouping .mag-topic-card-container .mag-article-issue.mag-issue-color-orange,
     .view-stanford-magazine-topics.article-grouping .mag-topic-card-container .mag-article-issue.mag-issue-color-orange {
       background: #FFBD54; }
-    /* line 441, ../scss/components/_soe_dm_article.scss */
+    /* line 443, ../scss/components/_soe_dm_article.scss */
     .view-stanford-magazine-article-most-recent.article-grouping .mag-topic-card-container .mag-article-issue.mag-issue-color-turquoise,
     .view-stanford-magazine-articles.article-grouping .mag-topic-card-container .mag-article-issue.mag-issue-color-turquoise,
     .view-stanford-magazine-topics.article-grouping .mag-topic-card-container .mag-article-issue.mag-issue-color-turquoise {
       background: #00ECE9; }
-    /* line 445, ../scss/components/_soe_dm_article.scss */
+    /* line 447, ../scss/components/_soe_dm_article.scss */
     .view-stanford-magazine-article-most-recent.article-grouping .mag-topic-card-container .mag-article-issue.mag-issue-color-pink,
     .view-stanford-magazine-articles.article-grouping .mag-topic-card-container .mag-article-issue.mag-issue-color-pink,
     .view-stanford-magazine-topics.article-grouping .mag-topic-card-container .mag-article-issue.mag-issue-color-pink {
       background: #FF525C; }
-    /* line 449, ../scss/components/_soe_dm_article.scss */
+    /* line 451, ../scss/components/_soe_dm_article.scss */
     .view-stanford-magazine-article-most-recent.article-grouping .mag-topic-card-container .mag-article-issue a,
     .view-stanford-magazine-articles.article-grouping .mag-topic-card-container .mag-article-issue a,
     .view-stanford-magazine-topics.article-grouping .mag-topic-card-container .mag-article-issue a {
       color: #333333; }
-/* line 455, ../scss/components/_soe_dm_article.scss */
+/* line 457, ../scss/components/_soe_dm_article.scss */
 .view-stanford-magazine-article-most-recent.article-grouping .mag-article-img,
 .view-stanford-magazine-articles.article-grouping .mag-article-img,
 .view-stanford-magazine-topics.article-grouping .mag-article-img {
   overflow: hidden; }
-  /* line 458, ../scss/components/_soe_dm_article.scss */
+  /* line 460, ../scss/components/_soe_dm_article.scss */
   .view-stanford-magazine-article-most-recent.article-grouping .mag-article-img:hover img,
   .view-stanford-magazine-articles.article-grouping .mag-article-img:hover img,
   .view-stanford-magazine-topics.article-grouping .mag-article-img:hover img {
@@ -3442,7 +3486,7 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
     -moz-transform: scale(1.03);
     -o-transform: scale(1.03);
     transform: scale(1.03); }
-  /* line 462, ../scss/components/_soe_dm_article.scss */
+  /* line 464, ../scss/components/_soe_dm_article.scss */
   .view-stanford-magazine-article-most-recent.article-grouping .mag-article-img img,
   .view-stanford-magazine-articles.article-grouping .mag-article-img img,
   .view-stanford-magazine-topics.article-grouping .mag-article-img img {
@@ -3451,16 +3495,21 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
     -o-transition: all 1s ease;
     transition: all 1s ease; }
 
-/* line 469, ../scss/components/_soe_dm_article.scss */
+/* line 471, ../scss/components/_soe_dm_article.scss */
 .view-stanford-magazine-topics.most-recent-article {
   margin-top: -30px; }
 
-/* line 479, ../scss/components/_soe_dm_article.scss */
+/* line 484, ../scss/components/_soe_dm_article.scss */
+.view-stanford-magazine-article-mag-landing-page .mag-article-container .mag-article-content-container .mag-article-title a,
+.view-stanford-magazine-collection-mag-landing-page .mag-article-container .mag-article-content-container .mag-article-title a,
+.view-display-id-article_collection_bottom_block .mag-article-container .mag-article-content-container .mag-article-title a {
+  font-weight: 600; }
+/* line 491, ../scss/components/_soe_dm_article.scss */
 .view-stanford-magazine-article-mag-landing-page.views-grid-three .views-row,
 .view-stanford-magazine-collection-mag-landing-page.views-grid-three .views-row,
 .view-display-id-article_collection_bottom_block.views-grid-three .views-row {
   margin-bottom: 0; }
-/* line 483, ../scss/components/_soe_dm_article.scss */
+/* line 495, ../scss/components/_soe_dm_article.scss */
 .view-stanford-magazine-article-mag-landing-page h2,
 .view-stanford-magazine-collection-mag-landing-page h2,
 .view-display-id-article_collection_bottom_block h2 {
@@ -3472,18 +3521,18 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
   margin: 0 auto 60px;
   text-align: center; }
   @media (min-width: 1200px) {
-    /* line 483, ../scss/components/_soe_dm_article.scss */
+    /* line 495, ../scss/components/_soe_dm_article.scss */
     .view-stanford-magazine-article-mag-landing-page h2,
     .view-stanford-magazine-collection-mag-landing-page h2,
     .view-display-id-article_collection_bottom_block h2 {
       width: 40%; } }
   @media (max-width: 767px) {
-    /* line 483, ../scss/components/_soe_dm_article.scss */
+    /* line 495, ../scss/components/_soe_dm_article.scss */
     .view-stanford-magazine-article-mag-landing-page h2,
     .view-stanford-magazine-collection-mag-landing-page h2,
     .view-display-id-article_collection_bottom_block h2 {
       width: 100%; } }
-/* line 502, ../scss/components/_soe_dm_article.scss */
+/* line 514, ../scss/components/_soe_dm_article.scss */
 .view-stanford-magazine-article-mag-landing-page.view-display-id-block_10_12 .views-row:nth-child(1), .view-stanford-magazine-article-mag-landing-page.view-display-id-page_1_3 .views-row:nth-child(1),
 .view-stanford-magazine-collection-mag-landing-page.view-display-id-block_10_12 .views-row:nth-child(1),
 .view-stanford-magazine-collection-mag-landing-page.view-display-id-page_1_3 .views-row:nth-child(1),
@@ -3492,7 +3541,7 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
   width: 22.5%;
   margin-right: 4.5%; }
   @media (max-width: 979px) {
-    /* line 502, ../scss/components/_soe_dm_article.scss */
+    /* line 514, ../scss/components/_soe_dm_article.scss */
     .view-stanford-magazine-article-mag-landing-page.view-display-id-block_10_12 .views-row:nth-child(1), .view-stanford-magazine-article-mag-landing-page.view-display-id-page_1_3 .views-row:nth-child(1),
     .view-stanford-magazine-collection-mag-landing-page.view-display-id-block_10_12 .views-row:nth-child(1),
     .view-stanford-magazine-collection-mag-landing-page.view-display-id-page_1_3 .views-row:nth-child(1),
@@ -3500,7 +3549,7 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
     .view-display-id-article_collection_bottom_block.view-display-id-page_1_3 .views-row:nth-child(1) {
       width: 100%;
       margin-right: 0; } }
-/* line 511, ../scss/components/_soe_dm_article.scss */
+/* line 523, ../scss/components/_soe_dm_article.scss */
 .view-stanford-magazine-article-mag-landing-page.view-display-id-block_10_12 .views-row:nth-child(2), .view-stanford-magazine-article-mag-landing-page.view-display-id-page_1_3 .views-row:nth-child(2),
 .view-stanford-magazine-collection-mag-landing-page.view-display-id-block_10_12 .views-row:nth-child(2),
 .view-stanford-magazine-collection-mag-landing-page.view-display-id-page_1_3 .views-row:nth-child(2),
@@ -3509,7 +3558,7 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
   width: 45%;
   margin-right: 4.5%; }
   @media (max-width: 979px) {
-    /* line 511, ../scss/components/_soe_dm_article.scss */
+    /* line 523, ../scss/components/_soe_dm_article.scss */
     .view-stanford-magazine-article-mag-landing-page.view-display-id-block_10_12 .views-row:nth-child(2), .view-stanford-magazine-article-mag-landing-page.view-display-id-page_1_3 .views-row:nth-child(2),
     .view-stanford-magazine-collection-mag-landing-page.view-display-id-block_10_12 .views-row:nth-child(2),
     .view-stanford-magazine-collection-mag-landing-page.view-display-id-page_1_3 .views-row:nth-child(2),
@@ -3517,7 +3566,7 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
     .view-display-id-article_collection_bottom_block.view-display-id-page_1_3 .views-row:nth-child(2) {
       width: 100%;
       margin-right: 0; } }
-  /* line 520, ../scss/components/_soe_dm_article.scss */
+  /* line 532, ../scss/components/_soe_dm_article.scss */
   .view-stanford-magazine-article-mag-landing-page.view-display-id-block_10_12 .views-row:nth-child(2) .mag-article-container .mag-article-content-container, .view-stanford-magazine-article-mag-landing-page.view-display-id-page_1_3 .views-row:nth-child(2) .mag-article-container .mag-article-content-container,
   .view-stanford-magazine-collection-mag-landing-page.view-display-id-block_10_12 .views-row:nth-child(2) .mag-article-container .mag-article-content-container,
   .view-stanford-magazine-collection-mag-landing-page.view-display-id-page_1_3 .views-row:nth-child(2) .mag-article-container .mag-article-content-container,
@@ -3529,14 +3578,14 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
     -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2); }
     @media (max-width: 979px) {
-      /* line 520, ../scss/components/_soe_dm_article.scss */
+      /* line 532, ../scss/components/_soe_dm_article.scss */
       .view-stanford-magazine-article-mag-landing-page.view-display-id-block_10_12 .views-row:nth-child(2) .mag-article-container .mag-article-content-container, .view-stanford-magazine-article-mag-landing-page.view-display-id-page_1_3 .views-row:nth-child(2) .mag-article-container .mag-article-content-container,
       .view-stanford-magazine-collection-mag-landing-page.view-display-id-block_10_12 .views-row:nth-child(2) .mag-article-container .mag-article-content-container,
       .view-stanford-magazine-collection-mag-landing-page.view-display-id-page_1_3 .views-row:nth-child(2) .mag-article-container .mag-article-content-container,
       .view-display-id-article_collection_bottom_block.view-display-id-block_10_12 .views-row:nth-child(2) .mag-article-container .mag-article-content-container,
       .view-display-id-article_collection_bottom_block.view-display-id-page_1_3 .views-row:nth-child(2) .mag-article-container .mag-article-content-container {
         padding: 15px 30px 30px; } }
-    /* line 528, ../scss/components/_soe_dm_article.scss */
+    /* line 540, ../scss/components/_soe_dm_article.scss */
     .view-stanford-magazine-article-mag-landing-page.view-display-id-block_10_12 .views-row:nth-child(2) .mag-article-container .mag-article-content-container .mag-article-date, .view-stanford-magazine-article-mag-landing-page.view-display-id-page_1_3 .views-row:nth-child(2) .mag-article-container .mag-article-content-container .mag-article-date,
     .view-stanford-magazine-collection-mag-landing-page.view-display-id-block_10_12 .views-row:nth-child(2) .mag-article-container .mag-article-content-container .mag-article-date,
     .view-stanford-magazine-collection-mag-landing-page.view-display-id-page_1_3 .views-row:nth-child(2) .mag-article-container .mag-article-content-container .mag-article-date,
@@ -3547,14 +3596,14 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
       font-weight: 100;
       margin-bottom: 10px; }
       @media (max-width: 979px) {
-        /* line 528, ../scss/components/_soe_dm_article.scss */
+        /* line 540, ../scss/components/_soe_dm_article.scss */
         .view-stanford-magazine-article-mag-landing-page.view-display-id-block_10_12 .views-row:nth-child(2) .mag-article-container .mag-article-content-container .mag-article-date, .view-stanford-magazine-article-mag-landing-page.view-display-id-page_1_3 .views-row:nth-child(2) .mag-article-container .mag-article-content-container .mag-article-date,
         .view-stanford-magazine-collection-mag-landing-page.view-display-id-block_10_12 .views-row:nth-child(2) .mag-article-container .mag-article-content-container .mag-article-date,
         .view-stanford-magazine-collection-mag-landing-page.view-display-id-page_1_3 .views-row:nth-child(2) .mag-article-container .mag-article-content-container .mag-article-date,
         .view-display-id-article_collection_bottom_block.view-display-id-block_10_12 .views-row:nth-child(2) .mag-article-container .mag-article-content-container .mag-article-date,
         .view-display-id-article_collection_bottom_block.view-display-id-page_1_3 .views-row:nth-child(2) .mag-article-container .mag-article-content-container .mag-article-date {
           font-size: 0.9em; } }
-    /* line 538, ../scss/components/_soe_dm_article.scss */
+    /* line 550, ../scss/components/_soe_dm_article.scss */
     .view-stanford-magazine-article-mag-landing-page.view-display-id-block_10_12 .views-row:nth-child(2) .mag-article-container .mag-article-content-container .mag-article-title, .view-stanford-magazine-article-mag-landing-page.view-display-id-page_1_3 .views-row:nth-child(2) .mag-article-container .mag-article-content-container .mag-article-title,
     .view-stanford-magazine-collection-mag-landing-page.view-display-id-block_10_12 .views-row:nth-child(2) .mag-article-container .mag-article-content-container .mag-article-title,
     .view-stanford-magazine-collection-mag-landing-page.view-display-id-page_1_3 .views-row:nth-child(2) .mag-article-container .mag-article-content-container .mag-article-title,
@@ -3564,7 +3613,7 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
       line-height: 1.2em;
       font-weight: 600; }
       @media (max-width: 979px) {
-        /* line 538, ../scss/components/_soe_dm_article.scss */
+        /* line 550, ../scss/components/_soe_dm_article.scss */
         .view-stanford-magazine-article-mag-landing-page.view-display-id-block_10_12 .views-row:nth-child(2) .mag-article-container .mag-article-content-container .mag-article-title, .view-stanford-magazine-article-mag-landing-page.view-display-id-page_1_3 .views-row:nth-child(2) .mag-article-container .mag-article-content-container .mag-article-title,
         .view-stanford-magazine-collection-mag-landing-page.view-display-id-block_10_12 .views-row:nth-child(2) .mag-article-container .mag-article-content-container .mag-article-title,
         .view-stanford-magazine-collection-mag-landing-page.view-display-id-page_1_3 .views-row:nth-child(2) .mag-article-container .mag-article-content-container .mag-article-title,
@@ -3572,7 +3621,7 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
         .view-display-id-article_collection_bottom_block.view-display-id-page_1_3 .views-row:nth-child(2) .mag-article-container .mag-article-content-container .mag-article-title {
           font-size: 1.3em;
           line-height: 1.3em; } }
-    /* line 548, ../scss/components/_soe_dm_article.scss */
+    /* line 560, ../scss/components/_soe_dm_article.scss */
     .view-stanford-magazine-article-mag-landing-page.view-display-id-block_10_12 .views-row:nth-child(2) .mag-article-container .mag-article-content-container .mag-article-topics, .view-stanford-magazine-article-mag-landing-page.view-display-id-page_1_3 .views-row:nth-child(2) .mag-article-container .mag-article-content-container .mag-article-topics,
     .view-stanford-magazine-collection-mag-landing-page.view-display-id-block_10_12 .views-row:nth-child(2) .mag-article-container .mag-article-content-container .mag-article-topics,
     .view-stanford-magazine-collection-mag-landing-page.view-display-id-page_1_3 .views-row:nth-child(2) .mag-article-container .mag-article-content-container .mag-article-topics,
@@ -3582,7 +3631,7 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
       line-height: 1.3em;
       margin: 30px 0; }
       @media (max-width: 979px) {
-        /* line 548, ../scss/components/_soe_dm_article.scss */
+        /* line 560, ../scss/components/_soe_dm_article.scss */
         .view-stanford-magazine-article-mag-landing-page.view-display-id-block_10_12 .views-row:nth-child(2) .mag-article-container .mag-article-content-container .mag-article-topics, .view-stanford-magazine-article-mag-landing-page.view-display-id-page_1_3 .views-row:nth-child(2) .mag-article-container .mag-article-content-container .mag-article-topics,
         .view-stanford-magazine-collection-mag-landing-page.view-display-id-block_10_12 .views-row:nth-child(2) .mag-article-container .mag-article-content-container .mag-article-topics,
         .view-stanford-magazine-collection-mag-landing-page.view-display-id-page_1_3 .views-row:nth-child(2) .mag-article-container .mag-article-content-container .mag-article-topics,
@@ -3590,7 +3639,7 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
         .view-display-id-article_collection_bottom_block.view-display-id-page_1_3 .views-row:nth-child(2) .mag-article-container .mag-article-content-container .mag-article-topics {
           font-size: 0.8em;
           line-height: 1.2em; } }
-/* line 561, ../scss/components/_soe_dm_article.scss */
+/* line 573, ../scss/components/_soe_dm_article.scss */
 .view-stanford-magazine-article-mag-landing-page.view-display-id-block_10_12 .views-row:nth-child(3), .view-stanford-magazine-article-mag-landing-page.view-display-id-page_1_3 .views-row:nth-child(3),
 .view-stanford-magazine-collection-mag-landing-page.view-display-id-block_10_12 .views-row:nth-child(3),
 .view-stanford-magazine-collection-mag-landing-page.view-display-id-page_1_3 .views-row:nth-child(3),
@@ -3599,14 +3648,14 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
   width: 22.5%;
   margin-right: 0; }
   @media (max-width: 979px) {
-    /* line 561, ../scss/components/_soe_dm_article.scss */
+    /* line 573, ../scss/components/_soe_dm_article.scss */
     .view-stanford-magazine-article-mag-landing-page.view-display-id-block_10_12 .views-row:nth-child(3), .view-stanford-magazine-article-mag-landing-page.view-display-id-page_1_3 .views-row:nth-child(3),
     .view-stanford-magazine-collection-mag-landing-page.view-display-id-block_10_12 .views-row:nth-child(3),
     .view-stanford-magazine-collection-mag-landing-page.view-display-id-page_1_3 .views-row:nth-child(3),
     .view-display-id-article_collection_bottom_block.view-display-id-block_10_12 .views-row:nth-child(3),
     .view-display-id-article_collection_bottom_block.view-display-id-page_1_3 .views-row:nth-child(3) {
       width: 100%; } }
-/* line 574, ../scss/components/_soe_dm_article.scss */
+/* line 586, ../scss/components/_soe_dm_article.scss */
 .view-stanford-magazine-article-mag-landing-page.view-display-id-block_13_15 .views-row:nth-child(1), .view-stanford-magazine-article-mag-landing-page.view-display-id-block_4_6 .views-row:nth-child(1),
 .view-stanford-magazine-collection-mag-landing-page.view-display-id-block_13_15 .views-row:nth-child(1),
 .view-stanford-magazine-collection-mag-landing-page.view-display-id-block_4_6 .views-row:nth-child(1),
@@ -3615,7 +3664,7 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
   width: 45%;
   margin-right: 4.5%; }
   @media (max-width: 979px) {
-    /* line 574, ../scss/components/_soe_dm_article.scss */
+    /* line 586, ../scss/components/_soe_dm_article.scss */
     .view-stanford-magazine-article-mag-landing-page.view-display-id-block_13_15 .views-row:nth-child(1), .view-stanford-magazine-article-mag-landing-page.view-display-id-block_4_6 .views-row:nth-child(1),
     .view-stanford-magazine-collection-mag-landing-page.view-display-id-block_13_15 .views-row:nth-child(1),
     .view-stanford-magazine-collection-mag-landing-page.view-display-id-block_4_6 .views-row:nth-child(1),
@@ -3623,7 +3672,7 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
     .view-display-id-article_collection_bottom_block.view-display-id-block_4_6 .views-row:nth-child(1) {
       width: 100%;
       margin-right: 0; } }
-  /* line 583, ../scss/components/_soe_dm_article.scss */
+  /* line 595, ../scss/components/_soe_dm_article.scss */
   .view-stanford-magazine-article-mag-landing-page.view-display-id-block_13_15 .views-row:nth-child(1) .mag-article-container .mag-article-content-container, .view-stanford-magazine-article-mag-landing-page.view-display-id-block_4_6 .views-row:nth-child(1) .mag-article-container .mag-article-content-container,
   .view-stanford-magazine-collection-mag-landing-page.view-display-id-block_13_15 .views-row:nth-child(1) .mag-article-container .mag-article-content-container,
   .view-stanford-magazine-collection-mag-landing-page.view-display-id-block_4_6 .views-row:nth-child(1) .mag-article-container .mag-article-content-container,
@@ -3635,14 +3684,14 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
     -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2); }
     @media (max-width: 979px) {
-      /* line 583, ../scss/components/_soe_dm_article.scss */
+      /* line 595, ../scss/components/_soe_dm_article.scss */
       .view-stanford-magazine-article-mag-landing-page.view-display-id-block_13_15 .views-row:nth-child(1) .mag-article-container .mag-article-content-container, .view-stanford-magazine-article-mag-landing-page.view-display-id-block_4_6 .views-row:nth-child(1) .mag-article-container .mag-article-content-container,
       .view-stanford-magazine-collection-mag-landing-page.view-display-id-block_13_15 .views-row:nth-child(1) .mag-article-container .mag-article-content-container,
       .view-stanford-magazine-collection-mag-landing-page.view-display-id-block_4_6 .views-row:nth-child(1) .mag-article-container .mag-article-content-container,
       .view-display-id-article_collection_bottom_block.view-display-id-block_13_15 .views-row:nth-child(1) .mag-article-container .mag-article-content-container,
       .view-display-id-article_collection_bottom_block.view-display-id-block_4_6 .views-row:nth-child(1) .mag-article-container .mag-article-content-container {
         padding: 15px 30px 30px; } }
-    /* line 591, ../scss/components/_soe_dm_article.scss */
+    /* line 603, ../scss/components/_soe_dm_article.scss */
     .view-stanford-magazine-article-mag-landing-page.view-display-id-block_13_15 .views-row:nth-child(1) .mag-article-container .mag-article-content-container .mag-article-date, .view-stanford-magazine-article-mag-landing-page.view-display-id-block_4_6 .views-row:nth-child(1) .mag-article-container .mag-article-content-container .mag-article-date,
     .view-stanford-magazine-collection-mag-landing-page.view-display-id-block_13_15 .views-row:nth-child(1) .mag-article-container .mag-article-content-container .mag-article-date,
     .view-stanford-magazine-collection-mag-landing-page.view-display-id-block_4_6 .views-row:nth-child(1) .mag-article-container .mag-article-content-container .mag-article-date,
@@ -3653,14 +3702,14 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
       font-weight: 100;
       margin-bottom: 10px; }
       @media (max-width: 979px) {
-        /* line 591, ../scss/components/_soe_dm_article.scss */
+        /* line 603, ../scss/components/_soe_dm_article.scss */
         .view-stanford-magazine-article-mag-landing-page.view-display-id-block_13_15 .views-row:nth-child(1) .mag-article-container .mag-article-content-container .mag-article-date, .view-stanford-magazine-article-mag-landing-page.view-display-id-block_4_6 .views-row:nth-child(1) .mag-article-container .mag-article-content-container .mag-article-date,
         .view-stanford-magazine-collection-mag-landing-page.view-display-id-block_13_15 .views-row:nth-child(1) .mag-article-container .mag-article-content-container .mag-article-date,
         .view-stanford-magazine-collection-mag-landing-page.view-display-id-block_4_6 .views-row:nth-child(1) .mag-article-container .mag-article-content-container .mag-article-date,
         .view-display-id-article_collection_bottom_block.view-display-id-block_13_15 .views-row:nth-child(1) .mag-article-container .mag-article-content-container .mag-article-date,
         .view-display-id-article_collection_bottom_block.view-display-id-block_4_6 .views-row:nth-child(1) .mag-article-container .mag-article-content-container .mag-article-date {
           font-size: 0.9em; } }
-    /* line 601, ../scss/components/_soe_dm_article.scss */
+    /* line 613, ../scss/components/_soe_dm_article.scss */
     .view-stanford-magazine-article-mag-landing-page.view-display-id-block_13_15 .views-row:nth-child(1) .mag-article-container .mag-article-content-container .mag-article-title, .view-stanford-magazine-article-mag-landing-page.view-display-id-block_4_6 .views-row:nth-child(1) .mag-article-container .mag-article-content-container .mag-article-title,
     .view-stanford-magazine-collection-mag-landing-page.view-display-id-block_13_15 .views-row:nth-child(1) .mag-article-container .mag-article-content-container .mag-article-title,
     .view-stanford-magazine-collection-mag-landing-page.view-display-id-block_4_6 .views-row:nth-child(1) .mag-article-container .mag-article-content-container .mag-article-title,
@@ -3670,7 +3719,7 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
       line-height: 1.2em;
       font-weight: 600; }
       @media (max-width: 979px) {
-        /* line 601, ../scss/components/_soe_dm_article.scss */
+        /* line 613, ../scss/components/_soe_dm_article.scss */
         .view-stanford-magazine-article-mag-landing-page.view-display-id-block_13_15 .views-row:nth-child(1) .mag-article-container .mag-article-content-container .mag-article-title, .view-stanford-magazine-article-mag-landing-page.view-display-id-block_4_6 .views-row:nth-child(1) .mag-article-container .mag-article-content-container .mag-article-title,
         .view-stanford-magazine-collection-mag-landing-page.view-display-id-block_13_15 .views-row:nth-child(1) .mag-article-container .mag-article-content-container .mag-article-title,
         .view-stanford-magazine-collection-mag-landing-page.view-display-id-block_4_6 .views-row:nth-child(1) .mag-article-container .mag-article-content-container .mag-article-title,
@@ -3678,7 +3727,7 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
         .view-display-id-article_collection_bottom_block.view-display-id-block_4_6 .views-row:nth-child(1) .mag-article-container .mag-article-content-container .mag-article-title {
           font-size: 1.3em;
           line-height: 1.3em; } }
-    /* line 611, ../scss/components/_soe_dm_article.scss */
+    /* line 623, ../scss/components/_soe_dm_article.scss */
     .view-stanford-magazine-article-mag-landing-page.view-display-id-block_13_15 .views-row:nth-child(1) .mag-article-container .mag-article-content-container .mag-article-topics, .view-stanford-magazine-article-mag-landing-page.view-display-id-block_4_6 .views-row:nth-child(1) .mag-article-container .mag-article-content-container .mag-article-topics,
     .view-stanford-magazine-collection-mag-landing-page.view-display-id-block_13_15 .views-row:nth-child(1) .mag-article-container .mag-article-content-container .mag-article-topics,
     .view-stanford-magazine-collection-mag-landing-page.view-display-id-block_4_6 .views-row:nth-child(1) .mag-article-container .mag-article-content-container .mag-article-topics,
@@ -3688,7 +3737,7 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
       line-height: 1.3em;
       margin: 30px 0; }
       @media (max-width: 979px) {
-        /* line 611, ../scss/components/_soe_dm_article.scss */
+        /* line 623, ../scss/components/_soe_dm_article.scss */
         .view-stanford-magazine-article-mag-landing-page.view-display-id-block_13_15 .views-row:nth-child(1) .mag-article-container .mag-article-content-container .mag-article-topics, .view-stanford-magazine-article-mag-landing-page.view-display-id-block_4_6 .views-row:nth-child(1) .mag-article-container .mag-article-content-container .mag-article-topics,
         .view-stanford-magazine-collection-mag-landing-page.view-display-id-block_13_15 .views-row:nth-child(1) .mag-article-container .mag-article-content-container .mag-article-topics,
         .view-stanford-magazine-collection-mag-landing-page.view-display-id-block_4_6 .views-row:nth-child(1) .mag-article-container .mag-article-content-container .mag-article-topics,
@@ -3696,7 +3745,7 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
         .view-display-id-article_collection_bottom_block.view-display-id-block_4_6 .views-row:nth-child(1) .mag-article-container .mag-article-content-container .mag-article-topics {
           font-size: 0.8em;
           line-height: 1.2em; } }
-/* line 624, ../scss/components/_soe_dm_article.scss */
+/* line 636, ../scss/components/_soe_dm_article.scss */
 .view-stanford-magazine-article-mag-landing-page.view-display-id-block_13_15 .views-row:nth-child(2), .view-stanford-magazine-article-mag-landing-page.view-display-id-block_4_6 .views-row:nth-child(2),
 .view-stanford-magazine-collection-mag-landing-page.view-display-id-block_13_15 .views-row:nth-child(2),
 .view-stanford-magazine-collection-mag-landing-page.view-display-id-block_4_6 .views-row:nth-child(2),
@@ -3705,7 +3754,7 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
   width: 22.5%;
   margin-right: 4.5%; }
   @media (max-width: 979px) {
-    /* line 624, ../scss/components/_soe_dm_article.scss */
+    /* line 636, ../scss/components/_soe_dm_article.scss */
     .view-stanford-magazine-article-mag-landing-page.view-display-id-block_13_15 .views-row:nth-child(2), .view-stanford-magazine-article-mag-landing-page.view-display-id-block_4_6 .views-row:nth-child(2),
     .view-stanford-magazine-collection-mag-landing-page.view-display-id-block_13_15 .views-row:nth-child(2),
     .view-stanford-magazine-collection-mag-landing-page.view-display-id-block_4_6 .views-row:nth-child(2),
@@ -3713,7 +3762,7 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
     .view-display-id-article_collection_bottom_block.view-display-id-block_4_6 .views-row:nth-child(2) {
       width: 100%;
       margin-right: 0; } }
-/* line 633, ../scss/components/_soe_dm_article.scss */
+/* line 645, ../scss/components/_soe_dm_article.scss */
 .view-stanford-magazine-article-mag-landing-page.view-display-id-block_13_15 .views-row:nth-child(3), .view-stanford-magazine-article-mag-landing-page.view-display-id-block_4_6 .views-row:nth-child(3),
 .view-stanford-magazine-collection-mag-landing-page.view-display-id-block_13_15 .views-row:nth-child(3),
 .view-stanford-magazine-collection-mag-landing-page.view-display-id-block_4_6 .views-row:nth-child(3),
@@ -3722,52 +3771,52 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
   width: 22.5%;
   margin-right: 0; }
   @media (max-width: 979px) {
-    /* line 633, ../scss/components/_soe_dm_article.scss */
+    /* line 645, ../scss/components/_soe_dm_article.scss */
     .view-stanford-magazine-article-mag-landing-page.view-display-id-block_13_15 .views-row:nth-child(3), .view-stanford-magazine-article-mag-landing-page.view-display-id-block_4_6 .views-row:nth-child(3),
     .view-stanford-magazine-collection-mag-landing-page.view-display-id-block_13_15 .views-row:nth-child(3),
     .view-stanford-magazine-collection-mag-landing-page.view-display-id-block_4_6 .views-row:nth-child(3),
     .view-display-id-article_collection_bottom_block.view-display-id-block_13_15 .views-row:nth-child(3),
     .view-display-id-article_collection_bottom_block.view-display-id-block_4_6 .views-row:nth-child(3) {
       width: 100%; } }
-/* line 645, ../scss/components/_soe_dm_article.scss */
+/* line 657, ../scss/components/_soe_dm_article.scss */
 .view-stanford-magazine-article-mag-landing-page.view-display-id-block_7_9 .views-row:nth-child(1),
 .view-stanford-magazine-collection-mag-landing-page.view-display-id-block_7_9 .views-row:nth-child(1),
 .view-display-id-article_collection_bottom_block.view-display-id-block_7_9 .views-row:nth-child(1) {
   width: 22.5%;
   margin-right: 4.5%; }
   @media (max-width: 979px) {
-    /* line 645, ../scss/components/_soe_dm_article.scss */
+    /* line 657, ../scss/components/_soe_dm_article.scss */
     .view-stanford-magazine-article-mag-landing-page.view-display-id-block_7_9 .views-row:nth-child(1),
     .view-stanford-magazine-collection-mag-landing-page.view-display-id-block_7_9 .views-row:nth-child(1),
     .view-display-id-article_collection_bottom_block.view-display-id-block_7_9 .views-row:nth-child(1) {
       width: 100%;
       margin-right: 0; } }
-/* line 654, ../scss/components/_soe_dm_article.scss */
+/* line 666, ../scss/components/_soe_dm_article.scss */
 .view-stanford-magazine-article-mag-landing-page.view-display-id-block_7_9 .views-row:nth-child(2),
 .view-stanford-magazine-collection-mag-landing-page.view-display-id-block_7_9 .views-row:nth-child(2),
 .view-display-id-article_collection_bottom_block.view-display-id-block_7_9 .views-row:nth-child(2) {
   width: 22.5%;
   margin-right: 4.5%; }
   @media (max-width: 979px) {
-    /* line 654, ../scss/components/_soe_dm_article.scss */
+    /* line 666, ../scss/components/_soe_dm_article.scss */
     .view-stanford-magazine-article-mag-landing-page.view-display-id-block_7_9 .views-row:nth-child(2),
     .view-stanford-magazine-collection-mag-landing-page.view-display-id-block_7_9 .views-row:nth-child(2),
     .view-display-id-article_collection_bottom_block.view-display-id-block_7_9 .views-row:nth-child(2) {
       width: 100%;
       margin-right: 0; } }
-/* line 663, ../scss/components/_soe_dm_article.scss */
+/* line 675, ../scss/components/_soe_dm_article.scss */
 .view-stanford-magazine-article-mag-landing-page.view-display-id-block_7_9 .views-row:nth-child(3),
 .view-stanford-magazine-collection-mag-landing-page.view-display-id-block_7_9 .views-row:nth-child(3),
 .view-display-id-article_collection_bottom_block.view-display-id-block_7_9 .views-row:nth-child(3) {
   width: 45%;
   margin-right: 0; }
   @media (max-width: 979px) {
-    /* line 663, ../scss/components/_soe_dm_article.scss */
+    /* line 675, ../scss/components/_soe_dm_article.scss */
     .view-stanford-magazine-article-mag-landing-page.view-display-id-block_7_9 .views-row:nth-child(3),
     .view-stanford-magazine-collection-mag-landing-page.view-display-id-block_7_9 .views-row:nth-child(3),
     .view-display-id-article_collection_bottom_block.view-display-id-block_7_9 .views-row:nth-child(3) {
       width: 100%; } }
-  /* line 671, ../scss/components/_soe_dm_article.scss */
+  /* line 683, ../scss/components/_soe_dm_article.scss */
   .view-stanford-magazine-article-mag-landing-page.view-display-id-block_7_9 .views-row:nth-child(3) .mag-article-container .mag-article-content-container,
   .view-stanford-magazine-collection-mag-landing-page.view-display-id-block_7_9 .views-row:nth-child(3) .mag-article-container .mag-article-content-container,
   .view-display-id-article_collection_bottom_block.view-display-id-block_7_9 .views-row:nth-child(3) .mag-article-container .mag-article-content-container {
@@ -3777,12 +3826,12 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
     -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2); }
     @media (max-width: 979px) {
-      /* line 671, ../scss/components/_soe_dm_article.scss */
+      /* line 683, ../scss/components/_soe_dm_article.scss */
       .view-stanford-magazine-article-mag-landing-page.view-display-id-block_7_9 .views-row:nth-child(3) .mag-article-container .mag-article-content-container,
       .view-stanford-magazine-collection-mag-landing-page.view-display-id-block_7_9 .views-row:nth-child(3) .mag-article-container .mag-article-content-container,
       .view-display-id-article_collection_bottom_block.view-display-id-block_7_9 .views-row:nth-child(3) .mag-article-container .mag-article-content-container {
         padding: 15px 30px 30px; } }
-    /* line 679, ../scss/components/_soe_dm_article.scss */
+    /* line 691, ../scss/components/_soe_dm_article.scss */
     .view-stanford-magazine-article-mag-landing-page.view-display-id-block_7_9 .views-row:nth-child(3) .mag-article-container .mag-article-content-container .mag-article-date,
     .view-stanford-magazine-collection-mag-landing-page.view-display-id-block_7_9 .views-row:nth-child(3) .mag-article-container .mag-article-content-container .mag-article-date,
     .view-display-id-article_collection_bottom_block.view-display-id-block_7_9 .views-row:nth-child(3) .mag-article-container .mag-article-content-container .mag-article-date {
@@ -3791,12 +3840,12 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
       font-weight: 100;
       margin-bottom: 10px; }
       @media (max-width: 979px) {
-        /* line 679, ../scss/components/_soe_dm_article.scss */
+        /* line 691, ../scss/components/_soe_dm_article.scss */
         .view-stanford-magazine-article-mag-landing-page.view-display-id-block_7_9 .views-row:nth-child(3) .mag-article-container .mag-article-content-container .mag-article-date,
         .view-stanford-magazine-collection-mag-landing-page.view-display-id-block_7_9 .views-row:nth-child(3) .mag-article-container .mag-article-content-container .mag-article-date,
         .view-display-id-article_collection_bottom_block.view-display-id-block_7_9 .views-row:nth-child(3) .mag-article-container .mag-article-content-container .mag-article-date {
           font-size: 0.9em; } }
-    /* line 689, ../scss/components/_soe_dm_article.scss */
+    /* line 701, ../scss/components/_soe_dm_article.scss */
     .view-stanford-magazine-article-mag-landing-page.view-display-id-block_7_9 .views-row:nth-child(3) .mag-article-container .mag-article-content-container .mag-article-title,
     .view-stanford-magazine-collection-mag-landing-page.view-display-id-block_7_9 .views-row:nth-child(3) .mag-article-container .mag-article-content-container .mag-article-title,
     .view-display-id-article_collection_bottom_block.view-display-id-block_7_9 .views-row:nth-child(3) .mag-article-container .mag-article-content-container .mag-article-title {
@@ -3804,13 +3853,13 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
       line-height: 1.2em;
       font-weight: 600; }
       @media (max-width: 979px) {
-        /* line 689, ../scss/components/_soe_dm_article.scss */
+        /* line 701, ../scss/components/_soe_dm_article.scss */
         .view-stanford-magazine-article-mag-landing-page.view-display-id-block_7_9 .views-row:nth-child(3) .mag-article-container .mag-article-content-container .mag-article-title,
         .view-stanford-magazine-collection-mag-landing-page.view-display-id-block_7_9 .views-row:nth-child(3) .mag-article-container .mag-article-content-container .mag-article-title,
         .view-display-id-article_collection_bottom_block.view-display-id-block_7_9 .views-row:nth-child(3) .mag-article-container .mag-article-content-container .mag-article-title {
           font-size: 1.3em;
           line-height: 1.3em; } }
-    /* line 699, ../scss/components/_soe_dm_article.scss */
+    /* line 711, ../scss/components/_soe_dm_article.scss */
     .view-stanford-magazine-article-mag-landing-page.view-display-id-block_7_9 .views-row:nth-child(3) .mag-article-container .mag-article-content-container .mag-article-topics,
     .view-stanford-magazine-collection-mag-landing-page.view-display-id-block_7_9 .views-row:nth-child(3) .mag-article-container .mag-article-content-container .mag-article-topics,
     .view-display-id-article_collection_bottom_block.view-display-id-block_7_9 .views-row:nth-child(3) .mag-article-container .mag-article-content-container .mag-article-topics {
@@ -3818,29 +3867,29 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
       line-height: 1.3em;
       margin: 30px 0; }
       @media (max-width: 979px) {
-        /* line 699, ../scss/components/_soe_dm_article.scss */
+        /* line 711, ../scss/components/_soe_dm_article.scss */
         .view-stanford-magazine-article-mag-landing-page.view-display-id-block_7_9 .views-row:nth-child(3) .mag-article-container .mag-article-content-container .mag-article-topics,
         .view-stanford-magazine-collection-mag-landing-page.view-display-id-block_7_9 .views-row:nth-child(3) .mag-article-container .mag-article-content-container .mag-article-topics,
         .view-display-id-article_collection_bottom_block.view-display-id-block_7_9 .views-row:nth-child(3) .mag-article-container .mag-article-content-container .mag-article-topics {
           font-size: 0.8em;
           line-height: 1.2em; } }
-/* line 714, ../scss/components/_soe_dm_article.scss */
+/* line 726, ../scss/components/_soe_dm_article.scss */
 .view-stanford-magazine-article-mag-landing-page .mag-article-container,
 .view-stanford-magazine-collection-mag-landing-page .mag-article-container,
 .view-display-id-article_collection_bottom_block .mag-article-container {
   margin-bottom: 80px; }
   @media (max-width: 979px) {
-    /* line 714, ../scss/components/_soe_dm_article.scss */
+    /* line 726, ../scss/components/_soe_dm_article.scss */
     .view-stanford-magazine-article-mag-landing-page .mag-article-container,
     .view-stanford-magazine-collection-mag-landing-page .mag-article-container,
     .view-display-id-article_collection_bottom_block .mag-article-container {
       margin-bottom: 40px; } }
-  /* line 720, ../scss/components/_soe_dm_article.scss */
+  /* line 732, ../scss/components/_soe_dm_article.scss */
   .view-stanford-magazine-article-mag-landing-page .mag-article-container .mag-article-img,
   .view-stanford-magazine-collection-mag-landing-page .mag-article-container .mag-article-img,
   .view-display-id-article_collection_bottom_block .mag-article-container .mag-article-img {
     overflow: hidden; }
-    /* line 723, ../scss/components/_soe_dm_article.scss */
+    /* line 735, ../scss/components/_soe_dm_article.scss */
     .view-stanford-magazine-article-mag-landing-page .mag-article-container .mag-article-img:hover img,
     .view-stanford-magazine-collection-mag-landing-page .mag-article-container .mag-article-img:hover img,
     .view-display-id-article_collection_bottom_block .mag-article-container .mag-article-img:hover img {
@@ -3848,7 +3897,7 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
       -moz-transform: scale(1.03);
       -o-transform: scale(1.03);
       transform: scale(1.03); }
-    /* line 727, ../scss/components/_soe_dm_article.scss */
+    /* line 739, ../scss/components/_soe_dm_article.scss */
     .view-stanford-magazine-article-mag-landing-page .mag-article-container .mag-article-img img,
     .view-stanford-magazine-collection-mag-landing-page .mag-article-container .mag-article-img img,
     .view-display-id-article_collection_bottom_block .mag-article-container .mag-article-img img {
@@ -3857,12 +3906,12 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
       -o-transition: all 1s ease;
       transition: all 1s ease; }
       @media (max-width: 979px) {
-        /* line 727, ../scss/components/_soe_dm_article.scss */
+        /* line 739, ../scss/components/_soe_dm_article.scss */
         .view-stanford-magazine-article-mag-landing-page .mag-article-container .mag-article-img img,
         .view-stanford-magazine-collection-mag-landing-page .mag-article-container .mag-article-img img,
         .view-display-id-article_collection_bottom_block .mag-article-container .mag-article-img img {
           width: 100%; } }
-  /* line 735, ../scss/components/_soe_dm_article.scss */
+  /* line 747, ../scss/components/_soe_dm_article.scss */
   .view-stanford-magazine-article-mag-landing-page .mag-article-container .mag-article-content-container,
   .view-stanford-magazine-collection-mag-landing-page .mag-article-container .mag-article-content-container,
   .view-display-id-article_collection_bottom_block .mag-article-container .mag-article-content-container {
@@ -3872,21 +3921,21 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
     -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2); }
-    /* line 741, ../scss/components/_soe_dm_article.scss */
+    /* line 753, ../scss/components/_soe_dm_article.scss */
     .view-stanford-magazine-article-mag-landing-page .mag-article-container .mag-article-content-container .mag-article-date,
     .view-stanford-magazine-collection-mag-landing-page .mag-article-container .mag-article-content-container .mag-article-date,
     .view-display-id-article_collection_bottom_block .mag-article-container .mag-article-content-container .mag-article-date {
       color: #606060;
       font-size: 0.9em;
       font-weight: 100; }
-    /* line 747, ../scss/components/_soe_dm_article.scss */
+    /* line 759, ../scss/components/_soe_dm_article.scss */
     .view-stanford-magazine-article-mag-landing-page .mag-article-container .mag-article-content-container .mag-article-title,
     .view-stanford-magazine-collection-mag-landing-page .mag-article-container .mag-article-content-container .mag-article-title,
     .view-display-id-article_collection_bottom_block .mag-article-container .mag-article-content-container .mag-article-title {
       font-size: 1.3em;
       line-height: 1.3em;
       font-weight: 600; }
-      /* line 752, ../scss/components/_soe_dm_article.scss */
+      /* line 764, ../scss/components/_soe_dm_article.scss */
       .view-stanford-magazine-article-mag-landing-page .mag-article-container .mag-article-content-container .mag-article-title[class*="mag-article-color-"] a,
       .view-stanford-magazine-collection-mag-landing-page .mag-article-container .mag-article-content-container .mag-article-title[class*="mag-article-color-"] a,
       .view-display-id-article_collection_bottom_block .mag-article-container .mag-article-content-container .mag-article-title[class*="mag-article-color-"] a {
@@ -3894,7 +3943,7 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
         text-decoration: underline;
         -webkit-text-decoration-skip: ink;
         text-decoration-skip: ink; }
-        /* line 757, ../scss/components/_soe_dm_article.scss */
+        /* line 769, ../scss/components/_soe_dm_article.scss */
         .view-stanford-magazine-article-mag-landing-page .mag-article-container .mag-article-content-container .mag-article-title[class*="mag-article-color-"] a:focus, .view-stanford-magazine-article-mag-landing-page .mag-article-container .mag-article-content-container .mag-article-title[class*="mag-article-color-"] a:hover,
         .view-stanford-magazine-collection-mag-landing-page .mag-article-container .mag-article-content-container .mag-article-title[class*="mag-article-color-"] a:focus,
         .view-stanford-magazine-collection-mag-landing-page .mag-article-container .mag-article-content-container .mag-article-title[class*="mag-article-color-"] a:hover,
@@ -3902,98 +3951,98 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
         .view-display-id-article_collection_bottom_block .mag-article-container .mag-article-content-container .mag-article-title[class*="mag-article-color-"] a:hover {
           -webkit-text-decoration-color: #333333;
           text-decoration-color: #333333; }
-      /* line 763, ../scss/components/_soe_dm_article.scss */
+      /* line 775, ../scss/components/_soe_dm_article.scss */
       .view-stanford-magazine-article-mag-landing-page .mag-article-container .mag-article-content-container .mag-article-title.mag-article-color-orange a,
       .view-stanford-magazine-collection-mag-landing-page .mag-article-container .mag-article-content-container .mag-article-title.mag-article-color-orange a,
       .view-display-id-article_collection_bottom_block .mag-article-container .mag-article-content-container .mag-article-title.mag-article-color-orange a {
         -webkit-text-decoration-color: #FFBD54;
         text-decoration-color: #FFBD54; }
-      /* line 767, ../scss/components/_soe_dm_article.scss */
+      /* line 779, ../scss/components/_soe_dm_article.scss */
       .view-stanford-magazine-article-mag-landing-page .mag-article-container .mag-article-content-container .mag-article-title.mag-article-color-turquoise a,
       .view-stanford-magazine-collection-mag-landing-page .mag-article-container .mag-article-content-container .mag-article-title.mag-article-color-turquoise a,
       .view-display-id-article_collection_bottom_block .mag-article-container .mag-article-content-container .mag-article-title.mag-article-color-turquoise a {
         -webkit-text-decoration-color: #00ECE9;
         text-decoration-color: #00ECE9; }
-      /* line 771, ../scss/components/_soe_dm_article.scss */
+      /* line 783, ../scss/components/_soe_dm_article.scss */
       .view-stanford-magazine-article-mag-landing-page .mag-article-container .mag-article-content-container .mag-article-title.mag-article-color-pink a,
       .view-stanford-magazine-collection-mag-landing-page .mag-article-container .mag-article-content-container .mag-article-title.mag-article-color-pink a,
       .view-display-id-article_collection_bottom_block .mag-article-container .mag-article-content-container .mag-article-title.mag-article-color-pink a {
         -webkit-text-decoration-color: #FF525C;
         text-decoration-color: #FF525C; }
-    /* line 776, ../scss/components/_soe_dm_article.scss */
+    /* line 788, ../scss/components/_soe_dm_article.scss */
     .view-stanford-magazine-article-mag-landing-page .mag-article-container .mag-article-content-container .mag-article-topics,
     .view-stanford-magazine-collection-mag-landing-page .mag-article-container .mag-article-content-container .mag-article-topics,
     .view-display-id-article_collection_bottom_block .mag-article-container .mag-article-content-container .mag-article-topics {
       font-size: 0.8em;
       line-height: 1.2em;
       margin: 30px 0; }
-    /* line 782, ../scss/components/_soe_dm_article.scss */
+    /* line 794, ../scss/components/_soe_dm_article.scss */
     .view-stanford-magazine-article-mag-landing-page .mag-article-container .mag-article-content-container .mag-article-issue,
     .view-stanford-magazine-collection-mag-landing-page .mag-article-container .mag-article-content-container .mag-article-issue,
     .view-display-id-article_collection_bottom_block .mag-article-container .mag-article-content-container .mag-article-issue {
       position: absolute;
       bottom: 15px;
       right: 15px; }
-      /* line 787, ../scss/components/_soe_dm_article.scss */
+      /* line 799, ../scss/components/_soe_dm_article.scss */
       .view-stanford-magazine-article-mag-landing-page .mag-article-container .mag-article-content-container .mag-article-issue[class*="mag-issue-color-"],
       .view-stanford-magazine-collection-mag-landing-page .mag-article-container .mag-article-content-container .mag-article-issue[class*="mag-issue-color-"],
       .view-display-id-article_collection_bottom_block .mag-article-container .mag-article-content-container .mag-article-issue[class*="mag-issue-color-"] {
         padding: 0 9px;
         font-size: 0.9em; }
-      /* line 792, ../scss/components/_soe_dm_article.scss */
+      /* line 804, ../scss/components/_soe_dm_article.scss */
       .view-stanford-magazine-article-mag-landing-page .mag-article-container .mag-article-content-container .mag-article-issue.mag-issue-color-orange,
       .view-stanford-magazine-collection-mag-landing-page .mag-article-container .mag-article-content-container .mag-article-issue.mag-issue-color-orange,
       .view-display-id-article_collection_bottom_block .mag-article-container .mag-article-content-container .mag-article-issue.mag-issue-color-orange {
         background: #FFBD54; }
-      /* line 796, ../scss/components/_soe_dm_article.scss */
+      /* line 808, ../scss/components/_soe_dm_article.scss */
       .view-stanford-magazine-article-mag-landing-page .mag-article-container .mag-article-content-container .mag-article-issue.mag-issue-color-turquoise,
       .view-stanford-magazine-collection-mag-landing-page .mag-article-container .mag-article-content-container .mag-article-issue.mag-issue-color-turquoise,
       .view-display-id-article_collection_bottom_block .mag-article-container .mag-article-content-container .mag-article-issue.mag-issue-color-turquoise {
         background: #00ECE9; }
-      /* line 800, ../scss/components/_soe_dm_article.scss */
+      /* line 812, ../scss/components/_soe_dm_article.scss */
       .view-stanford-magazine-article-mag-landing-page .mag-article-container .mag-article-content-container .mag-article-issue.mag-issue-color-pink,
       .view-stanford-magazine-collection-mag-landing-page .mag-article-container .mag-article-content-container .mag-article-issue.mag-issue-color-pink,
       .view-display-id-article_collection_bottom_block .mag-article-container .mag-article-content-container .mag-article-issue.mag-issue-color-pink {
         background: #FF525C; }
-      /* line 804, ../scss/components/_soe_dm_article.scss */
+      /* line 816, ../scss/components/_soe_dm_article.scss */
       .view-stanford-magazine-article-mag-landing-page .mag-article-container .mag-article-content-container .mag-article-issue a,
       .view-stanford-magazine-collection-mag-landing-page .mag-article-container .mag-article-content-container .mag-article-issue a,
       .view-display-id-article_collection_bottom_block .mag-article-container .mag-article-content-container .mag-article-issue a {
         color: #333333; }
 
-/* line 813, ../scss/components/_soe_dm_article.scss */
+/* line 825, ../scss/components/_soe_dm_article.scss */
 .page-magazine .main {
   padding-bottom: 0; }
   @media (min-width: 979px) {
-    /* line 813, ../scss/components/_soe_dm_article.scss */
+    /* line 825, ../scss/components/_soe_dm_article.scss */
     .page-magazine .main {
       padding-top: 100px; } }
   @media (max-width: 767px) {
-    /* line 819, ../scss/components/_soe_dm_article.scss */
+    /* line 831, ../scss/components/_soe_dm_article.scss */
     .page-magazine .main .container {
       margin-bottom: 0; } }
-  /* line 824, ../scss/components/_soe_dm_article.scss */
+  /* line 836, ../scss/components/_soe_dm_article.scss */
   .page-magazine .main .container .content-head {
     margin-bottom: 0; }
-/* line 830, ../scss/components/_soe_dm_article.scss */
+/* line 842, ../scss/components/_soe_dm_article.scss */
 .page-magazine #page-title {
   text-align: center; }
-/* line 835, ../scss/components/_soe_dm_article.scss */
+/* line 847, ../scss/components/_soe_dm_article.scss */
 .page-magazine .block-stanford-soe-helper-magazine a.btn {
   margin: 0 0 80px; }
 
-/* line 846, ../scss/components/_soe_dm_article.scss */
+/* line 858, ../scss/components/_soe_dm_article.scss */
 .view-stanford-magazine-article-department .mag-article-container .mag-article-img,
 .view-stanford-magazine-article-featured .mag-article-container .mag-article-img {
   overflow: hidden; }
-  /* line 849, ../scss/components/_soe_dm_article.scss */
+  /* line 861, ../scss/components/_soe_dm_article.scss */
   .view-stanford-magazine-article-department .mag-article-container .mag-article-img:hover img,
   .view-stanford-magazine-article-featured .mag-article-container .mag-article-img:hover img {
     -webkit-transform: scale(1.03);
     -moz-transform: scale(1.03);
     -o-transform: scale(1.03);
     transform: scale(1.03); }
-  /* line 853, ../scss/components/_soe_dm_article.scss */
+  /* line 865, ../scss/components/_soe_dm_article.scss */
   .view-stanford-magazine-article-department .mag-article-container .mag-article-img img,
   .view-stanford-magazine-article-featured .mag-article-container .mag-article-img img {
     -webkit-transition: all 1s ease;
@@ -4001,7 +4050,7 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
     -o-transition: all 1s ease;
     transition: all 1s ease;
     width: 100%; }
-/* line 859, ../scss/components/_soe_dm_article.scss */
+/* line 871, ../scss/components/_soe_dm_article.scss */
 .view-stanford-magazine-article-department .mag-article-container .mag-article-content-container,
 .view-stanford-magazine-article-featured .mag-article-container .mag-article-content-container {
   background: #FFFFFF;
@@ -4010,11 +4059,11 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
   -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2); }
   @media (max-width: 979px) {
-    /* line 859, ../scss/components/_soe_dm_article.scss */
+    /* line 871, ../scss/components/_soe_dm_article.scss */
     .view-stanford-magazine-article-department .mag-article-container .mag-article-content-container,
     .view-stanford-magazine-article-featured .mag-article-container .mag-article-content-container {
       padding: 15px 30px 30px; } }
-  /* line 867, ../scss/components/_soe_dm_article.scss */
+  /* line 879, ../scss/components/_soe_dm_article.scss */
   .view-stanford-magazine-article-department .mag-article-container .mag-article-content-container .mag-article-date,
   .view-stanford-magazine-article-featured .mag-article-container .mag-article-content-container .mag-article-date {
     color: #606060;
@@ -4022,39 +4071,39 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
     font-weight: 100;
     margin-bottom: 10px; }
     @media (max-width: 979px) {
-      /* line 867, ../scss/components/_soe_dm_article.scss */
+      /* line 879, ../scss/components/_soe_dm_article.scss */
       .view-stanford-magazine-article-department .mag-article-container .mag-article-content-container .mag-article-date,
       .view-stanford-magazine-article-featured .mag-article-container .mag-article-content-container .mag-article-date {
         font-size: 0.9em; } }
-  /* line 878, ../scss/components/_soe_dm_article.scss */
+  /* line 890, ../scss/components/_soe_dm_article.scss */
   .view-stanford-magazine-article-department .mag-article-container .mag-article-content-container .mag-article-title h2,
   .view-stanford-magazine-article-featured .mag-article-container .mag-article-content-container .mag-article-title h2 {
     font-size: 1.4em; }
-    /* line 881, ../scss/components/_soe_dm_article.scss */
+    /* line 893, ../scss/components/_soe_dm_article.scss */
     .view-stanford-magazine-article-department .mag-article-container .mag-article-content-container .mag-article-title h2 a,
     .view-stanford-magazine-article-featured .mag-article-container .mag-article-content-container .mag-article-title h2 a {
       -webkit-text-decoration-color: #00ECE9;
       text-decoration-color: #00ECE9; }
-      /* line 884, ../scss/components/_soe_dm_article.scss */
+      /* line 896, ../scss/components/_soe_dm_article.scss */
       .view-stanford-magazine-article-department .mag-article-container .mag-article-content-container .mag-article-title h2 a:focus, .view-stanford-magazine-article-department .mag-article-container .mag-article-content-container .mag-article-title h2 a:hover,
       .view-stanford-magazine-article-featured .mag-article-container .mag-article-content-container .mag-article-title h2 a:focus,
       .view-stanford-magazine-article-featured .mag-article-container .mag-article-content-container .mag-article-title h2 a:hover {
         -webkit-text-decoration-color: #333333;
         text-decoration-color: #333333; }
-  /* line 892, ../scss/components/_soe_dm_article.scss */
+  /* line 904, ../scss/components/_soe_dm_article.scss */
   .view-stanford-magazine-article-department .mag-article-container .mag-article-content-container .mag-article-topics,
   .view-stanford-magazine-article-featured .mag-article-container .mag-article-content-container .mag-article-topics {
     font-size: 0.9em;
     line-height: 1.3em;
     margin: 30px 0; }
     @media (max-width: 979px) {
-      /* line 892, ../scss/components/_soe_dm_article.scss */
+      /* line 904, ../scss/components/_soe_dm_article.scss */
       .view-stanford-magazine-article-department .mag-article-container .mag-article-content-container .mag-article-topics,
       .view-stanford-magazine-article-featured .mag-article-container .mag-article-content-container .mag-article-topics {
         font-size: 0.8em;
         line-height: 1.2em; } }
 
-/* line 908, ../scss/components/_soe_dm_article.scss */
+/* line 920, ../scss/components/_soe_dm_article.scss */
 .node-type-stanford-magazine-article .paragraphs-item-p-two-columns {
   font-family: "Roboto Slab", serif;
   font-size: 1.4em;
@@ -4063,54 +4112,54 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
   column-gap: 0;
   width: 85%; }
 @media (max-width: 480px) {
-  /* line 917, ../scss/components/_soe_dm_article.scss */
+  /* line 929, ../scss/components/_soe_dm_article.scss */
   .node-type-stanford-magazine-article h1 {
     width: 100%; } }
-/* line 924, ../scss/components/_soe_dm_article.scss */
+/* line 936, ../scss/components/_soe_dm_article.scss */
 .node-type-stanford-magazine-article .paragraphs-item-p-wysiwyg-simple a {
   text-decoration: underline; }
 @media (max-width: 979px) {
-  /* line 923, ../scss/components/_soe_dm_article.scss */
+  /* line 935, ../scss/components/_soe_dm_article.scss */
   .node-type-stanford-magazine-article .paragraphs-item-p-wysiwyg-simple {
     width: 85%; } }
 @media (max-width: 480px) {
-  /* line 923, ../scss/components/_soe_dm_article.scss */
+  /* line 935, ../scss/components/_soe_dm_article.scss */
   .node-type-stanford-magazine-article .paragraphs-item-p-wysiwyg-simple {
     width: 100%; } }
 
-/* line 937, ../scss/components/_soe_dm_article.scss */
+/* line 949, ../scss/components/_soe_dm_article.scss */
 .entity-paragraphs-item iframe {
   width: 100%; }
-  /* line 939, ../scss/components/_soe_dm_article.scss */
+  /* line 951, ../scss/components/_soe_dm_article.scss */
   .entity-paragraphs-item iframe.iframe-auto {
     height: auto; }
-/* line 944, ../scss/components/_soe_dm_article.scss */
+/* line 956, ../scss/components/_soe_dm_article.scss */
 .entity-paragraphs-item iframe[src*="youtube"],
 .entity-paragraphs-item iframe[src*="vimeo"] {
   height: 400px; }
 
-/* line 953, ../scss/components/_soe_dm_article.scss */
+/* line 965, ../scss/components/_soe_dm_article.scss */
 #block-ds-extras-related-departments {
   width: 85%;
   border-top: 1px solid #CCCCCC;
   margin: 0 auto 80px;
   padding-top: 20px; }
   @media (max-width: 480px) {
-    /* line 953, ../scss/components/_soe_dm_article.scss */
+    /* line 965, ../scss/components/_soe_dm_article.scss */
     #block-ds-extras-related-departments {
       width: 100%; } }
-  /* line 962, ../scss/components/_soe_dm_article.scss */
+  /* line 974, ../scss/components/_soe_dm_article.scss */
   #block-ds-extras-related-departments h2 {
     font-size: 0.9em;
     font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin-bottom: 0; }
-  /* line 968, ../scss/components/_soe_dm_article.scss */
+  /* line 980, ../scss/components/_soe_dm_article.scss */
   #block-ds-extras-related-departments .field-name-field-s-mag-article-dept {
     font-size: 0.9em;
     line-height: 1.3em;
     width: 45%; }
     @media (max-width: 480px) {
-      /* line 968, ../scss/components/_soe_dm_article.scss */
+      /* line 980, ../scss/components/_soe_dm_article.scss */
       #block-ds-extras-related-departments .field-name-field-s-mag-article-dept {
         width: 100%; } }
 
