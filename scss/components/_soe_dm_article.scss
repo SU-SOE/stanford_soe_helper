@@ -208,6 +208,47 @@
       }
     }
   }
+
+  #block-bean-stanford-soe-mag-news-signup {
+    .mailchimp-magazine-block {
+      #mc_embed_signup_scroll {
+        width: 50%;
+        margin: 0 auto;
+
+        h2 {
+          font-size: 1.3em;
+          margin-bottom: 20px;
+
+          @include breakpoint-max(x-small) {
+            font-size: 1.1em;
+          }
+        }
+
+        .mc-field-group {
+          input {
+            width: 300px;
+
+            @include breakpoint-max(smaller) {
+              width: 200px;
+            }
+
+            @include breakpoint-max(x-small) {
+              width: 150px;
+            }
+          }
+        }
+
+        @include breakpoint-max(medium) {
+          width: 70%;
+        }
+
+        @include breakpoint-max(x-small) {
+          width: 80%;
+          padding: 25px;
+        }
+      }
+    }
+  }
 }
 
 // TAXONOMY AND ALL ARTICLES GRID VIEWS
@@ -831,10 +872,57 @@
     text-align: center;
   }
 
+  .mailchimp-magazine-block {
+    #mc_embed_signup_scroll {
+      box-shadow: none;
+      -webkit-box-shadow: none;
+      margin-bottom: 0;
+
+      @include breakpoint-max(small) {
+        padding: 40px 0;
+      }
+    }
+  }
+
+  form {
+    &#mc-embedded-subscribe-form {
+      margin-bottom: 0;
+    }
+  }
+
   .block-stanford-soe-helper-magazine {
     a.btn {
       margin: 0 0 80px;
     }
+  }
+
+  #content-body-bottom {
+    margin-top: 5%;
+  }
+}
+
+.page-magazine-all,
+.page-taxonomy-term {
+  .mailchimp-magazine-block {
+    #mc_embed_signup_scroll {
+      box-shadow: none;
+      -webkit-box-shadow: none;
+      margin-bottom: 0;
+
+      @include breakpoint-max(small) {
+        padding: 40px 0;
+      }
+    }
+  }
+
+  form {
+    &#mc-embedded-subscribe-form {
+      margin-bottom: 0;
+    }
+  }
+
+  #content-body-bottom {
+    margin-top: 5%;
   }
 }
 

@@ -121,6 +121,7 @@
 .node-type-stanford-collection {
   #content-body-bottom {
     margin-top: 60px;
+    margin-top: 5%;
   }
 
   #mc_embed_signup_scroll {
@@ -285,6 +286,28 @@
   #content-head {
     display: block;
     margin-bottom: 0;
+  }
+
+  #mc_embed_signup_scroll {
+    padding: 0;
+  }
+
+  .mailchimp-magazine-block {
+    #mc_embed_signup_scroll {
+      box-shadow: none;
+      -webkit-box-shadow: none;
+      padding: 65px 0;
+
+      @include breakpoint-max(small) {
+        padding: 40px 0;
+      }
+    }
+  }
+
+  form {
+    &#mc-embedded-subscribe-form {
+      margin-bottom: 0;
+    }
   }
 
   #main {
