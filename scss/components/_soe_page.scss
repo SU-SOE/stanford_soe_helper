@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+//
+// STANFORD PAGE
+// FOR NODE DISPLAY AND VIEWS
+//
+
+// NODE DISPLAY
+
+.node-type-stanford-page {
+  @include breakpoint-max(small) {
+    #block-ds-extras-stanford-page-title {
+      margin-bottom: 0;
+    }
+  }
+
+  #block-views-stanford-page-top-banner-block {
+    //.views-row {
+    //  @include breakpoint-max(small) {
+    //    margin-bottom: 0;
+    //  }
+    //}
+   .banner-overlay {
+      position: relative;
+      width: 1170px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+
+    .banner-overlay > div {
+      background: $white;
+      @include box-shadow;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      //background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
+      bottom: 68px;
+      //color: white;
+      padding: 30px 40px;
+      position: absolute;
+      top: auto;
+      width: 32%;
+    }
+
+    .page-feat-caption-container {
+      background: $white;
+      //padding: 40px;
+      color: $primary-color;
+
+
+
+
+      //  font-size: em(18px);
+      //  font-weight: 100;
+      //  line-height: 1.3em;
+      //  color: $gray-orange;
+      //  text-align: center;
+      //  margin: 1em auto;
+      //  width: 50%;
+      //  @include breakpoint-max(medium) {
+      //    width: 70%;
+      //  }
+      //  @include breakpoint-max(small) {
+      //    margin-top: 0;
+      //    margin-bottom: 0;
+      //  }
+      //  @include breakpoint-max(x-small) {
+      //    width: 90%;
+      //  }
+      //
+      //  p {
+      //    margin: 0;
+      //  }
+      //
+      //  a {
+      //    text-decoration: underline;
+      //  }
+      //}
+    }
+  }
+}
