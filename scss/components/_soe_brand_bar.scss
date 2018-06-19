@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 //
-// BRAND BAR AND HEADER
+// HEADER
 //
 
 #global-header {
@@ -86,7 +86,7 @@
         font-size: 18px;
         margin-bottom: -3px;
       }
-      @media (max-width: 380px) {
+      @include breakpoint-max(xxx-small) {
         font-size: 16px;
         margin-bottom: -4px;
       }
