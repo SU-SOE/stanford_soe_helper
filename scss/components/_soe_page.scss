@@ -32,8 +32,6 @@
       bottom: 48px;
       @include box-sizing;
       @include box-shadow;
-      //background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
-      //color: white;
       padding: 22px 30px;
       position: absolute;
       top: auto;
@@ -42,44 +40,27 @@
 
     .page-feat-caption-container {
       background: $white;
-      //padding: 40px;
       color: $primary-color;
 
-
-    p {
+      p {
         font-size: em(18px);
         line-height: 1.4em;
       }
-    h2 {
+      h2 {
         font-size: em(26px);
         letter-spacing: 0;
       }
 
-      //  font-weight: 100;
-      //  line-height: 1.3em;
-      //  color: $gray-orange;
-      //  text-align: center;
-      //  margin: 1em auto;
-      //  width: 50%;
-      //  @include breakpoint-max(medium) {
-      //    width: 70%;
-      //  }
-      //  @include breakpoint-max(small) {
-      //    margin-top: 0;
-      //    margin-bottom: 0;
-      //  }
-      //  @include breakpoint-max(x-small) {
-      //    width: 90%;
-      //  }
-      //
-      //  p {
-      //    margin: 0;
-      //  }
-      //
-      //  a {
-      //    text-decoration: underline;
-      //  }
-      //}
+      @include breakpoint-max(medium) {
+        width: 70%;
+      }
+      @include breakpoint-max(small) {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      @include breakpoint-max(x-small) {
+        width: 90%;
+      }
     }
   }
 }
