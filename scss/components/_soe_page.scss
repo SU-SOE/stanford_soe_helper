@@ -24,21 +24,20 @@
       position: relative;
       margin-left: auto;
       margin-right: auto;
-      width: 1170px;
+      width: 1400px;
     }
-
 
     .banner-overlay > div {
       background: $white;
-      bottom: 68px;
+      bottom: 48px;
       @include box-sizing;
       @include box-shadow;
       //background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
       //color: white;
-      padding: 30px 40px;
+      padding: 22px 30px;
       position: absolute;
       top: auto;
-      width: 32%;
+      width: 50%;
     }
 
     .page-feat-caption-container {
@@ -47,9 +46,15 @@
       color: $primary-color;
 
 
+    p {
+        font-size: em(18px);
+        line-height: 1.4em;
+      }
+    h2 {
+        font-size: em(26px);
+        letter-spacing: 0;
+      }
 
-
-      //  font-size: em(18px);
       //  font-weight: 100;
       //  line-height: 1.3em;
       //  color: $gray-orange;
