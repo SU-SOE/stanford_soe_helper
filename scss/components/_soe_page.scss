@@ -22,20 +22,18 @@
     //}
    .banner-overlay {
       position: relative;
-      width: 1170px;
       margin-left: auto;
       margin-right: auto;
+      width: 1170px;
     }
 
 
     .banner-overlay > div {
       background: $white;
-      @include box-shadow;
-      -moz-box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-      //background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
       bottom: 68px;
+      @include box-sizing;
+      @include box-shadow;
+      //background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
       //color: white;
       padding: 30px 40px;
       position: absolute;
