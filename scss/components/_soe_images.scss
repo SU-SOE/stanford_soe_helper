@@ -40,24 +40,9 @@
 
 #block-views-stanford-page-top-banner-block {
   .page-feat-image-container {
-    position: relative;
     background: #333333;
-
     img {
-      object-fit: cover;
-      object-position: center center;
       width: 100%;
-      height: calc(100vh - 157px);
-      @include breakpoint-max(large) {
-        height: calc(100vh - 203px);
-      }
-      @include breakpoint-max(medium) {
-        height: auto;
-      }
-      
-      .logged-in & {
-        height: calc(100vh - 235px);
-      }
     }
   }
 

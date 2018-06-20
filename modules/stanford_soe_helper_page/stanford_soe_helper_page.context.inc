@@ -25,6 +25,11 @@ function stanford_soe_helper_page_context_default_contexts() {
         'node_form' => '0',
       ),
     ),
+    'path' => array(
+      'values' => array(
+        '~<front>' => '~<front>',
+      ),
+    ),
   );
   $context->reactions = array(
     'block' => array(
@@ -33,7 +38,7 @@ function stanford_soe_helper_page_context_default_contexts() {
           'module' => 'views',
           'delta' => 'stanford_page_top_banner-block',
           'region' => 'fullwidth_top',
-          'weight' => '-9',
+          'weight' => '-7',
         ),
         'ds_extras-stanford_page_title' => array(
           'module' => 'ds_extras',
@@ -50,7 +55,7 @@ function stanford_soe_helper_page_context_default_contexts() {
       ),
     ),
   );
-  $context->condition_mode = 0;
+  $context->condition_mode = 1;
 
   // Translatables
   // Included for use with string extractors like potx.
