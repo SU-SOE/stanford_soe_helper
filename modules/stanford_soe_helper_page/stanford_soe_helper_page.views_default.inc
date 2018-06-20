@@ -249,7 +249,6 @@ function stanford_soe_helper_page_views_default_views() {
   $handler->display->display_options['fields']['field_s_image_caption']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_s_image_caption']['alter']['trim_whitespace'] = TRUE;
   $handler->display->display_options['fields']['field_s_image_caption']['alter']['max_length'] = '350';
-  $handler->display->display_options['fields']['field_s_image_caption']['alter']['strip_tags'] = TRUE;
   $handler->display->display_options['fields']['field_s_image_caption']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['field_s_image_caption']['alter']['preserve_tags'] = '<em> <strong> <a> <h2> <btn> <p>';
   $handler->display->display_options['fields']['field_s_image_caption']['alter']['html'] = TRUE;
