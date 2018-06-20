@@ -126,8 +126,8 @@ function stanford_soe_helper_page_field_default_field_bases() {
     'module' => 'list',
     'settings' => array(
       'allowed_values' => array(
-        'left' => 'Left',
-        'right' => 'RIght',
+        'left' => 'left',
+        'right' => 'right',
       ),
       'allowed_values_function' => '',
     ),
@@ -151,8 +151,8 @@ function stanford_soe_helper_page_field_default_field_bases() {
     'module' => 'list',
     'settings' => array(
       'allowed_values' => array(
-        'top' => 'Top',
-        'bottom' => 'Bottom',
+        'top' => 'top',
+        'bottom' => 'bottom',
       ),
       'allowed_values_function' => '',
     ),
