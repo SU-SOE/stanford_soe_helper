@@ -31,6 +31,7 @@
           width: 55%;
         }
       }
+
       &.top-banner-turquoise a {
         text-decoration-color: $orange;
       }
@@ -69,9 +70,21 @@
         font-size: em(26px);
         letter-spacing: 0;
       }
+
       a {
-        text-decoration-line: underline;
         color: $primary-color;
+        text-decoration: underline;
+      }
+      a:hover {
+        text-decoration-color: $primary-color;
+      }
+      a.btn  {
+        text-decoration: none;
+      }
+      .btn a:hover,
+      a.btn:hover {
+        background-color: $primary-color;
+        color: $white;
       }
 
       @include breakpoint-max(medium) {
