@@ -630,5 +630,51 @@
   }
 }
 
+.main {
+  &.spotlight {
+    #content-head {
+      margin-bottom: 0;
+    }
 
+    #content-body {
+      #views-exposed-form-stanford-ppl-spot-3-v-card-page-1 {
+        .views-exposed-form {
+          #edit-field-s-ppl-spot-affiliation-tid-wrapper {
+            padding-right: 20px;
+          }
+          
+          .views-exposed-widget {
+            padding-right: 0;
 
+            @include breakpoint-max(large) {
+              padding-right: 1em;
+            }
+
+            @include breakpoint-max(medium) {
+              padding-right: 0.8em;
+            }
+
+            @include breakpoint-max(small) {
+              padding-right: 0.7em;
+            }
+
+            @include breakpoint-max(smaller) {
+              padding-right: 0.5em;
+            }
+          }
+        }
+      }
+
+      .view-stanford-ppl-spot-3-v-card {
+        .views-row-first {
+          padding-top: 0;
+
+          .spotlight-all-content-container {
+            margin-bottom: 60px;
+            padding-top: 0;
+          }
+        }
+      }
+    }
+  }
+}
