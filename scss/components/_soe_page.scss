@@ -20,22 +20,28 @@
     //    margin-bottom: 0;
     //  }
     //}
-   .banner-overlay {
+    .banner-overlay {
       position: relative;
       margin-left: auto;
       margin-right: auto;
       width: 1400px;
-    }
+      &.top-banner-right {
+        > div {
+          right: 0;
+          width: 55%;
+        }
+      }
 
-    .banner-overlay > div {
-      background: $white;
-      bottom: 48px;
-      @include box-sizing;
-      @include box-shadow;
-      padding: 22px 30px;
-      position: absolute;
-      top: auto;
-      width: 50%;
+      > div {
+        background: $white;
+        bottom: 48px;
+        @include box-sizing;
+        @include box-shadow;
+        padding: 22px 30px;
+        position: absolute;
+        top: auto;
+        width: 50%;
+      }
     }
 
     .page-feat-caption-container {
