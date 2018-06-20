@@ -248,7 +248,7 @@ function stanford_soe_helper_page_views_default_views() {
   $handler->display->display_options['fields']['field_s_image_caption']['label'] = '';
   $handler->display->display_options['fields']['field_s_image_caption']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_s_image_caption']['alter']['trim_whitespace'] = TRUE;
-  $handler->display->display_options['fields']['field_s_image_caption']['alter']['max_length'] = '350';
+  $handler->display->display_options['fields']['field_s_image_caption']['alter']['max_length'] = '500';
   $handler->display->display_options['fields']['field_s_image_caption']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['field_s_image_caption']['alter']['preserve_tags'] = '<em> <strong> <a> <h2> <btn> <p>';
   $handler->display->display_options['fields']['field_s_image_caption']['alter']['html'] = TRUE;
@@ -269,6 +269,7 @@ function stanford_soe_helper_page_views_default_views() {
   $handler->display->display_options['fields']['field_s_image_caption_1']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_s_image_caption_1']['alter']['text'] = '<div class="banner-overlay top-banner-[field_s_top_banner_color]  top-banner-[field_s_top_banner_caption_horiz] top-banner-[field_s_top_banner_caption_vert]">
     <div>
+     <div class="top-banner-[field_s_top_banner_color]"></div>
       <div class="page-feat-caption-container">[field_s_image_caption]</div>
   </div>
 </div>';
