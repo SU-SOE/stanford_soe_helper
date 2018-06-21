@@ -22,7 +22,6 @@ function stanford_soe_helper_help($path, $arg) {
  * Implements template_preprocess_page().
  */
 function stanford_soe_helper_preprocess_page(&$variables) {
-
   $file_path = drupal_get_path('module', 'stanford_soe_helper')
     . "/css/soe_helper.css";
 
