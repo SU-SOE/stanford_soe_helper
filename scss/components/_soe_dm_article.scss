@@ -454,50 +454,7 @@
           color: $primary-color;
         }
       }
-
-      .view-display-id-article_collection_bottom_block {
-        background-color: $light-gray;
-        padding: 0 80px 20px;
-
-        .view-header {
-          margin-bottom: 80px;
-
-          .views-field-field-s-collection-cont-label {
-            color: $gray-orange;
-            font-family: "Source Sans Pro", sans-serif;
-            font-size: 16px;
-            font-style: italic;
-            font-weight: 300;
-            line-height: 1.3em;
-            margin-bottom: 30px;
-            padding-top: 40px;
-            text-align: center;
-          }
-
-          .views-field-title {
-            color: $black;
-            font-family: "Roboto Slab", serif;
-            font-size: 20px;
-            font-weight: 600;
-            letter-spacing: 0;
-            text-align: center;
-
-            @include breakpoint-max(small) {
-              line-height: 1em;
-            }
-          }
-
-          .views-field-field-s-collection-subtitle {
-            color: $gray-orange;
-            font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-            font-weight: 400;
-            letter-spacing: 0;
-            font-size: 16px;
-            padding: 0 20px;
-            text-align: center;
-          }
-        }
-      }
+      
     }
 
     .mag-article-img {
