@@ -438,6 +438,8 @@
         &[class*="mag-article-color-"] a {
           color: $primary-color;
           text-decoration: underline;
+          font-weight: 600;
+
           @include td-skip;
 
           &:focus,
@@ -517,6 +519,16 @@
 .view-stanford-magazine-article-mag-landing-page,
 .view-stanford-magazine-collection-mag-landing-page,
 .view-display-id-article_collection_bottom_block {
+  .mag-article-container {
+    .mag-article-content-container {
+      .mag-article-title {
+        a {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
   &.views-grid-three .views-row {
     margin-bottom: 0;
   }
