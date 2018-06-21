@@ -1,0 +1,455 @@
+@charset "UTF-8";
+
+//
+// DIGITAL MAGAZINE COLLECTIONS
+// LANDING PAGE
+//
+
+// COLLECTIONS LANDING PAGE (LIST PAGE)
+
+.view-stanford-magazine-collection-list {
+
+  .views-row {
+    margin-bottom: 80px;
+    @include breakpoint-max(x-small) {
+      margin-bottom: 20px;
+    }
+    &:nth-child(3n+1) {
+      a {
+        -webkit-text-decoration-color: $orange;
+        text-decoration-color: $orange;
+        &:focus,
+        &:hover {
+          @include td-color($primary-color);
+        }
+      }
+      .collection-img {
+        background-color: $orange;
+      }
+    }
+    &:nth-child(3n+2) {
+      a {
+        -webkit-text-decoration-color: $pink;
+        text-decoration-color: $pink;
+        &:focus,
+        &:hover {
+          @include td-color($primary-color);
+        }
+      }
+      .collection-img {
+        background-color: $pink;
+      }
+    }
+    &:nth-child(3n) {
+      a {
+        -webkit-text-decoration-color: $turquoise;
+        text-decoration-color: $turquoise;
+        &:focus,
+        &:hover {
+          @include td-color($primary-color);
+        }
+      }
+      .collection-img {
+        background-color: $turquoise;
+      }
+    }
+  }
+
+  .collection-date {
+    color: $gray-orange;
+    font-size: em(0.9em);
+    font-weight: 100;
+  }
+  .collection-content-container {
+    position: relative;
+    background: $white;
+    padding: 15px 30px 30px;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .collection-title {
+    font-size: em(1.3em);
+    line-height: 1.3em;
+    font-weight: 600;
+    a {
+      color: $primary-color;
+      text-decoration: underline;
+      text-decoration-skip: ink;
+      &:focus,
+      &:hover {
+        @include td-color($primary-color);
+      }
+    }
+  }
+  .collection-img {
+    height: 130px;
+  }
+
+  &.most-recent-collection {
+    .collection-container {
+      display: flex;
+      margin: 40px 0 80px;
+      @include breakpoint-max(x-small) {
+         margin-bottom: 0;
+      }
+
+      .collection-title {
+        a {
+          -webkit-text-decoration-color: $turquoise;
+          text-decoration-color: $turquoise;
+          &:focus,
+          &:hover {
+            @include td-color($primary-color);
+          }
+        }
+      }
+      .collection-img {
+        width: 45%;
+        height: 260px;
+        background-color: $turquoise;
+      }
+      .collection-content-container {
+        width: 55%;
+        height: auto;
+      }
+    }
+  }
+}
+
+.node-type-stanford-collection {
+  #content-body-bottom {
+    margin-top: 60px;
+  }
+
+  #mc_embed_signup_scroll {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .main {
+    padding: 0;
+  }
+}
+
+//
+// A DIGITAL MAGAZINE ARTICLE COLLECTION BLOCKS
+//
+
+// A ARTICLE COLLECTION BLOCK
+
+.node-type-stanford-magazine-article {
+  .main {
+    padding: 80px 0 0;
+  }
+
+  .view-display-id-article_collection {
+    padding-bottom: 40px;
+    padding-top: 40px;
+    background-color: #e4e4e4;
+
+    .views-row {
+      margin-bottom: 0;
+    }
+
+    .views-field-field-s-collectlon-intro-label {
+      color: $gray-orange;
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 16px;
+      font-style: italic;
+      font-weight: 400;
+      line-height: 1.3em;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .mag-collection-title {
+      color: $black;
+      font-family: "Roboto Slab", serif;
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: 0;
+      text-align: center;
+
+      @include breakpoint-max(small) {
+        line-height: 1em;
+      }
+
+      &[class*="mag-collection-color-"] a {
+        color: $primary-color;
+        text-decoration: underline;
+        @include td-skip;
+
+        &:focus,
+        &:hover {
+          @include td-color($primary-color);
+        }
+      }
+
+      &.mag-collection-color-orange a {
+        @include td-color($orange);
+      }
+
+      &.mag-collection-color-turquoise a {
+        @include td-color($turquoise);
+      }
+
+      &.mag-collection-color-pink a {
+        @include td-color($pink);
+      }
+    }
+
+    .views-field-field-s-collection-subtitle {
+      color: $gray-orange;
+      font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-weight: 600;
+      letter-spacing: 0;
+      line-height: 1.2em;
+      font-size: 20px;
+      padding: 0 20px;
+      text-align: center;
+    }
+  }
+
+  .view-stanford-magazine-article-collection {
+    .views-field-field-s-collection-cont-label {
+      @include breakpoint-max(smaller) {
+        font-size: 14px;
+      }
+    }
+
+    .views-field-title {
+      @include breakpoint-max(smaller) {
+        font-size: 18px;
+      }
+    }
+
+    .views-field-field-s-collection-subtitle {
+      @include breakpoint-max(smaller) {
+        font-size: 16px;
+      }
+    }
+
+    &.view-display-id-article_collection_bottom_block {
+      background-color: $light-gray;
+      padding: 0 15% 80px;
+
+      .view-header {
+        margin-bottom: 80px;
+
+        @include breakpoint-max(smaller) {
+          margin-bottom: 40px;
+        }
+
+        .views-field-field-s-collection-cont-label {
+          color: $gray-orange;
+          font-family: "Source Sans Pro", sans-serif;
+          font-size: 16px;
+          font-style: italic;
+          font-weight: 400;
+          line-height: 1.3em;
+          margin-bottom: 30px;
+          padding-top: 40px;
+          text-align: center;
+
+          @include breakpoint-max(smaller) {
+            font-size: 14px;
+          }
+        }
+
+        .views-field-title {
+          color: $primary-color;
+          font-family: "Roboto Slab", serif;
+          font-size: 32px;
+          font-weight: 600;
+          letter-spacing: 0;
+          line-height: 1.3em;
+          margin-bottom: 4px;
+          text-align: center;
+
+          @include breakpoint-max(smaller) {
+            font-size: 18px;
+            line-height: 1em;
+          }
+        }
+
+        .views-field-field-s-collection-subtitle {
+          color: $gray-orange;
+          font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+          font-weight: 600;
+          letter-spacing: 0;
+          line-height: 1.2em;
+          font-size: 20px;
+          padding: 0 20px;
+          text-align: center;
+
+          @include breakpoint-max(smaller) {
+            font-size: 16px;
+          }
+        }
+      }
+
+      .view-footer {
+        text-align: center;
+
+        a {
+          background: $brand-bright;
+          border-radius: 0;
+          color: #fbfbf9;
+          text-decoration: none;
+          -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+          -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+          margin: 0 0 26px;
+          padding: 0.7em 1.4em 0.9em;
+          line-height: 1.4em;
+          letter-spacing: 0.03em;
+          margin: 0 0 80px;
+
+          &:hover {
+            background: $primary-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+//
+// A DIGITAL MAGAZINE COLLECTION PAGE
+//
+
+// A COLLECTION PAGE NODE DISPLAY
+
+.node-type-stanford-collection {
+  #content-head {
+    display: block;
+    margin-bottom: 0;
+  }
+
+  #main {
+    padding-bottom: 80px;
+    padding-top: 80px;
+    background-color: $light-gray;
+    @include breakpoint-max(small) {
+        padding: 40px 0;
+      }
+
+      .mc-content {
+      margin: 0;
+      .title {
+        margin: 0 0 10px;
+        text-align: center;
+        line-height: 1.2em;
+
+        @include breakpoint-max(small) {
+          line-height: 1em;
+        }
+      }
+
+      .field-name-field-s-collection-subtitle {
+        color: $gray-orange;
+        font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: 600;
+        letter-spacing: 0;
+        font-size: em(1.3em);
+        line-height: 1.2em;
+        margin: 0 auto;
+        text-align: center;
+        width: 70%;
+        @include breakpoint-max(small) {
+          font-size: em(1.2em);
+          width: 85%;
+          margin: 0 auto;
+        }
+        @include breakpoint-max(x-small) {
+          font-size: em(1em);
+          width: 100%;
+          margin: 0 auto;
+        }
+      }
+
+      .field-name-field-s-collection-lead-text {
+        color: $gray-orange;
+        font-family: "Source Sans Pro", sans-serif;
+        font-size: em(1.2em);
+        font-weight: 300;
+        line-height: 1.4em;
+        text-align: center;
+        width: 70%;
+        margin: 30px auto 0;
+        @include breakpoint-max(small) {
+          font-size: em(1em);
+          width: 85%;
+          margin: 20px auto 0;
+        }
+        @include breakpoint-max(x-small) {
+          font-size: .9em;
+          width: 100%;
+          margin: 10px auto 0;
+        }
+      }
+    }
+  }
+
+  .view-display-id-collection_group_block_1 {
+    .views-row {
+      margin: 80px 0;
+
+      @include breakpoint-max(smaller) {
+        margin: 40px 0;
+      }
+    }
+
+    .mag-article-img {
+      width: 45%;
+      float: left;
+
+      @include breakpoint-max(large) {
+        width: 41%;
+      }
+
+      @include breakpoint-max(medium) {
+        width: 100%;
+      }
+    }
+
+    .mag-article-container {
+      background: $white;
+      float: left;
+      position: relative;
+      width: 100%;
+      -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+      -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+
+      .mag-article-content-container {
+        float: left;
+        width: 49%;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+
+        @include breakpoint-max(large) {
+          min-height: auto;
+          width: 52%;
+
+          .mag-article-topics {
+            margin: 20px 0 0 !important;
+          }
+        }
+
+        @include breakpoint-max(medium) {
+          width: auto;
+        }
+      }
+    }
+
+    .edit-link {
+      float: left;
+      margin-bottom: 20px;
+      width: 100%;
+    }
+  }
+}
