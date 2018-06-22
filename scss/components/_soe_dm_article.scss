@@ -793,10 +793,6 @@
         font-size: em(26px);
         line-height: 1.3em;
 
-        a {
-          font-weight: 600;
-        }
-        
         &[class*="mag-article-color-"] a {
           color: $primary-color;
           text-decoration: underline;
@@ -851,6 +847,18 @@
 
         a {
           color: $primary-color;
+        }
+      }
+    }
+  }
+}
+
+.view-display-id-article_collection_bottom_block {
+  .mag-article-container {
+    .mag-article-content-container {
+      .mag-article-title {
+        a {
+          font-weight: 600;
         }
       }
     }
