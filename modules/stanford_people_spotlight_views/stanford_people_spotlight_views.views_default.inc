@@ -2227,7 +2227,6 @@ function stanford_people_spotlight_views_views_default_views() {
   $handler->display->display_options['filters']['field_s_ppl_spot_affiliation_tid']['field'] = 'field_s_ppl_spot_affiliation_tid';
   $handler->display->display_options['filters']['field_s_ppl_spot_affiliation_tid']['value'] = array(
     86 => '86',
-    3779 => '3779',
     88 => '88',
     90 => '90',
     3767 => '3767',
@@ -2299,6 +2298,75 @@ function stanford_people_spotlight_views_views_default_views() {
   $handler->display->display_options['defaults']['header'] = FALSE;
   $handler->display->display_options['defaults']['footer'] = FALSE;
   $handler->display->display_options['defaults']['empty'] = FALSE;
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'stanford_people_spotlight' => 'stanford_people_spotlight',
+  );
+  $handler->display->display_options['filters']['type']['group'] = 1;
+  /* Filter criterion: Content: Affiliation (field_s_ppl_spot_affiliation) */
+  $handler->display->display_options['filters']['field_s_ppl_spot_affiliation_tid']['id'] = 'field_s_ppl_spot_affiliation_tid';
+  $handler->display->display_options['filters']['field_s_ppl_spot_affiliation_tid']['table'] = 'field_data_field_s_ppl_spot_affiliation';
+  $handler->display->display_options['filters']['field_s_ppl_spot_affiliation_tid']['field'] = 'field_s_ppl_spot_affiliation_tid';
+  $handler->display->display_options['filters']['field_s_ppl_spot_affiliation_tid']['value'] = array(
+    86 => '86',
+    88 => '88',
+    90 => '90',
+    3767 => '3767',
+  );
+  $handler->display->display_options['filters']['field_s_ppl_spot_affiliation_tid']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_s_ppl_spot_affiliation_tid']['expose']['operator_id'] = 'field_s_ppl_spot_affiliation_tid_op';
+  $handler->display->display_options['filters']['field_s_ppl_spot_affiliation_tid']['expose']['operator'] = 'field_s_ppl_spot_affiliation_tid_op';
+  $handler->display->display_options['filters']['field_s_ppl_spot_affiliation_tid']['expose']['identifier'] = 'field_s_ppl_spot_affiliation_tid';
+  $handler->display->display_options['filters']['field_s_ppl_spot_affiliation_tid']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    12 => 0,
+    10 => 0,
+    8 => 0,
+    6 => 0,
+    20 => 0,
+    14 => 0,
+    16 => 0,
+    18 => 0,
+  );
+  $handler->display->display_options['filters']['field_s_ppl_spot_affiliation_tid']['expose']['reduce'] = TRUE;
+  $handler->display->display_options['filters']['field_s_ppl_spot_affiliation_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['field_s_ppl_spot_affiliation_tid']['vocabulary'] = 'stanford_affiliation';
+  /* Filter criterion: Content: Department (field_s_ppl_spot_department) */
+  $handler->display->display_options['filters']['field_s_ppl_spot_department_tid']['id'] = 'field_s_ppl_spot_department_tid';
+  $handler->display->display_options['filters']['field_s_ppl_spot_department_tid']['table'] = 'field_data_field_s_ppl_spot_department';
+  $handler->display->display_options['filters']['field_s_ppl_spot_department_tid']['field'] = 'field_s_ppl_spot_department_tid';
+  $handler->display->display_options['filters']['field_s_ppl_spot_department_tid']['group'] = 1;
+  $handler->display->display_options['filters']['field_s_ppl_spot_department_tid']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_s_ppl_spot_department_tid']['expose']['operator_id'] = 'field_s_ppl_spot_department_tid_op';
+  $handler->display->display_options['filters']['field_s_ppl_spot_department_tid']['expose']['operator'] = 'field_s_ppl_spot_department_tid_op';
+  $handler->display->display_options['filters']['field_s_ppl_spot_department_tid']['expose']['identifier'] = 'field_s_ppl_spot_department_tid';
+  $handler->display->display_options['filters']['field_s_ppl_spot_department_tid']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    12 => 0,
+    10 => 0,
+    8 => 0,
+    6 => 0,
+    20 => 0,
+    14 => 0,
+    16 => 0,
+    18 => 0,
+  );
+  $handler->display->display_options['filters']['field_s_ppl_spot_department_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['field_s_ppl_spot_department_tid']['vocabulary'] = 'stanford_department';
   $handler->display->display_options['path'] = 'spotlight';
 
   /* Display: Block Any */
@@ -2327,7 +2395,6 @@ function stanford_people_spotlight_views_views_default_views() {
   $handler->display->display_options['filters']['field_s_ppl_spot_affiliation_tid']['field'] = 'field_s_ppl_spot_affiliation_tid';
   $handler->display->display_options['filters']['field_s_ppl_spot_affiliation_tid']['value'] = array(
     86 => '86',
-    3779 => '3779',
     88 => '88',
     90 => '90',
     3767 => '3767',
@@ -2433,6 +2500,7 @@ function stanford_people_spotlight_views_views_default_views() {
 
   /* Display: Block giving  */
   $handler = $view->new_display('block', 'Block giving ', 'block_giving');
+  $handler->display->display_options['enabled'] = FALSE;
   $handler->display->display_options['defaults']['arguments'] = FALSE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
@@ -2638,6 +2706,75 @@ function stanford_people_spotlight_views_views_default_views() {
 
 ';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'stanford_people_spotlight' => 'stanford_people_spotlight',
+  );
+  $handler->display->display_options['filters']['type']['group'] = 1;
+  /* Filter criterion: Content: Affiliation (field_s_ppl_spot_affiliation) */
+  $handler->display->display_options['filters']['field_s_ppl_spot_affiliation_tid']['id'] = 'field_s_ppl_spot_affiliation_tid';
+  $handler->display->display_options['filters']['field_s_ppl_spot_affiliation_tid']['table'] = 'field_data_field_s_ppl_spot_affiliation';
+  $handler->display->display_options['filters']['field_s_ppl_spot_affiliation_tid']['field'] = 'field_s_ppl_spot_affiliation_tid';
+  $handler->display->display_options['filters']['field_s_ppl_spot_affiliation_tid']['value'] = array(
+    86 => '86',
+    88 => '88',
+    90 => '90',
+    3767 => '3767',
+  );
+  $handler->display->display_options['filters']['field_s_ppl_spot_affiliation_tid']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_s_ppl_spot_affiliation_tid']['expose']['operator_id'] = 'field_s_ppl_spot_affiliation_tid_op';
+  $handler->display->display_options['filters']['field_s_ppl_spot_affiliation_tid']['expose']['operator'] = 'field_s_ppl_spot_affiliation_tid_op';
+  $handler->display->display_options['filters']['field_s_ppl_spot_affiliation_tid']['expose']['identifier'] = 'field_s_ppl_spot_affiliation_tid';
+  $handler->display->display_options['filters']['field_s_ppl_spot_affiliation_tid']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    12 => 0,
+    10 => 0,
+    8 => 0,
+    6 => 0,
+    20 => 0,
+    14 => 0,
+    16 => 0,
+    18 => 0,
+  );
+  $handler->display->display_options['filters']['field_s_ppl_spot_affiliation_tid']['expose']['reduce'] = TRUE;
+  $handler->display->display_options['filters']['field_s_ppl_spot_affiliation_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['field_s_ppl_spot_affiliation_tid']['vocabulary'] = 'stanford_affiliation';
+  /* Filter criterion: Content: Department (field_s_ppl_spot_department) */
+  $handler->display->display_options['filters']['field_s_ppl_spot_department_tid']['id'] = 'field_s_ppl_spot_department_tid';
+  $handler->display->display_options['filters']['field_s_ppl_spot_department_tid']['table'] = 'field_data_field_s_ppl_spot_department';
+  $handler->display->display_options['filters']['field_s_ppl_spot_department_tid']['field'] = 'field_s_ppl_spot_department_tid';
+  $handler->display->display_options['filters']['field_s_ppl_spot_department_tid']['group'] = 1;
+  $handler->display->display_options['filters']['field_s_ppl_spot_department_tid']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_s_ppl_spot_department_tid']['expose']['operator_id'] = 'field_s_ppl_spot_department_tid_op';
+  $handler->display->display_options['filters']['field_s_ppl_spot_department_tid']['expose']['operator'] = 'field_s_ppl_spot_department_tid_op';
+  $handler->display->display_options['filters']['field_s_ppl_spot_department_tid']['expose']['identifier'] = 'field_s_ppl_spot_department_tid';
+  $handler->display->display_options['filters']['field_s_ppl_spot_department_tid']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    12 => 0,
+    10 => 0,
+    8 => 0,
+    6 => 0,
+    20 => 0,
+    14 => 0,
+    16 => 0,
+    18 => 0,
+  );
+  $handler->display->display_options['filters']['field_s_ppl_spot_department_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['field_s_ppl_spot_department_tid']['vocabulary'] = 'stanford_department';
   $handler->display->display_options['displays'] = array(
     'page_1' => 'page_1',
     'default' => 0,
