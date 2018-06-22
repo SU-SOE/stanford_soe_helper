@@ -31,7 +31,7 @@ function stanford_soe_helper_page_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 19,
+        'weight' => 20,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -54,7 +54,7 @@ function stanford_soe_helper_page_field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 41,
+      'weight' => 13,
     ),
   );
 
@@ -81,7 +81,7 @@ function stanford_soe_helper_page_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 17,
+        'weight' => 18,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -129,7 +129,7 @@ function stanford_soe_helper_page_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 18,
+        'weight' => 19,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -175,7 +175,7 @@ function stanford_soe_helper_page_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 15,
+        'weight' => 17,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -328,7 +328,7 @@ function stanford_soe_helper_page_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 14,
+        'weight' => 16,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -373,6 +373,102 @@ function stanford_soe_helper_page_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance:
+  // 'node-stanford_page-field_s_top_banner_caption_horiz'.
+  $field_instances['node-stanford_page-field_s_top_banner_caption_horiz'] = array(
+    'bundle' => 'stanford_page',
+    'default_value' => array(
+      0 => array(
+        'value' => 'left',
+      ),
+    ),
+    'deleted' => 0,
+    'description' => 'This field is used for the horizontal placement of the caption on your top banner. This field is ignored for no-caption views displays.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 12,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_s_top_banner_caption_horiz',
+    'label' => 'Top Caption Position Horizontal',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 3,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'node-stanford_page-field_s_top_banner_caption_vert'.
+  $field_instances['node-stanford_page-field_s_top_banner_caption_vert'] = array(
+    'bundle' => 'stanford_page',
+    'default_value' => array(
+      0 => array(
+        'value' => 'bottom',
+      ),
+    ),
+    'deleted' => 0,
+    'description' => 'This field defines vertical alignment for the caption overlay top banner. Vertical positioning is ignored for caption-block and no-caption views displays.|This field defines vertical alignment for the caption overlay top banner. Vertical positioning is ignored for caption-block and no-caption views displays.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 13,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_s_top_banner_caption_vert',
+    'label' => 'Top Caption Position Vertical',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 4,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Apache Solr Index');
@@ -381,9 +477,13 @@ function stanford_soe_helper_page_field_default_field_instances() {
   t('Caption Position Horizontal');
   t('Caption Position Vertical');
   t('This field defines vertical alignment for the caption overlay on your banner.');
+  t('This field defines vertical alignment for the caption overlay top banner. Vertical positioning is ignored for caption-block and no-caption views displays.|This field defines vertical alignment for the caption overlay top banner. Vertical positioning is ignored for caption-block and no-caption views displays.');
   t('This field is used for the horizontal placement of the caption on your slide. ');
+  t('This field is used for the horizontal placement of the caption on your top banner. This field is ignored for no-caption views displays.');
   t('This is a full-width banner that displays at the bottom of the page. The size of this image is 1600x500. For best image fidelity, upload a larger image (3200x1000).
 ');
+  t('Top Caption Position Horizontal');
+  t('Top Caption Position Vertical');
 
   return $field_instances;
 }

@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+@mixin box-sizing($property: border-box) {
+  -webkit-box-sizing: $property;
+  -moz-box-sizing: $property;
+  box-sizing: $property;
+}

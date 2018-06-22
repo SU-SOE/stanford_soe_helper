@@ -237,6 +237,11 @@ function _stanford_soe_helper_deprecate_image_credits(&$form, $form_id) {
   // Update caption title.
   // Not sure which fields to target, so target all the things!
   $caption_title = t("Caption and Credits");
+
+  // We want a different title if it's a Stanford Page node.
+  if ($form_id == "stanford_page_node_form") {
+    $caption_title = t("Banner Text");
+  }
   $form['field_s_image_info'][LANGUAGE_NONE]['0']['field_s_image_caption'][LANGUAGE_NONE]['#title'] =
     $caption_title;
   $form['field_s_image_info'][LANGUAGE_NONE]['0']['field_s_image_caption'][LANGUAGE_NONE]['0']['#title'] =

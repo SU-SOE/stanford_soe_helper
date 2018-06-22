@@ -4,51 +4,6 @@
 // PAGE LAYOUT
 //
 
-// STANFORD PAGE
-
-.node-type-stanford-page {
-  @include breakpoint-max(small) {
-    #block-ds-extras-stanford-page-title {
-      margin-bottom: 0;
-    }
-  }
-
-  #block-views-stanford-page-top-banner-block {
-    .views-row {
-      @include breakpoint-max(small) {
-        margin-bottom: 0;
-      }
-    }
-    .page-feat-caption-container {
-      font-size: em(18px);
-      font-weight: 100;
-      line-height: 1.3em;
-      color: $gray-orange;
-      text-align: center;
-      margin: 1em auto;
-      width: 50%;
-      @include breakpoint-max(medium) {
-        width: 70%;
-      }
-      @include breakpoint-max(small) {
-        margin-top: 0;
-        margin-bottom: 0;
-      }
-      @include breakpoint-max(x-small) {
-        width: 90%;
-      }
-
-      p {
-        margin: 0;
-      }
-
-      a {
-        text-decoration: underline;
-      }
-    }
-  }
-}
-
 // LANDING PAGE
 
 .node-type-stanford-landing-page {
