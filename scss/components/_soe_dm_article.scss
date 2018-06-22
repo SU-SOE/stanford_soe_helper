@@ -792,8 +792,11 @@
       .mag-article-title {
         font-size: em(26px);
         line-height: 1.3em;
-        font-weight: 600;
 
+        a {
+          font-weight: 600;
+        }
+        
         &[class*="mag-article-color-"] a {
           color: $primary-color;
           text-decoration: underline;
