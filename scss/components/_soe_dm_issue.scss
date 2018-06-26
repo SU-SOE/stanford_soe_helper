@@ -176,10 +176,7 @@
         color: $primary-color;
         text-decoration: underline;
         @include td-skip;
-
-        a {
-          font-weight: 600;
-        }
+        
         &:focus,
         &:hover {
           @include td-color($primary-color);
