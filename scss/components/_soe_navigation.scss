@@ -65,8 +65,8 @@
     @include breakpoint-max(xx-small) {
       margin-top: -47px;
     }
-    @media (max-width: 380px) {
-      margin-top: -47px;
+    @include breakpoint-max(xxx-small) {
+      margin-top: -45px;
     }
     @media (max-width: 320px) {
       float: left;
@@ -218,4 +218,3 @@
 .main .menu li {
   line-height: 1.2em;
 }
-
