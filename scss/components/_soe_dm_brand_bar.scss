@@ -33,6 +33,10 @@
       padding: 22px 0 0;
 
       @include breakpoint-max(large) {
+        padding: 10px 0 0;
+      }
+
+      @include breakpoint-max(small) {
         min-height: 29px;
         padding: 16px 0 0;
       }

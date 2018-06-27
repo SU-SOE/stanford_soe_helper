@@ -538,83 +538,87 @@ p.summary.drop-cap:first-letter {
   #global-header .container {
     padding: 13px 0;
     margin-bottom: 0; }
+    @media (max-width: 767px) {
+      /* line 20, ../scss/components/_soe_brand_bar.scss */
+      #global-header .container {
+        margin-bottom: 6px; } }
 
-/* line 28, ../scss/components/_soe_brand_bar.scss */
+/* line 32, ../scss/components/_soe_brand_bar.scss */
 #header #logo.logo-mobile img,
 #header #logo img {
   max-width: 160px; }
   @media (max-width: 480px) {
-    /* line 28, ../scss/components/_soe_brand_bar.scss */
+    /* line 32, ../scss/components/_soe_brand_bar.scss */
     #header #logo.logo-mobile img,
     #header #logo img {
       max-width: 130px; } }
   @media (max-width: 400px) {
-    /* line 28, ../scss/components/_soe_brand_bar.scss */
+    /* line 32, ../scss/components/_soe_brand_bar.scss */
     #header #logo.logo-mobile img,
     #header #logo img {
       max-width: 90px; } }
   @media (max-width: 380px) {
-    /* line 28, ../scss/components/_soe_brand_bar.scss */
+    /* line 32, ../scss/components/_soe_brand_bar.scss */
     #header #logo.logo-mobile img,
     #header #logo img {
       max-width: 80px; } }
-/* line 42, ../scss/components/_soe_brand_bar.scss */
+/* line 46, ../scss/components/_soe_brand_bar.scss */
 #header #logo.logo-mobile {
   padding: 0 5px 0 0; }
   @media (max-width: 480px) {
-    /* line 42, ../scss/components/_soe_brand_bar.scss */
+    /* line 46, ../scss/components/_soe_brand_bar.scss */
     #header #logo.logo-mobile {
       display: table-cell;
       padding: 0 10px 0 0;
       border-right: 1px solid !important; }
-      /* line 49, ../scss/components/_soe_brand_bar.scss */
+      /* line 53, ../scss/components/_soe_brand_bar.scss */
       #header #logo.logo-mobile a {
         background-size: 120px 26.66px; } }
   @media (max-width: 400px) {
-    /* line 42, ../scss/components/_soe_brand_bar.scss */
+    /* line 46, ../scss/components/_soe_brand_bar.scss */
     #header #logo.logo-mobile {
       padding: 0 5px 0 0; } }
-/* line 60, ../scss/components/_soe_brand_bar.scss */
+/* line 64, ../scss/components/_soe_brand_bar.scss */
 #header #name-and-slogan.with-logo {
   padding: 0 0 0 5px; }
   @media (max-width: 480px) {
-    /* line 60, ../scss/components/_soe_brand_bar.scss */
+    /* line 64, ../scss/components/_soe_brand_bar.scss */
     #header #name-and-slogan.with-logo {
       display: table-cell;
       padding: 0 0 0 10px; } }
   @media (max-width: 400px) {
-    /* line 60, ../scss/components/_soe_brand_bar.scss */
+    /* line 64, ../scss/components/_soe_brand_bar.scss */
     #header #name-and-slogan.with-logo {
       padding: 0 0 0 5px; } }
-/* line 71, ../scss/components/_soe_brand_bar.scss */
+/* line 75, ../scss/components/_soe_brand_bar.scss */
 #header.header {
   background: #FFFFFF;
   padding: 30px 0 0; }
   @media (max-width: 400px) {
-    /* line 71, ../scss/components/_soe_brand_bar.scss */
+    /* line 75, ../scss/components/_soe_brand_bar.scss */
     #header.header {
       min-height: 45px;
       padding: 20px 0 0; } }
-  /* line 79, ../scss/components/_soe_brand_bar.scss */
+  /* line 83, ../scss/components/_soe_brand_bar.scss */
   #header.header #site-title-first-line.site-title-uppercase {
     font-size: 34px; }
     @media (max-width: 480px) {
-      /* line 79, ../scss/components/_soe_brand_bar.scss */
+      /* line 83, ../scss/components/_soe_brand_bar.scss */
       #header.header #site-title-first-line.site-title-uppercase {
         font-size: 28px;
         margin-bottom: -5px; } }
     @media (max-width: 400px) {
-      /* line 79, ../scss/components/_soe_brand_bar.scss */
+      /* line 83, ../scss/components/_soe_brand_bar.scss */
       #header.header #site-title-first-line.site-title-uppercase {
         font-size: 18px;
         margin-bottom: -3px; } }
     @media (max-width: 380px) {
-      /* line 79, ../scss/components/_soe_brand_bar.scss */
+      /* line 83, ../scss/components/_soe_brand_bar.scss */
       #header.header #site-title-first-line.site-title-uppercase {
         font-size: 16px;
         margin-bottom: -4px; } }
 
-/* line 98, ../scss/components/_soe_brand_bar.scss */
+/* line 102, ../scss/components/_soe_brand_bar.scss */
 .dm-global-header #site-title-first-line.site-title-uppercase,
 .dm-global-header #site-title-first-line.site-title-uppercase a {
   font-size: 18px; }
@@ -2261,6 +2265,15 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
     .page-magazine #header.header,
     .page-magazine-all #header.header,
     .node-type-stanford-magazine-article #header.header {
+      padding: 10px 0 0; } }
+  @media (max-width: 767px) {
+    /* line 30, ../scss/components/_soe_dm_brand_bar.scss */
+    .node-type-stanford-collection #header.header,
+    .node-type-stanford-magazine-issue #header.header,
+    .page-taxonomy-term #header.header,
+    .page-magazine #header.header,
+    .page-magazine-all #header.header,
+    .node-type-stanford-magazine-article #header.header {
       min-height: 29px;
       padding: 16px 0 0; } }
   @media (max-width: 400px) {
@@ -2274,7 +2287,7 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
       min-height: 45px;
       padding: 20px 0 0; } }
   @media (max-width: 480px) {
-    /* line 45, ../scss/components/_soe_dm_brand_bar.scss */
+    /* line 49, ../scss/components/_soe_dm_brand_bar.scss */
     .node-type-stanford-collection #header.header #site-title-first-line.site-title-uppercase a,
     .node-type-stanford-magazine-issue #header.header #site-title-first-line.site-title-uppercase a,
     .page-taxonomy-term #header.header #site-title-first-line.site-title-uppercase a,
@@ -2284,7 +2297,7 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
       font-size: 28px;
       margin-bottom: -5px; } }
   @media (max-width: 400px) {
-    /* line 45, ../scss/components/_soe_dm_brand_bar.scss */
+    /* line 49, ../scss/components/_soe_dm_brand_bar.scss */
     .node-type-stanford-collection #header.header #site-title-first-line.site-title-uppercase a,
     .node-type-stanford-magazine-issue #header.header #site-title-first-line.site-title-uppercase a,
     .page-taxonomy-term #header.header #site-title-first-line.site-title-uppercase a,
@@ -2294,7 +2307,7 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
       font-size: 18px;
       margin-bottom: -3px; } }
   @media (max-width: 380px) {
-    /* line 45, ../scss/components/_soe_dm_brand_bar.scss */
+    /* line 49, ../scss/components/_soe_dm_brand_bar.scss */
     .node-type-stanford-collection #header.header #site-title-first-line.site-title-uppercase a,
     .node-type-stanford-magazine-issue #header.header #site-title-first-line.site-title-uppercase a,
     .page-taxonomy-term #header.header #site-title-first-line.site-title-uppercase a,
@@ -2303,7 +2316,7 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
     .node-type-stanford-magazine-article #header.header #site-title-first-line.site-title-uppercase a {
       font-size: 16px;
       margin-bottom: -4px; } }
-/* line 61, ../scss/components/_soe_dm_brand_bar.scss */
+/* line 65, ../scss/components/_soe_dm_brand_bar.scss */
 .node-type-stanford-collection #header #site-title-first-line.site-title-uppercase,
 .node-type-stanford-magazine-issue #header #site-title-first-line.site-title-uppercase,
 .page-taxonomy-term #header #site-title-first-line.site-title-uppercase,
@@ -2313,7 +2326,7 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
   font-size: 18px;
   margin-bottom: -3px; }
 @media (max-width: 480px) {
-  /* line 66, ../scss/components/_soe_dm_brand_bar.scss */
+  /* line 70, ../scss/components/_soe_dm_brand_bar.scss */
   .node-type-stanford-collection #header #name-and-slogan.with-logo,
   .node-type-stanford-magazine-issue #header #name-and-slogan.with-logo,
   .page-taxonomy-term #header #name-and-slogan.with-logo,
@@ -2729,7 +2742,7 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
   .page-magazine-all .navbar .btn.btn-navbar,
   .node-type-stanford-magazine-article .navbar .btn.btn-navbar {
     background: #B1040E;
-    margin-top: -47px;
+    margin-top: -29px;
     float: right; } }
 @media (max-width: 480px) {
   /* line 16, ../scss/components/_soe_dm_navigation.scss */
