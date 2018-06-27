@@ -12,6 +12,7 @@
     clip: rect(0 9999px 2px 0);
     clip-path: inset(0 0 55px 0);
     width: 100%;
+
     @include breakpoint-max(small) {
       clip-path: inset(0 0 60px 0);
     }
@@ -20,11 +21,8 @@
   .container {
     padding: 13px 0;
     margin-bottom: 0;
-
-    @include breakpoint-max(small) {
-      margin-bottom: 6px;
-    }
   }
+
 }
 
 #header {
@@ -102,5 +100,11 @@
   #site-title-first-line.site-title-uppercase,
   #site-title-first-line.site-title-uppercase a {
       font-size: 18px;
+  }
+
+  .container {
+    @include breakpoint-max(small) {
+      margin-bottom: 6px;
+    }
   }
 }

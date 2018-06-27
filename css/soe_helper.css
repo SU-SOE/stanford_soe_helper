@@ -534,94 +534,94 @@ p.summary.drop-cap:first-letter {
       /* line 10, ../scss/components/_soe_brand_bar.scss */
       .dm-global-header #global-header {
         clip-path: inset(0 0 60px 0); } }
-  /* line 20, ../scss/components/_soe_brand_bar.scss */
+  /* line 21, ../scss/components/_soe_brand_bar.scss */
   #global-header .container {
     padding: 13px 0;
     margin-bottom: 0; }
-    @media (max-width: 767px) {
-      /* line 20, ../scss/components/_soe_brand_bar.scss */
-      #global-header .container {
-        margin-bottom: 6px; } }
 
-/* line 32, ../scss/components/_soe_brand_bar.scss */
+/* line 30, ../scss/components/_soe_brand_bar.scss */
 #header #logo.logo-mobile img,
 #header #logo img {
   max-width: 160px; }
   @media (max-width: 480px) {
-    /* line 32, ../scss/components/_soe_brand_bar.scss */
+    /* line 30, ../scss/components/_soe_brand_bar.scss */
     #header #logo.logo-mobile img,
     #header #logo img {
       max-width: 130px; } }
   @media (max-width: 400px) {
-    /* line 32, ../scss/components/_soe_brand_bar.scss */
+    /* line 30, ../scss/components/_soe_brand_bar.scss */
     #header #logo.logo-mobile img,
     #header #logo img {
       max-width: 90px; } }
   @media (max-width: 380px) {
-    /* line 32, ../scss/components/_soe_brand_bar.scss */
+    /* line 30, ../scss/components/_soe_brand_bar.scss */
     #header #logo.logo-mobile img,
     #header #logo img {
       max-width: 80px; } }
-/* line 46, ../scss/components/_soe_brand_bar.scss */
+/* line 44, ../scss/components/_soe_brand_bar.scss */
 #header #logo.logo-mobile {
   padding: 0 5px 0 0; }
   @media (max-width: 480px) {
-    /* line 46, ../scss/components/_soe_brand_bar.scss */
+    /* line 44, ../scss/components/_soe_brand_bar.scss */
     #header #logo.logo-mobile {
       display: table-cell;
       padding: 0 10px 0 0;
       border-right: 1px solid !important; }
-      /* line 53, ../scss/components/_soe_brand_bar.scss */
+      /* line 51, ../scss/components/_soe_brand_bar.scss */
       #header #logo.logo-mobile a {
         background-size: 120px 26.66px; } }
   @media (max-width: 400px) {
-    /* line 46, ../scss/components/_soe_brand_bar.scss */
+    /* line 44, ../scss/components/_soe_brand_bar.scss */
     #header #logo.logo-mobile {
       padding: 0 5px 0 0; } }
-/* line 64, ../scss/components/_soe_brand_bar.scss */
+/* line 62, ../scss/components/_soe_brand_bar.scss */
 #header #name-and-slogan.with-logo {
   padding: 0 0 0 5px; }
   @media (max-width: 480px) {
-    /* line 64, ../scss/components/_soe_brand_bar.scss */
+    /* line 62, ../scss/components/_soe_brand_bar.scss */
     #header #name-and-slogan.with-logo {
       display: table-cell;
       padding: 0 0 0 10px; } }
   @media (max-width: 400px) {
-    /* line 64, ../scss/components/_soe_brand_bar.scss */
+    /* line 62, ../scss/components/_soe_brand_bar.scss */
     #header #name-and-slogan.with-logo {
       padding: 0 0 0 5px; } }
-/* line 75, ../scss/components/_soe_brand_bar.scss */
+/* line 73, ../scss/components/_soe_brand_bar.scss */
 #header.header {
   background: #FFFFFF;
   padding: 30px 0 0; }
   @media (max-width: 400px) {
-    /* line 75, ../scss/components/_soe_brand_bar.scss */
+    /* line 73, ../scss/components/_soe_brand_bar.scss */
     #header.header {
       min-height: 45px;
       padding: 20px 0 0; } }
-  /* line 83, ../scss/components/_soe_brand_bar.scss */
+  /* line 81, ../scss/components/_soe_brand_bar.scss */
   #header.header #site-title-first-line.site-title-uppercase {
     font-size: 34px; }
     @media (max-width: 480px) {
-      /* line 83, ../scss/components/_soe_brand_bar.scss */
+      /* line 81, ../scss/components/_soe_brand_bar.scss */
       #header.header #site-title-first-line.site-title-uppercase {
         font-size: 28px;
         margin-bottom: -5px; } }
     @media (max-width: 400px) {
-      /* line 83, ../scss/components/_soe_brand_bar.scss */
+      /* line 81, ../scss/components/_soe_brand_bar.scss */
       #header.header #site-title-first-line.site-title-uppercase {
         font-size: 18px;
         margin-bottom: -3px; } }
     @media (max-width: 380px) {
-      /* line 83, ../scss/components/_soe_brand_bar.scss */
+      /* line 81, ../scss/components/_soe_brand_bar.scss */
       #header.header #site-title-first-line.site-title-uppercase {
         font-size: 16px;
         margin-bottom: -4px; } }
 
-/* line 102, ../scss/components/_soe_brand_bar.scss */
+/* line 100, ../scss/components/_soe_brand_bar.scss */
 .dm-global-header #site-title-first-line.site-title-uppercase,
 .dm-global-header #site-title-first-line.site-title-uppercase a {
   font-size: 18px; }
+@media (max-width: 767px) {
+  /* line 105, ../scss/components/_soe_brand_bar.scss */
+  .dm-global-header .container {
+    margin-bottom: 6px; } }
 
 /* line 8, ../scss/components/_soe_footer.scss */
 #footer.site-footer {
@@ -2265,7 +2265,8 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
     .page-magazine #header.header,
     .page-magazine-all #header.header,
     .node-type-stanford-magazine-article #header.header {
-      padding: 10px 0 0; } }
+      min-height: 29px;
+      padding: 16px 0 0; } }
   @media (max-width: 767px) {
     /* line 30, ../scss/components/_soe_dm_brand_bar.scss */
     .node-type-stanford-collection #header.header,
@@ -2274,8 +2275,7 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
     .page-magazine #header.header,
     .page-magazine-all #header.header,
     .node-type-stanford-magazine-article #header.header {
-      min-height: 29px;
-      padding: 16px 0 0; } }
+      padding: 10px 0 0; } }
   @media (max-width: 400px) {
     /* line 30, ../scss/components/_soe_dm_brand_bar.scss */
     .node-type-stanford-collection #header.header,
