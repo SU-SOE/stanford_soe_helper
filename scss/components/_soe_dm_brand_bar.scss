@@ -7,7 +7,6 @@
 .node-type-stanford-collection,
 .node-type-stanford-magazine-issue,
 .page-taxonomy-term,
-.node-type-stanford-magazine-issue,
 .page-magazine,
 .page-magazine-all,
 .node-type-stanford-magazine-article {
@@ -32,6 +31,12 @@
       background: $white;
       min-height: 45px;
       padding: 22px 0 0;
+
+      @include breakpoint-max(large) {
+        min-height: 29px;
+        padding: 16px 0 0;
+      }
+
       @include breakpoint-max(xx-small) {
         min-height: 45px;
         padding: 20px 0 0;

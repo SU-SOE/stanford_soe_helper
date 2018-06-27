@@ -222,6 +222,10 @@
         .page-magazine-all,
         .node-type-stanford-magazine-article & {
           padding-bottom: 15px;
+
+          @include breakpoint-max(large) {
+            padding-bottom: 9px;
+          }
         }
       }
     }
