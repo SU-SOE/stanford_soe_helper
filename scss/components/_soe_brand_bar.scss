@@ -97,9 +97,13 @@
 }
 
 .dm-global-header {
-  #site-title-first-line.site-title-uppercase,
-  #site-title-first-line.site-title-uppercase a {
-      font-size: 18px;
+  #header {
+    &.header {
+      #site-title-first-line.site-title-uppercase,
+      #site-title-first-line.site-title-uppercase a {
+          font-size: 18px !important;
+        }
+    }
   }
 
   .container {
