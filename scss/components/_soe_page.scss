@@ -49,11 +49,12 @@
         bottom: 48px;
         @include box-sizing;
         @include box-shadow;
-        padding: 22px 30px;
+        padding: 0 30px 22px;
         position: absolute;
         top: auto;
         width: 50%;
         > div:first-child {
+          padding-top: 20px;
           border-width: 6px;
           border-top-style: solid;
           width: 180px;
