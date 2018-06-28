@@ -40,10 +40,9 @@
       @include breakpoint-max(small) {
         padding: 10px 0 0;
       }
-      
+
       @include breakpoint-max(xx-small) {
-        min-height: 45px;
-        padding: 20px 0 0;
+        min-height: auto;
       }
 
       #site-title-first-line.site-title-uppercase a {
