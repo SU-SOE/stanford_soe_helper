@@ -20,6 +20,7 @@
     //    margin-bottom: 0;
     //  }
     //}
+
     .banner-overlay {
       position: relative;
       margin-left: auto;
@@ -32,6 +33,7 @@
         }
       }
 
+      // Switch up the colors
       &.top-banner-turquoise a {
         text-decoration-color: $orange;
       }
@@ -47,10 +49,25 @@
         bottom: 48px;
         @include box-sizing;
         @include box-shadow;
-        padding: 22px 30px;
+        padding: 0 30px 22px;
         position: absolute;
         top: auto;
         width: 50%;
+        > div:first-child {
+          padding-top: 20px;
+          border-width: 6px;
+          border-top-style: solid;
+          width: 180px;
+          &.top-banner-turquoise {
+            border-top-color: $turquoise;
+          }
+          &.top-banner-orange {
+            border-top-color: $orange;
+          }
+          &.top-banner-pink {
+            border-top-color: $pink;
+          }
+        }
       }
     }
 
