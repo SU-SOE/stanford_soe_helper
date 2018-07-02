@@ -243,6 +243,88 @@
   }
 }
 
+// TESTIMONIAL BEANS
+.bean-stanford-testimonial-block {
+  .postcard  {
+    background: $white;
+    padding: 0 40px 40px;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
+    -moz-box-shadow:  0 2px 2px 0 rgba(0,0,0,0.2);
+    box-shadow:  0 2px 2px 0 rgba(0,0,0,0.2);
+
+    @include breakpoint-max(small) {
+      display: block;
+      padding: 0;
+    }
+  }
+
+  .field-name-field-s-testimonial-superhead {
+    font-weight: 600;
+    font-family: "Roboto Slab", serif;
+    border-top: $turquoise 6px solid;
+    display: inline-block;
+    padding-top: 12px;
+    margin-bottom: 20px;
+  }
+
+  .field-name-field-s-testimonial-quote {
+    font-family: "Roboto Slab", serif;
+  }
+
+  .field-name-field-s-testimonial-credits {
+    font-size: 18px;
+    margin-top: 15px;
+    letter-spacing: 0;
+  }
+
+  .quote {
+    .field-item {
+      &:after {
+        font-family: "Source Sans Pro", sans-serif;
+        opacity: 100;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+.quote {
+  &:before {
+    font-family: "Source Sans Pro", sans-serif;
+    opacity: 100;
+    font-weight: 400;
+  }
+
+  &:after {
+    font-family: "Source Sans Pro", sans-serif;
+    opacity: 100;
+    font-weight: 400;
+  }
+}
+
+div.quote {
+  p {
+    &:last-child {
+      &:after {
+        font-family: "Source Sans Pro", sans-serif;
+        opacity: 100;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+blockquote.quote {
+  p {
+    &:last-child {
+      &:after {
+        font-family: "Source Sans Pro", sans-serif;
+        opacity: 100;
+        font-weight: 400;
+      }
+    }
+  }
+}
 .superhead {
   font-family: "Source sans pro", sans-serif;
   font-size: 18px;
