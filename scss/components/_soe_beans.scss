@@ -278,7 +278,7 @@
   }
 
   .quote {
-    .field-item::after {
+    .field-item:after {
       font-family: "Source Sans Pro", sans-serif;
       font-weight: 400;
       opacity: 1;
@@ -301,28 +301,21 @@
 }
 
 div.quote {
-  p {
-    &:last-child {
-      &::after {
-        font-family: "Source Sans Pro", sans-serif;
-        font-weight: 400;
-        opacity: 1;
-      }
-    }
+  p:last-child:after {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+    opacity: 1;
   }
 }
 
 blockquote.quote {
-  p {
-    &:last-child {
-      &::after {
-        font-family: "Source Sans Pro", sans-serif;
-        font-weight: 400;
-        opacity: 1;
-      }
-    }
+  p:last-child:after {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+    opacity: 1;
   }
 }
+
 .superhead {
   color: $primary-color;
   font-family: "Source sans pro", sans-serif;
