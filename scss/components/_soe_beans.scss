@@ -259,12 +259,12 @@
   }
 
   .field-name-field-s-testimonial-superhead {
-    font-weight: 600;
-    font-family: "Roboto Slab", serif;
     border-top: $turquoise 6px solid;
     display: inline-block;
-    padding-top: 12px;
+    font-weight: 600;
+    font-family: "Roboto Slab", serif;
     margin-bottom: 20px;
+    padding-top: 12px;
   }
 
   .field-name-field-s-testimonial-quote {
@@ -273,16 +273,16 @@
 
   .field-name-field-s-testimonial-credits {
     font-size: 18px;
-    margin-top: 15px;
     letter-spacing: 0;
+    margin-top: 15px;
   }
 
   .quote {
     .field-item {
       &:after {
         font-family: "Source Sans Pro", sans-serif;
-        opacity: 100;
         font-weight: 400;
+        opacity: 100;
       }
     }
   }
@@ -291,14 +291,14 @@
 .quote {
   &:before {
     font-family: "Source Sans Pro", sans-serif;
-    opacity: 100;
     font-weight: 400;
+    opacity: 100;
   }
 
   &:after {
     font-family: "Source Sans Pro", sans-serif;
-    opacity: 100;
     font-weight: 400;
+    opacity: 100;
   }
 }
 
@@ -307,8 +307,8 @@ div.quote {
     &:last-child {
       &:after {
         font-family: "Source Sans Pro", sans-serif;
-        opacity: 100;
         font-weight: 400;
+        opacity: 100;
       }
     }
   }
@@ -319,17 +319,17 @@ blockquote.quote {
     &:last-child {
       &:after {
         font-family: "Source Sans Pro", sans-serif;
-        opacity: 100;
         font-weight: 400;
+        opacity: 100;
       }
     }
   }
 }
 .superhead {
+  color: $primary-color;
   font-family: "Source sans pro", sans-serif;
   font-size: 18px;
-  line-height: 1.2em;
-  color: #333;
   font-weight: 600;
+  line-height: 1.2em;
   margin-bottom: .6em;
 }
