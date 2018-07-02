@@ -278,12 +278,10 @@
   }
 
   .quote {
-    .field-item {
-      &::after {
-        font-family: "Source Sans Pro", sans-serif;
-        font-weight: 400;
-        opacity: 1;
-      }
+    .field-item::after {
+      font-family: "Source Sans Pro", sans-serif;
+      font-weight: 400;
+      opacity: 1;
     }
   }
 }
