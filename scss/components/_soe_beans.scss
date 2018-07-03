@@ -262,13 +262,13 @@
     border-top: $turquoise 6px solid;
     display: inline-block;
     font-weight: 600;
-    font-family: "Roboto Slab", serif;
+    font-family: $roboto-slab;
     margin-bottom: 20px;
     padding-top: 12px;
   }
 
   .field-name-field-s-testimonial-quote {
-    font-family: "Roboto Slab", serif;
+    font-family: $roboto-slab;
   }
 
   .field-name-field-s-testimonial-credits {
@@ -279,7 +279,7 @@
 
   .quote {
     .field-item::after {
-      font-family: "Source Sans Pro", sans-serif;
+      font-family: $primary-font;
       font-weight: 400;
       opacity: 1;
     }
@@ -288,13 +288,13 @@
 
 .quote {
   &::before {
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: $primary-font;
     font-weight: 400;
     opacity: 1;
   }
 
   &::after {
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: $primary-font;
     font-weight: 400;
     opacity: 1;
   }
@@ -302,7 +302,7 @@
 
 div.quote {
   p:last-child::after {
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: $primary-font;
     font-weight: 400;
     opacity: 1;
   }
@@ -310,7 +310,7 @@ div.quote {
 
 blockquote.quote {
   p:last-child::after {
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: $primary-font;
     font-weight: 400;
     opacity: 1;
   }
@@ -318,9 +318,23 @@ blockquote.quote {
 
 .superhead {
   color: $primary-color;
-  font-family: "Source sans pro", sans-serif;
+  font-family: $primary-font;
   font-size: 18px;
   font-weight: 600;
   line-height: 1.2em;
   margin-bottom: .6em;
+}
+
+.infotext {
+  font-size: 56px;
+  font-family: $roboto-slab;
+  color: $primary-color;
+  font-weight: 600;
+  line-height: 1.2em;
+  letter-spacing: 0;
+  margin: 0;
+}
+
+p.infotext {
+    margin: 0;
 }
