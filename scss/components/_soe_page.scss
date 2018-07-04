@@ -16,8 +16,8 @@
 
   #block-views-stanford-page-top-banner-block {
     .banner-overlay {
-      position: relative;
-      margin-left: auto;
+      background: $white;
+      margin-left: 30px;
       margin-right: auto;
       width: 1400px;
 
@@ -36,26 +36,27 @@
       &.top-banner-orange a {
         text-decoration-color: $pink;
       }
-      
+
       &.top-banner-pink a {
         text-decoration-color: $turquoise;
       }
 
+      > div:first-child {
+        top: -400px;
+      }
+
       > div {
         background: $white;
-        bottom: 48px;
         @include box-sizing;
         @include box-shadow;
         padding: 0 30px 22px;
-        position: absolute;
-        top: auto;
         width: 50%;
 
         > div:first-child {
           padding-top: 20px;
           border-width: 6px;
           border-top-style: solid;
-          width: 180px;
+          margin-right: 72%;
 
           &.top-banner-turquoise {
             border-top-color: $turquoise;
@@ -73,7 +74,6 @@
     }
 
     .page-feat-caption-container {
-      background: $white;
       color: $primary-color;
 
       p {
