@@ -5,7 +5,7 @@
 @mixin breakpoint-max($point) {
   @if $point == x-large {
     @media (max-width: 1250px) { @content; }
-  }@else if $point == large {
+  } @else if $point == large {
     @media (max-width: 1200px) { @content; }
   }
   @else if $point == medium {
