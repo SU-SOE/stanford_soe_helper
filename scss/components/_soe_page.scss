@@ -15,13 +15,23 @@
   }
 
   #block-views-stanford-page-top-banner-block {
-    .banner-image {
-      position: relative;
-      display: inline;
-    }
-
+    // Get the overlay setup to look good overall
     .banner-overlay > div:first-child {
       max-height: 283px;
+      margin-left: 30px;
+
+      // Switch up the colors
+      &.top-banner-turquoise a {
+        text-decoration-color: $orange;
+      }
+
+      &.top-banner-orange a {
+        text-decoration-color: $pink;
+      }
+
+      &.top-banner-pink a {
+        text-decoration-color: $turquoise;
+      }
 
       @include breakpoint-max(x-large) {
         max-height: 266px;
@@ -48,8 +58,13 @@
           margin-bottom: 15px;
         }
       }
+
+      @include breakpoint-max(small) {
+        display: none;
+      }
     }
 
+    // Change the top margin for the left placement
     .banner-overlay.top-banner-left > div:first-child {
       margin-top: -9%;
 
@@ -58,6 +73,7 @@
       }
     }
 
+    // Change the top margin and the left placement for the right placement
     .banner-overlay.top-banner-right > div:first-child {
       margin-top: -9%;
       left: 48%;
@@ -68,27 +84,6 @@
     }
 
     .banner-overlay {
-      margin-left: 30px;
-
-      @include breakpoint-max(small) {
-        display: none;
-      }
-
-
-
-      // Switch up the colors
-      &.top-banner-turquoise a {
-        text-decoration-color: $orange;
-      }
-
-      &.top-banner-orange a {
-        text-decoration-color: $pink;
-      }
-
-      &.top-banner-pink a {
-        text-decoration-color: $turquoise;
-      }
-
       > div {
         background: $white;
         @include box-sizing;
@@ -97,10 +92,10 @@
         width: 50%;
 
         > div:first-child {
-          padding-top: 20px;
-          border-width: 6px;
           border-top-style: solid;
+          border-width: 6px;
           margin-right: 72%;
+          padding-top: 20px;
 
           &.top-banner-turquoise {
             border-top-color: $turquoise;
