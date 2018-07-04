@@ -18,7 +18,6 @@
     // Get the overlay setup to look good overall
     .banner-overlay > div:first-child {
       max-height: 283px;
-      margin-left: 30px;
 
       // Switch up the colors
       &.top-banner-turquoise a {
@@ -66,6 +65,7 @@
 
     // Change the top margin for the left placement
     .banner-overlay.top-banner-left > div:first-child {
+      margin-left: 30px;
       margin-top: -9%;
 
       @include breakpoint-max(medium) {
