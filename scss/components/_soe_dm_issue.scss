@@ -171,7 +171,6 @@
       font-family: $primary-font;
       font-size: em(32px);
       line-height: 1.2em;
-      font-weight: 600;
 
       &[class*="mag-article-color-"] {
         color: $primary-color;
@@ -376,6 +375,7 @@
 
         &[class*="mag-article-color-"] a {
           color: $primary-color;
+          font-weight: 600;
           text-decoration: underline;
           @include td-skip;
 
@@ -453,6 +453,7 @@
 
         &[class*="mag-article-color-"] a {
           color: $primary-color;
+          font-weight: 600;
           text-decoration: underline;
           @include td-skip;
 
@@ -806,4 +807,3 @@
     }
   }
 }
-

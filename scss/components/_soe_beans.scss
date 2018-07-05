@@ -256,3 +256,168 @@
     }
   }
 }
+
+// TESTIMONIAL BEANS
+.bean-stanford-testimonial-block {
+  .postcard  {
+    background: $white;
+    padding: 0 56px 40px;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+
+    @include breakpoint-max(small) {
+      display: block;
+      padding: 0 44px 40px;
+    }
+  }
+
+  .field-name-field-s-testimonial-superhead {
+    border-top: $turquoise 6px solid;
+    display: inline-block;
+    font-weight: 600;
+    font-family: $roboto-slab;
+    margin-bottom: 20px;
+    padding-top: 12px;
+
+    &.field {
+      margin-bottom: 2em;
+
+      @include breakpoint-max(smaller) {
+        margin-bottom: 1em;
+      }
+    }
+  }
+
+  .field-name-field-s-testimonial-quote {
+    font-family: $roboto-slab;
+
+    @include breakpoint-max(medium) {
+      font-size: 22px;
+      line-height: 1.5em;
+    }
+
+    @include breakpoint-max(smaller) {
+      font-size: 18px;
+    }
+  }
+
+  .field-name-field-s-testimonial-credits {
+    font-size: 18px;
+    letter-spacing: 0;
+    margin-top: 15px;
+
+    @include breakpoint-max(smaller) {
+      font-size: 16px;
+    }
+
+    &.field {
+      margin-bottom: 0;
+    }
+  }
+
+  .group-s-credits-style {
+    margin-bottom: 0;
+  }
+
+  .quote {
+    .field-item::after {
+      font-family: $primary-font;
+      font-size: 56px;
+      font-weight: 400;
+      opacity: 1;
+      top: 30;
+
+      @include breakpoint-max(smaller) {
+        font-size: 40px;
+      }
+    }
+  }
+}
+
+.span12 {
+  .bean-stanford-testimonial-block {
+    margin: 0 10%;
+
+    @include breakpoint-max(medium) {
+      margin: 0;
+    }
+
+    @include breakpoint-max(small) {
+      margin: 0 10%;
+    }
+
+    @include breakpoint-max(smaller) {
+      margin: 0;
+    }
+  }
+}
+
+.quote {
+  &::before {
+    font-family: $primary-font;
+    font-weight: 400;
+    opacity: 1;
+  }
+
+  &::after {
+    font-family: $primary-font;
+    font-weight: 400;
+    opacity: 1;
+  }
+}
+
+div.quote {
+  p:last-child::after {
+    font-family: $primary-font;
+    font-weight: 400;
+    opacity: 1;
+  }
+
+  &::before {
+    font-size: 56px;
+
+    @include breakpoint-max(smaller) {
+      font-size: 40px;
+    }
+  }
+}
+
+blockquote.quote {
+  p:last-child::after {
+    font-family: $primary-font;
+    font-weight: 400;
+    opacity: 1;
+  }
+
+  &::before {
+    font-size: 56px;
+
+    @include breakpoint-max(smaller) {
+      font-size: 40px;
+    }
+  }
+}
+
+p.superhead {
+  color: $primary-color;
+  font-family: $primary-font;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.2em;
+  margin-bottom: .6em;
+}
+
+.infotext {
+  font-size: 56px;
+  font-family: $roboto-slab;
+  color: $primary-color;
+  font-weight: 600;
+  line-height: 1.2em;
+  letter-spacing: 0;
+  margin: 0;
+}
+
+p.infotext {
+    margin: 0;
+}

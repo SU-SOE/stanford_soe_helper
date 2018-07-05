@@ -381,7 +381,7 @@ function stanford_soe_helper_collection_field_default_field_instances() {
           'link' => 1,
         ),
         'type' => 'entityreference_label',
-        'weight' => 24,
+        'weight' => 25,
       ),
       'taxonomy' => array(
         'label' => 'above',

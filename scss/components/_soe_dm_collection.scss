@@ -72,9 +72,9 @@
   .collection-title {
     font-size: em(1.3em);
     line-height: 1.3em;
-    font-weight: 600;
     a {
       color: $primary-color;
+      font-weight: 600;
       text-decoration: underline;
       text-decoration-skip: ink;
       &:focus,
@@ -120,7 +120,7 @@
 
 .node-type-stanford-collection {
   #content-body-bottom {
-    margin-top: 60px;
+    margin-top: 5%;
   }
 
   #mc_embed_signup_scroll {
@@ -140,6 +140,10 @@
 // A ARTICLE COLLECTION BLOCK
 
 .node-type-stanford-magazine-article {
+  .main {
+    padding: 80px 0 0;
+  }
+
   .view-display-id-article_collection {
     padding-bottom: 40px;
     padding-top: 40px;
@@ -151,10 +155,10 @@
 
     .views-field-field-s-collectlon-intro-label {
       color: $gray-orange;
-      font-family: "Source Sans Pro", sans-serif;
+      font-family: $primary-font;
       font-size: 16px;
       font-style: italic;
-      font-weight: 300;
+      font-weight: 400;
       line-height: 1.3em;
       margin-bottom: 20px;
       text-align: center;
@@ -162,7 +166,7 @@
 
     .mag-collection-title {
       color: $black;
-      font-family: "Roboto Slab", serif;
+      font-family: $roboto-slab;
       font-size: 20px;
       font-weight: 600;
       letter-spacing: 0;
@@ -199,76 +203,113 @@
     .views-field-field-s-collection-subtitle {
       color: $gray-orange;
       font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-      font-weight: 400;
+      font-weight: 600;
       letter-spacing: 0;
-      font-size: 16px;
+      line-height: 1.2em;
+      font-size: 20px;
       padding: 0 20px;
       text-align: center;
     }
   }
 
-  .view-stanford-magazine-article-collection.view-display-id-article_collection_bottom_block {
-    background-color: $light-gray;
-    padding: 0 80px 20px;
-
-    .view-header {
-      margin-bottom: 80px;
-
-      .views-field-field-s-collection-cont-label {
-        color: $gray-orange;
-        font-family: "Source Sans Pro", sans-serif;
-        font-size: 16px;
-        font-style: italic;
-        font-weight: 300;
-        line-height: 1.3em;
-        margin-bottom: 30px;
-        padding-top: 40px;
-        text-align: center;
-      }
-
-      .views-field-title {
-        color: $black;
-        font-family: "Roboto Slab", serif;
-        font-size: 20px;
-        font-weight: 600;
-        letter-spacing: 0;
-        text-align: center;
-
-        @include breakpoint-max(small) {
-          line-height: 1em;
-        }
-      }
-
-      .views-field-field-s-collection-subtitle {
-        color: $gray-orange;
-        font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-weight: 400;
-        letter-spacing: 0;
-        font-size: 16px;
-        padding: 0 20px;
-        text-align: center;
+  .view-stanford-magazine-article-collection {
+    .views-field-field-s-collection-cont-label {
+      @include breakpoint-max(smaller) {
+        font-size: 14px;
       }
     }
 
-    .view-footer {
-      text-align: center;
+    .views-field-title {
+      @include breakpoint-max(smaller) {
+        font-size: 18px;
+      }
+    }
 
-      a {
-        background: $brand-bright;
-        border-radius: 0;
-        color: #fbfbf9;
-        text-decoration: none;
-        -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
-        -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
-        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
-        margin: 0 0 26px;
-        padding: 0.7em 1.4em 0.9em;
-        line-height: 1.4em;
-        letter-spacing: 0.03em;
-        margin: 0 0 80px;
+    .views-field-field-s-collection-subtitle {
+      @include breakpoint-max(smaller) {
+        font-size: 16px;
+      }
+    }
 
-        &:hover {
-          background: $primary-color;
+    &.view-display-id-article_collection_bottom_block {
+      background-color: $light-gray;
+      padding: 0 15% 80px;
+
+      .view-header {
+        margin-bottom: 80px;
+
+        @include breakpoint-max(smaller) {
+          margin-bottom: 40px;
+        }
+
+        .views-field-field-s-collection-cont-label {
+          color: $gray-orange;
+          font-family: $primary-font;
+          font-size: 16px;
+          font-style: italic;
+          font-weight: 400;
+          line-height: 1.3em;
+          margin-bottom: 30px;
+          padding-top: 40px;
+          text-align: center;
+
+          @include breakpoint-max(smaller) {
+            font-size: 14px;
+          }
+        }
+
+        .views-field-title {
+          color: $primary-color;
+          font-family: $roboto-slab;
+          font-size: 32px;
+          font-weight: 600;
+          letter-spacing: 0;
+          line-height: 1.3em;
+          margin-bottom: 4px;
+          text-align: center;
+
+          @include breakpoint-max(smaller) {
+            font-size: 18px;
+            line-height: 1em;
+          }
+        }
+
+        .views-field-field-s-collection-subtitle {
+          color: $gray-orange;
+          font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+          font-weight: 600;
+          letter-spacing: 0;
+          line-height: 1.2em;
+          font-size: 20px;
+          padding: 0 20px;
+          text-align: center;
+
+          @include breakpoint-max(smaller) {
+            font-size: 16px;
+          }
+        }
+      }
+
+      .view-footer {
+        text-align: center;
+
+        a {
+          background: $brand-bright;
+          border-radius: 0;
+          color: #fbfbf9;
+          text-decoration: none;
+          -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+          -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+          margin: 0 0 26px;
+          padding: 0.7em 1.4em 0.9em;
+          line-height: 1.4em;
+          letter-spacing: 0.03em;
+          margin: 0 0 80px;
+
+          &:hover {
+            background: $primary-color;
+          }
         }
       }
     }
@@ -285,6 +326,28 @@
   #content-head {
     display: block;
     margin-bottom: 0;
+  }
+
+  #mc_embed_signup_scroll {
+    padding: 0;
+  }
+
+  .mailchimp-magazine-block {
+    #mc_embed_signup_scroll {
+      box-shadow: none;
+      -webkit-box-shadow: none;
+      padding: 65px 0;
+
+      @include breakpoint-max(small) {
+        padding: 40px 0;
+      }
+    }
+  }
+
+  form {
+    &#mc-embedded-subscribe-form {
+      margin-bottom: 0;
+    }
   }
 
   #main {
@@ -331,7 +394,7 @@
 
       .field-name-field-s-collection-lead-text {
         color: $gray-orange;
-        font-family: "Source Sans Pro", sans-serif;
+        font-family: $primary-font;
         font-size: em(1.2em);
         font-weight: 300;
         line-height: 1.4em;
