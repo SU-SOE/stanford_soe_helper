@@ -247,7 +247,7 @@
 .bean-stanford-testimonial-block {
   .postcard  {
     background: $white;
-    padding: 0 40px 40px;
+    padding: 0 56px 40px;
     -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
@@ -265,23 +265,52 @@
     font-family: $roboto-slab;
     margin-bottom: 20px;
     padding-top: 12px;
+
+    .field {
+      margin-bottom: 2em;
+    }
   }
 
   .field-name-field-s-testimonial-quote {
     font-family: $roboto-slab;
+
+    @include breakpoint-max(medium) {
+      font-size: 22px;
+      line-height: 1.5em;
+    }
   }
 
   .field-name-field-s-testimonial-credits {
     font-size: 18px;
     letter-spacing: 0;
     margin-top: 15px;
+
+    .field {
+      margin-bottom: 0;
+    }
+  }
+
+  .group-s-credits-style {
+    margin-bottom: 0;
   }
 
   .quote {
     .field-item::after {
       font-family: $primary-font;
+      font-size: 56px;
       font-weight: 400;
       opacity: 1;
+      top: 30;
+    }
+  }
+}
+
+.span12 {
+  .bean-stanford-testimonial-block {
+    margin: 0 10%;
+
+    @include breakpoint-max(medium) {
+      margin: 0;
     }
   }
 }
@@ -306,6 +335,10 @@ div.quote {
     font-weight: 400;
     opacity: 1;
   }
+
+  &::before {
+    font-size: 56px;
+  }
 }
 
 blockquote.quote {
@@ -313,6 +346,10 @@ blockquote.quote {
     font-family: $primary-font;
     font-weight: 400;
     opacity: 1;
+  }
+
+  &::before {
+    font-size: 56px;
   }
 }
 
