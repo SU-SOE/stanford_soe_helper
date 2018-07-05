@@ -48,7 +48,7 @@ h2 {
   font-family: $roboto-slab;
   font-size: em(32px);
   font-weight: 600;
-  letter-spacing: 0.02em;
+  letter-spacing: 0;
   margin: 1.8em 0 0.5em;
 
   a {
@@ -106,9 +106,10 @@ a.btn {
   border-radius: 0;
   @include box-shadow;
   margin: 0 0 26px;
-  padding: 0.7em 1.4em 0.9em;
-  line-height: 1.4em;
-  letter-spacing: 0.03em;
+  line-height: 1.2em;
+  letter-spacing: 0;
+  font-size: 1.9rem;
+  padding: 0.8em 1.2em 0.9em;
   background: $brand-bright;
 
   &:focus,
