@@ -9,15 +9,15 @@ include_once 'stanford_soe_helper_page.features.inc';
 /**
  * Implements hook_form_alter().
  *
- * @param $form
- * @param $form_state
- * @param $form_id
+ * Changes label on image field collection, and help text on accent color.
  */
 function stanford_soe_helper_page_form_alter(&$form, &$form_state, $form_id) {
   if ($form_id == "stanford_page_node_form") {
+
+    // Note for CC: 'LANGUAGE_NONE' doesn't seem to work here.
     $form['field_s_image_info']['und'][0]['#groups']['group_s_image']->label =
       'Add/Edit Image and Text';
-    $form['field_s_top_banner_color']['und']['#description'] =
-      'This field defines the accent color for the colored border above the text in the top banner overlay.';
+    $form['field_s_top_banner_color']['LANGUAGE_NONE']['#description'] =
+      t('This field defines the accent color for the colored border above the text in the top banner overlay.');
   }
 }
