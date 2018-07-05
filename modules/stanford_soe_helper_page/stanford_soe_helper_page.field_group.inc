@@ -21,7 +21,7 @@ function stanford_soe_helper_page_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Add/Edit Bottom Banner',
-    'weight' => '14',
+    'weight' => '12',
     'children' => array(
       0 => 'field_s_banner_accent_color',
       1 => 'field_s_banner_caption_horizonta',
