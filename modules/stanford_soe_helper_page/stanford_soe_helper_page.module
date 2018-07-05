@@ -15,6 +15,9 @@ include_once 'stanford_soe_helper_page.features.inc';
  */
 function stanford_soe_helper_page_form_alter(&$form, &$form_state, $form_id) {
   if ($form_id == "stanford_page_node_form") {
-    $form['field_s_image_info']['und'][0]['#groups']['group_s_image']->label = 'Add/Edit Image and Text';
+    $form['field_s_image_info']['und'][0]['#groups']['group_s_image']->label =
+      'Add/Edit Image and Text';
+    $form['field_s_top_banner_color']['und']['#description'] =
+      'This field defines the accent color for the colored border above the text in the top banner overlay.';
   }
 }
