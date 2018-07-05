@@ -5,3 +5,16 @@
  */
 
 include_once 'stanford_soe_helper_page.features.inc';
+
+/**
+ * Implements hook_form_alter().
+ *
+ * @param $form
+ * @param $form_state
+ * @param $form_id
+ */
+function stanford_soe_helper_page_form_alter(&$form, &$form_state, $form_id) {
+  if ($form_id == "stanford_page_node_form") {
+    $form['field_s_image_info']['und'][0]['#groups']['group_s_image']->label = 'Add/Edit Image and Text';
+  }
+}

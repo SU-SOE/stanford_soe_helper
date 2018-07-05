@@ -218,14 +218,14 @@ function stanford_soe_helper_page_views_default_views() {
     'image_style' => 'full-width-banner-short',
     'image_link' => '',
   );
-  /* Field: Content: Top Caption Position Horizontal */
+  /* Field: Content: Text Position Horizontal */
   $handler->display->display_options['fields']['field_s_top_banner_caption_horiz']['id'] = 'field_s_top_banner_caption_horiz';
   $handler->display->display_options['fields']['field_s_top_banner_caption_horiz']['table'] = 'field_data_field_s_top_banner_caption_horiz';
   $handler->display->display_options['fields']['field_s_top_banner_caption_horiz']['field'] = 'field_s_top_banner_caption_horiz';
   $handler->display->display_options['fields']['field_s_top_banner_caption_horiz']['label'] = '';
   $handler->display->display_options['fields']['field_s_top_banner_caption_horiz']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_s_top_banner_caption_horiz']['element_label_colon'] = FALSE;
-  /* Field: Content: Top Caption Position Vertical */
+  /* Field: Content: Text Position Vertical */
   $handler->display->display_options['fields']['field_s_top_banner_caption_vert']['id'] = 'field_s_top_banner_caption_vert';
   $handler->display->display_options['fields']['field_s_top_banner_caption_vert']['table'] = 'field_data_field_s_top_banner_caption_vert';
   $handler->display->display_options['fields']['field_s_top_banner_caption_vert']['field'] = 'field_s_top_banner_caption_vert';

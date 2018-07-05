@@ -383,7 +383,7 @@ function stanford_soe_helper_page_field_default_field_instances() {
       ),
     ),
     'deleted' => 0,
-    'description' => 'This field is used for the horizontal placement of the caption on your top banner. This field is ignored for no-caption views displays.',
+    'description' => 'This field is used for the horizontal placement of the text on your banner. (Horizontal positioning is ignored for text-block and no-text views displays.)',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -407,7 +407,7 @@ function stanford_soe_helper_page_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_s_top_banner_caption_horiz',
-    'label' => 'Top Caption Position Horizontal',
+    'label' => 'Text Position Horizontal',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -417,7 +417,7 @@ function stanford_soe_helper_page_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 3,
+      'weight' => 4,
     ),
   );
 
@@ -431,7 +431,7 @@ function stanford_soe_helper_page_field_default_field_instances() {
       ),
     ),
     'deleted' => 0,
-    'description' => 'This field defines vertical alignment for the caption overlay top banner. Vertical positioning is ignored for caption-block and no-caption views displays.|This field defines vertical alignment for the caption overlay top banner. Vertical positioning is ignored for caption-block and no-caption views displays.',
+    'description' => 'This field defines vertical alignment for the text overlay top banner. (Vertical positioning is ignored for text-block and no-text views displays.)',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -455,7 +455,7 @@ function stanford_soe_helper_page_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_s_top_banner_caption_vert',
-    'label' => 'Top Caption Position Vertical',
+    'label' => 'Text Position Vertical',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -465,7 +465,7 @@ function stanford_soe_helper_page_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 4,
+      'weight' => 5,
     ),
   );
 
@@ -476,14 +476,14 @@ function stanford_soe_helper_page_field_default_field_instances() {
   t('Banner link');
   t('Caption Position Horizontal');
   t('Caption Position Vertical');
+  t('Text Position Horizontal');
+  t('Text Position Vertical');
   t('This field defines vertical alignment for the caption overlay on your banner.');
-  t('This field defines vertical alignment for the caption overlay top banner. Vertical positioning is ignored for caption-block and no-caption views displays.|This field defines vertical alignment for the caption overlay top banner. Vertical positioning is ignored for caption-block and no-caption views displays.');
+  t('This field defines vertical alignment for the text overlay top banner. (Vertical positioning is ignored for text-block and no-text views displays.)');
   t('This field is used for the horizontal placement of the caption on your slide. ');
-  t('This field is used for the horizontal placement of the caption on your top banner. This field is ignored for no-caption views displays.');
+  t('This field is used for the horizontal placement of the text on your banner. (Horizontal positioning is ignored for text-block and no-text views displays.)');
   t('This is a full-width banner that displays at the bottom of the page. The size of this image is 1600x500. For best image fidelity, upload a larger image (3200x1000).
 ');
-  t('Top Caption Position Horizontal');
-  t('Top Caption Position Vertical');
 
   return $field_instances;
 }
