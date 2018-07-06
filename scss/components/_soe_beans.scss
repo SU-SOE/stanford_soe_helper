@@ -95,7 +95,6 @@
       padding: 0;
     }
 
-    .postcard-image,
     a.postcard-linked-img-container {
       flex-shrink: 0;
 
@@ -113,7 +112,6 @@
         @include transform (scale(1.03));
       }
 
-      .group-s-image-container,
       .postcard-linked-img {
         position: relative;
 
@@ -152,7 +150,7 @@
       }
     }
 
-    .postcard-body,
+    .postcard-content,
     .postcard-linked-content-container {
       width: 100%;
       @include breakpoint-max(small) {
