@@ -378,7 +378,7 @@ function stanford_soe_helper_page_field_default_field_instances() {
     'bundle' => 'stanford_page',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'This is your call-to-action. Use this to create a "Make a Gift" button.',
+    'description' => 'Use these fields to create your call to action, an example of this would be, "Make a Gift". This button appears on top of your banner image, bottom right, or at the top-right of your page, if you do not use a banner image.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -402,7 +402,7 @@ function stanford_soe_helper_page_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_s_page_cta_link',
-    'label' => 'Make a Gift Button',
+    'label' => 'Call to Action Button',
     'required' => 0,
     'settings' => array(
       'absolute_url' => 1,
@@ -537,9 +537,9 @@ function stanford_soe_helper_page_field_default_field_instances() {
   t('Apache Solr Index');
   t('Banner image');
   t('Banner link');
+  t('Call to Action Button');
   t('Caption Position Horizontal');
   t('Caption Position Vertical');
-  t('Make a Gift Button');
   t('Text Position Horizontal');
   t('Text Position Vertical');
   t('This field defines vertical alignment for the caption overlay on your banner.');
@@ -548,7 +548,7 @@ function stanford_soe_helper_page_field_default_field_instances() {
   t('This field is used for the horizontal placement of the text on your banner. (Horizontal positioning is ignored for text-block and no-text views displays.)');
   t('This is a full-width banner that displays at the bottom of the page. The size of this image is 1600x500. For best image fidelity, upload a larger image (3200x1000).
 ');
-  t('This is your call-to-action. Use this to create a "Make a Gift" button.');
+  t('Use these fields to create your call to action, an example of this would be, "Make a Gift". This button appears on top of your banner image, bottom right, or at the top-right of your page, if you do not use a banner image.');
 
   return $field_instances;
 }
