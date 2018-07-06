@@ -253,6 +253,19 @@
       }
     }
   }
+  .span12 & {
+    margin: 0 10%;
+
+    @include breakpoint-max(medium) {
+      margin: 0;
+    }
+    @include breakpoint-max(small) {
+      margin: 0 10%;
+    }
+    @include breakpoint-max(smaller) {
+      margin: 0;
+    }
+  }
 }
 
 // TESTIMONIAL BEANS
