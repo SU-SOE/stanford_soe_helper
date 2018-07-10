@@ -58,49 +58,6 @@ function stanford_soe_helper_page_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-stanford_page-field_s_banner_accent_color'.
-  $field_instances['node-stanford_page-field_s_banner_accent_color'] = array(
-    'bundle' => 'stanford_page',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'These terms identify the associated accent color. Select a color.',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 0,
-      ),
-      'full' => array(
-        'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 14,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 6,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_s_banner_accent_color',
-    'label' => 'Accent color',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 8,
-    ),
-  );
-
   // Exported field_instance:
   // 'node-stanford_page-field_s_banner_caption_horizonta'.
   $field_instances['node-stanford_page-field_s_banner_caption_horizonta'] = array(
@@ -575,69 +532,23 @@ function stanford_soe_helper_page_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-stanford_page-field_s_top_banner_color'.
-  $field_instances['node-stanford_page-field_s_top_banner_color'] = array(
-    'bundle' => 'stanford_page',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'These terms identify the associated accent color. Select a color.',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 0,
-      ),
-      'full' => array(
-        'label' => 'hidden',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 6,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_s_top_banner_color',
-    'label' => 'Top Banner Accent Color',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 8,
-    ),
-  );
-
   // Translatables
   // Included for use with string extractors like potx.
-  t('Accent color');
   t('Apache Solr Index');
   t('Banner image');
   t('Banner link');
   t('Call to Action Button');
   t('Caption Position Horizontal');
   t('Caption Position Vertical');
-  t('These terms identify the associated accent color. Select a color.');
+  t('Text Position Horizontal');
+  t('Text Position Vertical');
   t('This field defines vertical alignment for the caption overlay on your banner.');
   t('This field defines vertical alignment for the text overlay top banner. (Vertical positioning is ignored for text-block and no-text views displays.)');
   t('This field is used for the horizontal placement of the caption on your slide. ');
   t('This field is used for the horizontal placement of the text on your banner. (Horizontal positioning is ignored for text-block and no-text views displays.)');
   t('This is a full-width banner that displays at the bottom of the page. The size of this image is 1600x500. For best image fidelity, upload a larger image (3200x1000).
 ');
-  t('Top Banner Accent Color');
-  t('Top Caption Position Horizontal');
-  t('Top Caption Position Vertical');
+  t('Use these fields to create your call to action, an example of this would be, "Make a Gift". This button appears on top of your banner image, bottom right, or at the top-right of your page, if you do not use a banner image.');
 
   return $field_instances;
 }

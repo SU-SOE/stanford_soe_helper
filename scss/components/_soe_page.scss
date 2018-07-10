@@ -15,153 +15,47 @@
   }
 
   #block-views-stanford-page-top-banner-block {
-    // Get the overlay setup to look good overall
-    .banner-overlay > div:first-child {
-      max-height: 283px;
+    //.views-row {
+    //  @include breakpoint-max(small) {
+    //    margin-bottom: 0;
+    //  }
+    //}
+    .banner-overlay {
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      width: 1400px;
+      &.top-banner-right {
+        > div {
+          right: 0;
+          width: 55%;
+        }
+      }
 
-      // Switch up the colors
       &.top-banner-turquoise a {
         text-decoration-color: $orange;
       }
-
       &.top-banner-orange a {
         text-decoration-color: $pink;
       }
-
       &.top-banner-pink a {
         text-decoration-color: $turquoise;
       }
 
-      @include breakpoint-max(x-large) {
-        max-height: 266px;
-
-        p {
-          font-size: em(16px);
-        }
-      }
-
-      @include breakpoint-max(large) {
-        p {
-          font-size: em(16px);
-          line-height: 1.3em;
-          margin-bottom: 20px;
-        }
-      }
-
-      @include breakpoint-max(medium) {
-        max-height: 226px;
-
-        p {
-          font-size: em(14px);
-          line-height: 1.2em;
-          margin-bottom: 15px;
-        }
-      }
-
-      @include breakpoint-max(small) {
-        display: none;
-      }
-    }
-
-    // Change the top margin for the left placement
-    .banner-overlay.top-banner-left > div:first-child {
-      margin-left: 30px;
-      margin-top: -9%;
-
-      @include breakpoint-max(medium) {
-        margin-top: -6%;
-      }
-    }
-
-    .banner-overlay.top-banner-left.top-banner-top > div:first-child {
-      margin-left: 30px;
-      margin-top: -16%;
-
-      @include breakpoint-max(x-large) {
-        margin-top: -14%;
-      }
-
-      @include breakpoint-max(large) {
-        margin-top: -12%;
-      }
-
-      @include breakpoint-max('medium-lrg') {
-        margin-top: -11%;
-      }
-
-      @include breakpoint-max('medium-sm') {
-        margin-top: -9%;
-      }
-
-      @include breakpoint-max('small-med') {
-        margin-top: -7%;
-      }
-    }
-
-    // Change the top margin and the left placement for the right placement
-    .banner-overlay.top-banner-right > div:first-child {
-      margin-top: -9%;
-      left: 48%;
-
-      @include breakpoint-max(medium) {
-        margin-top: -6%;
-      }
-    }
-
-    .banner-overlay.top-banner-right.top-banner-top > div:first-child {
-      margin-top: -16%;
-
-      @include breakpoint-max(x-large) {
-        margin-top: -14%;
-      }
-
-      @include breakpoint-max(large) {
-        margin-top: -12%;
-      }
-
-      @include breakpoint-max('medium-lrg') {
-        margin-top: -11%;
-      }
-
-      @include breakpoint-max('medium-sm') {
-        margin-top: -9%;
-      }
-
-      @include breakpoint-max('small-med') {
-        margin-top: -7%;
-      }
-    }
-
-    .banner-overlay {
       > div {
         background: $white;
+        bottom: 48px;
         @include box-sizing;
         @include box-shadow;
-        padding: 0 30px 22px;
+        padding: 22px 30px;
+        position: absolute;
+        top: auto;
         width: 50%;
-
-        > div:first-child {
-          border-top-style: solid;
-          border-width: 6px;
-          margin-right: 72%;
-          padding-top: 20px;
-
-          &.top-banner-turquoise {
-            border-top-color: $turquoise;
-          }
-
-          &.top-banner-orange {
-            border-top-color: $orange;
-          }
-
-          &.top-banner-pink {
-            border-top-color: $pink;
-          }
-        }
       }
     }
 
     .page-feat-caption-container {
+      background: $white;
       color: $primary-color;
 
       p {
@@ -169,11 +63,9 @@
         line-height: 1.3em;
         margin-bottom: 20px;
       }
-
       p:last-child {
         margin-bottom: 0px;
       }
-
       h2 {
         font-size: em(26px);
         letter-spacing: 0;
@@ -183,24 +75,35 @@
         color: $primary-color;
         text-decoration: underline;
       }
-
       a:hover {
         text-decoration-color: $primary-color;
       }
-
       a.btn  {
         text-decoration: none;
-
-        @include breakpoint-max(large) {
-          font-size: em(17px);
-        }
       }
-
       .btn a:hover,
       a.btn:hover {
         background-color: $primary-color;
         color: $white;
       }
+
+      @include breakpoint-max(medium) {
+        width: 70%;
+      }
+      @include breakpoint-max(small) {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      @include breakpoint-max(x-small) {
+        width: 90%;
+      }
+    }
+
+    .page-cta-link-container {
+      float: right;
+      margin-right: 8%;
+      position: relative;
+      top: -102px;
     }
   }
 }
