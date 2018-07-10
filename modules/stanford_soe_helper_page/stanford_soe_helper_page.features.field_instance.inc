@@ -540,8 +540,7 @@ function stanford_soe_helper_page_field_default_field_instances() {
   t('Call to Action Button');
   t('Caption Position Horizontal');
   t('Caption Position Vertical');
-  t('Text Position Horizontal');
-  t('Text Position Vertical');
+  t('These terms identify the associated accent color. Select a color.');
   t('This field defines vertical alignment for the caption overlay on your banner.');
   t('This field defines vertical alignment for the text overlay top banner. (Vertical positioning is ignored for text-block and no-text views displays.)');
   t('This field is used for the horizontal placement of the caption on your slide. ');
