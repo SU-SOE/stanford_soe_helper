@@ -54,7 +54,7 @@ function stanford_soe_helper_page_field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 13,
+      'weight' => 11,
     ),
   );
 
@@ -416,6 +416,69 @@ function stanford_soe_helper_page_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-stanford_page-field_s_page_cta_link'.
+  $field_instances['node-stanford_page-field_s_page_cta_link'] = array(
+    'bundle' => 'stanford_page',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Use these fields to create your call to action, an example of this would be, "Make a Gift". This button appears on top of your banner image, bottom right, or at the top-right of your page, if you do not use a banner image.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'link',
+        'settings' => array(),
+        'type' => 'link_default',
+        'weight' => 14,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_s_page_cta_link',
+    'label' => 'Call to Action Button',
+    'required' => 0,
+    'settings' => array(
+      'absolute_url' => 1,
+      'attributes' => array(
+        'class' => '',
+        'configurable_class' => 0,
+        'configurable_title' => 0,
+        'rel' => '',
+        'target' => 'default',
+        'title' => '',
+      ),
+      'display' => array(
+        'url_cutoff' => '',
+      ),
+      'enable_tokens' => 1,
+      'rel_remove' => 'default',
+      'title' => 'optional',
+      'title_label_use_field_label' => 0,
+      'title_maxlength' => 128,
+      'title_value' => '',
+      'url' => 0,
+      'user_register_form' => FALSE,
+      'validate_url' => 1,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'link',
+      'settings' => array(),
+      'type' => 'link_field',
+      'weight' => 2,
+    ),
+  );
+
   // Exported field_instance:
   // 'node-stanford_page-field_s_top_banner_caption_horiz'.
   $field_instances['node-stanford_page-field_s_top_banner_caption_horiz'] = array(
@@ -426,7 +489,7 @@ function stanford_soe_helper_page_field_default_field_instances() {
       ),
     ),
     'deleted' => 0,
-    'description' => 'This field is used for the horizontal placement of the caption on your top banner. This field is ignored for no-caption views displays.',
+    'description' => 'This field is used for the horizontal placement of the text on your banner. (Horizontal positioning is ignored for text-block and no-text views displays.)',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -450,7 +513,7 @@ function stanford_soe_helper_page_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_s_top_banner_caption_horiz',
-    'label' => 'Top Caption Position Horizontal',
+    'label' => 'Text Position Horizontal',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -460,7 +523,7 @@ function stanford_soe_helper_page_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 3,
+      'weight' => 4,
     ),
   );
 
@@ -474,7 +537,7 @@ function stanford_soe_helper_page_field_default_field_instances() {
       ),
     ),
     'deleted' => 0,
-    'description' => 'This field defines vertical alignment for the caption overlay top banner. Vertical positioning is ignored for caption-block and no-caption views displays.|This field defines vertical alignment for the caption overlay top banner. Vertical positioning is ignored for caption-block and no-caption views displays.',
+    'description' => 'This field defines vertical alignment for the text overlay top banner. (Vertical positioning is ignored for text-block and no-text views displays.)',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -498,7 +561,7 @@ function stanford_soe_helper_page_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_s_top_banner_caption_vert',
-    'label' => 'Top Caption Position Vertical',
+    'label' => 'Text Position Vertical',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -508,7 +571,7 @@ function stanford_soe_helper_page_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 4,
+      'weight' => 5,
     ),
   );
 
@@ -562,13 +625,14 @@ function stanford_soe_helper_page_field_default_field_instances() {
   t('Apache Solr Index');
   t('Banner image');
   t('Banner link');
+  t('Call to Action Button');
   t('Caption Position Horizontal');
   t('Caption Position Vertical');
   t('These terms identify the associated accent color. Select a color.');
   t('This field defines vertical alignment for the caption overlay on your banner.');
-  t('This field defines vertical alignment for the caption overlay top banner. Vertical positioning is ignored for caption-block and no-caption views displays.|This field defines vertical alignment for the caption overlay top banner. Vertical positioning is ignored for caption-block and no-caption views displays.');
+  t('This field defines vertical alignment for the text overlay top banner. (Vertical positioning is ignored for text-block and no-text views displays.)');
   t('This field is used for the horizontal placement of the caption on your slide. ');
-  t('This field is used for the horizontal placement of the caption on your top banner. This field is ignored for no-caption views displays.');
+  t('This field is used for the horizontal placement of the text on your banner. (Horizontal positioning is ignored for text-block and no-text views displays.)');
   t('This is a full-width banner that displays at the bottom of the page. The size of this image is 1600x500. For best image fidelity, upload a larger image (3200x1000).
 ');
   t('Top Banner Accent Color');
