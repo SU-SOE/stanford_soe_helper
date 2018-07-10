@@ -550,6 +550,6 @@ function stanford_soe_helper_page_field_default_field_instances() {
   t('Top Banner Accent Color');
   t('Top Caption Position Horizontal');
   t('Top Caption Position Vertical');
-  
+
   return $field_instances;
 }
