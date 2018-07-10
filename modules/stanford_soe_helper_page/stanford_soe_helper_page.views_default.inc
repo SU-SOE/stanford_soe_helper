@@ -240,6 +240,16 @@ function stanford_soe_helper_page_views_default_views() {
   $handler->display->display_options['fields']['field_s_top_banner_color']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_s_top_banner_color']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_s_top_banner_color']['type'] = 'taxonomy_term_reference_plain';
+  /* Field: Content: Call to Action Button */
+  $handler->display->display_options['fields']['field_s_page_cta_link']['id'] = 'field_s_page_cta_link';
+  $handler->display->display_options['fields']['field_s_page_cta_link']['table'] = 'field_data_field_s_page_cta_link';
+  $handler->display->display_options['fields']['field_s_page_cta_link']['field'] = 'field_s_page_cta_link';
+  $handler->display->display_options['fields']['field_s_page_cta_link']['label'] = '';
+  $handler->display->display_options['fields']['field_s_page_cta_link']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_s_page_cta_link']['element_type'] = 'div';
+  $handler->display->display_options['fields']['field_s_page_cta_link']['element_class'] = 'btn';
+  $handler->display->display_options['fields']['field_s_page_cta_link']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_s_page_cta_link']['click_sort_column'] = 'url';
   /* Field: Field collection item: Caption */
   $handler->display->display_options['fields']['field_s_image_caption']['id'] = 'field_s_image_caption';
   $handler->display->display_options['fields']['field_s_image_caption']['table'] = 'field_data_field_s_image_caption';
@@ -272,7 +282,8 @@ function stanford_soe_helper_page_views_default_views() {
      <div class="top-banner-[field_s_top_banner_color]"></div>
       <div class="page-feat-caption-container">[field_s_image_caption]</div>
   </div>
-</div>';
+</div>
+<div class="page-cta-link-container">[field_s_page_cta_link]</div>';
   $handler->display->display_options['fields']['field_s_image_caption_1']['element_type'] = 'div';
   $handler->display->display_options['fields']['field_s_image_caption_1']['element_label_type'] = 'div';
   $handler->display->display_options['fields']['field_s_image_caption_1']['element_label_colon'] = FALSE;
@@ -285,7 +296,7 @@ function stanford_soe_helper_page_views_default_views() {
   $handler->display->display_options['fields']['nothing']['label'] = '';
   $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="ga-scroll-tracking page-feat-image-container">
   <div class="banner-image">[field_s_image_image]</div>
-  [field_s_image_caption_1]
+[field_s_image_caption_1]
 </div>';
   $handler->display->display_options['fields']['nothing']['element_type'] = 'div';
   $handler->display->display_options['fields']['nothing']['element_label_type'] = 'div';
