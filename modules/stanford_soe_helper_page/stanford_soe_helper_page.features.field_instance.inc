@@ -547,7 +547,9 @@ function stanford_soe_helper_page_field_default_field_instances() {
   t('This field is used for the horizontal placement of the text on your banner. (Horizontal positioning is ignored for text-block and no-text views displays.)');
   t('This is a full-width banner that displays at the bottom of the page. The size of this image is 1600x500. For best image fidelity, upload a larger image (3200x1000).
 ');
-  t('Use these fields to create your call to action, an example of this would be, "Make a Gift". This button appears on top of your banner image, bottom right, or at the top-right of your page, if you do not use a banner image.');
-
+  t('Top Banner Accent Color');
+  t('Top Caption Position Horizontal');
+  t('Top Caption Position Vertical');
+  
   return $field_instances;
 }
