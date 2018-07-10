@@ -246,10 +246,8 @@ function stanford_soe_helper_page_views_default_views() {
   $handler->display->display_options['fields']['field_s_page_cta_link']['field'] = 'field_s_page_cta_link';
   $handler->display->display_options['fields']['field_s_page_cta_link']['label'] = '';
   $handler->display->display_options['fields']['field_s_page_cta_link']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_s_page_cta_link']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_s_page_cta_link']['alter']['text'] = '<a class="btn" href="[field_s_page_cta_link-url]">[field_s_page_cta_link-title]</a>';
-  $handler->display->display_options['fields']['field_s_page_cta_link']['alter']['path'] = '[field_s_page_cta_link-url]';
-  $handler->display->display_options['fields']['field_s_page_cta_link']['alter']['link_class'] = 'btn';
+  $handler->display->display_options['fields']['field_s_page_cta_link']['element_type'] = 'div';
+  $handler->display->display_options['fields']['field_s_page_cta_link']['element_class'] = 'btn';
   $handler->display->display_options['fields']['field_s_page_cta_link']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_s_page_cta_link']['click_sort_column'] = 'url';
   /* Field: Field collection item: Caption */
