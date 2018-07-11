@@ -43,6 +43,11 @@
         position: absolute;
         top: auto;
         width: 50%;
+
+        @include breakpoint-max(medium-sm) {
+
+          bottom: 88px;
+        }
       }
     }
 
@@ -110,7 +115,13 @@
       float: right;
       margin-right: 8%;
       position: relative;
-      top: -102px;
+      bottom: 102px;
+
+      @include breakpoint-max(medium-sm) {
+
+        bottom: 72px;
+        float: left;
+      }
     }
   }
 }
