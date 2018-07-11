@@ -211,6 +211,8 @@ function stanford_soe_helper_page_views_default_views() {
   $handler->display->display_options['fields']['field_s_image_image']['relationship'] = 'field_s_image_info_value';
   $handler->display->display_options['fields']['field_s_image_image']['label'] = '';
   $handler->display->display_options['fields']['field_s_image_image']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_s_image_image']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_s_image_image']['alter']['text'] = '<div class="banner-image">[field_s_image_image]</div>';
   $handler->display->display_options['fields']['field_s_image_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_s_image_image']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_s_image_image']['click_sort_column'] = 'fid';
@@ -247,7 +249,7 @@ function stanford_soe_helper_page_views_default_views() {
   $handler->display->display_options['fields']['field_s_page_cta_link']['label'] = '';
   $handler->display->display_options['fields']['field_s_page_cta_link']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_s_page_cta_link']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_s_page_cta_link']['alter']['text'] = '<a class="btn" href="[field_s_page_cta_link-url]">[field_s_page_cta_link-title]</a>';
+  $handler->display->display_options['fields']['field_s_page_cta_link']['alter']['text'] = '<div class="page-cta-link-container"><a class="btn" href="[field_s_page_cta_link-url]">[field_s_page_cta_link-title]</a></div>';
   $handler->display->display_options['fields']['field_s_page_cta_link']['alter']['path'] = '[field_s_page_cta_link-url]';
   $handler->display->display_options['fields']['field_s_page_cta_link']['alter']['link_class'] = 'btn';
   $handler->display->display_options['fields']['field_s_page_cta_link']['element_label_colon'] = FALSE;
@@ -284,8 +286,7 @@ function stanford_soe_helper_page_views_default_views() {
      <div class="top-banner-[field_s_top_banner_color]"></div>
       <div class="page-feat-caption-container">[field_s_image_caption]</div>
   </div>
-</div>
-<div class="page-cta-link-container">[field_s_page_cta_link]</div>';
+</div>';
   $handler->display->display_options['fields']['field_s_image_caption_1']['element_type'] = 'div';
   $handler->display->display_options['fields']['field_s_image_caption_1']['element_label_type'] = 'div';
   $handler->display->display_options['fields']['field_s_image_caption_1']['element_label_colon'] = FALSE;
@@ -297,8 +298,9 @@ function stanford_soe_helper_page_views_default_views() {
   $handler->display->display_options['fields']['nothing']['ui_name'] = 'Global: Custom text view rewrite';
   $handler->display->display_options['fields']['nothing']['label'] = '';
   $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="ga-scroll-tracking page-feat-image-container">
-  <div class="banner-image">[field_s_image_image]</div>
+[field_s_image_image]
 [field_s_image_caption_1]
+[field_s_page_cta_link]
 </div>';
   $handler->display->display_options['fields']['nothing']['element_type'] = 'div';
   $handler->display->display_options['fields']['nothing']['element_label_type'] = 'div';
