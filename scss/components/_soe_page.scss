@@ -15,21 +15,12 @@
   }
 
   #block-views-stanford-page-top-banner-block {
-    //.views-row {
-    //  @include breakpoint-max(small) {
-    //    margin-bottom: 0;
-    //  }
-    //}
+
     .banner-overlay {
       position: relative;
       margin-left: auto;
       margin-right: auto;
       width: 1400px;
-
-      &.top-banner-right > div {
-        right: 0;
-        width: 55%;
-      }
 
       &.top-banner-turquoise a {
         text-decoration-color: $orange;
@@ -51,6 +42,11 @@
         top: auto;
         width: 50%;
       }
+    }
+
+    .banner-overlay.top-banner-right > div {
+      right: 0;
+      width: 55%;
     }
 
     .page-feat-caption-container {
@@ -98,7 +94,7 @@
       }
 
       @include breakpoint-max(x-small) {
-        
+
         width: 90%;
       }
     }
