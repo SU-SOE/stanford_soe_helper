@@ -25,11 +25,10 @@
       margin-left: auto;
       margin-right: auto;
       width: 1400px;
-      &.top-banner-right {
-        > div {
-          right: 0;
-          width: 55%;
-        }
+
+      &.top-banner-right > div {
+        right: 0;
+        width: 55%;
       }
 
       &.top-banner-turquoise a {
@@ -90,10 +89,12 @@
       @include breakpoint-max(medium) {
         width: 70%;
       }
+
       @include breakpoint-max(small) {
         margin-top: 0;
         margin-bottom: 0;
       }
+      
       @include breakpoint-max(x-small) {
         width: 90%;
       }
