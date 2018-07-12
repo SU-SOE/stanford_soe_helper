@@ -133,6 +133,19 @@ function stanford_people_spotlight_views_views_default_views() {
   $handler->display->display_options['fields']['field_s_ppl_spot_quote']['settings'] = array(
     'trim_length' => '600',
   );
+  /* Field: Content: Lead text/quote rewrite */
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote_1']['id'] = 'field_s_ppl_spot_quote_1';
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote_1']['table'] = 'field_data_field_s_ppl_spot_quote';
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote_1']['field'] = 'field_s_ppl_spot_quote';
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote_1']['ui_name'] = 'Content: Lead text/quote rewrite';
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote_1']['label'] = '';
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote_1']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote_1']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote_1']['alter']['text'] = ' <div class="spotlight-quote">
+        <p>[field_s_ppl_spot_quote]</p>
+</div>';
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote_1']['hide_empty'] = TRUE;
   /* Field: Content: Edit link */
   $handler->display->display_options['fields']['edit_node']['id'] = 'edit_node';
   $handler->display->display_options['fields']['edit_node']['table'] = 'views_entity_node';
@@ -168,9 +181,7 @@ function stanford_people_spotlight_views_views_default_views() {
       <div class="spotlight-department">
         <p>[field_s_ppl_spot_department]</p>
       </div>
-      <div class="spotlight-quote">
-        <p>[field_s_ppl_spot_quote]</p>
-      </div>
+      [field_s_ppl_spot_quote_1]
       <div class="edit-link">[edit_node]</div>
     </div>
   </div>
@@ -449,6 +460,20 @@ function stanford_people_spotlight_views_views_default_views() {
   $handler->display->display_options['fields']['field_s_ppl_spot_quote']['settings'] = array(
     'trim_length' => '600',
   );
+  /* Field: Content: Lead text/quote rewrite */
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote_1']['id'] = 'field_s_ppl_spot_quote_1';
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote_1']['table'] = 'field_data_field_s_ppl_spot_quote';
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote_1']['field'] = 'field_s_ppl_spot_quote';
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote_1']['ui_name'] = 'Content: Lead text/quote rewrite';
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote_1']['label'] = '';
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote_1']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote_1']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote_1']['alter']['text'] = ' <div class="spotlight-quote">
+        <p>[field_s_ppl_spot_quote]</p>
+</div>
+';
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote_1']['hide_empty'] = TRUE;
   /* Field: Content: Edit link */
   $handler->display->display_options['fields']['edit_node']['id'] = 'edit_node';
   $handler->display->display_options['fields']['edit_node']['table'] = 'views_entity_node';
@@ -484,10 +509,8 @@ function stanford_people_spotlight_views_views_default_views() {
       <div class="spotlight-department">
         <p>[field_s_ppl_spot_department]</p>
       </div>
-      <div class="spotlight-quote">
-        <p>[field_s_ppl_spot_quote]</p>
-      </div>
-      <div class="edit-link">[edit_node]</div>
+      [field_s_ppl_spot_quote_1]
+       <div class="edit-link">[edit_node]</div>
     </div>
   </div>
 </div>
@@ -1102,6 +1125,20 @@ function stanford_people_spotlight_views_views_default_views() {
   $handler->display->display_options['fields']['field_s_ppl_spot_quote']['settings'] = array(
     'trim_length' => '600',
   );
+  /* Field: Content: Lead text/quote rewrite */
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote_1']['id'] = 'field_s_ppl_spot_quote_1';
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote_1']['table'] = 'field_data_field_s_ppl_spot_quote';
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote_1']['field'] = 'field_s_ppl_spot_quote';
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote_1']['ui_name'] = 'Content: Lead text/quote rewrite';
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote_1']['label'] = '';
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote_1']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote_1']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote_1']['alter']['text'] = ' <div class="spotlight-quote">
+        <p>[field_s_ppl_spot_quote]</p>
+</div>
+';
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote_1']['hide_empty'] = TRUE;
   /* Field: Content: Edit link */
   $handler->display->display_options['fields']['edit_node']['id'] = 'edit_node';
   $handler->display->display_options['fields']['edit_node']['table'] = 'views_entity_node';
@@ -1137,9 +1174,7 @@ function stanford_people_spotlight_views_views_default_views() {
       <div class="spotlight-department">
         <p>[field_s_ppl_spot_department]</p>
       </div>
-      <div class="spotlight-quote">
-        <p>[field_s_ppl_spot_quote]</p>
-      </div>
+      [field_s_ppl_spot_quote_1]
       <div class="edit-link">[edit_node]</div>
     </div>
   </div>
@@ -1829,6 +1864,18 @@ function stanford_people_spotlight_views_views_default_views() {
   $handler->display->display_options['fields']['field_s_ppl_spot_quote']['settings'] = array(
     'trim_length' => '600',
   );
+  /* Field: Content: Lead text/quote rewrite */
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote_1']['id'] = 'field_s_ppl_spot_quote_1';
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote_1']['table'] = 'field_data_field_s_ppl_spot_quote';
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote_1']['field'] = 'field_s_ppl_spot_quote';
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote_1']['ui_name'] = 'Content: Lead text/quote rewrite';
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote_1']['label'] = '';
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote_1']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote_1']['alter']['text'] = ' <div class="spotlight-quote">
+        <p>[field_s_ppl_spot_quote]</p>
+</div>';
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote_1']['hide_empty'] = TRUE;
   /* Field: Content: Edit link */
   $handler->display->display_options['fields']['edit_node']['id'] = 'edit_node';
   $handler->display->display_options['fields']['edit_node']['table'] = 'views_entity_node';
@@ -1864,9 +1911,7 @@ function stanford_people_spotlight_views_views_default_views() {
       <div class="spotlight-department">
         <p>[field_s_ppl_spot_department]</p>
       </div>
-      <div class="spotlight-quote">
-        <p>[field_s_ppl_spot_quote]</p>
-      </div>
+      [field_s_ppl_spot_quote_1]
       <div class="edit-link">[edit_node]</div>
     </div>
   </div>
@@ -3048,6 +3093,20 @@ function stanford_people_spotlight_views_views_default_views() {
   $handler->display->display_options['fields']['field_s_ppl_spot_quote']['settings'] = array(
     'trim_length' => '600',
   );
+  /* Field: Content: Lead text/quote rewrite */
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote_1']['id'] = 'field_s_ppl_spot_quote_1';
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote_1']['table'] = 'field_data_field_s_ppl_spot_quote';
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote_1']['field'] = 'field_s_ppl_spot_quote';
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote_1']['ui_name'] = 'Content: Lead text/quote rewrite';
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote_1']['label'] = '';
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote_1']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote_1']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote_1']['alter']['text'] = ' <div class="spotlight-quote">
+        <p>[field_s_ppl_spot_quote]</p>
+</div>
+';
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote_1']['hide_empty'] = TRUE;
   /* Field: Content: Edit link */
   $handler->display->display_options['fields']['edit_node']['id'] = 'edit_node';
   $handler->display->display_options['fields']['edit_node']['table'] = 'views_entity_node';
@@ -3083,9 +3142,7 @@ function stanford_people_spotlight_views_views_default_views() {
       <div class="spotlight-department">
         <p>[field_s_ppl_spot_department]</p>
       </div>
-      <div class="spotlight-quote">
-        <p>[field_s_ppl_spot_quote]</p>
-      </div>
+      [field_s_ppl_spot_quote_1]
       <div class="edit-link">[edit_node]</div>
     </div>
   </div>
@@ -3366,6 +3423,20 @@ function stanford_people_spotlight_views_views_default_views() {
   $handler->display->display_options['fields']['field_s_ppl_spot_quote']['settings'] = array(
     'trim_length' => '600',
   );
+  /* Field: Content: Lead text/quote rewrite */
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote_1']['id'] = 'field_s_ppl_spot_quote_1';
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote_1']['table'] = 'field_data_field_s_ppl_spot_quote';
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote_1']['field'] = 'field_s_ppl_spot_quote';
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote_1']['ui_name'] = 'Content: Lead text/quote rewrite';
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote_1']['label'] = '';
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote_1']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote_1']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote_1']['alter']['text'] = ' <div class="spotlight-quote">
+        <p>[field_s_ppl_spot_quote]</p>
+</div>
+';
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_s_ppl_spot_quote_1']['hide_empty'] = TRUE;
   /* Field: Content: Edit link */
   $handler->display->display_options['fields']['edit_node']['id'] = 'edit_node';
   $handler->display->display_options['fields']['edit_node']['table'] = 'views_entity_node';
@@ -3401,9 +3472,7 @@ function stanford_people_spotlight_views_views_default_views() {
       <div class="spotlight-department">
         <p>[field_s_ppl_spot_department]</p>
       </div>
-      <div class="spotlight-quote">
-        <p>[field_s_ppl_spot_quote]</p>
-      </div>
+      [field_s_ppl_spot_quote_1]
       <div class="edit-link">[edit_node]</div>
     </div>
   </div>
