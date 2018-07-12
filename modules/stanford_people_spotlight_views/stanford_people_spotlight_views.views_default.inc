@@ -2214,14 +2214,6 @@ function stanford_people_spotlight_views_views_default_views() {
   $handler->display->display_options['pager']['options']['offset'] = '7';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Footer: Global: Text area */
-  $handler->display->display_options['footer']['area']['id'] = 'area';
-  $handler->display->display_options['footer']['area']['table'] = 'views';
-  $handler->display->display_options['footer']['area']['field'] = 'area';
-  $handler->display->display_options['footer']['area']['content'] = '<div class="spotlight-button spotlight-img-color-[field_s_ppl_spot_image_color]">
-  <a class="btn" href="spotlight">More Stories</a>
-</div>';
-  $handler->display->display_options['footer']['area']['format'] = 'content_editor_text_format';
   /* No results behavior: Global: Text area */
   $handler->display->display_options['empty']['area']['id'] = 'area';
   $handler->display->display_options['empty']['area']['table'] = 'views';
@@ -2984,6 +2976,15 @@ function stanford_people_spotlight_views_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '3';
   $handler->display->display_options['pager']['options']['offset'] = '';
+  $handler->display->display_options['defaults']['footer'] = FALSE;
+  /* Footer: Global: Text area */
+  $handler->display->display_options['footer']['area']['id'] = 'area';
+  $handler->display->display_options['footer']['area']['table'] = 'views';
+  $handler->display->display_options['footer']['area']['field'] = 'area';
+  $handler->display->display_options['footer']['area']['content'] = '<div class="spotlight-button spotlight-img-color-[field_s_ppl_spot_image_color]">
+  <a class="btn" href="spotlight">More Stories</a>
+</div>';
+  $handler->display->display_options['footer']['area']['format'] = 'content_editor_text_format';
   $handler->display->display_options['defaults']['arguments'] = FALSE;
   /* Contextual filter: Content: Has taxonomy term ID */
   $handler->display->display_options['arguments']['tid']['id'] = 'tid';
