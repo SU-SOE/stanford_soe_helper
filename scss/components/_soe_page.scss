@@ -17,10 +17,10 @@
   #block-views-stanford-page-top-banner-block {
 
     .banner-overlay {
-      position: relative;
       margin-left: auto;
       margin-right: auto;
       width: 1400px;
+      height: auto;
 
       &.top-banner-turquoise a {
         text-decoration-color: $orange;
@@ -37,16 +37,19 @@
       > div {
         background: $white;
         bottom: 48px;
+        margin-left: 2%;
         @include box-sizing;
         @include box-shadow;
         padding: 22px 30px;
-        position: absolute;
-        top: auto;
         width: 50%;
 
         @include breakpoint-max(medium-sm) {
 
           bottom: 88px;
+
+          @include breakpoint-max(small) {
+            bottom: 0;
+          }
         }
       }
     }
@@ -94,11 +97,6 @@
         color: $white;
       }
 
-      @include breakpoint-max(medium) {
-
-        width: 70%;
-      }
-
       @include breakpoint-max(small) {
 
         margin-top: 0;
@@ -113,9 +111,10 @@
 
     .page-cta-link-container {
       float: right;
+      margin-left: 3%;
       margin-right: 8%;
       position: relative;
-      bottom: 102px;
+      bottom: 85px;
 
       @include breakpoint-max(medium-sm) {
 
