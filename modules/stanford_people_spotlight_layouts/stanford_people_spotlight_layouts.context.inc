@@ -65,6 +65,12 @@ function stanford_people_spotlight_layouts_context_default_contexts() {
           'region' => 'content_lower',
           'weight' => '-6',
         ),
+        'views-005720ec0398a13d1a26b9de441e83ca' => array(
+          'module' => 'views',
+          'delta' => '005720ec0398a13d1a26b9de441e83ca',
+          'region' => 'content_bottom',
+          'weight' => '-10',
+        ),
       ),
     ),
   );
