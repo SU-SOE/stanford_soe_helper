@@ -5186,24 +5186,30 @@ html.js body > .hero-curtain-reveal {
     margin-bottom: 0; } }
 /* line 19, ../scss/components/_soe_page.scss */
 .node-type-stanford-page #block-views-stanford-page-top-banner-block .banner-overlay {
-  margin-left: auto;
+  margin-left: 3%;
   margin-right: auto;
-  width: 1400px;
-  height: auto; }
-  /* line 25, ../scss/components/_soe_page.scss */
+  position: relative;
+  width: 1400px; }
+  @media (max-width: 950px) {
+    /* line 19, ../scss/components/_soe_page.scss */
+    .node-type-stanford-page #block-views-stanford-page-top-banner-block .banner-overlay {
+      height: auto;
+      margin-left: auto;
+      position: inherit;
+      width: 100%; } }
+  /* line 32, ../scss/components/_soe_page.scss */
   .node-type-stanford-page #block-views-stanford-page-top-banner-block .banner-overlay.top-banner-turquoise a {
     text-decoration-color: #FFBD54; }
-  /* line 29, ../scss/components/_soe_page.scss */
+  /* line 36, ../scss/components/_soe_page.scss */
   .node-type-stanford-page #block-views-stanford-page-top-banner-block .banner-overlay.top-banner-orange a {
     text-decoration-color: #FF525C; }
-  /* line 33, ../scss/components/_soe_page.scss */
+  /* line 40, ../scss/components/_soe_page.scss */
   .node-type-stanford-page #block-views-stanford-page-top-banner-block .banner-overlay.top-banner-pink a {
     text-decoration-color: #00ECE9; }
-  /* line 37, ../scss/components/_soe_page.scss */
+  /* line 44, ../scss/components/_soe_page.scss */
   .node-type-stanford-page #block-views-stanford-page-top-banner-block .banner-overlay > div {
     background: #FFFFFF;
     bottom: 48px;
-    margin-left: 2%;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -5211,72 +5217,73 @@ html.js body > .hero-curtain-reveal {
     -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
     padding: 22px 30px;
+    position: absolute;
+    top: auto;
     width: 50%; }
     @media (max-width: 950px) {
-      /* line 37, ../scss/components/_soe_page.scss */
+      /* line 44, ../scss/components/_soe_page.scss */
       .node-type-stanford-page #block-views-stanford-page-top-banner-block .banner-overlay > div {
-        bottom: 88px; } }
-  @media (max-width: 950px) and (max-width: 767px) {
-    /* line 37, ../scss/components/_soe_page.scss */
-    .node-type-stanford-page #block-views-stanford-page-top-banner-block .banner-overlay > div {
-      bottom: 0; } }
-
-/* line 57, ../scss/components/_soe_page.scss */
+        bottom: 88px;
+        max-width: 100%;
+        position: inherit;
+        width: 100%; } }
+/* line 64, ../scss/components/_soe_page.scss */
 .node-type-stanford-page #block-views-stanford-page-top-banner-block .banner-overlay.top-banner-right > div {
   right: 0;
   width: 55%; }
-/* line 62, ../scss/components/_soe_page.scss */
+/* line 69, ../scss/components/_soe_page.scss */
 .node-type-stanford-page #block-views-stanford-page-top-banner-block .page-feat-caption-container {
   background: #FFFFFF;
   color: #333333; }
-  /* line 66, ../scss/components/_soe_page.scss */
+  /* line 73, ../scss/components/_soe_page.scss */
   .node-type-stanford-page #block-views-stanford-page-top-banner-block .page-feat-caption-container p {
     font-size: 0.9em;
     line-height: 1.3em;
     margin-bottom: 20px; }
-  /* line 72, ../scss/components/_soe_page.scss */
+  /* line 79, ../scss/components/_soe_page.scss */
   .node-type-stanford-page #block-views-stanford-page-top-banner-block .page-feat-caption-container p:last-child {
     margin-bottom: 0px; }
-  /* line 76, ../scss/components/_soe_page.scss */
+  /* line 83, ../scss/components/_soe_page.scss */
   .node-type-stanford-page #block-views-stanford-page-top-banner-block .page-feat-caption-container h2 {
     font-size: 1.3em;
     letter-spacing: 0; }
-  /* line 81, ../scss/components/_soe_page.scss */
+  /* line 88, ../scss/components/_soe_page.scss */
   .node-type-stanford-page #block-views-stanford-page-top-banner-block .page-feat-caption-container a {
     color: #333333;
     text-decoration: underline; }
-  /* line 86, ../scss/components/_soe_page.scss */
+  /* line 93, ../scss/components/_soe_page.scss */
   .node-type-stanford-page #block-views-stanford-page-top-banner-block .page-feat-caption-container a:hover {
     text-decoration-color: #333333; }
-  /* line 90, ../scss/components/_soe_page.scss */
+  /* line 97, ../scss/components/_soe_page.scss */
   .node-type-stanford-page #block-views-stanford-page-top-banner-block .page-feat-caption-container a.btn {
     text-decoration: none; }
-  /* line 94, ../scss/components/_soe_page.scss */
+  /* line 101, ../scss/components/_soe_page.scss */
   .node-type-stanford-page #block-views-stanford-page-top-banner-block .page-feat-caption-container .btn a:hover,
   .node-type-stanford-page #block-views-stanford-page-top-banner-block .page-feat-caption-container a.btn:hover {
     background-color: #333333;
     color: #FFFFFF; }
   @media (max-width: 767px) {
-    /* line 62, ../scss/components/_soe_page.scss */
+    /* line 69, ../scss/components/_soe_page.scss */
     .node-type-stanford-page #block-views-stanford-page-top-banner-block .page-feat-caption-container {
       margin-top: 0;
       margin-bottom: 0; } }
   @media (max-width: 480px) {
-    /* line 62, ../scss/components/_soe_page.scss */
+    /* line 69, ../scss/components/_soe_page.scss */
     .node-type-stanford-page #block-views-stanford-page-top-banner-block .page-feat-caption-container {
       width: 90%; } }
-/* line 112, ../scss/components/_soe_page.scss */
+/* line 119, ../scss/components/_soe_page.scss */
 .node-type-stanford-page #block-views-stanford-page-top-banner-block .page-cta-link-container {
   float: right;
   margin-left: 3%;
   margin-right: 8%;
   position: relative;
-  bottom: 85px; }
+  bottom: 100px; }
   @media (max-width: 950px) {
-    /* line 112, ../scss/components/_soe_page.scss */
+    /* line 119, ../scss/components/_soe_page.scss */
     .node-type-stanford-page #block-views-stanford-page-top-banner-block .page-cta-link-container {
-      bottom: 72px;
-      float: left; } }
+      bottom: 0;
+      float: left;
+      margin-top: 70px; } }
 
 /* line 11, ../scss/components/_soe_people_spotlight.scss */
 .node-type-stanford-people-spotlight .main {
