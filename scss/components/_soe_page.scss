@@ -46,10 +46,29 @@
         bottom: 48px;
         @include box-sizing;
         @include box-shadow;
-        padding: 22px 30px;
+        padding: 0 30px 22px;
         position: absolute;
         top: auto;
         width: 50%;
+
+        > div:first-child {
+          border-top-style: solid;
+          border-width: 6px;
+          margin-right: 72%;
+          padding-top: 20px;
+        }
+
+        > div:first-child.top-banner-orange {
+          border-top-color: $orange;
+        }
+
+        > div:first-child.top-banner-pink {
+          border-top-color: $pink;
+        }
+
+        > div:first-child.top-banner-turquoise {
+          border-top-color: $turquoise;
+        }
 
         @include breakpoint-max(medium-sm) {
 
@@ -123,14 +142,13 @@
       position: relative;
       bottom: 100px;
 
-      @include breakpoint-max(medium-sm) {
+      @include breakpoint-max(x-small) {
 
-        bottom: 220px;
-      }
+        bottom: 60px;
 
-      @include breakpoint-max(smaller) {
-
-        bottom: 240px;
+        a {
+          font-size: 1.7rem;
+        }
       }
     }
   }
