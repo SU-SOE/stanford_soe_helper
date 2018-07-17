@@ -5281,9 +5281,11 @@ html.js body > .hero-curtain-reveal {
   @media (max-width: 950px) {
     /* line 119, ../scss/components/_soe_page.scss */
     .node-type-stanford-page #block-views-stanford-page-top-banner-block .page-cta-link-container {
-      bottom: 0;
-      float: left;
-      margin-top: 70px; } }
+      bottom: 220px; } }
+  @media (max-width: 580px) {
+    /* line 119, ../scss/components/_soe_page.scss */
+    .node-type-stanford-page #block-views-stanford-page-top-banner-block .page-cta-link-container {
+      bottom: 240px; } }
 
 /* line 11, ../scss/components/_soe_people_spotlight.scss */
 .node-type-stanford-people-spotlight .main {
