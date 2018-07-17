@@ -20,13 +20,23 @@
       margin-left: 3%;
       margin-right: auto;
       position: relative;
-      width: 1400px;
+      width: auto;
 
       @include breakpoint-max(medium-sm) {
         height: auto;
         margin-left: auto;
         position: inherit;
         width: 100%;
+      }
+
+      &.top-banner-top {
+        position: absolute;
+        top: 240px;
+
+        @include breakpoint-max(medium-sm) {
+          position: relative;
+          top: 88px;
+        }
       }
 
       &.top-banner-turquoise a {
@@ -80,9 +90,23 @@
       }
     }
 
-    .banner-overlay.top-banner-right > div {
-      right: 0;
-      width: 55%;
+    .banner-overlay.top-banner-right {
+      margin-right: 10%;
+
+      > div {
+        float: right;
+        position: relative;
+        right: -100px;
+        top: -270px;
+        width: 1440px;
+
+        @include breakpoint-max(medium-lrg) {
+
+          bottom: 88px;
+          position: inherit;
+          width: 100%;
+        }
+      }
     }
 
     .page-feat-caption-container {
@@ -149,6 +173,11 @@
         a {
           font-size: 1.7rem;
         }
+      }
+
+      &.right {
+        float: left;
+        width: 100%;
       }
     }
   }

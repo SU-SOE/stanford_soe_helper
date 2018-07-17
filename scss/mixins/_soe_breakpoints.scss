@@ -3,7 +3,9 @@
 // MAX-WIDTH BREAKPOINTS
 
 @mixin breakpoint-max($point) {
-  @if $point == x-large {
+  @if $point == xx-large {
+    @media (max-width: 1450px) { @content; }
+  } @else if $point == x-large {
     @media (max-width: 1250px) { @content; }
   } @else if $point == large {
     @media (max-width: 1200px) { @content; }
