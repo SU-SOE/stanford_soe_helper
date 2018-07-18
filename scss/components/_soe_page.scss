@@ -115,6 +115,47 @@
       }
     }
 
+    .banner-overlay.top-banner-right.top-banner-top {
+      float: left;
+      margin-right: 10%;
+
+      > div {
+        float: right;
+        position: relative;
+        right: 100px;
+        top: -190px;
+
+        @include breakpoint-max(large) {
+          top: -220px;
+          width: 100%;
+        }
+
+        @include breakpoint-max(medium-lrg) {
+
+          position: relative;
+          right: 0;
+          top: -170px;
+          width: 100%;
+        }
+      }
+    }
+
+    .banner-overlay.top-banner-top {
+      position: fixed;
+      top: 480px;
+      width: 100%;
+
+      @include breakpoint-max(large) {
+        top: 560px;
+      }
+
+      @include breakpoint-max(medium-lrg) {
+        position: relative;
+        top: 88px;
+        width: 100%;
+      }
+    }
+
     .page-feat-caption-container {
       background: $white;
       color: $primary-color;
