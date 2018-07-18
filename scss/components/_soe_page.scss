@@ -22,7 +22,7 @@
       position: relative;
       width: auto;
 
-      @include breakpoint-max(medium-sm) {
+      @include breakpoint-max(medium-lrg) {
         height: auto;
         margin-left: auto;
         position: inherit;
@@ -80,7 +80,7 @@
           border-top-color: $turquoise;
         }
 
-        @include breakpoint-max(medium-sm) {
+        @include breakpoint-max(medium-lrg) {
 
           bottom: 88px;
           max-width: 100%;
@@ -91,19 +91,25 @@
     }
 
     .banner-overlay.top-banner-right {
+      float: left;
       margin-right: 10%;
 
       > div {
         float: right;
         position: relative;
         right: -100px;
-        top: -270px;
-        width: 1440px;
+        top: -290px;
+
+        @include breakpoint-max(x-large) {
+
+          top: -300px;
+        }
 
         @include breakpoint-max(medium-lrg) {
 
-          bottom: 88px;
-          position: inherit;
+          position: relative;
+          right: 0;
+          top: -80px;
           width: 100%;
         }
       }
