@@ -87,18 +87,20 @@
       @include breakpoint-max(medium-sm) {
         position: relative;
         top: 88px;
+        max-width: 100%;
       }
     }
 
     .banner-overlay.top-banner-right {
       float: left;
       margin-right: 10%;
+      min-width: 1440px;
 
       > div {
         float: right;
         position: relative;
         right: -100px;
-        top: -290px;
+        top: -240px;
 
         @include breakpoint-max(x-large) {
 
@@ -116,19 +118,18 @@
     }
 
     .banner-overlay.top-banner-right.top-banner-top {
-      float: left;
-      margin-right: 10%;
+      right: 0;
+      top: 190px;
+
+      @include breakpoint-max(medium-lrg) {
+
+        top: 170px;
+      }
 
       > div {
         float: right;
         position: relative;
-        right: 100px;
-        top: -190px;
-
-        @include breakpoint-max(large) {
-          top: -220px;
-          width: 100%;
-        }
+        top: -140px;
 
         @include breakpoint-max(medium-lrg) {
 
@@ -140,19 +141,40 @@
       }
     }
 
-    .banner-overlay.top-banner-top {
-      position: fixed;
-      top: 480px;
-      width: 100%;
-
-      @include breakpoint-max(large) {
-        top: 560px;
-      }
+    .banner-overlay.top-banner-right.top-banner-bottom {
+      right: 0;
+      position: absolute;
 
       @include breakpoint-max(medium-lrg) {
+
+        float: left;
+        min-width: auto;
+        position: relative;
+      }
+
+      > div {
+        float: right;
+        position: relative;
+        top: -240px;
+
+        @include breakpoint-max(medium-lrg) {
+
+          position: relative;
+          top: 0;
+          width: 100%;
+        }
+      }
+    }
+
+    .banner-overlay.top-banner-top {
+      top: 280px;
+      min-width: 1440px;
+
+      @include breakpoint-max(medium-lrg) {
+        float: left;
+        min-width: auto;
         position: relative;
         top: 88px;
-        width: 100%;
       }
     }
 
