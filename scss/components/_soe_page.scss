@@ -207,11 +207,12 @@
     }
 
     .page-cta-link-container {
+      bottom: 100px;
       float: right;
+      height: 0;
       margin-left: 3%;
       margin-right: 8%;
       position: relative;
-      bottom: 100px;
 
       @include breakpoint-max(x-small) {
 
