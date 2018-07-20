@@ -15,6 +15,20 @@
   }
 
   #block-views-stanford-page-top-banner-block {
+    .page-feat-image-container div:first-child.page-cta-link-container {
+      bottom: 0;
+      float: right;
+      height: 0;
+      margin-bottom: 10px;
+      margin-right: 14%;
+      margin-top: 40px;
+      position: relative;
+
+      @include breakpoint-max(small) {
+        margin-bottom: 20px;
+        margin-top: 20px;
+      }
+    }
 
     .banner-overlay {
       margin-left: 3%;
