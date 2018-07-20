@@ -192,33 +192,6 @@
         margin-bottom: 0px;
       }
 
-      h2 {
-        font-size: em(26px);
-        letter-spacing: 0;
-
-        @include breakpoint-max(small-med) {
-
-          font-size: 1em;
-        }
-
-        @include breakpoint-max(smaller) {
-
-          font-size: .8em;
-        }
-      }
-
-      h3 {
-        @include breakpoint-max(small-med) {
-
-          font-size: 1em;
-        }
-
-        @include breakpoint-max(smaller) {
-
-          font-size: .8em;
-        }
-      }
-
       a {
         color: $primary-color;
         text-decoration: underline;
@@ -247,6 +220,33 @@
       @include breakpoint-max(x-small) {
 
         width: 90%;
+      }
+    }
+
+    .page-feat-caption-container h2 {
+      font-size: em(26px);
+      letter-spacing: 0;
+
+      @include breakpoint-max(small-med) {
+
+        font-size: 1em;
+      }
+
+      @include breakpoint-max(smaller) {
+
+        font-size: .8em;
+      }
+    }
+
+    .page-feat-caption-container h3 {
+      @include breakpoint-max(small-med) {
+
+        font-size: 1em;
+      }
+
+      @include breakpoint-max(smaller) {
+
+        font-size: .8em;
       }
     }
 
