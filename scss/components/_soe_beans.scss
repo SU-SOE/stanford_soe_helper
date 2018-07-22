@@ -158,65 +158,55 @@
         padding: 30px;
       }
 
-      a.btn {
-        text-decoration: none;
-        margin-bottom: 0;
-      }
-    }
+      .field-name-field-s-postcard-body,
+      .field-name-field-s-post-link-body {
+        font-size: em(18px);
+        line-height: 1.3em;
 
-
-
-    .postcard-content .field-name-field-s-postcard-body,
-    .postcard-content .field-name-field-s-post-link-body,
-    .postcard-linked-content-container .field-name-field-s-postcard-body,
-    .postcard-linked-content-container .field-name-field-s-post-link-body {
-      font-size: em(18px);
-      line-height: 1.3em;
-
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
-
-    .postcard-content .field-name-title,
-    .postcard-content .postcard-linked-title,
-    .postcard-linked-content-container .field-name-title,
-    .postcard-linked-content-container .postcard-linked-title {
-      margin-bottom: 1em;
-
-      a {
-        color: $primary-color;
-        font-family: $roboto-slab;
-        font-size: em(28px);
-        font-weight: 600;
-        letter-spacing: 0.02em;
-        @include td-skip;
-        text-decoration: underline;
-        @include td-color($turquoise);
-        @include breakpoint-max(small) {
-          margin-top: 20px;
-        }
-
-        &:focus,
-        &:hover {
-          @include td-color($primary-color);
+        &:last-child {
+          margin-bottom: 0;
         }
       }
+
+      .field-name-title,
+      .postcard-linked-title {
+        margin-bottom: 1em;
+
+        a {
+          color: $primary-color;
+          font-family: $roboto-slab;
+          font-size: em(28px);
+          font-weight: 600;
+          letter-spacing: 0.02em;
+          @include td-skip;
+          text-decoration: underline;
+          @include td-color($turquoise);
+          @include breakpoint-max(small) {
+            margin-top: 20px;
+          }
+
+          &:focus,
+          &:hover {
+            @include td-color($primary-color);
+          }
+        }
+      }
+
+      /*** STANDARDIZE PADDING INSIDE POSTCARD LINKED BLOCK ***/
+      .postcard-body p:last-child,
+      .postcard-linked-body p:last-child{
+        margin-bottom: .8em;
+      }
+
+      .postcard-body,
+      .postcard-linked-body p {
+        margin-bottom: 1em;
+      }
     }
 
-    /*** STANDARDIZE PADDING INSIDE POSTCARD LINKED BLOCK ***/
-    .postcard-content .postcard-body p:last-child,
-    .postcard-content .postcard-linked-body p:last-child,
-    .postcard-linked-content-container .postcard-body p:last-child,
-    .postcard-linked-content-container .postcard-linked-body p:last-child {
-      margin-bottom: .8em;
-    }
-
-    .postcard-content .postcard-body,
-    .postcard-content .postcard-linked-body p,
-    .postcard-linked-content-container .postcard-body,
-    .postcard-linked-content-container .postcard-linked-body p {
-      margin-bottom: 1em;
+    a.btn {
+      text-decoration: none;
+      margin-bottom: 0;
     }
   }
 
