@@ -364,15 +364,38 @@ function stanford_soe_helper_cron() {
   $r = $q->execute();
   $r = $r->fetchField();
   $r = unserialize($r);
-  var_dump($r['http_user']);
-  var_dump($r['http_pass']);
+//  $user = $r['http_user'];
+//  $pass = $r['http_pass'];
+//  var_dump($user);
+//  var_dump($pass);
+//
+//  $server = 'http://' . $user . ':' . $pass . '@' . 'solr-896.hostedapachesolr.com:80/solr/dFc21AB3hV_engineering_stanford_edu';
+//
+//  $headers = get_headers($server);
+//  $response_code = substr($headers[0], 9, 3);
+//  var_dump($response_code);
+  //testing with curl
+//  $login = $r['http_user'];
+//  $password = $r['http_pass'];
+//  $url = 'http://solr-896.hostedapachesolr.com:80/solr/dFc21AB3hV_engineering_stanford_edu';
+//  $ch = curl_init();
+//  curl_setopt($ch, CURLOPT_URL,$url);
+//  curl_setopt($ch, CURLOPT_RETURNTRANSFER,1);
+//  curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
+//  curl_setopt($ch, CURLOPT_USERPWD, "$login:$password");
+//  $result = curl_exec($ch);
+//  curl_close($ch);
+//  var_dump($result);
+//  die();
 
-  //$server = 'http://' . $r['http_user'] . ':' . $r['http_pass'] . '@' . 'solr-896.hostedapachesolr.com:80/solr/dFc21AB3hV_engineering_stanford_edu';
-
-  //$headers = get_headers($server);
-  //$response_code = substr($headers[0], 9, 3);
-  //var_dump($response_code);
-  die();
+  //testing via api
+//  module_load_include('inc', 'search_api', 'includes/server_entity');
+//  module_load_include('inc', 'search_api_solr', 'includes/service');
+//  $server = new SearchApiServer($r);
+//  $myService = new SearchApiSolrService($server);
+//  $check_status = $myService->ping();
+//  var_dump($check_status);
+//  die();
 
   // Default to an hourly interval. Of course, cron has to be running at least
   // hourly for this to work.
