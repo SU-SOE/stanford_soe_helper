@@ -356,60 +356,21 @@ function _stanford_soe_helper_view_title($viewname, $displayname) {
 
 /**
  * Implements hook_cron().
+ *
+ * Testing for solr being up and dropping a watchdog statement into dblog.
  */
 function stanford_soe_helper_cron() {
 
-  $q = db_select('search_api_server', 'sas');
-  $q->addField('sas', 'options');
-  $r = $q->execute();
-  $r = $r->fetchField();
-  $r = unserialize($r);
-//  $user = $r['http_user'];
-//  $pass = $r['http_pass'];
-//  var_dump($user);
-//  var_dump($pass);
-//
-//  $server = 'http://' . $user . ':' . $pass . '@' . 'solr-896.hostedapachesolr.com:80/solr/dFc21AB3hV_engineering_stanford_edu';
-//
-//  $headers = get_headers($server);
-//  $response_code = substr($headers[0], 9, 3);
-//  var_dump($response_code);
-  //testing with curl
-//  $login = $r['http_user'];
-//  $password = $r['http_pass'];
-//  $url = 'http://solr-896.hostedapachesolr.com:80/solr/dFc21AB3hV_engineering_stanford_edu';
-//  $ch = curl_init();
-//  curl_setopt($ch, CURLOPT_URL,$url);
-//  curl_setopt($ch, CURLOPT_RETURNTRANSFER,1);
-//  curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
-//  curl_setopt($ch, CURLOPT_USERPWD, "$login:$password");
-//  $result = curl_exec($ch);
-//  curl_close($ch);
-//  var_dump($result);
-//  die();
-
-  //testing via api
-//  module_load_include('inc', 'search_api', 'includes/server_entity');
-//  module_load_include('inc', 'search_api_solr', 'includes/service');
-//  $server = new SearchApiServer($r);
-//  $myService = new SearchApiSolrService($server);
-//  $check_status = $myService->ping();
-//  var_dump($check_status);
-//  die();
-
-  // Default to an hourly interval. Of course, cron has to be running at least
-  // hourly for this to work.
-  //$interval = variable_get('soe_solr_check_interval', 60 * 60 * 24);
-
-  // We usually don't want to act every time cron runs (which could be every
-  // minute) so keep a time for the next run in a variable.
-  //if (time() >= variable_get('cron_example_next_execution', 0)) {
-
-    // This is a silly example of a cron job.
-    // It just makes it obvious that the job has run without
-    // making any changes to your database.
-    //watchdog('cstanford_soe_helper_cron', 'Solr is working');
-
-    //variable_set('cron_example_next_execution', time() + $interval);
-  //}
+  if (function_exists('search_api_server_load_multiple')) {
+    foreach (search_api_server_load_multiple(FALSE, $conditions) as $server) {
+      $myService = new SearchApiSolrService($server);
+      $ping = $myService->ping();
+      if($ping) {
+        watchdog('stanford_soe_helper', 'Solr is working');
+      }
+      else {
+        watchdog('stanford_soe_helper', 'Solr is down');
+      }
+    }
+  }
 }
