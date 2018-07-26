@@ -87,10 +87,14 @@
 
     .spotlight-img {
       margin-right: 40px;
-      flex-shrink: 0;
+      flex-shrink: .5;
       @media (max-width: 650px) {
         text-align: center;
         margin-right: 0;
+      }
+
+      @include breakpoint-max(small) {
+        margin-left: 40px;
       }
 
       img {
