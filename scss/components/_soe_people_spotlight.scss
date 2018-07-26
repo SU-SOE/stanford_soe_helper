@@ -88,13 +88,15 @@
     .spotlight-img {
       margin-right: 40px;
       flex-shrink: .5;
-      @media (max-width: 650px) {
-        text-align: center;
-        margin-right: 0;
-      }
 
       @include breakpoint-max(small) {
         margin-left: 40px;
+      }
+
+      @media (max-width: 650px) {
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
       }
 
       img {
@@ -118,7 +120,7 @@
 
     .spotlight-info-container {
       @media (max-width: 650px) {
-        padding: 30px 20px;
+        padding: 30px;
       }
 
       .spotlight-name {
