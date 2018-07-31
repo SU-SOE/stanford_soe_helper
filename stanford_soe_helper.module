@@ -362,10 +362,11 @@ function _stanford_soe_helper_view_title($viewname, $displayname) {
 function stanford_soe_helper_cron() {
 
   if (function_exists('search_api_server_load_multiple')) {
+    $conditions = array('class' => 'search_api_solr_service', 'enabled' => TRUE);
     foreach (search_api_server_load_multiple(FALSE, $conditions) as $server) {
       $myService = new SearchApiSolrService($server);
       $ping = $myService->ping();
-      if($ping) {
+      if ($ping) {
         watchdog('stanford_soe_helper', 'Solr is working');
       }
       else {
