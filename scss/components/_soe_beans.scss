@@ -270,13 +270,19 @@
 }
 
 // POSTCARD SINGLE CENTERED BUTTON BEANS
-#content-body .bean-stanford-postcard.view-mode-single_centered_button {
+.block-bean {
+  float: left;
+  width: 100%;
+}
+
+.bean-stanford-postcard.view-mode-single_centered_button {
   a.btn {
     margin-bottom: 0;
   }
 
   p {
     margin: 0;
+    text-align: center;
   }
 
   .field-name-field-s-postcard-body {
