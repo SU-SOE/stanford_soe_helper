@@ -83,6 +83,7 @@
 // POSTCARD & POSTCARD LINKED BEANS
 
 .bean-stanford-postcard.view-mode-stanford_soe_default,
+.bean-stanford-postcard.view-mode-single_centered_button,
 .bean-stanford-postcard-linked {
   .postcard,
   .postcard-linked-container {
@@ -264,6 +265,25 @@
     }
     @include breakpoint-max(smaller) {
       margin: 0;
+    }
+  }
+}
+
+// POSTCARD SINGLE CENTERED BUTTON BEANS
+#content-body .bean-stanford-postcard.view-mode-single_centered_button {
+  a.btn {
+    margin-bottom: 0;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .field-name-field-s-postcard-body {
+    margin-bottom: 0;
+
+    a.btn {
+      margin-bottom: 0;
     }
   }
 }

@@ -2057,9 +2057,11 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
   [id*="block-bean-sitewide-twitter-cta-block"].block[class*="span"] {
     margin-right: 17.25%; } }
 
-/* line 87, ../scss/components/_soe_beans.scss */
+/* line 88, ../scss/components/_soe_beans.scss */
 .bean-stanford-postcard.view-mode-stanford_soe_default .postcard,
 .bean-stanford-postcard.view-mode-stanford_soe_default .postcard-linked-container,
+.bean-stanford-postcard.view-mode-single_centered_button .postcard,
+.bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container,
 .bean-stanford-postcard-linked .postcard,
 .bean-stanford-postcard-linked .postcard-linked-container {
   display: flex;
@@ -2069,65 +2071,85 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
   -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2); }
   @media (max-width: 767px) {
-    /* line 87, ../scss/components/_soe_beans.scss */
+    /* line 88, ../scss/components/_soe_beans.scss */
     .bean-stanford-postcard.view-mode-stanford_soe_default .postcard,
     .bean-stanford-postcard.view-mode-stanford_soe_default .postcard-linked-container,
+    .bean-stanford-postcard.view-mode-single_centered_button .postcard,
+    .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container,
     .bean-stanford-postcard-linked .postcard,
     .bean-stanford-postcard-linked .postcard-linked-container {
       display: block;
       padding: 0; } }
-  /* line 98, ../scss/components/_soe_beans.scss */
+  /* line 99, ../scss/components/_soe_beans.scss */
   .bean-stanford-postcard.view-mode-stanford_soe_default .postcard a.postcard-linked-img-container,
   .bean-stanford-postcard.view-mode-stanford_soe_default .postcard-linked-container a.postcard-linked-img-container,
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard a.postcard-linked-img-container,
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container a.postcard-linked-img-container,
   .bean-stanford-postcard-linked .postcard a.postcard-linked-img-container,
   .bean-stanford-postcard-linked .postcard-linked-container a.postcard-linked-img-container {
     flex-shrink: 0;
     /*** SPAN 12 BEAN RESPONSIVE ***/
     margin-right: 30px; }
     @media (max-width: 979px) {
-      /* line 98, ../scss/components/_soe_beans.scss */
+      /* line 99, ../scss/components/_soe_beans.scss */
       .bean-stanford-postcard.view-mode-stanford_soe_default .postcard a.postcard-linked-img-container,
       .bean-stanford-postcard.view-mode-stanford_soe_default .postcard-linked-container a.postcard-linked-img-container,
+      .bean-stanford-postcard.view-mode-single_centered_button .postcard a.postcard-linked-img-container,
+      .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container a.postcard-linked-img-container,
       .bean-stanford-postcard-linked .postcard a.postcard-linked-img-container,
       .bean-stanford-postcard-linked .postcard-linked-container a.postcard-linked-img-container {
         flex-shrink: .9; } }
     @media (max-width: 767px) {
-      /* line 98, ../scss/components/_soe_beans.scss */
+      /* line 99, ../scss/components/_soe_beans.scss */
       .bean-stanford-postcard.view-mode-stanford_soe_default .postcard a.postcard-linked-img-container,
       .bean-stanford-postcard.view-mode-stanford_soe_default .postcard-linked-container a.postcard-linked-img-container,
+      .bean-stanford-postcard.view-mode-single_centered_button .postcard a.postcard-linked-img-container,
+      .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container a.postcard-linked-img-container,
       .bean-stanford-postcard-linked .postcard a.postcard-linked-img-container,
       .bean-stanford-postcard-linked .postcard-linked-container a.postcard-linked-img-container {
         margin-right: 0; } }
-    /* line 111, ../scss/components/_soe_beans.scss */
+    /* line 112, ../scss/components/_soe_beans.scss */
     .bean-stanford-postcard.view-mode-stanford_soe_default .postcard a.postcard-linked-img-container:hover img,
     .bean-stanford-postcard.view-mode-stanford_soe_default .postcard-linked-container a.postcard-linked-img-container:hover img,
+    .bean-stanford-postcard.view-mode-single_centered_button .postcard a.postcard-linked-img-container:hover img,
+    .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container a.postcard-linked-img-container:hover img,
     .bean-stanford-postcard-linked .postcard a.postcard-linked-img-container:hover img,
     .bean-stanford-postcard-linked .postcard-linked-container a.postcard-linked-img-container:hover img {
       -webkit-transform: scale(1.03);
       -moz-transform: scale(1.03);
       -o-transform: scale(1.03);
       transform: scale(1.03); }
-    /* line 115, ../scss/components/_soe_beans.scss */
+    /* line 116, ../scss/components/_soe_beans.scss */
     .bean-stanford-postcard.view-mode-stanford_soe_default .postcard a.postcard-linked-img-container .postcard-linked-img,
     .bean-stanford-postcard.view-mode-stanford_soe_default .postcard-linked-container a.postcard-linked-img-container .postcard-linked-img,
+    .bean-stanford-postcard.view-mode-single_centered_button .postcard a.postcard-linked-img-container .postcard-linked-img,
+    .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container a.postcard-linked-img-container .postcard-linked-img,
     .bean-stanford-postcard-linked .postcard a.postcard-linked-img-container .postcard-linked-img,
     .bean-stanford-postcard-linked .postcard-linked-container a.postcard-linked-img-container .postcard-linked-img {
       position: relative; }
-      /* line 118, ../scss/components/_soe_beans.scss */
+      /* line 119, ../scss/components/_soe_beans.scss */
       .bean-stanford-postcard.view-mode-stanford_soe_default .postcard a.postcard-linked-img-container .postcard-linked-img .field-name-field-s-image-image,
       .bean-stanford-postcard.view-mode-stanford_soe_default .postcard a.postcard-linked-img-container .postcard-linked-img .field-name-field-s-post-link-image,
       .bean-stanford-postcard.view-mode-stanford_soe_default .postcard-linked-container a.postcard-linked-img-container .postcard-linked-img .field-name-field-s-image-image,
       .bean-stanford-postcard.view-mode-stanford_soe_default .postcard-linked-container a.postcard-linked-img-container .postcard-linked-img .field-name-field-s-post-link-image,
+      .bean-stanford-postcard.view-mode-single_centered_button .postcard a.postcard-linked-img-container .postcard-linked-img .field-name-field-s-image-image,
+      .bean-stanford-postcard.view-mode-single_centered_button .postcard a.postcard-linked-img-container .postcard-linked-img .field-name-field-s-post-link-image,
+      .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container a.postcard-linked-img-container .postcard-linked-img .field-name-field-s-image-image,
+      .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container a.postcard-linked-img-container .postcard-linked-img .field-name-field-s-post-link-image,
       .bean-stanford-postcard-linked .postcard a.postcard-linked-img-container .postcard-linked-img .field-name-field-s-image-image,
       .bean-stanford-postcard-linked .postcard a.postcard-linked-img-container .postcard-linked-img .field-name-field-s-post-link-image,
       .bean-stanford-postcard-linked .postcard-linked-container a.postcard-linked-img-container .postcard-linked-img .field-name-field-s-image-image,
       .bean-stanford-postcard-linked .postcard-linked-container a.postcard-linked-img-container .postcard-linked-img .field-name-field-s-post-link-image {
         overflow: hidden; }
-        /* line 122, ../scss/components/_soe_beans.scss */
+        /* line 123, ../scss/components/_soe_beans.scss */
         .bean-stanford-postcard.view-mode-stanford_soe_default .postcard a.postcard-linked-img-container .postcard-linked-img .field-name-field-s-image-image img,
         .bean-stanford-postcard.view-mode-stanford_soe_default .postcard a.postcard-linked-img-container .postcard-linked-img .field-name-field-s-post-link-image img,
         .bean-stanford-postcard.view-mode-stanford_soe_default .postcard-linked-container a.postcard-linked-img-container .postcard-linked-img .field-name-field-s-image-image img,
         .bean-stanford-postcard.view-mode-stanford_soe_default .postcard-linked-container a.postcard-linked-img-container .postcard-linked-img .field-name-field-s-post-link-image img,
+        .bean-stanford-postcard.view-mode-single_centered_button .postcard a.postcard-linked-img-container .postcard-linked-img .field-name-field-s-image-image img,
+        .bean-stanford-postcard.view-mode-single_centered_button .postcard a.postcard-linked-img-container .postcard-linked-img .field-name-field-s-post-link-image img,
+        .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container a.postcard-linked-img-container .postcard-linked-img .field-name-field-s-image-image img,
+        .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container a.postcard-linked-img-container .postcard-linked-img .field-name-field-s-post-link-image img,
         .bean-stanford-postcard-linked .postcard a.postcard-linked-img-container .postcard-linked-img .field-name-field-s-image-image img,
         .bean-stanford-postcard-linked .postcard a.postcard-linked-img-container .postcard-linked-img .field-name-field-s-post-link-image img,
         .bean-stanford-postcard-linked .postcard-linked-container a.postcard-linked-img-container .postcard-linked-img .field-name-field-s-image-image img,
@@ -2137,19 +2159,25 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
           -o-transition: all 1s ease;
           transition: all 1s ease; }
           @media (max-width: 910px) {
-            /* line 122, ../scss/components/_soe_beans.scss */
+            /* line 123, ../scss/components/_soe_beans.scss */
             .bean-stanford-postcard.view-mode-stanford_soe_default .postcard a.postcard-linked-img-container .postcard-linked-img .field-name-field-s-image-image img,
             .bean-stanford-postcard.view-mode-stanford_soe_default .postcard a.postcard-linked-img-container .postcard-linked-img .field-name-field-s-post-link-image img,
             .bean-stanford-postcard.view-mode-stanford_soe_default .postcard-linked-container a.postcard-linked-img-container .postcard-linked-img .field-name-field-s-image-image img,
             .bean-stanford-postcard.view-mode-stanford_soe_default .postcard-linked-container a.postcard-linked-img-container .postcard-linked-img .field-name-field-s-post-link-image img,
+            .bean-stanford-postcard.view-mode-single_centered_button .postcard a.postcard-linked-img-container .postcard-linked-img .field-name-field-s-image-image img,
+            .bean-stanford-postcard.view-mode-single_centered_button .postcard a.postcard-linked-img-container .postcard-linked-img .field-name-field-s-post-link-image img,
+            .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container a.postcard-linked-img-container .postcard-linked-img .field-name-field-s-image-image img,
+            .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container a.postcard-linked-img-container .postcard-linked-img .field-name-field-s-post-link-image img,
             .bean-stanford-postcard-linked .postcard a.postcard-linked-img-container .postcard-linked-img .field-name-field-s-image-image img,
             .bean-stanford-postcard-linked .postcard a.postcard-linked-img-container .postcard-linked-img .field-name-field-s-post-link-image img,
             .bean-stanford-postcard-linked .postcard-linked-container a.postcard-linked-img-container .postcard-linked-img .field-name-field-s-image-image img,
             .bean-stanford-postcard-linked .postcard-linked-container a.postcard-linked-img-container .postcard-linked-img .field-name-field-s-post-link-image img {
               width: 100%; } }
-      /* line 130, ../scss/components/_soe_beans.scss */
+      /* line 131, ../scss/components/_soe_beans.scss */
       .bean-stanford-postcard.view-mode-stanford_soe_default .postcard a.postcard-linked-img-container .postcard-linked-img .postcard-linked-arrow,
       .bean-stanford-postcard.view-mode-stanford_soe_default .postcard-linked-container a.postcard-linked-img-container .postcard-linked-img .postcard-linked-arrow,
+      .bean-stanford-postcard.view-mode-single_centered_button .postcard a.postcard-linked-img-container .postcard-linked-img .postcard-linked-arrow,
+      .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container a.postcard-linked-img-container .postcard-linked-img .postcard-linked-arrow,
       .bean-stanford-postcard-linked .postcard a.postcard-linked-img-container .postcard-linked-img .postcard-linked-arrow,
       .bean-stanford-postcard-linked .postcard-linked-container a.postcard-linked-img-container .postcard-linked-img .postcard-linked-arrow {
         position: absolute;
@@ -2157,9 +2185,11 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
         right: 20px;
         width: 40px;
         height: 40px; }
-        /* line 137, ../scss/components/_soe_beans.scss */
+        /* line 138, ../scss/components/_soe_beans.scss */
         .bean-stanford-postcard.view-mode-stanford_soe_default .postcard a.postcard-linked-img-container .postcard-linked-img .postcard-linked-arrow img,
         .bean-stanford-postcard.view-mode-stanford_soe_default .postcard-linked-container a.postcard-linked-img-container .postcard-linked-img .postcard-linked-arrow img,
+        .bean-stanford-postcard.view-mode-single_centered_button .postcard a.postcard-linked-img-container .postcard-linked-img .postcard-linked-arrow img,
+        .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container a.postcard-linked-img-container .postcard-linked-img .postcard-linked-arrow img,
         .bean-stanford-postcard-linked .postcard a.postcard-linked-img-container .postcard-linked-img .postcard-linked-arrow img,
         .bean-stanford-postcard-linked .postcard-linked-container a.postcard-linked-img-container .postcard-linked-img .postcard-linked-arrow img {
           width: 26px;
@@ -2167,24 +2197,32 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
           vertical-align: -9px;
           padding: 3px 8px; }
           @media (max-width: 767px) {
-            /* line 137, ../scss/components/_soe_beans.scss */
+            /* line 138, ../scss/components/_soe_beans.scss */
             .bean-stanford-postcard.view-mode-stanford_soe_default .postcard a.postcard-linked-img-container .postcard-linked-img .postcard-linked-arrow img,
             .bean-stanford-postcard.view-mode-stanford_soe_default .postcard-linked-container a.postcard-linked-img-container .postcard-linked-img .postcard-linked-arrow img,
+            .bean-stanford-postcard.view-mode-single_centered_button .postcard a.postcard-linked-img-container .postcard-linked-img .postcard-linked-arrow img,
+            .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container a.postcard-linked-img-container .postcard-linked-img .postcard-linked-arrow img,
             .bean-stanford-postcard-linked .postcard a.postcard-linked-img-container .postcard-linked-img .postcard-linked-arrow img,
             .bean-stanford-postcard-linked .postcard-linked-container a.postcard-linked-img-container .postcard-linked-img .postcard-linked-arrow img {
               vertical-align: -12px; } }
           @media (max-width: 480px) {
-            /* line 137, ../scss/components/_soe_beans.scss */
+            /* line 138, ../scss/components/_soe_beans.scss */
             .bean-stanford-postcard.view-mode-stanford_soe_default .postcard a.postcard-linked-img-container .postcard-linked-img .postcard-linked-arrow img,
             .bean-stanford-postcard.view-mode-stanford_soe_default .postcard-linked-container a.postcard-linked-img-container .postcard-linked-img .postcard-linked-arrow img,
+            .bean-stanford-postcard.view-mode-single_centered_button .postcard a.postcard-linked-img-container .postcard-linked-img .postcard-linked-arrow img,
+            .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container a.postcard-linked-img-container .postcard-linked-img .postcard-linked-arrow img,
             .bean-stanford-postcard-linked .postcard a.postcard-linked-img-container .postcard-linked-img .postcard-linked-arrow img,
             .bean-stanford-postcard-linked .postcard-linked-container a.postcard-linked-img-container .postcard-linked-img .postcard-linked-arrow img {
               vertical-align: -14px; } }
-  /* line 153, ../scss/components/_soe_beans.scss */
+  /* line 154, ../scss/components/_soe_beans.scss */
   .bean-stanford-postcard.view-mode-stanford_soe_default .postcard .postcard-content,
   .bean-stanford-postcard.view-mode-stanford_soe_default .postcard .postcard-linked-content-container,
   .bean-stanford-postcard.view-mode-stanford_soe_default .postcard-linked-container .postcard-content,
   .bean-stanford-postcard.view-mode-stanford_soe_default .postcard-linked-container .postcard-linked-content-container,
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-content,
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-linked-content-container,
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-content,
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-linked-content-container,
   .bean-stanford-postcard-linked .postcard .postcard-content,
   .bean-stanford-postcard-linked .postcard .postcard-linked-content-container,
   .bean-stanford-postcard-linked .postcard-linked-container .postcard-content,
@@ -2192,18 +2230,22 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
     width: 100%;
     /*** STANDARDIZE PADDING INSIDE POSTCARD LINKED BLOCK ***/ }
     @media (max-width: 767px) {
-      /* line 153, ../scss/components/_soe_beans.scss */
+      /* line 154, ../scss/components/_soe_beans.scss */
       .bean-stanford-postcard.view-mode-stanford_soe_default .postcard .postcard-content,
       .bean-stanford-postcard.view-mode-stanford_soe_default .postcard .postcard-linked-content-container,
       .bean-stanford-postcard.view-mode-stanford_soe_default .postcard-linked-container .postcard-content,
       .bean-stanford-postcard.view-mode-stanford_soe_default .postcard-linked-container .postcard-linked-content-container,
+      .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-content,
+      .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-linked-content-container,
+      .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-content,
+      .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-linked-content-container,
       .bean-stanford-postcard-linked .postcard .postcard-content,
       .bean-stanford-postcard-linked .postcard .postcard-linked-content-container,
       .bean-stanford-postcard-linked .postcard-linked-container .postcard-content,
       .bean-stanford-postcard-linked .postcard-linked-container .postcard-linked-content-container {
         width: auto;
         padding: 30px; } }
-    /* line 161, ../scss/components/_soe_beans.scss */
+    /* line 162, ../scss/components/_soe_beans.scss */
     .bean-stanford-postcard.view-mode-stanford_soe_default .postcard .postcard-content .field-name-field-s-postcard-body,
     .bean-stanford-postcard.view-mode-stanford_soe_default .postcard .postcard-content .field-name-field-s-post-link-body,
     .bean-stanford-postcard.view-mode-stanford_soe_default .postcard .postcard-linked-content-container .field-name-field-s-postcard-body,
@@ -2212,6 +2254,14 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
     .bean-stanford-postcard.view-mode-stanford_soe_default .postcard-linked-container .postcard-content .field-name-field-s-post-link-body,
     .bean-stanford-postcard.view-mode-stanford_soe_default .postcard-linked-container .postcard-linked-content-container .field-name-field-s-postcard-body,
     .bean-stanford-postcard.view-mode-stanford_soe_default .postcard-linked-container .postcard-linked-content-container .field-name-field-s-post-link-body,
+    .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-content .field-name-field-s-postcard-body,
+    .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-content .field-name-field-s-post-link-body,
+    .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-linked-content-container .field-name-field-s-postcard-body,
+    .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-linked-content-container .field-name-field-s-post-link-body,
+    .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-content .field-name-field-s-postcard-body,
+    .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-content .field-name-field-s-post-link-body,
+    .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-linked-content-container .field-name-field-s-postcard-body,
+    .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-linked-content-container .field-name-field-s-post-link-body,
     .bean-stanford-postcard-linked .postcard .postcard-content .field-name-field-s-postcard-body,
     .bean-stanford-postcard-linked .postcard .postcard-content .field-name-field-s-post-link-body,
     .bean-stanford-postcard-linked .postcard .postcard-linked-content-container .field-name-field-s-postcard-body,
@@ -2222,7 +2272,7 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
     .bean-stanford-postcard-linked .postcard-linked-container .postcard-linked-content-container .field-name-field-s-post-link-body {
       font-size: 0.9em;
       line-height: 1.3em; }
-      /* line 166, ../scss/components/_soe_beans.scss */
+      /* line 167, ../scss/components/_soe_beans.scss */
       .bean-stanford-postcard.view-mode-stanford_soe_default .postcard .postcard-content .field-name-field-s-postcard-body:last-child,
       .bean-stanford-postcard.view-mode-stanford_soe_default .postcard .postcard-content .field-name-field-s-post-link-body:last-child,
       .bean-stanford-postcard.view-mode-stanford_soe_default .postcard .postcard-linked-content-container .field-name-field-s-postcard-body:last-child,
@@ -2231,6 +2281,14 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
       .bean-stanford-postcard.view-mode-stanford_soe_default .postcard-linked-container .postcard-content .field-name-field-s-post-link-body:last-child,
       .bean-stanford-postcard.view-mode-stanford_soe_default .postcard-linked-container .postcard-linked-content-container .field-name-field-s-postcard-body:last-child,
       .bean-stanford-postcard.view-mode-stanford_soe_default .postcard-linked-container .postcard-linked-content-container .field-name-field-s-post-link-body:last-child,
+      .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-content .field-name-field-s-postcard-body:last-child,
+      .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-content .field-name-field-s-post-link-body:last-child,
+      .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-linked-content-container .field-name-field-s-postcard-body:last-child,
+      .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-linked-content-container .field-name-field-s-post-link-body:last-child,
+      .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-content .field-name-field-s-postcard-body:last-child,
+      .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-content .field-name-field-s-post-link-body:last-child,
+      .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-linked-content-container .field-name-field-s-postcard-body:last-child,
+      .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-linked-content-container .field-name-field-s-post-link-body:last-child,
       .bean-stanford-postcard-linked .postcard .postcard-content .field-name-field-s-postcard-body:last-child,
       .bean-stanford-postcard-linked .postcard .postcard-content .field-name-field-s-post-link-body:last-child,
       .bean-stanford-postcard-linked .postcard .postcard-linked-content-container .field-name-field-s-postcard-body:last-child,
@@ -2240,7 +2298,7 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
       .bean-stanford-postcard-linked .postcard-linked-container .postcard-linked-content-container .field-name-field-s-postcard-body:last-child,
       .bean-stanford-postcard-linked .postcard-linked-container .postcard-linked-content-container .field-name-field-s-post-link-body:last-child {
         margin-bottom: 0; }
-    /* line 171, ../scss/components/_soe_beans.scss */
+    /* line 172, ../scss/components/_soe_beans.scss */
     .bean-stanford-postcard.view-mode-stanford_soe_default .postcard .postcard-content .field-name-title,
     .bean-stanford-postcard.view-mode-stanford_soe_default .postcard .postcard-content .postcard-linked-title,
     .bean-stanford-postcard.view-mode-stanford_soe_default .postcard .postcard-linked-content-container .field-name-title,
@@ -2249,6 +2307,14 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
     .bean-stanford-postcard.view-mode-stanford_soe_default .postcard-linked-container .postcard-content .postcard-linked-title,
     .bean-stanford-postcard.view-mode-stanford_soe_default .postcard-linked-container .postcard-linked-content-container .field-name-title,
     .bean-stanford-postcard.view-mode-stanford_soe_default .postcard-linked-container .postcard-linked-content-container .postcard-linked-title,
+    .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-content .field-name-title,
+    .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-content .postcard-linked-title,
+    .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-linked-content-container .field-name-title,
+    .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-linked-content-container .postcard-linked-title,
+    .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-content .field-name-title,
+    .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-content .postcard-linked-title,
+    .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-linked-content-container .field-name-title,
+    .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-linked-content-container .postcard-linked-title,
     .bean-stanford-postcard-linked .postcard .postcard-content .field-name-title,
     .bean-stanford-postcard-linked .postcard .postcard-content .postcard-linked-title,
     .bean-stanford-postcard-linked .postcard .postcard-linked-content-container .field-name-title,
@@ -2258,7 +2324,7 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
     .bean-stanford-postcard-linked .postcard-linked-container .postcard-linked-content-container .field-name-title,
     .bean-stanford-postcard-linked .postcard-linked-container .postcard-linked-content-container .postcard-linked-title {
       margin-bottom: 1em; }
-      /* line 175, ../scss/components/_soe_beans.scss */
+      /* line 176, ../scss/components/_soe_beans.scss */
       .bean-stanford-postcard.view-mode-stanford_soe_default .postcard .postcard-content .field-name-title a,
       .bean-stanford-postcard.view-mode-stanford_soe_default .postcard .postcard-content .postcard-linked-title a,
       .bean-stanford-postcard.view-mode-stanford_soe_default .postcard .postcard-linked-content-container .field-name-title a,
@@ -2267,6 +2333,14 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
       .bean-stanford-postcard.view-mode-stanford_soe_default .postcard-linked-container .postcard-content .postcard-linked-title a,
       .bean-stanford-postcard.view-mode-stanford_soe_default .postcard-linked-container .postcard-linked-content-container .field-name-title a,
       .bean-stanford-postcard.view-mode-stanford_soe_default .postcard-linked-container .postcard-linked-content-container .postcard-linked-title a,
+      .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-content .field-name-title a,
+      .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-content .postcard-linked-title a,
+      .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-linked-content-container .field-name-title a,
+      .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-linked-content-container .postcard-linked-title a,
+      .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-content .field-name-title a,
+      .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-content .postcard-linked-title a,
+      .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-linked-content-container .field-name-title a,
+      .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-linked-content-container .postcard-linked-title a,
       .bean-stanford-postcard-linked .postcard .postcard-content .field-name-title a,
       .bean-stanford-postcard-linked .postcard .postcard-content .postcard-linked-title a,
       .bean-stanford-postcard-linked .postcard .postcard-linked-content-container .field-name-title a,
@@ -2286,7 +2360,7 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
         -webkit-text-decoration-color: #00ECE9;
         text-decoration-color: #00ECE9; }
         @media (max-width: 767px) {
-          /* line 175, ../scss/components/_soe_beans.scss */
+          /* line 176, ../scss/components/_soe_beans.scss */
           .bean-stanford-postcard.view-mode-stanford_soe_default .postcard .postcard-content .field-name-title a,
           .bean-stanford-postcard.view-mode-stanford_soe_default .postcard .postcard-content .postcard-linked-title a,
           .bean-stanford-postcard.view-mode-stanford_soe_default .postcard .postcard-linked-content-container .field-name-title a,
@@ -2295,6 +2369,14 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
           .bean-stanford-postcard.view-mode-stanford_soe_default .postcard-linked-container .postcard-content .postcard-linked-title a,
           .bean-stanford-postcard.view-mode-stanford_soe_default .postcard-linked-container .postcard-linked-content-container .field-name-title a,
           .bean-stanford-postcard.view-mode-stanford_soe_default .postcard-linked-container .postcard-linked-content-container .postcard-linked-title a,
+          .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-content .field-name-title a,
+          .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-content .postcard-linked-title a,
+          .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-linked-content-container .field-name-title a,
+          .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-linked-content-container .postcard-linked-title a,
+          .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-content .field-name-title a,
+          .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-content .postcard-linked-title a,
+          .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-linked-content-container .field-name-title a,
+          .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-linked-content-container .postcard-linked-title a,
           .bean-stanford-postcard-linked .postcard .postcard-content .field-name-title a,
           .bean-stanford-postcard-linked .postcard .postcard-content .postcard-linked-title a,
           .bean-stanford-postcard-linked .postcard .postcard-linked-content-container .field-name-title a,
@@ -2304,7 +2386,7 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
           .bean-stanford-postcard-linked .postcard-linked-container .postcard-linked-content-container .field-name-title a,
           .bean-stanford-postcard-linked .postcard-linked-container .postcard-linked-content-container .postcard-linked-title a {
             margin-top: 20px; } }
-        /* line 188, ../scss/components/_soe_beans.scss */
+        /* line 189, ../scss/components/_soe_beans.scss */
         .bean-stanford-postcard.view-mode-stanford_soe_default .postcard .postcard-content .field-name-title a:focus, .bean-stanford-postcard.view-mode-stanford_soe_default .postcard .postcard-content .field-name-title a:hover,
         .bean-stanford-postcard.view-mode-stanford_soe_default .postcard .postcard-content .postcard-linked-title a:focus,
         .bean-stanford-postcard.view-mode-stanford_soe_default .postcard .postcard-content .postcard-linked-title a:hover,
@@ -2320,6 +2402,22 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
         .bean-stanford-postcard.view-mode-stanford_soe_default .postcard-linked-container .postcard-linked-content-container .field-name-title a:hover,
         .bean-stanford-postcard.view-mode-stanford_soe_default .postcard-linked-container .postcard-linked-content-container .postcard-linked-title a:focus,
         .bean-stanford-postcard.view-mode-stanford_soe_default .postcard-linked-container .postcard-linked-content-container .postcard-linked-title a:hover,
+        .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-content .field-name-title a:focus,
+        .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-content .field-name-title a:hover,
+        .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-content .postcard-linked-title a:focus,
+        .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-content .postcard-linked-title a:hover,
+        .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-linked-content-container .field-name-title a:focus,
+        .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-linked-content-container .field-name-title a:hover,
+        .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-linked-content-container .postcard-linked-title a:focus,
+        .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-linked-content-container .postcard-linked-title a:hover,
+        .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-content .field-name-title a:focus,
+        .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-content .field-name-title a:hover,
+        .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-content .postcard-linked-title a:focus,
+        .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-content .postcard-linked-title a:hover,
+        .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-linked-content-container .field-name-title a:focus,
+        .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-linked-content-container .field-name-title a:hover,
+        .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-linked-content-container .postcard-linked-title a:focus,
+        .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-linked-content-container .postcard-linked-title a:hover,
         .bean-stanford-postcard-linked .postcard .postcard-content .field-name-title a:focus,
         .bean-stanford-postcard-linked .postcard .postcard-content .field-name-title a:hover,
         .bean-stanford-postcard-linked .postcard .postcard-content .postcard-linked-title a:focus,
@@ -2338,7 +2436,7 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
         .bean-stanford-postcard-linked .postcard-linked-container .postcard-linked-content-container .postcard-linked-title a:hover {
           -webkit-text-decoration-color: #333333;
           text-decoration-color: #333333; }
-    /* line 196, ../scss/components/_soe_beans.scss */
+    /* line 197, ../scss/components/_soe_beans.scss */
     .bean-stanford-postcard.view-mode-stanford_soe_default .postcard .postcard-content .postcard-body p:last-child,
     .bean-stanford-postcard.view-mode-stanford_soe_default .postcard .postcard-content .postcard-linked-body p:last-child,
     .bean-stanford-postcard.view-mode-stanford_soe_default .postcard .postcard-linked-content-container .postcard-body p:last-child,
@@ -2347,6 +2445,14 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
     .bean-stanford-postcard.view-mode-stanford_soe_default .postcard-linked-container .postcard-content .postcard-linked-body p:last-child,
     .bean-stanford-postcard.view-mode-stanford_soe_default .postcard-linked-container .postcard-linked-content-container .postcard-body p:last-child,
     .bean-stanford-postcard.view-mode-stanford_soe_default .postcard-linked-container .postcard-linked-content-container .postcard-linked-body p:last-child,
+    .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-content .postcard-body p:last-child,
+    .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-content .postcard-linked-body p:last-child,
+    .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-linked-content-container .postcard-body p:last-child,
+    .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-linked-content-container .postcard-linked-body p:last-child,
+    .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-content .postcard-body p:last-child,
+    .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-content .postcard-linked-body p:last-child,
+    .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-linked-content-container .postcard-body p:last-child,
+    .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-linked-content-container .postcard-linked-body p:last-child,
     .bean-stanford-postcard-linked .postcard .postcard-content .postcard-body p:last-child,
     .bean-stanford-postcard-linked .postcard .postcard-content .postcard-linked-body p:last-child,
     .bean-stanford-postcard-linked .postcard .postcard-linked-content-container .postcard-body p:last-child,
@@ -2356,7 +2462,7 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
     .bean-stanford-postcard-linked .postcard-linked-container .postcard-linked-content-container .postcard-body p:last-child,
     .bean-stanford-postcard-linked .postcard-linked-container .postcard-linked-content-container .postcard-linked-body p:last-child {
       margin-bottom: .8em; }
-    /* line 201, ../scss/components/_soe_beans.scss */
+    /* line 202, ../scss/components/_soe_beans.scss */
     .bean-stanford-postcard.view-mode-stanford_soe_default .postcard .postcard-content .postcard-body,
     .bean-stanford-postcard.view-mode-stanford_soe_default .postcard .postcard-content .postcard-linked-body p,
     .bean-stanford-postcard.view-mode-stanford_soe_default .postcard .postcard-linked-content-container .postcard-body,
@@ -2365,6 +2471,14 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
     .bean-stanford-postcard.view-mode-stanford_soe_default .postcard-linked-container .postcard-content .postcard-linked-body p,
     .bean-stanford-postcard.view-mode-stanford_soe_default .postcard-linked-container .postcard-linked-content-container .postcard-body,
     .bean-stanford-postcard.view-mode-stanford_soe_default .postcard-linked-container .postcard-linked-content-container .postcard-linked-body p,
+    .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-content .postcard-body,
+    .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-content .postcard-linked-body p,
+    .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-linked-content-container .postcard-body,
+    .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-linked-content-container .postcard-linked-body p,
+    .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-content .postcard-body,
+    .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-content .postcard-linked-body p,
+    .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-linked-content-container .postcard-body,
+    .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-linked-content-container .postcard-linked-body p,
     .bean-stanford-postcard-linked .postcard .postcard-content .postcard-body,
     .bean-stanford-postcard-linked .postcard .postcard-content .postcard-linked-body p,
     .bean-stanford-postcard-linked .postcard .postcard-linked-content-container .postcard-body,
@@ -2374,26 +2488,31 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
     .bean-stanford-postcard-linked .postcard-linked-container .postcard-linked-content-container .postcard-body,
     .bean-stanford-postcard-linked .postcard-linked-container .postcard-linked-content-container .postcard-linked-body p {
       margin-bottom: 1em; }
-  /* line 207, ../scss/components/_soe_beans.scss */
+  /* line 208, ../scss/components/_soe_beans.scss */
   .bean-stanford-postcard.view-mode-stanford_soe_default .postcard a.btn,
   .bean-stanford-postcard.view-mode-stanford_soe_default .postcard-linked-container a.btn,
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard a.btn,
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container a.btn,
   .bean-stanford-postcard-linked .postcard a.btn,
   .bean-stanford-postcard-linked .postcard-linked-container a.btn {
     text-decoration: none;
     margin-bottom: 0; }
-/* line 213, ../scss/components/_soe_beans.scss */
+/* line 214, ../scss/components/_soe_beans.scss */
 .bean-stanford-postcard.view-mode-stanford_soe_default.postcard-linked-arrow-color-orange .postcard-linked-arrow,
+.bean-stanford-postcard.view-mode-single_centered_button.postcard-linked-arrow-color-orange .postcard-linked-arrow,
 .bean-stanford-postcard-linked.postcard-linked-arrow-color-orange .postcard-linked-arrow {
   background: #FFBD54; }
-/* line 217, ../scss/components/_soe_beans.scss */
+/* line 218, ../scss/components/_soe_beans.scss */
 .bean-stanford-postcard.view-mode-stanford_soe_default.postcard-linked-arrow-color-turquoise .postcard-linked-arrow,
+.bean-stanford-postcard.view-mode-single_centered_button.postcard-linked-arrow-color-turquoise .postcard-linked-arrow,
 .bean-stanford-postcard-linked.postcard-linked-arrow-color-turquoise .postcard-linked-arrow {
   background: #00ECE9; }
-/* line 221, ../scss/components/_soe_beans.scss */
+/* line 222, ../scss/components/_soe_beans.scss */
 .bean-stanford-postcard.view-mode-stanford_soe_default.postcard-linked-arrow-color-pink .postcard-linked-arrow,
+.bean-stanford-postcard.view-mode-single_centered_button.postcard-linked-arrow-color-pink .postcard-linked-arrow,
 .bean-stanford-postcard-linked.postcard-linked-arrow-color-pink .postcard-linked-arrow {
   background: #FF525C; }
-/* line 232, ../scss/components/_soe_beans.scss */
+/* line 233, ../scss/components/_soe_beans.scss */
 .span1 .bean-stanford-postcard.view-mode-stanford_soe_default .postcard,
 .span1 .bean-stanford-postcard.view-mode-stanford_soe_default .postcard-linked-container, .span2 .bean-stanford-postcard.view-mode-stanford_soe_default .postcard,
 .span2 .bean-stanford-postcard.view-mode-stanford_soe_default .postcard-linked-container, .span3 .bean-stanford-postcard.view-mode-stanford_soe_default .postcard,
@@ -2402,6 +2521,27 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
 .span5 .bean-stanford-postcard.view-mode-stanford_soe_default .postcard-linked-container, .span6 .bean-stanford-postcard.view-mode-stanford_soe_default .postcard,
 .span6 .bean-stanford-postcard.view-mode-stanford_soe_default .postcard-linked-container, .span7 .bean-stanford-postcard.view-mode-stanford_soe_default .postcard,
 .span7 .bean-stanford-postcard.view-mode-stanford_soe_default .postcard-linked-container, .span1
+.bean-stanford-postcard.view-mode-single_centered_button .postcard,
+.span1
+.bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container, .span2
+.bean-stanford-postcard.view-mode-single_centered_button .postcard,
+.span2
+.bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container, .span3
+.bean-stanford-postcard.view-mode-single_centered_button .postcard,
+.span3
+.bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container, .span4
+.bean-stanford-postcard.view-mode-single_centered_button .postcard,
+.span4
+.bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container, .span5
+.bean-stanford-postcard.view-mode-single_centered_button .postcard,
+.span5
+.bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container, .span6
+.bean-stanford-postcard.view-mode-single_centered_button .postcard,
+.span6
+.bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container, .span7
+.bean-stanford-postcard.view-mode-single_centered_button .postcard,
+.span7
+.bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container, .span1
 .bean-stanford-postcard-linked .postcard,
 .span1
 .bean-stanford-postcard-linked .postcard-linked-container, .span2
@@ -2425,7 +2565,7 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
 .bean-stanford-postcard-linked .postcard-linked-container {
   display: block;
   padding: 0; }
-  /* line 237, ../scss/components/_soe_beans.scss */
+  /* line 238, ../scss/components/_soe_beans.scss */
   .span1 .bean-stanford-postcard.view-mode-stanford_soe_default .postcard .postcard-image,
   .span1 .bean-stanford-postcard.view-mode-stanford_soe_default .postcard .postcard-linked-img-container,
   .span1 .bean-stanford-postcard.view-mode-stanford_soe_default .postcard-linked-container .postcard-image,
@@ -2448,6 +2588,55 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
   .span7 .bean-stanford-postcard.view-mode-stanford_soe_default .postcard .postcard-linked-img-container,
   .span7 .bean-stanford-postcard.view-mode-stanford_soe_default .postcard-linked-container .postcard-image,
   .span7 .bean-stanford-postcard.view-mode-stanford_soe_default .postcard-linked-container .postcard-linked-img-container, .span1
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-image,
+  .span1
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-linked-img-container,
+  .span1
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-image,
+  .span1
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-linked-img-container, .span2
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-image,
+  .span2
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-linked-img-container,
+  .span2
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-image,
+  .span2
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-linked-img-container, .span3
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-image,
+  .span3
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-linked-img-container,
+  .span3
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-image,
+  .span3
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-linked-img-container, .span4
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-image,
+  .span4
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-linked-img-container,
+  .span4
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-image,
+  .span4
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-linked-img-container, .span5
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-image,
+  .span5
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-linked-img-container,
+  .span5
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-image,
+  .span5
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-linked-img-container, .span6
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-image,
+  .span6
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-linked-img-container,
+  .span6
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-image,
+  .span6
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-linked-img-container, .span7
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-image,
+  .span7
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-linked-img-container,
+  .span7
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-image,
+  .span7
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-linked-img-container, .span1
   .bean-stanford-postcard-linked .postcard .postcard-image,
   .span1
   .bean-stanford-postcard-linked .postcard .postcard-linked-img-container,
@@ -2498,7 +2687,7 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
   .span7
   .bean-stanford-postcard-linked .postcard-linked-container .postcard-linked-img-container {
     margin-right: 0; }
-  /* line 244, ../scss/components/_soe_beans.scss */
+  /* line 245, ../scss/components/_soe_beans.scss */
   .span1 .bean-stanford-postcard.view-mode-stanford_soe_default .postcard .image-container .field-name-field-s-post-link-image img,
   .span1 .bean-stanford-postcard.view-mode-stanford_soe_default .postcard .postcard-linked-img .field-name-field-s-post-link-image img,
   .span1 .bean-stanford-postcard.view-mode-stanford_soe_default .postcard-linked-container .image-container .field-name-field-s-post-link-image img,
@@ -2521,6 +2710,55 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
   .span7 .bean-stanford-postcard.view-mode-stanford_soe_default .postcard .postcard-linked-img .field-name-field-s-post-link-image img,
   .span7 .bean-stanford-postcard.view-mode-stanford_soe_default .postcard-linked-container .image-container .field-name-field-s-post-link-image img,
   .span7 .bean-stanford-postcard.view-mode-stanford_soe_default .postcard-linked-container .postcard-linked-img .field-name-field-s-post-link-image img, .span1
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard .image-container .field-name-field-s-post-link-image img,
+  .span1
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-linked-img .field-name-field-s-post-link-image img,
+  .span1
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .image-container .field-name-field-s-post-link-image img,
+  .span1
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-linked-img .field-name-field-s-post-link-image img, .span2
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard .image-container .field-name-field-s-post-link-image img,
+  .span2
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-linked-img .field-name-field-s-post-link-image img,
+  .span2
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .image-container .field-name-field-s-post-link-image img,
+  .span2
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-linked-img .field-name-field-s-post-link-image img, .span3
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard .image-container .field-name-field-s-post-link-image img,
+  .span3
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-linked-img .field-name-field-s-post-link-image img,
+  .span3
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .image-container .field-name-field-s-post-link-image img,
+  .span3
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-linked-img .field-name-field-s-post-link-image img, .span4
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard .image-container .field-name-field-s-post-link-image img,
+  .span4
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-linked-img .field-name-field-s-post-link-image img,
+  .span4
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .image-container .field-name-field-s-post-link-image img,
+  .span4
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-linked-img .field-name-field-s-post-link-image img, .span5
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard .image-container .field-name-field-s-post-link-image img,
+  .span5
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-linked-img .field-name-field-s-post-link-image img,
+  .span5
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .image-container .field-name-field-s-post-link-image img,
+  .span5
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-linked-img .field-name-field-s-post-link-image img, .span6
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard .image-container .field-name-field-s-post-link-image img,
+  .span6
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-linked-img .field-name-field-s-post-link-image img,
+  .span6
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .image-container .field-name-field-s-post-link-image img,
+  .span6
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-linked-img .field-name-field-s-post-link-image img, .span7
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard .image-container .field-name-field-s-post-link-image img,
+  .span7
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-linked-img .field-name-field-s-post-link-image img,
+  .span7
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .image-container .field-name-field-s-post-link-image img,
+  .span7
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-linked-img .field-name-field-s-post-link-image img, .span1
   .bean-stanford-postcard-linked .postcard .image-container .field-name-field-s-post-link-image img,
   .span1
   .bean-stanford-postcard-linked .postcard .postcard-linked-img .field-name-field-s-post-link-image img,
@@ -2571,7 +2809,7 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
   .span7
   .bean-stanford-postcard-linked .postcard-linked-container .postcard-linked-img .field-name-field-s-post-link-image img {
     width: 100%; }
-  /* line 249, ../scss/components/_soe_beans.scss */
+  /* line 250, ../scss/components/_soe_beans.scss */
   .span1 .bean-stanford-postcard.view-mode-stanford_soe_default .postcard .postcard-content,
   .span1 .bean-stanford-postcard.view-mode-stanford_soe_default .postcard .postcard-linked-content-container,
   .span1 .bean-stanford-postcard.view-mode-stanford_soe_default .postcard-linked-container .postcard-content,
@@ -2594,6 +2832,55 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
   .span7 .bean-stanford-postcard.view-mode-stanford_soe_default .postcard .postcard-linked-content-container,
   .span7 .bean-stanford-postcard.view-mode-stanford_soe_default .postcard-linked-container .postcard-content,
   .span7 .bean-stanford-postcard.view-mode-stanford_soe_default .postcard-linked-container .postcard-linked-content-container, .span1
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-content,
+  .span1
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-linked-content-container,
+  .span1
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-content,
+  .span1
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-linked-content-container, .span2
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-content,
+  .span2
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-linked-content-container,
+  .span2
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-content,
+  .span2
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-linked-content-container, .span3
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-content,
+  .span3
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-linked-content-container,
+  .span3
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-content,
+  .span3
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-linked-content-container, .span4
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-content,
+  .span4
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-linked-content-container,
+  .span4
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-content,
+  .span4
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-linked-content-container, .span5
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-content,
+  .span5
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-linked-content-container,
+  .span5
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-content,
+  .span5
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-linked-content-container, .span6
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-content,
+  .span6
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-linked-content-container,
+  .span6
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-content,
+  .span6
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-linked-content-container, .span7
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-content,
+  .span7
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-linked-content-container,
+  .span7
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-content,
+  .span7
+  .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-linked-content-container, .span1
   .bean-stanford-postcard-linked .postcard .postcard-content,
   .span1
   .bean-stanford-postcard-linked .postcard .postcard-linked-content-container,
@@ -2645,27 +2932,44 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
   .bean-stanford-postcard-linked .postcard-linked-container .postcard-linked-content-container {
     width: auto;
     padding: 30px; }
-/* line 256, ../scss/components/_soe_beans.scss */
+/* line 257, ../scss/components/_soe_beans.scss */
 .span12 .bean-stanford-postcard.view-mode-stanford_soe_default, .span12
+.bean-stanford-postcard.view-mode-single_centered_button, .span12
 .bean-stanford-postcard-linked {
   margin: 0 10%; }
   @media (max-width: 979px) {
-    /* line 256, ../scss/components/_soe_beans.scss */
+    /* line 257, ../scss/components/_soe_beans.scss */
     .span12 .bean-stanford-postcard.view-mode-stanford_soe_default, .span12
+    .bean-stanford-postcard.view-mode-single_centered_button, .span12
     .bean-stanford-postcard-linked {
       margin: 0; } }
   @media (max-width: 767px) {
-    /* line 256, ../scss/components/_soe_beans.scss */
+    /* line 257, ../scss/components/_soe_beans.scss */
     .span12 .bean-stanford-postcard.view-mode-stanford_soe_default, .span12
+    .bean-stanford-postcard.view-mode-single_centered_button, .span12
     .bean-stanford-postcard-linked {
       margin: 0 10%; } }
   @media (max-width: 580px) {
-    /* line 256, ../scss/components/_soe_beans.scss */
+    /* line 257, ../scss/components/_soe_beans.scss */
     .span12 .bean-stanford-postcard.view-mode-stanford_soe_default, .span12
+    .bean-stanford-postcard.view-mode-single_centered_button, .span12
     .bean-stanford-postcard-linked {
       margin: 0; } }
 
-/* line 273, ../scss/components/_soe_beans.scss */
+/* line 274, ../scss/components/_soe_beans.scss */
+#content-body .bean-stanford-postcard.view-mode-single_centered_button a.btn {
+  margin-bottom: 0; }
+/* line 278, ../scss/components/_soe_beans.scss */
+#content-body .bean-stanford-postcard.view-mode-single_centered_button p {
+  margin: 0; }
+/* line 282, ../scss/components/_soe_beans.scss */
+#content-body .bean-stanford-postcard.view-mode-single_centered_button .field-name-field-s-postcard-body {
+  margin-bottom: 0; }
+  /* line 285, ../scss/components/_soe_beans.scss */
+  #content-body .bean-stanford-postcard.view-mode-single_centered_button .field-name-field-s-postcard-body a.btn {
+    margin-bottom: 0; }
+
+/* line 293, ../scss/components/_soe_beans.scss */
 .bean-stanford-testimonial-block .postcard {
   background: #FFFFFF;
   padding: 0 56px 40px;
@@ -2673,11 +2977,11 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
   -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2); }
   @media (max-width: 767px) {
-    /* line 273, ../scss/components/_soe_beans.scss */
+    /* line 293, ../scss/components/_soe_beans.scss */
     .bean-stanford-testimonial-block .postcard {
       display: block;
       padding: 0 44px 40px; } }
-/* line 286, ../scss/components/_soe_beans.scss */
+/* line 306, ../scss/components/_soe_beans.scss */
 .bean-stanford-testimonial-block .field-name-field-s-testimonial-superhead {
   border-top: #00ECE9 6px solid;
   display: inline-block;
@@ -2685,41 +2989,41 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
   font-family: "Roboto Slab", serif;
   margin-bottom: 20px;
   padding-top: 12px; }
-  /* line 294, ../scss/components/_soe_beans.scss */
+  /* line 314, ../scss/components/_soe_beans.scss */
   .bean-stanford-testimonial-block .field-name-field-s-testimonial-superhead.field {
     margin-bottom: 2em; }
     @media (max-width: 580px) {
-      /* line 294, ../scss/components/_soe_beans.scss */
+      /* line 314, ../scss/components/_soe_beans.scss */
       .bean-stanford-testimonial-block .field-name-field-s-testimonial-superhead.field {
         margin-bottom: 1em; } }
-/* line 303, ../scss/components/_soe_beans.scss */
+/* line 323, ../scss/components/_soe_beans.scss */
 .bean-stanford-testimonial-block .field-name-field-s-testimonial-quote {
   font-family: "Roboto Slab", serif; }
   @media (max-width: 979px) {
-    /* line 303, ../scss/components/_soe_beans.scss */
+    /* line 323, ../scss/components/_soe_beans.scss */
     .bean-stanford-testimonial-block .field-name-field-s-testimonial-quote {
       font-size: 22px;
       line-height: 1.5em; } }
   @media (max-width: 580px) {
-    /* line 303, ../scss/components/_soe_beans.scss */
+    /* line 323, ../scss/components/_soe_beans.scss */
     .bean-stanford-testimonial-block .field-name-field-s-testimonial-quote {
       font-size: 18px; } }
-/* line 316, ../scss/components/_soe_beans.scss */
+/* line 336, ../scss/components/_soe_beans.scss */
 .bean-stanford-testimonial-block .field-name-field-s-testimonial-credits {
   font-size: 18px;
   letter-spacing: 0;
   margin-top: 15px; }
   @media (max-width: 580px) {
-    /* line 316, ../scss/components/_soe_beans.scss */
+    /* line 336, ../scss/components/_soe_beans.scss */
     .bean-stanford-testimonial-block .field-name-field-s-testimonial-credits {
       font-size: 16px; } }
-  /* line 325, ../scss/components/_soe_beans.scss */
+  /* line 345, ../scss/components/_soe_beans.scss */
   .bean-stanford-testimonial-block .field-name-field-s-testimonial-credits.field {
     margin-bottom: 0; }
-/* line 330, ../scss/components/_soe_beans.scss */
+/* line 350, ../scss/components/_soe_beans.scss */
 .bean-stanford-testimonial-block .group-s-credits-style {
   margin-bottom: 0; }
-/* line 335, ../scss/components/_soe_beans.scss */
+/* line 355, ../scss/components/_soe_beans.scss */
 .bean-stanford-testimonial-block .quote .field-item::after {
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 56px;
@@ -2727,67 +3031,67 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
   opacity: 1;
   top: 30; }
   @media (max-width: 580px) {
-    /* line 335, ../scss/components/_soe_beans.scss */
+    /* line 355, ../scss/components/_soe_beans.scss */
     .bean-stanford-testimonial-block .quote .field-item::after {
       font-size: 40px; } }
 
-/* line 350, ../scss/components/_soe_beans.scss */
+/* line 370, ../scss/components/_soe_beans.scss */
 .span12 .bean-stanford-postcard-linked {
   margin: 0; }
-/* line 354, ../scss/components/_soe_beans.scss */
+/* line 374, ../scss/components/_soe_beans.scss */
 .span12 .bean-stanford-testimonial-block {
   margin: 0 10%; }
   @media (max-width: 979px) {
-    /* line 354, ../scss/components/_soe_beans.scss */
+    /* line 374, ../scss/components/_soe_beans.scss */
     .span12 .bean-stanford-testimonial-block {
       margin: 0; } }
   @media (max-width: 767px) {
-    /* line 354, ../scss/components/_soe_beans.scss */
+    /* line 374, ../scss/components/_soe_beans.scss */
     .span12 .bean-stanford-testimonial-block {
       margin: 0 10%; } }
   @media (max-width: 580px) {
-    /* line 354, ../scss/components/_soe_beans.scss */
+    /* line 374, ../scss/components/_soe_beans.scss */
     .span12 .bean-stanford-testimonial-block {
       margin: 0; } }
 
-/* line 372, ../scss/components/_soe_beans.scss */
+/* line 392, ../scss/components/_soe_beans.scss */
 .quote::before {
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
   opacity: 1; }
-/* line 378, ../scss/components/_soe_beans.scss */
+/* line 398, ../scss/components/_soe_beans.scss */
 .quote::after {
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
   opacity: 1; }
 
-/* line 386, ../scss/components/_soe_beans.scss */
+/* line 406, ../scss/components/_soe_beans.scss */
 div.quote p:last-child::after {
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
   opacity: 1; }
-/* line 392, ../scss/components/_soe_beans.scss */
+/* line 412, ../scss/components/_soe_beans.scss */
 div.quote::before {
   font-size: 56px; }
   @media (max-width: 580px) {
-    /* line 392, ../scss/components/_soe_beans.scss */
+    /* line 412, ../scss/components/_soe_beans.scss */
     div.quote::before {
       font-size: 40px; } }
 
-/* line 402, ../scss/components/_soe_beans.scss */
+/* line 422, ../scss/components/_soe_beans.scss */
 blockquote.quote p:last-child::after {
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
   opacity: 1; }
-/* line 408, ../scss/components/_soe_beans.scss */
+/* line 428, ../scss/components/_soe_beans.scss */
 blockquote.quote::before {
   font-size: 56px; }
   @media (max-width: 580px) {
-    /* line 408, ../scss/components/_soe_beans.scss */
+    /* line 428, ../scss/components/_soe_beans.scss */
     blockquote.quote::before {
       font-size: 40px; } }
 
-/* line 417, ../scss/components/_soe_beans.scss */
+/* line 437, ../scss/components/_soe_beans.scss */
 p.superhead {
   color: #333333;
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -2796,7 +3100,7 @@ p.superhead {
   line-height: 1.2em;
   margin-bottom: .6em; }
 
-/* line 426, ../scss/components/_soe_beans.scss */
+/* line 446, ../scss/components/_soe_beans.scss */
 .infotext {
   font-size: 56px;
   font-family: "Roboto Slab", serif;
@@ -2806,7 +3110,7 @@ p.superhead {
   letter-spacing: 0;
   margin: 0; }
 
-/* line 436, ../scss/components/_soe_beans.scss */
+/* line 456, ../scss/components/_soe_beans.scss */
 p.infotext {
   margin: 0; }
 
