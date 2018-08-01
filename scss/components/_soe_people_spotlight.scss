@@ -64,6 +64,11 @@
 }
 
 // HORIZONTAL CARD VIEW
+.main .spotlight-all-content-container .spotlight-quote {
+  p {
+    overflow: hidden;
+  }
+}
 
 .view-stanford-people-spotlight-h-card {
   .spotlight-container {
@@ -177,10 +182,6 @@
 
         p:after {
           content: close-quote;
-        }
-
-        p {
-          overflow: hidden;
         }
       }
     }
