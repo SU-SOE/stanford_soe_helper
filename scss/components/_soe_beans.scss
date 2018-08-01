@@ -273,6 +273,60 @@
 .block-bean {
   float: left;
   width: 100%;
+
+  &.span12 {
+    .bean-stanford-postcard {
+      margin: 0 10%;
+
+      @include breakpoint-max(medium) {
+        margin: 0;
+      }
+
+      @include breakpoint-max(small) {
+        margin: 0 10%;
+      }
+
+      @include breakpoint-max(smaller) {
+        margin: 0;
+      }
+    }
+  }
+
+  .bean-stanford-postcard {
+    h2 {
+      font-size: 28px;
+      margin-top: 10px;
+    }
+
+    h2 a {
+      text-decoration-color: $turquoise;
+
+      &:hover {
+        text-decoration-color: $primary-color;
+      }
+    }
+
+    h3 {
+      font-family: $primary-font;
+      margin-top: 1em 0 0.3em;
+    }
+
+    h3 a {
+      text-decoration-color: $turquoise;
+
+      &:hover {
+        text-decoration-color: $primary-color;
+      }
+    }
+
+    .field-name-field-s-postcard-body h2:first-child {
+      margin-top: 0;
+    }
+
+    .field-name-title h2 {
+      font-size: 28px;
+    }
+  }
 }
 
 .bean-stanford-postcard.view-mode-single_centered_button {
@@ -292,7 +346,14 @@
       margin-bottom: 0;
     }
   }
+
+  .bean-stanford-postcard .field-name-field-s-postcard-body h2:last-child,
+  .bean-stanford-postcard .field-name-field-s-postcard-body h3:last-child,
+  .bean-stanford-postcard .field-name-field-s-postcard-body p:last-child {
+    margin-bottom: 0px;
+  }
 }
+
 
 // TESTIMONIAL BEANS
 .bean-stanford-testimonial-block {
@@ -444,7 +505,7 @@ p.superhead {
   color: $primary-color;
   font-family: $primary-font;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.2em;
   margin-bottom: .6em;
 }
