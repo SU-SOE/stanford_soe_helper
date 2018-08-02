@@ -81,6 +81,13 @@
 }
 
 // POSTCARD & POSTCARD LINKED BEANS
+.column-pc-linked {
+  padding: 0;
+}
+
+.block-bean.column-pc-linked .bean-stanford-postcard .group-s-postcard .postcard-content {
+    padding: 30px;
+}
 
 .bean-stanford-postcard.view-mode-stanford_soe_default,
 .bean-stanford-postcard.view-mode-single_centered_button,
@@ -88,9 +95,7 @@
   .postcard,
   .postcard-linked-container {
     display: flex;
-    background: $white;
     padding: 40px;
-    @include box-shadow;
     @include breakpoint-max(medium) {
       display: block;
       padding: 0;
@@ -259,8 +264,6 @@
     }
   }
   .span12 & {
-    margin: 0 10%;
-
     @include breakpoint-max(medium) {
       margin: 0 10%;
     }
@@ -272,13 +275,8 @@
 
 // POSTCARD SINGLE CENTERED BUTTON BEANS
 .block-bean {
-  float: left;
-  width: 100%;
-
   &.span12 {
     .bean-stanford-postcard {
-      margin: 0 10%;
-
       @include breakpoint-max(medium) {
         margin: 0;
       }
@@ -368,7 +366,7 @@
 
     .group-s-postcard .postcard-content {
       width: auto;
-      padding: 30px;
+      padding: 0;
     }
 
     .group-s-postcard .postcard-image img {
@@ -406,11 +404,7 @@
 // TESTIMONIAL BEANS
 .bean-stanford-testimonial-block {
   .postcard  {
-    background: $white;
     padding: 0 56px 40px;
-    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
 
     @include breakpoint-max(small) {
       display: block;
