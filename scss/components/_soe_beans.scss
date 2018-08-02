@@ -289,10 +289,30 @@
     }
   }
 
+  &.span4 {
+    .bean-stanford-postcard-linked .postcard-linked-title {
+
+      @include breakpoint-max(medium) {
+        line-height: 1.2em;
+      }
+    }
+
+    .bean-stanford-postcard-linked .postcard-linked-title a {
+
+      @include breakpoint-max(medium) {
+        font-size: .9em;
+      }
+    }
+  }
+
   .bean-stanford-postcard {
     h2 {
       font-size: 28px;
       margin-top: 10px;
+
+      @include breakpoint-max(medium-sm) {
+        font-size: 20px;
+      }
     }
 
     h2 a {
