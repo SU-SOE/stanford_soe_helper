@@ -258,9 +258,6 @@
     margin: 0 10%;
 
     @include breakpoint-max(medium) {
-      //margin: 0;
-    }
-    @include breakpoint-max(medium) {
       margin: 0 10%;
     }
     @include breakpoint-max(smaller) {
@@ -325,6 +322,20 @@
 
     .field-name-title h2 {
       font-size: 28px;
+    }
+
+    .group-s-postcard {
+      display: block;
+      padding: 0;
+    }
+
+    .group-s-postcard .postcard-content {
+      width: auto;
+      padding: 30px;
+    }
+
+    .group-s-postcard .postcard-image img {
+      width: 100%;
     }
   }
 }
