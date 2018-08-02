@@ -280,7 +280,7 @@
       }
 
       @include breakpoint-max(small) {
-        margin: 0 10%;
+        margin: 0;
       }
 
       @include breakpoint-max(smaller) {
@@ -302,6 +302,14 @@
       @include breakpoint-max(medium) {
         font-size: .9em;
       }
+    }
+  }
+
+  &.block.span4,
+  &.block.span6,
+  &.block.span12 {
+    @include breakpoint-max(small) {
+      width: 100%;
     }
   }
 
