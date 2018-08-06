@@ -274,6 +274,30 @@
 }
 
 // POSTCARD SINGLE CENTERED BUTTON BEANS
+.row-fluid .block-bean {
+  &.span12 {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: auto;
+
+    @include breakpoint-max(small) {
+      margin-left: 0;
+    }
+  }
+
+  &.span12.well {
+    padding: 2em;
+  }
+
+  &.well {
+    .bean-stanford-postcard .field-name-field-s-postcard-body h2:last-child,
+    .bean-stanford-postcard .field-name-field-s-postcard-body h3:last-child,
+    .bean-stanford-postcard .field-name-field-s-postcard-body p:last-child {
+      margin-bottom: 0px;
+    }
+  }
+}
+
 .block-bean {
   &.span12 {
     .bean-stanford-postcard {
@@ -315,6 +339,12 @@
   &.block.span6,
   &.block.span12 {
     @include breakpoint-max(small) {
+      width: 100%;
+    }
+  }
+
+  &.block.span4 {
+    @include breakpoint-max(medium) {
       width: 100%;
     }
   }
@@ -552,7 +582,8 @@ p.superhead {
   margin-bottom: .6em;
 }
 
-.infotext {
+.infotext,
+.well .infotext {
   font-size: 56px;
   font-family: $roboto-slab;
   color: $primary-color;
