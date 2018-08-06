@@ -83,6 +83,10 @@
 // POSTCARD & POSTCARD LINKED BEANS
 #content-body .content .field-name-field-s-postcard-body a.btn {
   width: auto;
+
+  @include breakpoint-max(medium) {
+    width: 30%;
+  }
 }
 
 .row-fluid .block-bean.well.key-image-no-padding {
@@ -337,6 +341,11 @@
   }
 
   &.span4 {
+
+    @include breakpoint-max(medium) {
+      margin-left: 0;
+    }
+
     .bean-stanford-postcard-linked .postcard-linked-title {
 
       @include breakpoint-max(medium) {
