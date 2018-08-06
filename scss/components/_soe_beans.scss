@@ -298,6 +298,12 @@
   }
 }
 
+.block-bean.block {
+  @include breakpoint-max(smaller) {
+    margin-bottom: 30px;
+  }
+}
+
 .block-bean {
   &.span12 {
     .bean-stanford-postcard {
