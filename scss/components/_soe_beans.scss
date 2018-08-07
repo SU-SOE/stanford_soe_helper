@@ -126,6 +126,10 @@
     .bean-stanford-postcard .field-name-field-s-postcard-body p:last-child {
       margin-bottom: 0;
     }
+
+    .bean-stanford-postcard a.btn {
+      font-size: inherit;
+    }
   }
 }
 
@@ -328,6 +332,7 @@
       @include breakpoint-max(smaller) {
         margin: 0;
       }
+
     }
   }
 
@@ -367,7 +372,7 @@
         width: 100%;
       }
     }
-    
+
     &.span6,
     &.span12 {
       @include breakpoint-max(small) {
