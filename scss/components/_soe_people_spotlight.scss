@@ -64,11 +64,13 @@
 }
 
 // HORIZONTAL CARD VIEW
-.main .spotlight-all-content-container .spotlight-quote {
-  p {
-    overflow: hidden;
+.main {
+  .spotlight-all-content-container .spotlight-quote {
+    p {
+      overflow: hidden;
+    }
   }
-
+  
   &.spotlight {
     #content-head {
       margin-bottom: 0;
