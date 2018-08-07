@@ -104,27 +104,27 @@
   &.well {
     padding: 2em;
 
+    &.key-image-no-padding {
+      padding: 0;
+    }
+
+    &.key-image-no-padding h2 {
+        margin-top: 1.1em;
+        text-align: center;
+    }
+
+    &.key-image-no-padding .field-name-field-s-image-image img {
+        width: 100%;
+    }
+
+    &.key-image-no-padding .postcard-content {
+        padding: 2em;
+    }
+
     .bean-stanford-postcard .field-name-field-s-postcard-body h2:last-child,
     .bean-stanford-postcard .field-name-field-s-postcard-body h3:last-child,
     .bean-stanford-postcard .field-name-field-s-postcard-body p:last-child {
       margin-bottom: 0;
-    }
-  }
-
-  &.well.key-image-no-padding {
-    padding: 0;
-
-    h2 {
-      margin-top: 1.1em;
-      text-align: center;
-    }
-
-    .field-name-field-s-image-image img {
-      width: 100%;
-    }
-
-    .postcard-content {
-      padding: 2em;
     }
   }
 }
