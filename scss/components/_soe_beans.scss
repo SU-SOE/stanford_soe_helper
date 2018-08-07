@@ -106,11 +106,11 @@
 
     &.key-image-no-padding {
       padding: 0;
-    }
 
-    &.key-image-no-padding h2 {
-        margin-top: 1.1em;
-        text-align: center;
+      h2 {
+          margin-top: 1.1em;
+          text-align: center;
+      }
     }
 
     &.key-image-no-padding .field-name-field-s-image-image img {
@@ -129,10 +129,6 @@
   }
 }
 
-.block-bean.column-pc-linked .bean-stanford-postcard .group-s-postcard .postcard-content {
-    padding: 2em;
-}
-
 .bean-stanford-postcard.view-mode-stanford_soe_default,
 .bean-stanford-postcard.view-mode-single_centered_button,
 .bean-stanford-postcard-linked {
@@ -148,7 +144,7 @@
     a.postcard-linked-img-container {
       flex-shrink: 0;
 
-      /*** SPAN 12 BEAN RESPONSIVE ***/
+      // SPAN 12 BEAN RESPONSIVE
       @include breakpoint-max(medium) {
           flex-shrink: .9;
       }
@@ -248,7 +244,7 @@
 
       /*** STANDARDIZE PADDING INSIDE POSTCARD LINKED BLOCK ***/
       .postcard-body p:last-child,
-      .postcard-linked-body p:last-child{
+      .postcard-linked-body p:last-child {
         margin-bottom: .8em;
       }
 
