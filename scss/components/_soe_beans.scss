@@ -314,12 +314,6 @@
   }
 }
 
-.block-bean.block {
-  @include breakpoint-max(smaller) {
-    margin-bottom: 30px;
-  }
-}
-
 .block-bean {
   &.span12 {
     .bean-stanford-postcard {
@@ -362,17 +356,22 @@
     }
   }
 
-  &.block.span4,
-  &.block.span6,
-  &.block.span12 {
-    @include breakpoint-max(small) {
-      width: 100%;
+  &.block {
+    @include breakpoint-max(smaller) {
+      margin-bottom: 30px;
     }
-  }
 
-  &.block.span4 {
-    @include breakpoint-max(medium) {
-      width: 100%;
+    &.span4 {
+      @include breakpoint-max(medium) {
+        width: 100%;
+      }
+    }
+
+    &.span6,
+    &.span12 {
+      @include breakpoint-max(small) {
+        width: 100%;
+      }
     }
   }
 
