@@ -384,6 +384,20 @@
     }
   }
 
+  .bean-stanford-postcard .group-s-postcard {
+    display: block;
+    padding: 0;
+
+    .postcard-content {
+      width: auto;
+      padding: 0;
+    }
+
+    .postcard-image img {
+      width: 100%;
+    }
+  }
+
   .bean-stanford-postcard {
     h2 {
       font-size: 28px;
@@ -422,20 +436,6 @@
 
     .field-name-title h2 {
       font-size: 28px;
-    }
-
-    .group-s-postcard {
-      display: block;
-      padding: 0;
-    }
-
-    .group-s-postcard .postcard-content {
-      width: auto;
-      padding: 0;
-    }
-
-    .group-s-postcard .postcard-image img {
-      width: 100%;
     }
   }
 }
