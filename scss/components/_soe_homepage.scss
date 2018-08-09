@@ -48,7 +48,6 @@
 
   // BLOCK TRIOS
 
-  .bean-stanford-postcard-linked .postcard-linked-container,
   .view-stanford-page-banner-caption {
     margin-bottom: 100px;
 
@@ -59,13 +58,17 @@
 
   .view-stanford-ppl-spot-fw-banner-quote {
     margin-bottom: 60px;
+    margin-top: 100px;
   }
 
-  #block-bean-homepage-magazine-postcard-butto {
+  #block-bean-homepage-magazine-postcard-butto,
+  #block-bean-homepage-magazine-postcard-butto--2 {
     margin: 80px 0 60px;
+    width: 100%;
   }
 
-  #block-bean-stanford-soe-mailchimp-homepage- {
+  #block-bean-stanford-soe-mailchimp-homepage-,
+  #block-bean-stanford-soe-mailchimp-homepage---2 {
     margin-bottom: 80px;
   }
 
@@ -110,7 +113,8 @@
     }
   }
 
-  [id*="block-bean-homepage-magazine-postcard-butto"] {
+  [id*="block-bean-homepage-magazine-postcard-butto"],
+  [id*="block-bean-homepage-magazine-postcard-butto--2"] {
       @include breakpoint-max(smaller) {
       margin: 30px 0 30px;
     }
