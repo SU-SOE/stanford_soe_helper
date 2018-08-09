@@ -35,6 +35,12 @@ function stanford_soe_helper_collection_layouts_context_default_contexts() {
           'region' => 'fullwidth_bottom',
           'weight' => '-10',
         ),
+        'bean-stanford-soe-mag-news-signup' => array(
+          'module' => 'bean',
+          'delta' => 'stanford-soe-mag-news-signup',
+          'region' => 'fullwidth_bottom',
+          'weight' => '-9',
+        ),
       ),
     ),
   );
