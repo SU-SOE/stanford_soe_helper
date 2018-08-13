@@ -528,7 +528,7 @@ function stanford_soe_helper_collection_views_views_default_views() {
   <div class ="collection-content-container">
     <div class="collection-date">[created]</div>
     <div class="collection-title">[title]</div>
-    <div class="edit-link">[edit_node]</div>
+    [edit_node]
   </div>
 </div>
 ';
@@ -839,7 +839,7 @@ function stanford_soe_helper_collection_views_views_default_views() {
     <div class="mag-article-issue mag-issue-color-[field_s_mag_issue_accent_color] mag-issue-color-[field_s_mag_issue_accent_color_1] mag-issue-color-[field_s_mag_issue_accent_color_2] mag-issue-color-[field_s_mag_issue_accent_color_3] mag-issue-color-[field_s_mag_issue_accent_color_4]">[title_1] [title_2] [title_3] [title_4] [title_5]</div>
   </div>
 </div>
-<div class="edit-link">[edit_node]</div>';
+[edit_node]';
   $handler->display->display_options['fields']['nothing']['element_type'] = 'div';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['nothing']['element_wrapper_type'] = 'div';
@@ -1156,7 +1156,7 @@ function stanford_soe_helper_collection_views_views_default_views() {
     <div class="mag-article-issue mag-issue-color-[field_s_mag_issue_accent_color] mag-issue-color-[field_s_mag_issue_accent_color_1] mag-issue-color-[field_s_mag_issue_accent_color_2] mag-issue-color-[field_s_mag_issue_accent_color_3] mag-issue-color-[field_s_mag_issue_accent_color_4]">[title_1] [title_2] [title_3] [title_4] [title_5]</div>
   </div>
 </div>
-<div class="edit-link">[edit_node]</div>';
+[edit_node]';
   $handler->display->display_options['fields']['nothing']['element_type'] = 'div';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['nothing']['element_wrapper_type'] = 'div';
@@ -1398,7 +1398,7 @@ function stanford_soe_helper_collection_views_views_default_views() {
     <div class="mag-article-issue mag-issue-color-[field_s_mag_issue_accent_color] mag-issue-color-[field_s_mag_issue_accent_color_1] mag-issue-color-[field_s_mag_issue_accent_color_2] mag-issue-color-[field_s_mag_issue_accent_color_3] mag-issue-color-[field_s_mag_issue_accent_color_4]">[title_1] [title_2] [title_3] [title_4] [title_5]</div>
   </div>
 </div>
-<div class="edit-link">[edit_node]</div>';
+[edit_node]';
   $handler->display->display_options['fields']['nothing']['element_type'] = 'div';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['nothing']['element_wrapper_type'] = 'div';
