@@ -2365,7 +2365,7 @@ function stanford_people_spotlight_views_views_default_views() {
         <p>[field_s_ppl_spot_department]</p>
       </div>
       [field_s_ppl_spot_quote_1]
-      <div class="edit-link">[edit_node]</div>
+      [edit_node]
     </div>
   </div>
 </div>
@@ -2882,7 +2882,7 @@ function stanford_people_spotlight_views_views_default_views() {
         <p>[field_s_ppl_spot_department]</p>
        </div>
       [field_s_ppl_spot_quote_1]
-      <div class="edit-link">[edit_node]</div>
+      [edit_node]
     </div>
   </div>
 </div>
