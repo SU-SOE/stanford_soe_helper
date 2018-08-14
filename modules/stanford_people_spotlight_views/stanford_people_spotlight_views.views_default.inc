@@ -1911,8 +1911,10 @@ function stanford_people_spotlight_views_views_default_views() {
       <div class="spotlight-department">
         <p>[field_s_ppl_spot_department]</p>
       </div>
-      [field_s_ppl_spot_quote_1]
-      <div class="edit-link">[edit_node]</div>
+<div class="spotlight-quote">
+        <p>[field_s_ppl_spot_quote_1]</p>
+      </div>
+     [edit_node]
     </div>
   </div>
 </div>
