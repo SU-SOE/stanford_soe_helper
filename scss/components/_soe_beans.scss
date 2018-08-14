@@ -101,12 +101,18 @@
       margin-left: 0;
     }
   }
+  
+  &.span12 {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: auto;
 
-  &.no-padding.well {
-    padding: 0 2em 2em;
+    @include breakpoint-max(small) {
+      margin-left: 0;
+    }
   }
 
-  &.key-image-no-padding.well {
+  &.no-padding.well {
     padding: 0;
 
     h2 {
