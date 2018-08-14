@@ -491,7 +491,7 @@ function stanford_people_spotlight_views_views_default_views() {
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['ui_name'] = 'Global: View rewrite';
   $handler->display->display_options['fields']['nothing']['label'] = '';
-  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="spotlight-container">
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="spotlight-container well">
   <div class="spotlight-all-content-container">
     <div class="spotlight-img spotlight-img-color-[field_s_ppl_spot_image_color]">
       [field_s_ppl_spot_image]
