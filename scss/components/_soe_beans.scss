@@ -91,17 +91,47 @@
 
 // POSTCARD SINGLE CENTERED BUTTON BEANS
 .row-fluid .block-bean {
+  &.span4,
   &.span6,
   &.span12 {
-    margin-left: 10%;
-    margin-right: 10%;
-    width: auto;
-
+    
     @include breakpoint-max(small) {
       margin-left: 0;
     }
+
+    &.no-padding.well {
+      padding: 0;
+
+      h2 {
+          margin-top: 1.1em;
+      }
+
+      .field-name-field-s-image-image img {
+          width: 100%;
+      }
+
+      .postcard-content {
+          padding: 2em;
+      }
+    }
+
+    &.no-top-padding.well {
+      padding-top: 0;
+
+      h2 {
+          margin-top: 1.1em;
+      }
+
+      .field-name-field-s-image-image img {
+          width: 100%;
+      }
+
+      .postcard-content {
+          padding: 2em;
+      }
+    }
   }
-  
+
   &.span12 {
     margin-left: 10%;
     margin-right: 10%;
@@ -109,22 +139,6 @@
 
     @include breakpoint-max(small) {
       margin-left: 0;
-    }
-  }
-
-  &.no-padding.well {
-    padding: 0;
-
-    h2 {
-        margin-top: 1.1em;
-    }
-
-    .field-name-field-s-image-image img {
-        width: 100%;
-    }
-
-    .postcard-content {
-        padding: 2em;
     }
   }
 
@@ -479,11 +493,10 @@
 // TESTIMONIAL BEANS
 .bean-stanford-testimonial-block {
   .postcard  {
-    padding: 0 0 40px;
+    padding: 0 56px 40px;
 
     @include breakpoint-max(small) {
       display: block;
-      padding: 0 0 40px;
     }
   }
 
@@ -553,22 +566,6 @@
 .span12 {
   .bean-stanford-postcard-linked {
     margin: 0;
-  }
-
-  .bean-stanford-testimonial-block {
-    margin: 0 10%;
-
-    @include breakpoint-max(medium) {
-      margin: 0;
-    }
-
-    @include breakpoint-max(small) {
-      margin: 0 10%;
-    }
-
-    @include breakpoint-max(smaller) {
-      margin: 0;
-    }
   }
 }
 
