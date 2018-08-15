@@ -163,7 +163,7 @@ function stanford_people_spotlight_views_views_default_views() {
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['ui_name'] = 'Global: View rewrite';
   $handler->display->display_options['fields']['nothing']['label'] = '';
-  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="spotlight-container">
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="spotlight-container well no-padding">
   <div class="spotlight-all-content-container">
     <div class="spotlight-img spotlight-img-color-[field_s_ppl_spot_image_color]">
       [field_s_ppl_spot_image]
@@ -182,7 +182,7 @@ function stanford_people_spotlight_views_views_default_views() {
         <p>[field_s_ppl_spot_department]</p>
       </div>
       [field_s_ppl_spot_quote_1]
-      <div class="edit-link">[edit_node]</div>
+      [edit_node]
     </div>
   </div>
 </div>
@@ -491,7 +491,7 @@ function stanford_people_spotlight_views_views_default_views() {
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['ui_name'] = 'Global: View rewrite';
   $handler->display->display_options['fields']['nothing']['label'] = '';
-  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="spotlight-container well">
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="spotlight-container well no-padding">
   <div class="spotlight-all-content-container">
     <div class="spotlight-img spotlight-img-color-[field_s_ppl_spot_image_color]">
       [field_s_ppl_spot_image]
@@ -789,7 +789,7 @@ function stanford_people_spotlight_views_views_default_views() {
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['ui_name'] = 'Global: View rewrite';
   $handler->display->display_options['fields']['nothing']['label'] = '';
-  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="spotlight-container">
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="spotlight-container well no-padding">
   <div class="spotlight-all-content-container">
     <div class="spotlight-img spotlight-img-color-[field_s_ppl_spot_image_color]">
       [field_s_ppl_spot_image]
@@ -807,7 +807,7 @@ function stanford_people_spotlight_views_views_default_views() {
       <div class="spotlight-department">
         <p>[field_s_ppl_spot_department]</p>
       </div>
-      <div class="edit-link">[edit_node]</div>
+      [edit_node]
     </div>
   </div>
 </div>
@@ -1156,7 +1156,7 @@ function stanford_people_spotlight_views_views_default_views() {
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['ui_name'] = 'Global: View rewrite';
   $handler->display->display_options['fields']['nothing']['label'] = '';
-  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="spotlight-container">
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="spotlight-container well no-padding">
   <div class="spotlight-all-content-container">
     <div class="spotlight-img spotlight-img-color-[field_s_ppl_spot_image_color]">
       [field_s_ppl_spot_image]
@@ -1175,7 +1175,7 @@ function stanford_people_spotlight_views_views_default_views() {
         <p>[field_s_ppl_spot_department]</p>
       </div>
       [field_s_ppl_spot_quote_1]
-      <div class="edit-link">[edit_node]</div>
+      [edit_node]
     </div>
   </div>
 </div>
