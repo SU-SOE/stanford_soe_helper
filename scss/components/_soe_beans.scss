@@ -26,10 +26,19 @@
   }
 
   .group-s-cta-title-style {
+    padding: 18px 0 22px;
+
     @include breakpoint-max(x-small) {
+
       padding: 12px 0 14px;
     }
-    padding: 18px 0 22px;
+
+    h2 {
+      color: $black;
+      font-size: em(22px);
+      font-family: $primary-font;
+      font-weight: 400;
+    }
 
     .turquoise & {
       background: $turquoise;
@@ -42,13 +51,6 @@
     .pink & {
       background: $pink;
     }
-
-    h2 {
-      color: $black;
-      font-size: em(22px);
-      font-family: $primary-font;
-      font-weight: 400;
-    }
   }
 }
 
@@ -58,7 +60,9 @@
   @include breakpoint-min(large) {
     width: 20%;
   }
+
   @include breakpoint-max(small) {
+
     width: 50%;
     margin: 0 25% 20px;
   }
@@ -173,22 +177,26 @@
   .postcard-linked-container {
     display: flex;
     padding: 40px;
+
     @include breakpoint-max(medium) {
+
       display: block;
       padding: 0;
     }
 
     a.postcard-linked-img-container {
       flex-shrink: 0;
+      margin-right: 30px;
+
+      @include breakpoint-max(medium) {
+
+        margin-right: 0;
+      }
 
       // SPAN 12 BEAN RESPONSIVE
       @include breakpoint-max(medium) {
-          flex-shrink: .9;
-      }
 
-      margin-right: 30px;
-      @include breakpoint-max(medium) {
-        margin-right: 0;
+        flex-shrink: .9;
       }
 
       &:hover img {
@@ -205,6 +213,7 @@
           img {
             @include transition;
             @include breakpoint-max(medium) {
+
               width: 100%;
             }
           }
@@ -222,10 +231,14 @@
             height: auto;
             vertical-align: -9px;
             padding: 3px 8px;
+
             @include breakpoint-max(medium) {
+
               vertical-align: -12px;
             }
+
             @include breakpoint-max(x-small) {
+
               vertical-align: -14px;
             }
           }
@@ -236,7 +249,9 @@
     .postcard-content,
     .postcard-linked-content-container {
       width: 100%;
+
       @include breakpoint-max(medium) {
+
         width: auto;
         padding: 30px;
       }
@@ -256,19 +271,22 @@
         margin-bottom: 1em;
 
         @include breakpoint-max(small) {
+
           margin-bottom: 0;
         }
 
         a {
+          @include td-skip;
+          @include td-color($turquoise);
           color: $primary-color;
           font-family: $roboto-slab;
           font-size: em(28px);
           font-weight: 600;
           letter-spacing: 0.02em;
-          @include td-skip;
           text-decoration: underline;
-          @include td-color($turquoise);
+
           @include breakpoint-max(medium) {
+
             margin-top: 20px;
           }
 
@@ -279,7 +297,7 @@
         }
       }
 
-      /*** STANDARDIZE PADDING INSIDE POSTCARD LINKED BLOCK ***/
+      // STANDARDIZE PADDING INSIDE POSTCARD LINKED BLOCK
       .postcard-body p:last-child,
       .postcard-linked-body p:last-child {
         margin-bottom: .8em;
@@ -341,11 +359,15 @@
       }
     }
   }
+
   .span12 & {
     @include breakpoint-max(medium) {
+
       margin: 0 10%;
     }
+
     @include breakpoint-max(smaller) {
+
       margin: 0;
     }
   }
@@ -355,14 +377,17 @@
   &.span12 {
     .bean-stanford-postcard {
       @include breakpoint-max(medium) {
+
         margin: 0;
       }
 
       @include breakpoint-max(small) {
+
         margin: 0;
       }
 
       @include breakpoint-max(smaller) {
+
         margin: 0;
       }
 
@@ -372,6 +397,7 @@
   &.span4 {
 
     @include breakpoint-max(medium) {
+
       margin-left: 0;
     }
 
@@ -391,12 +417,14 @@
 
   &.block {
     @include breakpoint-max(smaller) {
+
       margin-bottom: 30px;
     }
 
 
     &.span4 {
       @include breakpoint-max(medium) {
+
         width: 100%;
       }
     }
@@ -404,6 +432,7 @@
     &.span6,
     &.span12 {
       @include breakpoint-max(small) {
+
         width: 100%;
       }
     }
@@ -429,6 +458,7 @@
       margin-top: 10px;
 
       @include breakpoint-max(medium-sm) {
+
         font-size: 22px;
         line-height: 1.2em;
       }
@@ -492,10 +522,11 @@
 
 // TESTIMONIAL BEANS
 .testimonial {
-  .postcard  {
+  .postcard {
     padding: 0 56px 40px;
 
     @include breakpoint-max(small) {
+
       display: block;
     }
   }
@@ -512,6 +543,7 @@
       margin-bottom: 2em;
 
       @include breakpoint-max(smaller) {
+
         margin-bottom: 1em;
       }
     }
@@ -521,11 +553,13 @@
     font-family: $roboto-slab;
 
     @include breakpoint-max(medium) {
+
       font-size: 22px;
       line-height: 1.5em;
     }
 
     @include breakpoint-max(smaller) {
+
       font-size: 18px;
     }
   }
@@ -536,6 +570,7 @@
     margin-top: 15px;
 
     @include breakpoint-max(smaller) {
+
       font-size: 16px;
     }
 
@@ -557,6 +592,7 @@
       top: 30;
 
       @include breakpoint-max(smaller) {
+
         font-size: 40px;
       }
     }
@@ -594,6 +630,7 @@ div.quote {
     font-size: 56px;
 
     @include breakpoint-max(smaller) {
+
       font-size: 40px;
     }
   }
@@ -610,6 +647,7 @@ blockquote.quote {
     font-size: 56px;
 
     @include breakpoint-max(smaller) {
+
       font-size: 40px;
     }
   }
@@ -636,5 +674,5 @@ p.superhead {
 }
 
 p.infotext {
-    margin: 0;
+  margin: 0;
 }
