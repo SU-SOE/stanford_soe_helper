@@ -5,6 +5,7 @@
 // CALL TO ACTION BEANS
 .bean-stanford-call-to-action {
   #content-body-bottom & {
+
     @include breakpoint-min(small) {
       margin-bottom: 100px;
     }
@@ -24,6 +25,7 @@
 
   .group-s-cta-title-style {
     padding: 18px 0 22px;
+
     @include breakpoint-max(x-small) {
       padding: 12px 0 14px;
     }
@@ -52,9 +54,11 @@
 .content-body [id*="block-bean-sitewide-facebook-cta-block"].block[class*="span"],
 .content-body [id*="block-bean-sitewide-instagram-cta-block"].block[class*="span"],
 .content-body [id*="block-bean-sitewide-twitter-cta-block"].block[class*="span"] {
+
   @include breakpoint-min(large) {
     width: 20%;
   }
+
   @include breakpoint-max(small) {
     width: 50%;
     margin: 0 25% 20px;
@@ -66,12 +70,14 @@
 }
 
 [id*="block-bean-sitewide-instagram-cta-block"].block[class*="span"] {
+
   @include breakpoint-min(large) {
     margin-left: 17.25%;
   }
 }
 
 [id*="block-bean-sitewide-twitter-cta-block"].block[class*="span"] {
+
   @include breakpoint-min(large) {
     margin-right: 17.25%;
   }
@@ -79,6 +85,7 @@
 // POSTCARD & POSTCARD LINKED BEANS
 #content-body .content .field-name-field-s-postcard-body a.btn {
   width: auto;
+
   @include breakpoint-max(medium) {
     width: 30%;
   }
@@ -88,6 +95,7 @@
   &.span12,
   &.span4,
   &.span6 {
+
     @include breakpoint-max(small) {
       margin-left: 0;
     }
@@ -129,6 +137,7 @@
     margin-left: 10%;
     margin-right: 10%;
     width: auto;
+
     @include breakpoint-max(small) {
       margin-left: 0;
     }
@@ -165,6 +174,7 @@
   .postcard-linked-container {
     display: flex;
     padding: 40px;
+
     @include breakpoint-max(medium) {
       display: block;
       padding: 0;
@@ -173,6 +183,7 @@
     a.postcard-linked-img-container {
       flex-shrink: 0;
       margin-right: 30px;
+      
       @include breakpoint-max(medium) {
         margin-right: 0;
       }
