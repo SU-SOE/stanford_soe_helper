@@ -1,4 +1,3 @@
-
 engines:
   # https://docs.codeclimate.com/docs/eslint
   # ES Linting requires an .eslintrc file to tweak checks.
@@ -6,11 +5,6 @@ engines:
     enabled: false
   csslint:
     enabled: false
-    checks:
-      overqualified-elements:
-        enabled: false
-      adjoining-classes:
-        enabled: false
   # We don't lint our coffee. Eew.
   coffeelint:
     enabled: false
@@ -21,6 +15,12 @@ engines:
     enabled: true
     checks:
       IdSelector:
+        enabled: false
+      SelectorFormat:
+        enabled: false
+      NestingDepth:
+        enabled: false
+      MergeableSelector:
         enabled: false
       ColorVariable:
         enabled: false
@@ -34,9 +34,9 @@ engines:
         enabled: false
       LeadingZero:
         enabled: false
-      NestingDepth:
+      HexLength:
         enabled: false
-      SelectorFormat:
+      PseudoElement:
         enabled: false
   phpcodesniffer:
     enabled: true
@@ -138,3 +138,6 @@ exclude_paths:
 - "**/vendor/"
 - "**.api.php"
 - "*.twig"
+- "Gruntfile.js"
+- "**/Gruntfile.js"
+- "node_modules/"
