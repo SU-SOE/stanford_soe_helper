@@ -1,93 +1,109 @@
-/*
-Error: Invalid CSS after "...GradientType=1)": expected ";", was ") // IE9 AND BE..."
-        on line 9 of scss/mixins/_soe_gradients.scss
-        from line 5 of scss/mixins/_soe_mixins.scss
-        from line 2 of scss/soe_helper_print.scss
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100);
+/* line 8, ../scss/components/_soe_print.scss */
+.print-breadcrumb,
+.print-content .node-stanford-magazine-article .field-name-field-s-mag-article-accent-color,
+.print-content .node-stanford-magazine-article .field-name-field-s-mag-article-dept,
+.print-content .node-stanford-magazine-article .field-name-field-s-mag-article-featured,
+.print-content .node-stanford-magazine-article .field-name-field-s-mag-article-print,
+.print-footnote,
+.print-hr,
+.print-links,
+.print-site_name,
+.print-source_url {
+  display: none; }
 
-4:   background: -webkit-linear-gradient(left, $start-color $start-percent, $end-color $end-percent);
-5:   background: -moz-linear-gradient(left, $start-color $start-percent, $end-color $end-percent);
-6:   background: -o-linear-gradient(left, $start-color $start-percent, $end-color $end-percent);
-7:   background: linear-gradient(to right, $start-color $start-percent, $end-color $end-percent);
-8:   background-repeat: repeat-x; // IE9 AND BEFORE
-9:   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=  '#{ie-hex-str($start-color)}', endColorstr='#{ie-hex-str($end-color)}', GradientType=1)) // IE9 AND BEFORE
-10: }
-11: // VERTICAL GRADIENT, FROM TOP TO BOTTOM
-12: @mixin gradient-vertical($start-color: transparent, $end-color: rgba(0, 0, 0, 0.70), $start-percent: 0%, $end-percent: 100%) {
-13:   background: -webkit-linear-gradient(top, $start-color $start-percent, $end-color $end-percent);
-14:   background: -moz-linear-gradient(top, $start-color $start-percent, $end-color $end-percent);
+/* line 21, ../scss/components/_soe_print.scss */
+.print-logo {
+  width: 82%;
+  margin: 0 auto; }
+  /* line 25, ../scss/components/_soe_print.scss */
+  .print-logo img {
+    width: 25%;
+    height: auto;
+    margin-top: 40px; }
 
-Backtrace:
-scss/mixins/_soe_gradients.scss:9
-scss/mixins/_soe_mixins.scss:5
-scss/soe_helper_print.scss:2
-/Users/minorwm/.rvm/gems/ruby-head/gems/sass-3.4.25/lib/sass/scss/parser.rb:1207:in `expected'
-/Users/minorwm/.rvm/gems/ruby-head/gems/sass-3.4.25/lib/sass/scss/parser.rb:1137:in `expected'
-/Users/minorwm/.rvm/gems/ruby-head/gems/sass-3.4.25/lib/sass/scss/parser.rb:1132:in `tok!'
-/Users/minorwm/.rvm/gems/ruby-head/gems/sass-3.4.25/lib/sass/scss/parser.rb:786:in `block in try_declaration'
-/Users/minorwm/.rvm/gems/ruby-head/gems/sass-3.4.25/lib/sass/scss/parser.rb:1183:in `rethrow'
-/Users/minorwm/.rvm/gems/ruby-head/gems/sass-3.4.25/lib/sass/scss/parser.rb:791:in `try_declaration'
-/Users/minorwm/.rvm/gems/ruby-head/gems/sass-3.4.25/lib/sass/scss/parser.rb:720:in `declaration_or_ruleset'
-/Users/minorwm/.rvm/gems/ruby-head/gems/sass-3.4.25/lib/sass/scss/parser.rb:685:in `block_child'
-/Users/minorwm/.rvm/gems/ruby-head/gems/sass-3.4.25/lib/sass/scss/parser.rb:677:in `block_contents'
-/Users/minorwm/.rvm/gems/ruby-head/gems/sass-3.4.25/lib/sass/scss/parser.rb:666:in `block'
-/Users/minorwm/.rvm/gems/ruby-head/gems/sass-3.4.25/lib/sass/scss/parser.rb:234:in `mixin_directive'
-/Users/minorwm/.rvm/gems/ruby-head/gems/sass-3.4.25/lib/sass/scss/parser.rb:222:in `special_directive'
-/Users/minorwm/.rvm/gems/ruby-head/gems/sass-3.4.25/lib/sass/scss/parser.rb:197:in `directive'
-/Users/minorwm/.rvm/gems/ruby-head/gems/sass-3.4.25/lib/sass/scss/parser.rb:684:in `block_child'
-/Users/minorwm/.rvm/gems/ruby-head/gems/sass-3.4.25/lib/sass/scss/parser.rb:677:in `block_contents'
-/Users/minorwm/.rvm/gems/ruby-head/gems/sass-3.4.25/lib/sass/scss/parser.rb:125:in `stylesheet'
-/Users/minorwm/.rvm/gems/ruby-head/gems/sass-3.4.25/lib/sass/scss/parser.rb:41:in `parse'
-/Users/minorwm/.rvm/gems/ruby-head/gems/sass-3.4.25/lib/sass/engine.rb:409:in `_to_tree'
-/Users/minorwm/.rvm/gems/ruby-head/gems/sass-3.4.25/lib/sass/engine.rb:315:in `to_tree'
-/Users/minorwm/.rvm/gems/ruby-head/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:327:in `block in visit_import'
-/Users/minorwm/.rvm/gems/ruby-head/gems/sass-3.4.25/lib/sass/stack.rb:88:in `block in with_import'
-/Users/minorwm/.rvm/gems/ruby-head/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
-/Users/minorwm/.rvm/gems/ruby-head/gems/sass-3.4.25/lib/sass/stack.rb:88:in `with_import'
-/Users/minorwm/.rvm/gems/ruby-head/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
-/Users/minorwm/.rvm/gems/ruby-head/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/minorwm/.rvm/gems/ruby-head/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-/Users/minorwm/.rvm/gems/ruby-head/gems/sass-3.4.25/lib/sass/stack.rb:79:in `block in with_base'
-/Users/minorwm/.rvm/gems/ruby-head/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
-/Users/minorwm/.rvm/gems/ruby-head/gems/sass-3.4.25/lib/sass/stack.rb:79:in `with_base'
-/Users/minorwm/.rvm/gems/ruby-head/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `visit'
-/Users/minorwm/.rvm/gems/ruby-head/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:329:in `block (2 levels) in visit_import'
-/Users/minorwm/.rvm/gems/ruby-head/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:329:in `map'
-/Users/minorwm/.rvm/gems/ruby-head/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:329:in `block in visit_import'
-/Users/minorwm/.rvm/gems/ruby-head/gems/sass-3.4.25/lib/sass/stack.rb:88:in `block in with_import'
-/Users/minorwm/.rvm/gems/ruby-head/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
-/Users/minorwm/.rvm/gems/ruby-head/gems/sass-3.4.25/lib/sass/stack.rb:88:in `with_import'
-/Users/minorwm/.rvm/gems/ruby-head/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
-/Users/minorwm/.rvm/gems/ruby-head/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/minorwm/.rvm/gems/ruby-head/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-/Users/minorwm/.rvm/gems/ruby-head/gems/sass-3.4.25/lib/sass/stack.rb:79:in `block in with_base'
-/Users/minorwm/.rvm/gems/ruby-head/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
-/Users/minorwm/.rvm/gems/ruby-head/gems/sass-3.4.25/lib/sass/stack.rb:79:in `with_base'
-/Users/minorwm/.rvm/gems/ruby-head/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `visit'
-/Users/minorwm/.rvm/gems/ruby-head/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Users/minorwm/.rvm/gems/ruby-head/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `map'
-/Users/minorwm/.rvm/gems/ruby-head/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Users/minorwm/.rvm/gems/ruby-head/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-/Users/minorwm/.rvm/gems/ruby-head/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-/Users/minorwm/.rvm/gems/ruby-head/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-/Users/minorwm/.rvm/gems/ruby-head/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Users/minorwm/.rvm/gems/ruby-head/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-/Users/minorwm/.rvm/gems/ruby-head/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/minorwm/.rvm/gems/ruby-head/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:161:in `visit'
-/Users/minorwm/.rvm/gems/ruby-head/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:10:in `visit'
-/Users/minorwm/.rvm/gems/ruby-head/gems/sass-3.4.25/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Users/minorwm/.rvm/gems/ruby-head/gems/sass-3.4.25/lib/sass/tree/root_node.rb:20:in `render'
-/Users/minorwm/.rvm/gems/ruby-head/gems/sass-3.4.25/lib/sass/engine.rb:284:in `render'
-/Users/minorwm/.rvm/gems/ruby-head/gems/sass-3.4.25/lib/sass/exec/sass_scss.rb:400:in `run'
-/Users/minorwm/.rvm/gems/ruby-head/gems/sass-3.4.25/lib/sass/exec/sass_scss.rb:63:in `process_result'
-/Users/minorwm/.rvm/gems/ruby-head/gems/sass-3.4.25/lib/sass/exec/base.rb:52:in `parse'
-/Users/minorwm/.rvm/gems/ruby-head/gems/sass-3.4.25/lib/sass/exec/base.rb:19:in `parse!'
-/Users/minorwm/.rvm/gems/ruby-head/gems/sass-3.4.25/bin/sass:13:in `<top (required)>'
-/Users/minorwm/.rvm/gems/ruby-head/bin/sass:23:in `load'
-/Users/minorwm/.rvm/gems/ruby-head/bin/sass:23:in `<main>'
-/Users/minorwm/.rvm/gems/ruby-head/bin/ruby_executable_hooks:15:in `eval'
-/Users/minorwm/.rvm/gems/ruby-head/bin/ruby_executable_hooks:15:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...GradientType=1)\": expected \";\", was \") // IE9 AND BE...\"\A         on line 9 of scss/mixins/_soe_gradients.scss\A         from line 5 of scss/mixins/_soe_mixins.scss\A         from line 2 of scss/soe_helper_print.scss\A \A 4:   background: -webkit-linear-gradient(left, $start-color $start-percent, $end-color $end-percent);\A 5:   background: -moz-linear-gradient(left, $start-color $start-percent, $end-color $end-percent);\A 6:   background: -o-linear-gradient(left, $start-color $start-percent, $end-color $end-percent);\A 7:   background: linear-gradient(to right, $start-color $start-percent, $end-color $end-percent);\A 8:   background-repeat: repeat-x; // IE9 AND BEFORE\A 9:   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=  '#{ie-hex-str($start-color)}', endColorstr='#{ie-hex-str($end-color)}', GradientType=1)) // IE9 AND BEFORE\A 10: }\A 11: // VERTICAL GRADIENT, FROM TOP TO BOTTOM\A 12: @mixin gradient-vertical($start-color: transparent, $end-color: rgba(0, 0, 0, 0.70), $start-percent: 0%, $end-percent: 100%) {\A 13:   background: -webkit-linear-gradient(top, $start-color $start-percent, $end-color $end-percent);\A 14:   background: -moz-linear-gradient(top, $start-color $start-percent, $end-color $end-percent);"; }
+/* line 32, ../scss/components/_soe_print.scss */
+.print-content {
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  /* line 35, ../scss/components/_soe_print.scss */
+  .print-content .paragraphs-item-p-wysiwyg-simple {
+    width: 100%; }
+  /* line 40, ../scss/components/_soe_print.scss */
+  .print-content .node-stanford-magazine-article h2,
+  .print-content .node-stanford-magazine-article h3,
+  .print-content .node-stanford-magazine-article h4 {
+    font-family: "Roboto Slab", serif; }
+  /* line 46, ../scss/components/_soe_print.scss */
+  .print-content .node-stanford-magazine-article h2 {
+    font-size: 20px;
+    margin-top: 30px; }
+    /* line 50, ../scss/components/_soe_print.scss */
+    .print-content .node-stanford-magazine-article h2:first-child {
+      font-size: 26px;
+      line-height: 1.2em;
+      width: 90%;
+      margin: 40px auto 10px; }
+  /* line 58, ../scss/components/_soe_print.scss */
+  .print-content .node-stanford-magazine-article h3 {
+    font-size: 16px; }
+  /* line 62, ../scss/components/_soe_print.scss */
+  .print-content .node-stanford-magazine-article h4 {
+    font-size: 13px; }
+  /* line 66, ../scss/components/_soe_print.scss */
+  .print-content .node-stanford-magazine-article p {
+    font-size: 13px;
+    line-height: 18px; }
+  /* line 71, ../scss/components/_soe_print.scss */
+  .print-content .node-stanford-magazine-article .content {
+    width: 90%;
+    margin: 0 auto; }
+  /* line 76, ../scss/components/_soe_print.scss */
+  .print-content .node-stanford-magazine-article .field-name-field-s-mag-article-topics {
+    width: 100%;
+    margin: 0 auto; }
+    /* line 80, ../scss/components/_soe_print.scss */
+    .print-content .node-stanford-magazine-article .field-name-field-s-mag-article-topics .field-items {
+      display: inline-flex; }
+      /* line 84, ../scss/components/_soe_print.scss */
+      .print-content .node-stanford-magazine-article .field-name-field-s-mag-article-topics .field-items .field-item a:after {
+        content: ", \00a0";
+        color: #333333; }
+      /* line 89, ../scss/components/_soe_print.scss */
+      .print-content .node-stanford-magazine-article .field-name-field-s-mag-article-topics .field-items .field-item:last-child a:after {
+        content: none; }
+    /* line 95, ../scss/components/_soe_print.scss */
+    .print-content .node-stanford-magazine-article .field-name-field-s-mag-article-topics a {
+      color: #B1040E;
+      font-size: 13px;
+      font-weight: 300;
+      margin: 0 auto 18px; }
+  /* line 103, ../scss/components/_soe_print.scss */
+  .print-content .node-stanford-magazine-article .field-name-field-s-mag-article-byline,
+  .print-content .node-stanford-magazine-article .field-name-field-s-mag-article-date {
+    color: #606060;
+    font-size: 13px;
+    font-weight: 300;
+    display: inline-flex;
+    margin: 0 auto 32px; }
+  /* line 112, ../scss/components/_soe_print.scss */
+  .print-content .node-stanford-magazine-article .field-name-field-s-mag-article-date {
+    margin-left: 0; }
+    /* line 115, ../scss/components/_soe_print.scss */
+    .print-content .node-stanford-magazine-article .field-name-field-s-mag-article-date .field-item:after {
+      content: "\00a0 | \00a0"; }
+  /* line 120, ../scss/components/_soe_print.scss */
+  .print-content .node-stanford-magazine-article .field-name-field-s-mag-article-dek {
+    font-size: 18px;
+    line-height: 1.3em;
+    margin: 20px auto 22px;
+    width: 90%; }
+  /* line 127, ../scss/components/_soe_print.scss */
+  .print-content .node-stanford-magazine-article .field-name-body {
+    margin: 0 auto; }
+    /* line 130, ../scss/components/_soe_print.scss */
+    .print-content .node-stanford-magazine-article .field-name-body .caption {
+      color: #606060;
+      font-size: 9px;
+      font-style: italic;
+      text-align: center;
+      margin: 0 auto; }
