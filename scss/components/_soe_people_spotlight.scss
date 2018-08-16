@@ -11,11 +11,11 @@ spotlight-container.no-padding.well {
   padding: 0;
 
   .field-name-field-s-image-image img {
-      width: 100%;
+    width: 100%;
   }
 
   .postcard-content {
-      padding: 2em;
+    padding: 2em;
   }
 }
 
@@ -41,7 +41,9 @@ spotlight-container.no-padding.well {
   .group-s-ppl-spot-container {
     width: 65%;
     margin: 0 auto;
+
     @include breakpoint-max(x-small) {
+
       width: 100%;
     }
 
@@ -54,20 +56,20 @@ spotlight-container.no-padding.well {
       justify-content: flex-end;
 
       .field-item {
-        &:before {
-          content: "Story originally published\00a0";
+        &::before {
+          content: 'Story originally published\00a0';
         }
       }
     }
 
     .field-name-field-s-ppl-spot-quote {
-      .field-item:before {
+      .field-item::before {
         content: open-quote;
       }
     }
 
     .field-name-body {
-      p:last-child:after {
+      p:last-child::after {
         content: close-quote;
       }
     }
@@ -81,8 +83,8 @@ spotlight-container.no-padding.well {
       margin-top: 40px;
 
       .field-item {
-        &:before {
-          content: "Photo credit: \00a0";
+        &::before {
+          content: 'Photo credit: \00a0';
         }
       }
     }
@@ -160,7 +162,9 @@ spotlight-container.no-padding.well {
       width: 85%;
       margin: 0 auto;
       padding: 50px 0;
+
       @include breakpoint-max(medium) {
+
         width: 100%;
         display: block;
       }
@@ -171,10 +175,12 @@ spotlight-container.no-padding.well {
       flex-shrink: .5;
 
       @include breakpoint-max(medium) {
+
         margin-left: 40px;
       }
 
       @include breakpoint-max(medium) {
+
         text-align: center;
         margin-left: 0;
         margin-right: 0;
@@ -207,8 +213,8 @@ spotlight-container.no-padding.well {
 
       .spotlight-name {
         &[class*="spotlight-name-color-"] a {
-          text-decoration: underline;
           @include td-skip;
+          text-decoration: underline;
 
           &:focus,
           &:hover {
@@ -218,7 +224,9 @@ spotlight-container.no-padding.well {
 
         h2 {
           margin: 0 0 20px;
+
           @include breakpoint-max(medium) {
+
             margin-top: 15px;
           }
         }
@@ -263,11 +271,11 @@ spotlight-container.no-padding.well {
         font-size: em(24px);
         font-weight: 600;
 
-        p:before {
+        p::before {
           content: open-quote;
         }
 
-        p:after {
+        p::after {
           content: close-quote;
         }
       }
@@ -289,9 +297,11 @@ spotlight-container.no-padding.well {
   .view-filters {
     float: right;
     clear: both;
+
     select {
-      border: $dark-gray 1px solid;
       @include border-radius;
+      border: $dark-gray 1px solid;
+
       option {
         font-family: $primary-font;
         font-weight: 400;
@@ -300,13 +310,18 @@ spotlight-container.no-padding.well {
       }
     }
   }
+
   &.views-grid-three .views-row {
     margin-bottom: 80px;
+
     @media (max-width: 1200px) {
+
       width: 46.1%;
     }
+
     // Chrome doesn't seem to pick up the 450px
     @media (max-width: 580px) {
+
       width: 96.2%;
     }
   }
@@ -315,7 +330,9 @@ spotlight-container.no-padding.well {
 
     .spotlight-img {
       text-align: center;
+
       @media (max-width: 650px) {
+
         margin-right: 0;
       }
 
@@ -341,8 +358,8 @@ spotlight-container.no-padding.well {
     .spotlight-info-container {
       .spotlight-name {
         &[class*="spotlight-name-color-"] a {
-          text-decoration: underline;
           @include td-skip;
+          text-decoration: underline;
 
           &:focus,
           &:hover {
@@ -395,11 +412,11 @@ spotlight-container.no-padding.well {
         font-size: em(24px);
         font-weight: 600;
 
-        p:before {
+        p::before {
           content: open-quote;
         }
 
-        p:after {
+        p::after {
           content: close-quote;
         }
       }
@@ -425,22 +442,32 @@ spotlight-container.no-padding.well {
       width: 50%;
       margin: 0 auto;
       padding: 70px 0 0;
+
       @media (max-width: 1900px) {
+
         width: 65%;
       }
+
       @media (max-width: 1400px) {
+
         width: 85%;
       }
+
       @include breakpoint-max(large) {
+
         width: 90%;
       }
+
       @include breakpoint-max(small) {
+
         display: flex;
         text-align: left;
         width: 90%;
         padding: 50px 0 0;
       }
+
       @media (max-width: 500px) {
+
         display: block;
         text-align: center;
         width: 100%;
@@ -454,14 +481,20 @@ spotlight-container.no-padding.well {
     .spotlight-img {
       margin-right: 40px;
       flex-shrink: 0;
+
       @include breakpoint-max(small) {
+
         margin-right: 0;
         width: 286px;
       }
+
       @include breakpoint-max(smaller) {
+
         width: 200px;
       }
+
       @media (max-width: 500px) {
+
         flex-shrink: 0;
         margin: 0 auto;
         width: 60%;
@@ -471,10 +504,14 @@ spotlight-container.no-padding.well {
         border-radius: 50%;
         border-width: 8px;
         border-style: solid;
+
         @include breakpoint-max(small) {
+
           max-width: 82%;
         }
+
         @media (max-width: 500px) {
+
           border-width: 6px;
         }
       }
@@ -495,8 +532,8 @@ spotlight-container.no-padding.well {
     .spotlight-info-container {
       .spotlight-name {
         &[class*="spotlight-name-color-"] a {
-          text-decoration: underline;
           @include td-skip;
+          text-decoration: underline;
 
           &:focus,
           &:hover {
@@ -507,14 +544,20 @@ spotlight-container.no-padding.well {
         h2 {
           font-size: em(48px);
           margin: 0 0 20px;
+
           @include breakpoint-max(small) {
+
             margin-top: 15px;
             font-size: em(34px);
           }
+
           @include breakpoint-max(smaller) {
+
             font-size: em(28px);
           }
+
           @include breakpoint-max(x-small) {
+
             margin-bottom: 4px;
           }
         }
@@ -547,7 +590,9 @@ spotlight-container.no-padding.well {
       .spotlight-title p {
         font-size: em(24px);
         margin: 0;
+
         @include breakpoint-max(small) {
+
           font-size: em(20px);
         }
       }
@@ -559,21 +604,26 @@ spotlight-container.no-padding.well {
         margin-top: 20px;
 
         @include breakpoint-max(smaller) {
+
           font-size: em(24px);
         }
+
         @media (max-width: 500px) {
+
           width: 80%;
           margin: 20px auto;
         }
+
         @include breakpoint-max(x-small) {
+
           font-size: em(20px);
         }
 
-        p:before {
+        p::before {
           content: open-quote;
         }
 
-        p:after {
+        p::after {
           content: close-quote;
         }
 
@@ -592,30 +642,43 @@ spotlight-container.no-padding.well {
     width: 50%;
     margin: 0 auto;
     padding: 70px 0 0;
+
     @media (max-width: 1900px) {
+
       width: 100%;
     }
-    .spotlight-all-content-container {
-      @media (max-width: 1900px) {
-        width: 100%;
-      }
-    }
+
     @media (max-width: 1400px) {
+
       width: 95%;
     }
+
     @include breakpoint-max(large) {
+
       width: 100%;
     }
+
     @include breakpoint-max(small) {
+
       display: flex;
       text-align: left;
       width: 100%;
       padding: 50px 0 0;
     }
+
     @media (max-width: 500px) {
+
       display: block;
       text-align: center;
       width: 100%;
+    }
+
+    .spotlight-all-content-container {
+
+      @media (max-width: 1900px) {
+
+        width: 100%;
+      }
     }
 
     .front & {
@@ -627,7 +690,8 @@ spotlight-container.no-padding.well {
     background: $off-white;
     box-shadow: none;
   }
- :nth-child(2) {
+
+  &:nth-child(2) {
     order: inherit;
   }
 }
@@ -637,15 +701,19 @@ spotlight-container.no-padding.well {
   display: flex;
   flex-direction: column;
 }
+
 .view-stanford-ppl-spot-3-v-card :nth-child(1) {
   order: 2;
 }
+
 .view-stanford-ppl-spot-3-v-card :nth-child(2) {
   order: 1;
 }
+
 .view-stanford-ppl-spot-3-v-card :nth-child(3) {
   order: 3;
 }
+
 .view-stanford-ppl-spot-3-v-card :nth-child(4) {
   order: 4;
 }
@@ -654,23 +722,26 @@ spotlight-container.no-padding.well {
   :nth-child(1) {
     order: 1;
   }
+
   :nth-child(2) {
     order: 2;
   }
+
   :nth-child(3) {
     order: 3;
   }
+
   :nth-child(4) {
     order: 4;
   }
+
   .view-footer {
     text-align: center;
   }
 }
 
 
-  // BUTTON TO MORE STORIES
-
+// BUTTON TO MORE STORIES
 .spotlight-button {
   text-align: center;
   margin-top: 30px;
@@ -749,7 +820,9 @@ spotlight-container.no-padding.well {
     display: block;
     width: 30%;
     margin: 0 auto;
+
     @include breakpoint-max(small) {
+
       width: auto;
     }
   }
