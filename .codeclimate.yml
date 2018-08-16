@@ -5,10 +5,7 @@ engines:
   eslint:
     enabled: false
   csslint:
-    enabled: true
-    checks:
-      overqualified-elements:
-        enabled: false
+    enabled: false
   # We don't lint our coffee. Eew.
   coffeelint:
     enabled: false
@@ -19,6 +16,12 @@ engines:
     enabled: true
     checks:
       IdSelector:
+        enabled: false
+      SelectorFormat:
+        enabled: false
+      NestingDepth:
+        enabled: false
+      MergeableSelector:
         enabled: false
       ColorVariable:
         enabled: false
@@ -31,6 +34,10 @@ engines:
       VendorPrefix:
         enabled: false
       LeadingZero:
+        enabled: false
+      HexLength:
+        enabled: false
+      PseudoElement:
         enabled: false
   phpcodesniffer:
     enabled: true
@@ -132,3 +139,5 @@ exclude_paths:
 - "**/vendor/"
 - "**.api.php"
 - "*.twig"
+- "Gruntfile.js"
+- "node_modules/"
