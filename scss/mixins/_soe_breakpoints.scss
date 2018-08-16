@@ -1,55 +1,112 @@
 @charset "UTF-8";
-
 // MAX-WIDTH BREAKPOINTS
-
 @mixin breakpoint-max($point) {
   @if $point == xx-large {
-    @media (max-width: 1450px) { @content; }
-  } @else if $point == x-large {
-    @media (max-width: 1400px) { @content; }
-  } @else if $point == med-large {
-    @media (max-width: 1250px) { @content; }
-  } @else if $point == large {
-    @media (max-width: 1200px) { @content; }
-  } @else if $point == medium-lrg {
-    @media (max-width: 1050px) { @content; }
-  } @else if $point == medium {
-    @media (max-width: 979px) { @content; }
-  } @else if $point == medium-sm {
-    @media (max-width: 950px)  { @content; }
-  } @else if $point == small-med {
-    @media (max-width: 910px)  { @content; }
-  } @else if $point == small {
-    @media (max-width: 767px)  { @content; }
-  } @else if $point == smaller {
-    @media (max-width: 580px)  { @content; }
-  } @else if $point == x-small {
-    @media (max-width: 480px)  { @content; }
-  } @else if $point == xx-small {
-    @media (max-width: 400px)  { @content; }
-  } @else if $point == xxx-small {
-    @media (max-width: 380px)  { @content; }
+    @media (max-width: 1450px) {
+      @content;
+    }
+  } @else 
+  if $point == x-large {
+    @media (max-width: 1400px) {
+      @content;
+    }
+  } @else 
+  if $point == med-large {
+    @media (max-width: 1250px) {
+      @content;
+    }
+  } @else 
+  if $point == large {
+    @media (max-width: 1200px) {
+      @content;
+    }
+  } @else 
+  if $point == medium-lrg {
+    @media (max-width: 1050px) {
+      @content;
+    }
+  } @else 
+  if $point == medium {
+    @media (max-width: 979px) {
+      @content;
+    }
+  } @else 
+  if $point == medium-sm {
+    @media (max-width: 950px) {
+      @content;
+    }
+  } @else 
+  if $point == small-med {
+    @media (max-width: 910px) {
+      @content;
+    }
+  } @else 
+  if $point == small {
+    @media (max-width: 767px) {
+      @content;
+    }
+  } @else 
+  if $point == smaller {
+    @media (max-width: 580px) {
+      @content;
+    }
+  } @else 
+  if $point == x-small {
+    @media (max-width: 480px) {
+      @content;
+    }
+  } @else 
+  if $point == xx-small {
+    @media (max-width: 400px) {
+      @content;
+    }
+  } @else 
+  if $point == xxx-small {
+    @media (max-width: 380px) {
+      @content;
+    }
   }
 }
-
 // MIN-WIDTH BREAKPOINTS
-
 @mixin breakpoint-min($point) {
   @if $point == large {
-    @media (min-width: 1200px) { @content; }
-  } @else if $point == medium {
-    @media (min-width: 979px) { @content; }
-  } @else if $point == med-small{
-    @media (min-width: 910px) { @content; }
-  } @else if $point == small {
-    @media (min-width: 767px)  { @content; }
-  } @else if $point == smaller {
-    @media (min-width: 580px)  { @content; }
-  } @else if $point == x-small {
-    @media (min-width: 480px)  { @content; }
-  } @else if $point == xx-small {
-    @media (min-width: 400px)  { @content; }
-  } @else if $point == xxx-small {
-    @media (min-width: 380px)  { @content; }
+    @media (min-width: 1200px) {
+      @content;
+    }
+  } @else 
+  if $point == medium {
+    @media (min-width: 979px) {
+      @content;
+    }
+  } @else 
+  if $point == med-small {
+    @media (min-width: 910px) {
+      @content;
+    }
+  } @else 
+  if $point == small {
+    @media (min-width: 767px) {
+      @content;
+    }
+  } @else 
+  if $point == smaller {
+    @media (min-width: 580px) {
+      @content;
+    }
+  } @else 
+  if $point == x-small {
+    @media (min-width: 480px) {
+      @content;
+    }
+  } @else 
+  if $point == xx-small {
+    @media (min-width: 400px) {
+      @content;
+    }
+  } @else 
+  if $point == xxx-small {
+    @media (min-width: 380px) {
+      @content;
+    }
   }
 }
