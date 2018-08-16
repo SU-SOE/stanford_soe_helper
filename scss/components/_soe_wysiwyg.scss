@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 //
 // WYSIWYG
 //
@@ -125,8 +124,9 @@ p.columns {
   @include column-count (1);
   @include column-gap (0);
   @include breakpoint-max(small) {
-     @include column-count (1);
+    @include column-count (1);
   }
+
   .group-p-ws-style & {
     font-size: 1.2em;
     line-height: 1.6em;
@@ -170,12 +170,11 @@ p.summary.drop-cap {
       padding: 21px 10px 0 0;
     }
     @include breakpoint-max(medium) {
-       padding: 16px 10px 0 0;
+      padding: 16px 10px 0 0;
     }
     @include breakpoint-max(x-small) {
-        padding: 15px 10px 0 0;
+      padding: 15px 10px 0 0;
     }
-
     font-size: em(92px, 32px);
     font-weight: 600;
     float: left;
@@ -209,8 +208,8 @@ p.summary.drop-cap {
 }
 
 h2 {
-  .field-type-text-with-summary &,
-  .field-type-text-long & {
+  .field-type-text-long &,
+  .field-type-text-with-summary & {
     @include breakpoint-max(small) {
       font-size: em(24px);
     }
@@ -218,8 +217,8 @@ h2 {
 }
 
 h3 {
-  .field-type-text-with-summary &,
-  .field-type-text-long & {
+  .field-type-text-long &,
+  .field-type-text-with-summary & {
     @include breakpoint-max(small) {
       font-size: em(20px);
     }

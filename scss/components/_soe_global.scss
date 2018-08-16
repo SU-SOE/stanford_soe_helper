@@ -1,6 +1,5 @@
 @charset "UTF-8";
 @import '../functions/soe_unitconversion';
-
 //
 // GLOBAL
 //
@@ -290,6 +289,7 @@ th {
       column-count: 1;
       column-gap: 0;
     }
+
     a {
       text-decoration: underline;
 
@@ -320,7 +320,6 @@ th {
     margin-left: 80px;
   }
 }
-
 /*** BODY - MORE SPACE FROM LAST CHILD TO TOP OF BLOCKS AFTER WYSIWYG ***/
 .content-body p:last-child {
   margin-bottom: 2.5em;
@@ -329,9 +328,7 @@ th {
 .region-sidebar-second {
   margin-top: 34px;
 }
-
 /*** Full width region ***/
-
-.region-fullwidth-top #block-ds-extras-featured-image img{
+.region-fullwidth-top #block-ds-extras-featured-image img {
   width: 100%;
 }

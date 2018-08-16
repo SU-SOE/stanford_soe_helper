@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 //
 // HEADER
 //
@@ -12,7 +11,6 @@
     clip: rect(0 9999px 2px 0);
     clip-path: inset(0 0 55px 0);
     width: 100%;
-
     @include breakpoint-max(small) {
       clip-path: inset(0 0 60px 0);
     }
@@ -22,7 +20,6 @@
     padding: 13px 0;
     margin-bottom: 0;
   }
-
 }
 
 #header {
@@ -55,7 +52,6 @@
       @include breakpoint-max(xx-small) {
         padding: 0 5px 0 0;
       }
-
     }
   }
 
@@ -73,12 +69,10 @@
   &.header {
     background: $white;
     padding: 30px 0 0;
-
     @include breakpoint-max(x-small) {
       min-height: 60px;
       padding: 35px 0 0;
     }
-
     @include breakpoint-max(xx-small) {
       min-height: 40px;
       padding: 22px 0 0;

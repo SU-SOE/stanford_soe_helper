@@ -1,12 +1,9 @@
 @charset "UTF-8";
-
 //
 // STANFORD PAGE
 // FOR NODE DISPLAY AND VIEWS
 //
-
 // NODE DISPLAY
-
 .node-type-stanford-page {
   @include breakpoint-max(small) {
     #block-ds-extras-stanford-page-title {
@@ -23,7 +20,6 @@
       margin-right: 14%;
       margin-top: 40px;
       position: relative;
-
       @include breakpoint-max(small) {
         margin-bottom: 20px;
         margin-top: 20px;
@@ -35,7 +31,6 @@
       margin-right: auto;
       position: relative;
       width: auto;
-
       @include breakpoint-max(medium-lrg) {
         height: auto;
         margin-left: auto;
@@ -83,9 +78,7 @@
         > div:first-child.top-banner-turquoise {
           border-top-color: $turquoise;
         }
-
         @include breakpoint-max(medium-lrg) {
-
           bottom: 88px;
           max-width: 100%;
           position: inherit;
@@ -97,7 +90,6 @@
     .banner-overlay.top-banner-top {
       position: absolute;
       top: 240px;
-
       @include breakpoint-max(medium-sm) {
         position: relative;
         top: 88px;
@@ -115,14 +107,10 @@
         position: relative;
         right: -100px;
         top: -240px;
-
         @include breakpoint-max(x-large) {
-
           top: -300px;
         }
-
         @include breakpoint-max(medium-lrg) {
-
           position: relative;
           right: 0;
           top: -80px;
@@ -134,9 +122,7 @@
     .banner-overlay.top-banner-right.top-banner-top {
       right: 0;
       top: 190px;
-
       @include breakpoint-max(medium-lrg) {
-
         top: 170px;
       }
 
@@ -144,9 +130,7 @@
         float: right;
         position: relative;
         top: -140px;
-
         @include breakpoint-max(medium-lrg) {
-
           position: relative;
           right: 0;
           top: -170px;
@@ -158,9 +142,7 @@
     .banner-overlay.top-banner-right.top-banner-bottom {
       right: 0;
       position: absolute;
-
       @include breakpoint-max(medium-lrg) {
-
         float: left;
         min-width: auto;
         position: relative;
@@ -170,9 +152,7 @@
         float: right;
         position: relative;
         top: -240px;
-
         @include breakpoint-max(medium-lrg) {
-
           position: relative;
           top: 0;
           width: 100%;
@@ -183,7 +163,6 @@
     .banner-overlay.top-banner-top {
       top: 280px;
       min-width: 1440px;
-
       @include breakpoint-max(medium-lrg) {
         float: left;
         min-width: auto;
@@ -203,7 +182,7 @@
       }
 
       p:last-child {
-        margin-bottom: 0px;
+        margin-bottom: 0;
       }
 
       a {
@@ -215,7 +194,7 @@
         text-decoration-color: $primary-color;
       }
 
-      a.btn  {
+      a.btn {
         text-decoration: none;
         font-size: inherit;
       }
@@ -225,15 +204,11 @@
         background-color: $primary-color;
         color: $white;
       }
-
       @include breakpoint-max(small) {
-
         margin-top: 0;
         margin-bottom: 0;
       }
-
       @include breakpoint-max(x-small) {
-
         width: 90%;
       }
     }
@@ -241,27 +216,20 @@
     .page-feat-caption-container h2 {
       font-size: em(26px);
       letter-spacing: 0;
-
       @include breakpoint-max(small-med) {
-
         font-size: 1em;
       }
-
       @include breakpoint-max(smaller) {
-
-        font-size: .8em;
+        font-size: 0.8em;
       }
     }
 
     .page-feat-caption-container h3 {
       @include breakpoint-max(small-med) {
-
         font-size: 1em;
       }
-
       @include breakpoint-max(smaller) {
-
-        font-size: .8em;
+        font-size: 0.8em;
       }
     }
 
@@ -272,9 +240,7 @@
       margin-left: 3%;
       margin-right: 8%;
       position: relative;
-
       @include breakpoint-max(x-small) {
-
         bottom: 60px;
 
         a {

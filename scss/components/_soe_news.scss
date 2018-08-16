@@ -1,14 +1,9 @@
 @charset "UTF-8";
-
 //
 // NEWS
 // FOR NODE DISPLAY AND VIEWS
 //
-
 // NODE DISPLAY
-
-
-
 .node-type-stanford-news-item {
   .date-display-single {
     font-weight: 600;
@@ -44,7 +39,6 @@
       @include breakpoint-max(med-small) {
         height: 215px;
       }
-
       width: 100%;
       height: 360px;
       opacity: 0.4;
@@ -186,9 +180,7 @@
     }
   }
 }
-
 // HOMEPAGE FEATURED NEWS VIEW
-
 .view-stanford-news-featured {
   .feat-news-container {
     .feat-news-img {
@@ -238,22 +230,21 @@
     }
   }
 }
-
 // RECENT NEWS VIEWS
-
-.view-stanford-news-with-title,
-.view-stanford-news-image-title {
+.view-stanford-news-image-title,
+.view-stanford-news-with-title {
   h3 {
     font-size: em(22px);
     line-height: 1.1em;
     font-family: $primary-font;
     text-decoration: none;
+
     a {
       text-decoration: none;
     }
   }
-  .views-row
-  {
+
+  .views-row {
     margin-bottom: 1.5em;
   }
 
@@ -261,18 +252,18 @@
     margin-bottom: 10px;
   }
 }
-
 // Differences in the title only view
-
 .view-stanford-news-with-title {
   h3 {
     a {
       text-decoration: none;
+
       &:hover {
         text-decoration: underline;
       }
     }
   }
+
   .more-link {
     a {
       &:hover {
@@ -281,9 +272,7 @@
     }
   }
 }
-
 // NEWS PAGE VIEW
-
 .page-news .date-display-single {
   font-weight: 600;
 }

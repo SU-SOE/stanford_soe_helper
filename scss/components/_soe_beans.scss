@@ -1,11 +1,8 @@
 @charset "UTF-8";
-
 //
 // BEANS
 //
-
 // CALL TO ACTION BEANS
-
 .bean-stanford-call-to-action {
   #content-body-bottom & {
     @include breakpoint-min(small) {
@@ -27,9 +24,7 @@
 
   .group-s-cta-title-style {
     padding: 18px 0 22px;
-
     @include breakpoint-max(x-small) {
-
       padding: 12px 0 14px;
     }
 
@@ -60,9 +55,7 @@
   @include breakpoint-min(large) {
     width: 20%;
   }
-
   @include breakpoint-max(small) {
-
     width: 50%;
     margin: 0 25% 20px;
   }
@@ -83,22 +76,18 @@
     margin-right: 17.25%;
   }
 }
-
 // POSTCARD & POSTCARD LINKED BEANS
 #content-body .content .field-name-field-s-postcard-body a.btn {
   width: auto;
-
   @include breakpoint-max(medium) {
     width: 30%;
   }
 }
-
 // POSTCARD SINGLE CENTERED BUTTON BEANS
 .row-fluid .block-bean {
+  &.span12,
   &.span4,
-  &.span6,
-  &.span12 {
-
+  &.span6 {
     @include breakpoint-max(small) {
       margin-left: 0;
     }
@@ -140,7 +129,6 @@
     margin-left: 10%;
     margin-right: 10%;
     width: auto;
-
     @include breakpoint-max(small) {
       margin-left: 0;
     }
@@ -171,15 +159,13 @@
   }
 }
 
-.bean-stanford-postcard.view-mode-single_centered_button,
-.bean-stanford-postcard-linked {
+.bean-stanford-postcard-linked,
+.bean-stanford-postcard.view-mode-single_centered_button {
   .postcard,
   .postcard-linked-container {
     display: flex;
     padding: 40px;
-
     @include breakpoint-max(medium) {
-
       display: block;
       padding: 0;
     }
@@ -187,16 +173,12 @@
     a.postcard-linked-img-container {
       flex-shrink: 0;
       margin-right: 30px;
-
       @include breakpoint-max(medium) {
-
         margin-right: 0;
       }
-
       // SPAN 12 BEAN RESPONSIVE
       @include breakpoint-max(medium) {
-
-        flex-shrink: .9;
+        flex-shrink: 0.9;
       }
 
       &:hover img {
@@ -213,7 +195,6 @@
           img {
             @include transition;
             @include breakpoint-max(medium) {
-
               width: 100%;
             }
           }
@@ -231,14 +212,10 @@
             height: auto;
             vertical-align: -9px;
             padding: 3px 8px;
-
             @include breakpoint-max(medium) {
-
               vertical-align: -12px;
             }
-
             @include breakpoint-max(x-small) {
-
               vertical-align: -14px;
             }
           }
@@ -249,15 +226,13 @@
     .postcard-content,
     .postcard-linked-content-container {
       width: 100%;
-
       @include breakpoint-max(medium) {
-
         width: auto;
         padding: 30px;
       }
 
-      .field-name-field-s-postcard-body,
-      .field-name-field-s-post-link-body {
+      .field-name-field-s-post-link-body,
+      .field-name-field-s-postcard-body {
         font-size: em(18px);
         line-height: 1.3em;
 
@@ -269,9 +244,7 @@
       .field-name-title,
       .postcard-linked-title {
         margin-bottom: 1em;
-
         @include breakpoint-max(small) {
-
           margin-bottom: 0;
         }
 
@@ -284,9 +257,7 @@
           font-weight: 600;
           letter-spacing: 0.02em;
           text-decoration: underline;
-
           @include breakpoint-max(medium) {
-
             margin-top: 20px;
           }
 
@@ -296,11 +267,10 @@
           }
         }
       }
-
       // STANDARDIZE PADDING INSIDE POSTCARD LINKED BLOCK
       .postcard-body p:last-child,
       .postcard-linked-body p:last-child {
-        margin-bottom: .8em;
+        margin-bottom: 0.8em;
       }
 
       .postcard-body,
@@ -362,12 +332,9 @@
 
   .span12 & {
     @include breakpoint-max(medium) {
-
       margin: 0 10%;
     }
-
     @include breakpoint-max(smaller) {
-
       margin: 0;
     }
   }
@@ -377,27 +344,19 @@
   &.span12 {
     .bean-stanford-postcard {
       @include breakpoint-max(medium) {
-
         margin: 0;
       }
-
       @include breakpoint-max(small) {
-
         margin: 0;
       }
-
       @include breakpoint-max(smaller) {
-
         margin: 0;
       }
-
     }
   }
 
   &.span4 {
-
     @include breakpoint-max(medium) {
-
       margin-left: 0;
     }
 
@@ -412,27 +371,22 @@
         font-size: em(24px);
       }
     }
-
   }
 
   &.block {
     @include breakpoint-max(smaller) {
-
       margin-bottom: 30px;
     }
 
-
     &.span4 {
       @include breakpoint-max(medium) {
-
         width: 100%;
       }
     }
 
-    &.span6,
-    &.span12 {
+    &.span12,
+    &.span6 {
       @include breakpoint-max(small) {
-
         width: 100%;
       }
     }
@@ -456,9 +410,7 @@
     h2 {
       font-size: 28px;
       margin-top: 10px;
-
       @include breakpoint-max(medium-sm) {
-
         font-size: 22px;
         line-height: 1.2em;
       }
@@ -519,14 +471,11 @@
     margin-bottom: 0;
   }
 }
-
 // TESTIMONIAL BEANS
 .testimonial {
   .postcard {
     padding: 0 56px 40px;
-
     @include breakpoint-max(small) {
-
       display: block;
     }
   }
@@ -541,9 +490,7 @@
 
     &.field {
       margin-bottom: 2em;
-
       @include breakpoint-max(smaller) {
-
         margin-bottom: 1em;
       }
     }
@@ -551,15 +498,11 @@
 
   .field-name-field-s-testimonial-quote {
     font-family: $roboto-slab;
-
     @include breakpoint-max(medium) {
-
       font-size: 22px;
       line-height: 1.5em;
     }
-
     @include breakpoint-max(smaller) {
-
       font-size: 18px;
     }
   }
@@ -568,9 +511,7 @@
     font-size: 18px;
     letter-spacing: 0;
     margin-top: 15px;
-
     @include breakpoint-max(smaller) {
-
       font-size: 16px;
     }
 
@@ -590,9 +531,7 @@
       font-weight: 400;
       opacity: 1;
       top: 30;
-
       @include breakpoint-max(smaller) {
-
         font-size: 40px;
       }
     }
@@ -628,9 +567,7 @@ div.quote {
 
   &::before {
     font-size: 56px;
-
     @include breakpoint-max(smaller) {
-
       font-size: 40px;
     }
   }
@@ -645,9 +582,7 @@ blockquote.quote {
 
   &::before {
     font-size: 56px;
-
     @include breakpoint-max(smaller) {
-
       font-size: 40px;
     }
   }
@@ -659,7 +594,7 @@ p.superhead {
   font-size: 18px;
   font-weight: 700;
   line-height: 1.2em;
-  margin-bottom: .6em;
+  margin-bottom: 0.6em;
 }
 
 .infotext,

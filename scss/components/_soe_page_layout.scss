@@ -1,11 +1,8 @@
 @charset "UTF-8";
-
 //
 // PAGE LAYOUT
 //
-
 // LANDING PAGE
-
 .node-type-stanford-landing-page {
   .header-370x170 {
     .postcard-linked-container {
@@ -149,9 +146,7 @@
     border-top: 1px solid $gray;
   }
 }
-
 // VIEWS GRID
-
 .views-grid-two .views-row {
   @include breakpoint-min(small) {
     width: 46%;
@@ -163,19 +158,19 @@
   h3 {
     font-family: $primary-font;
     font-size: 20px;
-    margin: .3em 0 0;
+    margin: 0.3em 0 0;
+
     a {
       text-decoration: none;
     }
   }
+
   div.field-content {
     line-height: 1.3em;
     font-size: 18px;
   }
 }
-
 // SPANS
-
 .row-fluid .span6 {
   @include breakpoint-min(large) {
     width: 46.5%;
@@ -188,9 +183,7 @@
     }
   }
 }
-
 // MISCELLANEOUS
-
 .node .group_s_postcard_image .field-collection-container > .field > .field-items > .field-item {
   margin-left: 2em;
   @media (max-width: 400px) {

@@ -1,12 +1,9 @@
 @charset "UTF-8";
-
 //
 // DIGITAL MAGAZINE ARTICLE
 // FOR NODE DISPLAY, VIEWS, PARAGRAPH TYPES, AND BLOCKS
 //
-
 // NODE DISPLAY
-
 .node-type-stanford-magazine-article {
   h1 {
     width: 85%;
@@ -46,7 +43,6 @@
       width: 100%;
     }
     width: 65%;
-
     font-size: em(18px);
     color: $gray-orange;
     display: flex;
@@ -63,13 +59,12 @@
 
     .group-s-date-and-byline {
       width: 70%;
-
       @include breakpoint-max(x-small) {
         width: 100%;
       }
 
-      .field-name-field-s-mag-article-date,
-      .field-name-field-s-mag-article-byline {
+      .field-name-field-s-mag-article-byline,
+      .field-name-field-s-mag-article-date {
         margin-bottom: 0;
       }
     }
@@ -103,7 +98,6 @@
         &::after {
           content: "\00a0";
         }
-
         @include breakpoint-max(medium) {
           font-size: 17px;
         }
@@ -120,7 +114,7 @@
 
       .field-items {
         font-family: $roboto-slab;
-        font-size: .95em;
+        font-size: 0.95em;
         font-weight: bold;
         line-height: 1.2em;
         margin-top: 1px;
@@ -207,6 +201,7 @@
     iframe {
       width: 100%;
       height: 550px;
+
       &.iframe-auto {
         height: auto;
       }
@@ -228,7 +223,6 @@
         h2 {
           font-size: 1.3em;
           margin-bottom: 20px;
-
           @include breakpoint-max(x-small) {
             font-size: 1.1em;
           }
@@ -237,21 +231,17 @@
         .mc-field-group {
           input {
             width: 300px;
-
             @include breakpoint-max(smaller) {
               width: 200px;
             }
-
             @include breakpoint-max(x-small) {
               width: 150px;
             }
           }
         }
-
         @include breakpoint-max(medium) {
           width: 70%;
         }
-
         @include breakpoint-max(x-small) {
           width: 80%;
           padding: 25px;
@@ -260,9 +250,7 @@
     }
   }
 }
-
 // TAXONOMY AND ALL ARTICLES GRID VIEWS
-
 .page-magazine-all #page-title,
 .page-taxonomy-term #page-title {
   text-align: center;
@@ -277,7 +265,7 @@
   .article-grouping {
     padding: 0 70px;
     @include breakpoint-max(medium) {
-      padding: 0px;
+      padding: 0;
     }
   }
 }
@@ -522,13 +510,11 @@
 .view-stanford-magazine-topics.most-recent-article {
   margin-top: -30px;
 }
-
 // LATEST NEWS DM LANDING PAGE VIEW
-
 //.view-stanford-magazine-issue-article,
+.view-display-id-article_collection_bottom_block,
 .view-stanford-magazine-article-mag-landing-page,
-.view-stanford-magazine-collection-mag-landing-page,
-.view-display-id-article_collection_bottom_block {
+.view-stanford-magazine-collection-mag-landing-page {
   &.views-grid-three .views-row {
     margin-bottom: 0;
   }
@@ -893,7 +879,6 @@
       box-shadow: none;
       -webkit-box-shadow: none;
       margin-bottom: 0;
-
       @include breakpoint-max(small) {
         padding: 40px 0;
       }
@@ -924,7 +909,6 @@
       box-shadow: none;
       -webkit-box-shadow: none;
       margin-bottom: 0;
-
       @include breakpoint-max(small) {
         padding: 40px 0;
       }
@@ -941,7 +925,6 @@
     margin-top: 5%;
   }
 }
-
 // HOMEPAGE AND DEPARTMENT FEATURED ARTICLE BLOCK VIEW
 .mag-article-container.well {
   padding: 0;
@@ -1006,9 +989,7 @@
     }
   }
 }
-
 // PARAGRAPH TYPES
-
 .node-type-stanford-magazine-article {
   .paragraphs-item-p-two-columns {
     font-family: $roboto-slab;
@@ -1041,20 +1022,18 @@
 .entity-paragraphs-item {
   iframe {
     width: 100%;
+
     &.iframe-auto {
       height: auto;
     }
   }
 
   iframe[src*="youtube"],
-  iframe[src*="vimeo"]
-  {
+  iframe[src*="vimeo"] {
     height: 400px;
   }
 }
-
 // RELATED DEPARTMENTS BLOCK
-
 #block-ds-extras-related-departments {
   width: 85%;
   border-top: 1px solid $dark-gray;

@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 //
 // FOOTER
 //
@@ -15,9 +14,9 @@
     }
   }
 
-  .block a.private-link,
+  .block,
   .block .private-link a,
-  .block {
+  .block a.private-link {
     font-size: rem(18px);
     line-height: 1.3em;
 
@@ -25,6 +24,7 @@
       margin-bottom: 0.5em;
     }
   }
+
   & .footer-content .block.span2,
   & .footer-content .block.span3,
   & .footer-content .block.span4 {
@@ -124,7 +124,6 @@
     input.button {
       width: 70px;
     }
-
     @include breakpoint-max(medium) {
       margin-top: 20px;
     }

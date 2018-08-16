@@ -1,12 +1,9 @@
 @charset "UTF-8";
-
 //
 // PEOPLE SPOTLIGHT
 // FOR NODE DISPLAY AND VIEWS
 //
-
 // NODE DISPLAY
-
 spotlight-container.no-padding.well {
   padding: 0;
 
@@ -41,9 +38,7 @@ spotlight-container.no-padding.well {
   .group-s-ppl-spot-container {
     width: 65%;
     margin: 0 auto;
-
     @include breakpoint-max(x-small) {
-
       width: 100%;
     }
 
@@ -90,7 +85,6 @@ spotlight-container.no-padding.well {
     }
   }
 }
-
 // HORIZONTAL CARD VIEW
 .main {
   .spotlight-all-content-container .spotlight-quote {
@@ -114,19 +108,15 @@ spotlight-container.no-padding.well {
 
           .views-exposed-widget {
             padding-right: 0;
-
             @include breakpoint-max(large) {
               padding-right: 1em;
             }
-
             @include breakpoint-max(medium) {
               padding-right: 0.8em;
             }
-
             @include breakpoint-max(small) {
               padding-right: 0.7em;
             }
-
             @include breakpoint-max(smaller) {
               padding-right: 0.5em;
             }
@@ -154,7 +144,6 @@ spotlight-container.no-padding.well {
 
 .view-stanford-people-spotlight-h-card {
   .spotlight-container {
-
     .spotlight-all-content-container {
       display: flex;
       justify-content: center;
@@ -162,9 +151,7 @@ spotlight-container.no-padding.well {
       width: 85%;
       margin: 0 auto;
       padding: 50px 0;
-
       @include breakpoint-max(medium) {
-
         width: 100%;
         display: block;
       }
@@ -172,15 +159,11 @@ spotlight-container.no-padding.well {
 
     .spotlight-img {
       margin-right: 40px;
-      flex-shrink: .5;
-
+      flex-shrink: 0.5;
       @include breakpoint-max(medium) {
-
         margin-left: 40px;
       }
-
       @include breakpoint-max(medium) {
-
         text-align: center;
         margin-left: 0;
         margin-right: 0;
@@ -224,9 +207,7 @@ spotlight-container.no-padding.well {
 
         h2 {
           margin: 0 0 20px;
-
           @include breakpoint-max(medium) {
-
             margin-top: 15px;
           }
         }
@@ -282,9 +263,7 @@ spotlight-container.no-padding.well {
     }
   }
 }
-
 // VERTICAL CARD VIEW
-
 .view-stanford-people-spot-1-vertical-span6-card,
 .view-stanford-people-spotlight-1-v-span4-card,
 .view-stanford-ppl-spot-2-v-span4-card,
@@ -313,26 +292,19 @@ spotlight-container.no-padding.well {
 
   &.views-grid-three .views-row {
     margin-bottom: 80px;
-
     @media (max-width: 1200px) {
-
       width: 46.1%;
     }
-
     // Chrome doesn't seem to pick up the 450px
     @media (max-width: 580px) {
-
       width: 96.2%;
     }
   }
 
   .spotlight-container {
-
     .spotlight-img {
       text-align: center;
-
       @media (max-width: 650px) {
-
         margin-right: 0;
       }
 
@@ -423,13 +395,10 @@ spotlight-container.no-padding.well {
     }
   }
 }
-
-
 // FULL WIDTH BANNER VIEW
-
-.view-stanford-ppl-spot-3-v-card.views-grid-three .view-display-id-attachment_first_spot,
 .view-stanford-people-spotlight-fw-banner,
 .view-stanford-people-spotlight-fw-banner-no-quote,
+.view-stanford-ppl-spot-3-v-card.views-grid-three .view-display-id-attachment_first_spot,
 .view-stanford-ppl-spot-fw-banner-quote {
   .spotlight-container {
     .front & {
@@ -442,32 +411,22 @@ spotlight-container.no-padding.well {
       width: 50%;
       margin: 0 auto;
       padding: 70px 0 0;
-
       @media (max-width: 1900px) {
-
         width: 65%;
       }
-
       @media (max-width: 1400px) {
-
         width: 85%;
       }
-
       @include breakpoint-max(large) {
-
         width: 90%;
       }
-
       @include breakpoint-max(small) {
-
         display: flex;
         text-align: left;
         width: 90%;
         padding: 50px 0 0;
       }
-
       @media (max-width: 500px) {
-
         display: block;
         text-align: center;
         width: 100%;
@@ -481,20 +440,14 @@ spotlight-container.no-padding.well {
     .spotlight-img {
       margin-right: 40px;
       flex-shrink: 0;
-
       @include breakpoint-max(small) {
-
         margin-right: 0;
         width: 286px;
       }
-
       @include breakpoint-max(smaller) {
-
         width: 200px;
       }
-
       @media (max-width: 500px) {
-
         flex-shrink: 0;
         margin: 0 auto;
         width: 60%;
@@ -504,14 +457,10 @@ spotlight-container.no-padding.well {
         border-radius: 50%;
         border-width: 8px;
         border-style: solid;
-
         @include breakpoint-max(small) {
-
           max-width: 82%;
         }
-
         @media (max-width: 500px) {
-
           border-width: 6px;
         }
       }
@@ -544,20 +493,14 @@ spotlight-container.no-padding.well {
         h2 {
           font-size: em(48px);
           margin: 0 0 20px;
-
           @include breakpoint-max(small) {
-
             margin-top: 15px;
             font-size: em(34px);
           }
-
           @include breakpoint-max(smaller) {
-
             font-size: em(28px);
           }
-
           @include breakpoint-max(x-small) {
-
             margin-bottom: 4px;
           }
         }
@@ -590,9 +533,7 @@ spotlight-container.no-padding.well {
       .spotlight-title p {
         font-size: em(24px);
         margin: 0;
-
         @include breakpoint-max(small) {
-
           font-size: em(20px);
         }
       }
@@ -602,20 +543,14 @@ spotlight-container.no-padding.well {
         font-weight: 600;
         line-height: 1.3em;
         margin-top: 20px;
-
         @include breakpoint-max(smaller) {
-
           font-size: em(24px);
         }
-
         @media (max-width: 500px) {
-
           width: 80%;
           margin: 20px auto;
         }
-
         @include breakpoint-max(x-small) {
-
           font-size: em(20px);
         }
 
@@ -626,15 +561,11 @@ spotlight-container.no-padding.well {
         p::after {
           content: close-quote;
         }
-
       }
     }
   }
 }
-
-
 // SPOTLIGHT PAGE
-
 .view-stanford-ppl-spot-3-v-card.views-grid-three .view-display-id-attachment_first_spot {
   .view-content .views-row-1.views-row {
     display: flex;
@@ -642,41 +573,29 @@ spotlight-container.no-padding.well {
     width: 50%;
     margin: 0 auto;
     padding: 70px 0 0;
-
     @media (max-width: 1900px) {
-
       width: 100%;
     }
-
     @media (max-width: 1400px) {
-
       width: 95%;
     }
-
     @include breakpoint-max(large) {
-
       width: 100%;
     }
-
     @include breakpoint-max(small) {
-
       display: flex;
       text-align: left;
       width: 100%;
       padding: 50px 0 0;
     }
-
     @media (max-width: 500px) {
-
       display: block;
       text-align: center;
       width: 100%;
     }
 
     .spotlight-all-content-container {
-
       @media (max-width: 1900px) {
-
         width: 100%;
       }
     }
@@ -696,8 +615,8 @@ spotlight-container.no-padding.well {
   }
 }
 
-.view-stanford-ppl-spot-3-v-card,
-.view-stanford-ppl-spot-3-card-and-banner {
+.view-stanford-ppl-spot-3-card-and-banner,
+.view-stanford-ppl-spot-3-v-card {
   display: flex;
   flex-direction: column;
 }
@@ -739,8 +658,6 @@ spotlight-container.no-padding.well {
     text-align: center;
   }
 }
-
-
 // BUTTON TO MORE STORIES
 .spotlight-button {
   text-align: center;
@@ -820,9 +737,7 @@ spotlight-container.no-padding.well {
     display: block;
     width: 30%;
     margin: 0 auto;
-
     @include breakpoint-max(small) {
-
       width: auto;
     }
   }

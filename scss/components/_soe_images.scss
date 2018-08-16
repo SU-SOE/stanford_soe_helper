@@ -1,11 +1,8 @@
 @charset "UTF-8";
-
 //
 // IMAGES
 //
-
 // GENERAL
-
 .main {
   .border-simple img,
   .border-simple-nowidth img {
@@ -35,12 +32,11 @@
     float: none;
   }
 }
-
 // PAGE FEATURED IMAGE
-
 #block-views-stanford-page-top-banner-block {
   .page-feat-image-container {
     background: #333333;
+
     img {
       width: 100%;
     }
@@ -69,9 +65,7 @@
     }
   }
 }
-
 // BOTTOM BANNER
-
 .view-stanford-page-banner-caption {
   .views-row {
     margin-bottom: 0;
@@ -194,9 +188,7 @@
     }
   }
 }
-
 // OPPORTUNITY GRID VIEW
-
 .view-soe-opportunity-grid {
   .views-row img {
     @include breakpoint-max(small) {

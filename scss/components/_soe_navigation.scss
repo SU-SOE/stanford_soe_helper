@@ -1,11 +1,8 @@
 @charset "UTF-8";
-
 //
 // NAVIGATION
 //
-
 // PRIMARY NAVIGATION
-
 #main-menu {
   .nav-collapse.collapse {
     float: right;
@@ -42,10 +39,10 @@
       }
     }
 
-    > .active > a:hover,
-    > li > a:focus,
-    > li > a:hover,
-    > .active-trail > a {
+    > .active-trail > a,
+     > li > a:focus,
+     > li > a:hover,
+    > .active > a:hover {
       border-bottom: 2px solid $primary-color;
       @include breakpoint-max(small) {
         border-bottom: none;
@@ -94,9 +91,7 @@
   padding-right: 7px;
   margin-right: 7px;
 }
-
 // SUBNAVIGATION
-
 .sidebar {
   .block-menu {
     background: none;
