@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * stanford_soe_helper_magazine.features.field_base.inc
