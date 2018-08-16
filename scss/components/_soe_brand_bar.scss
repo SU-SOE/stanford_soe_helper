@@ -11,6 +11,7 @@
     clip: rect(0 9999px 2px 0);
     clip-path: inset(0 0 55px 0);
     width: 100%;
+
     @include breakpoint-max(small) {
       clip-path: inset(0 0 60px 0);
     }
@@ -27,12 +28,15 @@
     &.logo-mobile img,
     img {
       max-width: 160px;
+
       @include breakpoint-max(x-small) {
         max-width: 130px;
       }
+
       @include breakpoint-max(xx-small) {
         max-width: 90px;
       }
+
       @media (max-width: 380px) {
         max-width: 80px;
       }
@@ -40,6 +44,7 @@
 
     &.logo-mobile {
       padding: 0 5px 0 0;
+
       @include breakpoint-max(x-small) {
         display: table-cell;
         padding: 0 10px 0 0;
@@ -49,6 +54,7 @@
           background-size: 120px 26.66px;
         }
       }
+
       @include breakpoint-max(xx-small) {
         padding: 0 5px 0 0;
       }
@@ -57,10 +63,12 @@
 
   #name-and-slogan.with-logo {
     padding: 0 0 0 5px;
+
     @include breakpoint-max(x-small) {
       display: table-cell;
       padding: 0 0 0 10px;
     }
+
     @include breakpoint-max(xx-small) {
       padding: 0 0 0 5px;
     }
@@ -69,10 +77,12 @@
   &.header {
     background: $white;
     padding: 30px 0 0;
+
     @include breakpoint-max(x-small) {
       min-height: 60px;
       padding: 35px 0 0;
     }
+
     @include breakpoint-max(xx-small) {
       min-height: 40px;
       padding: 22px 0 0;
@@ -80,14 +90,17 @@
 
     #site-title-first-line.site-title-uppercase a {
       font-size: 36px;
+
       @include breakpoint-max(x-small) {
         font-size: 28px;
         margin-bottom: -5px;
       }
+
       @include breakpoint-max(xx-small) {
         font-size: 18px;
         margin-bottom: -3px;
       }
+
       @include breakpoint-max(xxx-small) {
         font-size: 16px;
         margin-bottom: -4px;
@@ -105,6 +118,7 @@
   }
 
   .container {
+
     @include breakpoint-max(small) {
       margin-bottom: 6px;
     }
