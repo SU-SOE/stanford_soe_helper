@@ -9,6 +9,8 @@ engines:
     checks:
       overqualified-elements:
         enabled: false
+      adjoining-classes:
+        enabled: false
   # We don't lint our coffee. Eew.
   coffeelint:
     enabled: false
@@ -31,6 +33,8 @@ engines:
       VendorPrefix:
         enabled: false
       LeadingZero:
+        enabled: false
+      NestingDepth:
         enabled: false
   phpcodesniffer:
     enabled: true
