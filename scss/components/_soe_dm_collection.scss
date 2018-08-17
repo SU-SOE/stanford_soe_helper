@@ -7,6 +7,7 @@
 .view-stanford-magazine-collection-list {
   .views-row {
     margin-bottom: 80px;
+
     @include breakpoint-max(x-small) {
       margin-bottom: 20px;
     }
@@ -100,6 +101,7 @@
     .collection-container {
       display: flex;
       margin: 40px 0 80px;
+
       @include breakpoint-max(x-small) {
         margin-bottom: 0;
       }
@@ -165,6 +167,7 @@
       font-weight: 600;
       letter-spacing: 0;
       text-align: center;
+
       @include breakpoint-max(small) {
         line-height: 1em;
       }
@@ -230,6 +233,7 @@
 
       .view-header {
         margin-bottom: 80px;
+
         @include breakpoint-max(smaller) {
           margin-bottom: 40px;
         }
@@ -244,6 +248,7 @@
           margin-bottom: 30px;
           padding-top: 40px;
           text-align: center;
+
           @include breakpoint-max(smaller) {
             font-size: 14px;
           }
@@ -258,6 +263,7 @@
           line-height: 1.3em;
           margin-bottom: 4px;
           text-align: center;
+
           @include breakpoint-max(smaller) {
             font-size: 18px;
             line-height: 1em;
@@ -273,6 +279,7 @@
           font-size: 20px;
           padding: 0 20px;
           text-align: center;
+
           @include breakpoint-max(smaller) {
             font-size: 16px;
           }
@@ -326,6 +333,7 @@
       box-shadow: none;
       -webkit-box-shadow: none;
       padding: 65px 0;
+
       @include breakpoint-max(small) {
         padding: 40px 0;
       }
@@ -346,6 +354,7 @@
     padding-bottom: 80px;
     padding-top: 80px;
     background-color: $light-gray;
+
     @include breakpoint-max(small) {
       padding: 40px 0;
     }
@@ -357,6 +366,7 @@
         margin: 0 0 10px;
         text-align: center;
         line-height: 1.2em;
+
         @include breakpoint-max(small) {
           line-height: 1em;
         }
@@ -372,11 +382,13 @@
         margin: 0 auto;
         text-align: center;
         width: 70%;
+
         @include breakpoint-max(small) {
           font-size: em(1.2em);
           width: 85%;
           margin: 0 auto;
         }
+
         @include breakpoint-max(x-small) {
           font-size: em(1em);
           width: 100%;
@@ -393,11 +405,13 @@
         text-align: center;
         width: 70%;
         margin: 30px auto 0;
+
         @include breakpoint-max(small) {
           font-size: em(1em);
           width: 85%;
           margin: 20px auto 0;
         }
+
         @include breakpoint-max(x-small) {
           font-size: 0.9em;
           width: 100%;
@@ -410,6 +424,7 @@
   .view-display-id-collection_group_block_1 {
     .views-row {
       margin: 80px 0;
+
       @include breakpoint-max(smaller) {
         margin: 40px 0;
       }
@@ -418,9 +433,11 @@
     .mag-article-img {
       width: 45%;
       float: left;
+
       @include breakpoint-max(large) {
         width: 41%;
       }
+
       @include breakpoint-max(medium) {
         width: 100%;
       }
@@ -438,6 +455,7 @@
       .mag-article-content-container {
         float: left;
         width: 49%;
+
         @include breakpoint-max(large) {
           min-height: auto;
           width: 52%;
@@ -446,6 +464,7 @@
             margin: 20px 0 0 !important;
           }
         }
+
         @include breakpoint-max(medium) {
           width: auto;
         }
