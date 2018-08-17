@@ -217,7 +217,7 @@ li {
         text-transform: capitalize;
         background-color: $brand-bright;
         border-radius: 0;
-        border: none;
+        border: 0;
         padding: 0.7em 4em;
         margin-bottom: 0;
 
@@ -238,8 +238,8 @@ th {
   line-height: 1.3em;
   font-size: em(20px);
   border: 1px solid $gray;
-  border-right: none;
-  border-left: none;
+  border-right: 0;
+  border-left: 0;
 }
 
 th {
@@ -329,7 +329,8 @@ th {
     margin-left: 80px;
   }
 }
-/*** BODY - MORE SPACE FROM LAST CHILD TO TOP OF BLOCKS AFTER WYSIWYG ***/
+
+// BODY - MORE SPACE FROM LAST CHILD TO TOP OF BLOCKS AFTER WYSIWYG
 .content-body p:last-child {
   margin-bottom: 2.5em;
 }
@@ -337,7 +338,8 @@ th {
 .region-sidebar-second {
   margin-top: 34px;
 }
-/*** Full width region ***/
+
+// Full width region
 .region-fullwidth-top #block-ds-extras-featured-image img {
   width: 100%;
 }
