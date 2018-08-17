@@ -14,9 +14,11 @@
         object-position: center center;
         width: 100%;
         height: calc(100vh - 144px);
+
         @include breakpoint-max(large) {
           height: calc(100vh - 189px);
         }
+
         @include breakpoint-max(medium) {
           height: auto;
         }
@@ -29,6 +31,7 @@
         text-align: center;
         width: 100%;
         z-index: 1;
+
         @include breakpoint-max(small) {
           color: $primary-color;
           position: static;
@@ -41,6 +44,7 @@
           display: inline;
           padding: 15px 25px;
           background: rgba(0, 0, 0, 0.3);
+
           @include breakpoint-max(small) {
             display: block;
             background: rgba(0, 0, 0, 0.7);
@@ -65,23 +69,25 @@
         }
 
         &:after {
-          content: url("../img/soe_chevron_down_white.png");
+          content: url('../img/soe_chevron_down_white.png');
           position: absolute;
           bottom: 50px;
+
           @include breakpoint-max(small) {
-            content: url("../img/soe_chevron_down_black.png");
+            content: url('../img/soe_chevron_down_black.png');
             bottom: -25px;
           }
         }
       }
 
       &:after {
+        @include gradient-vertical($end-color: rgba(0, 0, 0, 0.75));
         content: '';
         position: absolute;
         bottom: 0;
         height: 100%;
         width: 100%;
-        @include gradient-vertical($end-color: rgba(0, 0, 0, 0.75));
+
         @include breakpoint-max(small) {
           background: none;
         }
@@ -91,12 +97,15 @@
     .mag-feat-details-container {
       width: 1000px;
       margin: 0 auto;
+
       @include breakpoint-max(large) {
         width: 800px;
       }
+
       @include breakpoint-max(medium) {
         width: 650px;
       }
+
       @include breakpoint-max(small) {
         width: auto;
         margin: 0 20px;
@@ -115,9 +124,9 @@
         margin-bottom: 10px;
 
         &[class*="mag-article-color-"] {
+          @include td-skip;
           color: $primary-color;
           text-decoration: underline;
-          @include td-skip;
 
           &:focus,
           &:hover {
@@ -151,10 +160,10 @@
   }
 
   .mag-article-container {
+    @include box-shadow;
     position: relative;
     background: $white;
     padding: 15px 30px 30px;
-    @include box-shadow;
 
     .mag-article-date {
       color: $gray-orange;
@@ -169,9 +178,9 @@
       line-height: 1.2em;
 
       &[class*="mag-article-color-"] {
+        @include td-skip;
         color: $primary-color;
         text-decoration: underline;
-        @include td-skip;
 
         &:focus,
         &:hover {
@@ -211,6 +220,7 @@
 
   .views-row {
     margin-bottom: 100px;
+
     @include breakpoint-max(medium) {
       margin-bottom: 50px;
     }
@@ -219,6 +229,7 @@
       .mag-issue-col-1 {
         float: right;
         width: 22.5%;
+
         @include breakpoint-max(medium) {
           float: none;
           width: 100%;
@@ -229,6 +240,7 @@
         float: left;
         width: 45%;
         margin-right: 5%;
+
         @include breakpoint-max(medium) {
           float: none;
           width: 100%;
@@ -240,6 +252,7 @@
         float: right;
         width: 22.5%;
         margin-right: 5%;
+
         @include breakpoint-max(medium) {
           float: none;
           width: 100%;
@@ -253,6 +266,7 @@
         float: left;
         width: 22.5%;
         margin-right: 5%;
+
         @include breakpoint-max(medium) {
           float: none;
           width: 100%;
@@ -264,6 +278,7 @@
         float: left;
         width: 45%;
         margin-right: 5%;
+
         @include breakpoint-max(medium) {
           float: none;
           width: 100%;
@@ -274,6 +289,7 @@
       .mag-issue-col-3 {
         float: left;
         width: 22.5%;
+
         @include breakpoint-max(medium) {
           float: none;
           width: 100%;
@@ -285,6 +301,7 @@
       .mag-issue-col-1 {
         float: left;
         width: 22.5%;
+
         @include breakpoint-max(medium) {
           float: none;
           width: 100%;
@@ -295,6 +312,7 @@
         float: right;
         width: 45%;
         margin-left: 5%;
+
         @include breakpoint-max(medium) {
           float: none;
           width: 100%;
@@ -306,6 +324,7 @@
         float: left;
         width: 22.5%;
         margin-left: 5%;
+
         @include breakpoint-max(medium) {
           float: none;
           width: 100%;
@@ -323,6 +342,7 @@
 
   .mag-feat-article-container {
     margin-bottom: 80px;
+
     @include breakpoint-max(medium) {
       margin-bottom: 40px;
     }
@@ -341,6 +361,7 @@
 
     .mag-article-content-container {
       padding: 50px 30px 30px;
+
       @include breakpoint-max(medium) {
         padding: 15px 30px 30px;
       }
@@ -350,6 +371,7 @@
         font-size: em(20px);
         font-weight: 100;
         margin-bottom: 10px;
+
         @include breakpoint-max(medium) {
           font-size: em(18px);
         }
@@ -360,16 +382,17 @@
         line-height: 1.2em;
         font-weight: 600;
         margin-bottom: 12px;
+
         @include breakpoint-max(medium) {
           font-size: em(26px);
           line-height: 1.3em;
         }
 
         &[class*="mag-article-color-"] a {
+          @include td-skip;
           color: $primary-color;
           font-weight: 600;
           text-decoration: underline;
-          @include td-skip;
 
           &:focus,
           &:hover {
@@ -398,6 +421,7 @@
         font-size: em(18px);
         line-height: 1.3em;
         margin: 30px 0;
+
         @include breakpoint-max(medium) {
           font-size: em(16px);
           line-height: 1.2em;
@@ -408,6 +432,7 @@
 
   .mag-article-container {
     margin-bottom: 80px;
+
     @include breakpoint-max(medium) {
       margin-bottom: 40px;
     }
@@ -442,10 +467,10 @@
         font-weight: 600;
 
         &[class*="mag-article-color-"] a {
+          @include td-skip;
           color: $primary-color;
           font-weight: 600;
           text-decoration: underline;
-          @include td-skip;
 
           &:focus,
           &:hover {
@@ -483,17 +508,19 @@
 
     .mag-article-issue-image-container {
       &:after {
+        @include gradient-vertical;
         content: '';
         position: absolute;
         bottom: 0;
         left: 160px;
         right: 160px;
         height: 100%;
-        @include gradient-vertical;
+
         @include breakpoint-max(large) {
           left: 45px;
           right: 45px;
         }
+
         @include breakpoint-max(medium) {
           left: 0;
           right: 0;
@@ -506,6 +533,7 @@
         position: absolute;
         bottom: 38%;
         width: 100%;
+
         @include breakpoint-max(x-small) {
           position: relative;
         }
@@ -517,6 +545,7 @@
           font-weight: 800;
           font-size: em(32px);
           padding: 30px;
+
           @include breakpoint-max(x-small) {
             display: block;
           }
@@ -524,7 +553,8 @@
 
         .mag-article-issue-title {
           &:after {
-            content: "\00a0 \00a0 |\00a0 \00a0 ";
+            content: '\00a0 \00a0 |\00a0 \00a0 ';
+
             @include breakpoint-max(x-small) {
               content: normal;
             }
@@ -533,17 +563,19 @@
 
         .mag-article-issue-more {
           &:after {
-            content: "";
-            background-image: url("../img/soe_lg_arrow_right_black.svg");
+            content: '';
+            background-image: url('../img/soe_lg_arrow_right_black.svg');
             background-repeat: no-repeat;
             background-size: 41px 30px;
             vertical-align: -24%;
             padding-left: 41px;
             margin-left: 12px;
+
             @include breakpoint-max(small) {
               background-size: 35px 26px;
               vertical-align: -20%;
             }
+
             @include breakpoint-max(x-small) {
               background-size: 31px 23px;
               vertical-align: -32%;
@@ -562,6 +594,7 @@
       bottom: 0;
       width: 100%;
       margin-bottom: 30px;
+
       @include breakpoint-max(x-small) {
         bottom: 115px;
       }
@@ -587,10 +620,6 @@
     margin-bottom: 4.49%;
     width: 30%;
 
-    &:nth-child(3),
-    &:nth-child(6) {
-      margin-right: 0;
-    }
     @include breakpoint-max(large) {
       width: 47.4%;
 
@@ -604,6 +633,7 @@
         margin-right: 4.49%;
       }
     }
+
     @include breakpoint-max(small) {
       margin-right: 4%;
       margin-bottom: 4%;
@@ -612,6 +642,7 @@
         margin-right: 4%;
       }
     }
+
     @include breakpoint-max(x-small) {
       width: 100%;
       margin-right: 0;
@@ -619,6 +650,11 @@
       &:nth-child(3) {
         margin-right: 0;
       }
+    }
+
+    &:nth-child(3),
+    &:nth-child(6) {
+      margin-right: 0;
     }
   }
 
@@ -638,6 +674,7 @@
   .view-content {
     width: 75%;
     margin: 0 auto;
+
     @include breakpoint-max(medium) {
       width: 100%;
     }
@@ -735,21 +772,24 @@
           display: inline;
           padding: 18px 30px;
           background: rgba(0, 0, 0, 0.3);
+
           @include breakpoint-max(small) {
             display: block;
           }
 
           &:after {
-            content: "";
-            background-image: url("../img/soe_lg_arrow_right_black.svg");
+            content: '';
+            background-image: url('../img/soe_lg_arrow_right_black.svg');
             background-repeat: no-repeat;
             background-size: 41px 30px;
             vertical-align: -15%;
             padding-left: 41px;
             margin-left: 12px;
+
             @include breakpoint-max(small) {
               vertical-align: -14%;
             }
+
             @include breakpoint-max(x-small) {
               background-size: 31px 23px;
               vertical-align: -25%;
@@ -774,19 +814,19 @@
         }
 
         &:after {
-          content: url("../img/soe_chevron_down_white.png");
+          content: url('../img/soe_chevron_down_white.png');
           position: absolute;
           bottom: 50px;
         }
       }
 
       &:after {
+        @include gradient-vertical($end-color: rgba(0, 0, 0, 0.75));
         content: '';
         position: absolute;
         bottom: 0;
         height: 100%;
         width: 100%;
-        @include gradient-vertical($end-color: rgba(0, 0, 0, 0.75));
       }
     }
   }
