@@ -10,6 +10,7 @@
 
   h1 {
     font-size: 2.4em;
+
     @include breakpoint-min(smaller) {
       width: 70%;
     }
@@ -48,13 +49,14 @@
     }
 
     .feat-events-container {
-      overflow: hidden;
       @include box-shadow;
+      overflow: hidden;
 
       .feat-events-date-time-container {
         position: relative;
         background: $white;
         height: 93px;
+
         @media (min-width: 768px) and (max-width: 979px) {
           height: auto;
         }
@@ -81,6 +83,7 @@
           position: absolute;
           bottom: -7px;
           left: 108px;
+
           @media (min-width: 768px) and (max-width: 979px) {
             position: static;
             clear: both;
@@ -126,10 +129,10 @@
   &.horizontal-event {
     .feat-events-container {
       @include breakpoint-min(medium) {
+        @include box-shadow;
         background: $white;
         display: flex;
         padding: 30px;
-        @include box-shadow;
       }
 
       .feat-events-img-container {
@@ -144,10 +147,11 @@
 
       .feat-events-content-container {
         padding-left: 30px;
+
         @include breakpoint-max(medium) {
+          @include box-shadow;
           background: $white;
           padding: 30px;
-          @include box-shadow;
         }
 
         .feat-events-title {
@@ -167,10 +171,10 @@
         }
 
         .date-stacked {
+          @include box-shadow;
           margin: 0 0 20px;
           height: 45px;
           width: 40px;
-          @include box-shadow;
 
           .date-month {
             font-size: em(18px);
