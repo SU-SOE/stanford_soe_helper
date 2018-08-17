@@ -743,14 +743,14 @@ p.summary.drop-cap:first-letter {
     #main-menu .nav-collapse.collapse {
       width: 100%; } }
 @media (max-width: 767px) {
-  /* line 19, ../scss/components/_soe_navigation.scss */
+  /* line 21, ../scss/components/_soe_navigation.scss */
   #main-menu .nav-collapse {
     width: 100%; } }
 
-/* line 26, ../scss/components/_soe_navigation.scss */
+/* line 28, ../scss/components/_soe_navigation.scss */
 .navbar {
   margin-bottom: 0; }
-  /* line 30, ../scss/components/_soe_navigation.scss */
+  /* line 32, ../scss/components/_soe_navigation.scss */
   .navbar .nav > li > a {
     color: #B1040E;
     font-size: 0.9em;
@@ -758,149 +758,149 @@ p.summary.drop-cap:first-letter {
     border-bottom: 2px solid transparent;
     padding-bottom: 30px; }
     @media (max-width: 767px) {
-      /* line 30, ../scss/components/_soe_navigation.scss */
+      /* line 32, ../scss/components/_soe_navigation.scss */
       .navbar .nav > li > a {
         padding-bottom: 0.25em;
-        border-bottom: none; } }
-  /* line 42, ../scss/components/_soe_navigation.scss */
+        border-bottom: 0; } }
+  /* line 45, ../scss/components/_soe_navigation.scss */
   .navbar .nav > .active-trail > a,
   .navbar .nav > li > a:focus,
   .navbar .nav > li > a:hover,
   .navbar .nav > .active > a:hover {
     border-bottom: 2px solid #333333; }
     @media (max-width: 767px) {
-      /* line 42, ../scss/components/_soe_navigation.scss */
+      /* line 45, ../scss/components/_soe_navigation.scss */
       .navbar .nav > .active-trail > a,
       .navbar .nav > li > a:focus,
       .navbar .nav > li > a:hover,
       .navbar .nav > .active > a:hover {
-        border-bottom: none; } }
+        border-bottom: 0; } }
   @media (max-width: 767px) {
-    /* line 53, ../scss/components/_soe_navigation.scss */
+    /* line 57, ../scss/components/_soe_navigation.scss */
     .navbar .btn.btn-navbar {
       background: #B1040E;
       margin-top: -50px;
       float: right; } }
   @media (max-width: 480px) {
-    /* line 53, ../scss/components/_soe_navigation.scss */
+    /* line 57, ../scss/components/_soe_navigation.scss */
     .navbar .btn.btn-navbar {
       margin-top: -52px; } }
   @media (max-width: 400px) {
-    /* line 53, ../scss/components/_soe_navigation.scss */
+    /* line 57, ../scss/components/_soe_navigation.scss */
     .navbar .btn.btn-navbar {
       margin-top: -37px; } }
   @media (max-width: 320px) {
-    /* line 53, ../scss/components/_soe_navigation.scss */
+    /* line 57, ../scss/components/_soe_navigation.scss */
     .navbar .btn.btn-navbar {
       float: left;
       margin-top: 0; } }
   @media (max-width: 305px) {
-    /* line 53, ../scss/components/_soe_navigation.scss */
+    /* line 57, ../scss/components/_soe_navigation.scss */
     .navbar .btn.btn-navbar {
       float: left;
       margin-top: 0; } }
 
-/* line 76, ../scss/components/_soe_navigation.scss */
+/* line 84, ../scss/components/_soe_navigation.scss */
 .site-main-menu {
   background: #FFFFFF;
   border-bottom: 1px solid #e1e1e1; }
-  /* line 80, ../scss/components/_soe_navigation.scss */
+  /* line 88, ../scss/components/_soe_navigation.scss */
   .site-main-menu ul li.last.leaf {
     margin-bottom: 0; }
     @media (max-width: 767px) {
-      /* line 80, ../scss/components/_soe_navigation.scss */
+      /* line 88, ../scss/components/_soe_navigation.scss */
       .site-main-menu ul li.last.leaf {
         height: auto;
-        border-right: none;
+        border-right: 0;
         padding-right: 0; } }
 
-/* line 90, ../scss/components/_soe_navigation.scss */
+/* line 99, ../scss/components/_soe_navigation.scss */
 .region-navigation .block.contextual-links-region {
   padding-right: 7px;
   margin-right: 7px; }
 
-/* line 96, ../scss/components/_soe_navigation.scss */
+/* line 105, ../scss/components/_soe_navigation.scss */
 .sidebar .block-menu {
   background: none;
   margin: 1px; }
-  /* line 100, ../scss/components/_soe_navigation.scss */
+  /* line 109, ../scss/components/_soe_navigation.scss */
   .sidebar .block-menu h2 {
     font-family: "Roboto Slab", serif;
     font-weight: 400;
     letter-spacing: 0; }
-  /* line 107, ../scss/components/_soe_navigation.scss */
+  /* line 116, ../scss/components/_soe_navigation.scss */
   .sidebar .block-menu .content > .menu > li.active-trail, .sidebar .block-menu .content > .menu > li.expanded {
     background: none; }
-  /* line 112, ../scss/components/_soe_navigation.scss */
+  /* line 121, ../scss/components/_soe_navigation.scss */
   .sidebar .block-menu .content > .menu > li > a {
-    border-top: none;
+    border-top: 0;
     padding: 0.5em 0.5em 0.5em 0; }
-    /* line 116, ../scss/components/_soe_navigation.scss */
+    /* line 125, ../scss/components/_soe_navigation.scss */
     .sidebar .block-menu .content > .menu > li > a.active, .sidebar .block-menu .content > .menu > li > a:focus, .sidebar .block-menu .content > .menu > li > a:hover {
       background: none; }
-  /* line 123, ../scss/components/_soe_navigation.scss */
+  /* line 132, ../scss/components/_soe_navigation.scss */
   .sidebar .block-menu .content > .menu > li li a {
     font-size: 0.9em;
     padding: 0.25em; }
-/* line 130, ../scss/components/_soe_navigation.scss */
+/* line 139, ../scss/components/_soe_navigation.scss */
 .sidebar#sidebar-first {
   margin-top: 20px; }
-  /* line 133, ../scss/components/_soe_navigation.scss */
+  /* line 142, ../scss/components/_soe_navigation.scss */
   .sidebar#sidebar-first .block-menu-block {
     background: none;
     margin: 1px 1px 36px;
     padding: 0; }
     @media (max-width: 767px) {
-      /* line 133, ../scss/components/_soe_navigation.scss */
+      /* line 142, ../scss/components/_soe_navigation.scss */
       .sidebar#sidebar-first .block-menu-block {
         width: 100%; } }
-    /* line 141, ../scss/components/_soe_navigation.scss */
+    /* line 151, ../scss/components/_soe_navigation.scss */
     .sidebar#sidebar-first .block-menu-block h2 {
       font-family: "Roboto Slab", serif;
       font-weight: 400;
       letter-spacing: 0; }
     @media (max-width: 767px) {
-      /* line 148, ../scss/components/_soe_navigation.scss */
+      /* line 158, ../scss/components/_soe_navigation.scss */
       .sidebar#sidebar-first .block-menu-block .menu-block-wrapper.menu-block-stanford_jsa_layouts-1.menu-name-main-menu.parent-mlid-0.menu-level-2 {
         background: #FFFFFF;
         padding: 20px;
         box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2); } }
-    /* line 158, ../scss/components/_soe_navigation.scss */
+    /* line 168, ../scss/components/_soe_navigation.scss */
     .sidebar#sidebar-first .block-menu-block .menu-block-wrapper > .menu > li.active-trail {
       background: none; }
-    /* line 162, ../scss/components/_soe_navigation.scss */
+    /* line 172, ../scss/components/_soe_navigation.scss */
     .sidebar#sidebar-first .block-menu-block .menu-block-wrapper > .menu > li.last {
-      border-bottom: none; }
-    /* line 166, ../scss/components/_soe_navigation.scss */
+      border-bottom: 0; }
+    /* line 176, ../scss/components/_soe_navigation.scss */
     .sidebar#sidebar-first .block-menu-block .menu-block-wrapper > .menu > li > a {
-      border-top: none;
+      border-top: 0;
       font-weight: 600;
       padding: 0.5em 0.5em 0.5em 0; }
-      /* line 171, ../scss/components/_soe_navigation.scss */
+      /* line 181, ../scss/components/_soe_navigation.scss */
       .sidebar#sidebar-first .block-menu-block .menu-block-wrapper > .menu > li > a.active, .sidebar#sidebar-first .block-menu-block .menu-block-wrapper > .menu > li > a:focus, .sidebar#sidebar-first .block-menu-block .menu-block-wrapper > .menu > li > a:hover {
         background: none; }
-    /* line 178, ../scss/components/_soe_navigation.scss */
+    /* line 188, ../scss/components/_soe_navigation.scss */
     .sidebar#sidebar-first .block-menu-block .menu-block-wrapper > .menu > li li a {
       font-size: 0.9em;
       padding: 0.25em; }
-      /* line 182, ../scss/components/_soe_navigation.scss */
+      /* line 192, ../scss/components/_soe_navigation.scss */
       .sidebar#sidebar-first .block-menu-block .menu-block-wrapper > .menu > li li a.active-trail, .sidebar#sidebar-first .block-menu-block .menu-block-wrapper > .menu > li li a:focus, .sidebar#sidebar-first .block-menu-block .menu-block-wrapper > .menu > li li a:hover {
         text-decoration: none; }
-        /* line 187, ../scss/components/_soe_navigation.scss */
+        /* line 197, ../scss/components/_soe_navigation.scss */
         .sidebar#sidebar-first .block-menu-block .menu-block-wrapper > .menu > li li a.active-trail:before, .sidebar#sidebar-first .block-menu-block .menu-block-wrapper > .menu > li li a:focus:before, .sidebar#sidebar-first .block-menu-block .menu-block-wrapper > .menu > li li a:hover:before {
-          content: "> ";
+          content: '> ';
           margin-left: -12.5px; }
-    /* line 195, ../scss/components/_soe_navigation.scss */
+    /* line 205, ../scss/components/_soe_navigation.scss */
     .sidebar#sidebar-first .block-menu-block ul.menu li ul {
       padding: 0 0 0 11px; }
-    /* line 199, ../scss/components/_soe_navigation.scss */
+    /* line 209, ../scss/components/_soe_navigation.scss */
     .sidebar#sidebar-first .block-menu-block .content > .menu > li.expanded {
       background: none; }
-/* line 205, ../scss/components/_soe_navigation.scss */
+/* line 215, ../scss/components/_soe_navigation.scss */
 .sidebar .nav li a {
   color: #B1040E; }
 
-/* line 210, ../scss/components/_soe_navigation.scss */
+/* line 220, ../scss/components/_soe_navigation.scss */
 .main .menu li {
   line-height: 1.2em; }
 
