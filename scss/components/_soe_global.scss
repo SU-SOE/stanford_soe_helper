@@ -10,20 +10,23 @@ html {
 
 body {
   font-size: em($base-font-size, $root-font-size);
+  font-weight: 400;
+  line-height: 1.55em;
+
   @include breakpoint-max(medium) {
     font-size: 19px;
     font-size: em(19px, $root-font-size);
   }
+
   @include breakpoint-max(small) {
     font-size: 18px;
     font-size: em(18px, $root-font-size);
   }
+
   @include breakpoint-max(x-small) {
     font-size: 17px;
     font-size: em(17px, $root-font-size);
   }
-  font-weight: 400;
-  line-height: 1.55em;
 }
 
 h1 {
@@ -32,12 +35,15 @@ h1 {
   font-weight: 600;
   letter-spacing: 0;
   margin: -9px 0 10px;
+
   @include breakpoint-max(medium) {
     font-size: em(46px);
   }
+
   @include breakpoint-max(small) {
     font-size: em(40px);
   }
+
   @include breakpoint-max(x-small) {
     font-size: em(36px);
   }
@@ -102,8 +108,8 @@ iframe {
 
 .btn a,
 a.btn {
-  border-radius: 0;
   @include box-shadow;
+  border-radius: 0;
   margin: 0 0 26px;
   line-height: 1.2em;
   letter-spacing: 0;
@@ -122,6 +128,7 @@ a.btn {
     width: 30%;
     margin-bottom: 30px;
     text-decoration: none;
+
     @include breakpoint-max(x-small) {
       width: 65%;
     }
@@ -143,7 +150,7 @@ a.more-link {
   color: $brand-bright;
 
   &:after {
-    content: " ›";
+    content: ' ›';
   }
 }
 
@@ -198,18 +205,19 @@ li {
 
     &.pager-load-more {
       margin-bottom: 100px;
+
       @include breakpoint-max(small) {
         margin-bottom: 50px;
       }
 
       a {
+        @include box-shadow;
         color: $white;
         font-size: em(20px);
         text-transform: capitalize;
         background-color: $brand-bright;
         border-radius: 0;
         border: none;
-        @include box-shadow;
         padding: 0.7em 4em;
         margin-bottom: 0;
 
@@ -239,8 +247,8 @@ th {
 }
 
 .well {
-  background: $white;
   @include box-shadow;
+  background: $white;
 
   h2 {
     font-size: em(32px);
@@ -278,6 +286,7 @@ th {
 .main {
   padding: 80px 0 50px;
   background: $off-white;
+
   @include breakpoint-max(small) {
     padding: 40px 0 0;
   }
