@@ -43,8 +43,8 @@
   }
 
   .page-feat-scroll-container {
-    color: $white;
     @include gradient-vertical;
+    color: $white;
     position: absolute;
     bottom: 0;
     text-align: center;
@@ -59,7 +59,7 @@
     }
 
     &:after {
-      content: url("../img/soe_chevron_down_white.png");
+      content: url('../img/soe_chevron_down_white.png');
       position: absolute;
       bottom: 20px;
     }
@@ -74,13 +74,14 @@
   .banner-bottom-container {
     position: relative;
     overflow: hidden;
+
     @include breakpoint-max(small) {
       position: inherit;
     }
 
     img {
-      width: 100%;
       @include transition;
+      width: 100%;
     }
 
     .more-link {
@@ -92,33 +93,39 @@
         font-size: em(28px);
         font-weight: 800;
         line-height: 1.2em;
+
         @include breakpoint-max(large) {
           font-size: em(26px);
         }
+
         @include breakpoint-max(medium) {
           font-size: em(24px);
         }
+
         @include breakpoint-max(small) {
           font-size: em(22px);
         }
 
         &:after {
-          content: "";
-          background-image: url("../img/soe_lg_arrow_right_black.svg");
+          content: '';
+          background-image: url('../img/soe_lg_arrow_right_black.svg');
           background-repeat: no-repeat;
           background-size: 41px 30px;
           vertical-align: -10%;
           padding-left: 41px;
           margin-left: 12px;
+
           @include breakpoint-max(medium) {
             background-size: 31px 23px;
             vertical-align: -16%;
             padding-left: 31px;
           }
+
           @include breakpoint-max(small) {
             background-size: 28px 20px;
             padding-left: 28px;
           }
+
           @include breakpoint-max(x-small) {
             vertical-align: -19%;
           }
@@ -140,9 +147,11 @@
   div.more-link {
     padding: 18px 32px 20px;
     margin: 0;
+
     @include breakpoint-max(small) {
       width: 100%;
     }
+
     @include breakpoint-max(x-small) {
       width: 87%;
     }
@@ -151,10 +160,12 @@
   .banner-caption {
     position: absolute;
     width: 80%;
+
     @include breakpoint-max(small) {
       position: inherit;
       width: 92%;
     }
+
     @include breakpoint-max(x-small) {
       width: 100%;
     }
@@ -162,6 +173,7 @@
     &.banner-right {
       right: 0;
       text-align: right;
+
       @include breakpoint-max(small) {
         text-align: left;
       }
