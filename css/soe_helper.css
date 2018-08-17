@@ -1569,24 +1569,24 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
   #global-header .block-stanford-search-api input#edit-search {
     display: none; }
   /* line 14, ../scss/components/_soe_search.scss */
-  #global-header .block-stanford-search-api input[type="text"] {
+  #global-header .block-stanford-search-api input[type='text'] {
+    -webkit-transition: width 1s ease;
+    -moz-transition: width 1s ease;
+    -o-transition: width 1s ease;
+    transition: width 1s ease;
     font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;
     color: #FFFFFF;
     background-color: transparent;
-    border: none;
+    border: 0;
     box-shadow: none;
     padding: 5px 0 0 30px;
-    background: url("../img/soe_mag_glass_white.svg") no-repeat 5% center;
-    -webkit-transition: width 1s ease;
-    -moz-transition: width 1s ease;
-    -o-transition: width 1s ease;
-    transition: width 1s ease; }
+    background: url("../img/soe_mag_glass_white.svg") no-repeat 5% center; }
     /* line 25, ../scss/components/_soe_search.scss */
-    .not-logged-in #global-header .block-stanford-search-api input[type="text"] {
+    .not-logged-in #global-header .block-stanford-search-api input[type='text'] {
       margin-right: -15px; }
     /* line 29, ../scss/components/_soe_search.scss */
-    #global-header .block-stanford-search-api input[type="text"]:focus {
+    #global-header .block-stanford-search-api input[type='text']:focus {
       background-position-x: 0;
       margin-right: 0; }
   /* line 35, ../scss/components/_soe_search.scss */
@@ -1599,31 +1599,31 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
         /* line 38, ../scss/components/_soe_search.scss */
         #global-header .block-stanford-search-api .input-medium:focus {
           width: 170px; } }
-  /* line 46, ../scss/components/_soe_search.scss */
+  /* line 47, ../scss/components/_soe_search.scss */
   #global-header .block-stanford-search-api input:-ms-input-placeholder {
     color: #FFFFFF; }
-  /* line 50, ../scss/components/_soe_search.scss */
+  /* line 51, ../scss/components/_soe_search.scss */
   #global-header .block-stanford-search-api input::-moz-placeholder {
     color: #FFFFFF; }
-  /* line 54, ../scss/components/_soe_search.scss */
+  /* line 55, ../scss/components/_soe_search.scss */
   #global-header .block-stanford-search-api input::-webkit-input-placeholder {
     color: #FFFFFF; }
 
-/* line 60, ../scss/components/_soe_search.scss */
+/* line 61, ../scss/components/_soe_search.scss */
 .page-search div#edit-basic {
   margin-bottom: 5px; }
 
-/* line 65, ../scss/components/_soe_search.scss */
+/* line 66, ../scss/components/_soe_search.scss */
 .search-views-left h2 a {
-  text-decoration: underline;
   -webkit-text-decoration-color: #00ECE9;
-  text-decoration-color: #00ECE9; }
-/* line 70, ../scss/components/_soe_search.scss */
+  text-decoration-color: #00ECE9;
+  text-decoration: underline; }
+/* line 71, ../scss/components/_soe_search.scss */
 .search-views-left:hover, .search-views-leftfocus {
-  color: #606060;
-  text-decoration: underline;
   -webkit-text-decoration-color: #606060;
-  text-decoration-color: #606060; }
+  text-decoration-color: #606060;
+  color: #606060;
+  text-decoration: underline; }
 
 /* line 8, ../scss/components/_soe_news.scss */
 .node-type-stanford-news-item .date-display-single {
