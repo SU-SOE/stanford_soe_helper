@@ -343,47 +343,47 @@ th {
     .summary {
       font-size: 1.1em; } }
 
-/* line 27, ../scss/components/_soe_wysiwyg.scss */
-a[class*="btn-"] {
+/* line 31, ../scss/components/_soe_wysiwyg.scss */
+a[class*='btn-'] {
   color: #000000; }
-  /* line 30, ../scss/components/_soe_wysiwyg.scss */
-  .node-type-stanford-event a[class*="btn-"] {
+  /* line 34, ../scss/components/_soe_wysiwyg.scss */
+  .node-type-stanford-event a[class*='btn-'] {
     color: #FFFFFF; }
-/* line 35, ../scss/components/_soe_wysiwyg.scss */
+/* line 39, ../scss/components/_soe_wysiwyg.scss */
 a.btn-orange {
   background: #FFBD54; }
-/* line 39, ../scss/components/_soe_wysiwyg.scss */
+/* line 43, ../scss/components/_soe_wysiwyg.scss */
 a.btn-turquoise {
   background: #00ECE9; }
-/* line 43, ../scss/components/_soe_wysiwyg.scss */
+/* line 47, ../scss/components/_soe_wysiwyg.scss */
 a.btn-pink {
   background: #FF525C; }
-/* line 48, ../scss/components/_soe_wysiwyg.scss */
+/* line 52, ../scss/components/_soe_wysiwyg.scss */
 a.external-link:after {
   content: url("../img/soe_external_link_icon_red.svg");
   padding-left: 5px;
   vertical-align: -2%; }
-/* line 54, ../scss/components/_soe_wysiwyg.scss */
+/* line 58, ../scss/components/_soe_wysiwyg.scss */
 a.external-link:focus:after, a.external-link:hover:after {
   content: url("../img/soe_external_link_icon_black.svg"); }
-/* line 60, ../scss/components/_soe_wysiwyg.scss */
+/* line 64, ../scss/components/_soe_wysiwyg.scss */
 a.btn.external-link:after {
   content: url("../img/soe_external_link_icon_white.svg");
   padding-left: 5px;
   vertical-align: -2%; }
-/* line 67, ../scss/components/_soe_wysiwyg.scss */
-a[class*="btn-"].btn.external-link:after {
+/* line 71, ../scss/components/_soe_wysiwyg.scss */
+a[class*='btn-'].btn.external-link:after {
   content: url("../img/soe_external_link_icon_black.svg");
   padding-left: 5px;
   vertical-align: -2%; }
-/* line 73, ../scss/components/_soe_wysiwyg.scss */
-a[class*="btn-"].btn.external-link:focus:after, a[class*="btn-"].btn.external-link:hover:after {
+/* line 77, ../scss/components/_soe_wysiwyg.scss */
+a[class*='btn-'].btn.external-link:focus:after, a[class*='btn-'].btn.external-link:hover:after {
   content: url("../img/soe_external_link_icon_white.svg"); }
-/* line 79, ../scss/components/_soe_wysiwyg.scss */
+/* line 83, ../scss/components/_soe_wysiwyg.scss */
 a.private-link, .private-link a {
   font-size: 18px;
   font-weight: 400; }
-  /* line 84, ../scss/components/_soe_wysiwyg.scss */
+  /* line 88, ../scss/components/_soe_wysiwyg.scss */
   a.private-link:after, .private-link a:after {
     background-image: url("../img/soe_lock_black.svg");
     background-size: 13px 16px;
@@ -391,106 +391,106 @@ a.private-link, .private-link a {
     padding-left: 13px;
     margin-left: 5px; }
 
-/* line 94, ../scss/components/_soe_wysiwyg.scss */
+/* line 98, ../scss/components/_soe_wysiwyg.scss */
 p.btn-center {
   text-align: center; }
-  /* line 97, ../scss/components/_soe_wysiwyg.scss */
+  /* line 101, ../scss/components/_soe_wysiwyg.scss */
   p.btn-center a.btn {
     margin-right: 40px; }
     @media (max-width: 767px) {
-      /* line 97, ../scss/components/_soe_wysiwyg.scss */
+      /* line 101, ../scss/components/_soe_wysiwyg.scss */
       p.btn-center a.btn {
         margin-right: 10px; } }
-    /* line 103, ../scss/components/_soe_wysiwyg.scss */
+    /* line 108, ../scss/components/_soe_wysiwyg.scss */
     p.btn-center a.btn:last-child {
       margin-right: 0; }
 
-/* line 109, ../scss/components/_soe_wysiwyg.scss */
+/* line 114, ../scss/components/_soe_wysiwyg.scss */
 p.highlight {
-  border: none;
   -webkit-column-count: 1;
   -moz-column-count: 1;
   column-count: 1;
+  border: 0;
   font-family: "Roboto Slab", serif;
   font-size: 1.2em;
   font-weight: bold;
   line-height: 1.6em;
   padding: 0 50px; }
 
-/* line 119, ../scss/components/_soe_wysiwyg.scss */
+/* line 124, ../scss/components/_soe_wysiwyg.scss */
 p.columns {
-  font-family: "Roboto Slab", serif;
-  font-size: 1.4em;
-  line-height: 1.6em;
-  font-weight: bold;
   -webkit-column-count: 1;
   -moz-column-count: 1;
   column-count: 1;
   -webkit-column-gap: 0;
   -moz-column-gap: 0;
-  column-gap: 0; }
+  column-gap: 0;
+  font-family: "Roboto Slab", serif;
+  font-size: 1.4em;
+  line-height: 1.6em;
+  font-weight: bold; }
   @media (max-width: 767px) {
-    /* line 119, ../scss/components/_soe_wysiwyg.scss */
+    /* line 124, ../scss/components/_soe_wysiwyg.scss */
     p.columns {
       -webkit-column-count: 1;
       -moz-column-count: 1;
       column-count: 1; } }
-  /* line 130, ../scss/components/_soe_wysiwyg.scss */
+  /* line 136, ../scss/components/_soe_wysiwyg.scss */
   .group-p-ws-style p.columns {
-    font-size: 1.2em;
-    line-height: 1.6em;
-    padding: 0 50px;
     -webkit-column-count: 1;
     -moz-column-count: 1;
-    column-count: 1; }
-    /* line 136, ../scss/components/_soe_wysiwyg.scss */
+    column-count: 1;
+    font-size: 1.2em;
+    line-height: 1.6em;
+    padding: 0 50px; }
+    /* line 142, ../scss/components/_soe_wysiwyg.scss */
     .group-p-ws-style p.columns p.columns {
-      font-size: 1.2em;
-      line-height: 1.6em;
       -webkit-column-count: 1;
       -moz-column-count: 1;
       column-count: 1;
+      font-size: 1.2em;
+      line-height: 1.6em;
       padding: 0 50px; }
 
-/* line 145, ../scss/components/_soe_wysiwyg.scss */
+/* line 151, ../scss/components/_soe_wysiwyg.scss */
 p.related-link {
-  background: #FFFFFF;
-  line-height: 1.3em;
-  padding: 27px 36px 30px;
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2); }
-  /* line 151, ../scss/components/_soe_wysiwyg.scss */
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+  background: #FFFFFF;
+  line-height: 1.3em;
+  padding: 27px 36px 30px; }
+  /* line 157, ../scss/components/_soe_wysiwyg.scss */
   p.related-link a {
     text-decoration: none; }
-    /* line 154, ../scss/components/_soe_wysiwyg.scss */
+    /* line 160, ../scss/components/_soe_wysiwyg.scss */
     p.related-link a:focus, p.related-link a:hover {
       text-decoration: underline; }
-  /* line 160, ../scss/components/_soe_wysiwyg.scss */
+  /* line 166, ../scss/components/_soe_wysiwyg.scss */
   p.related-link:before {
-    content: "Related \00a0 | \00a0";
+    content: 'Related \00a0 | \00a0';
     font-weight: 600; }
 
-/* line 167, ../scss/components/_soe_wysiwyg.scss */
+/* line 173, ../scss/components/_soe_wysiwyg.scss */
 p.summary.drop-cap:first-letter {
   padding: 25px 10px 0 0;
   font-size: 2.875em;
   font-weight: 600;
   float: left; }
   @media (max-width: 1200px) {
-    /* line 167, ../scss/components/_soe_wysiwyg.scss */
+    /* line 173, ../scss/components/_soe_wysiwyg.scss */
     p.summary.drop-cap:first-letter {
       padding: 21px 10px 0 0; } }
   @media (max-width: 979px) {
-    /* line 167, ../scss/components/_soe_wysiwyg.scss */
+    /* line 173, ../scss/components/_soe_wysiwyg.scss */
     p.summary.drop-cap:first-letter {
       padding: 16px 10px 0 0; } }
   @media (max-width: 480px) {
-    /* line 167, ../scss/components/_soe_wysiwyg.scss */
+    /* line 173, ../scss/components/_soe_wysiwyg.scss */
     p.summary.drop-cap:first-letter {
       padding: 15px 10px 0 0; } }
 
-/* line 184, ../scss/components/_soe_wysiwyg.scss */
+/* line 193, ../scss/components/_soe_wysiwyg.scss */
 .caption {
   color: #606060;
   font-weight: 300;
@@ -499,24 +499,24 @@ p.summary.drop-cap:first-letter {
   text-align: center;
   margin: 0 2em 4em; }
 
-/* line 194, ../scss/components/_soe_wysiwyg.scss */
+/* line 203, ../scss/components/_soe_wysiwyg.scss */
 .main table {
   width: 100%;
   margin-bottom: 2em; }
-/* line 200, ../scss/components/_soe_wysiwyg.scss */
+/* line 209, ../scss/components/_soe_wysiwyg.scss */
 .main p.float-left {
   margin-right: 15px; }
-/* line 204, ../scss/components/_soe_wysiwyg.scss */
+/* line 213, ../scss/components/_soe_wysiwyg.scss */
 .main p.float-right {
   margin-left: 15px; }
 
 @media (max-width: 767px) {
-  /* line 211, ../scss/components/_soe_wysiwyg.scss */
+  /* line 220, ../scss/components/_soe_wysiwyg.scss */
   .field-type-text-long h2, .field-type-text-with-summary h2 {
     font-size: 1.2em; } }
 
 @media (max-width: 767px) {
-  /* line 220, ../scss/components/_soe_wysiwyg.scss */
+  /* line 229, ../scss/components/_soe_wysiwyg.scss */
   .field-type-text-long h3, .field-type-text-with-summary h3 {
     font-size: 1em; } }
 
