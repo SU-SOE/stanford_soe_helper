@@ -38,6 +38,7 @@ spotlight-container.no-padding.well {
   .group-s-ppl-spot-container {
     width: 65%;
     margin: 0 auto;
+
     @include breakpoint-max(x-small) {
       width: 100%;
     }
@@ -108,15 +109,19 @@ spotlight-container.no-padding.well {
 
           .views-exposed-widget {
             padding-right: 0;
+
             @include breakpoint-max(large) {
               padding-right: 1em;
             }
+
             @include breakpoint-max(medium) {
               padding-right: 0.8em;
             }
+
             @include breakpoint-max(small) {
               padding-right: 0.7em;
             }
+
             @include breakpoint-max(smaller) {
               padding-right: 0.5em;
             }
@@ -151,6 +156,7 @@ spotlight-container.no-padding.well {
       width: 85%;
       margin: 0 auto;
       padding: 50px 0;
+
       @include breakpoint-max(medium) {
         width: 100%;
         display: block;
@@ -160,9 +166,11 @@ spotlight-container.no-padding.well {
     .spotlight-img {
       margin-right: 40px;
       flex-shrink: 0.5;
+
       @include breakpoint-max(medium) {
         margin-left: 40px;
       }
+
       @include breakpoint-max(medium) {
         text-align: center;
         margin-left: 0;
@@ -195,7 +203,7 @@ spotlight-container.no-padding.well {
       }
 
       .spotlight-name {
-        &[class*="spotlight-name-color-"] a {
+        &[class*='spotlight-name-color-'] a {
           @include td-skip;
           text-decoration: underline;
 
@@ -207,6 +215,7 @@ spotlight-container.no-padding.well {
 
         h2 {
           margin: 0 0 20px;
+
           @include breakpoint-max(medium) {
             margin-top: 15px;
           }
@@ -292,9 +301,11 @@ spotlight-container.no-padding.well {
 
   &.views-grid-three .views-row {
     margin-bottom: 80px;
+
     @media (max-width: 1200px) {
       width: 46.1%;
     }
+
     // Chrome doesn't seem to pick up the 450px
     @media (max-width: 580px) {
       width: 96.2%;
@@ -304,6 +315,7 @@ spotlight-container.no-padding.well {
   .spotlight-container {
     .spotlight-img {
       text-align: center;
+
       @media (max-width: 650px) {
         margin-right: 0;
       }
@@ -329,7 +341,7 @@ spotlight-container.no-padding.well {
 
     .spotlight-info-container {
       .spotlight-name {
-        &[class*="spotlight-name-color-"] a {
+        &[class*='spotlight-name-color-'] a {
           @include td-skip;
           text-decoration: underline;
 
@@ -411,21 +423,26 @@ spotlight-container.no-padding.well {
       width: 50%;
       margin: 0 auto;
       padding: 70px 0 0;
+
       @media (max-width: 1900px) {
         width: 65%;
       }
+
       @media (max-width: 1400px) {
         width: 85%;
       }
+
       @include breakpoint-max(large) {
         width: 90%;
       }
+
       @include breakpoint-max(small) {
         display: flex;
         text-align: left;
         width: 90%;
         padding: 50px 0 0;
       }
+
       @media (max-width: 500px) {
         display: block;
         text-align: center;
@@ -440,13 +457,16 @@ spotlight-container.no-padding.well {
     .spotlight-img {
       margin-right: 40px;
       flex-shrink: 0;
+
       @include breakpoint-max(small) {
         margin-right: 0;
         width: 286px;
       }
+
       @include breakpoint-max(smaller) {
         width: 200px;
       }
+
       @media (max-width: 500px) {
         flex-shrink: 0;
         margin: 0 auto;
@@ -457,9 +477,11 @@ spotlight-container.no-padding.well {
         border-radius: 50%;
         border-width: 8px;
         border-style: solid;
+
         @include breakpoint-max(small) {
           max-width: 82%;
         }
+
         @media (max-width: 500px) {
           border-width: 6px;
         }
@@ -480,7 +502,7 @@ spotlight-container.no-padding.well {
 
     .spotlight-info-container {
       .spotlight-name {
-        &[class*="spotlight-name-color-"] a {
+        &[class*='spotlight-name-color-'] a {
           @include td-skip;
           text-decoration: underline;
 
@@ -493,13 +515,16 @@ spotlight-container.no-padding.well {
         h2 {
           font-size: em(48px);
           margin: 0 0 20px;
+
           @include breakpoint-max(small) {
             margin-top: 15px;
             font-size: em(34px);
           }
+
           @include breakpoint-max(smaller) {
             font-size: em(28px);
           }
+
           @include breakpoint-max(x-small) {
             margin-bottom: 4px;
           }
@@ -533,6 +558,7 @@ spotlight-container.no-padding.well {
       .spotlight-title p {
         font-size: em(24px);
         margin: 0;
+
         @include breakpoint-max(small) {
           font-size: em(20px);
         }
@@ -543,13 +569,16 @@ spotlight-container.no-padding.well {
         font-weight: 600;
         line-height: 1.3em;
         margin-top: 20px;
+
         @include breakpoint-max(smaller) {
           font-size: em(24px);
         }
+
         @media (max-width: 500px) {
           width: 80%;
           margin: 20px auto;
         }
+
         @include breakpoint-max(x-small) {
           font-size: em(20px);
         }
@@ -573,21 +602,26 @@ spotlight-container.no-padding.well {
     width: 50%;
     margin: 0 auto;
     padding: 70px 0 0;
+
     @media (max-width: 1900px) {
       width: 100%;
     }
+
     @media (max-width: 1400px) {
       width: 95%;
     }
+
     @include breakpoint-max(large) {
       width: 100%;
     }
+
     @include breakpoint-max(small) {
       display: flex;
       text-align: left;
       width: 100%;
       padding: 50px 0 0;
     }
+
     @media (max-width: 500px) {
       display: block;
       text-align: center;
@@ -663,7 +697,7 @@ spotlight-container.no-padding.well {
   text-align: center;
   margin-top: 30px;
 
-  &[class*="spotlight-img-color-"] a {
+  &[class*='spotlight-img-color-'] a {
     color: $black;
 
     &:focus,
@@ -737,6 +771,7 @@ spotlight-container.no-padding.well {
     display: block;
     width: 30%;
     margin: 0 auto;
+
     @include breakpoint-max(small) {
       width: auto;
     }
