@@ -8,6 +8,7 @@
   background-repeat: repeat-x; // IE9 AND BEFORE
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=  '#{ie-hex-str($start-color)}', endColorstr='#{ie-hex-str($end-color)}', GradientType=1); // IE9 AND BEFORE
 }
+
 // VERTICAL GRADIENT, FROM TOP TO BOTTOM
 @mixin gradient-vertical($start-color: transparent, $end-color: rgba(0, 0, 0, 0.70), $start-percent: 0%, $end-percent: 100%) {
   background: -webkit-linear-gradient(top, $start-color $start-percent, $end-color $end-percent);
