@@ -604,6 +604,30 @@ spotlight-container.no-padding.well {
       .spotlight-all-content-container {
         padding: 20px 0;
         width: 85%;
+
+        @include breakpoint-max(large) {
+          display: block;
+
+          .spotlight-info-container {
+            padding: 30px;
+          }
+
+          .spotlight-img {
+            margin-right: 0;
+          }
+        }
+
+        @include breakpoint-max(smaller) {
+          display: none;
+
+          .spotlight-info-container {
+            padding: 0;
+          }
+
+          .spotlight-img {
+            margin-right: 40px;
+          }
+        }
       }
     }
   }
