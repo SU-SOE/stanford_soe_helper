@@ -457,6 +457,7 @@ spotlight-container.no-padding.well {
     .spotlight-img {
       margin-right: 40px;
       flex-shrink: 0;
+      order: 1;
 
       @include breakpoint-max(small) {
         margin-right: 0;
@@ -501,6 +502,8 @@ spotlight-container.no-padding.well {
     }
 
     .spotlight-info-container {
+      order: 2;
+
       .spotlight-name {
         &[class*='spotlight-name-color-'] a {
           @include td-skip;
@@ -594,6 +597,18 @@ spotlight-container.no-padding.well {
     }
   }
 }
+
+.no-margin {
+  .view-stanford-people-spotlight-fw-banner {
+    .spotlight-container {
+      .spotlight-all-content-container {
+        padding: 20px 0;
+        width: 85%;
+      }
+    }
+  }
+}
+
 // SPOTLIGHT PAGE
 .view-stanford-ppl-spot-3-v-card.views-grid-three .view-display-id-attachment_first_spot {
   .view-content .views-row-1.views-row {
