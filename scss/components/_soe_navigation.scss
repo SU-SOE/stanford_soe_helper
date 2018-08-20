@@ -1,19 +1,18 @@
 @charset "UTF-8";
-
 //
 // NAVIGATION
 //
-
 // PRIMARY NAVIGATION
-
 #main-menu {
   .nav-collapse.collapse {
     float: right;
     margin-top: -45px;
+
     @include breakpoint-max(large) {
       float: left;
       margin-top: 0;
     }
+
     @include breakpoint-max(small) {
       width: 100%;
     }
@@ -36,19 +35,21 @@
       font-weight: 400;
       border-bottom: 2px solid transparent;
       padding-bottom: 30px;
+
       @include breakpoint-max(small) {
         padding-bottom: 0.25em;
-        border-bottom: none;
+        border-bottom: 0;
       }
     }
 
-    > .active > a:hover,
-    > li > a:focus,
-    > li > a:hover,
-    > .active-trail > a {
+    > .active-trail > a,
+     > li > a:focus,
+     > li > a:hover,
+    > .active > a:hover {
       border-bottom: 2px solid $primary-color;
+
       @include breakpoint-max(small) {
-        border-bottom: none;
+        border-bottom: 0;
       }
     }
   }
@@ -59,16 +60,20 @@
       margin-top: -50px;
       float: right;
     }
+
     @include breakpoint-max(x-small) {
       margin-top: -52px;
     }
+
     @include breakpoint-max(xx-small) {
       margin-top: -37px;
     }
+
     @media (max-width: 320px) {
       float: left;
       margin-top: 0;
     }
+
     @media (max-width: 305px) {
       float: left;
       margin-top: 0;
@@ -82,9 +87,10 @@
 
   ul li.last.leaf {
     margin-bottom: 0;
+
     @include breakpoint-max(small) {
       height: auto;
-      border-right: none;
+      border-right: 0;
       padding-right: 0;
     }
   }
@@ -94,9 +100,7 @@
   padding-right: 7px;
   margin-right: 7px;
 }
-
 // SUBNAVIGATION
-
 .sidebar {
   .block-menu {
     background: none;
@@ -115,7 +119,7 @@
       }
 
       > a {
-        border-top: none;
+        border-top: 0;
         padding: 0.5em 0.5em 0.5em 0;
 
         &.active,
@@ -136,12 +140,13 @@
     margin-top: 20px;
 
     .block-menu-block {
-      @include breakpoint-max(small) {
-        width: 100%;
-      }
       background: none;
       margin: 1px 1px 36px;
       padding: 0;
+
+      @include breakpoint-max(small) {
+        width: 100%;
+      }
 
       h2 {
         font-family: $roboto-slab;
@@ -165,11 +170,11 @@
         }
 
         &.last {
-          border-bottom: none;
+          border-bottom: 0;
         }
 
         > a {
-          border-top: none;
+          border-top: 0;
           font-weight: 600;
           padding: 0.5em 0.5em 0.5em 0;
 
@@ -190,7 +195,7 @@
             text-decoration: none;
 
             &:before {
-              content: "> ";
+              content: '> ';
               margin-left: -12.5px;
             }
           }

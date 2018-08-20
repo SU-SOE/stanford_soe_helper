@@ -1,12 +1,11 @@
 @charset "UTF-8";
-
 //
 // FOOTER
 //
 
 #footer {
   &.site-footer {
-    border-top: none;
+    border-top: 0;
     background: $white;
     padding: 80px 0;
 
@@ -15,9 +14,9 @@
     }
   }
 
-  .block a.private-link,
+  .block,
   .block .private-link a,
-  .block {
+  .block a.private-link {
     font-size: rem(18px);
     line-height: 1.3em;
 
@@ -25,9 +24,10 @@
       margin-bottom: 0.5em;
     }
   }
-  & .footer-content .block.span2,
-  & .footer-content .block.span3,
-  & .footer-content .block.span4 {
+
+  .footer-content .block.span2,
+  .footer-content .block.span3,
+  .footer-content .block.span4 {
     @include breakpoint-max(medium) {
       @include breakpoint-min(small) {
         width: 45.6%;
@@ -66,6 +66,7 @@
     @include breakpoint-max(medium) {
       margin-top: 50px;
     }
+
     @include breakpoint-max(small) {
       margin-top: 0;
     }
@@ -75,9 +76,11 @@
     float: right;
     width: 22%;
     margin-bottom: 50px;
+
     @media (max-width: 1199px) {
       width: 24%;
     }
+
     @include breakpoint-max(medium) {
       float: none;
       width: auto;
@@ -93,27 +96,27 @@
       }
 
       .field-name-field-s-smc-facebook a {
-        background-image: url("../img/soe_facebook_icon.png");
+        background-image: url('../img/soe_facebook_icon.png');
         width: 15px;
       }
 
       .field-name-field-s-smc-twitter a {
-        background-image: url("../img/soe_twitter_icon.png");
+        background-image: url('../img/soe_twitter_icon.png');
         width: 35px;
       }
 
       .field-name-field-s-smc-linkedin a {
-        background-image: url("../img/soe_linkedin_icon.png");
+        background-image: url('../img/soe_linkedin_icon.png');
         width: 30px;
       }
 
       .field-name-field-s-smc-youtube a {
-        background-image: url("../img/soe_youtube_icon.png");
+        background-image: url('../img/soe_youtube_icon.png');
         width: 40px;
       }
 
       .field-name-field-s-smc-instagram a {
-        background-image: url("../img/soe_instagram_icon.png");
+        background-image: url('../img/soe_instagram_icon.png');
         width: 30px;
         margin-right: 0;
       }
@@ -121,12 +124,12 @@
   }
 
   #mc_embed_signup_scroll {
-    input.button {
-      width: 70px;
-    }
-
     @include breakpoint-max(medium) {
       margin-top: 20px;
+    }
+
+    input.button {
+      width: 70px;
     }
   }
 }

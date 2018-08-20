@@ -1,15 +1,14 @@
 @charset "UTF-8";
-
 //
 // DIGITAL MAGAZINE BRAND BAR AND HEADER
 //
 
 .node-type-stanford-collection,
+.node-type-stanford-magazine-article,
 .node-type-stanford-magazine-issue,
-.page-taxonomy-term,
 .page-magazine,
 .page-magazine-all,
-.node-type-stanford-magazine-article {
+.page-taxonomy-term {
   a {
     font-weight: 400;
   }
@@ -50,10 +49,12 @@
           font-size: 28px;
           margin-bottom: -5px;
         }
+
         @include breakpoint-max(xx-small) {
           font-size: 18px;
           margin-bottom: -3px;
         }
+
         @include breakpoint-max(xxx-small) {
           font-size: 16px;
           margin-bottom: -4px;

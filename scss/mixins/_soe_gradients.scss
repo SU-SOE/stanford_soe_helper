@@ -1,7 +1,5 @@
 @charset "UTF-8";
-
 // HORIZONTAL GRADIENT, FROM LEFT TO RIGHT
-
 @mixin gradient-horizontal($start-color: transparent, $end-color: rgba(0, 0, 0, 0.70), $start-percent: 0%, $end-percent: 100%) {
   background: -webkit-linear-gradient(left, $start-color $start-percent, $end-color $end-percent);
   background: -moz-linear-gradient(left, $start-color $start-percent, $end-color $end-percent);
@@ -12,7 +10,6 @@
 }
 
 // VERTICAL GRADIENT, FROM TOP TO BOTTOM
-
 @mixin gradient-vertical($start-color: transparent, $end-color: rgba(0, 0, 0, 0.70), $start-percent: 0%, $end-percent: 100%) {
   background: -webkit-linear-gradient(top, $start-color $start-percent, $end-color $end-percent);
   background: -moz-linear-gradient(top, $start-color $start-percent, $end-color $end-percent);

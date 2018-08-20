@@ -1,14 +1,11 @@
 @charset "UTF-8";
-
 // TEXT DECORATION SKIP
-
 @mixin td-skip($skip: ink) {
   -webkit-text-decoration-skip: $skip;
   text-decoration-skip: $skip;
 }
 
 // TEXT DECORATION COLOR
-
 @mixin td-color($color) {
   -webkit-text-decoration-color: $color;
   text-decoration-color: $color;

@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 //
 // DIGITAL MAGAZINE SEARCH
 //
@@ -29,9 +28,11 @@
 
   .block-stanford-search-api {
     position: relative;
+
     @include breakpoint-max(medium) {
       display: flex;
     }
+
     @include breakpoint-max(small) {
       display: block;
       width: auto;
@@ -48,16 +49,17 @@
       }
     }
 
-    input[type="text"] {
+    input[type='text'] {
       font-family: $primary-font;
       font-size: em(22px, 22px);
       font-weight: 600;
       color: $primary-color;
       background-color: transparent;
-      border: none;
+      border: 0;
       box-shadow: none;
       padding: 8px 0 0 40px;
-      background: url("../img/soe_mag_glass_black.svg") no-repeat 6% 70%;
+      background: url('../img/soe_mag_glass_black.svg') no-repeat 6% 70%;
+
       @include breakpoint-max(small) {
         padding-top: 0;
 
@@ -73,9 +75,11 @@
 
     .input-medium {
       width: 175px;
+
       @include breakpoint-max(medium) {
         width: 115px;
       }
+
       @include breakpoint-max(small) {
         width: 0;
 

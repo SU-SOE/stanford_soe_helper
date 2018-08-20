@@ -1,13 +1,11 @@
 @charset "UTF-8";
-
 //
 // BEANS
 //
-
 // CALL TO ACTION BEANS
-
 .bean-stanford-call-to-action {
   #content-body-bottom & {
+
     @include breakpoint-min(small) {
       margin-bottom: 100px;
     }
@@ -26,10 +24,18 @@
   }
 
   .group-s-cta-title-style {
+    padding: 18px 0 22px;
+
     @include breakpoint-max(x-small) {
       padding: 12px 0 14px;
     }
-    padding: 18px 0 22px;
+
+    h2 {
+      color: $black;
+      font-size: em(22px);
+      font-family: $primary-font;
+      font-weight: 400;
+    }
 
     .turquoise & {
       background: $turquoise;
@@ -42,22 +48,17 @@
     .pink & {
       background: $pink;
     }
-
-    h2 {
-      color: $black;
-      font-size: em(22px);
-      font-family: $primary-font;
-      font-weight: 400;
-    }
   }
 }
 
 .content-body [id*="block-bean-sitewide-facebook-cta-block"].block[class*="span"],
 .content-body [id*="block-bean-sitewide-instagram-cta-block"].block[class*="span"],
 .content-body [id*="block-bean-sitewide-twitter-cta-block"].block[class*="span"] {
+
   @include breakpoint-min(large) {
     width: 20%;
   }
+
   @include breakpoint-max(small) {
     width: 50%;
     margin: 0 25% 20px;
@@ -69,43 +70,127 @@
 }
 
 [id*="block-bean-sitewide-instagram-cta-block"].block[class*="span"] {
+
   @include breakpoint-min(large) {
     margin-left: 17.25%;
   }
 }
 
 [id*="block-bean-sitewide-twitter-cta-block"].block[class*="span"] {
+
   @include breakpoint-min(large) {
     margin-right: 17.25%;
   }
 }
-
 // POSTCARD & POSTCARD LINKED BEANS
+#content-body .content .field-name-field-s-postcard-body a.btn {
+  width: auto;
 
-.bean-stanford-postcard.view-mode-stanford_soe_default,
-.bean-stanford-postcard-linked {
+  @include breakpoint-max(medium) {
+    width: 30%;
+  }
+}
+// POSTCARD SINGLE CENTERED BUTTON BEANS
+.row-fluid .block-bean {
+  &.span12,
+  &.span4,
+  &.span6 {
+
+    @include breakpoint-max(small) {
+      margin-left: 0;
+    }
+
+    &.no-padding.well {
+      padding: 0;
+
+      h2 {
+        margin-top: 1.1em;
+      }
+
+      .field-name-field-s-image-image img {
+        width: 100%;
+      }
+
+      .postcard-content {
+        padding: 2em;
+      }
+    }
+
+    &.no-top-padding.well {
+      padding-top: 0;
+
+      h2 {
+        margin-top: 1.1em;
+      }
+
+      .field-name-field-s-image-image img {
+        width: 100%;
+      }
+
+      .postcard-content {
+        padding: 2em;
+      }
+    }
+  }
+
+  &.span12 {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: auto;
+
+    @include breakpoint-max(small) {
+      margin-left: 0;
+    }
+  }
+
+  &.no-margin {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  &.center-title.well .group-s-postcard-content .group-s-title-container {
+    text-align: center;
+  }
+
+  &.well {
+    padding: 2em;
+
+    .bean-stanford-postcard .field-name-field-s-postcard-body h2:last-child,
+    .bean-stanford-postcard .field-name-field-s-postcard-body h3:last-child,
+    .bean-stanford-postcard .field-name-field-s-postcard-body p:last-child {
+      margin-bottom: 0;
+    }
+
+    .bean-stanford-postcard a.btn {
+      font-size: inherit;
+    }
+  }
+}
+
+.bean-stanford-postcard-linked,
+.bean-stanford-postcard.view-mode-single_centered_button {
   .postcard,
   .postcard-linked-container {
     display: flex;
-    background: $white;
     padding: 40px;
-    @include box-shadow;
-    @include breakpoint-max(small) {
+
+    @include breakpoint-max(medium) {
       display: block;
       padding: 0;
     }
 
     a.postcard-linked-img-container {
       flex-shrink: 0;
+      margin-right: 30px;
 
-      /*** SPAN 12 BEAN RESPONSIVE ***/
       @include breakpoint-max(medium) {
-          flex-shrink: .9;
+        margin-right: 0;
       }
 
-      margin-right: 30px;
-      @include breakpoint-max(small) {
-        margin-right: 0;
+      // SPAN 12 BEAN RESPONSIVE
+      @include breakpoint-max(medium) {
+        flex-shrink: 0.9;
       }
 
       &:hover img {
@@ -121,7 +206,8 @@
 
           img {
             @include transition;
-            @include breakpoint-max(small) {
+
+            @include breakpoint-max(medium) {
               width: 100%;
             }
           }
@@ -139,9 +225,11 @@
             height: auto;
             vertical-align: -9px;
             padding: 3px 8px;
-            @include breakpoint-max(small) {
+
+            @include breakpoint-max(medium) {
               vertical-align: -12px;
             }
+
             @include breakpoint-max(x-small) {
               vertical-align: -14px;
             }
@@ -153,13 +241,14 @@
     .postcard-content,
     .postcard-linked-content-container {
       width: 100%;
-      @include breakpoint-max(small) {
+
+      @include breakpoint-max(medium) {
         width: auto;
         padding: 30px;
       }
 
-      .field-name-field-s-postcard-body,
-      .field-name-field-s-post-link-body {
+      .field-name-field-s-post-link-body,
+      .field-name-field-s-postcard-body {
         font-size: em(18px);
         line-height: 1.3em;
 
@@ -172,16 +261,21 @@
       .postcard-linked-title {
         margin-bottom: 1em;
 
+        @include breakpoint-max(small) {
+          margin-bottom: 0;
+        }
+
         a {
+          @include td-skip;
+          @include td-color($turquoise);
           color: $primary-color;
           font-family: $roboto-slab;
           font-size: em(28px);
           font-weight: 600;
           letter-spacing: 0.02em;
-          @include td-skip;
           text-decoration: underline;
-          @include td-color($turquoise);
-          @include breakpoint-max(small) {
+
+          @include breakpoint-max(medium) {
             margin-top: 20px;
           }
 
@@ -191,11 +285,10 @@
           }
         }
       }
-
-      /*** STANDARDIZE PADDING INSIDE POSTCARD LINKED BLOCK ***/
+      // STANDARDIZE PADDING INSIDE POSTCARD LINKED BLOCK
       .postcard-body p:last-child,
-      .postcard-linked-body p:last-child{
-        margin-bottom: .8em;
+      .postcard-linked-body p:last-child {
+        margin-bottom: 0.8em;
       }
 
       .postcard-body,
@@ -207,6 +300,7 @@
     a.btn {
       text-decoration: none;
       margin-bottom: 0;
+      font-size: inherit;
     }
   }
 
@@ -253,33 +347,165 @@
       }
     }
   }
+
   .span12 & {
-    margin: 0 10%;
 
     @include breakpoint-max(medium) {
-      margin: 0;
-    }
-    @include breakpoint-max(small) {
       margin: 0 10%;
     }
+
     @include breakpoint-max(smaller) {
       margin: 0;
     }
   }
 }
 
+.block-bean {
+  &.span12 {
+    .bean-stanford-postcard {
+
+      @include breakpoint-max(medium) {
+        margin: 0;
+      }
+
+      @include breakpoint-max(small) {
+        margin: 0;
+      }
+
+      @include breakpoint-max(smaller) {
+        margin: 0;
+      }
+    }
+  }
+
+  &.span4 {
+
+    @include breakpoint-max(medium) {
+      margin-left: 0;
+    }
+
+    .bean-stanford-postcard-linked .postcard-linked-container .postcard-linked-content-container {
+      padding: 20px;
+    }
+
+    .bean-stanford-postcard-linked .postcard-linked-title {
+      margin-bottom: 0;
+
+      a {
+        font-size: em(24px);
+      }
+    }
+  }
+
+  &.block {
+
+    @include breakpoint-max(smaller) {
+      margin-bottom: 30px;
+    }
+
+    &.span4 {
+
+      @include breakpoint-max(medium) {
+        width: 100%;
+      }
+    }
+
+    &.span12,
+    &.span6 {
+
+      @include breakpoint-max(small) {
+        width: 100%;
+      }
+    }
+  }
+
+  .bean-stanford-postcard {
+    .group-s-postcard {
+      display: block;
+      padding: 0;
+
+      .postcard-content {
+        width: auto;
+        padding: 0;
+      }
+
+      .postcard-image img {
+        width: 100%;
+      }
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-top: 10px;
+
+      @include breakpoint-max(medium-sm) {
+        font-size: 22px;
+        line-height: 1.2em;
+      }
+
+      a {
+        text-decoration-color: $turquoise;
+
+        &:hover {
+          text-decoration-color: $primary-color;
+        }
+      }
+    }
+
+    h3 {
+      font-family: $primary-font;
+      margin-top: 1em 0 0.3em;
+
+      a {
+        text-decoration-color: $turquoise;
+
+        &:hover {
+          text-decoration-color: $primary-color;
+        }
+      }
+    }
+
+    .field-name-field-s-postcard-body h2:first-child {
+      margin-top: 0;
+    }
+
+    .field-name-title h2 {
+      font-size: 28px;
+    }
+  }
+}
+
+.bean-stanford-postcard.view-mode-single_centered_button {
+  a.btn {
+    margin-bottom: 0;
+  }
+
+  p {
+    margin: 0;
+    text-align: center;
+  }
+
+  .field-name-field-s-postcard-body {
+    margin-bottom: 0;
+
+    a.btn {
+      margin-bottom: 0;
+    }
+  }
+
+  .bean-stanford-postcard .field-name-field-s-postcard-body h2:last-child,
+  .bean-stanford-postcard .field-name-field-s-postcard-body h3:last-child,
+  .bean-stanford-postcard .field-name-field-s-postcard-body p:last-child {
+    margin-bottom: 0;
+  }
+}
 // TESTIMONIAL BEANS
-.bean-stanford-testimonial-block {
-  .postcard  {
-    background: $white;
+.testimonial {
+  .postcard {
     padding: 0 56px 40px;
-    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
 
     @include breakpoint-max(small) {
       display: block;
-      padding: 0 44px 40px;
     }
   }
 
@@ -347,22 +573,6 @@
 }
 
 .span12 {
-  .bean-stanford-testimonial-block {
-    margin: 0 10%;
-
-    @include breakpoint-max(medium) {
-      margin: 0;
-    }
-
-    @include breakpoint-max(small) {
-      margin: 0 10%;
-    }
-
-    @include breakpoint-max(smaller) {
-      margin: 0;
-    }
-  }
-
   .bean-stanford-postcard-linked {
     margin: 0;
   }
@@ -418,12 +628,13 @@ p.superhead {
   color: $primary-color;
   font-family: $primary-font;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.2em;
-  margin-bottom: .6em;
+  margin-bottom: 0.6em;
 }
 
-.infotext {
+.infotext,
+.well .infotext {
   font-size: 56px;
   font-family: $roboto-slab;
   color: $primary-color;
@@ -434,5 +645,5 @@ p.superhead {
 }
 
 p.infotext {
-    margin: 0;
+  margin: 0;
 }

@@ -1,13 +1,10 @@
 @charset "UTF-8";
-
 //
 // PRINT
 // THIS STYLESHEET IS POINTED TO BY THE DRUPAL SUBMODULE BEING USED FOR DOM PDF
 // THIS FILE IS NOT INCLUDED IN THE SOE_COMPONENTS ROLL UP FILE. IT IS INCLUDED IN THE SOE_HELPER_PRINT SCSS FILE
 //
-
 // DM MAGAZINE ARTICLES
-
 .print-breadcrumb,
 .print-content .node-stanford-magazine-article .field-name-field-s-mag-article-accent-color,
 .print-content .node-stanford-magazine-article .field-name-field-s-mag-article-dept,
@@ -85,7 +82,7 @@
 
         .field-item {
           a:after {
-            content: ", \00a0";
+            content: ', \00a0';
             color: #333333;
           }
 
@@ -116,7 +113,7 @@
       margin-left: 0;
 
       .field-item:after {
-        content: "\00a0 | \00a0";
+        content: '\00a0 | \00a0';
       }
     }
 

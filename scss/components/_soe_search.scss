@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 //
 // SEARCH
 //
@@ -12,16 +11,16 @@
       display: none;
     }
 
-    input[type="text"] {
+    input[type='text'] {
+      @include transition (width);
       font-family: $primary-font;
       font-size: 16px;
       color: $white;
       background-color: transparent;
-      border: none;
+      border: 0;
       box-shadow: none;
       padding: 5px 0 0 30px;
-      background: url("../img/soe_mag_glass_white.svg") no-repeat 5% center;
-      @include transition (width);
+      background: url('../img/soe_mag_glass_white.svg') no-repeat 5% center;
 
       .not-logged-in & {
         margin-right: -15px;
@@ -38,6 +37,7 @@
 
       &:focus {
         width: 175px;
+
         @include breakpoint-max(x-small) {
           width: 170px;
         }
@@ -64,14 +64,14 @@
 
 .search-views-left {
   h2 a {
-    text-decoration: underline;
     @include td-color($turquoise);
+    text-decoration: underline;
   }
 
   &:hover,
   &focus {
+    @include td-color($gray-orange);
     color: $gray-orange;
     text-decoration: underline;
-    @include td-color($gray-orange);
   }
 }

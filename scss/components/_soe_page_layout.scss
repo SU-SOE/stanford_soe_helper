@@ -1,19 +1,17 @@
 @charset "UTF-8";
-
 //
 // PAGE LAYOUT
 //
-
 // LANDING PAGE
-
 .node-type-stanford-landing-page {
   .header-370x170 {
     .postcard-linked-container {
+      @include box-shadow;
       display: flex;
       background: $white;
       padding: 30px;
       margin-bottom: 40px;
-      @include box-shadow;
+
       @include breakpoint-max(small) {
         display: block;
       }
@@ -21,6 +19,7 @@
       a.postcard-linked-img-container {
         flex-shrink: 0;
         margin-right: 30px;
+
         @include breakpoint-max(small) {
           margin-right: 0;
         }
@@ -55,9 +54,11 @@
               height: auto;
               vertical-align: -9px;
               padding: 3px 8px;
+
               @include breakpoint-max(small) {
                 vertical-align: -12px;
               }
+
               @include breakpoint-max(x-small) {
                 vertical-align: -14px;
               }
@@ -70,14 +71,15 @@
         width: 100%;
 
         a.postcard-linked-title {
+          @include td-skip;
+          @include td-color($turquoise);
           color: $primary-color;
           font-family: $roboto-slab;
           font-size: em(28px);
           font-weight: 600;
           letter-spacing: 0.02em;
-          @include td-skip;
           text-decoration: underline;
-          @include td-color($turquoise);
+
           @include breakpoint-max(small) {
             margin-top: 20px;
           }
@@ -107,10 +109,12 @@
     @include breakpoint-max(large) {
       width: 46.333%;
     }
+
     @include breakpoint-max(medium) {
       width: 48%;
       margin-right: 1.5%;
     }
+
     @media (max-width: 525px) {
       width: 100%;
       max-width: 100%;
@@ -130,6 +134,7 @@
         margin-right: 0;
       }
     }
+
     @media (max-width: 550px) {
       width: 100%;
       margin-right: 0;
@@ -149,9 +154,7 @@
     border-top: 1px solid $gray;
   }
 }
-
 // VIEWS GRID
-
 .views-grid-two .views-row {
   @include breakpoint-min(small) {
     width: 46%;
@@ -163,19 +166,19 @@
   h3 {
     font-family: $primary-font;
     font-size: 20px;
-    margin: .3em 0 0;
+    margin: 0.3em 0 0;
+
     a {
       text-decoration: none;
     }
   }
+
   div.field-content {
     line-height: 1.3em;
     font-size: 18px;
   }
 }
-
 // SPANS
-
 .row-fluid .span6 {
   @include breakpoint-min(large) {
     width: 46.5%;
@@ -188,11 +191,10 @@
     }
   }
 }
-
 // MISCELLANEOUS
-
 .node .group_s_postcard_image .field-collection-container > .field > .field-items > .field-item {
   margin-left: 2em;
+
   @media (max-width: 400px) {
     margin-left: 0;
   }
