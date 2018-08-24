@@ -836,6 +836,7 @@
           @include td-skip;
           color: $primary-color;
           font-weight: 600;
+          margin-left: 10px;
           text-decoration: underline;
 
           &:focus,
@@ -871,17 +872,22 @@
         &[class*="mag-issue-color-"] {
           padding: 0 9px;
           font-size: em(18px);
+
+          a {
+            margin-left: 5px;
+            padding: 4px 9px;
+          }
         }
 
-        &.mag-issue-color-orange {
+        &.mag-issue-color-orange a {
           background: $orange;
         }
 
-        &.mag-issue-color-turquoise {
+        &.mag-issue-color-turquoise a {
           background: $turquoise;
         }
 
-        &.mag-issue-color-pink {
+        &.mag-issue-color-pink a {
           background: $pink;
         }
 
