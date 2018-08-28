@@ -54,7 +54,7 @@ user/*/edit";
       ),
     );
   }
-  // Programmatically adding views title to main_top region
+  // Programmatically adding views title to main_top region.
   $views_page = views_get_page_view();
   if (is_object($views_page)) {
     $test = _stanford_soe_helper_view_title($views_page->name, $views_page->current_display);
@@ -82,17 +82,16 @@ user/*/edit";
 }
 
 /**
- * Implements hook_preprocess_field()
+ * Implements hook_preprocess_field().
  */
-
 function stanford_soe_helper_preprocess_field(&$vars) {
-  // On the magazine article page we need to set the color for the link back to the collection if it exists.
-
+  // On the magazine article page we need to set the color
+  // for the link back to the collection if it exists.
   switch ($vars['element']['#field_name']) {
     case 'field_s_mag_article_collection':
       $term_accent_color = taxonomy_term_load($vars['element']['#object']->field_s_mag_article_collection['und'][0]['entity']->field_s_col_article_accent_color['und'][0]['tid']);
       $accent_color = $term_accent_color->name;
-      $vars['items'][0]['#markup'] = str_replace('<a ', '<a class="'. $accent_color . '" ', $vars['items'][0]['#markup']);
+      $vars['items'][0]['#markup'] = str_replace('<a ', '<a class="' . $accent_color . '" ', $vars['items'][0]['#markup']);
       break;
   }
 }
@@ -105,7 +104,8 @@ function stanford_soe_helper_page_build(&$page) {
   if (isset($page['content']['system_main']['nodes'])) {
     foreach ($page['content']['system_main']['nodes'] as $node) {
       if (!empty($node['body']['#object']->field_s_mag_article_collection)) {
-        // If we are on an Article that is part of a collection, hide the related article block and the issues block.
+        // If we are on an Article that is part of a collection,
+        // hide the related article block and the issues block.
         if (isset($page['content_bottom']['views_a06b957e34c741c20a352da1b7ce0e12'])) {
           unset($page['content_bottom']['views_a06b957e34c741c20a352da1b7ce0e12']);
         }
@@ -339,10 +339,14 @@ function stanford_soe_helper_views_post_execute(&$view) {
 }
 
 /**
- * Custom callback to test whether view title should be placed in main_top and removed from view.
+ * Callback to test view title should be placed in main_top and removed.
  */
 function _stanford_soe_helper_view_title($viewname, $displayname) {
-  $views = array('stanford_events_views', 'soe_school_news_with_teaser', 'stanford_person_grid', 'soe_opportunity_grid');
+  $views = array('stanford_events_views',
+    'soe_school_news_with_teaser',
+    'stanford_person_grid',
+    'soe_opportunity_grid',
+  );
   $displays = array('page', 'page_1', 'grouped_page', 'gep_page');
   $viewtest = in_array($viewname, $views);
   $displaytest = in_array($displayname, $displays);
@@ -350,7 +354,7 @@ function _stanford_soe_helper_view_title($viewname, $displayname) {
     return TRUE;
   }
   else {
-    return FAlSE;
+    return FALSE;
   }
 }
 
