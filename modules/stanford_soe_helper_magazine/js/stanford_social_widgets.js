@@ -3,7 +3,9 @@
     attach: function (context, settings) {
       $( window ).load(function() {
 
-        soeEnv = Drupal.settings.stanford_soe_helper_magazine.servername;
+        var soeSocialPathToImages = '/sites/default/files';
+
+        var soeEnv = Drupal.settings.stanford_soe_helper_magazine.servername;
 
         $('.group-s-social-and-print.field-group-div').prepend('<div class="widget-wrapper-linkedin"><a href="" class="share-linkedin"><img src="'+ location.protocol + '//' + location.host + soeEnv + soeSocialPathToImages + '/soe_linkedin_icon_blue.svg" alt="linkedin share"></a></div>');
         $('.group-s-social-and-print.field-group-div').prepend('<div class="widget-wrapper-twitter"><a href="" class="share-twitter"><img src="'+ location.protocol + '//' + location.host + soeEnv + soeSocialPathToImages + '/soe_twitter_icon_blue.svg" alt="twitter share"></a></div>');
