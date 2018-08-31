@@ -401,6 +401,8 @@ function stanford_soe_helper_magazine_preprocess_page(&$variables) {
     foreach ($html_head as $key => $data) {
       drupal_add_html_head($data, $key);
     }
+    $stanford_soe_helper_magazine_js = ['stanford_soe_helper_magazine' => ['servername' => $_SERVER['SERVER_NAME']]];
+    drupal_add_js($stanford_soe_helper_magazine_js, 'setting');
     drupal_add_js('https://platform.twitter.com/widgets.js');
     drupal_add_js(drupal_get_path('module', 'stanford_soe_helper_magazine') . '/js/stanford_social_widgets.js');
   }
