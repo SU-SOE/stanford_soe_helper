@@ -4,13 +4,11 @@
       $( window ).load(function() {
 
         var soeSocialPathToImages = '/sites/default/files';
-
         var pathArray = window.location.pathname.split('/');
-
         var soeEnv = '';
-
         var path = pathArray[1];
 
+        //If the first part of the path isn't magazine, then it's on a sites 1.0 dev env.
         if (path.indexOf('magazine') === -1) {
           soeEnv = pathArray[1];
         }
