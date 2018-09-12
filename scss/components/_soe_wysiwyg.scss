@@ -3,6 +3,35 @@
 // WYSIWYG
 //
 
+
+
+.image-caption-right,
+.image-caption-left {
+  margin: 0px;
+  padding: 0px;
+  border: 0;
+  float: none;
+  width: 100%;
+  color: #606060;
+  font-size: 16px;
+  line-height: 1.3em;
+  font-weight: 300;
+}
+
+.image-caption-right {
+  float: right;
+  width: 10em;
+  padding: 0em 0em 0em 1.5em;
+  margin: 1em 0em 1em 1.5em;
+}
+
+.image-caption-left {
+  float: left;
+  width: 10em;
+  padding: 0em 1.5em 0em 0em;
+  margin: 1em 1.5em 0em 0em;
+}
+
 .summary {
   font-family: $roboto-slab;
   font-size: em(32px);
@@ -146,6 +175,18 @@ p.columns {
       padding: 0 50px;
     }
   }
+}
+
+p.float-left,
+p.float-right {
+  float: none;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+
+p.float-right,
+  .image-caption-right {
 }
 
 p.related-link {
