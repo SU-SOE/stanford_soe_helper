@@ -2,13 +2,17 @@
   Drupal.behaviors.stanfordSoeHelperMagazine = {
     attach: function (context, settings) {
       $( window ).load(function() {
+
         var soeSocialPathToImages = '/sites/default/files';
-        var soePath = location.pathname;
+        var pathArray = window.location.pathname.split('/');
         var soeEnv = '';
-        if (soePath.indexOf("jse-soe") !== -1) {
-          var parts = soePath.split("/");
-          soeEnv = "/" + parts[1];
+        var path = pathArray[1];
+
+        //If the first part of the path isn't magazine, then it's on a sites 1.0 dev env.
+        if (path.indexOf('magazine') === -1) {
+          soeEnv = "/" + pathArray[1];
         }
+
 
         $('.group-s-social-and-print.field-group-div').prepend('<div class="widget-wrapper-linkedin"><a href="" class="share-linkedin"><img src="'+ location.protocol + '//' + location.host + soeEnv + soeSocialPathToImages + '/soe_linkedin_icon_blue.svg" alt="linkedin share"></a></div>');
         $('.group-s-social-and-print.field-group-div').prepend('<div class="widget-wrapper-twitter"><a href="" class="share-twitter"><img src="'+ location.protocol + '//' + location.host + soeEnv + soeSocialPathToImages + '/soe_twitter_icon_blue.svg" alt="twitter share"></a></div>');
