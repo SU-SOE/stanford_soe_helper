@@ -10,7 +10,7 @@
 
         //If the first part of the path isn't magazine, then it's on a sites 1.0 dev env.
         if (path.indexOf('magazine') === -1) {
-          soeEnv = pathArray[1];
+          soeEnv = "/" + pathArray[1];
         }
 
 
