@@ -2546,6 +2546,78 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
 .bean-stanford-postcard.view-mode-single_centered_button .bean-stanford-postcard .field-name-field-s-postcard-body p:last-child {
   margin-bottom: 0; }
 
+.testimonial.span12 .quote {
+  font-size: 1.2em; }
+
+.testimonial.span6 .quote {
+  font-size: 1.1em; }
+
+.testimonial.block-bean.span6.no-padding.well, .testimonial.block-bean.span4.no-padding.well, .testimonial.block-bean.span3.no-padding.well {
+  padding: 0 46px 40px; }
+  @media (max-width: 979px) {
+    .testimonial.block-bean.span6.no-padding.well, .testimonial.block-bean.span4.no-padding.well, .testimonial.block-bean.span3.no-padding.well {
+      padding: 0 46px 40px; } }
+  @media (max-width: 767px) {
+    .testimonial.block-bean.span6.no-padding.well, .testimonial.block-bean.span4.no-padding.well, .testimonial.block-bean.span3.no-padding.well {
+      width: 100%; }
+      .testimonial.block-bean.span6.no-padding.well .group-s-circle-image-style, .testimonial.block-bean.span4.no-padding.well .group-s-circle-image-style, .testimonial.block-bean.span3.no-padding.well .group-s-circle-image-style {
+        width: auto;
+        float: right;
+        padding: 0 0 40px 40px;
+        text-align: center; } }
+  @media (max-width: 480px) {
+    .testimonial.block-bean.span6.no-padding.well .group-s-circle-image-style, .testimonial.block-bean.span4.no-padding.well .group-s-circle-image-style, .testimonial.block-bean.span3.no-padding.well .group-s-circle-image-style {
+      width: 100%;
+      float: right;
+      padding: 20px 0 0;
+      text-align: center; } }
+  .testimonial.block-bean.span6.no-padding.well .field-name-field-s-image-image, .testimonial.block-bean.span4.no-padding.well .field-name-field-s-image-image, .testimonial.block-bean.span3.no-padding.well .field-name-field-s-image-image {
+    padding: 20px 0 0;
+    text-align: center; }
+    @media (max-width: 480px) {
+      .testimonial.block-bean.span6.no-padding.well .field-name-field-s-image-image, .testimonial.block-bean.span4.no-padding.well .field-name-field-s-image-image, .testimonial.block-bean.span3.no-padding.well .field-name-field-s-image-image {
+        padding: 0; } }
+    .testimonial.block-bean.span6.no-padding.well .field-name-field-s-image-image img, .testimonial.block-bean.span4.no-padding.well .field-name-field-s-image-image img, .testimonial.block-bean.span3.no-padding.well .field-name-field-s-image-image img {
+      width: 100px; }
+
+@media (max-width: 480px) {
+  .testimonial.block-bean.span12.no-padding.well {
+    padding: 0 46px 40px; } }
+
+.testimonial.block-bean.span12.no-padding.well .field-name-field-s-image-image img {
+  width: 100px; }
+
+.testimonial.block-bean.span12.no-padding.well .group-s-circle-image-style {
+  float: right;
+  width: auto;
+  padding: 40px 0 40px 20px; }
+  @media (max-width: 979px) {
+    .testimonial.block-bean.span12.no-padding.well .group-s-circle-image-style {
+      width: 100%;
+      float: left;
+      padding: 20px 0 0;
+      text-align: center; }
+      .testimonial.block-bean.span12.no-padding.well .group-s-circle-image-style img {
+        margin: 20px 0 0; } }
+  @media (max-width: 767px) {
+    .testimonial.block-bean.span12.no-padding.well .group-s-circle-image-style {
+      width: auto;
+      float: right;
+      padding: 40px 0 40px 40px;
+      text-align: center; }
+      .testimonial.block-bean.span12.no-padding.well .group-s-circle-image-style img {
+        margin: 10px 0 0; } }
+  @media (max-width: 480px) {
+    .testimonial.block-bean.span12.no-padding.well .group-s-circle-image-style {
+      width: 100%;
+      float: left;
+      padding: 20px 0 0;
+      text-align: center; } }
+
+.testimonial .bean-stanford-testimonial-block .more-link,
+.testimonial .bean-stanford-testimonial-block a.more-link {
+  margin: 1em 0 .5em; }
+
 .testimonial .postcard {
   padding: 0 56px 40px; }
   @media (max-width: 767px) {
@@ -2555,21 +2627,30 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
 .testimonial .field-name-field-s-testimonial-superhead {
   border-top: #00ece9 6px solid;
   display: inline-block;
+  font-size: 18px;
   font-weight: 600;
   font-family: "Roboto Slab", serif;
+  line-height: 1.2em;
   margin-bottom: 20px;
   padding-top: 12px; }
+  @media (max-width: 979px) {
+    .testimonial .field-name-field-s-testimonial-superhead {
+      font-size: 16px; } }
   .testimonial .field-name-field-s-testimonial-superhead.field {
     margin-bottom: 2em; }
     @media (max-width: 580px) {
       .testimonial .field-name-field-s-testimonial-superhead.field {
         margin-bottom: 1em; } }
 
+.testimonial .field-name-field-s-image-image img {
+  width: 100px;
+  margin: 0; }
+
 .testimonial .field-name-field-s-testimonial-quote {
   font-family: "Roboto Slab", serif; }
   @media (max-width: 979px) {
     .testimonial .field-name-field-s-testimonial-quote {
-      font-size: 22px;
+      font-size: 18px;
       line-height: 1.5em; } }
   @media (max-width: 580px) {
     .testimonial .field-name-field-s-testimonial-quote {
@@ -2578,7 +2659,7 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
 .testimonial .field-name-field-s-testimonial-credits {
   font-size: 18px;
   letter-spacing: 0;
-  margin-top: 15px; }
+  margin-top: 0; }
   @media (max-width: 580px) {
     .testimonial .field-name-field-s-testimonial-credits {
       font-size: 16px; } }
