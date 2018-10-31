@@ -8,6 +8,10 @@
   h1 {
     width: 85%;
     margin: 0 auto;
+
+    @include breakpoint-max(x-small) {
+      font-size: em(22px);
+    }
   }
 
   .field-name-field-s-mag-article-topics {
@@ -35,6 +39,8 @@
     }
 
     @include breakpoint-max(x-small) {
+      font-size: em(17px);
+      margin-top: 22px;
       width: 100%;
     }
   }
@@ -1087,7 +1093,7 @@
     }
 
     @include breakpoint-max(x-small) {
-      width: 100%;
+      width: auto;
     }
 
     a {
@@ -1119,6 +1125,7 @@
 
   @include breakpoint-max(x-small) {
     width: 100%;
+    margin-bottom: 0;
   }
 
   h2 {
