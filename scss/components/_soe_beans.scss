@@ -501,6 +501,109 @@
 }
 // TESTIMONIAL BEANS
 .testimonial {
+  &.span12 .quote {
+    font-size: 1.2em;
+  }
+
+  &.span6 .quote {
+    font-size: 1.1em;
+  }
+
+  &.block-bean.span6.no-padding.well,
+  &.block-bean.span4.no-padding.well,
+  &.block-bean.span3.no-padding.well {
+    padding: 0 46px 40px;
+
+    @include breakpoint-max(medium) {
+      padding: 0 46px 40px;
+    }
+
+    @include breakpoint-max(small) {
+      width: 100%;
+
+      .group-s-circle-image-style {
+        width: auto;
+        float: right;
+        padding: 0 0 40px 40px;
+        text-align: center;
+      }
+    }
+
+    @include breakpoint-max(x-small) {
+      .group-s-circle-image-style {
+        width: 100%;
+        float: right;
+        padding: 20px 0 0;
+        text-align: center;
+      }
+    }
+
+    .field-name-field-s-image-image {
+      padding: 20px 0 0;
+      text-align: center;
+
+      @include breakpoint-max(x-small) {
+        padding: 0;
+      }
+
+      img {
+        width: 100px;
+      }
+    }
+  }
+
+  &.block-bean.span12.no-padding.well {
+    @include breakpoint-max(x-small) {
+      padding: 0 46px 40px;
+    }
+
+    .field-name-field-s-image-image {
+      img {
+        width: 100px;
+      }
+    }
+
+    .group-s-circle-image-style {
+      float: right;
+      width: auto;
+      padding: 40px 0 40px 20px;
+
+      @include breakpoint-max(medium) {
+        width: 100%;
+        float: left;
+        padding: 20px 0 0;
+        text-align: center;
+
+        img {
+          margin: 20px 0 0px;
+        }
+      }
+
+      @include breakpoint-max(small) {
+        width: auto;
+        float: right;
+        padding: 40px 0 40px 40px;
+        text-align: center;
+
+        img {
+          margin: 10px 0 0px;
+        }
+      }
+
+      @include breakpoint-max(x-small) {
+        width: 100%;
+        float: left;
+        padding: 20px 0 0;
+        text-align: center;
+      }
+    }
+  }
+
+  .bean-stanford-testimonial-block .more-link,
+  .bean-stanford-testimonial-block a.more-link {
+    margin: 1em 0 .5em;
+  }
+
   .postcard {
     padding: 0 56px 40px;
 
@@ -512,10 +615,16 @@
   .field-name-field-s-testimonial-superhead {
     border-top: $turquoise 6px solid;
     display: inline-block;
+    font-size: 18px;
     font-weight: 600;
     font-family: $roboto-slab;
+    line-height: 1.2em;
     margin-bottom: 20px;
     padding-top: 12px;
+
+    @include breakpoint-max(medium) {
+      font-size: 16px;
+    }
 
     &.field {
       margin-bottom: 2em;
@@ -526,11 +635,16 @@
     }
   }
 
+  .field-name-field-s-image-image img {
+    width: 100px;
+    margin: 0;
+  }
+
   .field-name-field-s-testimonial-quote {
     font-family: $roboto-slab;
 
     @include breakpoint-max(medium) {
-      font-size: 22px;
+      font-size: 18px;
       line-height: 1.5em;
     }
 
@@ -542,7 +656,7 @@
   .field-name-field-s-testimonial-credits {
     font-size: 18px;
     letter-spacing: 0;
-    margin-top: 15px;
+    margin-top: 0;
 
     @include breakpoint-max(smaller) {
       font-size: 16px;
