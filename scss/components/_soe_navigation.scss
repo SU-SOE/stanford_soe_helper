@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 //
 // NAVIGATION
 //
@@ -61,8 +62,8 @@
     }
 
     > .active-trail > a,
-     > li > a:focus,
-     > li > a:hover,
+    > li > a:focus,
+    > li > a:hover,
     > .active > a:hover {
       border-bottom: 2px solid $primary-color;
 
@@ -122,6 +123,7 @@
   padding-right: 7px;
   margin-right: 7px;
 }
+
 // SUBNAVIGATION
 .sidebar {
   .block-menu {
@@ -169,6 +171,7 @@
       @include breakpoint-max(small) {
         width: 100%;
       }
+
 
       h2 {
         font-family: $roboto-slab;
