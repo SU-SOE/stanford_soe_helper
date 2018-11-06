@@ -510,10 +510,14 @@ p.summary.drop-cap:first-letter {
 #header #logo.logo-mobile img,
 #header #logo img {
   max-width: 160px; }
-  @media (max-width: 480px) {
+  @media (max-width: 1200px) {
     #header #logo.logo-mobile img,
     #header #logo img {
       max-width: 130px; } }
+  @media (max-width: 767px) {
+    #header #logo.logo-mobile img,
+    #header #logo img {
+      max-width: 100px; } }
   @media (max-width: 400px) {
     #header #logo.logo-mobile img,
     #header #logo img {
@@ -528,7 +532,7 @@ p.summary.drop-cap:first-letter {
   @media (max-width: 480px) {
     #header #logo.logo-mobile {
       display: table-cell;
-      padding: 0 10px 0 0;
+      padding: 0 6px 0 0;
       border-right: 1px solid !important; }
       #header #logo.logo-mobile a {
         background-size: 120px 26.66px; } }
@@ -548,28 +552,51 @@ p.summary.drop-cap:first-letter {
 
 #header.header {
   background: #ffffff;
+  min-height: 60px;
   padding: 30px 0 0; }
+  @media (max-width: 1200px) {
+    #header.header {
+      min-height: 42px;
+      padding: 24px 0 0; } }
+  @media (max-width: 767px) {
+    #header.header {
+      min-height: 45px;
+      padding: 15px 0 0; } }
   @media (max-width: 480px) {
     #header.header {
-      min-height: 60px;
-      padding: 35px 0 0; } }
+      min-height: 30px;
+      padding: 12px 0 0; } }
   @media (max-width: 400px) {
     #header.header {
       min-height: 40px;
       padding: 22px 0 0; } }
+  @media (max-width: 380px) {
+    #header.header {
+      min-height: 31px; } }
+  @media (max-width: 1200px) {
+    #header.header #site-title-first-line {
+      line-height: 1em; } }
+  @media (max-width: 767px) {
+    #header.header #site-title-first-line {
+      line-height: .9em; } }
+  @media (max-width: 480px) {
+    #header.header #site-title-first-line {
+      line-height: 1em; } }
   #header.header #site-title-first-line.site-title-uppercase a {
     font-size: 36px; }
-    @media (max-width: 480px) {
+    @media (max-width: 1200px) {
       #header.header #site-title-first-line.site-title-uppercase a {
-        font-size: 28px;
-        margin-bottom: -5px; } }
+        font-size: 28px; } }
+    @media (max-width: 767px) {
+      #header.header #site-title-first-line.site-title-uppercase a {
+        font-size: 22px; } }
     @media (max-width: 400px) {
       #header.header #site-title-first-line.site-title-uppercase a {
         font-size: 18px;
         margin-bottom: -3px; } }
     @media (max-width: 380px) {
       #header.header #site-title-first-line.site-title-uppercase a {
-        font-size: 16px;
+        font-size: 17px;
         margin-bottom: -4px; } }
 
 .dm-global-header #header.header #site-title-first-line.site-title-uppercase,
@@ -686,6 +713,18 @@ p.summary.drop-cap:first-letter {
   #main-menu .nav-collapse {
     width: 100%; } }
 
+@media (max-width: 1200px) {
+  #main-menu .container {
+    margin-bottom: 0px; } }
+
+@media (max-width: 480px) {
+  #main-menu .container {
+    margin-bottom: 10px; } }
+
+@media (max-width: 380px) {
+  #main-menu .container {
+    margin-bottom: 6px; } }
+
 .navbar {
   margin-bottom: 0; }
   .navbar .nav > li > a {
@@ -694,6 +733,9 @@ p.summary.drop-cap:first-letter {
     font-weight: 400;
     border-bottom: 2px solid transparent;
     padding-bottom: 30px; }
+    @media (max-width: 1200px) {
+      .navbar .nav > li > a {
+        padding-bottom: 24px; } }
     @media (max-width: 767px) {
       .navbar .nav > li > a {
         padding-bottom: 0.25em;
@@ -712,14 +754,17 @@ p.summary.drop-cap:first-letter {
   @media (max-width: 767px) {
     .navbar .btn.btn-navbar {
       background: #b1040e;
-      margin-top: -50px;
+      margin-top: -43px;
       float: right; } }
   @media (max-width: 480px) {
     .navbar .btn.btn-navbar {
-      margin-top: -52px; } }
+      margin-top: -32px; } }
   @media (max-width: 400px) {
     .navbar .btn.btn-navbar {
       margin-top: -37px; } }
+  @media (max-width: 380px) {
+    .navbar .btn.btn-navbar {
+      margin-top: -32px; } }
   @media (max-width: 320px) {
     .navbar .btn.btn-navbar {
       float: left;
@@ -2819,6 +2864,14 @@ p.infotext {
 .page-magazine-all #header #logo img,
 .page-taxonomy-term #header #logo img {
   max-width: 90px; }
+  @media (max-width: 1200px) {
+    .node-type-stanford-collection #header #logo img,
+    .node-type-stanford-magazine-article #header #logo img,
+    .node-type-stanford-magazine-issue #header #logo img,
+    .page-magazine #header #logo img,
+    .page-magazine-all #header #logo img,
+    .page-taxonomy-term #header #logo img {
+      max-width: 86px; } }
 
 @media (max-width: 480px) {
   .node-type-stanford-collection #header #logo.logo-mobile,
@@ -2828,6 +2881,15 @@ p.infotext {
   .page-magazine-all #header #logo.logo-mobile,
   .page-taxonomy-term #header #logo.logo-mobile {
     padding: 0 5px 0 0; } }
+
+@media (max-width: 1200px) {
+  .node-type-stanford-collection #header #logo.logo-mobile img,
+  .node-type-stanford-magazine-article #header #logo.logo-mobile img,
+  .node-type-stanford-magazine-issue #header #logo.logo-mobile img,
+  .page-magazine #header #logo.logo-mobile img,
+  .page-magazine-all #header #logo.logo-mobile img,
+  .page-taxonomy-term #header #logo.logo-mobile img {
+    max-width: 86px; } }
 
 .node-type-stanford-collection #header.header,
 .node-type-stanford-magazine-article #header.header,
@@ -2854,7 +2916,16 @@ p.infotext {
     .page-magazine #header.header,
     .page-magazine-all #header.header,
     .page-taxonomy-term #header.header {
-      padding: 10px 0 0; } }
+      min-height: 32px;
+      padding: 4px 0 0; } }
+  @media (max-width: 480px) {
+    .node-type-stanford-collection #header.header,
+    .node-type-stanford-magazine-article #header.header,
+    .node-type-stanford-magazine-issue #header.header,
+    .page-magazine #header.header,
+    .page-magazine-all #header.header,
+    .page-taxonomy-term #header.header {
+      min-height: 26px; } }
   @media (max-width: 400px) {
     .node-type-stanford-collection #header.header,
     .node-type-stanford-magazine-article #header.header,
@@ -2863,6 +2934,30 @@ p.infotext {
     .page-magazine-all #header.header,
     .page-taxonomy-term #header.header {
       min-height: auto; } }
+  @media (max-width: 380px) {
+    .node-type-stanford-collection #header.header,
+    .node-type-stanford-magazine-article #header.header,
+    .node-type-stanford-magazine-issue #header.header,
+    .page-magazine #header.header,
+    .page-magazine-all #header.header,
+    .page-taxonomy-term #header.header {
+      min-height: 30px; } }
+  @media (max-width: 380px) and (max-height: 479px) {
+    .node-type-stanford-collection #header.header,
+    .node-type-stanford-magazine-article #header.header,
+    .node-type-stanford-magazine-issue #header.header,
+    .page-magazine #header.header,
+    .page-magazine-all #header.header,
+    .page-taxonomy-term #header.header {
+      min-height: 26px; } }
+  @media (max-width: 767px) {
+    .node-type-stanford-collection #header.header #site-title-first-line,
+    .node-type-stanford-magazine-article #header.header #site-title-first-line,
+    .node-type-stanford-magazine-issue #header.header #site-title-first-line,
+    .page-magazine #header.header #site-title-first-line,
+    .page-magazine-all #header.header #site-title-first-line,
+    .page-taxonomy-term #header.header #site-title-first-line {
+      line-height: 1.1em; } }
   @media (max-width: 480px) {
     .node-type-stanford-collection #header.header #site-title-first-line.site-title-uppercase a,
     .node-type-stanford-magazine-article #header.header #site-title-first-line.site-title-uppercase a,
@@ -2870,7 +2965,7 @@ p.infotext {
     .page-magazine #header.header #site-title-first-line.site-title-uppercase a,
     .page-magazine-all #header.header #site-title-first-line.site-title-uppercase a,
     .page-taxonomy-term #header.header #site-title-first-line.site-title-uppercase a {
-      font-size: 28px;
+      font-size: 18px;
       margin-bottom: -5px; } }
   @media (max-width: 400px) {
     .node-type-stanford-collection #header.header #site-title-first-line.site-title-uppercase a,
@@ -2879,7 +2974,6 @@ p.infotext {
     .page-magazine #header.header #site-title-first-line.site-title-uppercase a,
     .page-magazine-all #header.header #site-title-first-line.site-title-uppercase a,
     .page-taxonomy-term #header.header #site-title-first-line.site-title-uppercase a {
-      font-size: 18px;
       margin-bottom: -3px; } }
   @media (max-width: 380px) {
     .node-type-stanford-collection #header.header #site-title-first-line.site-title-uppercase a,
@@ -3251,7 +3345,7 @@ p.infotext {
   .page-magazine-all .navbar .btn.btn-navbar,
   .page-taxonomy-term .navbar .btn.btn-navbar {
     background: #b1040e;
-    margin-top: -29px;
+    margin-top: -33px;
     float: right; } }
 
 @media (max-width: 480px) {
@@ -3261,7 +3355,16 @@ p.infotext {
   .page-magazine .navbar .btn.btn-navbar,
   .page-magazine-all .navbar .btn.btn-navbar,
   .page-taxonomy-term .navbar .btn.btn-navbar {
-    margin-top: -29px; } }
+    margin-top: -27px; } }
+
+@media (max-width: 380px) {
+  .node-type-stanford-collection .navbar .btn.btn-navbar,
+  .node-type-stanford-magazine-article .navbar .btn.btn-navbar,
+  .node-type-stanford-magazine-issue .navbar .btn.btn-navbar,
+  .page-magazine .navbar .btn.btn-navbar,
+  .page-magazine-all .navbar .btn.btn-navbar,
+  .page-taxonomy-term .navbar .btn.btn-navbar {
+    margin-top: -30px; } }
 
 #digital-magazine-menu {
   background: #00ece9; }

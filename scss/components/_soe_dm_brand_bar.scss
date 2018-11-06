@@ -17,11 +17,20 @@
     #logo {
       img {
         max-width: 90px;
+        @include breakpoint-max(large) {
+          max-width: 86px;
+        }
       }
 
       &.logo-mobile {
         @include breakpoint-max(x-small) {
           padding: 0 5px 0 0;
+        }
+
+        img {
+          @include breakpoint-max(large) {
+           max-width: 86px;
+         }
         }
       }
     }
@@ -37,21 +46,39 @@
       }
 
       @include breakpoint-max(small) {
-        padding: 10px 0 0;
+        min-height: 32px;
+        padding: 4px 0 0;
+      }
+
+      @include breakpoint-max(x-small) {
+        min-height: 26px;
       }
 
       @include breakpoint-max(xx-small) {
         min-height: auto;
       }
 
+      @include breakpoint-max(xxx-small) {
+        min-height: 30px;
+      }
+
+      @media (max-width: 380px) and (max-height: 479px) {
+        min-height: 26px;
+      }
+
+      #site-title-first-line {
+        @include breakpoint-max(small) {
+          line-height: 1.1em;
+        }
+      }
+
       #site-title-first-line.site-title-uppercase a {
         @include breakpoint-max(x-small) {
-          font-size: 28px;
+          font-size: 18px;
           margin-bottom: -5px;
         }
 
         @include breakpoint-max(xx-small) {
-          font-size: 18px;
           margin-bottom: -3px;
         }
 
