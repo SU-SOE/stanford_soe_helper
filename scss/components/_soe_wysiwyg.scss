@@ -11,9 +11,17 @@
   float: none;
   width: 100%;
   color: #606060;
-  font-size: 16px;
+  font-size: em(16px);
   line-height: 1.3em;
   font-weight: 300;
+
+  @include box-sizing(border-box);
+
+  & img {
+    height: auto;
+    margin-bottom: 0.75em;
+    width: 100%;
+  }
 }
 
 .image-caption-right {
@@ -181,10 +189,6 @@ p.float-right {
   margin: 0px;
   padding: 0px;
   width: 100%;
-}
-
-p.float-right,
-  .image-caption-right {
 }
 
 p.related-link {
