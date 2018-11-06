@@ -360,10 +360,10 @@
     }
 
     .mag-article-content-container {
+      @include box-shadow;
+
       background: $white;
       padding: 50px 30px 30px;
-
-      @include box-shadow;
 
       @include breakpoint-max(medium) {
         padding: 15px 30px 30px;
@@ -434,10 +434,10 @@
   }
 
   .mag-article-container {
+    @include box-shadow;
+    
     background: $white;
     margin-bottom: 50px;
-
-    @include box-shadow;
 
     @include breakpoint-max(medium) {
       margin-bottom: 40px;
