@@ -126,7 +126,7 @@ a.btn {
     display: block;
     margin: 0 auto;
     width: 30%;
-    margin-bottom: 30px;
+    margin-bottom: 0;
     text-decoration: none;
 
     @include breakpoint-max(x-small) {
@@ -214,6 +214,7 @@ li {
         @include box-shadow;
         color: $white;
         font-size: em(20px);
+        font-weight: 400;
         text-transform: capitalize;
         background-color: $brand-bright;
         border-radius: 0;
@@ -227,6 +228,21 @@ li {
           background-color: $primary-color;
           font-weight: 400;
         }
+      }
+    }
+  }
+
+  .field-name-body {
+    li a {
+      font-weight: 400;
+      text-decoration: underline;
+    }
+
+    h2 a {
+      color: $brand-bright;
+
+      &:hover {
+        color: $primary-color;
       }
     }
   }
@@ -259,7 +275,7 @@ th {
   p {
     font-size: em(20px);
     font-weight: 400;
-    line-height: 1.5em;
+    line-height: 1.3em;
   }
 }
 
@@ -300,11 +316,16 @@ th {
     }
 
     a {
+      font-weight: 400;
       text-decoration: underline;
 
       &.btn {
         text-decoration: none;
       }
+    }
+
+    &.summary {
+      margin: 0 0 1em;
     }
   }
 

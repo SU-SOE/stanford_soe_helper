@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 //
 // HOMEPAGE
 //
@@ -21,6 +22,7 @@
       a:not(.btn) {
         @include td-skip;
         @include td-color($turquoise);
+
         color: $primary-color;
         text-decoration: underline;
 
@@ -48,6 +50,7 @@
       }
     }
   }
+
   // BLOCK TRIOS
   .view-stanford-page-banner-caption {
     margin-bottom: 100px;
@@ -134,5 +137,10 @@
     .postcard-content {
       padding: 2em;
     }
+  }
+
+  .bean-stanford-postcard .postcard-content p a.btn:last-child,
+  .bean-stanford-postcard-linked .postcard-linked-content p a.btn:last-child {
+    margin-bottom: 26px;
   }
 }
