@@ -278,6 +278,9 @@ th {
 
 .image-caption-right,
 .image-caption-left {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0px;
   padding: 0px;
   border: 0;
@@ -286,10 +289,7 @@ th {
   color: #606060;
   font-size: 0.8em;
   line-height: 1.3em;
-  font-weight: 300;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+  font-weight: 300; }
   .image-caption-right img,
   .image-caption-left img {
     height: auto;
@@ -715,7 +715,7 @@ p.summary.drop-cap:first-letter {
 
 @media (max-width: 1200px) {
   #main-menu .container {
-    margin-bottom: 0px; } }
+    margin-bottom: 0; } }
 
 @media (max-width: 480px) {
   #main-menu .container {

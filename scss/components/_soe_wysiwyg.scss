@@ -5,6 +5,8 @@
 
 .image-caption-right,
 .image-caption-left {
+  @include box-sizing(border-box);
+
   margin: 0px;
   padding: 0px;
   border: 0;
@@ -15,9 +17,7 @@
   line-height: 1.3em;
   font-weight: 300;
 
-  @include box-sizing(border-box);
-
-  & img {
+  img {
     height: auto;
     margin-bottom: 0.75em;
     width: 100%;
