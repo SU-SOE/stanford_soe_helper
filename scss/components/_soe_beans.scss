@@ -1,18 +1,18 @@
 @charset "UTF-8";
+
 //
 // BEANS
 //
 // CALL TO ACTION BEANS
 .bean-stanford-call-to-action {
   #content-body-bottom & {
-
     @include breakpoint-min(small) {
       margin-bottom: 100px;
     }
   }
 
   a.group-s-cta-link:hover img {
-    @include transform (scale(1.03));
+    @include transform(scale(1.03));
   }
 
   .field-name-field-s-cta-image {
@@ -54,7 +54,6 @@
 .content-body [id*="block-bean-sitewide-facebook-cta-block"].block[class*="span"],
 .content-body [id*="block-bean-sitewide-instagram-cta-block"].block[class*="span"],
 .content-body [id*="block-bean-sitewide-twitter-cta-block"].block[class*="span"] {
-
   @include breakpoint-min(large) {
     width: 20%;
   }
@@ -64,24 +63,24 @@
     margin: 0 25% 20px;
   }
 
+
   .field-name-field-s-cta-icon {
     font-size: em(50px);
   }
 }
 
 [id*="block-bean-sitewide-instagram-cta-block"].block[class*="span"] {
-
   @include breakpoint-min(large) {
     margin-left: 17.25%;
   }
 }
 
 [id*="block-bean-sitewide-twitter-cta-block"].block[class*="span"] {
-
   @include breakpoint-min(large) {
     margin-right: 17.25%;
   }
 }
+
 // POSTCARD & POSTCARD LINKED BEANS
 #content-body .content .field-name-field-s-postcard-body a.btn {
   width: auto;
@@ -90,12 +89,12 @@
     width: 30%;
   }
 }
+
 // POSTCARD SINGLE CENTERED BUTTON BEANS
 .row-fluid .block-bean {
   &.span12,
   &.span4,
   &.span6 {
-
     @include breakpoint-max(small) {
       margin-left: 0;
     }
@@ -104,7 +103,7 @@
       padding: 0;
 
       h2 {
-        margin-top: 1.1em;
+        margin: 0 0 .8em;
       }
 
       .field-name-field-s-image-image img {
@@ -112,7 +111,11 @@
       }
 
       .postcard-content {
-        padding: 2em;
+        padding: 1.5em 1.8em 1.8em;
+      }
+
+      &.testimonial {
+        padding: 0 56px 40px;
       }
     }
 
@@ -153,6 +156,14 @@
     text-align: center;
   }
 
+  &.center-title.well h2:first-of-type {
+    text-align: center;
+  }
+
+  &.center-title.well .postcard-content h2:first-of-type {
+    text-align: inherit;
+  }
+
   &.well {
     padding: 2em;
 
@@ -160,6 +171,14 @@
     .bean-stanford-postcard .field-name-field-s-postcard-body h3:last-child,
     .bean-stanford-postcard .field-name-field-s-postcard-body p:last-child {
       margin-bottom: 0;
+    }
+
+    .bean-stanford-postcard .field-name-field-s-postcard-body p {
+      font-size: em(18px);
+
+      &.summary {
+        font-size: em(28px);
+      }
     }
 
     .bean-stanford-postcard a.btn {
@@ -180,6 +199,7 @@
       padding: 0;
     }
 
+
     a.postcard-linked-img-container {
       flex-shrink: 0;
       margin-right: 30px;
@@ -188,13 +208,14 @@
         margin-right: 0;
       }
 
+
       // SPAN 12 BEAN RESPONSIVE
       @include breakpoint-max(medium) {
         flex-shrink: 0.9;
       }
 
       &:hover img {
-        @include transform (scale(1.03));
+        @include transform(scale(1.03));
       }
 
       .postcard-linked-img {
@@ -268,6 +289,7 @@
         a {
           @include td-skip;
           @include td-color($turquoise);
+
           color: $primary-color;
           font-family: $roboto-slab;
           font-size: em(28px);
@@ -285,6 +307,7 @@
           }
         }
       }
+
       // STANDARDIZE PADDING INSIDE POSTCARD LINKED BLOCK
       .postcard-body p:last-child,
       .postcard-linked-body p:last-child {
@@ -294,6 +317,10 @@
       .postcard-body,
       .postcard-linked-body p {
         margin-bottom: 1em;
+      }
+
+      .postcard-linked-body p {
+        margin-top: 10px;
       }
     }
 
@@ -349,10 +376,10 @@
   }
 
   .span12 & {
-
     @include breakpoint-max(medium) {
       margin: 0 10%;
     }
+
 
     @include breakpoint-max(smaller) {
       margin: 0;
@@ -363,7 +390,6 @@
 .block-bean {
   &.span12 {
     .bean-stanford-postcard {
-
       @include breakpoint-max(medium) {
         margin: 0;
       }
@@ -379,10 +405,10 @@
   }
 
   &.span4 {
-
     @include breakpoint-max(medium) {
       margin-left: 0;
     }
+
 
     .bean-stanford-postcard-linked .postcard-linked-container .postcard-linked-content-container {
       padding: 20px;
@@ -398,13 +424,11 @@
   }
 
   &.block {
-
     @include breakpoint-max(smaller) {
       margin-bottom: 30px;
     }
 
     &.span4 {
-
       @include breakpoint-max(medium) {
         width: 100%;
       }
@@ -412,7 +436,6 @@
 
     &.span12,
     &.span6 {
-
       @include breakpoint-max(small) {
         width: 100%;
       }
@@ -420,6 +443,10 @@
   }
 
   .bean-stanford-postcard {
+    p.summary {
+      font-size: em(28px);
+    }
+
     .group-s-postcard {
       display: block;
       padding: 0;
@@ -454,7 +481,7 @@
 
     h3 {
       font-family: $primary-font;
-      margin-top: 1em 0 0.3em;
+      margin-top: 1em 0 1em;
 
       a {
         text-decoration-color: $turquoise;
@@ -466,7 +493,7 @@
     }
 
     .field-name-field-s-postcard-body h2:first-child {
-      margin-top: 0;
+      margin-top: 0 0 .8em;
     }
 
     .field-name-title h2 {
@@ -499,6 +526,7 @@
     margin-bottom: 0;
   }
 }
+
 // TESTIMONIAL BEANS
 .testimonial {
   &.span12 .quote {
@@ -517,6 +545,7 @@
     @include breakpoint-max(medium) {
       padding: 0 46px 40px;
     }
+
 
     @include breakpoint-max(small) {
       width: 100%;
@@ -556,6 +585,7 @@
     @include breakpoint-max(x-small) {
       padding: 0 46px 40px;
     }
+
 
     .field-name-field-s-image-image {
       img {
@@ -605,7 +635,7 @@
   }
 
   .postcard {
-    padding: 0 56px 40px;
+    padding: 0;
 
     @include breakpoint-max(small) {
       display: block;
@@ -627,7 +657,7 @@
     }
 
     &.field {
-      margin-bottom: 2em;
+      margin-bottom: 0;
 
       @include breakpoint-max(smaller) {
         margin-bottom: 1em;
@@ -648,6 +678,7 @@
       line-height: 1.5em;
     }
 
+
     @include breakpoint-max(smaller) {
       font-size: 18px;
     }
@@ -656,6 +687,7 @@
   .field-name-field-s-testimonial-credits {
     font-size: 18px;
     letter-spacing: 0;
+    line-height: 1.3;
     margin-top: 0;
 
     @include breakpoint-max(smaller) {
@@ -676,6 +708,7 @@
       font-family: $primary-font;
       font-size: 56px;
       font-weight: 400;
+      margin-top: 0;
       opacity: 1;
       top: 30;
 
@@ -744,7 +777,7 @@ p.superhead {
   font-size: 18px;
   font-weight: 700;
   line-height: 1.2em;
-  margin-bottom: 0.6em;
+  margin-bottom: 0.3em;
 }
 
 .infotext,
@@ -760,4 +793,21 @@ p.superhead {
 
 p.infotext {
   margin: 0;
+}
+
+.bean-stanford-postcard .postcard-content h2:last-child,
+.bean-stanford-postcard-linked .postcard-linked-content h2:last-child,
+.bean-stanford-postcard .postcard-content h3:last-child,
+.bean-stanford-postcard-linked .postcard-linked-content h3:last-child,
+.bean-stanford-postcard .postcard-content p:last-child,
+.bean-stanford-postcard-linked .postcard-linked-container .postcard-linked-content-container .postcard-linked-body p:last-child,
+.bean-stanford-postcard .postcard-content p a.btn:last-child,
+.bean-stanford-postcard-linked .postcard-linked-content p a.btn:last-child,
+.bean-stanford-postcard .postcard-content ul li:last-child,
+.bean-stanford-postcard-linked .postcard-linked-content ul li:last-child {
+  margin-bottom: 10px;
+}
+
+#content-body .content .view-mode-single_centered_button .field-name-field-s-postcard-body a.btn {
+  width: 30%;
 }

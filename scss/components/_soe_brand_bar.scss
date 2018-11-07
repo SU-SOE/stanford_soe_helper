@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 //
 // HEADER
 //
@@ -29,15 +30,19 @@
     img {
       max-width: 160px;
 
-      @include breakpoint-max(x-small) {
+      @include breakpoint-max(large) {
         max-width: 130px;
+      }
+
+      @include breakpoint-max(small) {
+        max-width: 100px;
       }
 
       @include breakpoint-max(xx-small) {
         max-width: 90px;
       }
 
-      @media (max-width: 380px) {
+      @include breakpoint-max(xxx-small) {
         max-width: 80px;
       }
     }
@@ -47,7 +52,7 @@
 
       @include breakpoint-max(x-small) {
         display: table-cell;
-        padding: 0 10px 0 0;
+        padding: 0 6px 0 0;
         border-right: 1px solid !important;
 
         a {
@@ -69,6 +74,7 @@
       padding: 0 0 0 10px;
     }
 
+
     @include breakpoint-max(xx-small) {
       padding: 0 0 0 5px;
     }
@@ -76,11 +82,23 @@
 
   &.header {
     background: $white;
+    min-height: 60px;
     padding: 30px 0 0;
 
+    @include breakpoint-max(large) {
+      min-height: 42px;
+      padding: 24px 0 0;
+    }
+
+
+    @include breakpoint-max(small) {
+      min-height: 45px;
+      padding: 15px 0 0;
+    }
+
     @include breakpoint-max(x-small) {
-      min-height: 60px;
-      padding: 35px 0 0;
+      min-height: 30px;
+      padding: 12px 0 0;
     }
 
     @include breakpoint-max(xx-small) {
@@ -88,12 +106,33 @@
       padding: 22px 0 0;
     }
 
+    @include breakpoint-max(xxx-small) {
+      min-height: 31px;
+    }
+
+    #site-title-first-line {
+      @include breakpoint-max(large) {
+        line-height: 1em;
+      }
+
+      @include breakpoint-max(small) {
+        line-height: .9em;
+      }
+
+      @include breakpoint-max(x-small) {
+        line-height: 1em;
+      }
+    }
+
     #site-title-first-line.site-title-uppercase a {
       font-size: 36px;
 
-      @include breakpoint-max(x-small) {
+      @include breakpoint-max(large) {
         font-size: 28px;
-        margin-bottom: -5px;
+      }
+
+      @include breakpoint-max(small) {
+        font-size: 22px;
       }
 
       @include breakpoint-max(xx-small) {
@@ -102,7 +141,7 @@
       }
 
       @include breakpoint-max(xxx-small) {
-        font-size: 16px;
+        font-size: 17px;
         margin-bottom: -4px;
       }
     }

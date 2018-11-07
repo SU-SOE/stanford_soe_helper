@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 //
 // DIGITAL MAGAZINE NAVIGATION
 //
@@ -13,16 +14,21 @@
     .btn.btn-navbar {
       @include breakpoint-max(small) {
         background: $brand-bright;
-        margin-top: -29px;
+        margin-top: -33px;
         float: right;
       }
 
       @include breakpoint-max(x-small) {
-        margin-top: -29px;
+        margin-top: -27px;
+      }
+
+      @include breakpoint-max(xxx-small) {
+        margin-top: -30px;
       }
     }
   }
 }
+
 // DIGITAL MAGAZINE NAVIGATION
 #digital-magazine-menu {
   background: $turquoise;
@@ -115,7 +121,6 @@
           }
 
           &:nth-child(2) {
-
             @include breakpoint-max(small) {
               display: none;
             }
@@ -178,6 +183,7 @@
     }
   }
 }
+
 // MEGA MENU NAVIGATION
 #digital-magazine-megamenu {
   .container {

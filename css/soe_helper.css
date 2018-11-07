@@ -107,7 +107,7 @@ a.btn {
     display: block;
     margin: 0 auto;
     width: 30%;
-    margin-bottom: 30px;
+    margin-bottom: 0;
     text-decoration: none; }
     @media (max-width: 480px) {
       #content-body .content .btn a, #content-body .content
@@ -172,6 +172,7 @@ li {
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
     color: #ffffff;
     font-size: 1em;
+    font-weight: 400;
     text-transform: capitalize;
     background-color: #b1040e;
     border-radius: 0;
@@ -182,6 +183,15 @@ li {
       color: #ffffff;
       background-color: #333333;
       font-weight: 400; }
+
+.content .field-name-body li a {
+  font-weight: 400;
+  text-decoration: underline; }
+
+.content .field-name-body h2 a {
+  color: #b1040e; }
+  .content .field-name-body h2 a:hover {
+    color: #333333; }
 
 td,
 th {
@@ -207,7 +217,7 @@ th {
   .well p {
     font-size: 1em;
     font-weight: 400;
-    line-height: 1.5em; }
+    line-height: 1.3em; }
 
 .descriptor {
   font-size: 0.9em;
@@ -237,9 +247,12 @@ th {
       column-count: 1;
       column-gap: 0; }
     .main p a {
+      font-weight: 400;
       text-decoration: underline; }
       .main p a.btn {
         text-decoration: none; }
+    .main p.summary {
+      margin: 0 0 1em; }
   .main .block {
     margin-bottom: 50px; }
 
@@ -265,15 +278,23 @@ th {
 
 .image-caption-right,
 .image-caption-left {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0px;
   padding: 0px;
   border: 0;
   float: none;
   width: 100%;
   color: #606060;
-  font-size: 16px;
+  font-size: 0.8em;
   line-height: 1.3em;
   font-weight: 300; }
+  .image-caption-right img,
+  .image-caption-left img {
+    height: auto;
+    margin-bottom: 0.75em;
+    width: 100%; }
 
 .image-caption-right {
   float: right;
@@ -362,6 +383,8 @@ p.btn-center {
         margin-right: 10px; } }
     p.btn-center a.btn:last-child {
       margin-right: 0; }
+      .postcard-content p.btn-center a.btn:last-child {
+        margin-bottom: 26px; }
 
 p.highlight {
   -webkit-column-count: 1;
@@ -487,10 +510,14 @@ p.summary.drop-cap:first-letter {
 #header #logo.logo-mobile img,
 #header #logo img {
   max-width: 160px; }
-  @media (max-width: 480px) {
+  @media (max-width: 1200px) {
     #header #logo.logo-mobile img,
     #header #logo img {
       max-width: 130px; } }
+  @media (max-width: 767px) {
+    #header #logo.logo-mobile img,
+    #header #logo img {
+      max-width: 100px; } }
   @media (max-width: 400px) {
     #header #logo.logo-mobile img,
     #header #logo img {
@@ -505,7 +532,7 @@ p.summary.drop-cap:first-letter {
   @media (max-width: 480px) {
     #header #logo.logo-mobile {
       display: table-cell;
-      padding: 0 10px 0 0;
+      padding: 0 6px 0 0;
       border-right: 1px solid !important; }
       #header #logo.logo-mobile a {
         background-size: 120px 26.66px; } }
@@ -525,28 +552,51 @@ p.summary.drop-cap:first-letter {
 
 #header.header {
   background: #ffffff;
+  min-height: 60px;
   padding: 30px 0 0; }
+  @media (max-width: 1200px) {
+    #header.header {
+      min-height: 42px;
+      padding: 24px 0 0; } }
+  @media (max-width: 767px) {
+    #header.header {
+      min-height: 45px;
+      padding: 15px 0 0; } }
   @media (max-width: 480px) {
     #header.header {
-      min-height: 60px;
-      padding: 35px 0 0; } }
+      min-height: 30px;
+      padding: 12px 0 0; } }
   @media (max-width: 400px) {
     #header.header {
       min-height: 40px;
       padding: 22px 0 0; } }
+  @media (max-width: 380px) {
+    #header.header {
+      min-height: 31px; } }
+  @media (max-width: 1200px) {
+    #header.header #site-title-first-line {
+      line-height: 1em; } }
+  @media (max-width: 767px) {
+    #header.header #site-title-first-line {
+      line-height: .9em; } }
+  @media (max-width: 480px) {
+    #header.header #site-title-first-line {
+      line-height: 1em; } }
   #header.header #site-title-first-line.site-title-uppercase a {
     font-size: 36px; }
-    @media (max-width: 480px) {
+    @media (max-width: 1200px) {
       #header.header #site-title-first-line.site-title-uppercase a {
-        font-size: 28px;
-        margin-bottom: -5px; } }
+        font-size: 28px; } }
+    @media (max-width: 767px) {
+      #header.header #site-title-first-line.site-title-uppercase a {
+        font-size: 22px; } }
     @media (max-width: 400px) {
       #header.header #site-title-first-line.site-title-uppercase a {
         font-size: 18px;
         margin-bottom: -3px; } }
     @media (max-width: 380px) {
       #header.header #site-title-first-line.site-title-uppercase a {
-        font-size: 16px;
+        font-size: 17px;
         margin-bottom: -4px; } }
 
 .dm-global-header #header.header #site-title-first-line.site-title-uppercase,
@@ -562,6 +612,7 @@ p.summary.drop-cap:first-letter {
   background: #ffffff;
   padding: 80px 0; }
   #footer.site-footer h2 {
+    font-size: 1.1em;
     line-height: 1.3em; }
 
 #footer .block,
@@ -662,6 +713,18 @@ p.summary.drop-cap:first-letter {
   #main-menu .nav-collapse {
     width: 100%; } }
 
+@media (max-width: 1200px) {
+  #main-menu .container {
+    margin-bottom: 0; } }
+
+@media (max-width: 480px) {
+  #main-menu .container {
+    margin-bottom: 10px; } }
+
+@media (max-width: 380px) {
+  #main-menu .container {
+    margin-bottom: 6px; } }
+
 .navbar {
   margin-bottom: 0; }
   .navbar .nav > li > a {
@@ -670,6 +733,9 @@ p.summary.drop-cap:first-letter {
     font-weight: 400;
     border-bottom: 2px solid transparent;
     padding-bottom: 30px; }
+    @media (max-width: 1200px) {
+      .navbar .nav > li > a {
+        padding-bottom: 24px; } }
     @media (max-width: 767px) {
       .navbar .nav > li > a {
         padding-bottom: 0.25em;
@@ -688,14 +754,17 @@ p.summary.drop-cap:first-letter {
   @media (max-width: 767px) {
     .navbar .btn.btn-navbar {
       background: #b1040e;
-      margin-top: -50px;
+      margin-top: -43px;
       float: right; } }
   @media (max-width: 480px) {
     .navbar .btn.btn-navbar {
-      margin-top: -52px; } }
+      margin-top: -32px; } }
   @media (max-width: 400px) {
     .navbar .btn.btn-navbar {
       margin-top: -37px; } }
+  @media (max-width: 380px) {
+    .navbar .btn.btn-navbar {
+      margin-top: -32px; } }
   @media (max-width: 320px) {
     .navbar .btn.btn-navbar {
       float: left;
@@ -1125,6 +1194,10 @@ p.summary.drop-cap:first-letter {
 .front .view-stanford-ppl-spot-fw-banner-quote {
   margin-bottom: 60px;
   margin-top: 100px; }
+  @media (max-width: 767px) {
+    .front .view-stanford-ppl-spot-fw-banner-quote {
+      margin-bottom: 40px;
+      margin-top: 30px; } }
 
 .front #block-bean-homepage-magazine-postcard-butto,
 .front #block-bean-homepage-magazine-postcard-butto--2 {
@@ -1134,6 +1207,10 @@ p.summary.drop-cap:first-letter {
 .front #block-bean-stanford-soe-mailchimp-homepage-,
 .front #block-bean-stanford-soe-mailchimp-homepage---2 {
   margin-bottom: 80px; }
+  @media (max-width: 767px) {
+    .front #block-bean-stanford-soe-mailchimp-homepage-,
+    .front #block-bean-stanford-soe-mailchimp-homepage---2 {
+      margin: 0 0 10px; } }
 
 .front .mailchimp-magazine-block #mc_embed_signup_scroll {
   padding: 50px; }
@@ -1179,6 +1256,35 @@ p.summary.drop-cap:first-letter {
     width: 100%; }
   .front .block-bean.no-padding.well .postcard-content {
     padding: 2em; }
+  .front .block-bean.no-padding.well.featured-block.span9 {
+    margin-left: 18.75%;
+    margin-right: 18.75%;
+    width: 62.5%; }
+    @media (max-width: 767px) {
+      .front .block-bean.no-padding.well.featured-block.span9 {
+        margin-bottom: 60px;
+        margin-left: 5%;
+        margin-right: 0;
+        width: 92%; } }
+
+.front .bean-stanford-postcard .postcard-content p a.btn:last-child,
+.front .bean-stanford-postcard-linked .postcard-linked-content p a.btn:last-child {
+  margin-bottom: 26px; }
+
+@media (max-width: 767px) {
+  .front #block-bean-homepage-2-column-1-button-block p a.btn:last-child,
+  .front #block-bean-homepage-magazine-postcard-butto p a.btn,
+  .front #block-bean-stanford-soe-mailchimp-homepage-,
+  .front #block-bean-homepage-magazine-postcard-butto--2 p.btn-center a.btn {
+    margin-bottom: 0; } }
+
+@media (max-width: 767px) {
+  .front #block-bean-homepage-magazine-postcard-butto--2 p.btn-center a.btn:last-child {
+    margin-top: 10px; } }
+
+@media (max-width: 603px) {
+  .front #block-bean-homepage-magazine-postcard-butto p a.btn {
+    margin-top: 10px; } }
 
 .calendar-calendar .mini td,
 .calendar-calendar th.days {
@@ -1786,11 +1892,13 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
 .row-fluid .block-bean.span12.no-padding.well, .row-fluid .block-bean.span4.no-padding.well, .row-fluid .block-bean.span6.no-padding.well {
   padding: 0; }
   .row-fluid .block-bean.span12.no-padding.well h2, .row-fluid .block-bean.span4.no-padding.well h2, .row-fluid .block-bean.span6.no-padding.well h2 {
-    margin-top: 1.1em; }
+    margin: 0 0 .8em; }
   .row-fluid .block-bean.span12.no-padding.well .field-name-field-s-image-image img, .row-fluid .block-bean.span4.no-padding.well .field-name-field-s-image-image img, .row-fluid .block-bean.span6.no-padding.well .field-name-field-s-image-image img {
     width: 100%; }
   .row-fluid .block-bean.span12.no-padding.well .postcard-content, .row-fluid .block-bean.span4.no-padding.well .postcard-content, .row-fluid .block-bean.span6.no-padding.well .postcard-content {
-    padding: 2em; }
+    padding: 1.5em 1.8em 1.8em; }
+  .row-fluid .block-bean.span12.no-padding.well.testimonial, .row-fluid .block-bean.span4.no-padding.well.testimonial, .row-fluid .block-bean.span6.no-padding.well.testimonial {
+    padding: 0 56px 40px; }
 
 .row-fluid .block-bean.span12.no-top-padding.well, .row-fluid .block-bean.span4.no-top-padding.well, .row-fluid .block-bean.span6.no-top-padding.well {
   padding-top: 0; }
@@ -1817,12 +1925,22 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
 .row-fluid .block-bean.center-title.well .group-s-postcard-content .group-s-title-container {
   text-align: center; }
 
+.row-fluid .block-bean.center-title.well h2:first-of-type {
+  text-align: center; }
+
+.row-fluid .block-bean.center-title.well .postcard-content h2:first-of-type {
+  text-align: inherit; }
+
 .row-fluid .block-bean.well {
   padding: 2em; }
   .row-fluid .block-bean.well .bean-stanford-postcard .field-name-field-s-postcard-body h2:last-child,
   .row-fluid .block-bean.well .bean-stanford-postcard .field-name-field-s-postcard-body h3:last-child,
   .row-fluid .block-bean.well .bean-stanford-postcard .field-name-field-s-postcard-body p:last-child {
     margin-bottom: 0; }
+  .row-fluid .block-bean.well .bean-stanford-postcard .field-name-field-s-postcard-body p {
+    font-size: 0.9em; }
+    .row-fluid .block-bean.well .bean-stanford-postcard .field-name-field-s-postcard-body p.summary {
+      font-size: 1.4em; }
   .row-fluid .block-bean.well .bean-stanford-postcard a.btn {
     font-size: inherit; }
 
@@ -2131,6 +2249,15 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
     .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-linked-content-container .postcard-body,
     .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-linked-content-container .postcard-linked-body p {
       margin-bottom: 1em; }
+    .bean-stanford-postcard-linked .postcard .postcard-content .postcard-linked-body p,
+    .bean-stanford-postcard-linked .postcard .postcard-linked-content-container .postcard-linked-body p,
+    .bean-stanford-postcard-linked .postcard-linked-container .postcard-content .postcard-linked-body p,
+    .bean-stanford-postcard-linked .postcard-linked-container .postcard-linked-content-container .postcard-linked-body p,
+    .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-content .postcard-linked-body p,
+    .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-linked-content-container .postcard-linked-body p,
+    .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-content .postcard-linked-body p,
+    .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-linked-content-container .postcard-linked-body p {
+      margin-top: 10px; }
   .bean-stanford-postcard-linked .postcard a.btn,
   .bean-stanford-postcard-linked .postcard-linked-container a.btn,
   .bean-stanford-postcard.view-mode-single_centered_button .postcard a.btn,
@@ -2494,6 +2621,9 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
   .block-bean.block.span12, .block-bean.block.span6 {
     width: 100%; } }
 
+.block-bean .bean-stanford-postcard p.summary {
+  font-size: 1.4em; }
+
 .block-bean .bean-stanford-postcard .group-s-postcard {
   display: block;
   padding: 0; }
@@ -2517,14 +2647,14 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
 
 .block-bean .bean-stanford-postcard h3 {
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin-top: 1em 0 0.3em; }
+  margin-top: 1em 0 1em; }
   .block-bean .bean-stanford-postcard h3 a {
     text-decoration-color: #00ece9; }
     .block-bean .bean-stanford-postcard h3 a:hover {
       text-decoration-color: #333333; }
 
 .block-bean .bean-stanford-postcard .field-name-field-s-postcard-body h2:first-child {
-  margin-top: 0; }
+  margin-top: 0 0 .8em; }
 
 .block-bean .bean-stanford-postcard .field-name-title h2 {
   font-size: 28px; }
@@ -2619,7 +2749,7 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
   margin: 1em 0 .5em; }
 
 .testimonial .postcard {
-  padding: 0 56px 40px; }
+  padding: 0; }
   @media (max-width: 767px) {
     .testimonial .postcard {
       display: block; } }
@@ -2637,7 +2767,7 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
     .testimonial .field-name-field-s-testimonial-superhead {
       font-size: 16px; } }
   .testimonial .field-name-field-s-testimonial-superhead.field {
-    margin-bottom: 2em; }
+    margin-bottom: 0; }
     @media (max-width: 580px) {
       .testimonial .field-name-field-s-testimonial-superhead.field {
         margin-bottom: 1em; } }
@@ -2659,6 +2789,7 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
 .testimonial .field-name-field-s-testimonial-credits {
   font-size: 18px;
   letter-spacing: 0;
+  line-height: 1.3;
   margin-top: 0; }
   @media (max-width: 580px) {
     .testimonial .field-name-field-s-testimonial-credits {
@@ -2673,6 +2804,7 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 56px;
   font-weight: 400;
+  margin-top: 0;
   opacity: 1;
   top: 30; }
   @media (max-width: 580px) {
@@ -2720,7 +2852,7 @@ p.superhead {
   font-size: 18px;
   font-weight: 700;
   line-height: 1.2em;
-  margin-bottom: 0.6em; }
+  margin-bottom: 0.3em; }
 
 .infotext,
 .well .infotext {
@@ -2734,6 +2866,21 @@ p.superhead {
 
 p.infotext {
   margin: 0; }
+
+.bean-stanford-postcard .postcard-content h2:last-child,
+.bean-stanford-postcard-linked .postcard-linked-content h2:last-child,
+.bean-stanford-postcard .postcard-content h3:last-child,
+.bean-stanford-postcard-linked .postcard-linked-content h3:last-child,
+.bean-stanford-postcard .postcard-content p:last-child,
+.bean-stanford-postcard-linked .postcard-linked-container .postcard-linked-content-container .postcard-linked-body p:last-child,
+.bean-stanford-postcard .postcard-content p a.btn:last-child,
+.bean-stanford-postcard-linked .postcard-linked-content p a.btn:last-child,
+.bean-stanford-postcard .postcard-content ul li:last-child,
+.bean-stanford-postcard-linked .postcard-linked-content ul li:last-child {
+  margin-bottom: 10px; }
+
+#content-body .content .view-mode-single_centered_button .field-name-field-s-postcard-body a.btn {
+  width: 30%; }
 
 .node-type-stanford-collection a,
 .node-type-stanford-magazine-article a,
@@ -2750,6 +2897,14 @@ p.infotext {
 .page-magazine-all #header #logo img,
 .page-taxonomy-term #header #logo img {
   max-width: 90px; }
+  @media (max-width: 1200px) {
+    .node-type-stanford-collection #header #logo img,
+    .node-type-stanford-magazine-article #header #logo img,
+    .node-type-stanford-magazine-issue #header #logo img,
+    .page-magazine #header #logo img,
+    .page-magazine-all #header #logo img,
+    .page-taxonomy-term #header #logo img {
+      max-width: 86px; } }
 
 @media (max-width: 480px) {
   .node-type-stanford-collection #header #logo.logo-mobile,
@@ -2759,6 +2914,15 @@ p.infotext {
   .page-magazine-all #header #logo.logo-mobile,
   .page-taxonomy-term #header #logo.logo-mobile {
     padding: 0 5px 0 0; } }
+
+@media (max-width: 1200px) {
+  .node-type-stanford-collection #header #logo.logo-mobile img,
+  .node-type-stanford-magazine-article #header #logo.logo-mobile img,
+  .node-type-stanford-magazine-issue #header #logo.logo-mobile img,
+  .page-magazine #header #logo.logo-mobile img,
+  .page-magazine-all #header #logo.logo-mobile img,
+  .page-taxonomy-term #header #logo.logo-mobile img {
+    max-width: 86px; } }
 
 .node-type-stanford-collection #header.header,
 .node-type-stanford-magazine-article #header.header,
@@ -2785,7 +2949,16 @@ p.infotext {
     .page-magazine #header.header,
     .page-magazine-all #header.header,
     .page-taxonomy-term #header.header {
-      padding: 10px 0 0; } }
+      min-height: 32px;
+      padding: 4px 0 0; } }
+  @media (max-width: 480px) {
+    .node-type-stanford-collection #header.header,
+    .node-type-stanford-magazine-article #header.header,
+    .node-type-stanford-magazine-issue #header.header,
+    .page-magazine #header.header,
+    .page-magazine-all #header.header,
+    .page-taxonomy-term #header.header {
+      min-height: 26px; } }
   @media (max-width: 400px) {
     .node-type-stanford-collection #header.header,
     .node-type-stanford-magazine-article #header.header,
@@ -2794,6 +2967,30 @@ p.infotext {
     .page-magazine-all #header.header,
     .page-taxonomy-term #header.header {
       min-height: auto; } }
+  @media (max-width: 380px) {
+    .node-type-stanford-collection #header.header,
+    .node-type-stanford-magazine-article #header.header,
+    .node-type-stanford-magazine-issue #header.header,
+    .page-magazine #header.header,
+    .page-magazine-all #header.header,
+    .page-taxonomy-term #header.header {
+      min-height: 30px; } }
+  @media (max-width: 380px) and (max-height: 479px) {
+    .node-type-stanford-collection #header.header,
+    .node-type-stanford-magazine-article #header.header,
+    .node-type-stanford-magazine-issue #header.header,
+    .page-magazine #header.header,
+    .page-magazine-all #header.header,
+    .page-taxonomy-term #header.header {
+      min-height: 26px; } }
+  @media (max-width: 767px) {
+    .node-type-stanford-collection #header.header #site-title-first-line,
+    .node-type-stanford-magazine-article #header.header #site-title-first-line,
+    .node-type-stanford-magazine-issue #header.header #site-title-first-line,
+    .page-magazine #header.header #site-title-first-line,
+    .page-magazine-all #header.header #site-title-first-line,
+    .page-taxonomy-term #header.header #site-title-first-line {
+      line-height: 1.1em; } }
   @media (max-width: 480px) {
     .node-type-stanford-collection #header.header #site-title-first-line.site-title-uppercase a,
     .node-type-stanford-magazine-article #header.header #site-title-first-line.site-title-uppercase a,
@@ -2801,7 +2998,7 @@ p.infotext {
     .page-magazine #header.header #site-title-first-line.site-title-uppercase a,
     .page-magazine-all #header.header #site-title-first-line.site-title-uppercase a,
     .page-taxonomy-term #header.header #site-title-first-line.site-title-uppercase a {
-      font-size: 28px;
+      font-size: 18px;
       margin-bottom: -5px; } }
   @media (max-width: 400px) {
     .node-type-stanford-collection #header.header #site-title-first-line.site-title-uppercase a,
@@ -2810,7 +3007,6 @@ p.infotext {
     .page-magazine #header.header #site-title-first-line.site-title-uppercase a,
     .page-magazine-all #header.header #site-title-first-line.site-title-uppercase a,
     .page-taxonomy-term #header.header #site-title-first-line.site-title-uppercase a {
-      font-size: 18px;
       margin-bottom: -3px; } }
   @media (max-width: 380px) {
     .node-type-stanford-collection #header.header #site-title-first-line.site-title-uppercase a,
@@ -3182,7 +3378,7 @@ p.infotext {
   .page-magazine-all .navbar .btn.btn-navbar,
   .page-taxonomy-term .navbar .btn.btn-navbar {
     background: #b1040e;
-    margin-top: -29px;
+    margin-top: -33px;
     float: right; } }
 
 @media (max-width: 480px) {
@@ -3192,7 +3388,16 @@ p.infotext {
   .page-magazine .navbar .btn.btn-navbar,
   .page-magazine-all .navbar .btn.btn-navbar,
   .page-taxonomy-term .navbar .btn.btn-navbar {
-    margin-top: -29px; } }
+    margin-top: -27px; } }
+
+@media (max-width: 380px) {
+  .node-type-stanford-collection .navbar .btn.btn-navbar,
+  .node-type-stanford-magazine-article .navbar .btn.btn-navbar,
+  .node-type-stanford-magazine-issue .navbar .btn.btn-navbar,
+  .page-magazine .navbar .btn.btn-navbar,
+  .page-magazine-all .navbar .btn.btn-navbar,
+  .page-taxonomy-term .navbar .btn.btn-navbar {
+    margin-top: -30px; } }
 
 #digital-magazine-menu {
   background: #00ece9; }
@@ -4748,6 +4953,10 @@ p.infotext {
       -o-transition: all 1s ease;
       transition: all 1s ease; }
   .view-stanford-magazine-issues .mag-feat-article-container .mag-article-content-container {
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+    background: #ffffff;
     padding: 50px 30px 30px; }
     @media (max-width: 979px) {
       .view-stanford-magazine-issues .mag-feat-article-container .mag-article-content-container {
@@ -4799,7 +5008,11 @@ p.infotext {
           line-height: 1.2em; } }
 
 .view-stanford-magazine-issues .mag-article-container {
-  margin-bottom: 80px; }
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+  background: #ffffff;
+  margin-bottom: 50px; }
   @media (max-width: 979px) {
     .view-stanford-magazine-issues .mag-article-container {
       margin-bottom: 40px; } }
@@ -5351,6 +5564,8 @@ spotlight-container.no-padding.well {
   .node-type-stanford-people-spotlight .region-content-bottom .spotlight-quote p {
     font-size: 0.75em;
     line-height: 1.2em; }
+    .node-type-stanford-people-spotlight .region-content-bottom .spotlight-quote p:last-child {
+      margin-bottom: 10px; }
 
 .node-type-stanford-people-spotlight .group-s-ppl-spot-container {
   width: 65%;

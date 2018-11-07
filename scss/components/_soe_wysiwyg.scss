@@ -5,15 +5,23 @@
 
 .image-caption-right,
 .image-caption-left {
+  @include box-sizing(border-box);
+
   margin: 0px;
   padding: 0px;
   border: 0;
   float: none;
   width: 100%;
   color: #606060;
-  font-size: 16px;
+  font-size: em(16px);
   line-height: 1.3em;
   font-weight: 300;
+
+  img {
+    height: auto;
+    margin-bottom: 0.75em;
+    width: 100%;
+  }
 }
 
 .image-caption-right {
@@ -134,6 +142,10 @@ p.btn-center {
 
     &:last-child {
       margin-right: 0;
+
+      .postcard-content & {
+        margin-bottom: 26px;
+      }
     }
   }
 }
@@ -181,10 +193,6 @@ p.float-right {
   margin: 0px;
   padding: 0px;
   width: 100%;
-}
-
-p.float-right,
-  .image-caption-right {
 }
 
 p.related-link {
