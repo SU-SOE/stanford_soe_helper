@@ -14,16 +14,19 @@ body {
   line-height: 1.55em;
 
   @include breakpoint-max(medium) {
+
     font-size: 19px;
     font-size: em(19px, $root-font-size);
   }
 
   @include breakpoint-max(small) {
+
     font-size: 18px;
     font-size: em(18px, $root-font-size);
   }
 
   @include breakpoint-max(x-small) {
+
     font-size: 17px;
     font-size: em(17px, $root-font-size);
   }
@@ -37,18 +40,22 @@ h1 {
   margin: -9px 0 10px;
 
   @include breakpoint-max(medium) {
+
     font-size: em(46px);
   }
 
   @include breakpoint-max(small) {
+
     font-size: em(40px);
   }
 
   @include breakpoint-max(x-small) {
+
     font-size: em(36px);
   }
 
   @include breakpoint-max(xx-small) {
+
     font-size: em(26px);
     margin-bottom: -9px 0 5px;
   }
@@ -135,6 +142,7 @@ a.btn {
     text-decoration: none;
 
     @include breakpoint-max(x-small) {
+
       width: 65%;
     }
   }
@@ -212,6 +220,7 @@ li {
       margin-bottom: 100px;
 
       @include breakpoint-max(small) {
+
         margin-bottom: 50px;
       }
 
@@ -309,10 +318,12 @@ th {
   background: $off-white;
 
   @include breakpoint-max(medium) {
+
     padding: 40px 0 50px;
   }
 
   @include breakpoint-max(small) {
+
     padding: 20px 0 50px;
   }
 
@@ -342,6 +353,7 @@ th {
     margin-bottom: 50px;
 
     @include breakpoint-max(medium) {
+
       margin-bottom: 10px;
     }
   }
@@ -349,6 +361,7 @@ th {
 
 .container {
   @include breakpoint-max(small) {
+
     margin-bottom: 10px;
 
     #fullwidth-bottom & {
@@ -359,6 +372,7 @@ th {
 
 #content.span9 {
   @include breakpoint-min(large) {
+
     width: 740px;
     margin-left: 80px;
   }
