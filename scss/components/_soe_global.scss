@@ -47,6 +47,11 @@ h1 {
   @include breakpoint-max(x-small) {
     font-size: em(36px);
   }
+
+  @include breakpoint-max(xx-small) {
+    font-size: em(26px);
+    margin-bottom: -9px 0 5px;
+  }
 }
 
 h2 {
@@ -303,8 +308,12 @@ th {
   padding: 80px 0 50px;
   background: $off-white;
 
+  @include breakpoint-max(medium) {
+    padding: 40px 0 50px;
+  }
+
   @include breakpoint-max(small) {
-    padding: 40px 0 0;
+    padding: 20px 0 50px;
   }
 
   p {
@@ -331,6 +340,10 @@ th {
 
   .block {
     margin-bottom: 50px;
+
+    @include breakpoint-max(medium) {
+      margin-bottom: 10px;
+    }
   }
 }
 
