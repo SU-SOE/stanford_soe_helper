@@ -35,6 +35,10 @@ h1 {
   @media (max-width: 480px) {
     h1 {
       font-size: 1.8em; } }
+  @media (max-width: 400px) {
+    h1 {
+      font-size: 1.3em;
+      margin-bottom: -9px 0 5px; } }
 
 h2 {
   font-family: "Roboto Slab", serif;
@@ -238,9 +242,12 @@ th {
 .main {
   padding: 80px 0 50px;
   background: #f8f8f8; }
+  @media (max-width: 979px) {
+    .main {
+      padding: 40px 0 50px; } }
   @media (max-width: 767px) {
     .main {
-      padding: 40px 0 0; } }
+      padding: 20px 0 50px; } }
   .main p {
     margin: 0 0 1.5em; }
     .main p.columns {
@@ -255,6 +262,9 @@ th {
       margin: 0 0 1em; }
   .main .block {
     margin-bottom: 50px; }
+    @media (max-width: 979px) {
+      .main .block {
+        margin-bottom: 10px; } }
 
 @media (max-width: 767px) {
   .container {
@@ -789,6 +799,10 @@ p.summary.drop-cap:first-letter {
   padding-right: 7px;
   margin-right: 7px; }
 
+@media (max-width: 400px) {
+  .sidebar {
+    margin-bottom: 0; } }
+
 .sidebar .block-menu {
   background: none;
   margin: 1px; }
@@ -809,13 +823,20 @@ p.summary.drop-cap:first-letter {
 
 .sidebar#sidebar-first {
   margin-top: 20px; }
+  @media (max-width: 767px) {
+    .sidebar#sidebar-first {
+      margin-top: 10px; } }
   .sidebar#sidebar-first .block-menu-block {
     background: none;
     margin: 1px 1px 36px;
     padding: 0; }
     @media (max-width: 767px) {
       .sidebar#sidebar-first .block-menu-block {
+        margin-bottom: 20px;
         width: 100%; } }
+    @media (max-width: 400px) {
+      .sidebar#sidebar-first .block-menu-block {
+        margin-bottom: 10px; } }
     .sidebar#sidebar-first .block-menu-block h2 {
       font-family: "Roboto Slab", serif;
       font-weight: 400;

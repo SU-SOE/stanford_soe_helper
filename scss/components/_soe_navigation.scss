@@ -10,31 +10,37 @@
     margin-top: -45px;
 
     @include breakpoint-max(large) {
+
       float: left;
       margin-top: 0;
     }
 
     @include breakpoint-max(small) {
+
       width: 100%;
     }
   }
 
   .nav-collapse {
     @include breakpoint-max(small) {
+
       width: 100%;
     }
   }
 
   .container {
     @include breakpoint-max(large) {
+
       margin-bottom: 0;
     }
 
     @include breakpoint-max(x-small) {
+
       margin-bottom: 10px;
     }
 
     @include breakpoint-max(xxx-small) {
+
       margin-bottom: 6px;
     }
   }
@@ -52,10 +58,12 @@
       padding-bottom: 30px;
 
       @include breakpoint-max(large) {
+
         padding-bottom: 24px;
       }
 
       @include breakpoint-max(small) {
+
         padding-bottom: 0.25em;
         border-bottom: 0;
       }
@@ -68,6 +76,7 @@
       border-bottom: 2px solid $primary-color;
 
       @include breakpoint-max(small) {
+
         border-bottom: 0;
       }
     }
@@ -75,29 +84,35 @@
 
   .btn.btn-navbar {
     @include breakpoint-max(small) {
+
       background: $brand-bright;
       margin-top: -43px;
       float: right;
     }
 
     @include breakpoint-max(x-small) {
+
       margin-top: -32px;
     }
 
     @include breakpoint-max(xx-small) {
+
       margin-top: -37px;
     }
 
     @include breakpoint-max(xxx-small) {
+
       margin-top: -32px;
     }
 
     @media (max-width: 320px) {
+
       float: left;
       margin-top: 0;
     }
 
     @media (max-width: 305px) {
+
       float: left;
       margin-top: 0;
     }
@@ -112,6 +127,7 @@
     margin-bottom: 0;
 
     @include breakpoint-max(small) {
+
       height: auto;
       border-right: 0;
       padding-right: 0;
@@ -126,6 +142,11 @@
 
 // SUBNAVIGATION
 .sidebar {
+  @include breakpoint-max(xx-small) {
+
+    margin-bottom: 0;
+  }
+
   .block-menu {
     background: none;
     margin: 1px;
@@ -163,15 +184,26 @@
   &#sidebar-first {
     margin-top: 20px;
 
+    @include breakpoint-max(small) {
+
+      margin-top: 10px;
+    }
+
     .block-menu-block {
       background: none;
       margin: 1px 1px 36px;
       padding: 0;
 
       @include breakpoint-max(small) {
+
+        margin-bottom: 20px;
         width: 100%;
       }
 
+      @include breakpoint-max(xx-small) {
+
+        margin-bottom: 10px;
+      }
 
       h2 {
         font-family: $roboto-slab;
@@ -182,6 +214,7 @@
       .menu-block-wrapper {
         &.menu-block-stanford_jsa_layouts-1.menu-name-main-menu.parent-mlid-0.menu-level-2 {
           @include breakpoint-max(small) {
+
             background: $white;
             padding: 20px;
             box-shadow: 0 2px 2px 0 $box-shadow;
