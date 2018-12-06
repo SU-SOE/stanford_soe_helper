@@ -83,15 +83,17 @@ user/*/edit";
   $collections = 0;
 
   // If the page is part of a collection, take note.
-  foreach ($variables['page']['content']['system_main']['nodes'] as $node) {
-    if (isset($node['field_s_mag_article_collection'])) {
-      $collections++;
+  if (isset($variables['page']['content']['system_main']['nodes'])) {
+    foreach ($variables['page']['content']['system_main']['nodes'] as $node) {
+      if (isset($node['field_s_mag_article_collection'])) {
+        $collections++;
+      }
     }
   }
 
   // Move the mag news signup between related depts and related articles.
   if (!$collections) {
-    if (isset($variables['page']['fullwidth_bottom']['bean_stanford-soe-mag-news-signup'])) {
+    if (isset($variables['page']['content_bottom']) && isset($variables['page']['fullwidth_bottom']['bean_stanford-soe-mag-news-signup'])) {
       array_unshift($variables['page']['content_bottom'], $variables['page']['fullwidth_bottom']);
       unset($variables['page']['fullwidth_bottom']['bean_stanford-soe-mag-news-signup']);
     }
