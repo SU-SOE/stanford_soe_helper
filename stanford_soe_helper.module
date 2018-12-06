@@ -93,7 +93,7 @@ user/*/edit";
 
   // Move the mag news signup between related depts and related articles.
   if (!$collections) {
-    if (isset($variables['page']['content_bottom']) && isset($variables['page']['fullwidth_bottom']['bean_stanford-soe-mag-news-signup'])) {
+    if (isset($variables['page']['fullwidth_bottom']['bean_stanford-soe-mag-news-signup'])) {
       array_unshift($variables['page']['content_bottom'], $variables['page']['fullwidth_bottom']);
       unset($variables['page']['fullwidth_bottom']['bean_stanford-soe-mag-news-signup']);
     }
