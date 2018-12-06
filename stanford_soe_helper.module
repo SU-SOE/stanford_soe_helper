@@ -80,14 +80,16 @@ user/*/edit";
     }
   }
 
-  $collections = 0;
+  $collections = FALSE;
 
   // If the page is part of a collection, take note.
   if (isset($variables['page']['content']['system_main']['nodes'])) {
-    foreach ($variables['page']['content']['system_main']['nodes'] as $node) {
-      if (isset($node['field_s_mag_article_collection'])) {
-        $collections++;
-      }
+
+    $nodes = array_pop(array_reverse($variables['page']['content']['system_main']));
+    $node = array_pop(array_reverse($nodes));
+
+    if (isset($node['field_s_mag_article_collection'])) {
+      $collections = TRUE;
     }
   }
 
