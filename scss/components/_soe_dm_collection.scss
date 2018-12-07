@@ -473,6 +473,24 @@
           width: auto;
         }
       }
+
+      &+ a {
+        -webkit-border-radius: 0.3em;
+        -moz-border-radius: 0.3em;
+        -ms-border-radius: 0.3em;
+        -o-border-radius: 0.3em;
+        border-radius: 0.3em;
+        padding: 0.5em 1em;
+        border: 1px solid #cccccc;
+        font-size: .8em;
+        text-decoration: none;
+
+        &:hover {
+          background: #333333;
+          color: #fbfbf9;
+          text-decoration: none;
+        }
+      }
     }
 
     .edit-link {
