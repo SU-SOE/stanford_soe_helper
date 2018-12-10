@@ -557,6 +557,11 @@
     margin-bottom: 0;
   }
 
+  .views-field {
+    float: left;
+    margin-bottom: 78px;
+  }
+
   h2 {
     font-family: $primary-font;
     color: $gray-orange;
@@ -807,7 +812,6 @@
 
   .mag-article-container {
     float: left;
-    margin-bottom: 80px;
 
     @include breakpoint-max(medium) {
       margin-bottom: 40px;
@@ -911,6 +915,28 @@
 
         a {
           color: $primary-color;
+        }
+      }
+    }
+
+    &.well {
+      margin-bottom: 2px;
+
+      + a {
+        -webkit-border-radius: 0.3em;
+        -moz-border-radius: 0.3em;
+        -ms-border-radius: 0.3em;
+        -o-border-radius: 0.3em;
+        border-radius: 0.3em;
+        padding: 0.5em 1em;
+        border: 1px solid #cccccc;
+        font-size: .8em;
+        text-decoration: none;
+
+        &:hover {
+          background: #333333;
+          color: #fbfbf9;
+          text-decoration: none;
         }
       }
     }
