@@ -95,7 +95,9 @@ user/*/edit";
   if (!$collections) {
     if (isset($variables['page']['content_bottom']) && isset($variables['page']['fullwidth_bottom']['bean_stanford-soe-mag-news-signup'])) {
       // Move the mag news signup between related depts and related articles.
-      array_unshift($variables['page']['content_bottom'], $variables['page']['fullwidth_bottom']);
+      if (!isset($variables['page']['full_width_middle']['bean_stanford-soe-mag-news-signup'])) {
+        array_unshift($variables['page']['content_bottom'], $variables['page']['fullwidth_bottom']);
+      }
       // Unset the block from showing in the fullwidth bottom region.
       unset($variables['page']['fullwidth_bottom']['bean_stanford-soe-mag-news-signup']);
     }
