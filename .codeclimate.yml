@@ -72,6 +72,10 @@ plugins:
         enabled: false
       CleanCode/BooleanArgumentFlag:
         enabled: false
+      CyclomaticComplexity:
+        enabled: false
+      Design/NpathComplexity:
+        enabled: false
       UnusedFormalParameter:
         enabled: false
     config:
@@ -84,6 +88,9 @@ plugins:
   # https://docs.codeclimate.com/docs/phan
   phan:
     enabled: true
+    checks:
+          PhanTypeInvalidDimOffset:
+            enabled: false
     config:
       file_extensions: "php,module,profile,inc"
       # minimum-severity: 1
