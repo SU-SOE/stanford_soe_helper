@@ -297,3 +297,34 @@
 .view-soe-school-news-with-teaser {
   margin-top: 12px;
 }
+
+.view-soe-school-news-with-teaser.view-display-id-page_1 {
+  &.views-row-lines {
+    .views-row {
+      padding: 1em 1.5em 1.7em;
+      margin-bottom: 0px;
+    }
+
+    .views-row-1 {
+      padding: 1em 1.5em 1.7em;
+    }
+  }
+
+  .item-list .pager {
+    margin-top: 2em;
+
+    li a {
+      font-size: 0.8em;
+
+      &:focus,
+      &:hover {
+        background-color: $brand;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .views-row {
+    margin-bottom: 0px;
+  }
+}
