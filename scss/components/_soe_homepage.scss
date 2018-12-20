@@ -21,10 +21,10 @@
 
       a:not(.btn) {
         @include td-skip;
-        @include td-color($turquoise);
 
         color: $primary-color;
         text-decoration: underline;
+        @include td-color($turquoise);
 
         &:focus,
         &:hover {
