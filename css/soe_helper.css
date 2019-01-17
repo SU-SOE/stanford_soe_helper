@@ -1142,6 +1142,10 @@ p.summary.drop-cap:first-letter {
 .node-type-stanford-landing-page .view-mode-stanford_medium_square {
   border-top: 1px solid #d7d7d7; }
 
+.node-type-stanford-landing-page #block-ds-extras-landing-page-featured-image img {
+  height: auto;
+  width: 100%; }
+
 @media (min-width: 767px) {
   .views-grid-two .views-row {
     width: 46%;
@@ -1710,7 +1714,7 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
   margin-top: 12px; }
 
 .view-soe-school-news-with-teaser.view-display-id-page_1.views-row-lines .views-row {
-  margin-bottom: 0px;
+  margin-bottom: 0;
   padding: 1em 1.5em 1.7em; }
 
 .view-soe-school-news-with-teaser.view-display-id-page_1.views-row-lines .views-row-1 {
@@ -1725,7 +1729,7 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
       font-weight: 400; }
 
 .view-soe-school-news-with-teaser.view-display-id-page_1 .views-row {
-  margin-bottom: 0px; }
+  margin-bottom: 0; }
 
 .node-type-stanford-event .date-display-single {
   font-weight: 600; }
