@@ -440,6 +440,10 @@
       @include breakpoint-max(x-small) {
         margin-bottom: 20px;
       }
+
+      .node-type-stanford-magazine-article & {
+        margin-bottom: 0;
+      }
     }
 
     &.views-grid-three .views-row {
@@ -1173,6 +1177,10 @@
       width: 100%;
     }
   }
+}
+
+.node-type-stanford-magazine-article #block-stanford-soe-helper-magazine-soe-all-issues-link-2 {
+  margin-bottom: 0;
 }
 
 .page-taxonomy-term #block-stanford-soe-helper-magazine-soe-all-issues-link-2 {
