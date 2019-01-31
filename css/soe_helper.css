@@ -1572,7 +1572,7 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
   margin-top: 1em; }
 
 .node-type-stanford-news-item .caption {
-  font-size: 0.7em;
+  font-size: 0.9em;
   font-style: normal; }
   .node-type-stanford-news-item .caption p:after {
     padding-right: 3px; }
@@ -4026,6 +4026,10 @@ p.infotext {
     .view-stanford-magazine-articles.article-grouping .views-row,
     .view-stanford-magazine-topics.article-grouping .views-row {
       margin-bottom: 20px; } }
+  .node-type-stanford-magazine-article .view-stanford-magazine-article-most-recent.article-grouping .views-row, .node-type-stanford-magazine-article
+  .view-stanford-magazine-articles.article-grouping .views-row, .node-type-stanford-magazine-article
+  .view-stanford-magazine-topics.article-grouping .views-row {
+    margin-bottom: 0; }
 
 .view-stanford-magazine-article-most-recent.article-grouping.views-grid-three .views-row,
 .view-stanford-magazine-articles.article-grouping.views-grid-three .views-row,
@@ -4789,6 +4793,9 @@ p.infotext {
     @media (max-width: 480px) {
       #block-ds-extras-related-departments .field-name-field-s-mag-article-dept {
         width: 100%; } }
+
+.node-type-stanford-magazine-article #block-stanford-soe-helper-magazine-soe-all-issues-link-2 {
+  margin-bottom: 0; }
 
 .page-taxonomy-term #block-stanford-soe-helper-magazine-soe-all-issues-link-2 {
   display: none; }
