@@ -44,6 +44,11 @@
       margin-bottom: 6px;
     }
   }
+  #main-nav {
+    @include breakpoint-max(small) {
+      background: transparent;
+    }
+  }
 }
 
 .navbar {
@@ -72,12 +77,17 @@
     > .active-trail > a,
     > li > a:focus,
     > li > a:hover,
-    > .active > a:hover {
+    > .active > a:hover,
+    > .active > a:focus,
+    > .active-trail > a:hover,
+    > .active-trail > a:focus {
       border-bottom: 2px solid $primary-color;
 
       @include breakpoint-max(small) {
 
         border-bottom: 0;
+        color: $primary-color;
+        background: transparent;
       }
     }
   }
