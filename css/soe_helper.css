@@ -735,6 +735,10 @@ p.summary.drop-cap:first-letter {
   #main-menu .container {
     margin-bottom: 6px; } }
 
+@media (max-width: 767px) {
+  #main-menu #main-nav {
+    background: transparent; } }
+
 .navbar {
   margin-bottom: 0; }
   .navbar .nav > li > a {
@@ -753,14 +757,22 @@ p.summary.drop-cap:first-letter {
   .navbar .nav > .active-trail > a,
   .navbar .nav > li > a:focus,
   .navbar .nav > li > a:hover,
-  .navbar .nav > .active > a:hover {
+  .navbar .nav > .active > a:hover,
+  .navbar .nav > .active > a:focus,
+  .navbar .nav > .active-trail > a:hover,
+  .navbar .nav > .active-trail > a:focus {
     border-bottom: 2px solid #333333; }
     @media (max-width: 767px) {
       .navbar .nav > .active-trail > a,
       .navbar .nav > li > a:focus,
       .navbar .nav > li > a:hover,
-      .navbar .nav > .active > a:hover {
-        border-bottom: 0; } }
+      .navbar .nav > .active > a:hover,
+      .navbar .nav > .active > a:focus,
+      .navbar .nav > .active-trail > a:hover,
+      .navbar .nav > .active-trail > a:focus {
+        border-bottom: 0;
+        color: #333333;
+        background: transparent; } }
   @media (max-width: 767px) {
     .navbar .btn.btn-navbar {
       background: #b1040e;
