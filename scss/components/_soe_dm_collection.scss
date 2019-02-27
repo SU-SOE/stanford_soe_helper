@@ -232,8 +232,7 @@
     }
 
     &.view-display-id-article_collection_bottom_block {
-      background-color: $light-gray;
-      padding: 0 15% 80px;
+      padding-bottom: 80px;
 
       .view-header {
         margin-bottom: 80px;
@@ -310,6 +309,27 @@
             background: $primary-color;
           }
         }
+      }
+    }
+  }
+  #fullwidth-bottom {
+    background-color: $light-gray;
+
+    .container {
+      margin-left: auto;
+      margin-right: auto;
+      width: 940px;
+
+      @include breakpoint-min(large) {
+        width: 1170px;
+      }
+      @include breakpoint-max(medium) {
+        width: 724px;
+      }
+      @include breakpoint-max(small) {
+        margin-left: 20px;
+        margin-right: 20px;
+        width: auto;
       }
     }
   }
