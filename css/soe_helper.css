@@ -3512,12 +3512,19 @@ p.infotext {
         #digital-magazine-menu .region-digital-magazine-menu .block-menu-block {
           display: block;
           width: 100%; } }
+      @media (max-width: 580px) {
+        #digital-magazine-menu .region-digital-magazine-menu .block-menu-block {
+          padding-top: 10px; } }
       #digital-magazine-menu .region-digital-magazine-menu .block-menu-block h2 {
         margin-bottom: 0;
         padding-bottom: 20px; }
         @media (max-width: 767px) {
           #digital-magazine-menu .region-digital-magazine-menu .block-menu-block h2 {
             float: left; } }
+        @media (max-width: 580px) {
+          #digital-magazine-menu .region-digital-magazine-menu .block-menu-block h2 {
+            font-size: 22px;
+            padding-bottom: 10px; } }
         #digital-magazine-menu .region-digital-magazine-menu .block-menu-block h2 a {
           font-weight: 600;
           text-decoration: none; }
@@ -3576,6 +3583,9 @@ p.infotext {
             #digital-magazine-menu .region-digital-magazine-menu .block-menu-block ul li a.active {
               color: #606060;
               border-bottom-color: #606060; }
+    @media (max-width: 767px) {
+      #digital-magazine-menu .region-digital-magazine-menu .block-stanford-search-api {
+        margin-top: -10px; } }
     #digital-magazine-menu .region-digital-magazine-menu .block-stanford-search-api .form-item-keywords {
       margin-top: 1.1em; }
       @media (max-width: 767px) {
