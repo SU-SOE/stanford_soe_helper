@@ -402,3 +402,23 @@ function stanford_soe_helper_cron() {
     }
   }
 }
+
+function stanford_soe_helper_views_pre_render(&$view) {
+  $used_nids = array();
+
+  if ($view->name == 'stanford_magazine_collection_mag_landing_page') {
+
+    if ($view->current_display == 'collection_group_1_block') {
+
+      foreach ($view->result as $row) {
+
+        if (!in_array($row->nid, $used_nids)) {
+
+          $new_view_result[] = $row;
+          $used_nids[] = $row->nid;
+        }
+      }
+      $view->result = $new_view_result;
+    }
+  }
+}
