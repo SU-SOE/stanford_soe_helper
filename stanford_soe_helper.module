@@ -402,3 +402,105 @@ function stanford_soe_helper_cron() {
     }
   }
 }
+
+function stanford_soe_helper_views_pre_render(&$view) {
+
+  $used_nids = [];
+  $used_featured_issues = [];
+  $used_non_featured_issues = [];
+  $new_view_result = [];
+  $used_issues = [];
+
+  if ($view->name == 'stanford_magazine_collection_mag_landing_page') {
+
+    if ($view->current_display == 'collection_group_1_block') {
+
+      $data = $view->result;
+
+      foreach ($data as $key => $results) {
+        if (!in_array($results->nid, $used_nids)) {
+          // Build array of featured issues across all rows.
+          if (!empty($results->field_s_mag_issue_featured_node_title)) {
+            $used_issues[$results->nid][][$results->field_s_mag_issue_featured_node_nid] = $results->field_s_mag_issue_featured_node_title;
+          }
+          if (!empty($results->field_s_mag_issue_article_2_node_title)) {
+            $used_issues[$results->nid][][$results->field_s_mag_issue_article_2_node_nid] = $results->field_s_mag_issue_article_2_node_title;
+          }
+          if (!empty($results->field_s_mag_issue_article_3_node_title)) {
+            $used_issues[$results->nid][][$results->field_s_mag_issue_article_3_node_nid] = $results->field_s_mag_issue_article_3_node_title;
+          }
+          if (!empty($results->field_s_mag_issue_article_4_node_title)) {
+            $used_issues[$results->nid][][$results->field_s_mag_issue_article_4_node_nid] = $results->field_s_mag_issue_article_4_node_title;
+          }
+          if (!empty($results->field_s_mag_issue_article_5_node_title)) {
+            $used_issues[$results->nid][][$results->field_s_mag_issue_article_5_node_nid] = $results->field_s_mag_issue_article_5_node_title;
+          }
+          $used_nids[] = $results->nid;
+        }
+      }
+      foreach ($view->result as $key => $row) {
+        //if (!in_array($row->nid, $used_nids)) {
+        $issues_text = '';
+        $issue_list = [];
+        //$used_featured_issues = array_unique($used_featured_issues);
+        //$used_non_featured_issues = array_unique($used_non_featured_issues);
+        //$used_non_featured_issues = array_filter($used_non_featured_issues);
+        //dpm($used_featured_issues);
+        dpm($used_issues);
+        if (is_array($used_issues)) {
+          //dpm($used_issues);
+          foreach ($used_issues as $article_nid => $issue) {
+            dpm($article_nid);
+            dpm($row->nid);
+            if ($row->nid == $article_nid) {
+              foreach ($issue as $key => $issue_number) {
+                //dpm($issue_number);
+                foreach ($issue_number as $issue_nid => $issue_text) {
+                  //dpm($issue_nid);
+                  //dpm($issue_text);
+                  //foreach ($issue_nid as $key => $issue_number) {
+                  $issue_path = drupal_get_path_alias('node/' . $issue_nid);
+                  // Do not duplicate if it already exists.
+                  //dpm($issue_text);
+                  //dpm($issue_list);
+                  if (!in_array($issue_text, $issue_list)) {
+                    $issues_text .= '<a href="/' . $issue_path . '">' . $issue_text . '</a>';
+                  }
+                  //}
+                  $issue_list[] = $issue_text;
+                }
+                //dpm($issues_text);
+                //$view->field['nothing_1']->options['alter']['text'] = $issues_text;
+                //$view->field['nothing_1']->options['alter']['alter_text'] = TRUE;
+                //$view->field['nothing']->options['alter']['alter_text'] = TRUE;
+              }
+              //dpm($issues_text);
+              $view->field['nothing_1']->options['alter']['text'] = $issues_text;
+              $view->field['nothing_1']->options['alter']['alter_text'] = TRUE;
+              $view->field['nothing']->options['alter']['alter_text'] = TRUE;
+              //$used_nids[] = $row->nid;
+            }
+            //dpm($issues_text);
+            //$view->field['nothing_1']->options['alter']['text'] = $issues_text;
+            //$view->field['nothing_1']->options['alter']['alter_text'] = TRUE;
+            //$view->field['nothing']->options['alter']['alter_text'] = TRUE;
+            //$used_nids[] = $article_nid;
+          }
+          //dpm($issues_text);
+          //$view->field['nothing_1']->options['alter']['text'] = $issues_text;
+          //$view->field['nothing_1']->options['alter']['alter_text'] = TRUE;
+          //$view->field['nothing']->options['alter']['alter_text'] = TRUE;
+          $new_view_result[] = $row;
+        }
+        //dpm($issues_text);
+        //$view->field['nothing_1']->options['alter']['alter_text'] = TRUE;
+        //$view->field['nothing']->options['alter']['alter_text'] = TRUE;
+        //$view->field['nothing_1']->options['alter']['text'] = $issues_text;
+        $view->result = $new_view_result;
+
+        //} //if (!in_array($row->nid, $used_nids)) {
+      }
+
+    }
+  }
+}
