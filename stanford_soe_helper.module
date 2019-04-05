@@ -403,6 +403,11 @@ function stanford_soe_helper_cron() {
   }
 }
 
+/**
+ * Implements hook_views_pre-render().
+ *
+ * De-duping view on collectiions.
+ */
 function stanford_soe_helper_views_pre_render(&$view) {
   $used_nids = array();
 
