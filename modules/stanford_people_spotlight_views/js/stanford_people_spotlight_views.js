@@ -34,7 +34,14 @@
 
         //Triggering a transition after a selection is made.
         $(document).ajaxStart(function() {
-            spotlightTransition();
+              var uri = window.location.toString();
+              // We remove the page= from the url if it exists.
+              var fixuri = uri.replace(/&?page=([^&]$|[^&]*)/i, "");
+
+              spotlightTransition();
+
+              // We load the new replace the url with the new fixed url.
+              window.history.replaceState({}, document.title, fixuri);
         });
 
     }
