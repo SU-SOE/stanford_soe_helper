@@ -33,7 +33,7 @@
         spotlight();
 
         //Triggering a transition after a selection is made.
-        $(document).ajaxStart(function() {
+        $('select', context).change(function() {
               var uri = window.location.toString();
               // We remove the page= from the url if it exists.
               var fixuri = uri.replace(/&?page=([^&]$|[^&]*)/i, "");
