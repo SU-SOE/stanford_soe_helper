@@ -8,6 +8,16 @@
   transition: opacity 1s;
 }
 
+.views-exposed-widget label:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 .view-stanford-ppl-spot-3-v-card .view-filters form {
   float: right;
 }
