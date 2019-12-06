@@ -18,7 +18,8 @@
   }
 
   .body-style {
-    width: 750px;
+    max-width: 750px;
+    width: 100%;
 
     @include breakpoint-max(med-small) {
       width: 100%;
@@ -99,11 +100,13 @@
 }
 
 #block-ds-extras-banner-overlay {
-  width: 750px;
+  max-width: 750px;
+  width: 100%;
   position: absolute;
   top: 210px;
 
   @include breakpoint-max(large) {
+    max-width: 600px;
     top: 250px;
   }
 
@@ -114,12 +117,12 @@
 
   @include breakpoint-max(small) {
     position: relative;
-    top: -196px;
+    top: -260px;
     margin-bottom: -245px;
   }
 
   @include breakpoint-max(smaller) {
-    top: -224px;
+    top: -340px;
   }
 
   @include breakpoint-max(x-small) {
