@@ -128,17 +128,14 @@ function stanford_soe_helper_news_views_default_views() {
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['label'] = '';
   $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="feat-news-container">
-  <a href=[path]>
-      <div class="feat-news-img">[field_s_image_info]</div>
-  </a>
-      <div class="feat-news-content-container">
-           <div class="feat-news-date">School News – [field_s_news_date]</div>
-           <div class="feat-news-title"><h2>[title]</h2></div>
-           <div class="feat-news-teaser">[field_s_news_teaser]</div>
-           <div class="edit-link">[edit_node]</div>
-      </div>
- </div>
-';
+    <div class="feat-news-img">[field_s_image_info]</div>
+    <div class="feat-news-content-container">
+        <div class="feat-news-date">School News – [field_s_news_date]</div>
+        <div class="feat-news-title"><h2>[title]</h2></div>
+        <div class="feat-news-teaser">[field_s_news_teaser]</div>
+        <div class="edit-link">[edit_node]</div>
+    </div>
+</div>';
   $handler->display->display_options['fields']['nothing']['element_type'] = 'div';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['nothing']['element_wrapper_type'] = 'div';
