@@ -1559,7 +1559,7 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
     width: 850px; } }
 
 .node-type-stanford-news-item .fullwidth .field-name-field-s-news-banner .field-item {
-  background: #333333; }
+  background: #f8f8f8; }
 
 .node-type-stanford-news-item .fullwidth .field-name-field-s-news-banner img {
   width: 100%;
@@ -1620,8 +1620,8 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
       top: -315px;
       width: 250px; } }
   #block-ds-extras-banner-overlay .field-name-field-s-news-teaser .field-item {
-    color: #ffffff;
-    text-shadow: 0 0 4px #000000;
+    color: #000000;
+    text-shadow: none;
     line-height: 1.3em; }
     @media (max-width: 485px) {
       #block-ds-extras-banner-overlay .field-name-field-s-news-teaser .field-item {
@@ -1630,9 +1630,9 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
       #block-ds-extras-banner-overlay .field-name-field-s-news-teaser .field-item {
         font-size: 0.7em; } }
   #block-ds-extras-banner-overlay .field-name-title h1 {
-    color: #ffffff;
+    color: #000000;
     font-size: 2.4em;
-    text-shadow: 0 0 4px #000000;
+    text-shadow: none;
     line-height: 1.3em;
     margin: -9px 0 22px; }
     @media (max-width: 485px) {
@@ -1641,6 +1641,18 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
     @media (max-width: 380px) {
       #block-ds-extras-banner-overlay .field-name-title h1 {
         font-size: 1em; } }
+  #block-ds-extras-banner-overlay .field-name-title {
+    position: relative;
+    left: -100px; }
+    @media (max-width: 1200px) {
+      #block-ds-extras-banner-overlay .field-name-title {
+        left: -90px; } }
+    @media (max-width: 979px) {
+      #block-ds-extras-banner-overlay .field-name-title {
+        left: -70px; } }
+    @media (max-width: 767px) {
+      #block-ds-extras-banner-overlay .field-name-title {
+        left: 0; } }
   .logged-in #block-ds-extras-banner-overlay {
     top: 285px; }
     @media (max-width: 1200px) {
