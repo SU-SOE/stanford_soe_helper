@@ -34,7 +34,7 @@
 
   .fullwidth .field-name-field-s-news-banner {
     .field-item {
-      background: $primary-color;
+      background: #f8f8f8;
     }
 
     img {
@@ -135,8 +135,8 @@
   }
 
   .field-name-field-s-news-teaser .field-item {
-    color: $white;
-    text-shadow: 0 0 4px $black;
+    color: $black;
+    text-shadow: none;
     line-height: 1.3em;
 
     @include breakpoint-max(med-small) {
@@ -153,9 +153,9 @@
   }
 
   .field-name-title h1 {
-    color: $white;
+    color: $black;
     font-size: em(48px);
-    text-shadow: 0 0 4px $black;
+    text-shadow: none;
     line-height: 1.3em;
     margin: -9px 0 22px;
 
@@ -169,6 +169,23 @@
 
     @media (max-width: 380px) {
       font-size: 1em;
+    }
+  }
+
+  .field-name-title {
+    position: relative;
+    left: -100px;
+
+    @include breakpoint-max(large) {
+      left: -90px;
+    }
+
+    @include breakpoint-max(medium) {
+      left: -70px;
+    }
+
+    @include breakpoint-max(small) {
+      left: 0;
     }
   }
 
