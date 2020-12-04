@@ -42,8 +42,8 @@
       height: 360px;
       opacity: 0.4;
 
-      @include breakpoint-max(med-small) {
-        height: 215px;
+      @media (max-width: 485px) {
+        height: 160px;
       }
     }
   }
@@ -101,6 +101,10 @@
 
 #block-ds-extras-banner {
   margin-bottom: -70px;
+
+  @media (max-width: 485px) {
+    margin-bottom: 0px;
+  }
 }
 
 #block-ds-extras-banner-overlay {
@@ -126,7 +130,7 @@
   }
 
   @include breakpoint-max(smaller) {
-    top: -340px;
+    top: -160px;
   }
 
   @include breakpoint-max(x-small) {
@@ -134,7 +138,7 @@
   }
 
   @media (max-width: 380px) {
-    top: -315px;
+    top: -170px;
     width: 250px;
   }
 

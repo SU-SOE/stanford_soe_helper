@@ -1565,6 +1565,9 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
   width: 100%;
   height: 360px;
   opacity: 0.4; }
+  @media (max-width: 485px) {
+    .node-type-stanford-news-item .fullwidth .field-name-field-s-news-banner img {
+      height: 160px; } }
 
 .node-type-stanford-news-item .content-body .field-name-field-s-image-image {
   margin-bottom: 0; }
@@ -1597,6 +1600,9 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
 
 #block-ds-extras-banner {
   margin-bottom: -70px; }
+  @media (max-width: 485px) {
+    #block-ds-extras-banner {
+      margin-bottom: 0px; } }
 
 #block-ds-extras-banner-overlay {
   max-width: 750px;
@@ -1614,13 +1620,13 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
       margin-bottom: -245px; } }
   @media (max-width: 580px) {
     #block-ds-extras-banner-overlay {
-      top: -340px; } }
+      top: -160px; } }
   @media (max-width: 480px) {
     #block-ds-extras-banner-overlay {
       width: 100%; } }
   @media (max-width: 380px) {
     #block-ds-extras-banner-overlay {
-      top: -315px;
+      top: -170px;
       width: 250px; } }
   #block-ds-extras-banner-overlay .field-name-field-s-news-teaser .field-item {
     color: #000000;
