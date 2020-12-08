@@ -1679,6 +1679,18 @@ body:not(.page-admin) .sidebar .views-exposed-form .views-exposed-widget .form-s
     @media (max-width: 485px) {
       .logged-in #block-ds-extras-banner-overlay .field-name-field-s-news-teaser .field-item {
         font-size: 0.75em; } }
+  #block-ds-extras-banner-overlay .teaser-style {
+    left: -100px;
+    position: relative; }
+    @media (max-width: 1200px) {
+      #block-ds-extras-banner-overlay .teaser-style {
+        left: -90px; } }
+    @media (max-width: 979px) {
+      #block-ds-extras-banner-overlay .teaser-style {
+        left: -70px; } }
+    @media (max-width: 767px) {
+      #block-ds-extras-banner-overlay .teaser-style {
+        left: 0; } }
 
 .view-stanford-news-featured .feat-news-container .feat-news-img {
   overflow: hidden; }

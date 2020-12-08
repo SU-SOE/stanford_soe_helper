@@ -224,6 +224,23 @@
       }
     }
   }
+
+  .teaser-style {
+    left: -100px;
+    position: relative;
+
+    @include breakpoint-max(large) {
+      left: -90px;
+    }
+
+    @include breakpoint-max(medium) {
+      left: -70px;
+    }
+
+    @include breakpoint-max(small) {
+      left: 0;
+    }
+  }
 }
 // HOMEPAGE FEATURED NEWS VIEW
 .view-stanford-news-featured {
