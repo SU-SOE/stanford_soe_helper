@@ -42,8 +42,8 @@
       height: 360px;
       opacity: 0.4;
 
-      @include breakpoint-max(med-small) {
-        height: 215px;
+      @media (max-width: 485px) {
+        height: 160px;
       }
     }
   }
@@ -99,11 +99,19 @@
   }
 }
 
+#block-ds-extras-banner {
+  margin-bottom: -70px;
+
+  @media (max-width: 485px) {
+    margin-bottom: 0;
+  }
+}
+
 #block-ds-extras-banner-overlay {
   max-width: 750px;
   width: 100%;
   position: absolute;
-  top: 210px;
+  top: 220px;
 
   @include breakpoint-max(large) {
     max-width: 600px;
@@ -121,8 +129,8 @@
     margin-bottom: -245px;
   }
 
-  @include breakpoint-max(smaller) {
-    top: -340px;
+  @media (max-width: 480px) {
+    top: -160px;
   }
 
   @include breakpoint-max(x-small) {
@@ -130,7 +138,7 @@
   }
 
   @media (max-width: 380px) {
-    top: -315px;
+    top: -170px;
     width: 250px;
   }
 
